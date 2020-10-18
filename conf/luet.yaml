@@ -1,0 +1,8 @@
+general:
+  debug: false
+
+  # spinner every 30m
+  spinner_ms: 1800000
+
+system:
+  tmpdir_base: "/luetmp"
