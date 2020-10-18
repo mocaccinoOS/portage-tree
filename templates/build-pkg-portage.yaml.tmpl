@@ -1,0 +1,16 @@
+requires:
+- category: "{{ .Values.category }}"
+  name: "{{ .Values.name | replace "-portage" "" }}"
+  version: ">=0"
+package_dir: /{{ .Values.name }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+steps:
+- quickpkg {{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+- mkdir -p /tmp/data
+- mkdir /{{ .Values.name }}
+
+- qtbz2 -d /tmp/data /var/cache/portage/packages/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2
+
+- mkdir -p /{{ .Values.name }}/var/db/pkg/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}/
+- qxpak -x -d /{{ .Values.name }}/var/db/pkg/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}/ /tmp/data/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.xpak

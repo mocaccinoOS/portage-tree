@@ -1,0 +1,20 @@
+requires:
+- category: "development"
+  name: "mocaccino-portage-layer"
+  version: ">=0"
+package_dir: /{{ .Values.name }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+prelude:
+- emerge -j ${JOBS} --onlydeps ={{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+steps:
+- emerge -j ${JOBS} --nodeps ={{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+- quickpkg {{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+- mkdir /{{ .Values.name }}
+- mkdir -p /tmp/data
+- qtbz2 -d /tmp/data /var/cache/portage/packages/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2
+
+- tar xvjf /tmp/data/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2 -C /{{ .Values.name }}
+# Drop portage savedconfig
+- rm -rf /{{ .Values.name }}/etc
+- rm -rf /tmp/data
