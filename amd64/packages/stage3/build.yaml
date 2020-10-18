@@ -1,0 +1,10 @@
+image: "alpine"
+package_dir: /{{ .Values.name }}
+prelude:
+- apk --no-cache add ca-certificates tar wget xz rsync
+steps:
+- wget http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3-amd64-systemd/stage3-amd64-systemd-${STAGE_VERSION}.tar.xz -O /rootfs.tar.xz
+- mkdir /{{ .Values.name }}
+- cd /{{ .Values.name }} && tar xJpf /rootfs.tar.xz --xattrs --numeric-owner && rm /rootfs.tar.xz
+env:
+- STAGE_VERSION={{ ( index .Values.labels "original.package.version" ) }}
