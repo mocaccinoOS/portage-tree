@@ -1,0 +1,7 @@
+requires:
+- category: "development"
+  name: "mocaccino-toolchain"
+  version: ">=0"
+
+steps:
+- emerge -j --newuse --deep --with-bdeps=y @system
