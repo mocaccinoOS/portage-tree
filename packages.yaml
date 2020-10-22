@@ -4,7 +4,7 @@ packages:
     version: "0.1"
     atom: "layers/x"
     path: "multi-arch/packages/layers"
-    build_template: "templates/build-layer.tmpl"
+    build_template: "templates/build-pkg-layer.tmpl"
     labels: 
       emerge.packages: >
                     x11-apps/setxkbmap
@@ -45,7 +45,7 @@ packages:
     version: "1.24"
     atom: "layers/mate"
     path: "multi-arch/packages/layers"
-    build_template: "templates/build-layer.tmpl"
+    build_template: "templates/build-pkg-layer.tmpl"
     labels: 
       emerge.packages: "=mate-base/mate-1.24"
       emerge.jobs: "1"
