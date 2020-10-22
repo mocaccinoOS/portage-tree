@@ -1,0 +1,5 @@
+env:
+- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+steps:
+- emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+unpack: true
