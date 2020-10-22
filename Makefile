@@ -2,6 +2,7 @@ BACKEND?=docker
 CONCURRENCY?=1
 CI_ARGS?=
 PACKAGES?=
+GEN_PACKAGE_FILE?=packages.yaml
 
 # Abs path only. It gets copied in chroot in pre-seed stages
 export LUET?=/usr/bin/luet
@@ -75,3 +76,6 @@ auto-bump:
 
 validate:
 	$(LUET)  tree validate --tree $(TREE) --tree=$(COMMON_TREE) $(VALIDATE_OPTIONS)
+
+gen:
+	./scripts/gen.sh $(GEN_PACKAGE_FILE)
