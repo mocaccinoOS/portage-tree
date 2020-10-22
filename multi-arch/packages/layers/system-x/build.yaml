@@ -1,7 +1,8 @@
 requires:
 - category: "development"
-  name: "mocaccino-toolchain"
+  name: "mocaccino-overlay-x"
   version: ">=0"
-
+unpack: true
 steps:
+- USE=-harfbuzz emerge media-libs/freetype
 - emerge -j --newuse --deep --with-bdeps=y @system
