@@ -5,5 +5,5 @@ requires:
 unpack: true
 steps:
 - USE=-harfbuzz emerge media-libs/freetype
-- emerge -uDNav --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world
+- emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world
 - perl-cleaner --all
