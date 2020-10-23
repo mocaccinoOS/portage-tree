@@ -5,6 +5,6 @@ requires:
 unpack: true
 steps:
 - USE=-harfbuzz emerge media-libs/freetype
-- emerge dev-perl/XML-parser
+- emerge dev-perl/XML-Parser
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world
 - perl-cleaner --all
