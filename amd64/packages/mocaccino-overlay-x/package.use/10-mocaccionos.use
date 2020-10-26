@@ -927,7 +927,6 @@ virtual/opencl video_cards_nvidia video_cards_fglrx
 # relevant flags must be kept in sync with dev-vcs/subversion
 www-apache/mod_dav_svn -dso
 www-apache/mod_jk java
-www-apache/mod_perl ithreads
 
 www-apps/nextcloud -imagemagick
 www-apps/owncloud mysql postgres sqlite3
@@ -1040,9 +1039,6 @@ xfce-base/xfwm4 xcomposite
 xfce-extra/tumbler gstreamer raw
 
 dev-python/PyQt5 declarative help webchannel webkit webengine websockets sql xmlpatterns
-
-# See Sabayon bug #890
-dev-lang/perl ithreads
 
 # For safety (no particular reason, but grub requires ncurses)
 # we also provide libncurses.a
