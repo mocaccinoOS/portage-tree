@@ -2,7 +2,7 @@ packages:
   - name: "X"
     category: "layers"
     version: "0.1"
-    atom: "layers/x"
+    atom: "layers/X"
     path: "multi-arch/packages/layers"
     build_template: "templates/build-pkg-layer.tmpl"
     labels: 
@@ -34,11 +34,22 @@ packages:
                     x11-drivers/xf86-video-siliconmotion
                     x11-drivers/xf86-video-vesa
                     x11-drivers/xf86-video-vmware
+                    x11-misc/notification-daemon
+                    media-libs/gst-plugins-base
+                    dev-libs/libwacom
+                    x11-libs/libSM
+                    sys-auth/polkit
+                    dev-libs/dbus-glib
+                    virtual/opengl
       emerge.jobs: "1"
     requires:
       build:
-      - category: "development"
-        name: "mocaccino-toolchain"
+      - category: "layers"
+        name: "system-x"
+        version: ">=0"
+      runtime:
+      - category: "layers"
+        name: "system-x"
         version: ">=0"
   - name: "mate"
     category: "layers"
@@ -54,7 +65,136 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
+      - category: "layers"
+        name: "gnome-common"
+        version: ">=0"
       runtime:
       - category: "layers"
         name: "X"
         version: ">=0"
+      - category: "layers"
+        name: "gnome-common"
+        version: ">=0"
+  - name: "gnome"
+    category: "layers"
+    version: "3.36.5"
+    atom: "layers/gnome"
+    path: "multi-arch/packages/layers"
+    build_template: "templates/build-pkg-layer.tmpl"
+    labels: 
+      emerge.packages: "=gnome-base/gnome-3.36.5"
+      emerge.jobs: "1"
+    requires:
+      build:
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+      - category: "layers"
+        name: "gnome-common"
+        version: ">=0"
+      runtime:
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+      - category: "layers"
+        name: "gnome-common"
+        version: ">=0"
+  - name: "plasma"
+    category: "layers"
+    version: "5.19.5"
+    atom: "layers/plasma"
+    path: "multi-arch/packages/layers"
+    build_template: "templates/build-pkg-layer.tmpl"
+    labels: 
+      emerge.packages: "=kde-plasma/plasma-meta-5.19.5"
+      emerge.jobs: "1"
+    requires:
+      build:
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+      - category: "layers"
+        name: "desktop-common"
+        version: ">=0"
+      runtime:
+      - category: "layers"
+        name: "X"
+        version: ">=0"
+      - category: "layers"
+        name: "desktop-common"
+        version: ">=0"
+  - name: "sys-fs"
+    category: "layers"
+    version: "0.1"
+    atom: "layers/sys-fs"
+    path: "multi-arch/packages/layers"
+    build_template: "templates/build-pkg-layer.tmpl"
+    labels: 
+      emerge.packages: >
+                    net-fs/samba
+                    sys-fs/fuse
+                    sys-fs/udisks
+      emerge.jobs: "1"
+    requires:
+      build:
+      - category: "layers"
+        name: "system-x"
+        version: ">=0"
+      runtime:
+      - category: "layers"
+        name: "system-x"
+        version: ">=0"
+  - name: "desktop-common"
+    category: "layers"
+    version: "0.1"
+    atom: "layers/desktop-common"
+    path: "multi-arch/packages/layers"
+    build_template: "templates/build-pkg-layer.tmpl"
+    labels: 
+      emerge.packages: >
+                    net-print/cups
+                    sys-apps/dbus
+                    net-wireless/wpa_supplicant
+                    net-wireless/bluez
+                    media-plugins/gst-plugins-meta
+      emerge.jobs: "1"
+    requires:
+      build:
+      - category: "layers"
+        name: "system-x"
+        version: ">=0"
+      - category: "layers"
+        name: "sys-fs"
+        version: ">=0"
+      runtime:
+      - category: "layers"
+        name: "system-x"
+        version: ">=0"
+      - category: "layers"
+        name: "sys-fs"
+        version: ">=0"
+  - name: "gnome-common"
+    category: "layers"
+    version: "0.1"
+    atom: "layers/gnome-common"
+    path: "multi-arch/packages/layers"
+    build_template: "templates/build-pkg-layer.tmpl"
+    labels: 
+      emerge.packages: >
+                    gnome-extra/zenity
+                    gnome-base/gvfs
+                    net-libs/gnome-online-accounts
+                    dev-cpp/gtkmm
+                    dev-libs/libpeas
+                    dev-libs/dbus-glib
+      emerge.jobs: "1"
+    requires:
+      build:
+      - category: "layers"
+        name: "desktop-common"
+        version: ">=0"
+      runtime:
+      - category: "layers"
+        name: "desktop-common"
+        version: ">=0"
+

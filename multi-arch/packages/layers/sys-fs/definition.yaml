@@ -1,0 +1,10 @@
+category: "layers"
+name: "sys-fs"
+version: "0.1"
+labels:
+  emerge.jobs: "1"
+  emerge.packages: "net-fs/samba sys-fs/fuse sys-fs/udisks"
+requires:
+- category: "layers"
+  name: "system-x"
+  version: ">=0"
