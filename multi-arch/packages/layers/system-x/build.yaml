@@ -10,6 +10,7 @@ steps:
 # we want py3.8 for now
 - |
   emerge --unmerge dev-lang/python:3.8 || true
+  emerge --unmerge dev-lang/python:2.7 || true
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge dev-perl/XML-Parser -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
