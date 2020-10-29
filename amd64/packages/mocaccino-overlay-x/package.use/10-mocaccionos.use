@@ -1,5 +1,18 @@
 media-libs/libglvnd X
 
+# MATE
+
+mate-base/mate-panel X
+media-libs/libcanberra alsa
+dev-cpp/gtkmm X
+>=sys-apps/systemd-246-r2 policykit
+>=x11-libs/cairo-1.16.0-r4 -X
+>=app-text/poppler-0.90.1 cairo
+net-fs/samba ldap
+x11-libs/cairo X aqua
+dev-cpp/cairomm X aqua
+x11-libs/pango X
+
 ## Sabayon use flags
 
 app-accessibility/at-spi2-core -X

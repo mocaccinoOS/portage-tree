@@ -13,4 +13,5 @@ steps:
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge dev-perl/XML-Parser -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
+- emerge sys-apps/systemd
 - perl-cleaner --all
