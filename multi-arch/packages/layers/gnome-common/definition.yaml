@@ -1,8 +1,8 @@
 category: "layers"
 name: "gnome-common"
-version: "0.1"
+version: "0.1+1"
 labels:
-  emerge.jobs: "1"
+  emerge.jobs: "5"
   emerge.packages: "gnome-extra/zenity gnome-base/gvfs net-libs/gnome-online-accounts dev-cpp/gtkmm dev-libs/libpeas dev-libs/dbus-glib"
 requires:
 - category: "layers"
