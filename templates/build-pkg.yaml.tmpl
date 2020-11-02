@@ -6,15 +6,10 @@ package_dir: /{{ .Values.name }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 prelude:
-- emerge -j ${JOBS} --onlydeps ={{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+- emerge -j ${JOBS} --onlydeps {{ ( index .Values.labels "emerge.packages" ) }}
 steps:
-- emerge -j ${JOBS} --nodeps ={{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
-- quickpkg {{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
-- mkdir /{{ .Values.name }}
-- mkdir -p /tmp/data
-- qtbz2 -d /tmp/data /var/cache/portage/packages/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2
-
-- tar xvjf /tmp/data/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2 -C /{{ .Values.name }}
-# Drop portage savedconfig
-- rm -rf /{{ .Values.name }}/etc
-- rm -rf /tmp/data
+- emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+- curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+- luet install repository/mocaccino-extra-stable system/luet-extensions
+- luet install dev-util/pkgs-checker-minimal utils/jq
+- luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}

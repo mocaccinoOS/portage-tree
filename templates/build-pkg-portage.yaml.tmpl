@@ -5,12 +5,11 @@ requires:
 package_dir: /{{ .Values.name }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_PKGFILES=0
+- LUET_PORTAGE_PKGMETA=1
 steps:
-- quickpkg {{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
-- mkdir -p /tmp/data
-- mkdir /{{ .Values.name }}
-
-- qtbz2 -d /tmp/data /var/cache/portage/packages/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2
-
-- mkdir -p /{{ .Values.name }}/var/db/pkg/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}/
-- qxpak -x -d /{{ .Values.name }}/var/db/pkg/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}/ /tmp/data/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.xpak
+# TODO: install luet to build layer
+- curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+- luet install repository/mocaccino-extra-stable system/luet-extensions
+- luet install dev-util/pkgs-checker-minimal utils/jq
+- luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
