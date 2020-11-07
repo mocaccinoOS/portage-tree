@@ -7,4 +7,4 @@ prelude:
 - rsync -A -a --delete --numeric-ids --recursive -d -H --one-file-system --xattrs --exclude '/{{ .Values.name }}/*'  --exclude '/etc/resolv.conf'  --exclude '/etc/hostname'  --exclude '/sys/' --exclude '/etc/hosts'  --exclude '/sys/*' --exclude '/proc/*' --exclude '/dev/pts/*' /{{ .Values.name }}/ /
 - rm -rf /{{ .Values.name }}
 env:
-- STAGE_VERSION={{ ( index .Values.labels "original.package.version" ) }}
+- STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
