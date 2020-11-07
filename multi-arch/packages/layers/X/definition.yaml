@@ -1,9 +1,9 @@
 category: "layers"
 name: "X"
-version: "0.1"
+version: "0.2"
 labels:
   emerge.jobs: "1"
-  emerge.packages: "x11-apps/setxkbmap x11-apps/xdm x11-apps/xhost x11-base/xorg-server x11-drivers/xf86-input-evdev x11-drivers/xf86-input-joystick x11-drivers/xf86-input-libinput x11-drivers/xf86-input-mtrack x11-drivers/xf86-input-synaptics x11-drivers/xf86-input-vmmouse x11-drivers/xf86-input-void x11-drivers/xf86-input-wacom x11-drivers/xf86-video-ast x11-drivers/xf86-video-amdgpu x11-drivers/xf86-video-ati x11-drivers/xf86-video-dummy x11-drivers/xf86-video-fbdev x11-drivers/xf86-video-glint x11-drivers/xf86-video-intel x11-drivers/xf86-video-nouveau x11-drivers/xf86-video-nv x11-drivers/xf86-video-openchrome x11-drivers/xf86-video-qxl x11-drivers/xf86-video-r128 x11-drivers/xf86-video-siliconmotion x11-drivers/xf86-video-vesa x11-drivers/xf86-video-vmware x11-misc/notification-daemon media-libs/gst-plugins-base dev-libs/libwacom x11-libs/libSM sys-auth/polkit dev-libs/dbus-glib virtual/opengl"
+  emerge.packages: "x11-apps/setxkbmap x11-apps/xdm x11-apps/xhost x11-base/xorg-server x11-libs/libXres x11-libs/libwnck x11-libs/libxklavier x11-libs/startup-notification x11-libs/vte x11-apps/xprop x11-apps/xset x11-libs/libxkbcommon x11-misc/xdg-utils x11-misc/xdg-user-dirs-gtk x11-themes/sound-theme-freedesktop x11-drivers/xf86-input-evdev x11-drivers/xf86-input-joystick x11-drivers/xf86-input-libinput x11-drivers/xf86-input-mtrack x11-drivers/xf86-input-synaptics x11-drivers/xf86-input-vmmouse x11-drivers/xf86-input-void x11-drivers/xf86-input-wacom x11-drivers/xf86-video-ast x11-drivers/xf86-video-amdgpu x11-drivers/xf86-video-ati x11-drivers/xf86-video-dummy x11-drivers/xf86-video-fbdev x11-drivers/xf86-video-glint x11-drivers/xf86-video-intel x11-drivers/xf86-video-nouveau x11-drivers/xf86-video-nv x11-drivers/xf86-video-openchrome x11-drivers/xf86-video-qxl x11-drivers/xf86-video-r128 x11-drivers/xf86-video-siliconmotion x11-drivers/xf86-video-vesa x11-drivers/xf86-video-vmware x11-misc/notification-daemon media-libs/gst-plugins-base dev-libs/libwacom x11-libs/libSM sys-auth/polkit dev-libs/dbus-glib virtual/opengl"
 requires:
 - category: "layers"
   name: "system-x"

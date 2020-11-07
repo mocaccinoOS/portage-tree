@@ -3,3 +3,4 @@ name: "gentoo-stage3"
 version: "0.20201015+1"
 labels:
   original.package.version: "20201015T131958Z"
+hidden: true
