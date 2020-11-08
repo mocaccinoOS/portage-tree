@@ -2,10 +2,8 @@ category: "layers"
 name: "mate"
 version: "1.24"
 labels:
-  emerge.jobs: >-
-    1
-  emerge.packages: >-
-    =mate-base/mate-1.24
+  emerge.jobs: "1"
+  emerge.packages: "=mate-base/mate-1.24"
 requires:
 - category: "layers"
   name: "X"

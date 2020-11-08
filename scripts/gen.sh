@@ -46,8 +46,8 @@ for i in $(yq r $PACKAGE_FILE 'packages[*].atom'); do
     yq w -i $TREE_PATH/$PACKAGE_NAME/definition.yaml "version" $PACKAGE_VERSION --style double
 
     for l in $(yq r packages.yaml -j | jq -r ".packages[] | select(.atom==\"$atom\").labels | keys[]"); do
-        k=$(yq r packages.yaml -j | jq -r ".packages[] | select(.atom==\"$atom\").labels | .\"$l\"" | tr " " "\n")
-        yq w -i $TREE_PATH/$PACKAGE_NAME/definition.yaml "labels.\"$l\""  --style folded -- "$k"
+        k=$(yq r packages.yaml -j | jq -r ".packages[] | select(.atom==\"$atom\").labels | .\"$l\"")
+        yq w -i $TREE_PATH/$PACKAGE_NAME/definition.yaml "labels.\"$l\""  --style double -- "$k"
     done
     
     cat << EOF >> $TREE_PATH/$PACKAGE_NAME/definition.yaml
