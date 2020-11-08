@@ -52,7 +52,6 @@ packages:
                     sys-auth/polkit
                     dev-libs/dbus-glib
                     virtual/opengl
-
                     net-print/cups
                     sys-apps/dbus
                     net-wireless/wpa_supplicant
