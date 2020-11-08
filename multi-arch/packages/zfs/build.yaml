@@ -1,0 +1,29 @@
+image: sabayon/base-amd64
+package_dir: /zfs
+env:
+- ACCEPT_LICENSE=*
+- LC_ALL=en_US.UTF-8
+- JOBS=3
+- PKGDIR=/usr/portage/packages
+prelude:
+- |
+  equo i sys-fs/zfs --onlydeps --relaxed && \
+  equo i app-portage/layman dev-vcs/git sys-devel/gcc && \
+  equo cleanup
+# TODO: Temporary until we will have a layer for this
+# Prepare emerge stuff
+- emerge-webrsync
+- layman -f && eval 'echo "y" | layman -f -a sabayon' && eval 'echo "y" | layman -a sabayon-distro'
+- eselect profile set "default/linux/amd64/17.1/desktop"
+- gcc-config x86_64-pc-linux-gnu-8.2.0
+# Update sabayon-build project
+- cd /opt/sabayon-build && git checkout master && git reset --hard origin/master && git pull -ff && cd -
+steps:
+- |
+  source /etc/profile  && \
+  ACCEPT_KEYWORDS="~amd64" emerge =${PACKAGE_CATEGORY}/${PACKAGE_NAME}-${PACKAGE_VERSION%\+*} -j ${JOBS} && \
+  quickpkg ${PACKAGE_CATEGORY}/${PACKAGE_NAME} && \
+  mkdir /${PACKAGE_NAME} && mkdir -p /tmp/data && \
+  qtbz2 -d /tmp/data/ ${PKGDIR}/${PACKAGE_CATEGORY}/${PACKAGE_NAME}-${PACKAGE_VERSION%\+*}.tbz2 && \
+  tar xvjf /tmp/data/${PACKAGE_NAME}-${PACKAGE_VERSION%\+*}.tar.bz2 -C /${PACKAGE_NAME} && \
+  rm -rf /tmp/data

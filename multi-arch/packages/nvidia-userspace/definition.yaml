@@ -1,0 +1,8 @@
+category: "x11-drivers"
+name: "nvidia-userspace"
+version: "450.66+1"
+labels:
+  emerge.jobs: "3"
+  original.package.category: "x11-drivers"
+  original.package.name: "nvidia-userspace"
+  original.package.version: "450.66"

@@ -1,0 +1,22 @@
+image: sabayon/base-amd64
+package_dir: /{{ .Values.name }}
+env:
+- ACCEPT_LICENSE=*
+- LC_ALL=en_US.UTF-8
+- JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
+- PKGDIR=/usr/portage/packages
+prelude:
+- |
+  equo i x11-drivers/nvidia-username --onlydeps --relaxed && \
+  equo remove x11-drivers/nvidia-userspace && \
+  equo cleanup
+- source /etc/profile && emerge -j ${JOBS} --onlydeps ={{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+steps:
+- emerge -j ${JOBS} --nodeps ={{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+- quickpkg {{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}
+- mkdir /{{ .Values.name }}
+- mkdir -p /tmp/data
+- qtbz2 -d /tmp/data /var/cache/portage/packages/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2
+
+- tar xvjf /tmp/data/{{ ( index .Values.labels "original.package.category" ) }}/{{ ( index .Values.labels "original.package.name" ) }}-{{ ( index .Values.labels "original.package.version" ) }}.tbz2 -C /{{ .Values.name }}
+- rm -rf /tmp/data
