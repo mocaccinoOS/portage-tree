@@ -157,7 +157,7 @@ packages:
         version: ">=0"
   - name: "desktop-common"
     category: "layers"
-    version: "0.2"
+    version: "0.3"
     atom: "layers/desktop-common"
     path: "multi-arch/packages/layers"
     build_template: "templates/build-pkg-layer.tmpl"
@@ -254,14 +254,14 @@ packages:
     requires:
       build:
       - category: "layers"
-        name: "system-x"
+        name: "X"
         version: ">=0"
       - category: "layers"
         name: "sys-fs"
         version: ">=0"
       runtime:
       - category: "layers"
-        name: "system-x"
+        name: "X"
         version: ">=0"
       - category: "layers"
         name: "sys-fs"
