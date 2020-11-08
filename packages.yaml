@@ -221,6 +221,74 @@ packages:
       - category: "layers"
         name: "X"
         version: ">=0"
+  - name: "kde-apps-minimal"
+    category: "layers"
+    version: "5.19.5+1"
+    atom: "layers/kde-apps-minimal"
+    path: "multi-arch/packages/layers"
+    build_template: "templates/build-pkg-layer.tmpl"
+    labels: 
+      emerge.packages: > 
+              kde-apps/kde-l10n
+              kde-apps/kdeadmin-meta
+              kde-apps/kdenetwork-filesharing
+              kde-apps/kdenlive
+              kde-apps/kdf
+              kde-apps/kdialog
+              kde-apps/keditbookmarks
+              kde-apps/kfind
+              kde-apps/kfourinline
+              kde-apps/kgpg
+              kde-apps/killbots
+              kde-apps/kipi-plugins
+              kde-apps/kiriki
+              kde-apps/klines
+              kde-apps/kmag
+              kde-apps/kmahjongg
+              kde-apps/kmines
+              kde-apps/kmousetool
+              kde-apps/kmouth
+              kde-apps/knetwalk
+              kde-apps/kolf
+              kde-apps/kollision
+              kde-apps/konquest
+              kde-apps/konsole
+              kde-apps/kpat
+              kde-apps/kreversi
+              kde-apps/ksaneplugin
+              kde-apps/kshisen
+              kde-apps/kspaceduel
+              kde-apps/ksquares
+              kde-apps/ksudoku
+              kde-apps/kubrick
+              kde-apps/kwalletmanager
+              kde-apps/kwrite
+              kde-apps/libkcddb
+              kde-apps/libkcompactdisc
+              kde-apps/libkdcraw
+              kde-apps/libkdegames
+              kde-apps/libkexiv2
+              kde-apps/libkipi
+              kde-apps/libkmahjongg
+              kde-apps/libkonq
+              kde-apps/libksane
+              kde-apps/okular
+              kde-apps/plasma-apps
+              kde-apps/print-manager
+              kde-apps/spectacle
+              kde-apps/svgpart
+              kde-apps/thumbnailers
+              kde-apps/yakuake
+      emerge.jobs: "1"
+    requires:
+      build:
+      - category: "layers"
+        name: "plasma"
+        version: ">=0"
+      runtime:
+      - category: "layers"
+        name: "plasma"
+        version: ">=0"
   - name: "sys-fs"
     category: "layers"
     version: "0.3"
