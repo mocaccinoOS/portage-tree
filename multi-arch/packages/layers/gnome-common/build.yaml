@@ -4,5 +4,5 @@ steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
 - category: "layers"
-  name: "desktop-common"
+  name: "X"
   version: ">=0"

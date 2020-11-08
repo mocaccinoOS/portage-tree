@@ -6,6 +6,3 @@ requires:
 - category: "layers"
   name: "X"
   version: ">=0"
-- category: "layers"
-  name: "desktop-common"
-  version: ">=0"
