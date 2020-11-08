@@ -1,0 +1,45 @@
+requires:
+- category: "kernel-5.8"
+  name: "sabayon-sources"
+  version: ">=0"
+package_dir: /nvidia-drivers
+includes:
+- /lib$|/lib/modules$
+- /lib/modules/.*
+- /etc$|/etc/modprobe.d$
+- /etc/modprobe.d/.*
+env:
+- ACCEPT_LICENSE=*
+- LC_ALL=en_US.UTF-8
+- JOBS=3
+- PKGDIR=/usr/portage/packages
+prelude:
+# Require /usr/include/X11/Xlibint.h -> libX11
+#         /usr/include/X11/extensions/Xext.h -> libXext
+#         /usr/include/GL/glx.h -> libglvnd
+#         /usr/include/jansson.h -> dev-libs/jansson
+#         /usr/include/X11/extensions/Xrandr.h -> x11-libs/libXrandr
+#         /usr/include/X11/extensions/xf86vmode.h -> x11-libs/libXxf86vm
+- |
+  chmod a+x ./override_mirror.sh && ./override_mirror.sh && \
+  equo i x11-drivers/nvidia-drivers --onlydeps --relaxed && \
+  equo remove x11-drivers/nvidia-userspace && \
+  equo cleanup
+# Ensure that sources is in a good state
+- cd /usr/src/ && ls -l && rm linux && ln -s linux-5.8.0-sabayon linux
+- cd /usr/src/linux && make mrproper && cp sabayon/config/sabayon-amd64.config .config && make prepare
+# Drop sabayon gentoo mask
+- sed -e 's|^x11-drivers/nvidia-drivers.*||g' -i /etc/portage/package.mask/00-sabayon.package.mask
+steps:
+- |
+  source /etc/profile  && \
+  cd /usr/src/linux && make -j $JOBS modules && \
+  emerge =x11-drivers/${PACKAGE_NAME}-${PACKAGE_VERSION%\+*} --nodeps && \
+  make clean && \
+  quickpkg x11-drivers/${PACKAGE_NAME} && \
+  mkdir /${PACKAGE_NAME} && mkdir -p /tmp/data && \
+  qtbz2 -d /tmp/data/ ${PKGDIR}/x11-drivers/${PACKAGE_NAME}-${PACKAGE_VERSION%\+*}.tbz2 && \
+  tar xvjf /tmp/data/${PACKAGE_NAME}-${PACKAGE_VERSION%\+*}.tar.bz2 -C /${PACKAGE_NAME} && \
+  rm -rf /tmp/data
+# TODO: drop nvidia-userspace stuff
+
