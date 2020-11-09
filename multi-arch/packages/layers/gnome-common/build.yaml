@@ -1,3 +1,7 @@
+excludes:
+- ^/var/db/repos
+- ^/var/cache/edb
+- ^/usr/portage
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
