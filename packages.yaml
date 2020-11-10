@@ -230,7 +230,6 @@ packages:
     labels: 
       emerge.packages: > 
               kde-apps/ark
-              kde-apps/kde-l10n
               kde-apps/kdeadmin-meta
               kde-apps/kdenetwork-filesharing
               kde-apps/kdf
@@ -243,11 +242,8 @@ packages:
               kde-apps/kmousetool
               kde-apps/knetwalk
               kde-apps/konsole
-              kde-apps/ksaneplugin
               kde-apps/kwalletmanager
               kde-apps/kwrite
-              kde-apps/okular
-              kde-apps/plasma-apps
               kde-apps/print-manager
               kde-apps/spectacle
               kde-apps/svgpart

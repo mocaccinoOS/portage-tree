@@ -22,5 +22,8 @@ excludes:
 - ^/etc/passwd
 - ^/etc/machineid
 - ^/var/db/repos
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
 - ^/var/cache/edb
 - ^/usr/portage
