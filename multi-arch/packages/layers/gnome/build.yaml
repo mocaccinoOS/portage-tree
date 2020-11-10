@@ -2,6 +2,9 @@ excludes:
 - ^/var/db/repos
 - ^/var/cache/edb
 - ^/usr/portage
+- ^/var/db/pkg
+- ^/var/lib/portage
+- ^/var/log
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
