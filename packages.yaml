@@ -249,7 +249,6 @@ packages:
               kde-apps/svgpart
               kde-apps/thumbnailers
               kde-apps/yakuake
-              kde-misc/kio-gdrive
               kde-misc/skanlite
       emerge.jobs: "1"
     requires:
