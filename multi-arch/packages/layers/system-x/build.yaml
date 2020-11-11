@@ -24,6 +24,7 @@ excludes:
 - ^/var/db/repos
 - ^/var/db/pkg
 - ^/var/lib/portage
+- ^/var/cache/distfiles
 - ^/var/log
 - ^/var/cache/edb
 - ^/usr/portage

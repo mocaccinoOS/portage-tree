@@ -5,6 +5,7 @@ excludes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
+- ^/var/cache/distfiles
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
