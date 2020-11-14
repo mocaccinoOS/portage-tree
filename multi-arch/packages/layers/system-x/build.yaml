@@ -19,6 +19,7 @@ excludes:
 - ^/etc/shadow
 - ^/etc/gshadow
 - ^/etc/group
+- ^/etc/fstab
 - ^/etc/passwd
 - ^/etc/machineid
 - ^/var/db/repos
