@@ -1,0 +1,2 @@
+install:
+- entities create -f /etc/group /etc/entities/netdev_acct-group_entity.yaml || true

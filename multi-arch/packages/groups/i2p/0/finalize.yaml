@@ -1,0 +1,2 @@
+install:
+- entities create -f /etc/group /etc/entities/i2p_acct-group_entity.yaml || true

@@ -1,0 +1,7 @@
+category: "acct-group"
+name: "deluge"
+version: "0+1"
+requires:
+- category: "system"
+  name: "entities"
+  version: ">=0.1"

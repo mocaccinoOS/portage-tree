@@ -1,0 +1,2 @@
+install:
+- entities create -f /etc/group /etc/entities/turnserver_acct-group_entity.yaml || true

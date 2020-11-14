@@ -1,0 +1,7 @@
+category: "acct-group"
+name: "nagios"
+version: "0+1"
+requires:
+- category: "system"
+  name: "entities"
+  version: ">=0.1"

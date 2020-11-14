@@ -1,0 +1,8 @@
+steps:
+  - source /etc/profile && echo Prepare acct-user/man-1
+unpack: true
+requires:
+  - category: "layer"
+    name: mocaccino-micro
+    version: '>=0'
+includes:

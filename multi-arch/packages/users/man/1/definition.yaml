@@ -1,0 +1,7 @@
+category: acct-user
+name: man
+requires:
+- category: acct-group
+  name: man
+  version: '>=0'
+version: 1+1
