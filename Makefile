@@ -77,5 +77,13 @@ autobump:
 validate:
 	$(LUET)  tree validate --tree $(TREE) --tree=$(COMMON_TREE) $(VALIDATE_OPTIONS)
 
-gen:
+gen: gen-specs gen-provides-all
+
+gen-specs:
 	./scripts/gen.sh $(GEN_PACKAGE_FILE)
+
+gen-provides:
+	./scripts/gen_provides.sh
+
+gen-provides-all:
+	./scripts/gen_provides_all.sh 
