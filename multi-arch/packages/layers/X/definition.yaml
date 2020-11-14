@@ -5,9 +5,790 @@ labels:
   emerge.jobs: "1"
   emerge.packages: "x11-apps/setxkbmap x11-apps/xdm x11-apps/xhost x11-base/xorg-server x11-libs/libXres x11-libs/libwnck x11-libs/libxklavier x11-libs/startup-notification x11-libs/vte x11-apps/xprop x11-apps/xset x11-libs/libxkbcommon x11-misc/xdg-utils x11-misc/xdg-user-dirs-gtk x11-themes/sound-theme-freedesktop x11-drivers/xf86-input-evdev x11-drivers/xf86-input-joystick x11-drivers/xf86-input-libinput x11-drivers/xf86-input-mtrack x11-drivers/xf86-input-synaptics x11-drivers/xf86-input-vmmouse x11-drivers/xf86-input-void x11-drivers/xf86-input-wacom x11-drivers/xf86-video-ast x11-drivers/xf86-video-amdgpu x11-drivers/xf86-video-ati x11-drivers/xf86-video-dummy x11-drivers/xf86-video-fbdev x11-drivers/xf86-video-glint x11-drivers/xf86-video-intel x11-drivers/xf86-video-nouveau x11-drivers/xf86-video-nv x11-drivers/xf86-video-openchrome x11-drivers/xf86-video-qxl x11-drivers/xf86-video-r128 x11-drivers/xf86-video-siliconmotion x11-drivers/xf86-video-vesa x11-drivers/xf86-video-vmware x11-misc/notification-daemon media-libs/gst-plugins-base dev-libs/libwacom x11-libs/libSM sys-auth/polkit dev-libs/dbus-glib virtual/opengl net-print/cups sys-apps/dbus net-wireless/wpa_supplicant net-wireless/bluez media-plugins/gst-plugins-meta media-libs/alsa-lib media-libs/alsa-topology-conf media-libs/alsa-ucm-conf media-libs/libcanberra media-libs/libexif media-libs/flac net-misc/dhcp net-misc/mobile-broadband-provider-info net-misc/modemmanager net-misc/networkmanager media-libs/libmtp media-libs/libsamplerate media-libs/libsndfile media-libs/opus media-libs/taglib net-dialup/linux-atm net-dialup/ppp net-dialup/ppp-scripts net-dns/dnsmasq net-libs/libmbim net-libs/libndp net-libs/libnetfilter_conntrack net-libs/libnfnetlink net-libs/libqmi sys-power/upower sys-apps/accountsservice sys-apps/pciutils sys-libs/cracklib sys-libs/slang virtual/awk virtual/tex-base app-text/hunspell dev-lang/lua dev-libs/json-glib dev-libs/libpwquality dev-libs/libusb dev-libs/newt dev-libs/nss dev-perl/Encode-Locale dev-perl/ExtUtils-Config dev-perl/ExtUtils-Helpers dev-perl/ExtUtils-InstallPaths dev-perl/File-BaseDir dev-perl/File-DesktopEntry dev-perl/File-Listing dev-perl/File-MimeInfo dev-perl/HTML-Parser dev-perl/HTML-Tagset dev-perl/HTTP-Cookies dev-perl/HTTP-Daemon dev-perl/HTTP-Date dev-perl/HTTP-Message dev-perl/HTTP-Negotiate dev-perl/IO-HTML dev-perl/IO-Socket-INET6 dev-perl/IO-Socket-SSL dev-perl/IPC-System-Simple dev-perl/LWP-MediaTypes dev-perl/LWP-Protocol-https dev-perl/Module-Build-Tiny dev-perl/Mozilla-CA dev-perl/Net-DBus dev-perl/Net-HTTP dev-perl/Net-SSLeay dev-perl/Socket6 dev-perl/Text-Iconv dev-perl/Tie-IxHash dev-perl/URI dev-perl/WWW-RobotRules dev-perl/X11-Protocol dev-perl/XML-Twig dev-perl/libwww-perl dev-python/pycairo dev-python/pygobject gnome-base/dconf acct-group/dhcp acct-group/dnsmasq net-misc/dhcp acct-group/plugdev acct-user/dhcp acct-user/dnsmasq app-i18n/ibus"
 requires:
-- category: "layers"
-  name: "system-x"
-  version: ">=0"
-- category: "layers"
-  name: "sys-fs"
-  version: ">=0"
+  - category: "layers"
+    name: "system-x"
+    version: ">=0"
+  - category: "layers"
+    name: "sys-fs"
+    version: ">=0"
+provides:
+  - name: cpio
+    category: app-arch
+    version: '>=0'
+  - name: rpm2targz
+    category: app-arch
+    version: '>=0'
+  - name: spice-protocol
+    category: app-emulation
+    version: '>=0'
+  - name: eselect-xvmc
+    category: app-eselect
+    version: '>=0'
+  - name: ibus
+    category: app-i18n
+    version: '>=0'
+  - name: unicode-data
+    category: app-i18n
+    version: '>=0'
+  - name: dvipsk
+    category: app-text
+    version: '>=0'
+  - name: ghostscript-gpl
+    category: app-text
+    version: '>=0'
+  - name: hunspell
+    category: app-text
+    version: '>=0'
+  - name: iso-codes
+    category: app-text
+    version: '>=0'
+  - name: libpaper
+    category: app-text
+    version: '>=0'
+  - name: poppler
+    category: app-text
+    version: '>=0'
+  - name: poppler-data
+    category: app-text
+    version: '>=0'
+  - name: ps2pkm
+    category: app-text
+    version: '>=0'
+  - name: qpdf
+    category: app-text
+    version: '>=0'
+  - name: teckit
+    category: app-text
+    version: '>=0'
+  - name: texlive-core
+    category: app-text
+    version: '>=0'
+  - name: lua
+    category: dev-lang
+    version: '>=0'
+  - name: orc
+    category: dev-lang
+    version: '>=0'
+  - name: swig
+    category: dev-lang
+    version: '>=0'
+  - name: dbus-glib
+    category: dev-libs
+    version: '>=0'
+  - name: ell
+    category: dev-libs
+    version: '>=0'
+  - name: json-glib
+    category: dev-libs
+    version: '>=0'
+  - name: kpathsea
+    category: dev-libs
+    version: '>=0'
+  - name: libevdev
+    category: dev-libs
+    version: '>=0'
+  - name: libical
+    category: dev-libs
+    version: '>=0'
+  - name: libinput
+    category: dev-libs
+    version: '>=0'
+  - name: libnl
+    category: dev-libs
+    version: '>=0'
+  - name: libpwquality
+    category: dev-libs
+    version: '>=0'
+  - name: libusb
+    category: dev-libs
+    version: '>=0'
+  - name: libwacom
+    category: dev-libs
+    version: '>=0'
+  - name: newt
+    category: dev-libs
+    version: '>=0'
+  - name: nss
+    category: dev-libs
+    version: '>=0'
+  - name: ptexenc
+    category: dev-libs
+    version: '>=0'
+  - name: zziplib
+    category: dev-libs
+    version: '>=0'
+  - name: App-pwhich
+    category: dev-perl
+    version: '>=0'
+  - name: B-Hooks-EndOfScope
+    category: dev-perl
+    version: '>=0'
+  - name: Class-Data-Inheritable
+    category: dev-perl
+    version: '>=0'
+  - name: Data-OptList
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-Caller
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-GlobalDestruction
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-LexAlias
+    category: dev-perl
+    version: '>=0'
+  - name: Devel-StackTrace
+    category: dev-perl
+    version: '>=0'
+  - name: Dist-CheckConflicts
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-Locale
+    category: dev-perl
+    version: '>=0'
+  - name: Eval-Closure
+    category: dev-perl
+    version: '>=0'
+  - name: Exception-Class
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-Config
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-Helpers
+    category: dev-perl
+    version: '>=0'
+  - name: ExtUtils-InstallPaths
+    category: dev-perl
+    version: '>=0'
+  - name: File-BaseDir
+    category: dev-perl
+    version: '>=0'
+  - name: File-DesktopEntry
+    category: dev-perl
+    version: '>=0'
+  - name: File-HomeDir
+    category: dev-perl
+    version: '>=0'
+  - name: File-Listing
+    category: dev-perl
+    version: '>=0'
+  - name: File-MimeInfo
+    category: dev-perl
+    version: '>=0'
+  - name: File-Which
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Parser
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Tagset
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Cookies
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Daemon
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Date
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Message
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Negotiate
+    category: dev-perl
+    version: '>=0'
+  - name: IO-HTML
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-INET6
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-SSL
+    category: dev-perl
+    version: '>=0'
+  - name: IPC-System-Simple
+    category: dev-perl
+    version: '>=0'
+  - name: libwww-perl
+    category: dev-perl
+    version: '>=0'
+  - name: Log-Dispatch
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-MediaTypes
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-Protocol-https
+    category: dev-perl
+    version: '>=0'
+  - name: Module-Build-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: Module-Implementation
+    category: dev-perl
+    version: '>=0'
+  - name: Module-Runtime
+    category: dev-perl
+    version: '>=0'
+  - name: Mozilla-CA
+    category: dev-perl
+    version: '>=0'
+  - name: MRO-Compat
+    category: dev-perl
+    version: '>=0'
+  - name: namespace-autoclean
+    category: dev-perl
+    version: '>=0'
+  - name: namespace-clean
+    category: dev-perl
+    version: '>=0'
+  - name: Net-DBus
+    category: dev-perl
+    version: '>=0'
+  - name: Net-HTTP
+    category: dev-perl
+    version: '>=0'
+  - name: Net-SSLeay
+    category: dev-perl
+    version: '>=0'
+  - name: Package-Stash
+    category: dev-perl
+    version: '>=0'
+  - name: Package-Stash-XS
+    category: dev-perl
+    version: '>=0'
+  - name: PadWalker
+    category: dev-perl
+    version: '>=0'
+  - name: Params-Util
+    category: dev-perl
+    version: '>=0'
+  - name: Params-ValidationCompiler
+    category: dev-perl
+    version: '>=0'
+  - name: Perl-Tidy
+    category: dev-perl
+    version: '>=0'
+  - name: Ref-Util
+    category: dev-perl
+    version: '>=0'
+  - name: Ref-Util-XS
+    category: dev-perl
+    version: '>=0'
+  - name: Role-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: Socket6
+    category: dev-perl
+    version: '>=0'
+  - name: Specio
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Exporter
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Exporter-Progressive
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Identify
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Install
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Name
+    category: dev-perl
+    version: '>=0'
+  - name: Sub-Quote
+    category: dev-perl
+    version: '>=0'
+  - name: Test-Fatal
+    category: dev-perl
+    version: '>=0'
+  - name: Text-Iconv
+    category: dev-perl
+    version: '>=0'
+  - name: Tie-IxHash
+    category: dev-perl
+    version: '>=0'
+  - name: Try-Tiny
+    category: dev-perl
+    version: '>=0'
+  - name: URI
+    category: dev-perl
+    version: '>=0'
+  - name: Variable-Magic
+    category: dev-perl
+    version: '>=0'
+  - name: WWW-RobotRules
+    category: dev-perl
+    version: '>=0'
+  - name: X11-Protocol
+    category: dev-perl
+    version: '>=0'
+  - name: XML-Twig
+    category: dev-perl
+    version: '>=0'
+  - name: m2crypto
+    category: dev-python
+    version: '>=0'
+  - name: pycairo
+    category: dev-python
+    version: '>=0'
+  - name: pygobject
+    category: dev-python
+    version: '>=0'
+  - name: bibtexu
+    category: dev-tex
+    version: '>=0'
+  - name: dconf
+    category: gnome-base
+    version: '>=0'
+  - name: font-util
+    category: media-fonts
+    version: '>=0'
+  - name: urw-fonts
+    category: media-fonts
+    version: '>=0'
+  - name: alsa-lib
+    category: media-libs
+    version: '>=0'
+  - name: alsa-topology-conf
+    category: media-libs
+    version: '>=0'
+  - name: alsa-ucm-conf
+    category: media-libs
+    version: '>=0'
+  - name: flac
+    category: media-libs
+    version: '>=0'
+  - name: gd
+    category: media-libs
+    version: '>=0'
+  - name: graphene
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-bad
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-base
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-good
+    category: media-libs
+    version: '>=0'
+  - name: gstreamer
+    category: media-libs
+    version: '>=0'
+  - name: jbig2dec
+    category: media-libs
+    version: '>=0'
+  - name: lcms
+    category: media-libs
+    version: '>=0'
+  - name: libcanberra
+    category: media-libs
+    version: '>=0'
+  - name: libexif
+    category: media-libs
+    version: '>=0'
+  - name: libmms
+    category: media-libs
+    version: '>=0'
+  - name: libmtp
+    category: media-libs
+    version: '>=0'
+  - name: libogg
+    category: media-libs
+    version: '>=0'
+  - name: libsamplerate
+    category: media-libs
+    version: '>=0'
+  - name: libsndfile
+    category: media-libs
+    version: '>=0'
+  - name: libvorbis
+    category: media-libs
+    version: '>=0'
+  - name: openjpeg
+    category: media-libs
+    version: '>=0'
+  - name: opus
+    category: media-libs
+    version: '>=0'
+  - name: taglib
+    category: media-libs
+    version: '>=0'
+  - name: gst-plugins-libmms
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-meta
+    category: media-plugins
+    version: '>=0'
+  - name: gst-plugins-soup
+    category: media-plugins
+    version: '>=0'
+  - name: linux-atm
+    category: net-dialup
+    version: '>=0'
+  - name: ppp
+    category: net-dialup
+    version: '>=0'
+  - name: ppp-scripts
+    category: net-dialup
+    version: '>=0'
+  - name: dnsmasq
+    category: net-dns
+    version: '>=0'
+  - name: libidn
+    category: net-dns
+    version: '>=0'
+  - name: glib-networking
+    category: net-libs
+    version: '>=0'
+  - name: libmbim
+    category: net-libs
+    version: '>=0'
+  - name: libndp
+    category: net-libs
+    version: '>=0'
+  - name: libnetfilter_conntrack
+    category: net-libs
+    version: '>=0'
+  - name: libnfnetlink
+    category: net-libs
+    version: '>=0'
+  - name: libproxy
+    category: net-libs
+    version: '>=0'
+  - name: libpsl
+    category: net-libs
+    version: '>=0'
+  - name: libqmi
+    category: net-libs
+    version: '>=0'
+  - name: libsoup
+    category: net-libs
+    version: '>=0'
+  - name: dhcp
+    category: net-misc
+    version: '>=0'
+  - name: mobile-broadband-provider-info
+    category: net-misc
+    version: '>=0'
+  - name: modemmanager
+    category: net-misc
+    version: '>=0'
+  - name: networkmanager
+    category: net-misc
+    version: '>=0'
+  - name: cups
+    category: net-print
+    version: '>=0'
+  - name: cups-filters
+    category: net-print
+    version: '>=0'
+  - name: bluez
+    category: net-wireless
+    version: '>=0'
+  - name: crda
+    category: net-wireless
+    version: '>=0'
+  - name: wireless-regdb
+    category: net-wireless
+    version: '>=0'
+  - name: wpa_supplicant
+    category: net-wireless
+    version: '>=0'
+  - name: accountsservice
+    category: sys-apps
+    version: '>=0'
+  - name: ed
+    category: sys-apps
+    version: '>=0'
+  - name: pciutils
+    category: sys-apps
+    version: '>=0'
+  - name: pcsc-lite
+    category: sys-apps
+    version: '>=0'
+  - name: bc
+    category: sys-devel
+    version: '>=0'
+  - name: cracklib
+    category: sys-libs
+    version: '>=0'
+  - name: mtdev
+    category: sys-libs
+    version: '>=0'
+  - name: slang
+    category: sys-libs
+    version: '>=0'
+  - name: upower
+    category: sys-power
+    version: '>=0'
+  - name: libusb
+    category: virtual
+    version: '>=0'
+  - name: opengl
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Bzip2
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Zlib
+    category: virtual
+    version: '>=0'
+  - name: perl-File-Path
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Compress
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Socket-IP
+    category: virtual
+    version: '>=0'
+  - name: perl-MIME-Base64
+    category: virtual
+    version: '>=0'
+  - name: perl-parent
+    category: virtual
+    version: '>=0'
+  - name: perl-Socket
+    category: virtual
+    version: '>=0'
+  - name: perl-Storable
+    category: virtual
+    version: '>=0'
+  - name: perl-Sys-Syslog
+    category: virtual
+    version: '>=0'
+  - name: perl-Test-Simple
+    category: virtual
+    version: '>=0'
+  - name: perl-Time-HiRes
+    category: virtual
+    version: '>=0'
+  - name: perl-Time-Local
+    category: virtual
+    version: '>=0'
+  - name: perl-XSLoader
+    category: virtual
+    version: '>=0'
+  - name: tex-base
+    category: virtual
+    version: '>=0'
+  - name: iceauth
+    category: x11-apps
+    version: '>=0'
+  - name: rgb
+    category: x11-apps
+    version: '>=0'
+  - name: sessreg
+    category: x11-apps
+    version: '>=0'
+  - name: setxkbmap
+    category: x11-apps
+    version: '>=0'
+  - name: xauth
+    category: x11-apps
+    version: '>=0'
+  - name: xconsole
+    category: x11-apps
+    version: '>=0'
+  - name: xdm
+    category: x11-apps
+    version: '>=0'
+  - name: xhost
+    category: x11-apps
+    version: '>=0'
+  - name: xinit
+    category: x11-apps
+    version: '>=0'
+  - name: xkbcomp
+    category: x11-apps
+    version: '>=0'
+  - name: xprop
+    category: x11-apps
+    version: '>=0'
+  - name: xrdb
+    category: x11-apps
+    version: '>=0'
+  - name: xset
+    category: x11-apps
+    version: '>=0'
+  - name: xsm
+    category: x11-apps
+    version: '>=0'
+  - name: xorg-drivers
+    category: x11-base
+    version: '>=0'
+  - name: xorg-server
+    category: x11-base
+    version: '>=0'
+  - name: xf86-input-evdev
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-joystick
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-libinput
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-mtrack
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-synaptics
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-vmmouse
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-void
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-input-wacom
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-amdgpu
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-ast
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-ati
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-dummy
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-fbdev
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-glint
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-intel
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-nouveau
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-nv
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-openchrome
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-qxl
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-r128
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-siliconmotion
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-vesa
+    category: x11-drivers
+    version: '>=0'
+  - name: xf86-video-vmware
+    category: x11-drivers
+    version: '>=0'
+  - name: libfontenc
+    category: x11-libs
+    version: '>=0'
+  - name: libwnck
+    category: x11-libs
+    version: '>=0'
+  - name: libXaw
+    category: x11-libs
+    version: '>=0'
+  - name: libXfont2
+    category: x11-libs
+    version: '>=0'
+  - name: libXinerama
+    category: x11-libs
+    version: '>=0'
+  - name: libxkbcommon
+    category: x11-libs
+    version: '>=0'
+  - name: libxkbfile
+    category: x11-libs
+    version: '>=0'
+  - name: libxklavier
+    category: x11-libs
+    version: '>=0'
+  - name: libXmu
+    category: x11-libs
+    version: '>=0'
+  - name: libXpm
+    category: x11-libs
+    version: '>=0'
+  - name: libXres
+    category: x11-libs
+    version: '>=0'
+  - name: libXScrnSaver
+    category: x11-libs
+    version: '>=0'
+  - name: libXtst
+    category: x11-libs
+    version: '>=0'
+  - name: libXv
+    category: x11-libs
+    version: '>=0'
+  - name: libXvMC
+    category: x11-libs
+    version: '>=0'
+  - name: startup-notification
+    category: x11-libs
+    version: '>=0'
+  - name: vte
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-cursor
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-image
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-keysyms
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-renderutil
+    category: x11-libs
+    version: '>=0'
+  - name: xcb-util-wm
+    category: x11-libs
+    version: '>=0'
+  - name: notification-daemon
+    category: x11-misc
+    version: '>=0'
+  - name: util-macros
+    category: x11-misc
+    version: '>=0'
+  - name: xbitmaps
+    category: x11-misc
+    version: '>=0'
+  - name: xdg-user-dirs
+    category: x11-misc
+    version: '>=0'
+  - name: xdg-user-dirs-gtk
+    category: x11-misc
+    version: '>=0'
+  - name: xdg-utils
+    category: x11-misc
+    version: '>=0'
+  - name: xkeyboard-config
+    category: x11-misc
+    version: '>=0'
+  - name: sound-theme-freedesktop
+    category: x11-themes
+    version: '>=0'
