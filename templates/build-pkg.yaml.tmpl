@@ -1,7 +1,3 @@
-requires:
-- category: "development"
-  name: "mocaccino-portage-layer"
-  version: ">=0"
 package_dir: /{{ .Values.name }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
