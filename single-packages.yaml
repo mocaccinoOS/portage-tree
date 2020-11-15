@@ -1,0 +1,21 @@
+#include_files:
+#  - artefacts/file1.yml
+
+skipped_resolutions:
+  packages:
+    - name: elt-patches
+      category: app-portage
+
+    - name: automake
+      category: sys-devel
+
+  categories:
+    - virtual
+    - app-i18n
+
+build_template_file: templates/build-pkg.yaml.tmpl
+
+artefacts:
+- tree: multi-arch/packages/atoms
+  packages:
+    - app-emulation/lxc
