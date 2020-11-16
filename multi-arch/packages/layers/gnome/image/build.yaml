@@ -1,0 +1,5 @@
+unpack: true
+requires:
+- category: "layers"
+  name: "gnome"
+  version: ">=0"
