@@ -10,9 +10,9 @@ images=($(echo $IMAGES_DATA | jq -r '.packages[].image' ))
 if [[ "${#images[@]}" == "1" ]];then
 packages_before=()
 else
-packages_before=( $(docker run --rm ${images[-2]} qlist -IC) )
+packages_before=( $(docker run --rm ${images[-2]} qlist -ISC) )
 fi
-packages_after=( $(docker run --rm ${images[-1]} qlist -IC) )
+packages_after=( $(docker run --rm ${images[-1]} qlist -ICS) )
 
 IFS=/ read -a p <<< $PACK
 
@@ -29,17 +29,25 @@ p=0
 for i in ${packages_after[@]};
 do
 
+  local name$(pkgs-checker pkg info $i --json | jq '.name' -r)
+  local cat=$(pkgs-checker pkg info $i --json | jq '.category' -r)
+  local slot=$(pkgs-checker pkg info $i --json | jq '.slot' -r)
+  # Ignore sub-slot for now.
+  slot=$(echo "${slot}" | sed 's:/.*::g')
 
-echo "Adding $i"
-IFS=/ read -a package <<< $i
+  if [[ "${cat}" == "acct-group" ]] || [[ "${cat}" == "acct-user" ]];then
+    continue
+  fi
 
-if [[ "${package[0]}" == "acct-group" ]] || [[ "${package[0]}" == "acct-user" ]];then
-continue
-fi
+  if [ "$slot" != "0" ] ; then
+    cat="${cat}-${slot}"
+  fi
 
-yq w -i $path/definition.yaml "provides[$p].name" "${package[1]}"
-yq w -i $path/definition.yaml "provides[$p].category" "${package[0]}"
-yq w -i $path/definition.yaml "provides[$p].version" ">=0"
+  echo "Adding ${cat}/${name} ($i)"
 
-p=$((p+1))
+  yq w -i $path/definition.yaml "provides[$p].name" "${name}"
+  yq w -i $path/definition.yaml "provides[$p].category" "${cat}"
+  yq w -i $path/definition.yaml "provides[$p].version" ">=0"
+
+  p=$((p+1))
 done
