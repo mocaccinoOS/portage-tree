@@ -3,3 +3,7 @@ requires:
 - category: "layers"
   name: "gnome"
   version: ">=0"
+excludes:
+- ^/sys
+- ^/proc
+- ^/dev
