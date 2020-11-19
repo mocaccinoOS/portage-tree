@@ -3,7 +3,7 @@
 packages=()
 
 #set -ex
-IMAGES_DATA=$(luet tree images --tree=$COMMON_TREE --image-repository $REPO_CACHE --tree=$TREE $PACK -o json)
+IMAGES_DATA=$(luet tree images -t $COMMON_TREE --image-repository $REPO_CACHE -t $TREE $PACK -o json)
 PKG_LIST=$(luet tree pkglist --tree $TREE --tree=$COMMON_TREE -o json)
 images=($(echo $IMAGES_DATA | jq -r '.packages[].image' ))
 

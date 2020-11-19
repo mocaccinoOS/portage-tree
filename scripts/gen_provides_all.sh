@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKG_LIST=$(luet tree pkglist --tree $TREE --tree=$COMMON_TREE -o json)
+PKG_LIST=$(luet tree pkglist -t $TREE -t $COMMON_TREE -o json)
 
 for i in $(echo "$PKG_LIST" | jq -r '.packages[].path'); do
     PACKAGE_PATH=$i
