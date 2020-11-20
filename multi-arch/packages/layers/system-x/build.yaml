@@ -32,3 +32,5 @@ excludes:
 - ^/var/log
 - ^/var/cache/edb
 - ^/usr/portage
+- ^/sys
+- ^/proc
