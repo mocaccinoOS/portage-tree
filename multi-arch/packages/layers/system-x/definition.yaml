@@ -4,10 +4,10 @@ category: layers
 provides:
   - name: at-spi2-atk
     version: '>=0'
-    category: app-accessibility
+    category: app-accessibility-2
   - name: at-spi2-core
     version: '>=0'
-    category: app-accessibility
+    category: app-accessibility-2
   - name: argon2
     version: '>=0'
     category: app-crypt
@@ -38,30 +38,36 @@ provides:
   - name: asciidoc
     version: '>=0'
     category: app-text
+  - name: docbook-xml-dtd
+    version: '>=0'
+    category: app-text-4.3
   - name: sqlite
     version: '>=0'
-    category: dev-db
+    category: dev-db-3
   - name: nasm
     version: '>=0'
     category: dev-lang
+  - name: python
+    version: '>=0'
+    category: dev-lang-3.9
   - name: ruby
     version: '>=0'
-    category: dev-lang
+    category: dev-lang-2.6
   - name: ruby
     version: '>=0'
-    category: dev-lang
+    category: dev-lang-2.5
   - name: rust
     version: '>=0'
-    category: dev-lang
+    category: dev-lang-stable
   - name: spidermonkey
     version: '>=0'
-    category: dev-lang
+    category: dev-lang-78
   - name: tcl
     version: '>=0'
     category: dev-lang
   - name: vala
     version: '>=0'
-    category: dev-lang
+    category: dev-lang-0.48
   - name: atk
     version: '>=0'
     category: dev-libs
@@ -79,7 +85,7 @@ provides:
     category: dev-libs
   - name: glib
     version: '>=0'
-    category: dev-libs
+    category: dev-libs-2
   - name: gobject-introspection
     version: '>=0'
     category: dev-libs
@@ -118,7 +124,7 @@ provides:
     category: dev-libs
   - name: lzo
     version: '>=0'
-    category: dev-libs
+    category: dev-libs-2
   - name: nspr
     version: '>=0'
     category: dev-libs
@@ -157,25 +163,25 @@ provides:
     category: dev-python
   - name: bundler
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-2
   - name: did_you_mean
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-2.6
   - name: did_you_mean
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-2.5
   - name: json
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-2
   - name: kpeg
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-1
   - name: minitest
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-5
   - name: net-telnet
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-1
   - name: power_assert
     version: '>=0'
     category: dev-ruby
@@ -193,13 +199,13 @@ provides:
     category: dev-ruby
   - name: test-unit
     version: '>=0'
-    category: dev-ruby
+    category: dev-ruby-2
   - name: xmlrpc
     version: '>=0'
     category: dev-ruby
   - name: guile
     version: '>=0'
-    category: dev-scheme
+    category: dev-scheme-12
   - name: boost-build
     version: '>=0'
     category: dev-util
@@ -238,7 +244,7 @@ provides:
     category: gnome-base
   - name: librsvg
     version: '>=0'
-    category: gnome-base
+    category: gnome-base-2
   - name: croscorefonts
     version: '>=0'
     category: media-fonts
@@ -247,13 +253,13 @@ provides:
     category: media-gfx
   - name: fontconfig
     version: '>=0'
-    category: media-libs
+    category: media-libs-1.0
   - name: fontconfig-infinality
     version: '>=0'
     category: media-libs
   - name: freetype
     version: '>=0'
-    category: media-libs
+    category: media-libs-2
   - name: giflib
     version: '>=0'
     category: media-libs
@@ -302,21 +308,24 @@ provides:
   - name: thin-provisioning-tools
     version: '>=0'
     category: sys-block
+  - name: autoconf
+    version: '>=0'
+    category: sys-devel-2.1
   - name: autogen
     version: '>=0'
     category: sys-devel
   - name: clang
     version: '>=0'
-    category: sys-devel
+    category: sys-devel-10
   - name: clang-common
     version: '>=0'
     category: sys-devel
   - name: clang-runtime
     version: '>=0'
-    category: sys-devel
+    category: sys-devel-10.0.1
   - name: llvm
     version: '>=0'
-    category: sys-devel
+    category: sys-devel-10
   - name: llvm-common
     version: '>=0'
     category: sys-devel
@@ -331,10 +340,10 @@ provides:
     category: sys-libs
   - name: compiler-rt
     version: '>=0'
-    category: sys-libs
+    category: sys-libs-10.0.1
   - name: compiler-rt-sanitizers
     version: '>=0'
-    category: sys-libs
+    category: sys-libs-10.0.1
   - name: libcap-ng
     version: '>=0'
     category: sys-libs
@@ -391,13 +400,13 @@ provides:
     category: x11-libs
   - name: gdk-pixbuf
     version: '>=0'
-    category: x11-libs
+    category: x11-libs-2
   - name: gtk+
     version: '>=0'
-    category: x11-libs
+    category: x11-libs-3
   - name: gtk+
     version: '>=0'
-    category: x11-libs
+    category: x11-libs-2
   - name: libdrm
     version: '>=0'
     category: x11-libs
@@ -494,15 +503,6 @@ provides:
   - name: hicolor-icon-theme
     version: '>=0'
     category: x11-themes
-  - name: libaio
-    version: '>=0'
-    category: dev-libs
-  - name: libassuan
-    version: '>=0'
-    category: dev-libs
-  - name: libatasmart
-    version: '>=0'
-    category: dev-libs
   - name: libatomic_ops
     version: '>=0'
     category: dev-libs
