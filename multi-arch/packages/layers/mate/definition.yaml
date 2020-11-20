@@ -28,7 +28,7 @@ provides:
     category: app-text
     version: '>=0'
   - name: scrollkeeper-dtd
-    category: app-text
+    category: app-text-1.0
     version: '>=0'
   - name: libmateweather
     category: dev-libs
@@ -55,7 +55,7 @@ provides:
     category: dev-perl
     version: '>=0'
   - name: gucharmap
-    category: gnome-extra
+    category: gnome-extra-2.90
     version: '>=0'
   - name: caja
     category: mate-base
@@ -139,7 +139,7 @@ provides:
     category: x11-apps
     version: '>=0'
   - name: gtksourceview
-    category: x11-libs
+    category: x11-libs-3.0
     version: '>=0'
   - name: libfakekey
     category: x11-libs
@@ -157,7 +157,7 @@ provides:
     category: x11-terms
     version: '>=0'
   - name: gtk-engines
-    category: x11-themes
+    category: x11-themes-2
     version: '>=0'
   - name: gtk-engines-murrine
     category: x11-themes
