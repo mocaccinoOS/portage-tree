@@ -4,7 +4,3 @@ name: "gnome-image"
 version: "3.36.5+5"
 labels:
   emerge.jobs: "1"
-requires:
-  - category: "layers"
-    name: "gnome"
-    version: ">=0"
