@@ -54,14 +54,29 @@ provides:
   - name: tracker-miners
     category: app-misc
     version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text-4.4
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text-4.2
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text-4.1
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text-4.0
+    version: '>=0'
+  - name: docbook-sgml-dtd
+    category: app-text-3.1
+    version: '>=0'
   - name: docbook-sgml-utils
     category: app-text
     version: '>=0'
   - name: docbook-xml-simple-dtd
-    category: app-text
+    category: app-text-4.1.2.4
     version: '>=0'
   - name: docbook-xml-simple-dtd
-    category: app-text
+    category: app-text-1.0
     version: '>=0'
   - name: evince
     category: app-text
@@ -70,10 +85,16 @@ provides:
     category: app-text
     version: '>=0'
   - name: luajit
-    category: dev-lang
+    category: dev-lang-2
+    version: '>=0'
+  - name: python
+    category: dev-lang-2.7
     version: '>=0'
   - name: sassc
     category: dev-lang
+    version: '>=0'
+  - name: spidermonkey
+    category: dev-lang-68
     version: '>=0'
   - name: appstream-glib
     category: dev-libs
@@ -91,13 +112,13 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libgee
-    category: dev-libs
+    category: dev-libs-0.8
     version: '>=0'
   - name: libgusb
     category: dev-libs
     version: '>=0'
   - name: libgweather
-    category: dev-libs
+    category: dev-libs-2
     version: '>=0'
   - name: liblouis
     category: dev-libs
@@ -142,7 +163,7 @@ provides:
     category: dev-python
     version: '>=0'
   - name: gst-python
-    category: dev-python
+    category: dev-python-1.0
     version: '>=0'
   - name: pyatspi
     category: dev-python
@@ -157,28 +178,28 @@ provides:
     category: dev-python
     version: '>=0'
   - name: sysprof-capture
-    category: dev-util
+    category: dev-util-3
     version: '>=0'
   - name: gdm
     category: gnome-base
     version: '>=0'
   - name: gnome
-    category: gnome-base
+    category: gnome-base-2.0
     version: '>=0'
   - name: gnome-control-center
-    category: gnome-base
+    category: gnome-base-2
     version: '>=0'
   - name: gnome-core-apps
-    category: gnome-base
+    category: gnome-base-3.0
     version: '>=0'
   - name: gnome-core-libs
-    category: gnome-base
+    category: gnome-base-3.0
     version: '>=0'
   - name: gnome-desktop
-    category: gnome-base
+    category: gnome-base-3
     version: '>=0'
   - name: gnome-menus
-    category: gnome-base
+    category: gnome-base-3
     version: '>=0'
   - name: gnome-session
     category: gnome-base
@@ -229,49 +250,49 @@ provides:
     category: gnome-extra
     version: '>=0'
   - name: amtk
-    category: gui-libs
+    category: gui-libs-5
     version: '>=0'
   - name: libhandy
-    category: gui-libs
+    category: gui-libs-0.0
     version: '>=0'
   - name: tepl
-    category: gui-libs
+    category: gui-libs-4
     version: '>=0'
   - name: cantarell
     category: media-fonts
     version: '>=0'
   - name: eog
-    category: media-gfx
+    category: media-gfx-1
     version: '>=0'
   - name: exiv2
     category: media-gfx
     version: '>=0'
   - name: clutter
-    category: media-libs
+    category: media-libs-1.0
     version: '>=0'
   - name: clutter-gst
-    category: media-libs
+    category: media-libs-3.0
     version: '>=0'
   - name: clutter-gtk
-    category: media-libs
+    category: media-libs-1.0
     version: '>=0'
   - name: cogl
-    category: media-libs
+    category: media-libs-1.0
     version: '>=0'
   - name: gexiv2
     category: media-libs
     version: '>=0'
   - name: grilo
-    category: media-libs
+    category: media-libs-0.3
     version: '>=0'
   - name: gsound
     category: media-libs
     version: '>=0'
   - name: gupnp-dlna
-    category: media-libs
+    category: media-libs-2.0
     version: '>=0'
   - name: libmediaart
-    category: media-libs
+    category: media-libs-2.0
     version: '>=0'
   - name: libquvi
     category: media-libs
@@ -280,7 +301,7 @@ provides:
     category: media-libs
     version: '>=0'
   - name: musicbrainz
-    category: media-libs
+    category: media-libs-5
     version: '>=0'
   - name: sbc
     category: media-libs
@@ -295,10 +316,10 @@ provides:
     category: media-plugins
     version: '>=0'
   - name: grilo-plugins
-    category: media-plugins
+    category: media-plugins-0.3
     version: '>=0'
   - name: gst-plugins-taglib
-    category: media-plugins
+    category: media-plugins-1.0
     version: '>=0'
   - name: gsm
     category: media-sound
@@ -316,10 +337,10 @@ provides:
     category: net-im
     version: '>=0'
   - name: dleyna-connector-dbus
-    category: net-libs
+    category: net-libs-1.0
     version: '>=0'
   - name: dleyna-core
-    category: net-libs
+    category: net-libs-1.0
     version: '>=0'
   - name: gssdp
     category: net-libs
@@ -358,7 +379,7 @@ provides:
     category: net-print
     version: '>=0'
   - name: gnome-bluetooth
-    category: net-wireless
+    category: net-wireless-2
     version: '>=0'
   - name: geocode-glib
     category: sci-geosciences
@@ -388,7 +409,7 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: gtksourceview
-    category: x11-libs
+    category: x11-libs-4
     version: '>=0'
   - name: colord
     category: x11-misc
