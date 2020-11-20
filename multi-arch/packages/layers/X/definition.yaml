@@ -94,13 +94,13 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libnl
-    category: dev-libs
+    category: dev-libs-3
     version: '>=0'
   - name: libpwquality
     category: dev-libs
     version: '>=0'
   - name: libusb
-    category: dev-libs
+    category: dev-libs-1
     version: '>=0'
   - name: libwacom
     category: dev-libs
@@ -340,7 +340,7 @@ provides:
     category: dev-python
     version: '>=0'
   - name: pygobject
-    category: dev-python
+    category: dev-python-3
     version: '>=0'
   - name: bibtexu
     category: dev-tex
@@ -367,28 +367,28 @@ provides:
     category: media-libs
     version: '>=0'
   - name: gd
-    category: media-libs
+    category: media-libs-2
     version: '>=0'
   - name: graphene
     category: media-libs
     version: '>=0'
   - name: gst-plugins-bad
-    category: media-libs
+    category: media-libs-1.0
     version: '>=0'
   - name: gst-plugins-base
-    category: media-libs
+    category: media-libs-1.0
     version: '>=0'
   - name: gst-plugins-good
-    category: media-libs
+    category: media-libs-1.0
     version: '>=0'
   - name: gstreamer
-    category: media-libs
+    category: media-libs-1.0
     version: '>=0'
   - name: jbig2dec
     category: media-libs
     version: '>=0'
   - name: lcms
-    category: media-libs
+    category: media-libs-2
     version: '>=0'
   - name: libcanberra
     category: media-libs
@@ -415,7 +415,7 @@ provides:
     category: media-libs
     version: '>=0'
   - name: openjpeg
-    category: media-libs
+    category: media-libs-2
     version: '>=0'
   - name: opus
     category: media-libs
@@ -424,13 +424,13 @@ provides:
     category: media-libs
     version: '>=0'
   - name: gst-plugins-libmms
-    category: media-plugins
+    category: media-plugins-1.0
     version: '>=0'
   - name: gst-plugins-meta
-    category: media-plugins
+    category: media-plugins-1.0
     version: '>=0'
   - name: gst-plugins-soup
-    category: media-plugins
+    category: media-plugins-1.0
     version: '>=0'
   - name: linux-atm
     category: net-dialup
@@ -472,7 +472,7 @@ provides:
     category: net-libs
     version: '>=0'
   - name: libsoup
-    category: net-libs
+    category: net-libs-2.4
     version: '>=0'
   - name: dhcp
     category: net-misc
@@ -532,7 +532,7 @@ provides:
     category: sys-power
     version: '>=0'
   - name: libusb
-    category: virtual
+    category: virtual-1
     version: '>=0'
   - name: opengl
     category: virtual
@@ -703,7 +703,7 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: libwnck
-    category: x11-libs
+    category: x11-libs-3
     version: '>=0'
   - name: libXaw
     category: x11-libs
@@ -748,7 +748,7 @@ provides:
     category: x11-libs
     version: '>=0'
   - name: vte
-    category: x11-libs
+    category: x11-libs-2.91
     version: '>=0'
   - name: xcb-util
     category: x11-libs
