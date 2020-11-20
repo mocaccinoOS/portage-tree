@@ -29,9 +29,9 @@ p=0
 for i in ${packages_after[@]};
 do
 
-  local name$(pkgs-checker pkg info $i --json | jq '.name' -r)
-  local cat=$(pkgs-checker pkg info $i --json | jq '.category' -r)
-  local slot=$(pkgs-checker pkg info $i --json | jq '.slot' -r)
+  name=$(pkgs-checker pkg info $i --json | jq '.name' -r)
+  cat=$(pkgs-checker pkg info $i --json | jq '.category' -r)
+  slot=$(pkgs-checker pkg info $i --json | jq '.slot' -r)
   # Ignore sub-slot for now.
   slot=$(echo "${slot}" | sed 's:/.*::g')
 
