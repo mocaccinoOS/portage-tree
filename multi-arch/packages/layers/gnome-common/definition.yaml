@@ -16,7 +16,7 @@ provides:
     category: app-eselect
     version: '>=0'
   - name: geoclue
-    category: app-misc
+    category: app-misc-2.0
     version: '>=0'
   - name: libimobiledevice
     category: app-pda
@@ -34,10 +34,10 @@ provides:
     category: app-text
     version: '>=0'
   - name: docbook-sgml-dtd
-    category: app-text
+    category: app-text-4.5
     version: '>=0'
   - name: docbook-sgml-dtd
-    category: app-text
+    category: app-text-3.0
     version: '>=0'
   - name: docbook-xsl-ns-stylesheets
     category: app-text
@@ -52,16 +52,16 @@ provides:
     category: dev-cpp
     version: '>=0'
   - name: glibmm
-    category: dev-cpp
+    category: dev-cpp-2
     version: '>=0'
   - name: gtkmm
-    category: dev-cpp
+    category: dev-cpp-3.0
     version: '>=0'
   - name: mm-common
     category: dev-cpp
     version: '>=0'
   - name: pangomm
-    category: dev-cpp
+    category: dev-cpp-1.4
     version: '>=0'
   - name: hyphen
     category: dev-libs
@@ -73,19 +73,19 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: libsigc++
-    category: dev-libs
+    category: dev-libs-2
     version: '>=0'
   - name: gtk-doc
     category: dev-util
     version: '>=0'
   - name: gnome-common
-    category: gnome-base
+    category: gnome-base-3
     version: '>=0'
   - name: gvfs
     category: gnome-base
     version: '>=0'
   - name: libgtop
-    category: gnome-base
+    category: gnome-base-2
     version: '>=0'
   - name: yelp-xsl
     category: gnome-extra
@@ -97,7 +97,7 @@ provides:
     category: media-libs
     version: '>=0'
   - name: gst-plugins-opus
-    category: media-plugins
+    category: media-plugins-1.0
     version: '>=0'
   - name: libnfs
     category: net-fs
@@ -106,10 +106,10 @@ provides:
     category: net-libs
     version: '>=0'
   - name: rest
-    category: net-libs
+    category: net-libs-0.7
     version: '>=0'
   - name: webkit-gtk
-    category: net-libs
+    category: net-libs-4
     version: '>=0'
   - name: bubblewrap
     category: sys-apps
