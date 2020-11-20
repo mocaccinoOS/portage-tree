@@ -19,7 +19,7 @@ provides:
     category: dev-libs
     version: '>=0'
   - name: cyrus-sasl
-    category: dev-libs
+    category: dev-libs-2
     version: '>=0'
   - name: libatasmart
     category: dev-libs
@@ -106,13 +106,13 @@ provides:
     category: sys-block
     version: '>=0'
   - name: fuse
-    category: sys-fs
+    category: sys-fs-3
     version: '>=0'
   - name: fuse-common
     category: sys-fs
     version: '>=0'
   - name: udisks
-    category: sys-fs
+    category: sys-fs-2
     version: '>=0'
   - name: ldb
     category: sys-libs
