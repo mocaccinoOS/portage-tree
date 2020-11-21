@@ -1,0 +1,14 @@
+#skipped_resolutions:
+#  categories:
+#    - virtual
+#    - app-i18n
+
+artefacts:
+- tree: multi-arch/packages/atoms/sys-process
+  packages:
+    - sys-process/atop
+    - sys-process/cronie
+    - sys-process/dcron
+    - sys-process/htop
+    - sys-process/iotop
+    - sys-process/lsof
