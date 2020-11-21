@@ -14,9 +14,9 @@ skipped_resolutions:
     - virtual
     - app-i18n
 
-build_template_file: templates/build-pkg.yaml.tmpl
+build_template_file: ../templates/build-pkg.yaml.tmpl
 
-artefacts:
-- tree: multi-arch/packages/atoms
-  packages:
-    - app-emulation/lxc
+#artefacts:
+#- tree: multi-arch/packages/atoms
+#  packages:
+#    - app-emulation/lxc

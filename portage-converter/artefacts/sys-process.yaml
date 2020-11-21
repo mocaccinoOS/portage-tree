@@ -4,11 +4,11 @@
 #    - app-i18n
 
 artefacts:
-- tree: multi-arch/packages/atoms/sys-process
+- tree: multi-arch/packages/atoms
   packages:
     - sys-process/atop
     - sys-process/cronie
-    - sys-process/dcron
+#    - sys-process/dcron
     - sys-process/htop
     - sys-process/iotop
     - sys-process/lsof

@@ -2,3 +2,8 @@
 #  categories:
 #    - virtual
 #    - app-i18n
+
+artefacts:
+- tree: multi-arch/packages/atoms
+  packages:
+    - app-portage/eix
