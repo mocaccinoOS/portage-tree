@@ -4,3 +4,4 @@ requires:
   version: ">=0"
 steps:
 - cp -rf package.use /etc/portage/
+- cp -rf make.conf /etc/portage/
