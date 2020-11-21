@@ -347,9 +347,6 @@ provides:
   - name: compiler-rt-sanitizers
     version: '>=0'
     category: sys-libs-10.0.1
-  - name: libcap-ng
-    version: '>=0'
-    category: sys-libs
   - name: libomp
     version: '>=0'
     category: sys-libs
