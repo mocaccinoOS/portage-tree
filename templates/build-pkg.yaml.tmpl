@@ -10,7 +10,7 @@ prelude:
 - emerge -j ${JOBS} --onlydeps {{ ( index .Values.labels "emerge.packages" ) }}
 steps:
 - emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
-- curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
+- curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - luet install repository/mocaccino-extra-stable system/luet-extensions
 - luet install dev-util/pkgs-checker-minimal utils/jq
 - |
