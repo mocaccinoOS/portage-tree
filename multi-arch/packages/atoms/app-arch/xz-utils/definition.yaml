@@ -1,6 +1,7 @@
 name: xz-utils
-version: "5.2.5+1"
+version: "5.2.5+2"
 category: app-arch
 labels:
   original.package.name: app-arch/xz-utils
   original.package.version: 5.2.5
+  emerge.packages: "app-arch/xz-utils"
