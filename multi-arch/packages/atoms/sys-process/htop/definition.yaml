@@ -1,0 +1,11 @@
+name: htop
+version: "2.2.0"
+category: sys-process
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  original.package.name: sys-process/htop
+  original.package.version: 2.2.0
+  emerge.packages: "sys-process/htop"
