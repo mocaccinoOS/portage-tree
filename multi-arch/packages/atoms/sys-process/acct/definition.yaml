@@ -1,5 +1,5 @@
 name: acct
-version: "6.6.4"
+version: "6.6.4+1"
 category: sys-process
 labels:
   original.package.name: sys-process/acct
