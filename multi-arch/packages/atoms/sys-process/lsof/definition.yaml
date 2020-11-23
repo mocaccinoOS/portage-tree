@@ -1,0 +1,11 @@
+name: lsof
+version: "4.93.2"
+category: sys-process
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  original.package.name: sys-process/lsof
+  original.package.version: 4.93.2-r1
+  emerge.packages: "sys-process/lsof"
