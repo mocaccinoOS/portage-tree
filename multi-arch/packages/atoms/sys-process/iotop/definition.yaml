@@ -1,5 +1,5 @@
 name: iotop
-version: "0.6"
+version: "0.6+1"
 category: sys-process
 requires:
 - name: python-exec
