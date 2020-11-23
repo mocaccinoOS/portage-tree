@@ -1,0 +1,14 @@
+name: iotop
+version: "0.6"
+category: sys-process
+requires:
+- name: python-exec
+  version: '>=2'
+  category: dev-lang-2
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  original.package.name: sys-process/iotop
+  original.package.version: "0.6"
+  emerge.packages: "sys-process/iotop"
