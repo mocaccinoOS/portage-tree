@@ -7,6 +7,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_NOLOCK=true
 prelude:
 - emerge -j ${JOBS} --onlydeps {{ ( index .Values.labels "emerge.packages" ) }}
 package_dir: /{{ .Values.name }}
