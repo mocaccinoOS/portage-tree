@@ -1,5 +1,5 @@
 name: cronie
-version: 1.5.5
+version: "1.5.5+1"
 category: sys-process
 requires:
 - name: system-x
