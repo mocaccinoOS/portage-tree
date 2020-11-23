@@ -7,3 +7,4 @@ excludes:
 - ^/sys
 - ^/proc
 - ^/dev
+- ^/var/cache/distfiles
