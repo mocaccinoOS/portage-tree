@@ -1,5 +1,5 @@
 name: bzip2
-version: "1.0.6+3"
+version: "1.0.6+4"
 category: app-arch
 labels:
   original.package.name: app-arch/bzip2
