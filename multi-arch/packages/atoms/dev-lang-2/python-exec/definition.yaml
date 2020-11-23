@@ -1,0 +1,7 @@
+name: python-exec
+version: "2.4.6"
+category: dev-lang-2
+labels:
+  original.package.name: dev-lang/python-exec
+  original.package.version: 2.4.6-r2
+  emerge.packages: "dev-lang/python-exec"
