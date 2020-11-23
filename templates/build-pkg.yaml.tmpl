@@ -16,4 +16,5 @@ steps:
 - luet install repository/mocaccino-extra-stable system/luet-extensions
 - luet install dev-util/pkgs-checker-minimal utils/jq
 - |
+  mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
