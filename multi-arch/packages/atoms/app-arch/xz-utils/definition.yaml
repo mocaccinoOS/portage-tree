@@ -1,5 +1,5 @@
 name: xz-utils
-version: "5.2.5+5"
+version: "5.2.5+6"
 category: app-arch
 labels:
   original.package.name: app-arch/xz-utils
