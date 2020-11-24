@@ -9,6 +9,7 @@ steps:
 env:
 - LUET_NOLOCK=true
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs/
+- LUET_YES=true
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 prelude:
 - emerge -j ${JOBS} --onlydeps {{ ( index .Values.labels "emerge.packages" ) }}
