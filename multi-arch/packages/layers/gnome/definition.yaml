@@ -1,6 +1,6 @@
 category: "layers"
 name: "gnome"
-version: "3.36.5+5"
+version: "3.36.5+6"
 labels:
   emerge.jobs: "1"
   emerge.packages: "=gnome-base/gnome-3.36.5"
