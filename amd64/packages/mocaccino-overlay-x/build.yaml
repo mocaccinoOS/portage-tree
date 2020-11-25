@@ -5,3 +5,4 @@ requires:
 steps:
 - cp -rf package.use /etc/portage/
 - cp -rf make.conf /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
