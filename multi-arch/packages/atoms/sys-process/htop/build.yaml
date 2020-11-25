@@ -15,9 +15,6 @@ prelude:
 - emerge -j ${JOBS} --onlydeps {{ ( index .Values.labels "emerge.packages" ) }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
-  version: '>=0'
-  category: dev-lang
 - name: system-x
   version: '>=0'
   category: layers
