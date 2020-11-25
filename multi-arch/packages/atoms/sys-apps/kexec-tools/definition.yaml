@@ -1,0 +1,11 @@
+name: kexec-tools
+version: "2.0.20"
+category: sys-apps
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: sys-apps/kexec-tools
+  original.package.name: sys-apps/kexec-tools
+  original.package.version: 2.0.20-r3
