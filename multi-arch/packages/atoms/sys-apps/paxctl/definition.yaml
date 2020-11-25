@@ -1,0 +1,7 @@
+name: paxctl
+version: "0.9"
+category: sys-apps
+labels:
+  emerge.packages: sys-apps/paxctl
+  original.package.name: sys-apps/paxctl
+  original.package.version: "0.9"
