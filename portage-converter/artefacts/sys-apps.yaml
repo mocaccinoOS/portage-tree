@@ -1,0 +1,20 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  packages:
+    - sys-apps/ack
+    - sys-apps/ethtool
+    - sys-apps/dmidecode
+    - sys-apps/dog
+    - sys-apps/dnotify
+    - sys-apps/hdparm
+    - sys-apps/hwinfo
+    - sys-apps/ipmitool
+    - sys-apps/ipmiutil
+    - sys-apps/mlocate
+    - sys-apps/paxctl
+    - sys-apps/pcsc-lite
+    - sys-apps/kexec-tools
+    - sys-apps/usbmon
+    - sys-apps/usbredir
+    - sys-apps/usbutils
+

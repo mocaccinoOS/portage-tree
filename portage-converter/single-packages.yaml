@@ -1,6 +1,8 @@
 include_files:
 - artefacts/portage.yaml
+- artefacts/sys-apps.yaml
 - artefacts/sys-process.yaml
+- artefacts/www-client.yaml
 
 skipped_resolutions:
   packages:

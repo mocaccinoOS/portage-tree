@@ -1,0 +1,11 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  packages:
+    - www-client/chromium
+    - www-client/epiphany
+    - www-client/firefox
+    - www-client/google-chrome
+    - www-client/lynx
+    - www-client/opera
+    - www-client/vivaldi
+    - www-client/seamonkey
