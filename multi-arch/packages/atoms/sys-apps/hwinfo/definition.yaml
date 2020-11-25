@@ -1,0 +1,11 @@
+name: hwinfo
+version: "21.23"
+category: sys-apps
+requires:
+- name: libx86emu
+  version: '>=0'
+  category: dev-libs
+labels:
+  emerge.packages: sys-apps/hwinfo
+  original.package.name: sys-apps/hwinfo
+  original.package.version: "21.23"
