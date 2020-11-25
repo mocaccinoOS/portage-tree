@@ -1,0 +1,7 @@
+name: usbredir
+version: 0.8.0
+category: sys-apps
+labels:
+  emerge.packages: sys-apps/usbredir
+  original.package.name: sys-apps/usbredir
+  original.package.version: 0.8.0
