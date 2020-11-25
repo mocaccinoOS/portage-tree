@@ -1,0 +1,11 @@
+name: usbutils
+version: "012"
+category: sys-apps
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: sys-apps/usbutils
+  original.package.name: sys-apps/usbutils
+  original.package.version: "012"
