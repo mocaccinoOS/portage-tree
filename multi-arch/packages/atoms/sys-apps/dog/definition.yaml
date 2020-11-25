@@ -1,5 +1,5 @@
 name: dog
-version: 1.7
+version: "1.7"
 category: sys-apps
 labels:
   emerge.packages: sys-apps/dog
