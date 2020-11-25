@@ -1,0 +1,4 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  packages:
+    - x11-themes/gnome-themes-standard
