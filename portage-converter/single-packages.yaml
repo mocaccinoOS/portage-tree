@@ -3,6 +3,7 @@ include_files:
 - artefacts/sys-apps.yaml
 - artefacts/sys-process.yaml
 - artefacts/www-client.yaml
+- artefacts/x11-themes.yaml
 
 skipped_resolutions:
   packages:
