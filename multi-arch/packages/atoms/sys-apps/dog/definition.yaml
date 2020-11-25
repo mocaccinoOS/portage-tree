@@ -1,0 +1,7 @@
+name: dog
+version: 1.7
+category: sys-apps
+labels:
+  emerge.packages: sys-apps/dog
+  original.package.name: sys-apps/dog
+  original.package.version: 1.7-r6
