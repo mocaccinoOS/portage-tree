@@ -1,0 +1,7 @@
+name: libx86emu
+version: "1.1"
+category: dev-libs
+labels:
+  emerge.packages: dev-libs/libx86emu
+  original.package.name: dev-libs/libx86emu
+  original.package.version: "1.1"
