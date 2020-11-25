@@ -702,8 +702,7 @@ media-tv/mythtv -hls fftw
 media-video/avidemux qt5
 media-video/blinkensim aalib
 media-video/dvgrab quicktime
-virtual/ffmpeg threads ogg vhook faac faad amr cpudetection vpx jpeg2k -video_cards_nvidia
-media-video/ffmpeg threads ogg vhook faac faad fdk jpeg2k video_cards_nvidia amr cpudetection vidstab vpx webp -video_cards_nvidia
+media-video/ffmpeg X alsa amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal opengl opus postproc pulseaudio sdl speex svg test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib abi_x86_32
 media-video/jubler mplayer
 media-video/kino gstreamer quicktime
 media-video/mpv libmpv samba tools
