@@ -1,0 +1,23 @@
+name: google-chrome
+version: 86.0.4240.193
+category: www-client
+requires:
+- name: X
+  version: '>=0'
+  category: layers
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: ca-certificates
+  version: '>=0'
+  category: app-misc
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+labels:
+  emerge.packages: www-client/google-chrome
+  original.package.name: www-client/google-chrome
+  original.package.version: 86.0.4240.193
