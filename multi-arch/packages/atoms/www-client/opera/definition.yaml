@@ -1,0 +1,17 @@
+name: opera
+version: 71.0.3770.271
+category: www-client
+requires:
+- name: X
+  version: '>=0'
+  category: layers
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: expat
+  version: '>=0'
+  category: dev-libs
+labels:
+  emerge.packages: www-client/opera
+  original.package.name: www-client/opera
+  original.package.version: 71.0.3770.271
