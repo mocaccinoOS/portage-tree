@@ -1,0 +1,17 @@
+name: nodejs
+version: 14.15.0
+category: net-libs
+requires:
+- name: gnome-common
+  version: '>=0'
+  category: layers
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: c-ares
+  version: '>=1.16.1'
+  category: net-dns
+labels:
+  emerge.packages: net-libs/nodejs
+  original.package.name: net-libs/nodejs
+  original.package.version: 14.15.0
