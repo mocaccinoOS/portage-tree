@@ -1,0 +1,11 @@
+name: libdazzle
+version: 3.36.0
+category: dev-libs
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-libs/libdazzle
+  original.package.name: dev-libs/libdazzle
+  original.package.version: 3.36.0
