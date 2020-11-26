@@ -1,0 +1,7 @@
+name: cbindgen
+version: 0.15.0
+category: dev-util
+labels:
+  emerge.packages: dev-util/cbindgen
+  original.package.name: dev-util/cbindgen
+  original.package.version: 0.15.0
