@@ -1,0 +1,7 @@
+name: c-ares
+version: 1.16.1
+category: net-dns
+labels:
+  emerge.packages: net-dns/c-ares
+  original.package.name: net-dns/c-ares
+  original.package.version: 1.16.1
