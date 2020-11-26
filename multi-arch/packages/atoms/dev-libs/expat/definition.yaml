@@ -1,0 +1,7 @@
+name: expat
+version: 2.2.8
+category: dev-libs
+labels:
+  emerge.packages: dev-libs/expat
+  original.package.name: dev-libs/expat
+  original.package.version: 2.2.8
