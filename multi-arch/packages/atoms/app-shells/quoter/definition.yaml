@@ -1,0 +1,7 @@
+name: quoter
+version: "4.2"
+category: app-shells
+labels:
+  emerge.packages: app-shells/quoter
+  original.package.name: app-shells/quoter
+  original.package.version: "4.2"
