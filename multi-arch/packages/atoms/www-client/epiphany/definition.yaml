@@ -1,0 +1,29 @@
+name: epiphany
+version: 3.36.4
+category: www-client
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: gnome
+  version: '>=0'
+  category: layers
+- name: X
+  version: '>=0'
+  category: layers
+- name: libdazzle
+  version: '>=3.35.3'
+  category: dev-libs
+- name: gnome-common
+  version: '>=0'
+  category: layers
+- name: gmp
+  version: '>=0'
+  category: dev-libs
+- name: libxml2
+  version: '>=2.6.12'
+  category: dev-libs-2
+labels:
+  emerge.packages: www-client/epiphany
+  original.package.name: www-client/epiphany
+  original.package.version: 3.36.4
