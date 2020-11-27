@@ -1,5 +1,5 @@
 name: gmp
-version: 6.2.0
+version: "6.2.0+1"
 category: dev-libs
 labels:
   emerge.packages: dev-libs/gmp
