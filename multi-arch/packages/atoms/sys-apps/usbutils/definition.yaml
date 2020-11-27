@@ -1,5 +1,5 @@
 name: usbutils
-version: "012"
+version: "012+1"
 category: sys-apps
 requires:
 - name: system-x
