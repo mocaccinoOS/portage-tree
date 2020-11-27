@@ -1,5 +1,5 @@
 name: epiphany
-version: 3.36.4
+version: "3.36.4+1"
 category: www-client
 requires:
 - name: system-x
