@@ -1,0 +1,11 @@
+name: grsync
+version: 1.2.6
+category: x11-misc
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: x11-misc/grsync
+  original.package.name: x11-misc/grsync
+  original.package.version: 1.2.6
