@@ -1,0 +1,17 @@
+name: pinentry
+version: "1.1.0"
+category: app-crypt
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: libassuan
+  version: '>=2.1'
+  category: dev-libs
+- name: eselect-pinentry
+  version: '>=0'
+  category: app-eselect
+labels:
+  emerge.packages: app-crypt/pinentry
+  original.package.name: app-crypt/pinentry
+  original.package.version: 1.1.0-r3
