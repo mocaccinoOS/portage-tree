@@ -1,0 +1,14 @@
+name: synergy
+version: 2.0.0
+category: x11-misc
+requires:
+- name: X
+  version: '>=0'
+  category: layers
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: x11-misc/synergy
+  original.package.name: x11-misc/synergy
+  original.package.version: 2.0.0
