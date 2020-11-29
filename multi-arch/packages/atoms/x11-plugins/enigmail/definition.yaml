@@ -1,0 +1,14 @@
+name: enigmail
+version: "2.0.12"
+category: x11-plugins
+requires:
+- name: pinentry
+  version: '>=0'
+  category: app-crypt
+- name: gnupg
+  version: '>=2.0'
+  category: app-crypt
+labels:
+  emerge.packages: x11-plugins/enigmail
+  original.package.name: x11-plugins/enigmail
+  original.package.version: 2.0.12-r1
