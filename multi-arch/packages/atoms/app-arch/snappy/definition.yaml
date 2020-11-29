@@ -1,0 +1,7 @@
+name: snappy
+version: 1.1.8
+category: app-arch
+labels:
+  emerge.packages: app-arch/snappy
+  original.package.name: app-arch/snappy
+  original.package.version: 1.1.8
