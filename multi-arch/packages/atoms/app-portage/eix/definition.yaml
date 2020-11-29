@@ -1,0 +1,17 @@
+name: eix
+version: 0.34.9
+category: app-portage
+requires:
+- name: quoter
+  version: '>=3.0_p2-r1'
+  category: app-shells
+- name: push
+  version: '>=2.0-r1'
+  category: app-shells
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: app-portage/eix
+  original.package.name: app-portage/eix
+  original.package.version: 0.34.9
