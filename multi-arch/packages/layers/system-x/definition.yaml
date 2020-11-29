@@ -20,6 +20,9 @@ provides:
 - name: p11-kit
   version: '>=0'
   category: app-crypt
+- category: app-misc
+  name: ca-certificates
+  version: '>=0'
 - name: eselect
   version: '>=0'
   category: app-admin
