@@ -1,0 +1,20 @@
+name: seamonkey
+version: 2.53.4
+category: www-client
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: X
+  version: '>=0'
+  category: layers
+- name: plasma
+  version: '>=0'
+  category: layers
+- name: enigmail
+  version: '>=0'
+  category: x11-plugins
+labels:
+  emerge.packages: www-client/seamonkey
+  original.package.name: www-client/seamonkey
+  original.package.version: 2.53.4
