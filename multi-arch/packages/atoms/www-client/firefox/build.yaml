@@ -18,9 +18,6 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: clang
-  version: '>=0'
-  category: sys-devel-9
 - name: nodejs
   version: '>=10.19.0'
   category: net-libs
