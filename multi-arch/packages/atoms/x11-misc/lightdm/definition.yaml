@@ -1,0 +1,14 @@
+name: lightdm
+version: "1.30.0"
+category: x11-misc
+requires:
+- name: X
+  version: '>=0'
+  category: layers
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: x11-misc/lightdm
+  original.package.name: x11-misc/lightdm
+  original.package.version: 1.30.0-r2
