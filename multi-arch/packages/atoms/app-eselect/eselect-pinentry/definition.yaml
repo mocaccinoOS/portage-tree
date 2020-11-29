@@ -1,0 +1,11 @@
+name: eselect-pinentry
+version: "0.7"
+category: app-eselect
+requires:
+- name: eselect-lib-bin-symlink
+  version: '>=0.1.1'
+  category: app-eselect
+labels:
+  emerge.packages: app-eselect/eselect-pinentry
+  original.package.name: app-eselect/eselect-pinentry
+  original.package.version: "0.7"
