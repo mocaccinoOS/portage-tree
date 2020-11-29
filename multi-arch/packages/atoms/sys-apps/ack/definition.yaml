@@ -1,0 +1,14 @@
+name: ack
+version: 3.0.0
+category: sys-apps
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+- name: File-Next
+  version: '>=1.160.0'
+  category: dev-perl
+labels:
+  emerge.packages: sys-apps/ack
+  original.package.name: sys-apps/ack
+  original.package.version: 3.0.0
