@@ -11,6 +11,12 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
+  - category: "acct-group"
+    name: "gdm"
+    version: ">=0"
+  - category: "acct-user"
+    name: "gdm"
+    version: ">=0"
 provides:
   - name: brltty
     category: app-accessibility
