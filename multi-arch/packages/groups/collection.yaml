@@ -1,0 +1,8 @@
+packages:
+- category: "acct-group"
+  name: "abrt"
+  version: "0+2"
+  requires:
+  - category: "system"
+    name: "entities"
+    version: ">=0.1"
