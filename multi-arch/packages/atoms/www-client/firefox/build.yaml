@@ -18,6 +18,19 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: clang
+  version: '>=0'
+  category: sys-devel-9
+- name: python
+  version: '>=0'
+  category: dev-lang-3.8
+  use_flags:
+  - ncurses
+  - sqlite
+  - ssl
 - name: nodejs
   version: '>=10.19.0'
   category: net-libs
@@ -30,9 +43,6 @@ requires:
 - name: plasma
   version: '>=0'
   category: layers
-- name: llvm
-  version: '>=0'
-  category: sys-devel-11
 - name: zip
   version: '>=0'
   category: app-arch
