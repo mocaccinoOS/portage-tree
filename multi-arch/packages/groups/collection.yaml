@@ -75,6 +75,9 @@ packages:
   name: "dhcp"
 
 - <<: *group
+  name: "dhcpcd"
+
+- <<: *group
   name: "dialout"
 
 - <<: *group
@@ -159,10 +162,16 @@ packages:
   name: "inspircd"
 
 - <<: *group
+  name: "ipfs"
+
+- <<: *group
   name: "kafka"
 
 - <<: *group
   name: "keystone"
+
+- <<: *group
+  name: "kibana"
 
 - <<: *group
   name: "knot"
@@ -183,7 +192,10 @@ packages:
   name: "libvirt"
 
 - <<: *group
-  name: "libghttpd"
+  name: "lighttpd"
+
+- <<: *group
+  name: "logstash"
 
 - <<: *group
   name: "lp"
@@ -303,6 +315,9 @@ packages:
   name: "plugdev"
 
 - <<: *group
+  name: "polkitd"
+
+- <<: *group
   name: "postdrop"
 
 - <<: *group
@@ -363,152 +378,152 @@ packages:
   name: "shellinaboxd"
 
 - <<: *group
-   name: "slurm"
+  name: "slurm"
 
 - <<: *group
-   name: "smtpd"
+  name: "smtpd"
 
 - <<: *group
-   name: "smtpq"
+  name: "smtpq"
 
 - <<: *group
-   name: "sogo"
+  name: "sogo"
 
 - <<: *group
-   name: "spectrum"
+  name: "spectrum"
 
 - <<: *group
-   name: "spire"
+  name: "spire"
 
 - <<: *group
-   name: "sqlgrey"
+  name: "sqlgrey"
 
 - <<: *group
-   name: "squid"
+  name: "squid"
 
 - <<: *group
-   name: "sshd"
+  name: "sshd"
 
 - <<: *group
-   name: "stdiscosrv"
+  name: "stdiscosrv"
 
 - <<: *group
-   name: "steamcmd"
+  name: "steamcmd"
 
 - <<: *group
-   name: "strelaysrv"
+  name: "strelaysrv"
 
 - <<: *group
-   name: "stubby"
+  name: "stubby"
 
 - <<: *group
-   name: "stunnel"
+  name: "stunnel"
 
 - <<: *group
-   name: "supervisor"
+  name: "supervisor"
 
 - <<: *group
-   name: "suricata"
+  name: "suricata"
 
 - <<: *group
-   name: "swift"
+  name: "swift"
 
 - <<: *group
-   name: "syncthing"
+  name: "syncthing"
 
 - <<: *group
-   name: "systemd-coredump"
+  name: "systemd-coredump"
 
 - <<: *group
-   name: "systemd-journal"
+  name: "systemd-journal"
 
 - <<: *group
-   name: "systemd-journal-remote"
+  name: "systemd-journal-remote"
 
 - <<: *group
-   name: "systemd-network"
+  name: "systemd-network"
 
 - <<: *group
-   name: "systemd-resolve"
+  name: "systemd-resolve"
 
 - <<: *group
-   name: "systemd-timesync"
+  name: "systemd-timesync"
 
 - <<: *group
-   name: "tape"
+  name: "tape"
 
 - <<: *group
-   name: "teamspeak"
+  name: "teamspeak"
 
 - <<: *group
-   name: "telegraf"
+  name: "telegraf"
 
 - <<: *group
-   name: "tor"
+  name: "tor"
 
 - <<: *group
-   name: "tox"
+  name: "tox"
 
 - <<: *group
-   name: "transmission"
+  name: "transmission"
 
 - <<: *group
-   name: "tss"
+  name: "tss"
 
 - <<: *group
-   name: "tty"
+  name: "tty"
 
 - <<: *group
-   name: "turnserver"
+  name: "turnserver"
 
 - <<: *group
-   name: "unifi"
+  name: "unifi"
 
 - <<: *group
-   name: "unrealircd"
+  name: "unrealircd"
 
 - <<: *group
-   name: "uptimed"
+  name: "uptimed"
 
 - <<: *group
-   name: "usb"
+  name: "usb"
 
 - <<: *group
-   name: "utmp"
+  name: "utmp"
 
 - <<: *group
-   name: "varnish"
+  name: "varnish"
 
 - <<: *group
-   name: "vboxguest"
+  name: "vboxguest"
 
 - <<: *group
-   name: "vboxsf"
+  name: "vboxsf"
 
 - <<: *group
-   name: "vboxusers"
+  name: "vboxusers"
 
 - <<: *group
-   name: "vdradmin"
+  name: "vdradmin"
 
 - <<: *group
-   name: "video"
+  name: "video"
 
 - <<: *group
-   name: "vpopmail"
+  name: "vpopmail"
 
 - <<: *group
-   name: "wesnoth"
+  name: "wesnoth"
 
 - <<: *group
-   name: "wheel"
+  name: "wheel"
 
 - <<: *group
-   name: "x2goprint"
+  name: "x2goprint"
 
 - <<: *group
-   name: "x2gouser"
+  name: "x2gouser"
 
 - <<: *group
-   name: "xrootd"
+  name: "xrootd"
 
