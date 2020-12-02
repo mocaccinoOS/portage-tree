@@ -1,2 +1,0 @@
-install:
-- entities create -f /etc/group /etc/entities/msmtpd_acct-group_entity.yaml || true

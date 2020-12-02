@@ -1,8 +1,514 @@
 packages:
-- category: "acct-group"
+- &group
+  category: "acct-group"
   name: "abrt"
   version: "0+2"
   requires:
   - category: "system"
     name: "entities"
     version: ">=0.1"
+
+- <<: *group
+  name: "adm"
+
+- <<: *group
+  name: "amavis"
+
+- <<: *group
+  name: "amule"
+
+- <<: *group
+  name: "asterisk"
+
+- <<: *group
+  name: "audio"
+
+- <<: *group
+  name: "automx2"
+
+- <<: *group
+  name: "avahi"
+
+- <<: *group
+  name: "avahi-autoipd"
+
+- <<: *group
+  name: "bacula"
+
+- <<: *group
+  name: "bedrock"
+
+- <<: *group
+  name: "bitcoin"
+
+- <<: *group
+  name: "burp"
+
+- <<: *group
+  name: "cadvisor"
+
+- <<: *group
+  name: "cdrom"
+
+- <<: *group
+  name: "ceph"
+
+- <<: *group
+  name: "cinder"
+
+- <<: *group
+  name: "clamav"
+
+- <<: *group
+  name: "cmd5checkpw"
+
+- <<: *group
+  name: "davfs2"
+
+- <<: *group
+  name: "ddclient"
+
+- <<: *group
+  name: "deluge"
+
+- <<: *group
+  name: "dhcp"
+
+- <<: *group
+  name: "dialout"
+
+- <<: *group
+  name: "disk"
+
+- <<: *group
+  name: "dnscrypt-proxy"
+
+- <<: *group
+  name: "dnsmasq_exporter"
+
+- <<: *group
+  name: "docker"
+
+- <<: *group
+  name: "dovecot"
+
+- <<: *group
+  name: "dovenull"
+
+- <<: *group
+  name: "elasticsearch"
+
+- <<: *group
+  name: "epmd"
+
+- <<: *group
+  name: "etcd"
+
+- <<: *group
+  name: "fetchmail"
+
+- <<: *group
+  name: "fhem"
+
+- <<: *group
+  name: "ftp"
+
+- <<: *group
+  name: "gamestat"
+
+- <<: *group
+  name: "gdm"
+
+- <<: *group
+  name: "geneweb"
+
+- <<: *group
+  name: "gerbera"
+
+- <<: *group
+  name: "git"
+
+- <<: *group
+  name: "gkrellmd"
+
+- <<: *group
+  name: "glance"
+
+- <<: *group
+  name: "graylog"
+
+- <<: *group
+  name: "gvm"
+
+- <<: *group
+  name: "heat"
+
+- <<: *group
+  name: "i2p"
+
+- <<: *group
+  name: "i2pd"
+
+- <<: *group
+  name: "icinga"
+
+- <<: *group
+  name: "icingacmd"
+
+- <<: *group
+  name: "inspircd"
+
+- <<: *group
+  name: "kafka"
+
+- <<: *group
+  name: "keystone"
+
+- <<: *group
+  name: "knot"
+
+- <<: *group
+  name: "kube-apiserver"
+
+- <<: *group
+  name: "kube-controller-manager"
+
+- <<: *group
+  name: "kube-scheduler"
+
+- <<: *group
+  name: "kvm"
+
+- <<: *group
+  name: "libvirt"
+
+- <<: *group
+  name: "libghttpd"
+
+- <<: *group
+  name: "lp"
+
+- <<: *group
+  name: "mail"
+
+- <<: *group
+  name: "man"
+
+- <<: *group
+  name: "memcached"
+
+- <<: *group
+  name: "messagebus"
+
+- <<: *group
+  name: "milter-regex"
+
+- <<: *group
+  name: "minecraft"
+
+- <<: *group
+  name: "minetest"
+
+- <<: *group
+  name: "mongodb"
+
+- <<: *group
+  name: "mosquitto"
+
+- <<: *group
+  name: "msmtpd"
+
+- <<: *group
+  name: "munin"
+
+- <<: *group
+  name: "murmur"
+
+- <<: *group
+  name: "mysql"
+
+- <<: *group
+  name: "mythtv"
+
+- <<: *group
+  name: "nagios"
+
+- <<: *group
+  name: "netbox"
+
+- <<: *group
+  name: "netdata"
+
+- <<: *group
+  name: "netdev"
+
+- <<: *group
+  name: "neutron"
+
+- <<: *group
+  name: "node_exporter"
+
+- <<: *group
+  name: "nofiles"
+
+- <<: *group
+  name: "nova"
+
+- <<: *group
+  name: "nsd"
+
+- <<: *group
+  name: "ntp"
+
+- <<: *group
+  name: "octoprint"
+
+- <<: *group
+  name: "oidentd"
+
+- <<: *group
+  name: "openct"
+
+- <<: *group
+  name: "opendkim"
+
+- <<: *group
+  name: "openntpd"
+
+- <<: *group
+  name: "openrct2"
+
+- <<: *group
+  name: "openvpn"
+
+- <<: *group
+  name: "ossec"
+
+- <<: *group
+  name: "pcscd"
+
+- <<: *group
+  name: "pdns"
+
+- <<: *group
+  name: "pdnsd"
+
+- <<: *group
+  name: "placement"
+
+- <<: *group
+  name: "plex"
+
+- <<: *group
+  name: "plugdev"
+
+- <<: *group
+  name: "postdrop"
+
+- <<: *group
+  name: "postfix"
+
+- <<: *group
+  name: "postgres"
+
+- <<: *group
+  name: "prometheus"
+
+- <<: *group
+  name: "puppet"
+
+- <<: *group
+  name: "puppetdb"
+
+- <<: *group
+  name: "qemu"
+
+- <<: *group
+  name: "qmail"
+
+- <<: *group
+  name: "quagga"
+
+- <<: *group
+  name: "quassel"
+
+- <<: *group
+  name: "radius"
+
+- <<: *group
+  name: "rbldns"
+
+- <<: *group
+  name: "redis"
+
+- <<: *group
+  name: "redmine"
+
+- <<: *group
+  name: "render"
+
+- <<: *group
+  name: "rspamd"
+
+- <<: *group
+  name: "rstudio-server"
+
+- <<: *group
+  name: "rtkit"
+
+- <<: *group
+  name: "scponly"
+
+- <<: *group
+  name: "shellinaboxd"
+
+- <<: *group
+   name: "slurm"
+
+- <<: *group
+   name: "smtpd"
+
+- <<: *group
+   name: "smtpq"
+
+- <<: *group
+   name: "sogo"
+
+- <<: *group
+   name: "spectrum"
+
+- <<: *group
+   name: "spire"
+
+- <<: *group
+   name: "sqlgrey"
+
+- <<: *group
+   name: "squid"
+
+- <<: *group
+   name: "sshd"
+
+- <<: *group
+   name: "stdiscosrv"
+
+- <<: *group
+   name: "steamcmd"
+
+- <<: *group
+   name: "strelaysrv"
+
+- <<: *group
+   name: "stubby"
+
+- <<: *group
+   name: "stunnel"
+
+- <<: *group
+   name: "supervisor"
+
+- <<: *group
+   name: "suricata"
+
+- <<: *group
+   name: "swift"
+
+- <<: *group
+   name: "syncthing"
+
+- <<: *group
+   name: "systemd-coredump"
+
+- <<: *group
+   name: "systemd-journal"
+
+- <<: *group
+   name: "systemd-journal-remote"
+
+- <<: *group
+   name: "systemd-network"
+
+- <<: *group
+   name: "systemd-resolve"
+
+- <<: *group
+   name: "systemd-timesync"
+
+- <<: *group
+   name: "tape"
+
+- <<: *group
+   name: "teamspeak"
+
+- <<: *group
+   name: "telegraf"
+
+- <<: *group
+   name: "tor"
+
+- <<: *group
+   name: "tox"
+
+- <<: *group
+   name: "transmission"
+
+- <<: *group
+   name: "tss"
+
+- <<: *group
+   name: "tty"
+
+- <<: *group
+   name: "turnserver"
+
+- <<: *group
+   name: "unifi"
+
+- <<: *group
+   name: "unrealircd"
+
+- <<: *group
+   name: "uptimed"
+
+- <<: *group
+   name: "usb"
+
+- <<: *group
+   name: "utmp"
+
+- <<: *group
+   name: "varnish"
+
+- <<: *group
+   name: "vboxguest"
+
+- <<: *group
+   name: "vboxsf"
+
+- <<: *group
+   name: "vboxusers"
+
+- <<: *group
+   name: "vdradmin"
+
+- <<: *group
+   name: "video"
+
+- <<: *group
+   name: "vpopmail"
+
+- <<: *group
+   name: "wesnoth"
+
+- <<: *group
+   name: "wheel"
+
+- <<: *group
+   name: "x2goprint"
+
+- <<: *group
+   name: "x2gouser"
+
+- <<: *group
+   name: "xrootd"
+
