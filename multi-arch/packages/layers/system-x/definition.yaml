@@ -1,6 +1,10 @@
 name: system-x
 version: "0.20201125+1"
 category: layers
+requires:
+- category: "system"
+  name: "gcc-base"
+  version: ">=0"
 provides:
 - name: at-spi2-atk
   version: '>=0'
