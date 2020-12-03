@@ -96,7 +96,9 @@ app-admin/conky -audacious hddtemp imlib iostats lua lua-imlib lua-cairo mpd thi
 app-admin/keepassxc browser
 # eselect-php now contains fpm init script and apache stuff
 app-eselect/eselect-php fpm apache2
+app-admin/gkrellm hddtemp lm_sensors
 app-admin/ulogd mysql
+app-admin/rsyslog ssl systemd uuid openssl kafka elasticsearch kubernetes snmp normalize
 app-admin/setools -X
 
 app-arch/advancecomp mng
@@ -260,6 +262,8 @@ dev-db/sqlite soundex extensions unlock-notify
 # We don't have Oracle
 dev-db/tora -oracle
 
+dev-dotnet/libgdiplus cairo
+
 dev-embedded/avr-libc -selinux
 dev-embedded/openocd ftdi
 
@@ -291,7 +295,7 @@ dev-java/validation-api source
 dev-lang/fpc source ide
 dev-lang/lua deprecated
 dev-lang/luajit lua52compat
-dev-lang/mono moonlight
+dev-lang/mono minimal
 dev-lang/nqp moar -parrot
 dev-lang/ocaml tk
 dev-lang/parrot pcre
@@ -704,8 +708,8 @@ media-video/blinkensim aalib
 media-video/dvgrab quicktime
 media-video/ffmpeg X alsa amr bluray bzip2 cpudetection encode fdk gmp gnutls gpl gsm iconv ieee1394 jack jpeg2k mp3 network openal opengl openh264 opus postproc pulseaudio sdl speex svg test theora threads truetype v4l vaapi vdpau vidstab vorbis vpx webp x264 x265 xvid zlib -abi_x86_32
 media-video/jubler mplayer
-media-video/kino gstreamer quicktime
-media-video/mpv libmpv samba tools
+media-video/kino quicktime sox vorbis
+media-video/mpv X alsa bluray cdda cli dvb dvd egl iconv jack jpeg lcms libass libmpv lua luajit openal opengl pulseaudio samba sdl tools uchardet vaapi vdpau wayland xv zlib vulkan
 media-video/mkvtoolnix -wxwidgets
 media-video/ogmrip ogm mp4 srt
 media-video/totem xulrunner iplayer galago
@@ -972,6 +976,7 @@ sys-fs/mtd-utils xattr
 sys-fs/ntfs3g suid ntfsprogs
 # USE=static static-libs must go together in order to have it compiling
 sys-fs/reiser4progs static static-libs
+sys-fs/squashfs-tools xattr xz -debug lz4 lzma lzo -static zstd
 sys-fs/udev extras
 # udisks, we want cryptsetup support
 sys-fs/udisks cryptsetup crypt

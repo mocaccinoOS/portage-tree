@@ -1,1 +1,3 @@
 sys-apps/usbmon ~amd64
+app-admin/calamares ~amd64
+app-admin/docker-bench ~amd64
