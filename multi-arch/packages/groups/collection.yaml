@@ -2,7 +2,7 @@ packages:
 - &group
   category: "acct-group"
   name: "abrt"
-  version: "0+2"
+  version: "0+4"
   requires:
   - category: "system"
     name: "entities"
@@ -10,7 +10,6 @@ packages:
 
 - <<: *group
   name: "adm"
-  version: "0+3"
 
 - <<: *group
   name: "amavis"
