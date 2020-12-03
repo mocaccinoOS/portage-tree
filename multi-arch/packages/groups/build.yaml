@@ -10,5 +10,5 @@ steps:
 - luet install utils/yq
 - mkdir -p /{{ .Values.name }}/etc/entities/
 - yq r groups.yaml groups.{{ .Values.name }} > ${ENTITY_SOURCE}
-- yq w ${ENTITY_SOURCE} kind group > ${ENTITY_SOURCE}
-- yq w ${ENTITY_SOURCE} group_name {{ .Values.name }} > ${ENTITY_SOURCE}
+- yq w ${ENTITY_SOURCE} kind group >> ${ENTITY_SOURCE}
+- yq w ${ENTITY_SOURCE} group_name {{ .Values.name }} >> ${ENTITY_SOURCE}

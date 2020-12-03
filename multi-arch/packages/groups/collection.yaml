@@ -10,6 +10,7 @@ packages:
 
 - <<: *group
   name: "adm"
+  version: "0+3"
 
 - <<: *group
   name: "amavis"
