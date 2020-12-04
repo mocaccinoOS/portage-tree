@@ -1,7 +1,13 @@
 name: push
 version: "3.4"
 category: app-shells
+
 labels:
   emerge.packages: app-shells/push
   original.package.name: app-shells/push
   original.package.version: "3.4"
+  
+uri:
+- https://github.com/vaeth/push/
+
+license: "BSD"
