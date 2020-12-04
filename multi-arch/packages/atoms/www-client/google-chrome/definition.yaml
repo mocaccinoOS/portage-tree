@@ -17,7 +17,13 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
+  
 labels:
   emerge.packages: www-client/google-chrome
   original.package.name: www-client/google-chrome
   original.package.version: 86.0.4240.193
+  
+uri:
+- https://www.google.com/chrome
+
+license: "google-chrome"
