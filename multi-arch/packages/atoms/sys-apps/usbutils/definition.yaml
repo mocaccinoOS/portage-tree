@@ -5,7 +5,14 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: sys-apps/usbutils
   original.package.name: sys-apps/usbutils
   original.package.version: "012"
+  
+uri:
+- https://www.kernel.org/pub/linux/utils/usb/usbutils/
+- https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usbutils.git/
+
+license: "GPL-2"
