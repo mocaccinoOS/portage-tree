@@ -5,7 +5,13 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+
 labels:
   emerge.packages: sys-apps/ethtool
   original.package.name: sys-apps/ethtool
   original.package.version: 5.8-r1
+  
+uri:
+- https://www.kernel.org/pub/software/network/ethtool/
+
+license: "GPL-2"
