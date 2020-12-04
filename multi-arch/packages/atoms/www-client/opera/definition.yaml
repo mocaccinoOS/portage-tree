@@ -11,7 +11,13 @@ requires:
 - name: expat
   version: '>=0'
   category: dev-libs
+  
 labels:
   emerge.packages: www-client/opera
   original.package.name: www-client/opera
   original.package.version: 71.0.3770.271
+  
+uri:
+- https://www.opera.com/
+
+license: "OPERA-2014"
