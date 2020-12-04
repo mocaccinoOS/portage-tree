@@ -1,7 +1,13 @@
 name: dnotify
 version: 0.18.0
 category: sys-apps
+
 labels:
   emerge.packages: sys-apps/dnotify
   original.package.name: sys-apps/dnotify
   original.package.version: 0.18.0
+  
+uri:
+- https://directory.fsf.org/project/dnotify/
+
+license: "GPL-2"
