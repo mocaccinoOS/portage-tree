@@ -8,7 +8,13 @@ requires:
 - name: python-exec
   version: '>=2'
   category: dev-lang-2
+  
 labels:
   emerge.packages: dev-libs/libxml2:2
   original.package.name: dev-libs/libxml2
   original.package.version: 2.9.10-r3
+  
+uri:
+- http://www.xmlsoft.org/
+
+license: "MIT"
