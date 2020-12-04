@@ -1,7 +1,13 @@
 name: mlocate
 version: "0.26+1"
 category: sys-apps
+
 labels:
   emerge.packages: sys-apps/mlocate
   original.package.name: sys-apps/mlocate
   original.package.version: 0.26-r2
+  
+uri:
+- https://pagure.io/mlocate
+
+license: "GPL-2"
