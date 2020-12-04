@@ -8,7 +8,14 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: x11-misc/synergy
   original.package.name: x11-misc/synergy
   original.package.version: 2.0.0
+  
+uri:
+- http://synergy-project.org/
+- https://github.com/symless/synergy-core
+
+license: "GPL-2"
