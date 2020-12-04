@@ -1,7 +1,13 @@
 name: mime-types
 version: "9+1"
 category: app-misc
+
 labels:
   original.package.name: app-misc/mime-types
   original.package.version: "9"
   emerge.packages: "app-misc/mime-types"
+  
+uri:
+- http://www.gentoo.org/
+
+license: "GPL-2"
