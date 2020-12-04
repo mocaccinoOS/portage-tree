@@ -5,7 +5,13 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: dev-libs/libassuan
   original.package.name: dev-libs/libassuan
   original.package.version: 2.5.3
+  
+uri:
+- http://www.gnupg.org/related_software/libassuan/index.en.html
+
+license: "GPL-3 LGPL-2.1"
