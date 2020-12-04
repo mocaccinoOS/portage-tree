@@ -1,7 +1,13 @@
 name: hdparm
 version: "9.58"
 category: sys-apps
+
 labels:
   emerge.packages: sys-apps/hdparm
   original.package.name: sys-apps/hdparm
   original.package.version: "9.58"
+  
+uri:
+- https://sourceforge.net/projects/hdparm/
+
+license: "BSD GPL-2"
