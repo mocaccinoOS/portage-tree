@@ -11,7 +11,13 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: app-portage/eix
   original.package.name: app-portage/eix
   original.package.version: 0.34.9
+  
+uri:
+- https://github.com/vaeth/eix/
+
+license: "GPL-2"
