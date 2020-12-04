@@ -29,7 +29,13 @@ requires:
 - name: expat
   version: '>=0'
   category: dev-libs
+  
 labels:
   emerge.packages: www-client/chromium
   original.package.name: www-client/chromium
   original.package.version: 86.0.4240.193
+  
+uri:
+- https://chromium.org/
+
+license: "BSD"
