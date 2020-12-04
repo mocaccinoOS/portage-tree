@@ -8,7 +8,13 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: x11-misc/lightdm
   original.package.name: x11-misc/lightdm
   original.package.version: 1.30.0-r2
+  
+uri:
+- https://launchpad.net/lightdm
+
+license: "GPL-3 LGPL-3"
