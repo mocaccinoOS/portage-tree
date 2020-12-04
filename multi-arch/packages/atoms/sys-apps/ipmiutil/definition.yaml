@@ -5,7 +5,13 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: sys-apps/ipmiutil
   original.package.name: sys-apps/ipmiutil
   original.package.version: 3.0.6
+
+uri:
+- http://ipmiutil.sourceforge.net/
+
+license: "BSD"
