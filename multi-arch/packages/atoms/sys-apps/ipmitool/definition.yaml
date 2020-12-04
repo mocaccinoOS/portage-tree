@@ -5,7 +5,13 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: sys-apps/ipmitool
   original.package.name: sys-apps/ipmitool
   original.package.version: 1.8.18_p20201004-r1
+  
+uri:
+- http://ipmitool.sf.net/
+
+license: "BSD"
