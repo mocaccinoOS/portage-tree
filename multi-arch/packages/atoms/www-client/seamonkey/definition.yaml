@@ -14,7 +14,13 @@ requires:
 - name: enigmail
   version: '>=0'
   category: x11-plugins
+  
 labels:
   emerge.packages: www-client/seamonkey
   original.package.name: www-client/seamonkey
   original.package.version: 2.53.4
+  
+uri:
+- http://www.seamonkey-project.org
+
+license: "MPL-2.0 GPL-2 LGPL-2.1"
