@@ -5,7 +5,13 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
+  
 labels:
   emerge.packages: app-text/build-docbook-catalog
   original.package.name: app-text/build-docbook-catalog
   original.package.version: "1.21"
+  
+uri:
+- https://sources.gentoo.org/gentoo-src/build-docbook-catalog/
+
+license: "GPL-2"
