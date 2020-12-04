@@ -8,7 +8,13 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
+  
 labels:
   emerge.packages: www-client/lynx
   original.package.name: www-client/lynx
   original.package.version: 2.8.9_p1
+  
+uri:
+- https://lynx.invisible-island.net/
+
+license: "GPL-2"
