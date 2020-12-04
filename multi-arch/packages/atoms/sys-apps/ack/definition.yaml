@@ -8,7 +8,13 @@ requires:
 - name: File-Next
   version: '>=1.160.0'
   category: dev-perl
+  
 labels:
   emerge.packages: sys-apps/ack
   original.package.name: sys-apps/ack
   original.package.version: 3.0.0
+  
+uri:
+- https://beyondgrep.com
+
+license: "Artistic-2"
