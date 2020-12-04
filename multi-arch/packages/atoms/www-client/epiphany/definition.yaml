@@ -23,7 +23,13 @@ requires:
 - name: libxml2
   version: '>=2.6.12'
   category: dev-libs-2
+  
 labels:
   emerge.packages: www-client/epiphany
   original.package.name: www-client/epiphany
   original.package.version: 3.36.4
+  
+uri:
+- https://wiki.gnome.org/Apps/Web
+
+license: "GPL-3+"
