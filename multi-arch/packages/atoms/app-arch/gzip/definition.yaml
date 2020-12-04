@@ -1,7 +1,13 @@
 name: gzip
 version: "1.10"
 category: app-arch
+
 labels:
   emerge.packages: app-arch/gzip
   original.package.name: app-arch/gzip
   original.package.version: "1.10"
+
+uri:
+- https://www.gnu.org/software/gzip/
+
+license: "GPL-3"
