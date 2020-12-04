@@ -5,7 +5,13 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
+  
 labels:
   emerge.packages: app-arch/zip
   original.package.name: app-arch/zip
   original.package.version: 3.0-r4
+  
+uri:
+- http://www.info-zip.org/
+
+license: "Info-ZIP"
