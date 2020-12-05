@@ -1,0 +1,17 @@
+name: nftables
+version: 0.9.6
+category: net-firewall
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: libnftnl
+  version: '>=1.1.7'
+  category: net-libs
+- name: gmp
+  version: '>=0'
+  category: dev-libs
+labels:
+  emerge.packages: net-firewall/nftables
+  original.package.name: net-firewall/nftables
+  original.package.version: 0.9.6
