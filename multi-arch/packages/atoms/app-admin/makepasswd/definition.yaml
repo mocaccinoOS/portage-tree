@@ -1,0 +1,11 @@
+name: makepasswd
+version: "1.10"
+category: app-admin
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: app-admin/makepasswd
+  original.package.name: app-admin/makepasswd
+  original.package.version: "1.10"
