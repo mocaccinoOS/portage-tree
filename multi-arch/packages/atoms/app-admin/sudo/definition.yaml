@@ -1,0 +1,14 @@
+name: sudo
+version: "1.9.3+p1"
+category: app-admin
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: editor-wrapper
+  version: '>=3'
+  category: app-misc
+labels:
+  emerge.packages: app-admin/sudo
+  original.package.name: app-admin/sudo
+  original.package.version: 1.9.3_p1
