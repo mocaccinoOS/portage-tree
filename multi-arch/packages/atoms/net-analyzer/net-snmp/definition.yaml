@@ -1,0 +1,14 @@
+name: net-snmp
+version: "5.9"
+category: net-analyzer
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+labels:
+  emerge.packages: net-analyzer/net-snmp
+  original.package.name: net-analyzer/net-snmp
+  original.package.version: 5.9-r2
