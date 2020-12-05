@@ -1,0 +1,17 @@
+name: apr-util
+version: "1.6.1"
+category: dev-libs-1
+requires:
+- name: apr
+  version: '>=1.6.2'
+  category: dev-libs-1
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: expat
+  version: '>=0'
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/apr-util:1
+  original.package.name: dev-libs/apr-util
+  original.package.version: 1.6.1-r6
