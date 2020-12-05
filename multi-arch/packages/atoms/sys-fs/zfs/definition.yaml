@@ -1,0 +1,20 @@
+name: zfs
+version: 0.8.5
+category: sys-fs
+requires:
+- name: X
+  version: '>=0'
+  category: layers
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: python-exec
+  version: '>=2'
+  category: dev-lang-2
+- name: pax-utils
+  version: '>=0'
+  category: app-misc
+labels:
+  emerge.packages: sys-fs/zfs
+  original.package.name: sys-fs/zfs
+  original.package.version: 0.8.5
