@@ -1,0 +1,14 @@
+name: zstd
+version: "1.4.4"
+category: app-arch
+requires:
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
+- name: lz4
+  version: '>=0'
+  category: app-arch
+labels:
+  emerge.packages: app-arch/zstd
+  original.package.name: app-arch/zstd
+  original.package.version: 1.4.4-r4
