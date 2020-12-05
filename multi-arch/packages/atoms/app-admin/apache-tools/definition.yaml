@@ -1,0 +1,20 @@
+name: apache-tools
+version: 2.4.46
+category: app-admin
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: apr-util
+  version: '>=0'
+  category: dev-libs-1
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: apr
+  version: '>=1.5.0'
+  category: dev-libs-1
+labels:
+  emerge.packages: app-admin/apache-tools
+  original.package.name: app-admin/apache-tools
+  original.package.version: 2.4.46
