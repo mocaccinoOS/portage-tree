@@ -1,0 +1,14 @@
+name: zeromq
+version: 4.3.3
+category: net-libs
+requires:
+- name: libsodium
+  version: '>=0'
+  category: dev-libs
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
+labels:
+  emerge.packages: net-libs/zeromq
+  original.package.name: net-libs/zeromq
+  original.package.version: 4.3.3
