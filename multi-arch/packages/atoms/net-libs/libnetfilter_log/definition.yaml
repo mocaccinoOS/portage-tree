@@ -1,0 +1,11 @@
+name: libnetfilter_log
+version: 1.0.1
+category: net-libs
+requires:
+- name: X
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: net-libs/libnetfilter_log
+  original.package.name: net-libs/libnetfilter_log
+  original.package.version: 1.0.1
