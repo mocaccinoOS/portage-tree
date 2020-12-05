@@ -1,0 +1,7 @@
+name: ivykis
+version: 0.42.4
+category: dev-libs
+labels:
+  emerge.packages: dev-libs/ivykis
+  original.package.name: dev-libs/ivykis
+  original.package.version: 0.42.4
