@@ -1,0 +1,7 @@
+name: yaml-cpp
+version: "0.6.3"
+category: dev-cpp
+labels:
+  emerge.packages: dev-cpp/yaml-cpp
+  original.package.name: dev-cpp/yaml-cpp
+  original.package.version: 0.6.3-r3
