@@ -1,0 +1,14 @@
+name: XML-LibXML
+version: 2.20.100
+category: dev-perl
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: libxml2
+  version: '>=2.6.21'
+  category: dev-libs-2
+labels:
+  emerge.packages: dev-perl/XML-LibXML
+  original.package.name: dev-perl/XML-LibXML
+  original.package.version: 2.20.100
