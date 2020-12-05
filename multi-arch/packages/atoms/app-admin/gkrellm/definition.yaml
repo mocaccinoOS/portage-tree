@@ -1,0 +1,17 @@
+name: gkrellm
+version: 2.3.11
+category: app-admin
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: gkrellmd
+  version: '>=0'
+  category: acct-group
+- name: gkrellmd
+  version: '>=0'
+  category: acct-user
+labels:
+  emerge.packages: app-admin/gkrellm
+  original.package.name: app-admin/gkrellm
+  original.package.version: 2.3.11-r1
