@@ -1,0 +1,11 @@
+name: sshpass
+version: "1.06"
+category: net-misc
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: net-misc/sshpass
+  original.package.name: net-misc/sshpass
+  original.package.version: "1.06"
