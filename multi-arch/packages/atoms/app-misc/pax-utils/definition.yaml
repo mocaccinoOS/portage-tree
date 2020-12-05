@@ -1,0 +1,11 @@
+name: pax-utils
+version: 1.2.6
+category: app-misc
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: app-misc/pax-utils
+  original.package.name: app-misc/pax-utils
+  original.package.version: 1.2.6
