@@ -1,0 +1,23 @@
+name: xmlto
+version: "0.0.28"
+category: app-text
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: bash
+  version: '>=0'
+  category: app-shells
+- name: docbook-xml-dtd
+  version: '>=0'
+  category: app-text-4.2
+- name: docbook-xsl-stylesheets
+  version: '>=1.62.0-r1'
+  category: app-text
+- name: lynx
+  version: '>=0'
+  category: www-client
+labels:
+  emerge.packages: app-text/xmlto
+  original.package.name: app-text/xmlto
+  original.package.version: 0.0.28-r3
