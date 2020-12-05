@@ -1,0 +1,7 @@
+name: lz4
+version: 1.9.2
+category: app-arch
+labels:
+  emerge.packages: app-arch/lz4
+  original.package.name: app-arch/lz4
+  original.package.version: 1.9.2
