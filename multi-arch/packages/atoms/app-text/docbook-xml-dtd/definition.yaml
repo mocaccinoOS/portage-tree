@@ -1,0 +1,17 @@
+name: docbook-xml-dtd
+version: "4.2"
+category: app-text
+requires:
+- name: docbook-xsl-stylesheets
+  version: '>=1.65'
+  category: app-text
+- name: build-docbook-catalog
+  version: '>=1.2'
+  category: app-text
+- name: sgml-common
+  version: '>=0.6.3-r7'
+  category: app-text
+labels:
+  emerge.packages: app-text/docbook-xml-dtd
+  original.package.name: app-text/docbook-xml-dtd
+  original.package.version: 4.2-r3
