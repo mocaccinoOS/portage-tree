@@ -1,0 +1,7 @@
+name: libfastjson
+version: 0.99.8
+category: dev-libs
+labels:
+  emerge.packages: dev-libs/libfastjson
+  original.package.name: dev-libs/libfastjson
+  original.package.version: 0.99.8
