@@ -1,0 +1,7 @@
+name: hddtemp
+version: "0.3_beta15"
+category: app-admin
+labels:
+  emerge.packages: app-admin/hddtemp
+  original.package.name: app-admin/hddtemp
+  original.package.version: 0.3_beta15-r29
