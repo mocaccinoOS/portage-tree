@@ -1,0 +1,11 @@
+name: librdkafka
+version: 1.4.4
+category: dev-libs
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-libs/librdkafka
+  original.package.name: dev-libs/librdkafka
+  original.package.version: 1.4.4
