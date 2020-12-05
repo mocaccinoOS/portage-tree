@@ -1,0 +1,7 @@
+name: libsodium
+version: 1.0.18
+category: dev-libs
+labels:
+  emerge.packages: dev-libs/libsodium
+  original.package.name: dev-libs/libsodium
+  original.package.version: 1.0.18
