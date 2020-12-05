@@ -1,0 +1,11 @@
+name: Unicode-UTF8
+version: 0.620.0
+category: dev-perl
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-perl/Unicode-UTF8
+  original.package.name: dev-perl/Unicode-UTF8
+  original.package.version: 0.620.0
