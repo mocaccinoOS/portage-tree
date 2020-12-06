@@ -1,3 +1,4 @@
 app-admin/calamares ~amd64
 app-admin/docker-bench ~amd64
+dev-qt/qt-creator ~amd64
 sys-apps/usbmon ~amd64
