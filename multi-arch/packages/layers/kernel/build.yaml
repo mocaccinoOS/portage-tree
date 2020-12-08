@@ -8,6 +8,7 @@ excludes:
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 - LUET_YES=true
+- LUET_NOLOCK=true
 prelude:
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - luet install repository/mocaccino-kernel-stable
