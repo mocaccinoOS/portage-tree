@@ -3,6 +3,7 @@ include_files:
 - artefacts/portage.yaml
 - artefacts/sys-apps.yaml
 - artefacts/sys-process.yaml
+- artefacts/sys-kernel.yaml
 - artefacts/www-client.yaml
 - artefacts/x11-misc.yaml
 - artefacts/x11-themes.yaml
