@@ -27,16 +27,7 @@ provides:
   - name: editorconfig-core-c
     category: app-text
     version: '>=0'
-  - name: mysql-connector-c
-    category: dev-db
-    version: '>=0'
-  - name: yasm
-    category: dev-lang
-    version: '>=0'
   - name: crypto++
-    category: dev-libs
-    version: '>=0'
-  - name: double-conversion
     category: dev-libs
     version: '>=0'
   - name: grantlee
@@ -50,84 +41,6 @@ provides:
     version: '>=0'
   - name: xapian
     category: dev-libs
-    version: '>=0'
-  - name: designer
-    category: dev-qt-5
-    version: '>=0'
-  - name: linguist-tools
-    category: dev-qt-5
-    version: '>=0'
-  - name: qdbus
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtchooser
-    category: dev-qt
-    version: '>=0'
-  - name: qtconcurrent
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtcore
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtdbus
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtdeclarative
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtgraphicaleffects
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtgui
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtnetwork
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtpaths
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtprintsupport
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtquickcontrols
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtquickcontrols2
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtscript
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtsensors
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtsql
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtsvg
-    category: dev-qt-5
-    version: '>=0'
-  - name: qttest
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtvirtualkeyboard
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtwayland
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtwidgets
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtx11extras
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtxml
-    category: dev-qt-5
-    version: '>=0'
-  - name: qtxmlpatterns
-    category: dev-qt-5
     version: '>=0'
   - name: kaccounts-integration
     category: kde-apps-5
@@ -148,9 +61,6 @@ provides:
     category: kde-frameworks-5
     version: '>=0'
   - name: breeze-icons
-    category: kde-frameworks-5
-    version: '>=0'
-  - name: extra-cmake-modules
     category: kde-frameworks-5
     version: '>=0'
   - name: frameworkintegration
@@ -217,9 +127,6 @@ provides:
     category: kde-frameworks-5
     version: '>=0'
   - name: kemoticons
-    category: kde-frameworks-5
-    version: '>=0'
-  - name: kf-env
     category: kde-frameworks-5
     version: '>=0'
   - name: kfilemetadata
@@ -343,9 +250,6 @@ provides:
     category: kde-frameworks-5
     version: '>=0'
   - name: sonnet
-    category: kde-frameworks-5
-    version: '>=0'
-  - name: syntax-highlighting
     category: kde-frameworks-5
     version: '>=0'
   - name: threadweaver
@@ -486,16 +390,28 @@ provides:
   - name: libass
     category: media-libs
     version: '>=0'
+  - name: libbluray
+    category: media-libs
+    version: '>=0'
+  - name: libdc1394
+    category: media-libs-2
+    version: '>=0'
   - name: libdvbpsi
     category: media-libs
     version: '>=0'
   - name: libsdl2
     category: media-libs
     version: '>=0'
-  - name: libvpx
+  - name: libtheora
+    category: media-libs
+    version: '>=0'
+  - name: openal
     category: media-libs
     version: '>=0'
   - name: opencore-amr
+    category: media-libs
+    version: '>=0'
+  - name: openh264
     category: media-libs
     version: '>=0'
   - name: phonon
@@ -504,14 +420,47 @@ provides:
   - name: phonon-vlc
     category: media-libs
     version: '>=0'
+  - name: sbc
+    category: media-libs
+    version: '>=0'
   - name: soxr
+    category: media-libs
+    version: '>=0'
+  - name: speex
+    category: media-libs
+    version: '>=0'
+  - name: speexdsp
     category: media-libs
     version: '>=0'
   - name: vidstab
     category: media-libs
     version: '>=0'
+  - name: webrtc-audio-processing
+    category: media-libs
+    version: '>=0'
+  - name: x264
+    category: media-libs
+    version: '>=0'
+  - name: x265
+    category: media-libs
+    version: '>=0'
+  - name: xvid
+    category: media-libs
+    version: '>=0'
+  - name: alsa-plugins
+    category: media-plugins
+    version: '>=0'
   - name: live
     category: media-plugins
+    version: '>=0'
+  - name: jack2
+    category: media-sound-2
+    version: '>=0'
+  - name: lame
+    category: media-sound
+    version: '>=0'
+  - name: pulseaudio
+    category: media-sound
     version: '>=0'
   - name: ffmpeg
     category: media-video
@@ -537,6 +486,9 @@ provides:
   - name: libaccounts-glib
     category: net-libs
     version: '>=0'
+  - name: libasyncns
+    category: net-libs
+    version: '>=0'
   - name: libmicrodns
     category: net-libs
     version: '>=0'
@@ -545,6 +497,54 @@ provides:
     version: '>=0'
   - name: libupnp
     category: net-libs
+    version: '>=0'
+  - name: signond
+    category: net-libs
+    version: '>=0'
+  - name: ofono
+    category: net-misc
+    version: '>=0'
+  - name: socat
+    category: net-misc
+    version: '>=0'
+  - name: networkmanager-openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: openconnect
+    category: net-vpn
+    version: '>=0'
+  - name: xdg-desktop-portal
+    category: sys-apps
+    version: '>=0'
+  - name: polkit-qt
+    category: sys-auth
+    version: '>=0'
+  - name: realtime-base
+    category: sys-auth
+    version: '>=0'
+  - name: cryfs
+    category: sys-fs
+    version: '>=0'
+  - name: fuse
+    category: sys-fs
+    version: '>=0'
+  - name: libraw1394
+    category: sys-libs
+    version: '>=0'
+  - name: libutempter
+    category: sys-libs
+    version: '>=0'
+  - name: jack
+    category: virtual
+    version: '>=0'
+  - name: xmessage
+    category: x11-apps
+    version: '>=0'
+  - name: xsetroot
+    category: x11-apps
+    version: '>=0'
+  - name: sddm
+    category: x11-misc
     version: '>=0'
   - name: signond
     category: net-libs
