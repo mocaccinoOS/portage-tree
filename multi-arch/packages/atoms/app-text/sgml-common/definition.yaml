@@ -1,7 +1,0 @@
-name: sgml-common
-version: "0.6.3"
-category: app-text
-labels:
-  emerge.packages: app-text/sgml-common
-  original.package.name: app-text/sgml-common
-  original.package.version: 0.6.3-r7
