@@ -18,9 +18,3 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: gkrellmd
-  version: '>=0'
-  category: acct-group
-- name: gkrellmd
-  version: '>=0'
-  category: acct-user
