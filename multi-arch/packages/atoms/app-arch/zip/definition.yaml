@@ -2,9 +2,9 @@ name: zip
 version: "3.0"
 category: app-arch
 requires:
-- name: bzip2
+- name: system-x
   version: '>=0'
-  category: app-arch
+  category: layers
   
 labels:
   emerge.packages: app-arch/zip
