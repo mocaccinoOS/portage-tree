@@ -1,11 +1,8 @@
 name: lightdm
-version: "1.30.0"
+version: "1.30.0+1"
 category: x11-misc
 requires:
 - name: X
-  version: '>=0'
-  category: layers
-- name: system-x
   version: '>=0'
   category: layers
   
