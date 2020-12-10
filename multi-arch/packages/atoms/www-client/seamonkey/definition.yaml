@@ -1,10 +1,7 @@
 name: seamonkey
-version: 2.53.4
+version: "2.53.4+1"
 category: www-client
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
 - name: X
   version: '>=0'
   category: layers
