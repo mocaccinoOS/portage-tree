@@ -1,0 +1,14 @@
+name: zfs
+version: 0.8.5
+category: sys-fs
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: zfs-kmod
+  version: '>=0'
+  category: sys-fs
+labels:
+  emerge.packages: sys-fs/zfs
+  original.package.name: sys-fs/zfs
+  original.package.version: 0.8.5
