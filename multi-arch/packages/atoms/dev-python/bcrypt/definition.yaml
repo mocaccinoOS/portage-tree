@@ -1,0 +1,11 @@
+name: bcrypt
+version: 3.2.0
+category: dev-python
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-python/bcrypt
+  original.package.name: dev-python/bcrypt
+  original.package.version: 3.2.0
