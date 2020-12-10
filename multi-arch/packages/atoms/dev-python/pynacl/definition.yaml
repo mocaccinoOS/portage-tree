@@ -1,0 +1,14 @@
+name: pynacl
+version: 1.4.0
+category: dev-python
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: libsodium
+  version: '>=0'
+  category: dev-libs
+labels:
+  emerge.packages: dev-python/pynacl
+  original.package.name: dev-python/pynacl
+  original.package.version: 1.4.0
