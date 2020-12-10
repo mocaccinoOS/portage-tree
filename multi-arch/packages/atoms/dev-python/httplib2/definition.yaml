@@ -1,0 +1,11 @@
+name: httplib2
+version: 0.18.1
+category: dev-python
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-python/httplib2
+  original.package.name: dev-python/httplib2
+  original.package.version: 0.18.1-r1
