@@ -1,7 +1,10 @@
 name: apachetop
-version: 0.19.7
+version: "0.19.7+1"
 category: app-admin
 requires:
+- name: libpcre
+  version: '>=0'
+  category: dev-libs
 - name: system-x
   version: '>=0'
   category: layers
