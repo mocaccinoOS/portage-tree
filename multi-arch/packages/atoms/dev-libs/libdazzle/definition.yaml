@@ -1,5 +1,5 @@
 name: libdazzle
-version: "3.36.0+2"
+version: "3.36.0+3"
 category: dev-libs
 requires:
 - name: system-x
