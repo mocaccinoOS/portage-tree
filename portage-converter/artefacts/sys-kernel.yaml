@@ -1,4 +1,4 @@
 artefacts:
-- tree: amd64/packages/atoms
+- tree: multi-arch/packages/atoms
   packages:
     - sys-kernel/dracut
