@@ -1,0 +1,11 @@
+name: netaddr
+version: 0.8.0
+category: dev-python
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-python/netaddr
+  original.package.name: dev-python/netaddr
+  original.package.version: 0.8.0
