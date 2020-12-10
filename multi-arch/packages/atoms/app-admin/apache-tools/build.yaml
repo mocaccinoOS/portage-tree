@@ -18,12 +18,12 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: apr-util
-  version: '>=0'
-  category: dev-libs-1
-- name: expat
+- name: libpcre
   version: '>=0'
   category: dev-libs
-- name: apr
-  version: '>=1.5.0'
-  category: dev-libs-1
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: qt
+  version: '>=0'
+  category: layers
