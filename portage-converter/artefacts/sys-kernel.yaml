@@ -1,3 +1,11 @@
+skipped_resolutions:
+  packages:
+  - category: sys-apps
+    name: openrc
+
+  - category: sys-apps
+    name: sysvinit
+
 artefacts:
 - tree: multi-arch/packages/atoms
   packages:
