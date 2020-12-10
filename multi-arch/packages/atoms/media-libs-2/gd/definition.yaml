@@ -1,0 +1,11 @@
+name: gd
+version: 2.3.0
+category: media-libs-2
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: media-libs/gd
+  original.package.name: media-libs/gd
+  original.package.version: 2.3.0
