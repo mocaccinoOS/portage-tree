@@ -21,6 +21,3 @@ requires:
 - name: Alien-Libxml2
   version: '>=0'
   category: dev-perl
-- name: libxml2
-  version: '>=2.6.21'
-  category: dev-libs-2
