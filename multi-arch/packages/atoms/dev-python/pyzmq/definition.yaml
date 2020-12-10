@@ -1,0 +1,17 @@
+name: pyzmq
+version: 19.0.2
+category: dev-python
+requires:
+- name: zeromq
+  version: '>=4.2.2-r2'
+  category: net-libs
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: py
+  version: '>=0'
+  category: dev-python
+labels:
+  emerge.packages: dev-python/pyzmq
+  original.package.name: dev-python/pyzmq
+  original.package.version: 19.0.2
