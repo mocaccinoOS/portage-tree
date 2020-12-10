@@ -18,9 +18,15 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: python-exec
-  version: '>=2'
-  category: dev-lang-2
 - name: ansible-base
   version: '>=0'
   category: app-admin
+- name: packaging
+  version: '>=16.6'
+  category: dev-python
+  use_flags:
+  - python_targets_python3_7(+)
+  - -python_single_target_python3_6(+)
+  - -python_single_target_python3_7(+)
+  - -python_single_target_python3_8(+)
+  - -python_single_target_python3_9(+)

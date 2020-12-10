@@ -1,5 +1,5 @@
 name: ansible
-version: "2.10.0"
+version: "2.10.0+1"
 category: app-admin
 requires:
 - name: system-x
@@ -17,9 +17,6 @@ requires:
 - name: sshpass
   version: '>=0'
   category: net-misc
-- name: python-exec
-  version: '>=2'
-  category: dev-lang-2
 - name: pyyaml
   version: '>=0'
   category: dev-python
