@@ -18,12 +18,6 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: xz-utils
+- name: lzo
   version: '>=0'
-  category: app-arch
-- name: zstd
-  version: '>=0'
-  category: app-arch
-- name: lz4
-  version: '>=0'
-  category: app-arch
+  category: dev-libs

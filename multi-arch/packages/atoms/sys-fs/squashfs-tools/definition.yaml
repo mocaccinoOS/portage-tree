@@ -2,18 +2,12 @@ name: squashfs-tools
 version: "4.4"
 category: sys-fs
 requires:
+- name: lzo
+  version: '>=0'
+  category: dev-libs
 - name: system-x
   version: '>=0'
   category: layers
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
-- name: zstd
-  version: '>=0'
-  category: app-arch
-- name: lz4
-  version: '>=0'
-  category: app-arch
 labels:
   emerge.packages: sys-fs/squashfs-tools
   original.package.name: sys-fs/squashfs-tools
