@@ -1,0 +1,14 @@
+name: pexpect
+version: 4.8.0
+category: dev-python
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: ptyprocess
+  version: '>=0.5'
+  category: dev-python
+labels:
+  emerge.packages: dev-python/pexpect
+  original.package.name: dev-python/pexpect
+  original.package.version: 4.8.0-r1
