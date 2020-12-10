@@ -1,10 +1,10 @@
 name: metalog
-version: "20181125"
+version: "20181125+1"
 category: app-admin
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+- name: libpcre
+  version: '>=3.4'
+  category: dev-libs
 labels:
   emerge.packages: app-admin/metalog
   original.package.name: app-admin/metalog
