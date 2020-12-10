@@ -1,0 +1,11 @@
+name: gnome-themes-standard
+version: "3.28"
+category: x11-themes
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: x11-themes/gnome-themes-standard
+  original.package.name: x11-themes/gnome-themes-standard
+  original.package.version: "3.28"
