@@ -1,0 +1,11 @@
+name: pyyaml
+version: 5.3.1
+category: dev-python
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-python/pyyaml
+  original.package.name: dev-python/pyyaml
+  original.package.version: 5.3.1-r1
