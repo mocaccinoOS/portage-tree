@@ -18,9 +18,6 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: Alien-Build
   version: '>=2.120.0'
   category: dev-perl
