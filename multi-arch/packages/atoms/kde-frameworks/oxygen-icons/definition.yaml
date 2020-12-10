@@ -1,0 +1,7 @@
+name: oxygen-icons
+version: 5.74.0
+category: kde-frameworks
+labels:
+  emerge.packages: kde-frameworks/oxygen-icons
+  original.package.name: kde-frameworks/oxygen-icons
+  original.package.version: 5.74.0
