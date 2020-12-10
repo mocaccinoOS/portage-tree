@@ -18,9 +18,9 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: mate
-  version: '>=0'
-  category: layers
 - name: XML-LibXML
   version: '>=0'
   category: dev-perl
+- name: docbook-xml-dtd
+  version: '>=0'
+  category: app-text
