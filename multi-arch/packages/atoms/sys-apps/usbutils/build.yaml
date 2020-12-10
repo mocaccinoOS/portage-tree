@@ -18,9 +18,3 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
-- name: system-x
-  version: '>=0'
-  category: layers
