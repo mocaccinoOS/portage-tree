@@ -11,9 +11,6 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: kf-env
-  version: '>=4'
-  category: kde-frameworks
 labels:
   emerge.packages: sys-libs/kpmcore:5
   original.package.name: sys-libs/kpmcore
