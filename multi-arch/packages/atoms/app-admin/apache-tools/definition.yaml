@@ -1,10 +1,7 @@
 name: apache-tools
-version: "2.4.46+1"
+version: "2.4.46+2"
 category: app-admin
 requires:
-- name: libpcre
-  version: '>=0'
-  category: dev-libs
 - name: system-x
   version: '>=0'
   category: layers
