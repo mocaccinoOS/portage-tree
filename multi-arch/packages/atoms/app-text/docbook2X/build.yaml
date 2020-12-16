@@ -21,6 +21,3 @@ requires:
 - name: XML-LibXML
   version: '>=0'
   category: dev-perl
-- name: docbook-xml-dtd
-  version: '>=0'
-  category: app-text
