@@ -1,6 +1,6 @@
 category: "layers"
 name: "X"
-version: "0.3+5"
+version: "0.3+6"
 labels:
   emerge.jobs: "1"
   emerge.packages: >
@@ -69,6 +69,7 @@ labels:
               media-libs/opus
               media-libs/taglib
               media-plugins/gst-plugins-meta
+	      media-sound/pulseaudio
               net-dialup/linux-atm
               net-dialup/ppp
               net-dialup/ppp-scripts
@@ -99,8 +100,10 @@ labels:
               x11-apps/setxkbmap
               x11-apps/xdm
               x11-apps/xhost
+	      x11-apps/xmessage
               x11-apps/xprop
               x11-apps/xset
+	      x11-apps/xsetroot
               x11-base/xorg-server
               x11-drivers/xf86-input-evdev
               x11-drivers/xf86-input-joystick
@@ -135,6 +138,7 @@ labels:
               x11-misc/notification-daemon
               x11-misc/xdg-user-dirs-gtk
               x11-misc/xdg-utils
+	      x11-terms/xterm
               x11-themes/sound-theme-freedesktop
 requires:
   - category: "layers"
