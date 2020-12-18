@@ -1,4 +1,5 @@
 excludes:
+- ^/var/cache/distfiles
 - ^/var/db/repos
 - ^/var/cache/edb
 - ^/usr/portage
