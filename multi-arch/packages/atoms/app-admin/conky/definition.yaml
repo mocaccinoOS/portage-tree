@@ -1,0 +1,17 @@
+name: conky
+version: 1.10.8
+category: app-admin
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: hddtemp
+  version: '>=0'
+  category: app-admin
+- name: X
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: app-admin/conky
+  original.package.name: app-admin/conky
+  original.package.version: 1.10.8-r9
