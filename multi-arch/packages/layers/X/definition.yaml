@@ -101,9 +101,9 @@ labels:
               x11-apps/xdm
               x11-apps/xhost
               x11-apps/xmessage
-	      x11-apps/xmodmap
+              x11-apps/xmodmap
               x11-apps/xprop
-	      x11-apps/xrandr
+              x11-apps/xrandr
               x11-apps/xset
               x11-apps/xsetroot
               x11-base/xorg-server
