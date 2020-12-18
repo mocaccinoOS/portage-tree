@@ -1,0 +1,44 @@
+name: calamares
+version: 3.2.32.1
+category: app-admin
+requires:
+- name: sys-fs
+  version: '>=0'
+  category: layers
+- name: qt
+  version: '>=0'
+  category: layers
+- name: sudo
+  version: '>=0'
+  category: app-admin
+- name: X
+  version: '>=0'
+  category: layers
+- name: plasma
+  version: '>=0'
+  category: layers
+- name: dmidecode
+  version: '>=0'
+  category: sys-apps
+- name: system-x
+  version: '>=0'
+  category: layers
+- name: kpmcore
+  version: '>=4.0.0'
+  category: sys-libs-5
+- name: grub
+  version: '>=0'
+  category: sys-boot-2
+- name: os-prober
+  version: '>=0'
+  category: sys-boot
+- name: squashfs-tools
+  version: '>=0'
+  category: sys-fs
+- name: oxygen-icons
+  version: '>=0'
+  category: kde-frameworks
+labels:
+  emerge.packages: app-admin/calamares
+  original.package.name: app-admin/calamares
+  original.package.version: 3.2.32.1
