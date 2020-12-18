@@ -8,9 +8,6 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
 - name: efibootmgr
   version: '>=0'
   category: sys-boot
