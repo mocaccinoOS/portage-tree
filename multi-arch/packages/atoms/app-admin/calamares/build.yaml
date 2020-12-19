@@ -18,9 +18,9 @@ requires:
 - name: qt
   version: '>=0'
   category: layers
-- name: sys-fs
+- name: zfs-kmod
   version: '>=0'
-  category: zfs-kmod
+  category: sys-fs
 - name: plasma
   version: '>=0'
   category: layers
