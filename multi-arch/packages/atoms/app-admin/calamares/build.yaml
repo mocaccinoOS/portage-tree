@@ -18,12 +18,9 @@ requires:
 - name: qt
   version: '>=0'
   category: layers
-- name: system-x
+- name: sys-fs
   version: '>=0'
-  category: layers
-- name: X
-  version: '>=0'
-  category: layers
+  category: zfs-kmod
 - name: plasma
   version: '>=0'
   category: layers

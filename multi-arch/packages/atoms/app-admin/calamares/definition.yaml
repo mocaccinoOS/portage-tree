@@ -1,5 +1,5 @@
 name: calamares
-version: 3.2.32.1
+version: "3.2.32.1+1"
 category: app-admin
 requires:
 - name: sys-fs
