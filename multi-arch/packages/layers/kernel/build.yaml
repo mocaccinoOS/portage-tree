@@ -15,9 +15,9 @@ prelude:
 - luet install repository/mocaccino-kernel-stable
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
-- luet install kernel/mocaccino-sources && luet cleanup
+- luet install kernel/mocaccino-lts-sources && luet cleanup
 # We use our kernel for compile modules
-- cd /usr/src && eval 'rm linux || true' && ln -s linux-5.9.0-mocaccino linux
+- cd /usr/src && eval 'rm linux || true' && ln -s linux-5.4.0-mocaccino linux
 requires:
 - category: "layers"
   name: "system-x"
