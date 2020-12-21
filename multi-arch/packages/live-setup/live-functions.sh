@@ -139,7 +139,7 @@ setup_vt_autologin() {
             /etc/systemd/system/autologin@.service
         sed -i "/^ExecStart=/ s:/sbin/agetty:/sbin/agetty --autologin root:g" \
             /lib/systemd/system/getty@.service
-        sed -i "/^ExecStart=/ s:--noclear::g" \
+        sed -i "/^ExecStart=/ s:-o.*--noclear::g" \
             /lib/systemd/system/getty@.service
         systemctl daemon-reload
         systemctl restart getty@tty1
