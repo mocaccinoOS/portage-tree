@@ -9,7 +9,7 @@ SDDM_FILE="/etc/sddm.conf"
 LIVE_USER_GROUPS="audio bumblebee cdrom cdrw clamav console games \
 kvm lp lpadmin messagebus plugdev polkituser portage pulse pulse-access pulse-rt \
 scanner usb users uucp vboxguest vboxusers video wheel"
-LIVE_USER=${USER:-mocaccino}
+LIVE_USER=mocaccino
 LIVE_PERSISTENT_HOME_LABEL="live:/home"
 
 setup_autologin() {
