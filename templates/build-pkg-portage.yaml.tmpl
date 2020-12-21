@@ -10,6 +10,6 @@ env:
 steps:
 # TODO: install luet to build layer
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
-- luet install repository/mocaccino-extra-stable system/luet-extensions
+- luet install repository/mocaccino-extra-stable system/luet-extensions-live
 - luet install dev-util/pkgs-checker-minimal utils/jq
 - luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
