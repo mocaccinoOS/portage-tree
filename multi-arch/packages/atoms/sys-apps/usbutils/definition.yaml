@@ -1,18 +1,15 @@
 name: usbutils
-version: "012+2"
+version: 012+3
 category: sys-apps
 requires:
 - name: system-x
   version: '>=0'
   category: layers
-  
+uri:
+- https://www.kernel.org/pub/linux/utils/usb/usbutils/
+- https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usbutils.git/
+license: GPL-2
 labels:
   emerge.packages: sys-apps/usbutils
   original.package.name: sys-apps/usbutils
   original.package.version: "012"
-  
-uri:
-- https://www.kernel.org/pub/linux/utils/usb/usbutils/
-- https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usbutils.git/
-
-license: "GPL-2"

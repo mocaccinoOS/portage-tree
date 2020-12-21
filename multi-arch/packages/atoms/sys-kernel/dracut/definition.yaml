@@ -1,5 +1,5 @@
 name: dracut
-version: "050"
+version: 050+1
 category: sys-kernel
 requires:
 - name: X

@@ -1,5 +1,5 @@
 name: eix
-version: "0.34.9+1"
+version: 0.34.9+2
 category: app-portage
 requires:
 - name: quoter
@@ -11,13 +11,10 @@ requires:
 - name: system-x
   version: '>=0'
   category: layers
-  
+uri:
+- https://github.com/vaeth/eix/
+license: GPL-2
 labels:
   emerge.packages: app-portage/eix
   original.package.name: app-portage/eix
   original.package.version: 0.34.9
-  
-uri:
-- https://github.com/vaeth/eix/
-
-license: "GPL-2"

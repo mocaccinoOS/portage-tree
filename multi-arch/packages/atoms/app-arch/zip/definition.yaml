@@ -1,17 +1,14 @@
 name: zip
-version: "3.0"
+version: 3.0+1
 category: app-arch
 requires:
 - name: system-x
   version: '>=0'
   category: layers
-  
+uri:
+- http://www.info-zip.org/
+license: Info-ZIP
 labels:
   emerge.packages: app-arch/zip
   original.package.name: app-arch/zip
   original.package.version: 3.0-r4
-  
-uri:
-- http://www.info-zip.org/
-
-license: "Info-ZIP"

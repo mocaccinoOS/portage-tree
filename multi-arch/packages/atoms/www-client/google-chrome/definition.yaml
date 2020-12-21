@@ -1,5 +1,5 @@
 name: google-chrome
-version: 86.0.4240.193
+version: 86.0.4240.193+1
 category: www-client
 requires:
 - name: X
@@ -17,13 +17,10 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
-  
+uri:
+- https://www.google.com/chrome
+license: google-chrome
 labels:
   emerge.packages: www-client/google-chrome
   original.package.name: www-client/google-chrome
   original.package.version: 86.0.4240.193
-  
-uri:
-- https://www.google.com/chrome
-
-license: "google-chrome"

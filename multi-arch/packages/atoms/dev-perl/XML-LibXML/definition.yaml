@@ -1,5 +1,5 @@
 name: XML-LibXML
-version: "2.20.100+1"
+version: 2.20.100+2
 category: dev-perl
 requires:
 - name: system-x

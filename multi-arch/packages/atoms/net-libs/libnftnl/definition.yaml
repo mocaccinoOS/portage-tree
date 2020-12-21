@@ -1,5 +1,5 @@
 name: libnftnl
-version: 1.1.7
+version: 1.1.7+1
 category: net-libs
 requires:
 - name: system-x

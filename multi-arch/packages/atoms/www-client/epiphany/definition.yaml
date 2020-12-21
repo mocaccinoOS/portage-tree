@@ -1,5 +1,5 @@
 name: epiphany
-version: "3.36.4+1"
+version: 3.36.4+2
 category: www-client
 requires:
 - name: system-x
@@ -23,13 +23,10 @@ requires:
 - name: libxml2
   version: '>=2.6.12'
   category: dev-libs-2
-  
+uri:
+- https://wiki.gnome.org/Apps/Web
+license: GPL-3+
 labels:
   emerge.packages: www-client/epiphany
   original.package.name: www-client/epiphany
   original.package.version: 3.36.4
-  
-uri:
-- https://wiki.gnome.org/Apps/Web
-
-license: "GPL-3+"

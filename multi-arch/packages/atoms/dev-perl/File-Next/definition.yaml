@@ -1,17 +1,14 @@
 name: File-Next
-version: "1.180.0+1"
+version: 1.180.0+2
 category: dev-perl
 requires:
 - name: system-x
   version: '>=0'
   category: layers
-
+uri:
+- https://metacpan.org/release/File-Next
+license: Artistic-2 GPL-2+
 labels:
   emerge.packages: dev-perl/File-Next
   original.package.name: dev-perl/File-Next
   original.package.version: 1.180.0
-  
-uri:
-- https://metacpan.org/release/File-Next
-
-license: "Artistic-2 GPL-2+"

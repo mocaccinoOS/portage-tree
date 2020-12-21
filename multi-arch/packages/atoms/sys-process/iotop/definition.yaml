@@ -1,5 +1,5 @@
 name: iotop
-version: "0.6+1"
+version: 0.6+2
 category: sys-process
 requires:
 - name: python-exec
@@ -9,6 +9,6 @@ requires:
   version: '>=0'
   category: layers
 labels:
+  emerge.packages: sys-process/iotop
   original.package.name: sys-process/iotop
   original.package.version: "0.6"
-  emerge.packages: "sys-process/iotop"

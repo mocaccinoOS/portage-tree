@@ -1,17 +1,14 @@
 name: ethtool
-version: "5.8+2"
+version: 5.8+3
 category: sys-apps
 requires:
 - name: system-x
   version: '>=0'
   category: layers
-
+uri:
+- https://www.kernel.org/pub/software/network/ethtool/
+license: GPL-2
 labels:
   emerge.packages: sys-apps/ethtool
   original.package.name: sys-apps/ethtool
   original.package.version: 5.8-r1
-  
-uri:
-- https://www.kernel.org/pub/software/network/ethtool/
-
-license: "GPL-2"

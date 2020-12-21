@@ -1,13 +1,10 @@
 name: dmidecode
-version: "3.2"
+version: 3.2+1
 category: sys-apps
-
+uri:
+- https://www.nongnu.org/dmidecode/
+license: GPL-2
 labels:
   emerge.packages: sys-apps/dmidecode
   original.package.name: sys-apps/dmidecode
   original.package.version: "3.2"
-  
-uri:
-- https://www.nongnu.org/dmidecode/
-
-license: "GPL-2"

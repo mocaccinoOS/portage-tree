@@ -1,5 +1,5 @@
 name: seamonkey
-version: "2.53.4+1"
+version: 2.53.4+2
 category: www-client
 requires:
 - name: X
@@ -11,13 +11,10 @@ requires:
 - name: enigmail
   version: '>=0'
   category: x11-plugins
-  
+uri:
+- http://www.seamonkey-project.org
+license: MPL-2.0 GPL-2 LGPL-2.1
 labels:
   emerge.packages: www-client/seamonkey
   original.package.name: www-client/seamonkey
   original.package.version: 2.53.4
-  
-uri:
-- http://www.seamonkey-project.org
-
-license: "MPL-2.0 GPL-2 LGPL-2.1"

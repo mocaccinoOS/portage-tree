@@ -1,5 +1,5 @@
 name: enigmail
-version: "2.0.12"
+version: 2.0.12+1
 category: x11-plugins
 requires:
 - name: pinentry
@@ -8,13 +8,10 @@ requires:
 - name: gnupg
   version: '>=2.0'
   category: app-crypt
-  
+uri:
+- https://www.enigmail.net/
+license: MPL-2.0 GPL-3
 labels:
   emerge.packages: x11-plugins/enigmail
   original.package.name: x11-plugins/enigmail
   original.package.version: 2.0.12-r1
-  
-uri:
-- https://www.enigmail.net/
-
-license: "MPL-2.0 GPL-3"

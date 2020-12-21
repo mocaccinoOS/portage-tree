@@ -1,5 +1,5 @@
 name: lynx
-version: "2.8.9+p2"
+version: 2.8.9+p3
 category: www-client
 requires:
 - name: system-x
@@ -8,13 +8,10 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
-  
+uri:
+- https://lynx.invisible-island.net/
+license: GPL-2
 labels:
   emerge.packages: www-client/lynx
   original.package.name: www-client/lynx
   original.package.version: 2.8.9_p1
-  
-uri:
-- https://lynx.invisible-island.net/
-
-license: "GPL-2"

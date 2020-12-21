@@ -1,5 +1,5 @@
 name: gnome-disk-utility
-version: "3.36.3+1"
+version: 3.36.3+2
 category: sys-apps
 requires:
 - name: system-x
@@ -17,13 +17,10 @@ requires:
 - name: sys-fs
   version: '>=0'
   category: layers
-
+uri:
+- https://wiki.gnome.org/Apps/Disks
+license: GPL-2+
 labels:
   emerge.packages: sys-apps/gnome-disk-utility
   original.package.name: sys-apps/gnome-disk-utility
   original.package.version: 3.36.3
-  
-uri:
-- https://wiki.gnome.org/Apps/Disks
-
-license: "GPL-2+"

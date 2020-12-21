@@ -1,13 +1,10 @@
 name: paxctl
-version: "0.9"
+version: 0.9+1
 category: sys-apps
-
+uri:
+- https://pax.grsecurity.net
+license: GPL-2
 labels:
   emerge.packages: sys-apps/paxctl
   original.package.name: sys-apps/paxctl
   original.package.version: "0.9"
-  
-uri:
-- https://pax.grsecurity.net
-
-license: "GPL-2"

@@ -1,5 +1,5 @@
 name: atop
-version: "2.3.0+1"
+version: 2.3.0+2
 category: sys-process
 requires:
 - name: system-x
@@ -9,6 +9,6 @@ requires:
   version: '>=0'
   category: sys-process
 labels:
+  emerge.packages: sys-process/atop
   original.package.name: sys-process/atop
   original.package.version: 2.3.0-r1
-  emerge.packages: "sys-process/atop"

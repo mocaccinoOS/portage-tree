@@ -1,17 +1,14 @@
 name: libdazzle
-version: "3.36.0+3"
+version: 3.36.0+4
 category: dev-libs
 requires:
 - name: system-x
   version: '>=0'
   category: layers
-  
+uri:
+- https://gitlab.gnome.org/GNOME/libdazzle
+license: GPL-3+
 labels:
   emerge.packages: dev-libs/libdazzle
   original.package.name: dev-libs/libdazzle
   original.package.version: 3.36.0
-  
-uri:
-- https://gitlab.gnome.org/GNOME/libdazzle
-
-license: "GPL-3+"

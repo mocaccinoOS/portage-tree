@@ -1,17 +1,14 @@
 name: ipmiutil
-version: 3.0.6
+version: 3.0.6+1
 category: sys-apps
 requires:
 - name: system-x
   version: '>=0'
   category: layers
-  
+uri:
+- http://ipmiutil.sourceforge.net/
+license: BSD
 labels:
   emerge.packages: sys-apps/ipmiutil
   original.package.name: sys-apps/ipmiutil
   original.package.version: 3.0.6
-
-uri:
-- http://ipmiutil.sourceforge.net/
-
-license: "BSD"

@@ -1,5 +1,5 @@
 name: ide-smart
-version: "1.4"
+version: 1.4+1
 category: app-admin
 labels:
   emerge.packages: app-admin/ide-smart
