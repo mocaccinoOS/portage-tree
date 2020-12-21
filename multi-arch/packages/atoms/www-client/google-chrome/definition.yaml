@@ -1,5 +1,5 @@
 name: google-chrome
-version: 86.0.4240.193+1
+version: 86.0.4240.193+2
 category: www-client
 requires:
 - name: X

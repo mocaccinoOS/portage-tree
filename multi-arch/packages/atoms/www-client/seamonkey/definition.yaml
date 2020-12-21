@@ -1,5 +1,5 @@
 name: seamonkey
-version: 2.53.4+2
+version: 2.53.4+3
 category: www-client
 requires:
 - name: X

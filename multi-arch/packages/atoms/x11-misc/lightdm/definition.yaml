@@ -1,5 +1,5 @@
 name: lightdm
-version: 1.30.0+2
+version: 1.30.0+3
 category: x11-misc
 requires:
 - name: X

@@ -1,5 +1,5 @@
 name: metalog
-version: 20181125+3
+version: 20181125+4
 category: app-admin
 requires:
 - name: system-x

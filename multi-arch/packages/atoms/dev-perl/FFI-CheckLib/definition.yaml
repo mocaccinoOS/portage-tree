@@ -1,5 +1,5 @@
 name: FFI-CheckLib
-version: 0.250.0+1
+version: 0.250.0+2
 category: dev-perl
 requires:
 - name: system-x

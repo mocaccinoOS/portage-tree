@@ -1,5 +1,5 @@
 name: ipmitool
-version: 1.8.18+p20201005
+version: 1.8.18+p20201006
 category: sys-apps
 requires:
 - name: system-x

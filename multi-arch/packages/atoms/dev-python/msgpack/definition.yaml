@@ -1,5 +1,5 @@
 name: msgpack
-version: 0.6.2+1
+version: 0.6.2+2
 category: dev-python
 requires:
 - name: system-x

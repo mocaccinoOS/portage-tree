@@ -1,5 +1,5 @@
 name: vivaldi
-version: 3.4.2066.86+p2
+version: 3.4.2066.86+p3
 category: www-client
 requires:
 - name: X

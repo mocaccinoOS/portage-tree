@@ -1,5 +1,5 @@
 name: ansible
-version: 2.10.0+2
+version: 2.10.0+3
 category: app-admin
 requires:
 - name: system-x

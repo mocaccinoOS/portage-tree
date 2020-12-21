@@ -1,5 +1,5 @@
 name: eix
-version: 0.34.9+2
+version: 0.34.9+3
 category: app-portage
 requires:
 - name: quoter

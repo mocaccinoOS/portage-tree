@@ -1,5 +1,5 @@
 name: IO-BufferedSelect
-version: 1.0.0+1
+version: 1.0.0+2
 category: dev-perl
 requires:
 - name: system-x

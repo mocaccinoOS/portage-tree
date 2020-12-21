@@ -1,5 +1,5 @@
 name: acct
-version: 6.6.4+2
+version: 6.6.4+3
 category: sys-process
 labels:
   emerge.packages: sys-process/acct

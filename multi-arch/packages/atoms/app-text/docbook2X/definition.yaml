@@ -1,5 +1,5 @@
 name: docbook2X
-version: 0.8.8+4
+version: 0.8.8+5
 category: app-text
 requires:
 - name: system-x

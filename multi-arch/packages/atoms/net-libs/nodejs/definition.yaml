@@ -1,5 +1,5 @@
 name: nodejs
-version: 14.15.0+1
+version: 14.15.0+2
 category: net-libs
 requires:
 - name: gnome-common

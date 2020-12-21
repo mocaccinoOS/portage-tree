@@ -1,5 +1,5 @@
 name: conky
-version: 1.10.8+1
+version: 1.10.8+2
 category: app-admin
 requires:
 - name: system-x

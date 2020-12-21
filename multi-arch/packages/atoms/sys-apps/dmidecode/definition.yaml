@@ -1,5 +1,5 @@
 name: dmidecode
-version: 3.2+1
+version: 3.2+2
 category: sys-apps
 uri:
 - https://www.nongnu.org/dmidecode/

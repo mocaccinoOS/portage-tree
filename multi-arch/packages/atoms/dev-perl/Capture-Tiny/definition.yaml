@@ -1,5 +1,5 @@
 name: Capture-Tiny
-version: 0.480.0+1
+version: 0.480.0+2
 category: dev-perl
 requires:
 - name: system-x

@@ -1,5 +1,5 @@
 name: hwinfo
-version: 21.23+1
+version: 21.23+2
 category: sys-apps
 requires:
 - name: libx86emu

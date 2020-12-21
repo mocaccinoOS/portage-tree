@@ -1,5 +1,5 @@
 name: nftables
-version: 0.9.6+1
+version: 0.9.6+2
 category: net-firewall
 requires:
 - name: system-x

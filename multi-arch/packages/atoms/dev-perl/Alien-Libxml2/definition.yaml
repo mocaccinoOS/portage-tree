@@ -1,5 +1,5 @@
 name: Alien-Libxml2
-version: 0.160.0+2
+version: 0.160.0+3
 category: dev-perl
 requires:
 - name: system-x
