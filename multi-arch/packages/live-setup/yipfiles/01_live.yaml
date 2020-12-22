@@ -1,4 +1,4 @@
 stages:
    boot:
      - commands:
-        - bash /integration/usr/bin/live.sh
+        - bash /usr/bin/live.sh
