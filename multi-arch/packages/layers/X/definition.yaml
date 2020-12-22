@@ -99,7 +99,7 @@ labels:
               virtual/tex-base
               x11-apps/setxkbmap
               x11-apps/xdm
-	      x11-apps/xdpyinfo
+              x11-apps/xdpyinfo
               x11-apps/xhost
               x11-apps/xmessage
               x11-apps/xmodmap
