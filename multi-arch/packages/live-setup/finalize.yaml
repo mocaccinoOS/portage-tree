@@ -1,3 +1,5 @@
 install:
 - source /var/lib/mocaccino/live-functions.sh && prepare
-shell: "/bin/bash"
+shell:
+- bash
+- -c
