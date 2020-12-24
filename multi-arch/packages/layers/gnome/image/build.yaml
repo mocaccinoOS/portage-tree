@@ -4,7 +4,22 @@ requires:
   name: "gnome"
   version: ">=0"
 excludes:
+- ^/etc/shadow
+- ^/etc/os-release
+- ^/etc/gshadow
+- ^/etc/group
+- ^/etc/hostname
+- ^/etc/hosts
+- ^/etc/machine-id
+- ^/etc/fstab
+- ^/etc/passwd
+- ^/etc/machineid
+
 - ^/sys
 - ^/proc
 - ^/dev
+
+- ^/luetbuild
+
+- ^/var/log
 - ^/var/cache/distfiles
