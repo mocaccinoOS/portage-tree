@@ -6,7 +6,7 @@ Mocaccino OS Luet Tree for Gentoo Portage
 
 ### Generate provides for a package:
 
-First be sure to have `yq`, `jq` and `pkgs-checker` installed ( ```luet install repository/mocaccino-extra-stable``` and ```luet install -y utils/yq utils/jq dev-util/pkgs-checker``` )
+First be sure to have `yq`, `jq` and `pkgs-checker` installed ( ```luet install repository/mocaccino-extra-stable``` and ```luet install -y utils/yq utils/jq dev-util/pkgs-checker-minimal``` )
 
 
 ```bash
