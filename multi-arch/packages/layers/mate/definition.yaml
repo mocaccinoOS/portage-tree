@@ -1,6 +1,6 @@
 category: "layers"
 name: "mate"
-version: "1.24+7"
+version: "1.24+8"
 labels:
   emerge.jobs: "1"
   emerge.packages: "=mate-base/mate-1.24"
@@ -11,6 +11,12 @@ requires:
   - category: "layers"
     name: "gnome-common"
     version: ">=0"
+  - category: dev-perl
+    name: XML-SAX-Base
+    version: '>=0'
+  - category: dev-libs
+    name: tinyxml
+    version: '>=0'
 provides:
   - name: engrampa
     category: app-arch
@@ -36,16 +42,10 @@ provides:
   - name: mathjax
     category: dev-libs
     version: '>=0'
-  - name: tinyxml
-    category: dev-libs
-    version: '>=0'
   - name: XML-NamespaceSupport
     category: dev-perl
     version: '>=0'
   - name: XML-SAX
-    category: dev-perl
-    version: '>=0'
-  - name: XML-SAX-Base
     category: dev-perl
     version: '>=0'
   - name: XML-SAX-Expat
