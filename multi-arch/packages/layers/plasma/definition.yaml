@@ -36,9 +36,6 @@ provides:
   - name: plasma-wayland-protocols
     category: dev-libs
     version: '>=0'
-  - name: protobuf
-    category: dev-libs
-    version: '>=0'
   - name: xapian
     category: dev-libs
     version: '>=0'
@@ -420,22 +417,13 @@ provides:
   - name: phonon-vlc
     category: media-libs
     version: '>=0'
-  - name: sbc
-    category: media-libs
-    version: '>=0'
   - name: soxr
     category: media-libs
     version: '>=0'
   - name: speex
     category: media-libs
     version: '>=0'
-  - name: speexdsp
-    category: media-libs
-    version: '>=0'
   - name: vidstab
-    category: media-libs
-    version: '>=0'
-  - name: webrtc-audio-processing
     category: media-libs
     version: '>=0'
   - name: x264
@@ -447,9 +435,6 @@ provides:
   - name: xvid
     category: media-libs
     version: '>=0'
-  - name: alsa-plugins
-    category: media-plugins
-    version: '>=0'
   - name: live
     category: media-plugins
     version: '>=0'
@@ -457,9 +442,6 @@ provides:
     category: media-sound-2
     version: '>=0'
   - name: lame
-    category: media-sound
-    version: '>=0'
-  - name: pulseaudio
     category: media-sound
     version: '>=0'
   - name: ffmpeg
@@ -486,9 +468,6 @@ provides:
   - name: libaccounts-glib
     category: net-libs
     version: '>=0'
-  - name: libasyncns
-    category: net-libs
-    version: '>=0'
   - name: libmicrodns
     category: net-libs
     version: '>=0'
@@ -501,9 +480,6 @@ provides:
   - name: signond
     category: net-libs
     version: '>=0'
-  - name: ofono
-    category: net-misc
-    version: '>=0'
   - name: socat
     category: net-misc
     version: '>=0'
@@ -512,6 +488,30 @@ provides:
     version: '>=0'
   - name: openconnect
     category: net-vpn
+    version: '>=0'
+  - name: xdg-desktop-portal
+    category: sys-apps
+    version: '>=0'
+  - name: polkit-qt
+    category: sys-auth
+    version: '>=0'
+  - name: realtime-base
+    category: sys-auth
+    version: '>=0'
+  - name: cryfs
+    category: sys-fs
+    version: '>=0'
+  - name: fuse
+    category: sys-fs
+    version: '>=0'
+  - name: libraw1394
+    category: sys-libs
+    version: '>=0'
+  - name: jack
+    category: virtual
+    version: '>=0'
+  - name: sddm
+    category: x11-misc
     version: '>=0'
   - name: xdg-desktop-portal
     category: sys-apps
