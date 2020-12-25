@@ -4,5 +4,5 @@ password: "x"
 uid: 32
 gid: 32
 info: "Created by entities"
-homedir: "/dev/null"
-shell: "/sbin/nologin"
+homedir: "/var/lib/gdm"
+shell: "/bin/false"
