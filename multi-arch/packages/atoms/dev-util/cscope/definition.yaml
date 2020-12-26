@@ -1,0 +1,11 @@
+name: cscope
+version: 15.8+a
+category: dev-util
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: dev-util/cscope
+  original.package.name: dev-util/cscope
+  original.package.version: 15.8a-r1
