@@ -1,0 +1,11 @@
+name: eselect-vi
+version: "1.2"
+category: app-eselect
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: app-eselect/eselect-vi
+  original.package.name: app-eselect/eselect-vi
+  original.package.version: "1.2"
