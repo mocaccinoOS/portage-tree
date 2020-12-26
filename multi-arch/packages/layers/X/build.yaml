@@ -10,6 +10,7 @@ env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+- cp -rv xorg.conf.d/ /etc/X11/
 requires:
 - category: "layers"
   name: "system-x"
