@@ -511,6 +511,7 @@ packages:
 
 - <<: *group
   name: "video"
+  version: "0+5"
 
 - <<: *group
   name: "vpopmail"
