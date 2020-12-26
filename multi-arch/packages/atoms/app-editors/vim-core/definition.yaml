@@ -1,0 +1,7 @@
+name: vim-core
+version: 8.2.0360
+category: app-editors
+labels:
+  emerge.packages: app-editors/vim-core
+  original.package.name: app-editors/vim-core
+  original.package.version: 8.2.0360
