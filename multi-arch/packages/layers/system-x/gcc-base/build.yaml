@@ -47,6 +47,11 @@ includes:
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.version}}/libquadmath.*
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.version}}/libstdc.*
 - /usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.version}}/vtv_.*
+- /usr/lib/llvm$
+- /usr/lib/llvm/10$
+- /usr/lib/llvm/10/lib64$
+- /usr/lib/llvm/10/lib$
+- /usr/lib/llvm/.*/lib.*/libLLVM.*.so
 - /usr/share$
 - /usr/share/gcc-data$
 - /usr/share/gcc-data/x86_64-pc-linux-gnu$

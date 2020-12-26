@@ -48,6 +48,7 @@ includes:
 - /usr/lib/clang$
 - /usr/lib/clang/.*
 excludes:
+- ^/usr/lib/llvm/.*/lib.*/libLLVM.*.so
 - ^/usr/lib/debug/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.version}}/.*
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.version}}/32/crtbegin.o
 - ^/usr/lib/gcc/x86_64-pc-linux-gnu/{{.Values.version}}/32/crtbeginS.o
