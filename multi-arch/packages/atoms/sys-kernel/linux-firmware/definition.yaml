@@ -1,0 +1,7 @@
+name: linux-firmware
+version: "20201022"
+category: sys-kernel
+labels:
+  emerge.packages: sys-kernel/linux-firmware
+  original.package.name: sys-kernel/linux-firmware
+  original.package.version: 20201022-r2
