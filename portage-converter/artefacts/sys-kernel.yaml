@@ -10,3 +10,4 @@ artefacts:
 - tree: multi-arch/packages/atoms
   packages:
     - sys-kernel/dracut
+    - sys-kernel/linux-firmware
