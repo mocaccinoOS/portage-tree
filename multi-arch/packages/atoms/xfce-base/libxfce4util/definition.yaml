@@ -1,0 +1,11 @@
+name: libxfce4util
+version: 4.14.0
+category: xfce-base
+requires:
+- name: system-x
+  version: '>=0'
+  category: layers
+labels:
+  emerge.packages: xfce-base/libxfce4util
+  original.package.name: xfce-base/libxfce4util
+  original.package.version: 4.14.0
