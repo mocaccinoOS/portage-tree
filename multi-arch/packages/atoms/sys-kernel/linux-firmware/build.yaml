@@ -12,6 +12,8 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs/
 - LUET_YES=true
 prelude:
+- |
+  echo "sys-kernel/linux-firmware linux-fw-redistributable no-source-code" >> /etc/portage/package.license
 - emerge -j ${JOBS} --onlydeps {{ ( index .Values.labels "emerge.packages" ) }}
 package_dir: /{{ .Values.name }}
 requires:

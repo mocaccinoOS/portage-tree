@@ -1,5 +1,5 @@
 name: linux-firmware
-version: "20201022"
+version: "20201022+1"
 category: sys-kernel
 labels:
   emerge.packages: sys-kernel/linux-firmware
