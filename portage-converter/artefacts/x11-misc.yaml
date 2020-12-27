@@ -7,5 +7,7 @@ artefacts:
 - tree: multi-arch/packages/atoms
   packages:
     - x11-misc/lightdm
+    - x11-misc/lightdm-gtk-greeter
     - x11-misc/grsync
+    - x11-misc/slim
     - x11-misc/synergy
