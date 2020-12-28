@@ -16,7 +16,7 @@ requires:
   category: layers
 - name: freetype
   version: '>=2.4.10'
-  category: media-libs
+  category: media-libs-2
 labels:
   emerge.packages: www-client/firefox
   original.package.name: www-client/firefox
