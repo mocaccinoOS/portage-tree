@@ -1,6 +1,7 @@
 include_files:
 - artefacts/app-admin.yaml
 - artefacts/app-editors.yaml
+- artefacts/gnome-extra.yaml
 - artefacts/portage.yaml
 - artefacts/sys-apps.yaml
 - artefacts/sys-process.yaml

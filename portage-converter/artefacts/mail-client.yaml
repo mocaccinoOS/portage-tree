@@ -1,0 +1,11 @@
+skipped_resolutions:
+  # qdepends return it for gnome-themes-standard deps
+  packages:
+    - name: getopt
+      category: app-misc
+
+artefacts:
+- tree: multi-arch/packages/atoms
+  packages:
+    - mail-client/evolution
+    - mail-client/evolution-ews
