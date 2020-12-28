@@ -72,6 +72,9 @@ groups:
   gamestat:
     gid: 36
 
+  named:
+    gid: 40
+
   tor:
     gid: 43
 
@@ -123,6 +126,9 @@ groups:
   libvirt:
     gid: 79
 
+  apache:
+    gid: 81
+
   usb:
     gid: 85
 
@@ -135,6 +141,9 @@ groups:
   input:
     gid: 97
 
+  maradns:
+    gid: 99
+
   messagebus:
     gid: 101
 
@@ -143,6 +152,12 @@ groups:
 
   plex:
     gid: 103
+
+  freenet:
+    gid: 105
+
+  lpadmin:
+    gid: 106
 
   unifi:
     gid: 113
@@ -174,6 +189,12 @@ groups:
   transmission:
     gid: 169
 
+  pulse:
+    gid: 171
+
+  pulse-access:
+    gid: 172
+
   munin:
     gid: 177
 
@@ -182,6 +203,12 @@ groups:
 
   pdnsd:
     gid: 184
+
+  tinyproxy:
+    gid: 186
+
+  haproxy:
+    gid: 188
 
   systemd-journal:
     gid: 190
@@ -204,6 +231,12 @@ groups:
   git:
     gid: 196
 
+  cgit:
+    gid: 197
+
+  ipsec:
+    gid: 199
+
   nofiles:
     gid: 200
 
@@ -215,6 +248,9 @@ groups:
 
   postdrop:
     gid: 208
+
+  smmsp:
+    gid: 209
 
   cmd5checkpw:
     gid: 212
@@ -231,6 +267,12 @@ groups:
   nsd:
     gid: 223
 
+  carbon:
+    gid: 230
+
+  fvwm-crystal:
+    gid: 232
+
   turnserver:
     gid: 235
 
@@ -243,8 +285,17 @@ groups:
   scponly:
     gid: 239
 
+  icingaweb2:
+    gid: 241
+
   asterisk:
     gid: 242
+
+  fingerprint:
+    gid: 243
+
+  locate:
+    gid: 245
 
   smtpq:
     gid: 252
@@ -266,6 +317,21 @@ groups:
 
   dnsmasq_exporter:
     gid: 274
+
+  dnsmasq:
+    gid: 275
+
+  bind_exporter:
+    gid: 276
+
+  mongodb_exporter:
+    gid: 277
+
+  consul_exporter:
+    gid: 278
+
+  cvmfs:
+    gid: 268
 
   kibana:
     gid: 269
@@ -300,6 +366,24 @@ groups:
   vboxsf:
     gid: 306
 
+  clair:
+    gid: 307
+
+  mysqld_exporter:
+    gid: 308
+
+  croc:
+    gid: 310
+
+  flatpak:
+    gid: 313
+
+  lldpd:
+    gid: 315
+
+  exabgp:
+    gid: 316
+
   openntpd:
     gid: 321
 
@@ -318,29 +402,188 @@ groups:
   sqlgrey:
     gid: 336
 
+  spamd:
+    gid: 337
+
+  minidlna:
+    gid: 339
+
+  sanlock:
+    gid: 340
+
   stunnel:
     gid: 341
+
+  influxdb:
+    gid: 342
+
+  kapacitor:
+    gid: 343
+
+  chronograf:
+    gid: 344
+
+  docker_auth:
+    gid: 345
 
   dnscrypt-proxy:
     gid: 353
 
+  nginx-vts-exporter:
+    gid: 354
+
+  openvpn_exporter:
+    gid: 355
+
+  postfix_exporter:
+    gid: 356
+
+  dbmail:
+    gid: 365
+
+  sniproxy:
+    gid: 366
+
+  ziproxy:
+    gid: 366
+
   octoprint:
     gid: 368
+
+  ultimaker:
+    gid: 369
+
+  sks:
+    gid: 370
+
+  frr:
+    gid: 371
+
+  upmpcli:
+    gid: 372
+
+  snapserver:
+    gid: 374
+
+  popa3d:
+    gid: 375
+
+  mgraph:
+    gid: 376
+
+  pcap:
+    gid: 377
+
+  p2p:
+    gid: 378
+
+  jabber:
+    gid: 379
+
+  sancp:
+    gid: 382
+
+  argus:
+    gid: 383
+
+  flows:
+    gid: 384
+
+  gamemode:
+    gid: 385
+
+  ttrssd:
+    gid: 386
+
+  sobexsrv:
+    gid: 387
+
+  kismet:
+    gid: 388
+
+  grafana:
+    gid: 389
+
+  monkeysphere:
+    gid: 390
+
+  unbound:
+    gid: 391
+
+  privoxy:
+    gid: 392
+
+  buildbot:
+    gid: 393
 
   openvpn:
     gid: 394
 
+  motion:
+    gid: 395
+
+  greetd:
+    gid: 396
+
+  sabnzbd:
+    gid: 397
+
+  nzbget:
+    gid: 398
+
   slurm:
     gid: 400
 
+  monitorix:
+    gid: 401
+
+  lxd:
+    gid: 402
+
+  bareos:
+    gid: 403
+
+  simplevirt:
+    gid: 404
+
   utmp:
     gid: 406
+
+  bitlbee:
+    gid: 407
+
+  consul-template:
+    gid: 408
+
+  gpib:
+    gid: 409
+
+  consul:
+    gid: 411
+
+  atheme-services:
+    gid: 412
+
+  ngircd:
+    gid: 413
+
+  dnsdist:
+    gid: 414
+
+  gluster:
+    gid: 416
+
+  anope:
+    gid: 417
 
   wesnoth:
     gid: 419
 
   davfs2:
     gid: 420
+
+  znc:
+    gid: 421
 
   abrt:
     gid: 422
@@ -444,8 +687,17 @@ groups:
   node_exporter:
     gid: 459
 
+  ubridge:
+    gid: 461
+
+  xpra:
+    gid: 462
+
   supervisor:
     gid: 463
+
+  airdcppd:
+    gid: 464
 
   rstudio-server:
     gid: 466
@@ -521,6 +773,9 @@ groups:
 
   fhem:
     git: 491
+
+  oprofile:
+    git: 492
 
   oidentd:
     git: 493
