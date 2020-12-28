@@ -1,29 +1,23 @@
 name: firefox
-version: "78.4.1+2"
+version: 78.4.1
 category: www-client
 requires:
 - name: system-x
   version: '>=0'
   category: layers
+- name: fontconfig
+  version: '>=0'
+  category: media-libs
 - name: X
   version: '>=0'
   category: layers
-- name: openh264
-  version: '>=0'
-  category: media-libs
-- name: expat
-  version: '>=0'
-  category: dev-libs
 - name: plasma
   version: '>=0'
   category: layers
-  
+- name: freetype
+  version: '>=2.4.10'
+  category: media-libs
 labels:
   emerge.packages: www-client/firefox
   original.package.name: www-client/firefox
   original.package.version: 78.4.1
-  
-uri:
-- https://www.mozilla.com/firefox
-
-license: "MPL-2.0 GPL-2 LGPL-2.1"
