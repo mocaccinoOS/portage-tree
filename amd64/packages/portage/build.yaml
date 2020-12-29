@@ -1,5 +1,7 @@
+envs:
+- PORTAGE_HASH={{ ( index .Values.labels "git.hash" ) }}
 prelude:
-- wget https://github.com/gentoo/gentoo/archive/{{ ( index .Values.labels "git.hash" ) }}.tar.gz -O /tmp/tree.tar.gz
+- wget https://github.com/gentoo/gentoo/archive/$PORTAGE_HASH.tar.gz -O /tmp/tree.tar.gz
 steps:
 - mkdir -p /var/db/repos /var/cache/binpkgs /var/cache/distfiles
 - tar xf /tmp/tree.tar.gz -C  /var/db/repos
