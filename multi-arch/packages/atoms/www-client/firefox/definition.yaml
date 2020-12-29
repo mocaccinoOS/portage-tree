@@ -7,7 +7,7 @@ requires:
   category: layers
 - name: fontconfig
   version: '>=0'
-  category: media-libs
+  category: media-libs-1.0
 - name: X
   version: '>=0'
   category: layers
