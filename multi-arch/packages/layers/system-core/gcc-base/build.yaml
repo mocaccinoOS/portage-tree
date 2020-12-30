@@ -68,6 +68,6 @@ includes:
 - /usr/share/gcc-data/x86_64-pc-linux-gnu/{{.Values.version}}/locale/fr/LC_MESSAGES/libstdc.*
 unpack: true
 requires:
-- name: system-x
+- name: system-core
   version: ">=0"
   category: layers
