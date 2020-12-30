@@ -1,0 +1,6 @@
+name: reposcan-gentoo
+version: "0.20201229+1"
+category: development
+labels:
+  portage.git.url: https://github.com/gentoo/gentoo.git
+  funtoo.metatools.git.url: https://code.funtoo.org/bitbucket/scm/~drobbins/funtoo-metatools.git

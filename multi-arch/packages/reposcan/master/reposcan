@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+
+import asyncio
+import logging
+
+import pop.hub
+from dict_tools.data import NamespaceDict
+from merge_utils.config import Configuration
+
+hub_logger = logging.getLogger("pop.hub")
+hub_logger.setLevel(logging.DEBUG)
+hub = pop.hub.Hub()
+
+
+async def main_thread(repo_plus_overlays):
+	pos = 0
+	for kit_dict in repo_plus_overlays:
+		ctx = NamespaceDict()
+		ctx["kit"] = NamespaceDict(kit_dict)
+		out_tree = await hub.merge.kit.checkout_kit(ctx)
+
+		if pos == 0:
+			hub.ECLASS_ROOT = out_tree.root
+			hub.ECLASS_HASHES = hub.merge.metadata.get_eclass_hashes(hub.ECLASS_ROOT)
+
+		hub.cache.metadata.fetch_kit(out_tree)
+		hub.merge.metadata.gen_cache(out_tree)
+		hub.cache.metadata.flush_kit(out_tree)
+		pos += 1
+
+
+if __name__ == "__main__":
+	hub.ENABLE_MONGO = False
+	hub.MERGE_CONFIG = config = Configuration()
+
+	hub.pop.sub.add("funtoo.merge")
+	hub.pop.sub.add("funtoo.cache")
+	hub.merge.metadata.cleanup_error_logs()
+	repo_plus_overlays = [
+		{
+			"name": "gentoo",
+			"url": "https://github.com/gentoo/gentoo.git",
+			"branch": "master",  # Set to actual branch name
+			"kind": "independent",
+			"commit_sha1": "b0e157b071cb23b348acab3d596b49f66c244808",  # You should be able to set commit SHA1 here.
+		},
+	]
+
+	loop = asyncio.get_event_loop()
+	loop.run_until_complete(main_thread(repo_plus_overlays))
