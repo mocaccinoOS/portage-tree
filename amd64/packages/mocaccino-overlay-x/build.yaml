@@ -1,5 +1,5 @@
 requires:
-- category: "layer"
+- category: "layers"
   name: "system-core"
   version: ">=0"
 steps:
