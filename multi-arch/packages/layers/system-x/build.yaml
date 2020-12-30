@@ -7,13 +7,8 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox"
 - JOBS=7
 steps:
-# we want py3.8 and py2.7 for now
-- eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
-- emerge dev-perl/XML-Parser -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
-- emerge sys-apps/systemd
-- perl-cleaner --all
 
 excludes:
 - ^/etc/shadow
