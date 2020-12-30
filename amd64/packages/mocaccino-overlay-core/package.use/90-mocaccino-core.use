@@ -102,6 +102,7 @@ app-crypt/mit-krb5 krb4 openldap
 # instead
 app-crypt/pinentry gtk -qt5 gnome-keyring
 app-crypt/qca gpg
+app-crypt/gcr gtk
 
 app-doc/doxygen latex dot
 
