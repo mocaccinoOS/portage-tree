@@ -1,0 +1,10 @@
+name: system-core
+version: "0.20201230"
+category: layers
+requires:
+  - category: "system"
+    name: "gcc-base"
+    version: ">=0"
+  - category: "virtual"
+    name: "systemd-groups"
+    version: ">=0"
