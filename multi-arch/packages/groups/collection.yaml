@@ -450,6 +450,10 @@ packages:
 
 - <<: *group
   description: ""
+  name: "ldap"
+
+- <<: *group
+  description: ""
   name: "lp"
 
 - <<: *group
@@ -855,6 +859,10 @@ packages:
 - <<: *group
   description: ""
   name: "sshd"
+
+- <<: *group
+  description: ""
+  name: "svnusers"
 
 - <<: *group
   description: ""

@@ -531,6 +531,9 @@ groups:
   nzbget:
     gid: 398
 
+  svnusers:
+    gid: 399
+
   slurm:
     gid: 400
 
@@ -634,6 +637,9 @@ groups:
     gid: 437
 
   milter-regex:
+    gid: 438
+
+  ldap:
     gid: 438
 
   memcached:
