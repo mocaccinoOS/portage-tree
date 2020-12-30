@@ -1,16 +1,9 @@
-media-libs/libglvnd X
-
 # MATE
 
 mate-base/mate-panel X
 media-libs/libcanberra alsa
 dev-cpp/gtkmm X
->=sys-apps/systemd-246-r2 policykit
->=app-text/poppler-0.90.1 cairo
-net-fs/samba ldap
-x11-libs/cairo X aqua
 dev-cpp/cairomm X aqua
-x11-libs/pango X
 
 ## KDE
 
@@ -19,65 +12,9 @@ dev-qt/qtgui dbus jpeg
 >=kde-frameworks/kwindowsystem-5.74.0 X
 >=media-video/vlc-3.0.11.1 dbus ogg vorbis truetype xml
 >=dev-qt/qtprintsupport-5.15.1 cups
->=media-libs/mesa-20.1.10 abi_x86_32 wayland
->=dev-libs/expat-2.2.8 abi_x86_32
->=media-libs/libglvnd-1.3.2-r2 abi_x86_32
->=sys-libs/zlib-1.2.11-r2 abi_x86_32
->=x11-libs/libva-2.7.1 abi_x86_32
->=dev-libs/wayland-1.18.0 abi_x86_32
->=x11-libs/libvdpau-1.3 abi_x86_32
->=x11-libs/libdrm-2.4.102 abi_x86_32
->=x11-libs/libX11-1.6.12 abi_x86_32
->=x11-libs/libxshmfence-1.3-r1 abi_x86_32
->=x11-libs/libXdamage-1.1.5 abi_x86_32
->=x11-libs/libXext-1.3.4 abi_x86_32
->=x11-libs/libXxf86vm-1.1.4-r1 abi_x86_32
->=x11-libs/libxcb-1.14 abi_x86_32
->=x11-libs/libXfixes-5.0.3-r1 abi_x86_32
->=app-arch/zstd-1.4.4-r4 abi_x86_32
->=sys-devel/clang-10.0.1 abi_x86_32
->=x11-libs/libXrandr-1.5.2 abi_x86_32
->=x11-libs/libXrender-0.9.10-r1 abi_x86_32
->=sys-devel/llvm-10.0.1 abi_x86_32
->=dev-libs/libffi-3.3-r2 abi_x86_32
->=sys-libs/ncurses-6.2-r1 abi_x86_32
->=x11-libs/libXau-1.0.9 abi_x86_32
->=x11-libs/libXdmcp-1.1.3 abi_x86_32
->=x11-base/xcb-proto-1.14-r1 abi_x86_32
->=x11-libs/libpciaccess-0.16 abi_x86_32
->=x11-libs/libva-vdpau-driver-0.7.4-r5 abi_x86_32
->=x11-libs/libva-intel-driver-2.4.1 abi_x86_32
->=kde-frameworks/kdelibs4support-5.74.0 X
->=kde-frameworks/prison-5.74.0 qml
->=virtual/libelf-3 abi_x86_32
->=virtual/opencl-3-r1 abi_x86_32
->=dev-libs/elfutils-0.181 abi_x86_32
->=app-arch/bzip2-1.0.6-r11 abi_x86_32
->=dev-libs/ocl-icd-2.2.12-r3 abi_x86_32
->=virtual/libudev-232-r3 abi_x86_32
->=sys-apps/systemd-246-r2 abi_x86_32
->=sys-apps/util-linux-2.35.2 abi_x86_32
->=sys-libs/libcap-2.43 abi_x86_32
->=dev-libs/libgcrypt-1.8.6 abi_x86_32
->=app-arch/lz4-1.9.2 abi_x86_32
->=app-arch/xz-utils-5.2.5 abi_x86_32
->=sys-libs/pam-1.4.0_p20200829 abi_x86_32
->=sys-libs/db-5.3.28-r4 abi_x86_32
->=dev-libs/libgpg-error-1.38 abi_x86_32
->=sys-apps/attr-2.4.48-r3 abi_x86_32
->=virtual/libintl-0-r2 abi_x86_32
->=virtual/libcrypt-1-r1 abi_x86_32
 
 ## GNOME
 media-sound/pulseaudio bluetooth dbus
->=net-print/cups-2.3.3-r1 dbus
->=app-text/ghostscript-gpl-9.52-r1 cups
->=app-text/xmlto-0.0.28-r3 text
->=sys-apps/dbus-1.12.18 X
->=net-wireless/wpa_supplicant-2.9-r2 dbus
->=x11-libs/libxkbcommon-0.10.0-r1 X
->=app-accessibility/brltty-6.1 python
->=dev-libs/liblouis-3.13.0 python
 >=app-accessibility/speech-dispatcher-0.9.1 python
 >=media-libs/clutter-1.26.4 gtk introspection X
 >=media-libs/clutter-gtk-1.8.4 X gtk introspection
@@ -86,11 +23,6 @@ x11-libs/gdk-pixbuf jpeg
 media-libs/clutter-gst X gtk introspection
 
 ## Sabayon use flags
-
-app-accessibility/at-spi2-core -X
-# These two want either one of alsa pulseaudio, etc
-app-accessibility/julius -alsa pulseaudio -oss -portaudio
-app-accessibility/simon -alsa pulseaudio -oss -portaudio
 
 app-admin/conky -audacious hddtemp imlib iostats lua lua-imlib lua-cairo mpd thinkpad weather-metar weather-xoap -ipv6
 app-admin/keepassxc browser
@@ -101,18 +33,6 @@ app-admin/ulogd mysql
 app-admin/rsyslog ssl systemd uuid openssl kafka elasticsearch kubernetes snmp normalize
 app-admin/setools -X
 
-app-arch/advancecomp mng
-# GNOME PackageKit support
-app-arch/file-roller -nautilus packagekit
-app-arch/engrampa caja
-app-arch/p7zip -kde -wxwidgets
-# vzctl and other packages now require xattr support in tar
-app-arch/rpm lua
-app-arch/tar xattr
-app-arch/zstd lz4
-
-# Disable KDE on backintime
-app-backup/backintime gnome -kde
 # Only one DB supported.
 app-backup/bacula mysql vim-syntax -sqlite
 app-backup/fsarchiver lzma zstd
@@ -121,23 +41,6 @@ app-cdr/brasero nautilus
 app-cdr/cdrdao -gnome
 kde-apps/k3b taglib
 app-cdr/xfburn gstreamer
-
-# required by seahorse
-app-crypt/gcr vala gtk
-# We really wanted USE=static in order
-# to not add many pkgs on 700Mb sized ISO
-# images but it turned out to be buggy,
-# see bug 2781
-app-crypt/gnupg -static bzip2 smartcard
-# required by app-backup/deja-dup
-app-crypt/libsecret vala
-app-crypt/mit-krb5 krb4 openldap
-# app-crypt/pinentry is now a meta-package
-# enable GTK2 by default, people complaining
-# about dependencies, should really use pinentry-base
-# instead
-app-crypt/pinentry gtk -qt5 gnome-keyring
-app-crypt/qca gpg
 
 app-doc/doxygen latex dot
 
@@ -213,38 +116,8 @@ app-office/magicpoint mng
 # Added boost and gui flags to barry
 app-pda/barry boost gui
 
-app-portage/eix sqlite
-app-portage/layman git mercurial subversion sync-plugin-portage
-
-app-text/ansifilter -qt5
-app-text/atril djvu epub
-app-text/djvu threads -nsplugin
-app-text/enchant aspell
-app-text/evince djvu dvi gnome-keyring nautilus -nsplugin
-app-text/fbreader -gtk
-app-text/ghostscript-gpl -cjk -gtk
-app-text/gtkspell vala
-# enable X to have 'mupdf' tool - we build inject it now
-app-text/mupdf -opengl -X
-app-text/lcdf-typetools kpathsea
-app-text/libwps tools
-app-text/poppler jpeg2k
-app-text/poppler-base jpeg2k
-app-text/stardict tools
-app-text/texlive extra -truetype
-app-text/texlive-core xetex
-
 app-text/qpdfview sqlite
 # qt5 is overkill for cmake as well
-dev-util/cmake -qt5 server
-
-# Since those are not linker deps, we
-# can drop then and let users decide
-# to install the fonts they want
-app-text/ghostscript-gpl -l10n_ja -l10n_ko -l10n_zh-CN -l10n_zh-TW
-
-# required for blender
-dev-cpp/glog gflags
 
 dev-db/freetds mssql odbc
 # dev-db/mongodb should use V8. Allows to fix bug 3069
@@ -258,8 +131,6 @@ dev-db/postgresql server threads
 dev-db/sqlite soundex extensions unlock-notify
 # We don't have Oracle
 dev-db/tora -oracle
-
-dev-dotnet/libgdiplus cairo
 
 dev-embedded/avr-libc -selinux
 dev-embedded/openocd ftdi
@@ -315,49 +186,7 @@ dev-libs/dbus-glib bash-completion
 dev-libs/efl audio drm egl fontconfig gles2-only pulseaudio pixman sound X gstreamer -xcb -opengl -sdl -gnutls
 dev-libs/folks eds vala
 dev-libs/gdl gnome
-# 2010-04-6, trying to disable USE="mono" from gmime
-# 2016-12-25, enabling smime on gmime for crypt useflag in notmuch
-dev-libs/gmime smime -mono
-dev-libs/gmp static-libs
-dev-libs/libjcat gpg pkcs7
-dev-libs/libassuan static-libs
-dev-libs/libdazzle vala
-dev-libs/libdbusmenu gtk3
-dev-libs/libf2c static-libs
-dev-libs/libgcrypt static-libs
-dev-libs/libgdata gnome gnome-online-accounts
-dev-libs/libgit2-glib ssh
-dev-libs/libgpg-error static-libs
-dev-libs/libgusb vala
-dev-libs/libgweather vala
-dev-libs/libical vala
-dev-libs/libksba static-libs
-dev-libs/libpcre pcre16 static-libs
-dev-libs/libpcre2 pcre16 pcre32
-dev-libs/libxml2 icu
-dev-libs/nss utils
 
-# required by net-misc/curl[static-libs], enabled here
-dev-libs/openssl:0 static-libs sslv3
-dev-libs/popt static-libs
-dev-libs/tinyxml stl
-dev-libs/tntnet sdk
-dev-libs/xerces-c xqilla icu
-dev-libs/xmlrpc-c curl
-dev-libs/xmlsec gcrypt nss
-
-# See Sabayon bug #1020
-dev-libs/openct pcsc-lite
-
-dev-lua/lpeg luajit
-dev-lua/luv luajit
-dev-lua/mpack luajit
-
-dev-ml/lablgl glut
-dev-ml/lablgtk gnomecanvas sourceview
-
-dev-perl/Alien-wxWidgets gstreamer
-dev-perl/PDL fftw
 
 dev-python/QtPy gui printsupport webengine
 dev-python/ipython qt5 -wxwidgets
@@ -427,21 +256,7 @@ dev-util/mottainai-agent lxd
 dev-util/mottainai-server lxd
 dev-util/nvidia-cuda-sdk opencl
 dev-util/nvidia-cuda-toolkit debugger eclipse profiler
-dev-util/xdelta lzma
 
-dev-vcs/subversion -java -apache2 -dso -kde
-
-# git, split-flags
-dev-vcs/git sab-split -subversion
-dev-vcs/git-cvs sab-split cvs -subversion
-dev-vcs/git-gui-tools sab-split tk -subversion
-dev-vcs/git-subversion sab-split subversion
-www-apps/gitweb sab-split cgi -subversion
-# git, misc. (keep them in sync)
-dev-vcs/git curl perforce webdav
-dev-vcs/git-cvs curl perforce webdav
-dev-vcs/git-gui-tools curl perforce webdav
-dev-vcs/git-subversion curl perforce webdav
 www-apps/gitweb curl perforce webdav
 
 games-simulation/flightgear -qt5
