@@ -1,6 +1,7 @@
 name: systemd-groups
 version: "0.20201230"
 category: virtual
+requires:
 # Default groups used by systemd
   - &group
     category: "acct-group"
@@ -60,8 +61,6 @@ category: virtual
     name: "tape"
   - <<: *group
     name: "video"
-  - <<: *group
-    name: "users"
   - <<: *group
     name: "systemd-journal"
   - <<: *group
