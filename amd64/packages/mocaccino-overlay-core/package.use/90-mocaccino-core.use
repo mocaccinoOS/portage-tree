@@ -419,9 +419,11 @@ sys-boot/grub device-mapper libzfs mount
 # Disable GTK for distcc, this is a server-side app
 # and it's better to not ship with gtk
 sys-devel/distcc -avahi -gtk
-sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
+sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk hardened
 #sys-devel/gcc objc objc++ objc-gc graphite go -gtk
-sys-devel/base-gcc objc objc++ objc-gc graphite -gtk
+
+# keep suid for a while, needs devpts mounted with gid=5 otherwise
+sys-libs/glibc hardened suid nscd caps
 
 # No fuck git by default!
 sys-devel/gettext -git
@@ -546,11 +548,6 @@ x11-libs/gtk+:2 introspection
 net-dns/avahi dbus gtk3
 
 sys-boot/plymouth video_cards_intel video_cards_nouveau video_cards_radeon -openrc -gtk -pango -static-libs
-
-# Enable hardened USE flags
-sys-devel/gcc hardened
-# keep suid for a while, needs devpts mounted with gid=5 otherwise
-sys-libs/glibc hardened suid nscd
 
 # add Infinality patches to freetype-2
 # See bug 3360
