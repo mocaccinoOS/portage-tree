@@ -59,8 +59,9 @@ x11-libs/pango X
 ## GNOME
 >=net-print/cups-2.3.3-r1 dbus
 >=app-text/ghostscript-gpl-9.52-r1 cups
->=app-text/xmlto-0.0.28-r3 text
->=sys-apps/dbus-1.12.18 X
+# Enable text on xmlto add X stuff
+#>=app-text/xmlto-0.0.28-r3 text
+#>=sys-apps/dbus-1.12.18 X
 >=net-wireless/wpa_supplicant-2.9-r2 dbus
 >=x11-libs/libxkbcommon-0.10.0-r1 X
 >=app-accessibility/brltty-6.1 python
@@ -100,7 +101,7 @@ app-crypt/mit-krb5 krb4 openldap
 # enable GTK2 by default, people complaining
 # about dependencies, should really use pinentry-base
 # instead
-app-crypt/pinentry gtk -qt5 gnome-keyring
+#app-crypt/pinentry gtk -qt5 gnome-keyring
 app-crypt/qca gpg
 app-crypt/gcr gtk
 
