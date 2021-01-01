@@ -400,7 +400,7 @@ sys-apps/dbus user-session
 sys-apps/iproute2 caps
 sys-apps/pciutils -zlib
 # systemd support
-sys-apps/systemd -gtk dracut plymouth sysv-utils cryptsetup lzma xattr -openrc keymap
+sys-apps/systemd -gtk dracut plymouth sysv-utils cryptsetup lzma xattr -openrc keymap cgroup-hybrid
 # Install tty helpers (like wall)
 sys-apps/util-linux tty-helpers
 sys-apps/xdg-desktop-portal screencast
@@ -420,7 +420,7 @@ sys-boot/grub device-mapper libzfs mount
 # Disable GTK for distcc, this is a server-side app
 # and it's better to not ship with gtk
 sys-devel/distcc -avahi -gtk
-sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk hardened
+sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
 #sys-devel/gcc objc objc++ objc-gc graphite go -gtk
 
 # keep suid for a while, needs devpts mounted with gid=5 otherwise
