@@ -6,6 +6,7 @@ excludes:
 - ^/var/db/pkg
 - ^/var/lib/portage
 - ^/var/log
+- ^/luetbuild
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 - LUET_YES=true
@@ -13,12 +14,12 @@ env:
 prelude:
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
 - luet install repository/mocaccino-kernel-stable
-steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
+steps:
 - luet install kernel/mocaccino-lts-sources && luet cleanup
 # We use our kernel for compile modules
 - cd /usr/src && eval 'rm linux || true' && ln -s linux-5.4.0-mocaccino linux
 requires:
 - category: "layers"
-  name: "system-x"
+  name: "system-core"
   version: ">=0"
