@@ -2,25 +2,14 @@ requires:
 - category: "development"
   name: "mocaccino-overlay-x"
   version: ">=0"
-unpack: true
 env:
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox"
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS=7
 steps:
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 
 excludes:
-- ^/etc/shadow
-- ^/etc/os-release
-- ^/etc/gshadow
-- ^/etc/group
-- ^/etc/hostname
-- ^/etc/hosts
-- ^/etc/machine-id
-- ^/etc/fstab
-- ^/etc/passwd
-- ^/etc/machineid
 - ^/var/db/repos
 - ^/var/db/pkg
 - ^/var/lib/portage
