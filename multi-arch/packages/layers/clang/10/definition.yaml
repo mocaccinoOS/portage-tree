@@ -1,9 +1,10 @@
 category: "layers"
 name: "clang-10"
-version: "10.0.1+1"
+version: "10.0.1+2"
 labels:
   emerge.jobs: "6"
-  emerge.packages: "sys-devel/llvm:10 dev-libs/libclangformat-ide:10 sys-libs/compiler-rt:10.0.1 sys-libs/compiler-rt-sanitizers:10.0.1 sys-devel/clang-runtime:10.0.1 sys-devel/clang:10"
+  # dev-libs/libclangformat-ide:10 is ~amd64. We use stable version atm.
+  emerge.packages: "sys-devel/llvm:10 dev-libs/libclangformat-ide sys-libs/compiler-rt:10.0.1 sys-libs/compiler-rt-sanitizers:10.0.1 sys-devel/clang-runtime:10.0.1 sys-devel/clang:10"
 requires:
   - category: "layers"
     name: "system-core"
