@@ -71,6 +71,11 @@ excludes:
 - ^/lib/systemd/system/dbus.*
 - ^/lib/systemd/system/sockets.target.wants/dbus.*
 
+# Exclude pinentry rebuild on layers/system-x
+- ^/usr/bin/pinentry*
+- ^/usr/share/info/pinentry.*
+- ^/usr/share/doc/pinentry-base.*
+
 # We don't need openrc
 - ^/etc/init.d/.*
 
