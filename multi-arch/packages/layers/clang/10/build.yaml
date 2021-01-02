@@ -8,8 +8,6 @@ excludes:
 - ^/var/log
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
-prelude:
-- cp -vrf patches/ /etc/portage/
 steps:
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 requires:
