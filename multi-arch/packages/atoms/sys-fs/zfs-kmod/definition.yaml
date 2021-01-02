@@ -1,8 +1,8 @@
 name: zfs-kmod
-version: 0.8.5+3
+version: 0.8.5+4
 category: sys-fs
 requires:
-- name: system-x
+- name: system-core
   version: '>=0'
   category: layers
 labels:
