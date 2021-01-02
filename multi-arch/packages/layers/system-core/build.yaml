@@ -47,6 +47,33 @@ excludes:
 - ^/usr/bin/xmlif
 - ^/usr/share/doc/xmlto.*
 
+# Exclude dbus rebuild on layers/system-x
+- ^/usr/lib/pkgconfig/dbus-1.pc
+- ^/usr/lib/dbus-1.0/include/dbus/.*
+- ^/usr/lib/libdbus.*
+- ^/usr/lib/sysusers.d/dbus.conf
+- ^/usr/lib/tmpfiles.d/dbus.conf
+- ^/usr/lib/systemd/user/dbus.*
+- ^/usr/lib/systemd/user/sockets.target.wants/dbus.socket
+- ^/usr/include/dbus-1.0/.*
+- ^/usr/lib64/dbus-1.0/include/dbus/.*
+- ^/usr/lib64/libdbus.*
+- ^/usr/lib64/cmake/DBus1/.*
+- ^/usr/bin/dbus-.*
+- ^/usr/share/dbus-1/.*
+- ^/usr/share/doc/dbus-.*
+- ^/usr/share/xml/dbus-1.*
+- ^/usr/share/man/man1/dbus.*
+- ^/usr/libexec/dbus-daemon-launch-helper
+- ^/etc/dbus-1/session.conf
+- ^/etc/dbus-1/system.conf
+- ^/etc/X11/xinit/xinitrc.d/80-dbus
+- ^/lib/systemd/system/dbus.*
+- ^/lib/systemd/system/sockets.target.wants/dbus.*
+
+# We don't need openrc
+- ^/etc/init.d/.*
+
 # GCC split
 - ^/etc/env.d/04gcc-x86_64-pc-linux-gnu
 - ^/etc/ld.so.conf.d/05gcc-x86_64-pc-linux-gnu.conf
