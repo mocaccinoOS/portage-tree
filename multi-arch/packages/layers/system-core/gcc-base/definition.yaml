@@ -1,3 +1,5 @@
 name: "gcc-base"
 category: "system"
-version: "9.3.0+1"
+version: "9.3.0+2"
+labels:
+  gcc.version: "9.3.0"
