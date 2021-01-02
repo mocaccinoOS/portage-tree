@@ -2,6 +2,9 @@ requires:
 - category: "development"
   name: "mocaccino-overlay-x"
   version: ">=0"
+- category: "layers"
+  name: "clang-10"
+  version: ">=0"
 env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS=7
