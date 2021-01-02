@@ -16,7 +16,7 @@ after packages layer: ${images_names[-1]}
 if [[ "${#images[@]}" == "1" ]];then
   packages_before=()
 else
-  if [ "${images_names[-2]}" == "mocaccino-overlay-x" ] ; then
+  if [ "${images_names[-2]}" == "mocaccino-overlay-x" || "${images_names[-2]}" == "mocaccino-overlay-core" ] ; then
     packages_before=()
   else
     packages_before=( $(docker run --rm ${images[-2]} qlist -ISC) )
