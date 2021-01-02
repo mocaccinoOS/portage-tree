@@ -62,6 +62,8 @@ requires:
   - <<: *group
     name: "video"
   - <<: *group
+    name: "messagebus"
+  - <<: *group
     name: "systemd-journal"
   - <<: *group
     name: "systemd-journal-remote"
