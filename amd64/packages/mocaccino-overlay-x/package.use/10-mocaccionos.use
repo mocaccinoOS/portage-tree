@@ -684,7 +684,7 @@ net-proxy/tsocks tordns
 
 net-wireless/gnuradio atsc channels dtv fec grc noaa performance-counters
 net-wireless/bluez gstreamer obex user-session
-net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps
+net-wireless/wpa_supplicant -qt5 wimax ap p2p eap-sim wps dbus
 
 sci-astronomy/celestia -kde
 sci-astronomy/kstars fits indi
