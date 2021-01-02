@@ -22,6 +22,11 @@ x11-libs/gdk-pixbuf jpeg
 
 media-libs/clutter-gst X gtk introspection
 
+## Overrire layers/system-core
+sys-apps/dbus X
+app-text/xmlto text
+app-crypt/pinentry gtk -qt5 gnome-keyring
+
 ## Sabayon use flags
 
 app-admin/conky -audacious hddtemp imlib iostats lua lua-imlib lua-cairo mpd thinkpad weather-metar weather-xoap -ipv6
@@ -759,13 +764,6 @@ sys-cluster/torque server
 # We support both vanilla and vz kernels
 sys-cluster/vzctl vanilla-kernel vz-kernel ploop
 
-# Disable GTK for distcc, this is a server-side app
-# and it's better to not ship with gtk
-sys-devel/distcc -avahi -gtk
-sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
-#sys-devel/gcc objc objc++ objc-gc graphite go -gtk
-sys-devel/base-gcc objc objc++ objc-gc graphite -gtk
-
 # No fuck git by default!
 sys-devel/gettext -git
 # gdb tuning, we want XML
@@ -993,12 +991,6 @@ gnome-base/gnome -extras -accessibility
 gnome-base/gdm gnome-keyring smartcard accessibility fprint wayland
 
 sys-boot/plymouth video_cards_intel video_cards_nouveau video_cards_radeon -openrc -gtk -pango -static-libs
-
-# Enable hardened USE flags
-sys-devel/base-gcc hardened
-sys-devel/gcc hardened
-# keep suid for a while, needs devpts mounted with gid=5 otherwise
-sys-libs/glibc hardened suid nscd
 
 # add Infinality patches to freetype-2
 # See bug 3360
