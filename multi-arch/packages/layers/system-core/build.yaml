@@ -12,7 +12,6 @@ prelude:
 steps:
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
 - emerge sys-apps/systemd
-- eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
 - perl-cleaner --all
 
 excludes:
@@ -36,6 +35,17 @@ excludes:
 - ^/sys
 - ^/proc
 - ^/luetbuild
+
+# Python test
+- ^/usr/lib/python3.7/test/
+
+# Exclude xmlto available on layers/system-x
+- ^/usr/share/xmlto
+- ^/usr/share/man/man1/xmlto.1.bz2
+- ^/usr/share/man/man1/xmlif.1.bz2
+- ^/usr/bin/xmlto
+- ^/usr/bin/xmlif
+- ^/usr/share/doc/xmlto.*
 
 # GCC split
 - ^/etc/env.d/04gcc-x86_64-pc-linux-gnu
