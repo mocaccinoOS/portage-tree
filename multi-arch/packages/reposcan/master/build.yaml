@@ -14,7 +14,7 @@ prelude:
 - cd /funtoo-metatools && python setup.py install
 # TODO: replace it when we could supply an external config file.
 - cp reposcan /funtoo-metatools/bin/
-envs:
+env:
 # TODO: to replace with the patch about set target dir.
 - JSON_OUTPUT=/root/repo_tmp/tmp/kit_cache/gentoo-master
 steps:
