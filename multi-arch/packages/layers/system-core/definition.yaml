@@ -8,3 +8,136 @@ requires:
   - category: "virtual"
     name: "systemd-groups"
     version: ">=0"
+provides:
+  - name: argon2
+    category: app-crypt
+    version: '>=0'
+  - name: eselect-rust
+    category: app-eselect
+    version: '>=0'
+  - name: sqlite
+    category: dev-db-3
+    version: '>=0'
+  - name: rust
+    category: dev-lang-stable
+    version: '>=0'
+  - name: spidermonkey
+    category: dev-lang-78
+    version: '>=0'
+  - name: tcl
+    category: dev-lang
+    version: '>=0'
+  - name: boehm-gc
+    category: dev-libs
+    version: '>=0'
+  - name: boost
+    category: dev-libs
+    version: '>=0'
+  - name: elfutils
+    category: dev-libs
+    version: '>=0'
+  - name: glib
+    category: dev-libs-2
+    version: '>=0'
+  - name: gobject-introspection
+    category: dev-libs
+    version: '>=0'
+  - name: gobject-introspection-common
+    category: dev-libs
+    version: '>=0'
+  - name: icu
+    category: dev-libs
+    version: '>=0'
+  - name: isl
+    category: dev-libs
+    version: '>=0'
+  - name: json-c
+    category: dev-libs
+    version: '>=0'
+  - name: libaio
+    category: dev-libs
+    version: '>=0'
+  - name: libatomic_ops
+    category: dev-libs
+    version: '>=0'
+  - name: libedit
+    category: dev-libs
+    version: '>=0'
+  - name: libevent
+    category: dev-libs
+    version: '>=0'
+  - name: libgit2
+    category: dev-libs
+    version: '>=0'
+  - name: nspr
+    category: dev-libs
+    version: '>=0'
+  - name: XML-XPath
+    category: dev-perl
+    version: '>=0'
+  - name: guile
+    category: dev-scheme-12
+    version: '>=0'
+  - name: boost-build
+    category: dev-util
+    version: '>=0'
+  - name: desktop-file-utils
+    category: dev-util
+    version: '>=0'
+  - name: gdbus-codegen
+    category: dev-util
+    version: '>=0'
+  - name: glib-utils
+    category: dev-util
+    version: '>=0'
+  - name: itstool
+    category: dev-util
+    version: '>=0'
+  - name: dconf
+    category: gnome-base
+    version: '>=0'
+  - name: dnssec-root
+    category: net-dns
+    version: '>=0'
+  - name: unbound
+    category: net-dns
+    version: '>=0'
+  - name: http-parser
+    category: net-libs
+    version: '>=0'
+  - name: libssh2
+    category: net-libs
+    version: '>=0'
+  - name: polkit
+    category: sys-auth
+    version: '>=0'
+  - name: thin-provisioning-tools
+    category: sys-block
+    version: '>=0'
+  - name: autoconf
+    category: sys-devel-2.1
+    version: '>=0'
+  - name: autogen
+    category: sys-devel
+    version: '>=0'
+  - name: llvm-common
+    category: sys-devel
+    version: '>=0'
+  - name: cryptsetup
+    category: sys-fs
+    version: '>=0'
+  - name: lvm2
+    category: sys-fs
+    version: '>=0'
+  - name: libcap-ng
+    category: sys-libs
+    version: '>=0'
+  - name: libelf
+    category: virtual
+    version: '>=0'
+  - name: rust
+    category: virtual
+    version: '>=0'
+  - name: shared-mime-info
+    category: x11-misc
+    version: '>=0'
