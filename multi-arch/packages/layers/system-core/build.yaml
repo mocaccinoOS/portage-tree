@@ -65,8 +65,7 @@ excludes:
 - ^/usr/share/xml/dbus-1.*
 - ^/usr/share/man/man1/dbus.*
 - ^/usr/libexec/dbus-daemon-launch-helper
-- ^/etc/dbus-1/session.conf
-- ^/etc/dbus-1/system.conf
+- ^/etc/dbus-1/.*
 - ^/etc/X11/xinit/xinitrc.d/80-dbus
 - ^/lib/systemd/system/dbus.*
 - ^/lib/systemd/system/sockets.target.wants/dbus.*
