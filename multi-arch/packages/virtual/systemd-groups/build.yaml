@@ -1,4 +1,1 @@
-requires:
-  - category: "layer"
-    name: "gentoo-portage"
-    version: ">=0"
+# Leave it empty for virtual package
