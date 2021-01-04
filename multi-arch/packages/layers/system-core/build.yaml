@@ -25,6 +25,7 @@ excludes:
 - ^/etc/fstab
 - ^/etc/passwd
 - ^/etc/machineid
+- ^/etc/resolv.conf
 - ^/var/db/repos
 - ^/var/db/pkg
 - ^/var/lib/portage
