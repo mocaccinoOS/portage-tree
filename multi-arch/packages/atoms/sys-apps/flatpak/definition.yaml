@@ -1,0 +1,20 @@
+name: flatpak
+version: 1.8.2
+category: sys-apps
+requires:
+- name: flatpak
+  version: '>=0'
+  category: acct-group
+- name: ostree
+  version: '>=2019.5'
+  category: dev-util
+- name: gnome
+  version: '>=0'
+  category: layers
+- name: flatpak
+  version: '>=0'
+  category: acct-user
+labels:
+  emerge.packages: sys-apps/flatpak
+  original.package.name: sys-apps/flatpak
+  original.package.version: 1.8.2
