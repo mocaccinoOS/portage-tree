@@ -6,6 +6,7 @@ artefacts:
     - sys-apps/dmidecode
     - sys-apps/dog
     - sys-apps/dnotify
+    - sys-apps/flatpak
     - sys-apps/gnome-disk-utility
     - sys-apps/hdparm
     - sys-apps/hwinfo
