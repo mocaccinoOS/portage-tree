@@ -712,104 +712,104 @@ groups:
     gid: 467
 
   amule:
-    git: 468
+    gid: 468
 
   xrootd:
-    git: 469
+    gid: 469
 
   i2pd:
-    git: 470
+    gid: 470
 
   i2p:
-    git: 471
+    gid: 471
 
   quassel:
-    git: 472
+    gid: 472
 
   varnish:
-    git: 474
+    gid: 474
 
   sogo:
-    git: 475
+    gid: 475
 
   stubby:
-    git: 476
+    gid: 476
 
   suricata:
     gid: 477
 
   graylog:
-    git: 478
+    gid: 478
 
   openrct2:
-    git: 479
+    gid: 479
 
   minetest:
-    git: 480
+    gid: 480
 
   mongodb:
-    git: 481
+    gid: 481
 
   mosquitto:
-    git: 482
+    gid: 482
 
   bitcoin:
-    git: 483
+    gid: 483
 
   ipfs:
-    git: 484
+    gid: 484
 
   bedrock:
-    git: 485
+    gid: 485
 
   spectrum:
-    git: 486
+    gid: 486
 
   ddclient:
-    git: 487
+    gid: 487
 
   teamspeak:
-    git: 488
+    gid: 488
 
   steamcmd:
-    git: 489
+    gid: 489
 
   minecraft:
-    git: 490
+    gid: 490
 
   fhem:
-    git: 491
+    gid: 491
 
   oprofile:
-    git: 492
+    gid: 492
 
   oidentd:
-    git: 493
+    gid: 493
 
   unrealircd:
-    git: 494
+    gid: 494
 
   gvm:
-    git: 495
+    gid: 495
 
   strelaysrv:
-    git: 496
+    gid: 496
 
   stdiscosrv:
-    git: 497
+    gid: 497
 
   burp:
-    git: 498
+    gid: 498
 
   syncthing:
-    git: 498
+    gid: 498
 
 
 
 # Groups with gid assigned by Mocaccino OS
   colord:
-    git: 998
+    gid: 998
 
   geoclue:
-    git: 999
+    gid: 999
 
