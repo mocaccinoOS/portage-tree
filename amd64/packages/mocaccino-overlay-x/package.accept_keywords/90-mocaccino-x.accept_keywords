@@ -9,3 +9,7 @@ dev-qt/qtquicktimeline ~amd64
 
 sys-apps/usbmon ~amd64
 
+
+# Flatpak stuff
+sys-apps/flatpak ~amd64
+dev-util/ostree ~amd64

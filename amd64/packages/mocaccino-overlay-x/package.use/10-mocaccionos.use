@@ -261,6 +261,7 @@ dev-util/mottainai-agent lxd
 dev-util/mottainai-server lxd
 dev-util/nvidia-cuda-sdk opencl
 dev-util/nvidia-cuda-toolkit debugger eclipse profiler
+dev-util/ostree curl gpg ssl systemd
 
 www-apps/gitweb curl perforce webdav
 
