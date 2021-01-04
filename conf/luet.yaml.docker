@@ -1,0 +1,5 @@
+general:
+  debug: false
+
+system:
+  tmpdir_base: "/var/tmp/luet"
