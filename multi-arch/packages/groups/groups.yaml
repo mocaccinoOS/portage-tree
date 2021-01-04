@@ -805,3 +805,11 @@ groups:
     git: 498
 
 
+
+# Groups with gid assigned by Mocaccino OS
+  colord:
+    git: 998
+
+  geoclue:
+    git: 999
+

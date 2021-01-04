@@ -138,6 +138,10 @@ packages:
 
 - <<: *group
   description: ""
+  name: "colord"
+
+- <<: *group
+  description: ""
   name: "consul"
 
 - <<: *group
@@ -291,6 +295,10 @@ packages:
 - <<: *group
   description: ""
   name: "gerbera"
+
+- <<: *group
+  description: "Group for geoclue"
+  name: "geoclue"
 
 - <<: *group
   description: ""
