@@ -1,13 +1,10 @@
 name: ostree
-version: "2020.7"
+version: "2020.7+1"
 category: dev-util
 requires:
-- name: system-x
+- name: X
   version: '>=0'
   category: layers
-- name: gpgme
-  version: '>=0'
-  category: app-crypt
 labels:
   emerge.packages: dev-util/ostree
   original.package.name: dev-util/ostree
