@@ -19,6 +19,8 @@ excludes:
 env:
 - JOBS={{ ( index .Values.labels "emerge.jobs" ) | default "3" }}
 - CLANG_10_PKGS="{{ ( index .Values.labels "emerge.packages" ) }}"
+prelude:
+- emerge -C sys-devel/llvm:10
 steps:
 - emerge -j ${JOBS} ${CLANG_10_PKGS}
 requires:
