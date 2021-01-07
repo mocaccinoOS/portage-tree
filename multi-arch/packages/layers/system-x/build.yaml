@@ -14,6 +14,7 @@ prelude:
 steps:
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
+- emerge systemd -j $JOBS
 
 excludes:
 - ^/var/db/repos
