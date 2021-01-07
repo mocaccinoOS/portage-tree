@@ -32,3 +32,9 @@ To run a container for debugging, then you can :
 ```bash
 DOCKER_HOST=ssh://10.16.0.51 docker run --rm -ti quay.io/mocaccinocache/portage-amd64-cache:14ecb8f06592144484d3a103002894c36c115dd372953399d7afa0ecb05a1f82
 ```
+
+### Retrieve the list of files owned by a package
+
+```bash
+$> yq r /var/cache/luet/repos/mocaccino-portage/metafs/repository.meta.yaml 'index' -j | jq '.[] | select(.compilationspec.package.name=="system-core" and .compilationspec.package.category=="layers") | .files[]' -r
+```
