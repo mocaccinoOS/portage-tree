@@ -10,7 +10,7 @@ env:
 - JOBS=7
 prelude:
 # TODO: Verify how is handled by luet this use case. ATM, i force remove of the packages rebuild.
-- emerge -C app-text/xmlto sys-apps/dbus app-crypt/pinentry
+- emerge -C app-text/xmlto sys-apps/dbus app-crypt/pinentry sys-apps/systemd
 steps:
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
