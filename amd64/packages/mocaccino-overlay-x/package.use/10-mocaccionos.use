@@ -1,3 +1,7 @@
+# Systemd and logind???
+
+sys-apps/systemd acl -cgroup-hybrid cryptsetup gcrypt hwdb kmod lz4 lzma pam pcre policykit resolvconf seccomp sysv-utils zstd -apparmor -audit -build -curl -dns-over-tls -elfutils -gnuefi -homed -http -idn -importd -nat -pkcs11 -pwquality -qrcode -repart -static-libs -test -vanilla -xkb
+
 # MATE
 
 mate-base/mate-panel X
