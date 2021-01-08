@@ -45,4 +45,4 @@ $> yq r /var/cache/luet/repos/mocaccino-portage/metafs/repository.meta.yaml 'ind
 
  * `/etc/mocaccino/layer/<layer-name>.prelude.pkglist`: This file contains the list of the packages list before the build.
 
- * `/etc/mocaccino/layer/<layer-name>.pkglist: This file contains the list of the packages list after the build.
+ * `/etc/mocaccino/layer/<layer-name>.pkglist`: This file contains the list of the packages list after the build.
