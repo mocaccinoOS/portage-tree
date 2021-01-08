@@ -1,13 +1,13 @@
 name: atop
-version: 2.3.0+3
+version: 2.3.0+4
 category: sys-process
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: acct
-  version: '>=0'
-  category: sys-process
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: acct
+    version: '>=0'
+    category: sys-process
 labels:
   emerge.packages: sys-process/atop
   original.package.name: sys-process/atop
