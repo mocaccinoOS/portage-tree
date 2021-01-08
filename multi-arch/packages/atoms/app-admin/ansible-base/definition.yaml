@@ -1,28 +1,28 @@
 name: ansible-base
-version: 2.10.2+3
+version: 2.10.2+4
 category: app-admin
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: paramiko
-  version: '>=0'
-  category: dev-python
-- name: pexpect
-  version: '>=0'
-  category: dev-python
-- name: netaddr
-  version: '>=0'
-  category: dev-python
-- name: sshpass
-  version: '>=0'
-  category: net-misc
-- name: pyyaml
-  version: '>=0'
-  category: dev-python
-- name: httplib2
-  version: '>=0'
-  category: dev-python
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: paramiko
+    version: '>=0'
+    category: dev-python
+  - name: pexpect
+    version: '>=0'
+    category: dev-python
+  - name: netaddr
+    version: '>=0'
+    category: dev-python
+  - name: sshpass
+    version: '>=0'
+    category: net-misc
+  - name: pyyaml
+    version: '>=0'
+    category: dev-python
+  - name: httplib2
+    version: '>=0'
+    category: dev-python
 labels:
   emerge.packages: app-admin/ansible-base
   original.package.name: app-admin/ansible-base
