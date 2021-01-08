@@ -1,5 +1,5 @@
 name: reposcan-gentoo
-version: "0.20201229+2"
+version: 0.20201229+3
 category: development
 labels:
   portage.git.url: https://github.com/gentoo/gentoo.git
