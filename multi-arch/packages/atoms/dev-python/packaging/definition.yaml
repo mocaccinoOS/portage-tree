@@ -1,13 +1,13 @@
 name: packaging
-version: 20.4+2
+version: 20.4+3
 category: dev-python
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: pyparsing
-  version: '>=2.1.10'
-  category: dev-python
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: pyparsing
+    version: '>=2.1.10'
+    category: dev-python
 labels:
   emerge.packages: dev-python/packaging
   original.package.name: dev-python/packaging
