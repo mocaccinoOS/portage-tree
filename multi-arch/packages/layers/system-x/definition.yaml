@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210104+5"
+version: "0.20210104+6"
 category: layers
 requires:
   - category: "layers"
@@ -24,7 +24,7 @@ labels:
     dev-lang/nasm
     dev-lang/ruby
     dev-lang/vala:0.48
-    dev-libs/vala-common:0.48
+    dev-libs/vala-common
     dev-libs/atk
     dev-libs/fribidi
     dev-libs/libclc
