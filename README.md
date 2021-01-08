@@ -38,3 +38,11 @@ DOCKER_HOST=ssh://10.16.0.51 docker run --rm -ti quay.io/mocaccinocache/portage-
 ```bash
 $> yq r /var/cache/luet/repos/mocaccino-portage/metafs/repository.meta.yaml 'index' -j | jq '.[] | select(.compilationspec.package.name=="system-core" and .compilationspec.package.category=="layers") | .files[]' -r
 ```
+
+### Best practices for layers packages
+
+ To trace correctly what are the packages created inside a layer, it's a good practice is to add inside the layer data the list of the installed packages:
+
+ * `/etc/mocaccino/layer/<layer-name>.prelude.pkglist`: This file contains the list of the packages list before the build.
+
+ * `/etc/mocaccino/layer/<layer-name>.pkglist: This file contains the list of the packages list after the build.
