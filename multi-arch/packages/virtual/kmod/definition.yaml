@@ -1,8 +1,8 @@
 category: "system"
 name: "kmod"
-version: "0"
+version: 0+1
 description: "Virtual package for kmod module"
 requires:
-- name: system-core
-  category: "layers"
-  version: ">=0"
+  - name: system-core
+    category: "layers"
+    version: ">=0"
