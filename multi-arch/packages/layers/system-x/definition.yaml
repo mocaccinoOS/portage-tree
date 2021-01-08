@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210104+6"
+version: "0.20210104+7"
 category: layers
 requires:
   - category: "layers"
@@ -93,8 +93,8 @@ labels:
     x11-base/xorg-proto
     x11-libs/cairo
     x11-libs/gdk-pixbuf
-    x11-libs/gtk:2.0
-    x11-libs/gtk:3.0
+    x11-libs/gtk+:2.0
+    x11-libs/gtk+:3.0
     x11-libs/libdrm
     x11-libs/libICE
     x11-libs/libpciaccess
