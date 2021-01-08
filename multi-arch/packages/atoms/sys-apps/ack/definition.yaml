@@ -1,15 +1,15 @@
 name: ack
-version: 3.0.0+2
+version: 3.0.0+3
 category: sys-apps
 requires:
-- name: perl
-  version: '>=0'
-  category: dev-lang
-- name: File-Next
-  version: '>=1.160.0'
-  category: dev-perl
+  - name: perl
+    version: '>=0'
+    category: dev-lang
+  - name: File-Next
+    version: '>=1.160.0'
+    category: dev-perl
 uri:
-- https://beyondgrep.com
+  - https://beyondgrep.com
 license: Artistic-2
 labels:
   emerge.packages: sys-apps/ack
