@@ -1,18 +1,18 @@
 name: opera
-version: 71.0.3770.271+2
+version: 71.0.3770.271+3
 category: www-client
 requires:
-- name: X
-  version: '>=0'
-  category: layers
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: expat
-  version: '>=0'
-  category: dev-libs
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: expat
+    version: '>=0'
+    category: dev-libs
 uri:
-- https://www.opera.com/
+  - https://www.opera.com/
 license: OPERA-2014
 labels:
   emerge.packages: www-client/opera
