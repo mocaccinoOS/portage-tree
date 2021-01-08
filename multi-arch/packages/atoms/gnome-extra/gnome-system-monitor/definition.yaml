@@ -1,10 +1,10 @@
 name: gnome-system-monitor
-version: 3.36.1
+version: 3.36.1+1
 category: gnome-extra
 requires:
-- name: gnome-common
-  version: '>=0'
-  category: layers
+  - name: gnome-common
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: gnome-extra/gnome-system-monitor
   original.package.name: gnome-extra/gnome-system-monitor
