@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210104+8"
+version: "0.20210104+9"
 category: layers
 requires:
   - category: "layers"
@@ -15,6 +15,7 @@ labels:
     app-crypt/gcr
     app-crypt/libsecret
     app-crypt/p11-kit
+    app-crypt/pinentry
     app-eselect/eselect-fontconfig
     app-eselect/eselect-infinality
     app-eselect/eselect-lcdfilter
