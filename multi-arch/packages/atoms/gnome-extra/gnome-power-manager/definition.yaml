@@ -1,10 +1,10 @@
 name: gnome-power-manager
-version: 3.32.0
+version: 3.32.0+1
 category: gnome-extra
 requires:
-- name: X
-  version: '>=0'
-  category: layers
+  - name: X
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: gnome-extra/gnome-power-manager
   original.package.name: gnome-extra/gnome-power-manager
