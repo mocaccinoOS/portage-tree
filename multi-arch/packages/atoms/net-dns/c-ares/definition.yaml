@@ -1,8 +1,8 @@
 name: c-ares
-version: 1.16.1+2
+version: 1.16.1+3
 category: net-dns
 uri:
-- https://c-ares.haxx.se/
+  - https://c-ares.haxx.se/
 license: MIT
 labels:
   emerge.packages: net-dns/c-ares
