@@ -1,8 +1,8 @@
 name: gn
-version: 0.1807+2
+version: 0.1807+3
 category: dev-util
 uri:
-- https://gn.googlesource.com/
+  - https://gn.googlesource.com/
 license: BSD
 labels:
   emerge.packages: dev-util/gn
