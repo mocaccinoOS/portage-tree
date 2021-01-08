@@ -1,5 +1,5 @@
 name: system-x
-version: "0.20210104+9"
+version: "0.20210104+10"
 category: layers
 requires:
   - category: "layers"
@@ -22,6 +22,7 @@ labels:
     app-eselect/eselect-ruby
     app-text/asciidoc
     app-text/docbook-xml-dtd:4.3
+    app-text/xmlto
     dev-lang/nasm
     dev-lang/ruby
     dev-lang/vala:0.48
