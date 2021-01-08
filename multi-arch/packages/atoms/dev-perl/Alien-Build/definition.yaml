@@ -1,22 +1,22 @@
 name: Alien-Build
-version: 2.230.0+2
+version: 2.230.0+3
 category: dev-perl
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: FFI-CheckLib
-  version: '>=0.110.0'
-  category: dev-perl
-- name: Path-Tiny
-  version: '>=0.77.0'
-  category: dev-perl
-- name: Capture-Tiny
-  version: '>=0.170.0'
-  category: dev-perl
-- name: File-chdir
-  version: '>=0'
-  category: dev-perl
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: FFI-CheckLib
+    version: '>=0.110.0'
+    category: dev-perl
+  - name: Path-Tiny
+    version: '>=0.77.0'
+    category: dev-perl
+  - name: Capture-Tiny
+    version: '>=0.170.0'
+    category: dev-perl
+  - name: File-chdir
+    version: '>=0'
+    category: dev-perl
 labels:
   emerge.packages: dev-perl/Alien-Build
   original.package.name: dev-perl/Alien-Build
