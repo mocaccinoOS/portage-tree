@@ -1,10 +1,10 @@
 name: msgpack
-version: 0.6.2+2
+version: 0.6.2+3
 category: dev-python
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-python/msgpack
   original.package.name: dev-python/msgpack
