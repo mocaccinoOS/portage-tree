@@ -1,10 +1,10 @@
 name: pyasn1
-version: 0.4.8+2
+version: 0.4.8+3
 category: dev-python
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-python/pyasn1
   original.package.name: dev-python/pyasn1
