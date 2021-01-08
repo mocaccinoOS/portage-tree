@@ -12,7 +12,7 @@ prelude:
 # TODO: Verify how is handled by luet this use case. ATM, i force remove of the packages rebuild.
 - emerge -C app-text/xmlto sys-apps/dbus app-crypt/pinentry sys-apps/systemd
 # Ensure that the systemd files and dbus files are removed
-- rm -v /usr/lib64/libudev* /lib64/libudev* /usr/lib64/libsystemd* /lib64/libsystem* /lib64/libdbus* /usr/lib/libdbus* /usr/lib64/libdbus*
+- eval 'rm -v /usr/lib64/libudev* /lib64/libudev* /usr/lib64/libsystemd* /lib64/libsystem* /lib64/libdbus* /usr/lib/libdbus* /usr/lib64/libdbus* || true'
 steps:
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
