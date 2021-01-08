@@ -1,21 +1,21 @@
 name: vivaldi
-version: 3.4.2066.86+p3
+version: 3.4.2066.86+1
 category: www-client
 requires:
-- name: X
-  version: '>=0'
-  category: layers
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: expat
-  version: '>=0'
-  category: dev-libs
-- name: speex
-  version: '>=0'
-  category: media-libs
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: expat
+    version: '>=0'
+    category: dev-libs
+  - name: speex
+    version: '>=0'
+    category: media-libs
 uri:
-- https://vivaldi.com/
+  - https://vivaldi.com/
 license: Vivaldi
 labels:
   emerge.packages: www-client/vivaldi
