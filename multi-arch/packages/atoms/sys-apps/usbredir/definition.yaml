@@ -1,8 +1,8 @@
 name: usbredir
-version: 0.8.0+2
+version: 0.8.0+3
 category: sys-apps
 uri:
-- https://www.spice-space.org/usbredir.html
+  - https://www.spice-space.org/usbredir.html
 license: GPL-2 LGPL-2.1
 labels:
   emerge.packages: sys-apps/usbredir
