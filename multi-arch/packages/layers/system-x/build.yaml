@@ -8,15 +8,22 @@ requires:
 env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - JOBS=7
+- LUET_NOLOCK=true
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs/
+- LUET_YES=true
+package_dir: /system-x
 prelude:
-# TODO: Verify how is handled by luet this use case. ATM, i force remove of the packages rebuild.
-- emerge -C app-text/xmlto sys-apps/dbus app-crypt/pinentry sys-apps/systemd
-# Ensure that the systemd files and dbus files are removed
-- eval 'rm -v /usr/lib64/libudev* /lib64/libudev* /usr/lib64/libsystemd* /lib64/libsystem* /lib64/libdbus* /usr/lib/libdbus* /usr/lib64/libdbus* || true'
+- curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
+- luet install repository/mocaccino-extra-stable system/luet-extensions-live
+- luet install dev-util/pkgs-checker-minimal utils/jq
+- luet cleanup && mkdir /{{ .Values.name }} && mkdir -p /{{ .Values.name }}/etc/mocaccino/layers
+- qlist -ICv > /{{ .Values.name }}/etc/mocaccino/layers/{{ .Values.name }}.prelude.pkglist
 steps:
 - USE=-harfbuzz emerge media-libs/freetype -j $JOBS
 - emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS
-- emerge systemd -j $JOBS
+- emerge systemd dbus -j $JOBS
+- qlist -ICv > /{{ .Values.name }}/etc/mocaccino/layers/{{ .Values.name }}.pkglist
+- luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 
 excludes:
 - ^/var/db/repos
