@@ -1,10 +1,10 @@
 name: efivar
-version: 37+2
+version: 37+3
 category: sys-libs
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: sys-libs/efivar
   original.package.name: sys-libs/efivar
