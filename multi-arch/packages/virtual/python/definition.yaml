@@ -1,8 +1,8 @@
 category: "dev-lang"
 name: "python"
-version: "3.7+1"
+version: 3.7+2
 description: "Virtual package for python"
 requires:
-- name: system-core
-  category: "layers"
-  version: ">=0"
+  - name: system-core
+    category: "layers"
+    version: ">=0"
