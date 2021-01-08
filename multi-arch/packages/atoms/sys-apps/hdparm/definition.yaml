@@ -1,8 +1,8 @@
 name: hdparm
-version: 9.58+2
+version: 9.58+3
 category: sys-apps
 uri:
-- https://sourceforge.net/projects/hdparm/
+  - https://sourceforge.net/projects/hdparm/
 license: BSD GPL-2
 labels:
   emerge.packages: sys-apps/hdparm
