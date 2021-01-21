@@ -1,0 +1,2 @@
+#needed for dev-qt/assistant
+>=x11-libs/libxkbcommon-0.10.0-r1 X
