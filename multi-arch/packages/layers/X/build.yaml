@@ -12,7 +12,6 @@ prelude:
 - cd /var/db/repos/gentoo/net-dialup/ppp && rm Manifest && ebuild ppp-2.4.8.ebuild digest
 - eval 'mkdir /usr/share/mocaccino/layer -p || true' && qlist -ICv > /usr/share/mocaccino/layer/{{ .Values.name }}.prelude.pkglist
 steps:
-- cp -rvf package.use/* /etc/portage/package.use/
 - emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }}
 - cp -rv xorg.conf.d/ /etc/X11/
 - qlist -ICv > /usr/share/mocaccino/layer/{{ .Values.name }}.pkglist
