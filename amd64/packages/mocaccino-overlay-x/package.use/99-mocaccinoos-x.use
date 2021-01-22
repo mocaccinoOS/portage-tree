@@ -16,6 +16,8 @@ dev-qt/qtgui dbus jpeg
 >=kde-frameworks/kwindowsystem-5.74.0 X
 >=media-video/vlc-3.0.11.1 dbus ogg vorbis truetype xml
 >=dev-qt/qtprintsupport-5.15.1 cups
+#needed for dev-qt/assistant
+>=x11-libs/libxkbcommon-0.10.0-r1 X
 
 ## GNOME
 media-sound/pulseaudio bluetooth dbus
@@ -1149,4 +1151,3 @@ net-p2p/go-ethereum evm opencl
 media-libs/mesa opencl
 # Add electrum features
 net-misc/electrum qrcode sync trustedcoin_com cosign digitalbitbox
-
