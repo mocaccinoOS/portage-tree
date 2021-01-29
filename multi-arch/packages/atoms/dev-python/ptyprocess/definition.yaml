@@ -1,10 +1,10 @@
 name: ptyprocess
-version: 0.6.0+2
+version: 0.6.0+3
 category: dev-python
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-python/ptyprocess
   original.package.name: dev-python/ptyprocess
