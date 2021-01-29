@@ -1,10 +1,10 @@
 name: logrotate
-version: 3.14.0+2
+version: 3.14.0+3
 category: app-admin
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: app-admin/logrotate
   original.package.name: app-admin/logrotate
