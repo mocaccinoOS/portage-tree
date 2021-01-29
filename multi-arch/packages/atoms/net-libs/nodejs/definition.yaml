@@ -1,18 +1,18 @@
 name: nodejs
-version: 14.15.0+2
+version: 14.15.0+3
 category: net-libs
 requires:
-- name: gnome-common
-  version: '>=0'
-  category: layers
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: c-ares
-  version: '>=1.16.1'
-  category: net-dns
+  - name: gnome-common
+    version: '>=0'
+    category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: c-ares
+    version: '>=1.16.1'
+    category: net-dns
 uri:
-- https://nodejs.org/
+  - https://nodejs.org/
 license: Apache-1.1 Apache-2.0 BSD BSD-2 MIT
 labels:
   emerge.packages: net-libs/nodejs
