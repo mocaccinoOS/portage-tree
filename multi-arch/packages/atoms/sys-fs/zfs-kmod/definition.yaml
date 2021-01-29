@@ -1,10 +1,10 @@
 name: zfs-kmod
-version: 0.8.5+4
+version: 0.8.5+5
 category: sys-fs
 requires:
-- name: system-core
-  version: '>=0'
-  category: layers
+  - name: system-core
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: sys-fs/zfs-kmod
   original.package.name: sys-fs/zfs-kmod
