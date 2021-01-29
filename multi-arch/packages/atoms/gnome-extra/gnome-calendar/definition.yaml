@@ -1,13 +1,13 @@
 name: gnome-calendar
-version: 3.36.2
+version: 3.36.2+1
 category: gnome-extra
 requires:
-- name: gnome
-  version: '>=0'
-  category: layers
-- name: libdazzle
-  version: '>=3.33.1'
-  category: dev-libs
+  - name: gnome
+    version: '>=0'
+    category: layers
+  - name: libdazzle
+    version: '>=3.33.1'
+    category: dev-libs
 labels:
   emerge.packages: gnome-extra/gnome-calendar
   original.package.name: gnome-extra/gnome-calendar
