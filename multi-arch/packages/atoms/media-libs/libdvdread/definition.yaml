@@ -1,8 +1,8 @@
 name: libdvdread
-version: 6.1.1+2
+version: 6.1.1+3
 category: media-libs
 uri:
-- https://www.videolan.org/developers/libdvdnav.html
+  - https://www.videolan.org/developers/libdvdnav.html
 license: GPL-2
 labels:
   emerge.packages: media-libs/libdvdread
