@@ -1,10 +1,10 @@
 name: pyparsing
-version: 2.4.7+2
+version: 2.4.7+3
 category: dev-python
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-python/pyparsing
   original.package.name: dev-python/pyparsing
