@@ -1,16 +1,16 @@
 name: synergy
-version: 2.0.0+2
+version: 2.0.0+3
 category: x11-misc
 requires:
-- name: X
-  version: '>=0'
-  category: layers
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 uri:
-- http://synergy-project.org/
-- https://github.com/symless/synergy-core
+  - http://synergy-project.org/
+  - https://github.com/symless/synergy-core
 license: GPL-2
 labels:
   emerge.packages: x11-misc/synergy
