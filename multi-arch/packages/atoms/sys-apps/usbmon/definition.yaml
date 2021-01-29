@@ -1,8 +1,8 @@
 name: usbmon
-version: 6.1+2
+version: 6.1+3
 category: sys-apps
 uri:
-- https://people.redhat.com/zaitcev/linux/
+  - https://people.redhat.com/zaitcev/linux/
 license: GPL-2
 labels:
   emerge.packages: sys-apps/usbmon
