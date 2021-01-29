@@ -1,5 +1,5 @@
 name: breeze-icons
-version: 5.74.0+2
+version: 5.74.0+3
 category: kde-frameworks
 labels:
   emerge.packages: kde-frameworks/breeze-icons
