@@ -1,16 +1,16 @@
 name: gnome-online-miners
-version: 3.34.0
+version: 3.34.0+1
 category: net-misc
 requires:
-- name: gnome
-  version: '>=0'
-  category: layers
-- name: libgfbgraph
-  version: '>=0.2.2'
-  category: net-libs-0.2
-- name: libzapojit
-  version: '>=0.0.2'
-  category: net-libs
+  - name: gnome
+    version: '>=0'
+    category: layers
+  - name: libgfbgraph
+    version: '>=0.2.2'
+    category: net-libs-0.2
+  - name: libzapojit
+    version: '>=0.0.2'
+    category: net-libs
 labels:
   emerge.packages: net-misc/gnome-online-miners
   original.package.name: net-misc/gnome-online-miners
