@@ -1,5 +1,5 @@
 name: libunwind
-version: 1.4.0+2
+version: 1.4.0+3
 category: sys-libs
 labels:
   emerge.packages: sys-libs/libunwind
