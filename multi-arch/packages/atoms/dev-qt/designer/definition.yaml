@@ -1,9 +1,9 @@
 name: designer
-version: 5.15.1+1
+version: 5.15.1+2
 category: dev-qt
-uri: 
-- https://www.qt.io/
-license: 
+uri:
+  - https://www.qt.io/
+license:
 labels:
   emerge.packages: dev-qt/designer
   original.package.name: dev-qt/designer
