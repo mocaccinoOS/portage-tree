@@ -1,12 +1,12 @@
 name: kexec-tools
-version: 2.0.20+2
+version: 2.0.20+3
 category: sys-apps
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 uri:
-- https://kernel.org/pub/linux/utils/kernel/kexec/
+  - https://kernel.org/pub/linux/utils/kernel/kexec/
 license: GPL-2
 labels:
   emerge.packages: sys-apps/kexec-tools
