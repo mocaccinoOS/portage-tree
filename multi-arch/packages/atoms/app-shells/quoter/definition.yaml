@@ -1,8 +1,8 @@
 name: quoter
-version: 4.2+2
+version: 4.2+3
 category: app-shells
 uri:
-- https://github.com/vaeth/quoter/
+  - https://github.com/vaeth/quoter/
 license: MIT
 labels:
   emerge.packages: app-shells/quoter
