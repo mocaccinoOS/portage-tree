@@ -1,13 +1,13 @@
 name: dracut
-version: 050+2
+version: 050+3
 category: sys-kernel
 requires:
-- name: X
-  version: '>=0'
-  category: layers
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: sys-kernel/dracut
   original.package.name: sys-kernel/dracut
