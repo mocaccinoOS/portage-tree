@@ -1,12 +1,12 @@
 name: ipmitool
-version: 1.8.18+p20201006
+version: 1.8.18+1
 category: sys-apps
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 uri:
-- http://ipmitool.sf.net/
+  - http://ipmitool.sf.net/
 license: BSD
 labels:
   emerge.packages: sys-apps/ipmitool
