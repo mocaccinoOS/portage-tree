@@ -1,16 +1,16 @@
 name: gvim
-version: 8.2.0360
+version: 8.2.0360+1
 category: app-editors
 requires:
-- name: eselect-vi
-  version: '>=1.1'
-  category: app-eselect
-- name: X
-  version: '>=0'
-  category: layers
-- name: vim-core
-  version: '>=0'
-  category: app-editors
+  - name: eselect-vi
+    version: '>=1.1'
+    category: app-eselect
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: vim-core
+    version: '>=0'
+    category: app-editors
 labels:
   emerge.packages: app-editors/gvim
   original.package.name: app-editors/gvim
