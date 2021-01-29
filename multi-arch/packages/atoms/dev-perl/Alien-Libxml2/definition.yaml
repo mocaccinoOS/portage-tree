@@ -1,13 +1,13 @@
 name: Alien-Libxml2
-version: 0.160.0+3
+version: 0.160.0+4
 category: dev-perl
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: Alien-Build
-  version: '>=2.120.0'
-  category: dev-perl
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: Alien-Build
+    version: '>=2.120.0'
+    category: dev-perl
 labels:
   emerge.packages: dev-perl/Alien-Libxml2
   original.package.name: dev-perl/Alien-Libxml2
