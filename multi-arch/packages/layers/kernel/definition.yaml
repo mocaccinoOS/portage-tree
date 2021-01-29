@@ -1,6 +1,6 @@
 category: "layers"
 name: "kernel-5.4"
-version: "5.4.86"
+version: 5.4.86+1
 hidden: true
 labels:
   emerge.jobs: "3"
