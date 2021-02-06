@@ -1,6 +1,0 @@
-category: "layers"
-hidden: true
-name: "system-x-image"
-version: "0.20201121"
-labels:
-  emerge.jobs: "1"
