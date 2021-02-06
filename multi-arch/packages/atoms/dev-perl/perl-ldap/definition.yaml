@@ -1,0 +1,38 @@
+name: perl-ldap
+version: 0.650.0
+category: dev-perl
+use_flags:
+- sasl
+- xml
+- ssl
+requires:
+- name: Authen-SASL
+  version: '>=0'
+  category: dev-perl
+- name: Convert-ASN1
+  version: '>=0'
+  category: dev-perl
+- name: IO-Socket-SSL
+  version: '>=0'
+  category: dev-perl
+- name: XML-Parser
+  version: '>=0'
+  category: dev-perl
+- name: XML-SAX
+  version: '>=0'
+  category: dev-perl
+- name: XML-SAX-Writer
+  version: '>=0'
+  category: dev-perl
+description: Perl modules which provide an object-oriented interface to LDAP servers
+uri:
+- https://metacpan.org/release/perl-ldap
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: dev-perl/Convert-ASN1 dev-perl/URI sasl? ( virtual/perl-Digest-MD5 dev-perl/Authen-SASL ) xml? ( dev-perl/XML-Parser dev-perl/XML-SAX dev-perl/XML-SAX-Writer ) ssl? ( >=dev-perl/IO-Socket-SSL-1.26 ) dev-lang/perl
+  IUSE: sasl xml ssl
+  RDEPEND: dev-perl/Convert-ASN1 dev-perl/URI sasl? ( virtual/perl-Digest-MD5 dev-perl/Authen-SASL ) xml? ( dev-perl/XML-Parser dev-perl/XML-SAX dev-perl/XML-SAX-Writer ) ssl? ( >=dev-perl/IO-Socket-SSL-1.26 ) dev-lang/perl:=
+  emerge.packages: dev-perl/perl-ldap
+  kit: gentoo
+  original.package.name: dev-perl/perl-ldap
+  original.package.version: 0.650.0

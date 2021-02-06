@@ -1,0 +1,21 @@
+name: dieharder
+version: 3.31.1
+category: app-crypt
+use_flags:
+- -doc
+requires:
+- name: gsl
+  version: '>=0'
+  category: sci-libs
+description: An advanced suite for testing the randomness of RNG's
+uri:
+- http://www.phy.duke.edu/~rgb/General/dieharder.php
+license: GPL-2
+labels:
+  DEPEND: sci-libs/gsl doc? ( dev-tex/latex2html )
+  IUSE: doc
+  RDEPEND: sci-libs/gsl
+  emerge.packages: app-crypt/dieharder
+  kit: gentoo
+  original.package.name: app-crypt/dieharder
+  original.package.version: 3.31.1-r3

@@ -1,0 +1,68 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: dapl
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: ibacm
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: infiniband-diags
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: infinipath-psm
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libcxgb3
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libcxgb4
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libehca
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libibcm
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libipathverbs
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libmlx4
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libmlx5
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libmthca
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libnes
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: libocrdma
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: perftest
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: qperf
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: rds-tools
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: srptools
+  version: '>=0'
+  category: sys-fabric-3.12

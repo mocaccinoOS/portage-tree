@@ -1,0 +1,21 @@
+name: opensm
+version: 3.3.17
+category: sys-fabric-3.12
+use_flags:
+- tools
+requires:
+- name: opensm
+  version: '>=0'
+  category: sys-fabric-3.12
+description: OpenSM - InfiniBand Subnet Manager and Administration for OpenIB
+uri:
+- https://www.openfabrics.org/
+license: '|| ( GPL-2 BSD-2 )'
+labels:
+  DEPEND: sys-fabric/libibmad:3.12 sys-fabric/libibumad:3.12 >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 >=app-arch/rpm2targz-9.0.0.3g
+  IUSE: tools
+  RDEPEND: sys-fabric/libibmad:3.12 sys-fabric/libibumad:3.12 tools? ( net-misc/iputils net-misc/openssh ) !sys-fabric/opensm:0 !sys-fabric/opensm:3.5
+  emerge.packages: sys-fabric/opensm:3.12
+  kit: gentoo
+  original.package.name: sys-fabric/opensm
+  original.package.version: 3.3.17-r1

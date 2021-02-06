@@ -1,0 +1,27 @@
+name: ebtables
+version: 2.0.11
+category: net-firewall
+use_flags:
+- perl
+requires:
+- name: eselect-iptables
+  version: '>=0'
+  category: app-eselect
+- name: perl
+  version: '>=0'
+  category: dev-lang
+- name: ethertypes
+  version: '>=0'
+  category: net-misc
+description: Controls Ethernet frame filtering on a Linux bridge, MAC NAT and brouting
+uri:
+- http://ebtables.sourceforge.net/
+license: GPL-2
+labels:
+  BDEPEND: '>=app-eselect/eselect-iptables-20200508 >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  IUSE: +perl static
+  RDEPEND: '>=app-eselect/eselect-iptables-20200508 perl? ( dev-lang/perl ) net-misc/ethertypes'
+  emerge.packages: net-firewall/ebtables
+  kit: gentoo
+  original.package.name: net-firewall/ebtables
+  original.package.version: 2.0.11-r2

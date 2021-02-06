@@ -1,0 +1,53 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: zstd
+  version: '>=0'
+  category: app-arch
+- name: mecab
+  version: '>=0'
+  category: app-text
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: jemalloc
+  version: '>=0'
+  category: dev-libs
+- name: libaio
+  version: '>=0'
+  category: dev-libs
+- name: libevent
+  version: '>=0'
+  category: dev-libs
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: protobuf
+  version: '>=0'
+  category: dev-libs
+- name: google-perftools
+  version: '>=0'
+  category: dev-util
+- name: libtirpc
+  version: '>=0'
+  category: net-libs
+- name: rpcsvc-proto
+  version: '>=0'
+  category: net-libs
+- name: numactl
+  version: '>=0'
+  category: sys-process
+- name: procps
+  version: '>=0'
+  category: sys-process

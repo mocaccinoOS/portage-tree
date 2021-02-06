@@ -1,0 +1,20 @@
+name: libtirpc
+version: 1.2.6
+category: net-libs
+use_flags:
+- kerberos
+- '>=virtual/krb5-0-r1[abi_x86_32(-)'
+- elibc_musl
+description: Transport Independent RPC library (SunRPC replacement)
+uri:
+- https://sourceforge.net/projects/libtirpc/
+license: GPL-2
+labels:
+  BDEPEND: app-arch/xz-utils virtual/pkgconfig
+  DEPEND: kerberos? ( >=virtual/krb5-0-r1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) elibc_musl? ( sys-libs/queue-standalone )
+  IUSE: ipv6 kerberos static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64 split-usr
+  RDEPEND: kerberos? ( >=virtual/krb5-0-r1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
+  emerge.packages: net-libs/libtirpc
+  kit: gentoo
+  original.package.name: net-libs/libtirpc
+  original.package.version: 1.2.6

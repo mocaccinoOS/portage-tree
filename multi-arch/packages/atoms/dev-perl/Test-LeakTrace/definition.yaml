@@ -1,0 +1,19 @@
+name: Test-LeakTrace
+version: 0.160.0
+category: dev-perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Traces memory leaks
+uri:
+- https://metacpan.org/release/Test-LeakTrace
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: '>=virtual/perl-Exporter-5.570.0 >=virtual/perl-Test-Simple-0.620.0 >=virtual/perl-ExtUtils-MakeMaker-6.590.0 dev-lang/perl'
+  IUSE: examples
+  RDEPEND: '>=virtual/perl-Exporter-5.570.0 >=virtual/perl-Test-Simple-0.620.0 dev-lang/perl:='
+  emerge.packages: dev-perl/Test-LeakTrace
+  kit: gentoo
+  original.package.name: dev-perl/Test-LeakTrace
+  original.package.version: 0.160.0

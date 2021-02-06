@@ -1,0 +1,22 @@
+name: desktop-file-utils
+version: "0.24"
+category: dev-util
+use_flags:
+- -emacs
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+description: Command line utilities to work with desktop menu entries
+uri:
+- https://freedesktop.org/wiki/Software/desktop-file-utils
+license: GPL-2+
+labels:
+  BDEPEND: app-arch/xz-utils virtual/pkgconfig
+  DEPEND: '>=dev-libs/glib-2.12:2 emacs? ( >=app-editors/emacs-23.1:* )'
+  IUSE: emacs
+  RDEPEND: '>=dev-libs/glib-2.12:2 emacs? ( >=app-editors/emacs-23.1:* )'
+  emerge.packages: dev-util/desktop-file-utils
+  kit: gentoo
+  original.package.name: dev-util/desktop-file-utils
+  original.package.version: "0.24"

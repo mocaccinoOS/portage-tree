@@ -1,0 +1,38 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: PyQt5
+  version: '>=0'
+  category: dev-python
+- name: dbus-python
+  version: '>=0'
+  category: dev-python
+- name: decorator
+  version: '>=0'
+  category: dev-python
+- name: python-slip
+  version: '>=0'
+  category: dev-python
+- name: intltool
+  version: '>=0'
+  category: dev-util
+- name: ebtables
+  version: '>=0'
+  category: net-firewall
+- name: ipset
+  version: '>=0'
+  category: net-firewall
+- name: nftables
+  version: '>=0'
+  category: net-firewall

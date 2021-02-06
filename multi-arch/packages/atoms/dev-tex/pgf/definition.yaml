@@ -1,0 +1,19 @@
+name: pgf
+version: 3.1.4b
+category: dev-tex
+requires:
+- name: texlive-latexrecommended
+  version: '>=0'
+  category: dev-texlive
+description: The TeX Portable Graphic Format
+uri:
+- https://github.com/pgf-tikz/pgf
+license: GPL-2 LPPL-1.3c FDL-1.2
+labels:
+  DEPEND: virtual/latex-base >=sys-apps/texinfo-4.2-r5
+  IUSE: doc source
+  RDEPEND: dev-texlive/texlive-latexrecommended virtual/latex-base
+  emerge.packages: dev-tex/pgf
+  kit: gentoo
+  original.package.name: dev-tex/pgf
+  original.package.version: 3.1.4b-r2

@@ -1,0 +1,31 @@
+name: racket
+version: "7.0"
+category: dev-scheme
+use_flags:
+- x11-libs/cairo[X
+- x11-libs/pango[X
+- readline
+- X
+- x11-libs/gtk+[X
+requires:
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: libedit
+  version: '>=0'
+  category: dev-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs
+description: General purpose, multi-paradigm Lisp-Scheme programming language
+uri:
+- https://racket-lang.org/
+license: GPL-3+ LGPL-3
+labels:
+  DEPEND: dev-db/sqlite:3 media-libs/libpng:0 x11-libs/cairo[X?] x11-libs/pango[X?] virtual/libffi virtual/jpeg:0 readline? ( dev-libs/libedit ) X? ( x11-libs/gtk+[X?] ) !dev-tex/slatex
+  IUSE: doc +futures +jit minimal +places +readline +threads +X
+  RDEPEND: dev-db/sqlite:3 media-libs/libpng:0 x11-libs/cairo[X?] x11-libs/pango[X?] virtual/libffi virtual/jpeg:0 readline? ( dev-libs/libedit ) X? ( x11-libs/gtk+[X?] ) !dev-tex/slatex
+  emerge.packages: dev-scheme/racket
+  kit: gentoo
+  original.package.name: dev-scheme/racket
+  original.package.version: "7.0"

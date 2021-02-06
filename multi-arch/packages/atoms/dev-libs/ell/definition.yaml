@@ -1,0 +1,19 @@
+name: ell
+version: "0.33"
+category: dev-libs
+use_flags:
+- glib
+- dev-libs/glib:2[abi_x86_32(-)
+- -test
+description: Embedded Linux Library provides core, low-level functionality for system daemons
+uri:
+- https://01.org/ell
+license: LGPL-2.1
+labels:
+  DEPEND: glib? ( dev-libs/glib:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) test? ( sys-apps/dbus )
+  IUSE: glib pie test kernel_linux abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: glib? ( dev-libs/glib:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
+  emerge.packages: dev-libs/ell
+  kit: gentoo
+  original.package.name: dev-libs/ell
+  original.package.version: "0.33"

@@ -1,0 +1,13 @@
+name: musl
+version: 1.2.1
+category: sys-libs
+description: Light, fast and simple C library focused on standards-conformance and safety
+uri:
+- http://www.musl-libc.org/
+license: MIT LGPL-2 GPL-2
+labels:
+  IUSE: headers-only
+  emerge.packages: sys-libs/musl
+  kit: gentoo
+  original.package.name: sys-libs/musl
+  original.package.version: 1.2.1

@@ -1,0 +1,18 @@
+name: realpath
+version: "1.18"
+category: app-misc
+use_flags:
+- nls
+- elibc_mintlib
+description: Return the canonicalized absolute pathname
+uri:
+- http://packages.debian.org/unstable/utils/realpath
+license: GPL-2
+labels:
+  DEPEND: nls? ( virtual/libintl ) nls? ( sys-devel/gettext ) elibc_mintlib? ( virtual/libiconv )
+  IUSE: nls
+  RDEPEND: nls? ( virtual/libintl )
+  emerge.packages: app-misc/realpath
+  kit: gentoo
+  original.package.name: app-misc/realpath
+  original.package.version: "1.18"

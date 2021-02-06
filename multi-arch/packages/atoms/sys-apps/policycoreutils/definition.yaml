@@ -1,0 +1,49 @@
+name: policycoreutils
+version: "3.0"
+category: sys-apps
+use_flags:
+- dbus
+- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- '>=sys-libs/libsemanage-3.0:=[python(+),python_targets_python3_6(-)'
+- dev-python/ipy[python_targets_python3_6(-)
+- '>=sys-libs/libselinux-3.0:=[python,python_targets_python3_6(-)'
+- audit
+- python_targets_python3_7
+- '>=sys-process/audit-1.5.1[python,python_targets_python3_6(-)'
+- pam
+- python_targets_python3_6
+- '>=app-admin/setools-4.2.0[python_targets_python3_6(-)'
+requires:
+- name: pax-utils
+  version: '>=0'
+  category: app-misc
+- name: dbus-glib
+  version: '>=0'
+  category: dev-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: libcap-ng
+  version: '>=0'
+  category: sys-libs
+- name: libsepol
+  version: '>=0'
+  category: sys-libs
+- name: pam
+  version: '>=0'
+  category: sys-libs
+description: SELinux core utilities
+uri:
+- https://github.com/SELinuxProject/selinux/wiki
+license: GPL-2
+labels:
+  DEPEND: '>=sys-libs/libselinux-3.0:=[python,python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] >=sys-libs/libcap-1.10-r10:= >=sys-libs/libsemanage-3.0:=[python(+),python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] sys-libs/libcap-ng:= >=sys-libs/libsepol-3.0:= >=app-admin/setools-4.2.0[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] sys-devel/gettext dev-python/ipy[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] dbus? ( sys-apps/dbus dev-libs/dbus-glib:= ) audit? ( >=sys-process/audit-1.5.1[python,python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] ) pam? ( sys-libs/pam:= ) python_targets_python3_6? ( dev-lang/python:3.6[xml] ) python_targets_python3_7? ( dev-lang/python:3.7[xml] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)]'
+  IUSE: audit dbus pam split-usr python_targets_python3_6 python_targets_python3_7
+  RDEPEND: '>=sys-libs/libselinux-3.0:=[python,python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] >=sys-libs/libcap-1.10-r10:= >=sys-libs/libsemanage-3.0:=[python(+),python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] sys-libs/libcap-ng:= >=sys-libs/libsepol-3.0:= >=app-admin/setools-4.2.0[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] sys-devel/gettext dev-python/ipy[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] dbus? ( sys-apps/dbus dev-libs/dbus-glib:= ) audit? ( >=sys-process/audit-1.5.1[python,python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] ) pam? ( sys-libs/pam:= ) python_targets_python3_6? ( dev-lang/python:3.6[xml] ) python_targets_python3_7? ( dev-lang/python:3.7[xml] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] app-misc/pax-utils'
+  emerge.packages: sys-apps/policycoreutils
+  kit: gentoo
+  original.package.name: sys-apps/policycoreutils
+  original.package.version: "3.0"

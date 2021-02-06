@@ -1,7 +1,0 @@
-name: libestr
-version: 0.1.11+2
-category: dev-libs
-labels:
-  emerge.packages: dev-libs/libestr
-  original.package.name: dev-libs/libestr
-  original.package.version: 0.1.11

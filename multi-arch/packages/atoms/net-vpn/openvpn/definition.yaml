@@ -1,0 +1,60 @@
+name: openvpn
+version: 2.4.9
+category: net-vpn
+use_flags:
+- pkcs11
+- pam
+- lz4
+- selinux
+- kernel_linux
+- -test
+- ssl
+- mbedtls
+- libressl
+- lzo
+- systemd
+- iproute2
+requires:
+- name: openvpn
+  version: '>=0'
+  category: acct-user
+- name: lz4
+  version: '>=0'
+  category: app-arch
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: pkcs11-helper
+  version: '>=0'
+  category: dev-libs
+- name: mbedtls
+  version: '>=0'
+  category: net-libs
+- name: selinux-openvpn
+  version: '>=0'
+  category: sec-policy
+- name: iproute2
+  version: '>=0'
+  category: sys-apps
+- name: net-tools
+  version: '>=0'
+  category: sys-apps
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+- name: pam
+  version: '>=0'
+  category: sys-libs
+description: Robust and highly flexible tunneling application compatible with many OSes
+uri:
+- https://openvpn.net/
+license: GPL-2
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig'
+  DEPEND: kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( >=sys-apps/net-tools-1.60_p20160215155418 ) ) pam? ( sys-libs/pam ) ssl? ( !mbedtls? ( !libressl? ( >=dev-libs/openssl-0.9.8:0= ) libressl? ( dev-libs/libressl:0= ) ) mbedtls? ( net-libs/mbedtls:= ) ) lz4? ( app-arch/lz4 ) lzo? ( >=dev-libs/lzo-1.07 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.11 ) systemd? ( sys-apps/systemd ) test? ( dev-util/cmocka )
+  IUSE: down-root examples inotify iproute2 libressl lz4 +lzo mbedtls pam pkcs11 +plugins selinux +ssl systemd test userland_BSD kernel_linux
+  RDEPEND: kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( >=sys-apps/net-tools-1.60_p20160215155418 ) ) pam? ( sys-libs/pam ) ssl? ( !mbedtls? ( !libressl? ( >=dev-libs/openssl-0.9.8:0= ) libressl? ( dev-libs/libressl:0= ) ) mbedtls? ( net-libs/mbedtls:= ) ) lz4? ( app-arch/lz4 ) lzo? ( >=dev-libs/lzo-1.07 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.11 ) systemd? ( sys-apps/systemd ) acct-group/openvpn acct-user/openvpn selinux? ( sec-policy/selinux-openvpn )
+  emerge.packages: net-vpn/openvpn
+  kit: gentoo
+  original.package.name: net-vpn/openvpn
+  original.package.version: 2.4.9

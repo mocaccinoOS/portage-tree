@@ -1,0 +1,25 @@
+name: babeltrace
+version: 1.2.4
+category: dev-util
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: popt
+  version: '>=0'
+  category: dev-libs
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
+description: A command-line tool and library to read and convert trace files
+uri:
+- https://lttng.org
+license: GPL-2
+labels:
+  DEPEND: dev-libs/glib:2 dev-libs/popt sys-apps/util-linux sys-devel/bison sys-devel/flex
+  IUSE: test
+  RDEPEND: dev-libs/glib:2 dev-libs/popt sys-apps/util-linux
+  emerge.packages: dev-util/babeltrace
+  kit: gentoo
+  original.package.name: dev-util/babeltrace
+  original.package.version: 1.2.4

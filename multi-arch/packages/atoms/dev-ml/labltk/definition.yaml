@@ -1,0 +1,21 @@
+name: labltk
+version: 8.06.7
+category: dev-ml
+use_flags:
+- '>=dev-lang/ocaml-4.08:=[ocamlopt'
+requires:
+- name: tk
+  version: '>=0'
+  category: dev-lang
+description: OCaml interface to the Tcl/Tk GUI framework
+uri:
+- https://garrigue.github.io/labltk/
+license: QPL-1.0 LGPL-2
+labels:
+  DEPEND: '>=dev-lang/tk-8.0.3:= >=dev-lang/ocaml-4.08:=[ocamlopt?,X(+)?] >=dev-ml/findlib-1.5.5-r1 >=dev-ml/findlib-1.0.4-r1'
+  IUSE: +ocamlopt X
+  RDEPEND: '>=dev-lang/tk-8.0.3:= >=dev-lang/ocaml-4.08:=[ocamlopt?,X(+)?]'
+  emerge.packages: dev-ml/labltk
+  kit: gentoo
+  original.package.name: dev-ml/labltk
+  original.package.version: 8.06.7

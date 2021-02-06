@@ -1,0 +1,35 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: gcr
+  version: '>=0'
+  category: app-crypt
+- name: gnupg
+  version: '>=0'
+  category: app-crypt
+- name: eselect-pinentry
+  version: '>=0'
+  category: app-eselect
+- name: ca-certificates
+  version: '>=0'
+  category: app-misc
+- name: openssh
+  version: '>=0'
+  category: net-misc
+- name: selinux-gnome
+  version: '>=0'
+  category: sec-policy
+- name: libcap-ng
+  version: '>=0'
+  category: sys-libs

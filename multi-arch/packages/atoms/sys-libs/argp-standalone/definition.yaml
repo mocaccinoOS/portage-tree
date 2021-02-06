@@ -1,0 +1,14 @@
+name: argp-standalone
+version: "1.3"
+category: sys-libs
+description: Standalone argp library for use with uclibc
+uri:
+- http://www.lysator.liu.se/~nisse/misc/
+license: public-domain GPL-2 GPL-3 XC
+labels:
+  DEPEND: '!sys-libs/glibc >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  IUSE: static-libs
+  emerge.packages: sys-libs/argp-standalone
+  kit: gentoo
+  original.package.name: sys-libs/argp-standalone
+  original.package.version: 1.3-r2

@@ -1,0 +1,16 @@
+name: ldap
+version: "0"
+category: acct-user
+requires:
+- name: ldap
+  version: '>=0'
+  category: acct-group
+description: A user for ldap
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/ldap
+  emerge.packages: acct-user/ldap
+  kit: gentoo
+  original.package.name: acct-user/ldap
+  original.package.version: "0"

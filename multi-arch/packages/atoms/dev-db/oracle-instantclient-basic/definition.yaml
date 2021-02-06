@@ -1,0 +1,17 @@
+name: oracle-instantclient-basic
+version: "12"
+category: dev-db
+requires:
+- name: oracle-instantclient
+  version: '>=0'
+  category: dev-db
+description: Transition package moving to single dev-db/oracle-instantclient package
+uri:
+- https://bugs.gentoo.org/show_bug.cgi?id=524922#c12
+license: metapackage
+labels:
+  RDEPEND: '>=dev-db/oracle-instantclient-12[sdk]'
+  emerge.packages: dev-db/oracle-instantclient-basic
+  kit: gentoo
+  original.package.name: dev-db/oracle-instantclient-basic
+  original.package.version: "12"

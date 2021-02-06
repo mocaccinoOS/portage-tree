@@ -1,0 +1,46 @@
+name: iproute2
+version: 5.7.0
+category: sys-apps
+use_flags:
+- berkdb
+- atm
+- selinux
+- minimal
+- caps
+- elf
+- iptables
+requires:
+- name: libbsd
+  version: '>=0'
+  category: dev-libs
+- name: linux-atm
+  version: '>=0'
+  category: net-dialup
+- name: iptables
+  version: '>=0'
+  category: net-firewall
+- name: arpd
+  version: '>=0'
+  category: net-misc
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+description: kernel routing and traffic control utilities
+uri:
+- https://wiki.linuxfoundation.org/networking/iproute2
+license: GPL-2
+labels:
+  BDEPEND: app-arch/xz-utils >=sys-devel/bison-2.4 sys-devel/flex virtual/pkgconfig
+  DEPEND: '!net-misc/arpd dev-libs/libbsd !minimal? ( net-libs/libmnl ) caps? ( sys-libs/libcap ) elf? ( virtual/libelf ) iptables? ( >=net-firewall/iptables-1.4.20:= ) berkdb? ( sys-libs/db:= ) atm? ( net-dialup/linux-atm ) selinux? ( sys-libs/libselinux ) >=sys-kernel/linux-headers-3.16'
+  IUSE: atm berkdb caps elf +iptables ipv6 minimal selinux
+  RDEPEND: '!net-misc/arpd dev-libs/libbsd !minimal? ( net-libs/libmnl ) caps? ( sys-libs/libcap ) elf? ( virtual/libelf ) iptables? ( >=net-firewall/iptables-1.4.20:= ) berkdb? ( sys-libs/db:= ) atm? ( net-dialup/linux-atm ) selinux? ( sys-libs/libselinux )'
+  emerge.packages: sys-apps/iproute2
+  kit: gentoo
+  original.package.name: sys-apps/iproute2
+  original.package.version: 5.7.0

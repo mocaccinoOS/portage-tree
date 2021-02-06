@@ -1,0 +1,23 @@
+name: opensp
+version: 1.5.2
+category: app-text
+use_flags:
+- nls
+- -doc
+- -test
+requires:
+- name: libnsl
+  version: '>=0'
+  category: net-libs
+description: A free, object-oriented toolkit for SGML parsing and entity management
+uri:
+- http://openjade.sourceforge.net/
+license: MIT
+labels:
+  DEPEND: net-libs/libnsl:0= nls? ( sys-devel/gettext ) doc? ( app-text/xmlto app-text/docbook-xml-dtd:4.1.2 ) test? ( app-text/docbook-xml-dtd:4.5 app-text/openjade app-text/sgml-common )
+  IUSE: doc nls static-libs test
+  RDEPEND: net-libs/libnsl:0=
+  emerge.packages: app-text/opensp
+  kit: gentoo
+  original.package.name: app-text/opensp
+  original.package.version: 1.5.2-r3

@@ -1,0 +1,71 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: lirc
+  version: '>=0'
+  category: app-misc
+- name: orc
+  version: '>=0'
+  category: dev-lang
+- name: libatomic_ops
+  version: '>=0'
+  category: dev-libs
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: unifdef
+  version: '>=0'
+  category: dev-util
+- name: gconf
+  version: '>=0'
+  category: gnome-base-2
+- name: libsamplerate
+  version: '>=0'
+  category: media-libs
+- name: sbc
+  version: '>=0'
+  category: media-libs
+- name: soxr
+  version: '>=0'
+  category: media-libs
+- name: speexdsp
+  version: '>=0'
+  category: media-libs
+- name: webrtc-audio-processing
+  version: '>=0'
+  category: media-libs
+- name: avahi
+  version: '>=0'
+  category: net-dns
+- name: ofono
+  version: '>=0'
+  category: net-misc
+- name: fftw
+  version: '>=0'
+  category: sci-libs-3.0
+- name: selinux-pulseaudio
+  version: '>=0'
+  category: sec-policy
+- name: rtkit
+  version: '>=0'
+  category: sys-auth
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: gdbm
+  version: '>=0'
+  category: sys-libs
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3

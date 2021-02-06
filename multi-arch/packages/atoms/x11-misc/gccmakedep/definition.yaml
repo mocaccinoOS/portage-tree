@@ -1,0 +1,13 @@
+name: gccmakedep
+version: 1.0.3
+category: x11-misc
+description: create dependencies in makefiles using 'gcc -M'
+uri:
+- https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/util/gccmakedep
+license: MIT
+labels:
+  DEPEND: x11-base/xorg-proto
+  emerge.packages: x11-misc/gccmakedep
+  kit: gentoo
+  original.package.name: x11-misc/gccmakedep
+  original.package.version: 1.0.3-r1

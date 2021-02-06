@@ -1,0 +1,15 @@
+name: gentoo-systemd-integration
+version: "8"
+category: sys-apps
+description: systemd integration files for Gentoo
+uri:
+- https://wiki.gentoo.org/wiki/Project:Systemd
+license: BSD
+labels:
+  BDEPEND: virtual/pkgconfig virtual/pkgconfig
+  DEPEND: '>=sys-apps/systemd-207'
+  RDEPEND: '>=sys-apps/systemd-207 !sys-fs/eudev !sys-fs/udev'
+  emerge.packages: sys-apps/gentoo-systemd-integration
+  kit: gentoo
+  original.package.name: sys-apps/gentoo-systemd-integration
+  original.package.version: "8"

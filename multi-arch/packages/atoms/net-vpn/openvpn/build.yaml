@@ -1,0 +1,32 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: pkcs11-helper
+  version: '>=0'
+  category: dev-libs
+- name: mbedtls
+  version: '>=0'
+  category: net-libs
+- name: iproute2
+  version: '>=0'
+  category: sys-apps
+- name: net-tools
+  version: '>=0'
+  category: sys-apps
+- name: systemd
+  version: '>=0'
+  category: sys-apps

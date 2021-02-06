@@ -1,0 +1,24 @@
+name: xar
+version: "1.8"
+category: app-arch
+use_flags:
+- sys-libs/zlib[abi_x86_32(-)
+- dev-libs/libxml2[abi_x86_32(-)
+- kernel_Darwin
+- kernel_SunOS
+- libressl
+- dev-libs/openssl:0=[abi_x86_32(-)
+- dev-libs/libressl:0=[abi_x86_32(-)
+- app-arch/bzip2[abi_x86_32(-)
+description: An easily extensible archive format
+uri:
+- https://opensource.apple.com/source/xar/
+license: BSD-2
+labels:
+  DEPEND: '!kernel_Darwin? ( !kernel_SunOS? ( virtual/acl ) !libressl? ( dev-libs/openssl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) libressl? ( dev-libs/libressl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) ) app-arch/bzip2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] sys-libs/zlib[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] dev-libs/libxml2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]'
+  IUSE: libressl kernel_Darwin abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '!kernel_Darwin? ( !kernel_SunOS? ( virtual/acl ) !libressl? ( dev-libs/openssl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) libressl? ( dev-libs/libressl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) ) app-arch/bzip2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] sys-libs/zlib[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] dev-libs/libxml2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]'
+  emerge.packages: app-arch/xar
+  kit: gentoo
+  original.package.name: app-arch/xar
+  original.package.version: 1.8-r2

@@ -1,0 +1,33 @@
+name: pypax
+version: 0.9.5
+category: dev-python
+use_flags:
+- ptpax
+- dev-python/setuptools[python_targets_python3_6(-)
+- xtpax
+- python_targets_python3_6
+- python_targets_python3_7
+- python_targets_python3_8
+- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: elfutils
+  version: '>=0'
+  category: dev-libs
+- name: attr
+  version: '>=0'
+  category: sys-apps
+description: Python module to get or set either PT_PAX and/or XATTR_PAX flags
+uri:
+- https://dev.gentoo.org/~blueness/elfix/ https://www.gentoo.org/proj/en/hardened/pax-quickstart.xml
+license: GPL-3
+labels:
+  DEPEND: dev-python/setuptools[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ptpax? ( dev-libs/elfutils ) xtpax? ( sys-apps/attr ) python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+  IUSE: +ptpax +xtpax python_targets_python3_6 python_targets_python3_7 python_targets_python3_8
+  RDEPEND: ptpax? ( dev-libs/elfutils ) xtpax? ( sys-apps/attr ) python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+  emerge.packages: dev-python/pypax
+  kit: gentoo
+  original.package.name: dev-python/pypax
+  original.package.version: 0.9.5

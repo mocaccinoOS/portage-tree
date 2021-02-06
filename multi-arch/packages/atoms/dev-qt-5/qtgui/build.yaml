@@ -1,0 +1,65 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: libinput
+  version: '>=0'
+  category: dev-libs
+- name: qtnetwork
+  version: '>=0'
+  category: dev-qt-5
+- name: gtk-update-icon-cache
+  version: '>=0'
+  category: dev-util
+- name: vulkan-headers
+  version: '>=0'
+  category: dev-util
+- name: fontconfig
+  version: '>=0'
+  category: media-libs-1.0
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: harfbuzz
+  version: '>=0'
+  category: media-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs
+- name: mesa
+  version: '>=0'
+  category: media-libs
+- name: libICE
+  version: '>=0'
+  category: x11-libs
+- name: libSM
+  version: '>=0'
+  category: x11-libs
+- name: libxkbcommon
+  version: '>=0'
+  category: x11-libs
+- name: tslib
+  version: '>=0'
+  category: x11-libs
+- name: xcb-util-image
+  version: '>=0'
+  category: x11-libs
+- name: xcb-util-keysyms
+  version: '>=0'
+  category: x11-libs
+- name: xcb-util-renderutil
+  version: '>=0'
+  category: x11-libs
+- name: xcb-util-wm
+  version: '>=0'
+  category: x11-libs

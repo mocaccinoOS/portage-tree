@@ -1,7 +1,15 @@
 name: vim-core
 version: 8.2.0360
 category: app-editors
+description: vim and gvim shared files
+uri:
+- https://vim.sourceforge.io/ https://github.com/vim/vim
+license: vim
 labels:
+  DEPEND: sys-devel/autoconf
+  IUSE: nls acl minimal
+  RDEPEND: '!!<app-editors/gvim-8.1.0648'
   emerge.packages: app-editors/vim-core
+  kit: gentoo
   original.package.name: app-editors/vim-core
   original.package.version: 8.2.0360

@@ -1,0 +1,21 @@
+name: Sub-Uplevel
+version: 0.280.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Apparently run a function in a higher stack frame
+uri:
+- https://metacpan.org/release/Sub-Uplevel
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: virtual/perl-Carp >=virtual/perl-ExtUtils-MakeMaker-6.170.0 test? ( virtual/perl-Exporter virtual/perl-File-Spec virtual/perl-Test-Simple ) dev-lang/perl
+  IUSE: test
+  RDEPEND: virtual/perl-Carp dev-lang/perl:=
+  emerge.packages: dev-perl/Sub-Uplevel
+  kit: gentoo
+  original.package.name: dev-perl/Sub-Uplevel
+  original.package.version: 0.280.0

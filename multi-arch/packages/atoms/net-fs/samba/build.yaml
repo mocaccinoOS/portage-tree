@@ -1,0 +1,59 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: gpgme
+  version: '>=0'
+  category: app-crypt-1
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: jansson
+  version: '>=0'
+  category: dev-libs
+- name: Parse-Yapp
+  version: '>=0'
+  category: dev-perl
+- name: dnspython
+  version: '>=0'
+  category: dev-python
+- name: avahi
+  version: '>=0'
+  category: net-dns
+- name: bind-tools
+  version: '>=0'
+  category: net-dns
+- name: resolv_wrapper
+  version: '>=0'
+  category: net-dns
+- name: rpcsvc-proto
+  version: '>=0'
+  category: net-libs
+- name: socket_wrapper
+  version: '>=0'
+  category: net-libs
+- name: cups
+  version: '>=0'
+  category: net-print
+- name: dmapi
+  version: '>=0'
+  category: sys-apps
+- name: ceph
+  version: '>=0'
+  category: sys-cluster
+- name: nss_wrapper
+  version: '>=0'
+  category: sys-libs
+- name: uid_wrapper
+  version: '>=0'
+  category: sys-libs

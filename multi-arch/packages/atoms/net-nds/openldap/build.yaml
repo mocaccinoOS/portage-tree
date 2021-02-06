@@ -1,0 +1,44 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: ldap
+  version: '>=0'
+  category: acct-group
+- name: ldap
+  version: '>=0'
+  category: acct-user
+- name: heimdal
+  version: '>=0'
+  category: app-crypt
+- name: libiodbc
+  version: '>=0'
+  category: dev-db
+- name: unixODBC
+  version: '>=0'
+  category: dev-db
+- name: cyrus-sasl
+  version: '>=0'
+  category: dev-libs-2
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: groff
+  version: '>=0'
+  category: sys-apps
+- name: tcp-wrappers
+  version: '>=0'
+  category: sys-apps
+- name: e2fsprogs-libs
+  version: '>=0'
+  category: sys-libs

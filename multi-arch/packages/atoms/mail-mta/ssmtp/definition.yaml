@@ -1,0 +1,20 @@
+name: ssmtp
+version: "2.64"
+category: mail-mta
+use_flags:
+- ssl
+- gnutls
+- libressl
+- mta
+description: Extremely simple MTA to get mail off the system to a Mailhub
+uri:
+- ftp://ftp.debian.org/debian/pool/main/s/ssmtp/
+license: GPL-2
+labels:
+  DEPEND: ssl? ( gnutls? ( net-libs/gnutls[openssl] ) !gnutls? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) ) >=app-portage/elt-patches-20170815 sys-devel/automake >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: ipv6 libressl +ssl gnutls +mta
+  RDEPEND: ssl? ( gnutls? ( net-libs/gnutls[openssl] ) !gnutls? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) ) net-mail/mailbase mta? ( !net-mail/mailwrapper !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !mail-mta/msmtp[mta] !mail-mta/nbsmtp !mail-mta/netqmail !mail-mta/nullmailer !mail-mta/postfix !mail-mta/qmail-ldap !mail-mta/sendmail !mail-mta/opensmtpd )
+  emerge.packages: mail-mta/ssmtp
+  kit: gentoo
+  original.package.name: mail-mta/ssmtp
+  original.package.version: 2.64-r3

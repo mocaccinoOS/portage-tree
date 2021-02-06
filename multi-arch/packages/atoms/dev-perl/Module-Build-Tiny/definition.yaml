@@ -1,0 +1,24 @@
+name: Module-Build-Tiny
+version: 0.39.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: ExtUtils-Helpers
+  version: '>=0'
+  category: dev-perl
+- name: ExtUtils-InstallPaths
+  version: '>=0'
+  category: dev-perl
+description: A tiny replacement for Module::Build
+uri:
+- https://metacpan.org/release/Module-Build-Tiny
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: virtual/perl-CPAN-Meta >=virtual/perl-Exporter-5.570.0 virtual/perl-ExtUtils-CBuilder >=dev-perl/ExtUtils-Config-0.3.0 >=dev-perl/ExtUtils-Helpers-0.20.0 virtual/perl-ExtUtils-Install >=dev-perl/ExtUtils-InstallPaths-0.2.0 virtual/perl-ExtUtils-ParseXS virtual/perl-File-Path virtual/perl-File-Spec >=virtual/perl-Getopt-Long-2.360.0 >=virtual/perl-JSON-PP-2.0.0 virtual/perl-podlators virtual/perl-Test-Harness test? ( virtual/perl-Data-Dumper virtual/perl-File-Temp virtual/perl-IO >=virtual/perl-Test-Simple-0.88 virtual/perl-XSLoader ) dev-lang/perl:=[-build(-)]
+  IUSE: test
+  RDEPEND: virtual/perl-CPAN-Meta >=virtual/perl-Exporter-5.570.0 virtual/perl-ExtUtils-CBuilder >=dev-perl/ExtUtils-Config-0.3.0 >=dev-perl/ExtUtils-Helpers-0.20.0 virtual/perl-ExtUtils-Install >=dev-perl/ExtUtils-InstallPaths-0.2.0 virtual/perl-ExtUtils-ParseXS virtual/perl-File-Path virtual/perl-File-Spec >=virtual/perl-Getopt-Long-2.360.0 >=virtual/perl-JSON-PP-2.0.0 virtual/perl-podlators virtual/perl-Test-Harness dev-lang/perl:=[-build(-)]
+  emerge.packages: dev-perl/Module-Build-Tiny
+  kit: gentoo
+  original.package.name: dev-perl/Module-Build-Tiny
+  original.package.version: 0.39.0

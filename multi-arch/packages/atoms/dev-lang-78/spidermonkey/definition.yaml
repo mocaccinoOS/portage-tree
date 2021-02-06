@@ -1,0 +1,28 @@
+name: spidermonkey
+version: 78.4.1
+category: dev-lang-78
+requires:
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: nspr
+  version: '>=0'
+  category: dev-libs
+- name: readline
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+description: SpiderMonkey is Mozilla's JavaScript engine written in C and C++
+uri:
+- https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
+license: MPL-2.0
+labels:
+  DEPEND: '>=dev-libs/icu-67.1:= >=dev-libs/nspr-4.25 sys-libs/readline:0= >=sys-libs/zlib-1.2.3 test? ( || ( ( dev-lang/python:3.9 dev-python/six[python_targets_python3_9(-),python_single_target_python3_9(+)] ) ( dev-lang/python:3.8 dev-python/six[python_targets_python3_8(-),python_single_target_python3_8(+)] ) ( dev-lang/python:3.7 dev-python/six[python_targets_python3_7(-),python_single_target_python3_7(+)] ) ( dev-lang/python:3.6 dev-python/six[python_targets_python3_6(-),python_single_target_python3_6(+)] ) ) )'
+  IUSE: cpu_flags_arm_neon debug +jit lto test
+  RDEPEND: '>=dev-libs/icu-67.1:= >=dev-libs/nspr-4.25 sys-libs/readline:0= >=sys-libs/zlib-1.2.3'
+  emerge.packages: dev-lang/spidermonkey:78
+  kit: gentoo
+  original.package.name: dev-lang/spidermonkey
+  original.package.version: 78.4.1

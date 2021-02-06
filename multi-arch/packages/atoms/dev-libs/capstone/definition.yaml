@@ -1,0 +1,28 @@
+name: capstone
+version: 4.0.2
+category: dev-libs
+use_flags:
+- python_targets_python3_6
+- dev-python/setuptools[python_targets_python3_6(-)
+- python_targets_python3_7
+- python_targets_python3_8
+- python_targets_python3_9
+- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- python
+requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+description: disassembly/disassembler framework + bindings
+uri:
+- http://www.capstone-engine.org/
+license: BSD
+labels:
+  BDEPEND: dev-util/ninja dev-util/cmake
+  DEPEND: python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] ) python? ( dev-python/setuptools[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] )
+  IUSE: python static-libs test python_targets_python3_6 python_targets_python3_7 python_targets_python3_8 python_targets_python3_9
+  RDEPEND: python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] )
+  emerge.packages: dev-libs/capstone
+  kit: gentoo
+  original.package.name: dev-libs/capstone
+  original.package.version: 4.0.2-r2

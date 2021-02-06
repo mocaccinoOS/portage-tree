@@ -1,0 +1,47 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: libassuan
+  version: '>=0'
+  category: dev-libs
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+- name: libksba
+  version: '>=0'
+  category: dev-libs
+- name: npth
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
+- name: curl
+  version: '>=0'
+  category: net-misc
+- name: openldap
+  version: '>=0'
+  category: net-nds
+- name: readline
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs

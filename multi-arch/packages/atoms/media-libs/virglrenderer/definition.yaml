@@ -1,0 +1,23 @@
+name: virglrenderer
+version: 0.8.2
+category: media-libs
+requires:
+- name: libepoxy
+  version: '>=0'
+  category: media-libs
+- name: libdrm
+  version: '>=0'
+  category: x11-libs
+description: library used implement a virtual 3D GPU used by qemu
+uri:
+- https://virgil3d.github.io/
+license: MIT
+labels:
+  BDEPEND: '>=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2'
+  DEPEND: '>=x11-libs/libdrm-2.4.50 media-libs/libepoxy'
+  IUSE: static-libs
+  RDEPEND: '>=x11-libs/libdrm-2.4.50 media-libs/libepoxy'
+  emerge.packages: media-libs/virglrenderer
+  kit: gentoo
+  original.package.name: media-libs/virglrenderer
+  original.package.version: 0.8.2

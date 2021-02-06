@@ -1,0 +1,18 @@
+name: libuuid
+version: 1.0.3
+category: sys-libs
+requires:
+- name: native-uuid
+  version: '>=0'
+  category: sys-libs
+description: Portable uuid C library
+uri:
+- http://libuuid.sourceforge.net/
+license: BSD
+labels:
+  DEPEND: '!!sys-apps/util-linux !!sys-libs/native-uuid >=app-portage/elt-patches-20170815'
+  RDEPEND: '!!sys-apps/util-linux !!sys-libs/native-uuid'
+  emerge.packages: sys-libs/libuuid
+  kit: gentoo
+  original.package.name: sys-libs/libuuid
+  original.package.version: 1.0.3

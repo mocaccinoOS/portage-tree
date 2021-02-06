@@ -1,0 +1,12 @@
+name: inputlircd
+version: 0.0.1_pre15-r2
+category: app-misc
+description: Inputlirc daemon to utilize /dev/input/event*
+uri:
+- https://github.com/ferdinandhuebner/inputlirc
+license: GPL-2
+labels:
+  emerge.packages: app-misc/inputlircd
+  kit: gentoo
+  original.package.name: app-misc/inputlircd
+  original.package.version: 0.0.1_pre15-r2

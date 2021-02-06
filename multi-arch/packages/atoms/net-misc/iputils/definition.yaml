@@ -1,0 +1,50 @@
+name: iputils
+version: "20190709"
+category: net-misc
+use_flags:
+- gcrypt
+- caps
+- nettle
+- libressl
+- nls
+- traceroute6
+- ssl
+- filecaps
+- idn
+- static
+- ipv6
+requires:
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: nettle
+  version: '>=0'
+  category: dev-libs
+- name: traceroute
+  version: '>=0'
+  category: net-analyzer
+- name: libidn2
+  version: '>=0'
+  category: net-dns
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+description: Network monitoring tools including ping and ping6
+uri:
+- https://wiki.linuxfoundation.org/networking/iputils
+license: BSD GPL-2+ rdisc
+labels:
+  BDEPEND: virtual/pkgconfig filecaps? ( sys-libs/libcap ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 virtual/pkgconfig
+  DEPEND: traceroute6? ( !net-analyzer/traceroute ) !static? ( caps? ( sys-libs/libcap ) idn? ( net-dns/libidn2:= ) ipv6? ( ssl? ( gcrypt? ( dev-libs/libgcrypt:0= ) !gcrypt? ( nettle? ( dev-libs/nettle ) !nettle? ( libressl? ( dev-libs/libressl:0= ) !libressl? ( dev-libs/openssl:0= ) ) ) ) ) nls? ( sys-devel/gettext ) ) virtual/os-headers static? ( caps? ( sys-libs/libcap[static-libs(+)] ) idn? ( net-dns/libidn2:=[static-libs(+)] ) ipv6? ( ssl? ( gcrypt? ( dev-libs/libgcrypt:0=[static-libs(+)] ) !gcrypt? ( nettle? ( dev-libs/nettle[static-libs(+)] ) !nettle? ( libressl? ( dev-libs/libressl:0=[static-libs(+)] ) !libressl? ( dev-libs/openssl:0=[static-libs(+)] ) ) ) ) ) nls? ( sys-devel/gettext[static-libs(+)] ) )
+  IUSE: +arping caps clockdiff doc gcrypt idn ipv6 libressl nettle nls rarpd rdisc SECURITY_HAZARD ssl static tftpd tracepath traceroute6 +filecaps
+  RDEPEND: traceroute6? ( !net-analyzer/traceroute ) !static? ( caps? ( sys-libs/libcap ) idn? ( net-dns/libidn2:= ) ipv6? ( ssl? ( gcrypt? ( dev-libs/libgcrypt:0= ) !gcrypt? ( nettle? ( dev-libs/nettle ) !nettle? ( libressl? ( dev-libs/libressl:0= ) !libressl? ( dev-libs/openssl:0= ) ) ) ) ) nls? ( sys-devel/gettext ) ) filecaps? ( sys-libs/libcap )
+  emerge.packages: net-misc/iputils
+  kit: gentoo
+  original.package.name: net-misc/iputils
+  original.package.version: 20190709-r1

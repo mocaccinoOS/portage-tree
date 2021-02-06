@@ -1,0 +1,19 @@
+name: libiscsi
+version: 1.18.0
+category: net-libs
+requires:
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+description: iscsi client library and utilities
+uri:
+- https://github.com/sahlberg/libiscsi
+license: GPL-2 LGPL-2
+labels:
+  DEPEND: dev-libs/libgcrypt:0= >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: static-libs
+  RDEPEND: dev-libs/libgcrypt:0=
+  emerge.packages: net-libs/libiscsi
+  kit: gentoo
+  original.package.name: net-libs/libiscsi
+  original.package.version: 1.18.0

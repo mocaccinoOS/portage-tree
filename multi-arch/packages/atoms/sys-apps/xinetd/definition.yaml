@@ -1,0 +1,32 @@
+name: xinetd
+version: 2.3.15.3
+category: sys-apps
+use_flags:
+- selinux
+- tcpd
+- perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+- name: libtirpc
+  version: '>=0'
+  category: net-libs
+- name: tcp-wrappers
+  version: '>=0'
+  category: sys-apps
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+description: powerful replacement for inetd
+uri:
+- https://github.com/openSUSE/xinetd
+license: BSD
+labels:
+  DEPEND: selinux? ( sys-libs/libselinux ) net-libs/libtirpc:= tcpd? ( >=sys-apps/tcp-wrappers-7.6-r2 ) virtual/pkgconfig virtual/pkgconfig
+  IUSE: perl selinux tcpd
+  RDEPEND: selinux? ( sys-libs/libselinux ) net-libs/libtirpc:= tcpd? ( >=sys-apps/tcp-wrappers-7.6-r2 ) perl? ( dev-lang/perl )
+  emerge.packages: sys-apps/xinetd
+  kit: gentoo
+  original.package.name: sys-apps/xinetd
+  original.package.version: 2.3.15.3

@@ -1,0 +1,29 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: vala
+  version: '>=0'
+  category: dev-lang-0.48
+- name: gjs
+  version: '>=0'
+  category: dev-libs
+- name: pygobject
+  version: '>=0'
+  category: dev-python-3
+- name: gdbus-codegen
+  version: '>=0'
+  category: dev-util
+- name: gtk-doc-am
+  version: '>=0'
+  category: dev-util

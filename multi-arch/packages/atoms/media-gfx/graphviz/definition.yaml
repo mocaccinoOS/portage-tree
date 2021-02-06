@@ -1,0 +1,80 @@
+name: graphviz
+version: 2.42.3
+category: media-gfx
+use_flags:
+- python
+- tcl
+- java
+- lasi
+- -python_single_target_python3_8
+- ruby
+- X
+- cairo
+- guile
+- gts
+- pdf
+- postscript
+- nls
+- devil
+- -python_single_target_python3_6
+- svg
+- gtk
+- perl
+- python_single_target_python3_7
+- -qt5
+requires:
+- name: ghostscript-gpl
+  version: '>=0'
+  category: app-text
+- name: poppler
+  version: '>=0'
+  category: app-text
+- name: java-config
+  version: '>=0'
+  category: dev-java-2
+- name: perl
+  version: '>=0'
+  category: dev-lang
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: ruby
+  version: '>=0'
+  category: dev-lang-2.6
+- name: libltdl
+  version: '>=0'
+  category: dev-libs
+- name: librsvg
+  version: '>=0'
+  category: gnome-base-2
+- name: devil
+  version: '>=0'
+  category: media-libs
+- name: gd
+  version: '>=0'
+  category: media-libs-2
+- name: lasi
+  version: '>=0'
+  category: media-libs
+- name: gts
+  version: '>=0'
+  category: sci-libs
+- name: libXaw
+  version: '>=0'
+  category: x11-libs
+- name: libXmu
+  version: '>=0'
+  category: x11-libs
+description: Open Source Graph Visualization Software
+uri:
+- https://www.graphviz.org/ https://gitlab.com/graphviz/graphviz/
+license: CPL-1.0
+labels:
+  BDEPEND: sys-devel/flex sys-devel/libtool x11-libs/gdk-pixbuf:2 virtual/pkgconfig nls? ( >=sys-devel/gettext-0.14.5 ) perl? ( dev-lang/swig ) python? ( dev-lang/swig ) ruby? ( dev-lang/swig ) tcl? ( dev-lang/swig ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: '>=dev-libs/expat-2 >=dev-libs/glib-2.11.1:2 dev-libs/libltdl:0 >=media-libs/fontconfig-2.3.95 >=media-libs/freetype-2.1.10 >=media-libs/gd-2.0.34:=[fontconfig,jpeg,png,truetype,zlib] >=media-libs/libpng-1.2:0= sys-libs/zlib virtual/jpeg:0 virtual/libiconv cairo? ( >=x11-libs/cairo-1.1.10[svg] >=x11-libs/pango-1.12 ) devil? ( media-libs/devil[png,jpeg] ) gtk? ( x11-libs/gtk+:2 ) gts? ( sci-libs/gts ) lasi? ( media-libs/lasi ) pdf? ( app-text/poppler ) perl? ( dev-lang/perl:= ) postscript? ( app-text/ghostscript-gpl ) python? ( python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtprintsupport:5 dev-qt/qtwidgets:5 ) ruby? ( dev-lang/ruby:* ) svg? ( gnome-base/librsvg ) tcl? ( >=dev-lang/tcl-8.3:0= ) X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXmu x11-libs/libXpm x11-libs/libXt ) guile? ( dev-lang/swig dev-scheme/guile ) java? ( dev-lang/swig >=virtual/jdk-1.5 ) java? ( >=dev-java/java-config-2.2.0-r3 )'
+  IUSE: +cairo devil doc examples gtk gts guile java lasi nls pdf perl postscript python qt5 ruby static-libs svg tcl X elibc_FreeBSD elibc_FreeBSD java python_single_target_python3_6 python_single_target_python3_7 python_single_target_python3_8
+  RDEPEND: '>=dev-libs/expat-2 >=dev-libs/glib-2.11.1:2 dev-libs/libltdl:0 >=media-libs/fontconfig-2.3.95 >=media-libs/freetype-2.1.10 >=media-libs/gd-2.0.34:=[fontconfig,jpeg,png,truetype,zlib] >=media-libs/libpng-1.2:0= sys-libs/zlib virtual/jpeg:0 virtual/libiconv cairo? ( >=x11-libs/cairo-1.1.10[svg] >=x11-libs/pango-1.12 ) devil? ( media-libs/devil[png,jpeg] ) gtk? ( x11-libs/gtk+:2 ) gts? ( sci-libs/gts ) lasi? ( media-libs/lasi ) pdf? ( app-text/poppler ) perl? ( dev-lang/perl:= ) postscript? ( app-text/ghostscript-gpl ) python? ( python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtprintsupport:5 dev-qt/qtwidgets:5 ) ruby? ( dev-lang/ruby:* ) svg? ( gnome-base/librsvg ) tcl? ( >=dev-lang/tcl-8.3:0= ) X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXmu x11-libs/libXpm x11-libs/libXt ) java? ( >=dev-java/java-config-2.2.0-r3 )'
+  emerge.packages: media-gfx/graphviz
+  kit: gentoo
+  original.package.name: media-gfx/graphviz
+  original.package.version: 2.42.3-r1

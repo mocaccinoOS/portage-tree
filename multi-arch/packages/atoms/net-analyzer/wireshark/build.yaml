@@ -1,0 +1,71 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: pcap
+  version: '>=0'
+  category: acct-group
+- name: brotli
+  version: '>=0'
+  category: app-arch
+- name: snappy
+  version: '>=0'
+  category: app-arch
+- name: lua
+  version: '>=0'
+  category: dev-lang
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: libmaxminddb
+  version: '>=0'
+  category: dev-libs
+- name: libnl
+  version: '>=0'
+  category: dev-libs-3
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: bcg729
+  version: '>=0'
+  category: media-libs
+- name: libilbc
+  version: '>=0'
+  category: media-libs
+- name: opus
+  version: '>=0'
+  category: media-libs
+- name: sbc
+  version: '>=0'
+  category: media-libs
+- name: spandsp
+  version: '>=0'
+  category: media-libs
+- name: c-ares
+  version: '>=0'
+  category: net-dns
+- name: libpcap
+  version: '>=0'
+  category: net-libs
+- name: libsmi
+  version: '>=0'
+  category: net-libs
+- name: libssh
+  version: '>=0'
+  category: net-libs
+- name: nghttp2
+  version: '>=0'
+  category: net-libs
+- name: systemd
+  version: '>=0'
+  category: sys-apps

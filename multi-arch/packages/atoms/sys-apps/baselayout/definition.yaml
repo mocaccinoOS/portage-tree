@@ -1,0 +1,13 @@
+name: baselayout
+version: "2.7"
+category: sys-apps
+description: Filesystem baselayout and init scripts
+uri:
+- https://wiki.gentoo.org/wiki/No_homepage
+license: GPL-2
+labels:
+  IUSE: build kernel_FreeBSD kernel_linux +split-usr
+  emerge.packages: sys-apps/baselayout
+  kit: gentoo
+  original.package.name: sys-apps/baselayout
+  original.package.version: "2.7"

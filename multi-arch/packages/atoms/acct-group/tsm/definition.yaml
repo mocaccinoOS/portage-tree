@@ -1,0 +1,11 @@
+name: tsm
+version: "0"
+category: acct-group
+description: 'System group: tsm'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/tsm
+  kit: gentoo
+  original.package.name: acct-group/tsm
+  original.package.version: "0"

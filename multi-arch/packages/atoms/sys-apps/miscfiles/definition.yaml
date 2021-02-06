@@ -1,0 +1,13 @@
+name: miscfiles
+version: "1.5"
+category: sys-apps
+description: Miscellaneous files
+uri:
+- https://savannah.gnu.org/projects/miscfiles/
+license: GPL-2 unicode
+labels:
+  IUSE: minimal
+  emerge.packages: sys-apps/miscfiles
+  kit: gentoo
+  original.package.name: sys-apps/miscfiles
+  original.package.version: 1.5-r3

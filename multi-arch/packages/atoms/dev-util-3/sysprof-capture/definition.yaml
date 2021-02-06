@@ -1,0 +1,19 @@
+name: sysprof-capture
+version: 3.36.0
+category: dev-util-3
+requires:
+- name: sysprof
+  version: '>=0'
+  category: dev-util
+description: Static library for sysprof capture data generation
+uri:
+- http://sysprof.com/
+license: GPL-3+ GPL-2+
+labels:
+  BDEPEND: dev-util/gdbus-codegen >=sys-kernel/linux-headers-2.6.32 virtual/pkgconfig app-arch/xz-utils >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 virtual/pkgconfig
+  DEPEND: '>=dev-libs/glib-2.61.3:2 !=dev-util/sysprof-3.34.1-r0'
+  RDEPEND: '>=dev-libs/glib-2.61.3:2 !=dev-util/sysprof-3.34.1-r0'
+  emerge.packages: dev-util/sysprof-capture:3
+  kit: gentoo
+  original.package.name: dev-util/sysprof-capture
+  original.package.version: 3.36.0

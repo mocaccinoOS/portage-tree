@@ -1,0 +1,61 @@
+name: netatalk
+version: 3.1.12
+category: net-fs
+use_flags:
+- ldap
+- zeroconf
+- dbus
+- ssl
+- cracklib
+- tracker
+- kerberos
+- acl
+- pam
+- tcpd
+requires:
+- name: yudit
+  version: '>=0'
+  category: app-editors
+- name: tracker
+  version: '>=0'
+  category: app-misc
+- name: dbus-glib
+  version: '>=0'
+  category: dev-libs
+- name: libevent
+  version: '>=0'
+  category: dev-libs
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+- name: avahi
+  version: '>=0'
+  category: net-dns
+- name: openldap
+  version: '>=0'
+  category: net-nds
+- name: coreutils
+  version: '>=0'
+  category: sys-apps
+- name: cracklib
+  version: '>=0'
+  category: sys-libs
+- name: pam
+  version: '>=0'
+  category: sys-libs
+- name: tdb
+  version: '>=0'
+  category: sys-libs
+description: Open Source AFP server
+uri:
+- http://netatalk.sourceforge.net/
+license: GPL-2 BSD
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig'
+  DEPEND: '!app-editors/yudit dev-libs/libevent:0= >=dev-libs/libgcrypt-1.2.3:0 sys-apps/coreutils >=sys-libs/db-4.2.52:= sys-libs/tdb acl? ( sys-apps/attr sys-apps/acl ) cracklib? ( sys-libs/cracklib ) dbus? ( sys-apps/dbus dev-libs/dbus-glib ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) pam? ( sys-libs/pam ) ssl? ( dev-libs/openssl:0= ) tcpd? ( sys-apps/tcp-wrappers ) tracker? ( app-misc/tracker ) zeroconf? ( net-dns/avahi[dbus] ) virtual/yacc sys-devel/flex'
+  IUSE: acl cracklib dbus debug kerberos ldap pam pgp quota samba +shadow ssl tracker tcpd zeroconf
+  RDEPEND: '!app-editors/yudit dev-libs/libevent:0= >=dev-libs/libgcrypt-1.2.3:0 sys-apps/coreutils >=sys-libs/db-4.2.52:= sys-libs/tdb acl? ( sys-apps/attr sys-apps/acl ) cracklib? ( sys-libs/cracklib ) dbus? ( sys-apps/dbus dev-libs/dbus-glib ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) pam? ( sys-libs/pam ) ssl? ( dev-libs/openssl:0= ) tcpd? ( sys-apps/tcp-wrappers ) tracker? ( app-misc/tracker ) zeroconf? ( net-dns/avahi[dbus] )'
+  emerge.packages: net-fs/netatalk
+  kit: gentoo
+  original.package.name: net-fs/netatalk
+  original.package.version: 3.1.12

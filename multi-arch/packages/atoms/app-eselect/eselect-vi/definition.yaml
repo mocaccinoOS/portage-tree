@@ -2,10 +2,17 @@ name: eselect-vi
 version: "1.2"
 category: app-eselect
 requires:
-- name: system-x
+- name: eselect
   version: '>=0'
-  category: layers
+  category: app-admin
+description: Manages the /usr/bin/vi symlink
+uri:
+- https://wiki.gentoo.org/wiki/Project:Vim
+license: GPL-2
 labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  RDEPEND: app-admin/eselect
   emerge.packages: app-eselect/eselect-vi
+  kit: gentoo
   original.package.name: app-eselect/eselect-vi
   original.package.version: "1.2"

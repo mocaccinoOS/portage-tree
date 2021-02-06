@@ -1,0 +1,14 @@
+name: pam_ssh
+version: "2.3"
+category: sys-auth
+description: Uses ssh-agent to provide single sign-on
+uri:
+- http://pam-ssh.sourceforge.net/
+license: BSD-2 BSD ISC
+labels:
+  DEPEND: sys-libs/pam dev-libs/openssl:0=
+  RDEPEND: sys-libs/pam dev-libs/openssl:0= net-misc/openssh
+  emerge.packages: sys-auth/pam_ssh
+  kit: gentoo
+  original.package.name: sys-auth/pam_ssh
+  original.package.version: "2.3"

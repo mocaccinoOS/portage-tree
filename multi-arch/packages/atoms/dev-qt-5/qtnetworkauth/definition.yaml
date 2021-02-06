@@ -1,0 +1,22 @@
+name: qtnetworkauth
+version: 5.15.1
+category: dev-qt-5
+use_flags:
+- -test
+requires:
+- name: qtnetwork
+  version: '>=0'
+  category: dev-qt-5
+description: Network authorization library for the Qt5 framework
+uri:
+- https://www.qt.io/
+license: GPL-3
+labels:
+  BDEPEND: dev-lang/perl virtual/pkgconfig
+  DEPEND: ~dev-qt/qtcore-5.15.1 ~dev-qt/qtnetwork-5.15.1 test? ( ~dev-qt/qttest-5.15.1 )
+  IUSE: debug test
+  RDEPEND: ~dev-qt/qtcore-5.15.1 ~dev-qt/qtnetwork-5.15.1 dev-qt/qtchooser
+  emerge.packages: dev-qt/qtnetworkauth:5
+  kit: gentoo
+  original.package.name: dev-qt/qtnetworkauth
+  original.package.version: 5.15.1

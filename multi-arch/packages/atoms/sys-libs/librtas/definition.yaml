@@ -1,0 +1,14 @@
+name: librtas
+version: 2.0.2
+category: sys-libs
+description: A set of libraries for userspace access to RTAS on the PowerPC platform(s)
+uri:
+- https://github.com/ibm-power-utilities/librtas
+license: LGPL-2.1+
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  IUSE: static-libs
+  emerge.packages: sys-libs/librtas
+  kit: gentoo
+  original.package.name: sys-libs/librtas
+  original.package.version: 2.0.2-r1

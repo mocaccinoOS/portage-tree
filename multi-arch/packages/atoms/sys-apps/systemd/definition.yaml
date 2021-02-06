@@ -1,0 +1,130 @@
+name: systemd
+version: "246"
+category: sys-apps
+use_flags:
+- gcrypt
+- pwquality
+- lzma
+- pcre
+- pam
+- homed
+- build
+- elfutils
+- dns-over-tls
+- kmod
+- acl
+- selinux
+- lz4
+- gnuefi
+- xkb
+- apparmor
+- audit
+- '>=app-arch/lz4-0_p131:0=[abi_x86_32(-)'
+- importd
+- repart
+- nat
+- cryptsetup
+- idn
+- zstd
+- '>=app-arch/zstd-1.4.0:0=[abi_x86_32(-)'
+- resolvconf
+- http
+- qrcode
+- pkcs11
+- '>=app-arch/xz-utils-5.0.5-r1:0=[abi_x86_32(-)'
+- sys-libs/pam:=[abi_x86_32(-)
+- curl
+- seccomp
+- '>=dev-libs/libgcrypt-1.4.5:0=[abi_x86_32(-)'
+- sys-libs/libcap:0=[abi_x86_32(-)
+- sysv-utils
+- '>=sys-apps/util-linux-2.30:0=[abi_x86_32(-)'
+requires:
+- name: adm
+  version: '>=0'
+  category: acct-group
+- name: systemd-journal
+  version: '>=0'
+  category: acct-group
+- name: utmp
+  version: '>=0'
+  category: acct-group
+- name: wheel
+  version: '>=0'
+  category: acct-group
+- name: systemd-coredump
+  version: '>=0'
+  category: acct-user
+- name: systemd-journal-remote
+  version: '>=0'
+  category: acct-user
+- name: systemd-network
+  version: '>=0'
+  category: acct-user
+- name: systemd-resolve
+  version: '>=0'
+  category: acct-user
+- name: systemd-timesync
+  version: '>=0'
+  category: acct-user
+- name: p11-kit
+  version: '>=0'
+  category: app-crypt
+- name: elfutils
+  version: '>=0'
+  category: dev-libs
+- name: qrencode
+  version: '>=0'
+  category: media-gfx
+- name: libidn2
+  version: '>=0'
+  category: net-dns
+- name: openresolv
+  version: '>=0'
+  category: net-dns
+- name: iptables
+  version: '>=0'
+  category: net-firewall
+- name: libmicrohttpd
+  version: '>=0'
+  category: net-libs
+- name: curl
+  version: '>=0'
+  category: net-misc
+- name: selinux-base-policy
+  version: '>=0'
+  category: sec-policy
+- name: baselayout
+  version: '>=0'
+  category: sys-apps
+- name: sysvinit
+  version: '>=0'
+  category: sys-apps
+- name: nss-myhostname
+  version: '>=0'
+  category: sys-auth
+- name: eudev
+  version: '>=0'
+  category: sys-fs
+- name: libapparmor
+  version: '>=0'
+  category: sys-libs
+- name: libseccomp
+  version: '>=0'
+  category: sys-libs
+- name: libxkbcommon
+  version: '>=0'
+  category: x11-libs
+description: System and service manager for Linux
+uri:
+- https://www.freedesktop.org/wiki/Software/systemd
+license: GPL-2 LGPL-2.1 MIT public-domain
+labels:
+  BDEPEND: app-arch/xz-utils:0 dev-util/gperf >=dev-util/meson-0.46 >=dev-util/intltool-0.50 >=sys-apps/coreutils-8.16 sys-devel/m4 virtual/pkgconfig test? ( sys-apps/dbus ) app-text/docbook-xml-dtd:4.2 app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-stylesheets dev-libs/libxslt:0 || ( ( dev-lang/python:3.8 dev-python/lxml[python_targets_python3_8(-),python_single_target_python3_8(+)] ) ( dev-lang/python:3.7 dev-python/lxml[python_targets_python3_7(-),python_single_target_python3_7(+)] ) ( dev-lang/python:3.6 dev-python/lxml[python_targets_python3_6(-),python_single_target_python3_6(+)] ) ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 virtual/pkgconfig virtual/pkgconfig
+  DEPEND: '>=sys-apps/util-linux-2.30:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] sys-libs/libcap:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] acl? ( sys-apps/acl:0= ) apparmor? ( sys-libs/libapparmor:0= ) audit? ( >=sys-process/audit-2:0= ) cryptsetup? ( >=sys-fs/cryptsetup-2.0.1:0= ) curl? ( net-misc/curl:0= ) dns-over-tls? ( >=net-libs/gnutls-3.6.0:0= ) elfutils? ( >=dev-libs/elfutils-0.158:0= ) gcrypt? ( >=dev-libs/libgcrypt-1.4.5:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) homed? ( >=dev-libs/openssl-1.1.0:0= ) http? ( >=net-libs/libmicrohttpd-0.9.33:0=[epoll(+)] >=net-libs/gnutls-3.1.4:0= ) idn? ( net-dns/libidn2:= ) importd? ( app-arch/bzip2:0= sys-libs/zlib:0= ) kmod? ( >=sys-apps/kmod-15:0= ) lz4? ( >=app-arch/lz4-0_p131:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) lzma? ( >=app-arch/xz-utils-5.0.5-r1:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) nat? ( net-firewall/iptables:0= ) pam? ( sys-libs/pam:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) pkcs11? ( app-crypt/p11-kit:0= ) pcre? ( dev-libs/libpcre2 ) pwquality? ( dev-libs/libpwquality:0= ) qrcode? ( media-gfx/qrencode:0= ) repart? ( >=dev-libs/openssl-1.1.0:0= ) seccomp? ( >=sys-libs/libseccomp-2.3.3:0= ) selinux? ( sys-libs/libselinux:0= ) xkb? ( >=x11-libs/libxkbcommon-0.4.1:0= ) zstd? ( >=app-arch/zstd-1.4.0:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) >=sys-kernel/linux-headers-3.11 gnuefi? ( >=sys-boot/gnu-efi-3.0.2 )'
+  IUSE: acl apparmor audit build cgroup-hybrid cryptsetup curl dns-over-tls elfutils +gcrypt gnuefi homed http +hwdb idn importd +kmod +lz4 lzma nat pam pcre pkcs11 policykit pwquality qrcode repart +resolvconf +seccomp selinux split-usr static-libs +sysv-utils test vanilla xkb +zstd kernel_linux abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64 split-usr
+  RDEPEND: '>=sys-apps/util-linux-2.30:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] sys-libs/libcap:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] acl? ( sys-apps/acl:0= ) apparmor? ( sys-libs/libapparmor:0= ) audit? ( >=sys-process/audit-2:0= ) cryptsetup? ( >=sys-fs/cryptsetup-2.0.1:0= ) curl? ( net-misc/curl:0= ) dns-over-tls? ( >=net-libs/gnutls-3.6.0:0= ) elfutils? ( >=dev-libs/elfutils-0.158:0= ) gcrypt? ( >=dev-libs/libgcrypt-1.4.5:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) homed? ( >=dev-libs/openssl-1.1.0:0= ) http? ( >=net-libs/libmicrohttpd-0.9.33:0=[epoll(+)] >=net-libs/gnutls-3.1.4:0= ) idn? ( net-dns/libidn2:= ) importd? ( app-arch/bzip2:0= sys-libs/zlib:0= ) kmod? ( >=sys-apps/kmod-15:0= ) lz4? ( >=app-arch/lz4-0_p131:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) lzma? ( >=app-arch/xz-utils-5.0.5-r1:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) nat? ( net-firewall/iptables:0= ) pam? ( sys-libs/pam:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) pkcs11? ( app-crypt/p11-kit:0= ) pcre? ( dev-libs/libpcre2 ) pwquality? ( dev-libs/libpwquality:0= ) qrcode? ( media-gfx/qrencode:0= ) repart? ( >=dev-libs/openssl-1.1.0:0= ) seccomp? ( >=sys-libs/libseccomp-2.3.3:0= ) selinux? ( sys-libs/libselinux:0= ) xkb? ( >=x11-libs/libxkbcommon-0.4.1:0= ) zstd? ( >=app-arch/zstd-1.4.0:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) acct-group/adm acct-group/wheel acct-group/kmem acct-group/tty acct-group/utmp acct-group/audio acct-group/cdrom acct-group/dialout acct-group/disk acct-group/input acct-group/kvm acct-group/render acct-group/tape acct-group/video acct-group/systemd-journal acct-user/systemd-journal-remote acct-user/systemd-coredump acct-user/systemd-network acct-user/systemd-resolve acct-user/systemd-timesync >=sys-apps/baselayout-2.2 selinux? ( sec-policy/selinux-base-policy[systemd] ) sysv-utils? ( !sys-apps/sysvinit ) !sysv-utils? ( sys-apps/sysvinit ) resolvconf? ( !net-dns/openresolv ) !build? ( || ( sys-apps/util-linux[kill(-)] sys-process/procps[kill(+)] sys-apps/coreutils[kill(-)] ) ) !sys-auth/nss-myhostname !sys-fs/eudev !sys-fs/udev'
+  emerge.packages: sys-apps/systemd
+  kit: gentoo
+  original.package.name: sys-apps/systemd
+  original.package.version: 246-r2

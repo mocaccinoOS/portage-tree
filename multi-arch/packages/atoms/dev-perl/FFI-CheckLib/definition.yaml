@@ -1,11 +1,21 @@
 name: FFI-CheckLib
-version: 0.250.0+2
+version: 0.250.0
 category: dev-perl
+use_flags:
+- -test
 requires:
-- name: system-x
+- name: perl
   version: '>=0'
-  category: layers
+  category: dev-lang
+description: Check that a library is available for FFI
+uri:
+- https://metacpan.org/release/FFI-CheckLib
+license: '|| ( Artistic GPL-1+ )'
 labels:
+  DEPEND: virtual/perl-Module-Load virtual/perl-ExtUtils-MakeMaker test? ( >=virtual/perl-Test-Simple-1.302.15 >=dev-perl/Test2-Suite-0.0.60 ) dev-lang/perl
+  IUSE: test examples
+  RDEPEND: virtual/perl-Module-Load dev-lang/perl:=
   emerge.packages: dev-perl/FFI-CheckLib
+  kit: gentoo
   original.package.name: dev-perl/FFI-CheckLib
   original.package.version: 0.250.0

@@ -1,0 +1,18 @@
+name: iwl3160-7260-bt-ucode
+version: 37.8.10
+category: sys-firmware
+requires:
+- name: linux-firmware
+  version: '>=0'
+  category: sys-kernel
+description: Firmware for Intel (R) Wireless 3160, 7260, 7265 Bluetooth
+uri:
+- https://wireless.kernel.org/en/users/Drivers/iwlwifi
+license: ipw3945
+labels:
+  IUSE: kernel_linux
+  RDEPEND: '!sys-kernel/linux-firmware[-savedconfig]'
+  emerge.packages: sys-firmware/iwl3160-7260-bt-ucode
+  kit: gentoo
+  original.package.name: sys-firmware/iwl3160-7260-bt-ucode
+  original.package.version: 37.8.10_p2

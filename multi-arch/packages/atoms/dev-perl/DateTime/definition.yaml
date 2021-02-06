@@ -1,0 +1,27 @@
+name: DateTime
+version: 1.440.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: DateTime-Format-Mail
+  version: '>=0'
+  category: dev-perl
+- name: DateTime-Locale
+  version: '>=0'
+  category: dev-perl
+- name: DateTime-TimeZone
+  version: '>=0'
+  category: dev-perl
+description: A date and time object
+uri:
+- https://metacpan.org/release/DateTime
+license: Artistic-2
+labels:
+  DEPEND: '!<=dev-perl/DateTime-Format-Mail-0.402.0 virtual/perl-Carp >=dev-perl/DateTime-Locale-1.60.0 >=dev-perl/DateTime-TimeZone-2.20.0 >=dev-perl/Dist-CheckConflicts-0.20.0 >=dev-perl/Params-ValidationCompiler-0.130.0 virtual/perl-Scalar-List-Utils >=dev-perl/Specio-0.180.0 dev-perl/Try-Tiny virtual/perl-XSLoader >=dev-perl/namespace-autoclean-0.190.0 virtual/perl-parent virtual/perl-ExtUtils-MakeMaker test? ( virtual/perl-CPAN-Meta-Requirements >=dev-perl/CPAN-Meta-Check-0.11.0 virtual/perl-File-Spec virtual/perl-Storable dev-perl/Test-Fatal >=virtual/perl-Test-Simple-0.960.0 >=dev-perl/Test-Warnings-0.5.0 ) dev-lang/perl'
+  IUSE: test
+  RDEPEND: '!<=dev-perl/DateTime-Format-Mail-0.402.0 virtual/perl-Carp >=dev-perl/DateTime-Locale-1.60.0 >=dev-perl/DateTime-TimeZone-2.20.0 >=dev-perl/Dist-CheckConflicts-0.20.0 >=dev-perl/Params-ValidationCompiler-0.130.0 virtual/perl-Scalar-List-Utils >=dev-perl/Specio-0.180.0 dev-perl/Try-Tiny virtual/perl-XSLoader >=dev-perl/namespace-autoclean-0.190.0 virtual/perl-parent dev-lang/perl:='
+  emerge.packages: dev-perl/DateTime
+  kit: gentoo
+  original.package.name: dev-perl/DateTime
+  original.package.version: 1.440.0

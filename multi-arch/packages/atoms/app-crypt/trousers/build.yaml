@@ -1,0 +1,29 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: tss
+  version: '>=0'
+  category: acct-group
+- name: tss
+  version: '>=0'
+  category: acct-user
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2

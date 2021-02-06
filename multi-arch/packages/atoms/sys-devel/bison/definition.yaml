@@ -1,0 +1,26 @@
+name: bison
+version: 3.7.1
+category: sys-devel
+use_flags:
+- examples
+- -test
+requires:
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: m4
+  version: '>=0'
+  category: sys-devel
+description: A general-purpose (yacc-compatible) parser generator
+uri:
+- https://www.gnu.org/software/bison/
+license: GPL-2
+labels:
+  BDEPEND: sys-devel/flex examples? ( dev-lang/perl ) test? ( dev-lang/perl )
+  DEPEND: '>=sys-devel/m4-1.4.16 >=sys-devel/gettext-0.21'
+  IUSE: examples nls static test
+  RDEPEND: '>=sys-devel/m4-1.4.16 >=sys-devel/gettext-0.21'
+  emerge.packages: sys-devel/bison
+  kit: gentoo
+  original.package.name: sys-devel/bison
+  original.package.version: 3.7.1-r1

@@ -1,0 +1,19 @@
+name: glslang
+version: 8.13.3743
+category: dev-util
+requires:
+- name: shaderc
+  version: '>=0'
+  category: media-libs
+description: Khronos reference front-end for GLSL and ESSL, and sample SPIR-V generator
+uri:
+- https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/ https://github.com/KhronosGroup/glslang
+license: BSD
+labels:
+  BDEPEND: '|| ( dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) dev-util/ninja dev-util/cmake'
+  IUSE: abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '!<media-libs/shaderc-2020.1'
+  emerge.packages: dev-util/glslang
+  kit: gentoo
+  original.package.name: dev-util/glslang
+  original.package.version: 8.13.3743-r1

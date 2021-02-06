@@ -1,0 +1,57 @@
+name: netqmail
+version: "1.06"
+category: mail-mta
+use_flags:
+- ssl
+- libressl
+- authcram
+- pop3
+requires:
+- name: alias
+  version: '>=0'
+  category: acct-user
+- name: qmaild
+  version: '>=0'
+  category: acct-user
+- name: qmaill
+  version: '>=0'
+  category: acct-user
+- name: qmailp
+  version: '>=0'
+  category: acct-user
+- name: qmailq
+  version: '>=0'
+  category: acct-user
+- name: qmailr
+  version: '>=0'
+  category: acct-user
+- name: qmails
+  version: '>=0'
+  category: acct-user
+- name: cmd5checkpw
+  version: '>=0'
+  category: net-mail
+- name: queue-repair
+  version: '>=0'
+  category: net-mail
+- name: gentoo-functions
+  version: '>=0'
+  category: sys-apps
+- name: groff
+  version: '>=0'
+  category: sys-apps
+- name: ucspi-ssl
+  version: '>=0'
+  category: sys-apps
+description: qmail -- a secure, reliable, efficient, simple message transfer agent
+uri:
+- http://netqmail.org https://cr.yp.to/qmail.html http://qmail.org
+license: public-domain
+labels:
+  DEPEND: acct-group/nofiles acct-group/qmail acct-user/alias acct-user/qmaild acct-user/qmaill acct-user/qmailp acct-user/qmailq acct-user/qmailr acct-user/qmails net-dns/libidn2 net-mail/queue-repair sys-apps/gentoo-functions sys-apps/groff ssl? ( !libressl? ( >=dev-libs/openssl-1.1:0= ) libressl? ( dev-libs/libressl:= ) )
+  IUSE: authcram gencertdaily highvolume libressl pop3 qmail-spp ssl vanilla
+  RDEPEND: acct-group/nofiles acct-group/qmail acct-user/alias acct-user/qmaild acct-user/qmaill acct-user/qmailp acct-user/qmailq acct-user/qmailr acct-user/qmails net-dns/libidn2 net-mail/queue-repair sys-apps/gentoo-functions sys-apps/groff ssl? ( !libressl? ( >=dev-libs/openssl-1.1:0= ) libressl? ( dev-libs/libressl:= ) ) sys-apps/ucspi-tcp virtual/checkpassword virtual/daemontools authcram? ( >=net-mail/cmd5checkpw-0.30 ) ssl? ( pop3? ( sys-apps/ucspi-ssl ) ) !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !mail-mta/msmtp[mta] !mail-mta/nullmailer !mail-mta/opensmtpd !mail-mta/postfix !mail-mta/qmail-ldap !mail-mta/sendmail !mail-mta/ssmtp[mta]
+  emerge.packages: mail-mta/netqmail
+  kit: gentoo
+  original.package.name: mail-mta/netqmail
+  original.package.version: 1.06-r14

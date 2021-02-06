@@ -1,0 +1,14 @@
+name: dhcpd-syntax
+version: "20030825"
+category: app-vim
+description: 'vim plugin: syntax highlighting for dhcpd.conf'
+uri:
+- https://www.vim.org/scripts/script.php?script_id=744
+license: vim
+labels:
+  DEPEND: '|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )'
+  RDEPEND: '|| ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )'
+  emerge.packages: app-vim/dhcpd-syntax
+  kit: gentoo
+  original.package.name: app-vim/dhcpd-syntax
+  original.package.version: 20030825-r1

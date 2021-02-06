@@ -1,0 +1,53 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: clamav
+  version: '>=0'
+  category: acct-group
+- name: clamav
+  version: '>=0'
+  category: acct-user
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: json-c
+  version: '>=0'
+  category: dev-libs
+- name: libmspack
+  version: '>=0'
+  category: dev-libs
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: tomsfastmath
+  version: '>=0'
+  category: dev-libs
+- name: libmilter
+  version: '>=0'
+  category: mail-filter
+- name: curl
+  version: '>=0'
+  category: net-misc
+- name: fts-standalone
+  version: '>=0'
+  category: sys-libs
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs

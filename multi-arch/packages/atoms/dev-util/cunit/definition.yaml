@@ -1,0 +1,19 @@
+name: cunit
+version: "2.1"
+category: dev-util
+use_flags:
+- ncurses
+- '>=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)'
+description: C Unit Test Framework
+uri:
+- http://cunit.sourceforge.net
+license: LGPL-2
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: ncurses? ( >=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
+  IUSE: ncurses static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: ncurses? ( >=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
+  emerge.packages: dev-util/cunit
+  kit: gentoo
+  original.package.name: dev-util/cunit
+  original.package.version: 2.1_p3

@@ -1,0 +1,56 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: mail
+  version: '>=0'
+  category: acct-group
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: lz4
+  version: '>=0'
+  category: app-arch
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
+- name: libexttextcat
+  version: '>=0'
+  category: app-text
+- name: clucene
+  version: '>=0'
+  category: dev-cpp-1
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: lua
+  version: '>=0'
+  category: dev-lang
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: libsodium
+  version: '>=0'
+  category: dev-libs
+- name: vpopmail
+  version: '>=0'
+  category: net-mail
+- name: curl
+  version: '>=0'
+  category: net-misc
+- name: selinux-dovecot
+  version: '>=0'
+  category: sec-policy
+- name: libunwind
+  version: '>=0'
+  category: sys-libs

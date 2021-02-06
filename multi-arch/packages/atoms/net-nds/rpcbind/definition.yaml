@@ -1,0 +1,32 @@
+name: rpcbind
+version: 1.2.5
+category: net-nds
+use_flags:
+- systemd
+- tcpd
+- selinux
+requires:
+- name: libtirpc
+  version: '>=0'
+  category: net-libs
+- name: selinux-rpcbind
+  version: '>=0'
+  category: sec-policy
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+- name: tcp-wrappers
+  version: '>=0'
+  category: sys-apps
+description: portmap replacement which supports RPC over various protocols
+uri:
+- https://sourceforge.net/projects/rpcbind/
+license: BSD
+labels:
+  DEPEND: '>=net-libs/libtirpc-0.2.3:= systemd? ( sys-apps/systemd:= ) tcpd? ( sys-apps/tcp-wrappers ) virtual/pkgconfig virtual/pkgconfig'
+  IUSE: debug remotecalls selinux systemd tcpd warmstarts
+  RDEPEND: '>=net-libs/libtirpc-0.2.3:= systemd? ( sys-apps/systemd:= ) tcpd? ( sys-apps/tcp-wrappers ) selinux? ( sec-policy/selinux-rpcbind )'
+  emerge.packages: net-nds/rpcbind
+  kit: gentoo
+  original.package.name: net-nds/rpcbind
+  original.package.version: 1.2.5

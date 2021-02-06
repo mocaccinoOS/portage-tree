@@ -1,0 +1,53 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: hyphen
+  version: '>=0'
+  category: dev-libs
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: qtmultimedia
+  version: '>=0'
+  category: dev-qt-5
+- name: qtpositioning
+  version: '>=0'
+  category: dev-qt-5
+- name: qtprintsupport
+  version: '>=0'
+  category: dev-qt-5
+- name: qtsensors
+  version: '>=0'
+  category: dev-qt-5
+- name: qtwebchannel
+  version: '>=0'
+  category: dev-qt-5
+- name: gperf
+  version: '>=0'
+  category: dev-util
+- name: libwebp
+  version: '>=0'
+  category: media-libs
+- name: woff2
+  version: '>=0'
+  category: media-libs
+- name: libXcomposite
+  version: '>=0'
+  category: x11-libs
+- name: libXrender
+  version: '>=0'
+  category: x11-libs

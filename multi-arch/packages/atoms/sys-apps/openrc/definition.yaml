@@ -1,0 +1,58 @@
+name: openrc
+version: 0.42.1
+category: sys-apps
+use_flags:
+- selinux
+- bash
+- prefix
+- sysv-utils
+- '>=sys-apps/sysvinit-2.86-r6[selinux'
+- ncurses
+- pam
+- audit
+requires:
+- name: bash
+  version: '>=0'
+  category: app-shells
+- name: gentoo-bashcomp
+  version: '>=0'
+  category: app-shells
+- name: gentoo-zsh-completions
+  version: '>=0'
+  category: app-shells
+- name: selinux-openrc
+  version: '>=0'
+  category: sec-policy
+- name: baselayout
+  version: '>=0'
+  category: sys-apps
+- name: sysvinit
+  version: '>=0'
+  category: sys-apps
+- name: pambase
+  version: '>=0'
+  category: sys-auth
+- name: udev-init-scripts
+  version: '>=0'
+  category: sys-fs
+- name: audit
+  version: '>=0'
+  category: sys-process
+- name: procps
+  version: '>=0'
+  category: sys-process
+- name: psmisc
+  version: '>=0'
+  category: sys-process
+description: OpenRC manages the services, startup and shutdown of a host
+uri:
+- https://github.com/openrc/openrc/
+license: BSD-2
+labels:
+  DEPEND: ncurses? ( sys-libs/ncurses:0= ) pam? ( sys-auth/pambase sys-libs/pam ) audit? ( sys-process/audit ) sys-process/psmisc !<sys-process/procps-3.3.9-r2 selinux? ( sys-apps/policycoreutils >=sys-libs/libselinux-2.6 ) !<sys-apps/baselayout-2.1-r1 !<sys-fs/udev-init-scripts-27 virtual/os-headers ncurses? ( virtual/pkgconfig )
+  IUSE: audit bash debug ncurses pam newnet prefix +netifrc selinux static-libs sysv-utils unicode split-usr
+  RDEPEND: ncurses? ( sys-libs/ncurses:0= ) pam? ( sys-auth/pambase sys-libs/pam ) audit? ( sys-process/audit ) sys-process/psmisc !<sys-process/procps-3.3.9-r2 selinux? ( sys-apps/policycoreutils >=sys-libs/libselinux-2.6 ) !<sys-apps/baselayout-2.1-r1 !<sys-fs/udev-init-scripts-27 bash? ( app-shells/bash ) !prefix? ( sysv-utils? ( !sys-apps/sysvinit ) !sysv-utils? ( >=sys-apps/sysvinit-2.86-r6[selinux?] ) virtual/tmpfiles ) selinux? ( >=sec-policy/selinux-base-policy-2.20170204-r4 >=sec-policy/selinux-openrc-2.20170204-r4 ) !<app-shells/gentoo-bashcomp-20180302 !<app-shells/gentoo-zsh-completions-20180228
+  emerge.packages: sys-apps/openrc
+  kit: gentoo
+  original.package.name: sys-apps/openrc
+  original.package.version: 0.42.1

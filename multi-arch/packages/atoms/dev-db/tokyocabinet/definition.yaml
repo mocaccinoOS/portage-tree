@@ -1,0 +1,25 @@
+name: tokyocabinet
+version: 1.4.48
+category: dev-db
+use_flags:
+- bzip2
+- zlib
+requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+description: A library of routines for managing a database
+uri:
+- https://fallabs.com/tokyocabinet/
+license: LGPL-2.1
+labels:
+  DEPEND: bzip2? ( app-arch/bzip2 ) zlib? ( sys-libs/zlib ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: bzip2 debug doc examples threads zlib
+  RDEPEND: bzip2? ( app-arch/bzip2 ) zlib? ( sys-libs/zlib )
+  emerge.packages: dev-db/tokyocabinet
+  kit: gentoo
+  original.package.name: dev-db/tokyocabinet
+  original.package.version: 1.4.48-r1

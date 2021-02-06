@@ -1,0 +1,24 @@
+name: stoken
+version: "0.92"
+category: app-crypt
+use_flags:
+- gtk
+requires:
+- name: nettle
+  version: '>=0'
+  category: dev-libs
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3
+description: Software Token for Linux/UNIX
+uri:
+- https://github.com/cernekee/stoken
+license: LGPL-2.1+
+labels:
+  DEPEND: dev-libs/nettle gtk? ( >=x11-libs/gtk+-3.12:3 ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: gtk static
+  RDEPEND: dev-libs/nettle gtk? ( >=x11-libs/gtk+-3.12:3 )
+  emerge.packages: app-crypt/stoken
+  kit: gentoo
+  original.package.name: app-crypt/stoken
+  original.package.version: 0.92-r1

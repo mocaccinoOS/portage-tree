@@ -1,0 +1,24 @@
+name: softhsm
+version: 2.6.1
+category: dev-libs-2
+use_flags:
+- migration-tool
+- libressl
+- -test
+requires:
+- name: softhsm
+  version: '>=0'
+  category: dev-libs-2
+description: A software PKCS#11 implementation
+uri:
+- https://www.opendnssec.org/
+license: BSD
+labels:
+  BDEPEND: virtual/pkgconfig sys-devel/gcc:=[cxx] test? ( dev-util/cppunit )
+  DEPEND: migration-tool? ( dev-db/sqlite:3= ) !libressl? ( dev-libs/openssl:0=[bindist=] ) libressl? ( dev-libs/libressl:= ) !~dev-libs/softhsm-2.0.0:0
+  IUSE: bindist gost libressl migration-tool test
+  RDEPEND: migration-tool? ( dev-db/sqlite:3= ) !libressl? ( dev-libs/openssl:0=[bindist=] ) libressl? ( dev-libs/libressl:= ) !~dev-libs/softhsm-2.0.0:0
+  emerge.packages: dev-libs/softhsm:2
+  kit: gentoo
+  original.package.name: dev-libs/softhsm
+  original.package.version: 2.6.1

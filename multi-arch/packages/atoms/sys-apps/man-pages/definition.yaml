@@ -1,0 +1,21 @@
+name: man-pages
+version: "5.08"
+category: sys-apps
+requires:
+- name: libbsd
+  version: '>=0'
+  category: dev-libs
+- name: keyutils
+  version: '>=0'
+  category: sys-apps
+description: A somewhat comprehensive collection of Linux man pages
+uri:
+- https://www.kernel.org/doc/man-pages/
+license: man-pages GPL-2+ BSD
+labels:
+  IUSE: l10n_de l10n_fr l10n_it l10n_ja l10n_nl l10n_pl l10n_ru l10n_zh-CN
+  RDEPEND: virtual/man !<sys-apps/keyutils-1.5.9-r4 !<dev-libs/libbsd-0.8.3-r1
+  emerge.packages: sys-apps/man-pages
+  kit: gentoo
+  original.package.name: sys-apps/man-pages
+  original.package.version: "5.08"

@@ -1,0 +1,38 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: libbsd
+  version: '>=0'
+  category: dev-libs
+- name: linux-atm
+  version: '>=0'
+  category: net-dialup
+- name: iptables
+  version: '>=0'
+  category: net-firewall
+- name: arpd
+  version: '>=0'
+  category: net-misc
+- name: bison
+  version: '>=0'
+  category: sys-devel
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+- name: libselinux
+  version: '>=0'
+  category: sys-libs

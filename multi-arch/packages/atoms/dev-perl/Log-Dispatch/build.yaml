@@ -1,0 +1,29 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: Devel-GlobalDestruction
+  version: '>=0'
+  category: dev-perl
+- name: Dist-CheckConflicts
+  version: '>=0'
+  category: dev-perl
+- name: Params-ValidationCompiler
+  version: '>=0'
+  category: dev-perl
+- name: Specio
+  version: '>=0'
+  category: dev-perl
+- name: namespace-autoclean
+  version: '>=0'
+  category: dev-perl

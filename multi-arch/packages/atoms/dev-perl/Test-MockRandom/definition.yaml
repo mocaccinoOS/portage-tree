@@ -1,0 +1,22 @@
+name: Test-MockRandom
+version: 1.10.0
+category: dev-perl
+use_flags:
+- -test
+- minimal
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Replaces random number generation with non-random number generation
+uri:
+- https://metacpan.org/release/Test-MockRandom
+license: Apache-2.0
+labels:
+  DEPEND: virtual/perl-Carp >=virtual/perl-ExtUtils-MakeMaker-6.170.0 test? ( !minimal? ( virtual/perl-CPAN-Meta >=virtual/perl-CPAN-Meta-Requirements-2.120.900 ) virtual/perl-File-Spec virtual/perl-Scalar-List-Utils virtual/perl-Test-Simple virtual/perl-version ) dev-lang/perl
+  IUSE: test minimal examples
+  RDEPEND: virtual/perl-Carp dev-lang/perl:=
+  emerge.packages: dev-perl/Test-MockRandom
+  kit: gentoo
+  original.package.name: dev-perl/Test-MockRandom
+  original.package.version: 1.10.0

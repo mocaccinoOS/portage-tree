@@ -1,0 +1,13 @@
+name: gnu-efi
+version: 3.0.12
+category: sys-boot
+description: Library for build EFI Applications
+uri:
+- https://sourceforge.net/projects/gnu-efi/
+license: GPL-2+ BSD BSD-2
+labels:
+  IUSE: abi_x86_32 abi_x86_64 custom-cflags
+  emerge.packages: sys-boot/gnu-efi
+  kit: gentoo
+  original.package.name: sys-boot/gnu-efi
+  original.package.version: 3.0.12

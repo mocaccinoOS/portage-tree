@@ -1,0 +1,26 @@
+name: Authen-SASL
+version: 2.160.0
+category: dev-perl
+use_flags:
+- kerberos
+- -test
+requires:
+- name: Digest-HMAC
+  version: '>=0'
+  category: dev-perl
+- name: GSSAPI
+  version: '>=0'
+  category: dev-perl
+description: A Perl SASL interface
+uri:
+- https://metacpan.org/release/Authen-SASL
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  BDEPEND: '>=virtual/perl-ExtUtils-MakeMaker-6.42 test? ( virtual/perl-Test-Simple ) dev-lang/perl'
+  DEPEND: dev-lang/perl
+  IUSE: kerberos test
+  RDEPEND: dev-perl/Digest-HMAC virtual/perl-Digest-MD5 kerberos? ( dev-perl/GSSAPI ) dev-lang/perl:=
+  emerge.packages: dev-perl/Authen-SASL
+  kit: gentoo
+  original.package.name: dev-perl/Authen-SASL
+  original.package.version: 2.160.0-r2

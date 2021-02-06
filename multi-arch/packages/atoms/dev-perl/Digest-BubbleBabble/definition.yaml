@@ -1,0 +1,18 @@
+name: Digest-BubbleBabble
+version: 0.20.0
+category: dev-perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Create bubble-babble fingerprints
+uri:
+- https://metacpan.org/release/Digest-BubbleBabble
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: dev-lang/perl:=[-build(-)]
+  RDEPEND: dev-lang/perl:=[-build(-)]
+  emerge.packages: dev-perl/Digest-BubbleBabble
+  kit: gentoo
+  original.package.name: dev-perl/Digest-BubbleBabble
+  original.package.version: 0.20.0-r1

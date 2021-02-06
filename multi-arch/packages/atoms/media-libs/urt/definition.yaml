@@ -1,0 +1,27 @@
+name: urt
+version: 3.1b
+category: media-libs
+use_flags:
+- gif
+- tiff
+- postscript
+- X
+requires:
+- name: ghostscript-gpl
+  version: '>=0'
+  category: app-text
+- name: giflib
+  version: '>=0'
+  category: media-libs
+description: the Utah Raster Toolkit is a library for dealing with raster images
+uri:
+- https://www.cs.utah.edu/gdc/projects/urt/
+license: URT gif? ( free-noncomm )
+labels:
+  DEPEND: X? ( x11-libs/libXext ) gif? ( media-libs/giflib ) tiff? ( media-libs/tiff ) postscript? ( app-text/ghostscript-gpl ) X? ( x11-base/xorg-proto )
+  IUSE: gif postscript tiff X
+  RDEPEND: X? ( x11-libs/libXext ) gif? ( media-libs/giflib ) tiff? ( media-libs/tiff ) postscript? ( app-text/ghostscript-gpl )
+  emerge.packages: media-libs/urt
+  kit: gentoo
+  original.package.name: media-libs/urt
+  original.package.version: 3.1b-r1

@@ -1,0 +1,21 @@
+name: Text-Soundex
+version: 3.50.0
+category: dev-perl
+use_flags:
+- minimal
+requires:
+- name: Text-Unidecode
+  version: '>=0'
+  category: dev-perl
+description: Implementation of the soundex algorithm
+uri:
+- https://metacpan.org/release/Text-Soundex
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: '!minimal? ( dev-perl/Text-Unidecode ) virtual/perl-if virtual/perl-ExtUtils-MakeMaker dev-lang/perl'
+  IUSE: test minimal
+  RDEPEND: '!minimal? ( dev-perl/Text-Unidecode ) virtual/perl-if dev-lang/perl:='
+  emerge.packages: dev-perl/Text-Soundex
+  kit: gentoo
+  original.package.name: dev-perl/Text-Soundex
+  original.package.version: 3.50.0

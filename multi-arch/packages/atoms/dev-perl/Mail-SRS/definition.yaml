@@ -1,0 +1,24 @@
+name: Mail-SRS
+version: 0.310.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: Digest-HMAC
+  version: '>=0'
+  category: dev-perl
+- name: MLDBM
+  version: '>=0'
+  category: dev-perl
+description: Interface to Sender Rewriting Scheme
+uri:
+- https://metacpan.org/release/Mail-SRS
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: '>=dev-perl/Digest-HMAC-1.01-r1 >=dev-perl/MLDBM-2.01 >=virtual/perl-DB_File-1.807 >=virtual/perl-Digest-MD5-2.33 >=virtual/perl-Storable-2.04-r1 test? ( virtual/perl-Test-Simple ) dev-lang/perl:=[-build(-)]'
+  IUSE: test
+  RDEPEND: '>=dev-perl/Digest-HMAC-1.01-r1 >=dev-perl/MLDBM-2.01 >=virtual/perl-DB_File-1.807 >=virtual/perl-Digest-MD5-2.33 >=virtual/perl-Storable-2.04-r1 dev-lang/perl:=[-build(-)]'
+  emerge.packages: dev-perl/Mail-SRS
+  kit: gentoo
+  original.package.name: dev-perl/Mail-SRS
+  original.package.version: 0.310.0-r2

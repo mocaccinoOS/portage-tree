@@ -1,0 +1,16 @@
+name: spamd
+version: "0"
+category: acct-user
+requires:
+- name: spamd
+  version: '>=0'
+  category: acct-group
+description: User for the SpamAssassin daemon
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/spamd
+  emerge.packages: acct-user/spamd
+  kit: gentoo
+  original.package.name: acct-user/spamd
+  original.package.version: "0"

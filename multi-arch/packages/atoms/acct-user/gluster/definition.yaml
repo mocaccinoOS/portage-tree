@@ -1,0 +1,16 @@
+name: gluster
+version: "0"
+category: acct-user
+requires:
+- name: gluster
+  version: '>=0'
+  category: acct-group
+description: 'System user: gluster'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/gluster
+  emerge.packages: acct-user/gluster
+  kit: gentoo
+  original.package.name: acct-user/gluster
+  original.package.version: "0"

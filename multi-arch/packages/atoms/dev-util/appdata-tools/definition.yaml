@@ -1,0 +1,17 @@
+name: appdata-tools
+version: 0.1.8
+category: dev-util
+requires:
+- name: appstream-glib
+  version: '>=0'
+  category: dev-libs
+description: CLI designed to validate AppData descriptions for standards and style compliance
+uri:
+- https://github.com/hughsie/appdata-tools/
+license: metapackage
+labels:
+  RDEPEND: '>=dev-libs/appstream-glib-0.3.2'
+  emerge.packages: dev-util/appdata-tools
+  kit: gentoo
+  original.package.name: dev-util/appdata-tools
+  original.package.version: 0.1.8-r1

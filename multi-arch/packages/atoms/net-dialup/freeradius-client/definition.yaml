@@ -1,0 +1,19 @@
+name: freeradius-client
+version: 1.1.7
+category: net-dialup
+requires:
+- name: radiusclient-ng
+  version: '>=0'
+  category: net-dialup
+description: FreeRADIUS Client framework
+uri:
+- http://wiki.freeradius.org/Radiusclient
+license: BSD
+labels:
+  DEPEND: '!net-dialup/radiusclient !net-dialup/radiusclient-ng >=app-portage/elt-patches-20170815'
+  IUSE: scp shadow static-libs
+  RDEPEND: '!net-dialup/radiusclient !net-dialup/radiusclient-ng'
+  emerge.packages: net-dialup/freeradius-client
+  kit: gentoo
+  original.package.name: net-dialup/freeradius-client
+  original.package.version: 1.1.7

@@ -1,0 +1,38 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: dieharder
+  version: '>=0'
+  category: app-crypt
+- name: datefudge
+  version: '>=0'
+  category: app-misc
+- name: softhsm
+  version: '>=0'
+  category: dev-libs-2
+- name: valgrind
+  version: '>=0'
+  category: dev-util
+- name: ppp
+  version: '>=0'
+  category: net-dialup
+- name: socat
+  version: '>=0'
+  category: net-misc
+- name: autogen
+  version: '>=0'
+  category: sys-devel
+- name: libseccomp
+  version: '>=0'
+  category: sys-libs

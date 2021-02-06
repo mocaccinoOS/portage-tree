@@ -1,0 +1,35 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: mit-krb5-appl
+  version: '>=0'
+  category: app-crypt
+- name: JSON
+  version: '>=0'
+  category: dev-perl
+- name: openafs
+  version: '>=0'
+  category: net-fs
+- name: openldap
+  version: '>=0'
+  category: net-nds
+- name: libcap-ng
+  version: '>=0'
+  category: sys-libs
+- name: xhost
+  version: '>=0'
+  category: x11-apps
+- name: xorg-server
+  version: '>=0'
+  category: x11-base

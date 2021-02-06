@@ -1,0 +1,68 @@
+name: avahi
+version: "0.8"
+category: net-dns
+use_flags:
+- x11-libs/gtk+:3[abi_x86_32(-)
+- dbus
+- dev-python/pygobject:3[python_targets_python3_6(-)
+- -doc
+- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- dev-libs/glib:2[abi_x86_32(-)
+- sys-apps/dbus[abi_x86_32(-)
+- -qt5
+- introspection
+- mono
+- selinux
+- autoipd
+- '>=dev-python/twisted-16.0.0[python_targets_python3_6(-)'
+- x11-libs/gtk+:2[abi_x86_32(-)
+- python_targets_python3_8
+- python
+- sys-libs/gdbm:=[abi_x86_32(-)
+- dev-libs/libevent:=[abi_x86_32(-)
+- kernel_linux
+- bookmarks
+- python_targets_python3_6
+- gtk2
+- gdbm
+- gtk
+- python_targets_python3_7
+- dev-python/dbus-python[python_targets_python3_6(-)
+requires:
+- name: netdev
+  version: '>=0'
+  category: acct-group
+- name: avahi
+  version: '>=0'
+  category: acct-user
+- name: avahi-autoipd
+  version: '>=0'
+  category: acct-user
+- name: gtk-sharp
+  version: '>=0'
+  category: dev-dotnet-2
+- name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
+- name: libdaemon
+  version: '>=0'
+  category: dev-libs
+- name: selinux-avahi
+  version: '>=0'
+  category: sec-policy
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+description: System which facilitates service discovery on a local network
+uri:
+- http://avahi.org/
+license: LGPL-2.1
+labels:
+  BDEPEND: dev-util/glib-utils doc? ( app-doc/doxygen ) app-doc/xmltoman dev-util/intltool virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+  DEPEND: dev-libs/libdaemon dev-libs/libevent:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] dev-libs/expat dev-libs/glib:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] gdbm? ( sys-libs/gdbm:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) qt5? ( dev-qt/qtcore:5 ) gtk2? ( x11-libs/gtk+:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) gtk? ( x11-libs/gtk+:3[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) dbus? ( sys-apps/dbus[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) kernel_linux? ( sys-libs/libcap ) introspection? ( dev-libs/gobject-introspection:= ) mono? ( dev-lang/mono gtk2? ( dev-dotnet/gtk-sharp:2 ) ) python? ( python_targets_python3_6? ( dev-lang/python:3.6[gdbm] ) python_targets_python3_7? ( dev-lang/python:3.7[gdbm] ) python_targets_python3_8? ( dev-lang/python:3.8[gdbm] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] dbus? ( dev-python/dbus-python[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) introspection? ( dev-python/pygobject:3[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) ) bookmarks? ( python_targets_python3_6? ( dev-lang/python:3.6[gdbm] ) python_targets_python3_7? ( dev-lang/python:3.7[gdbm] ) python_targets_python3_8? ( dev-lang/python:3.8[gdbm] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] >=dev-python/twisted-16.0.0[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] )
+  IUSE: autoipd bookmarks +dbus doc gdbm gtk gtk2 howl-compat +introspection ipv6 kernel_linux mdnsresponder-compat mono nls python qt5 selinux systemd test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64 python_targets_python3_6 python_targets_python3_7 python_targets_python3_8
+  RDEPEND: acct-user/avahi acct-group/avahi acct-group/netdev autoipd? ( acct-user/avahi-autoipd acct-group/avahi-autoipd ) dev-libs/libdaemon dev-libs/libevent:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] dev-libs/expat dev-libs/glib:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] gdbm? ( sys-libs/gdbm:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) qt5? ( dev-qt/qtcore:5 ) gtk2? ( x11-libs/gtk+:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) gtk? ( x11-libs/gtk+:3[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) dbus? ( sys-apps/dbus[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) kernel_linux? ( sys-libs/libcap ) introspection? ( dev-libs/gobject-introspection:= ) mono? ( dev-lang/mono gtk2? ( dev-dotnet/gtk-sharp:2 ) ) python? ( python_targets_python3_6? ( dev-lang/python:3.6[gdbm] ) python_targets_python3_7? ( dev-lang/python:3.7[gdbm] ) python_targets_python3_8? ( dev-lang/python:3.8[gdbm] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] dbus? ( dev-python/dbus-python[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) introspection? ( dev-python/pygobject:3[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) ) bookmarks? ( python_targets_python3_6? ( dev-lang/python:3.6[gdbm] ) python_targets_python3_7? ( dev-lang/python:3.7[gdbm] ) python_targets_python3_8? ( dev-lang/python:3.8[gdbm] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] >=dev-python/twisted-16.0.0[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) selinux? ( sec-policy/selinux-avahi )
+  emerge.packages: net-dns/avahi
+  kit: gentoo
+  original.package.name: net-dns/avahi
+  original.package.version: 0.8-r2

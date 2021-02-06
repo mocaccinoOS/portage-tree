@@ -1,0 +1,21 @@
+name: vacation
+version: 1.2.7.0
+category: net-mail
+requires:
+- name: sendmail
+  version: '>=0'
+  category: mail-mta
+- name: gdbm
+  version: '>=0'
+  category: sys-libs
+description: automatic mail answering program
+uri:
+- http://vacation.sourceforge.net/
+license: GPL-2
+labels:
+  DEPEND: '!mail-mta/sendmail sys-libs/gdbm virtual/mta'
+  RDEPEND: '!mail-mta/sendmail sys-libs/gdbm virtual/mta'
+  emerge.packages: net-mail/vacation
+  kit: gentoo
+  original.package.name: net-mail/vacation
+  original.package.version: 1.2.7.0

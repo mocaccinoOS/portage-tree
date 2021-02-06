@@ -1,0 +1,44 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: unicode-cldr
+  version: '>=0'
+  category: app-i18n
+- name: unicode-data
+  version: '>=0'
+  category: app-i18n
+- name: unicode-emoji
+  version: '>=0'
+  category: app-i18n
+- name: iso-codes
+  version: '>=0'
+  category: app-text
+- name: wayland
+  version: '>=0'
+  category: dev-libs
+- name: qtgui
+  version: '>=0'
+  category: dev-qt-5
+- name: dconf
+  version: '>=0'
+  category: gnome-base
+- name: librsvg
+  version: '>=0'
+  category: gnome-base-2
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3
+- name: libXi
+  version: '>=0'
+  category: x11-libs

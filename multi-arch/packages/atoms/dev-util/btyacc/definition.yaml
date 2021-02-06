@@ -1,0 +1,12 @@
+name: btyacc
+version: "3.0"
+category: dev-util
+description: Backtracking YACC - modified from Berkeley YACC
+uri:
+- https://www.siber.com/btyacc
+license: public-domain
+labels:
+  emerge.packages: dev-util/btyacc
+  kit: gentoo
+  original.package.name: dev-util/btyacc
+  original.package.version: 3.0-r3

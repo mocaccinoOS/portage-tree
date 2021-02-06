@@ -1,0 +1,68 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: p11-kit
+  version: '>=0'
+  category: app-crypt
+- name: po4a
+  version: '>=0'
+  category: app-text
+- name: ding-libs
+  version: '>=0'
+  category: dev-libs
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: libnl
+  version: '>=0'
+  category: dev-libs-3
+- name: libpcre
+  version: '>=0'
+  category: dev-libs-3
+- name: popt
+  version: '>=0'
+  category: dev-libs
+- name: valgrind
+  version: '>=0'
+  category: dev-util
+- name: c-ares
+  version: '>=0'
+  category: net-dns
+- name: cifs-utils
+  version: '>=0'
+  category: net-fs
+- name: nfs-utils
+  version: '>=0'
+  category: net-fs
+- name: samba
+  version: '>=0'
+  category: net-fs
+- name: http-parser
+  version: '>=0'
+  category: net-libs
+- name: curl
+  version: '>=0'
+  category: net-misc
+- name: ldb
+  version: '>=0'
+  category: sys-libs
+- name: libsemanage
+  version: '>=0'
+  category: sys-libs
+- name: tdb
+  version: '>=0'
+  category: sys-libs
+- name: tevent
+  version: '>=0'
+  category: sys-libs

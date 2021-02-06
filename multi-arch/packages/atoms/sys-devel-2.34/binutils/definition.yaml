@@ -1,0 +1,27 @@
+name: binutils
+version: "2.34"
+category: sys-devel-2.34
+use_flags:
+- nls
+- -doc
+- -test
+requires:
+- name: binutils-config
+  version: '>=0'
+  category: sys-devel
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+description: Tools necessary to build programs
+uri:
+- https://sourceware.org/binutils/
+license: GPL-3+
+labels:
+  BDEPEND: doc? ( sys-apps/texinfo ) test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext ) sys-devel/flex virtual/yacc >=app-portage/elt-patches-20170815
+  DEPEND: '>=sys-devel/binutils-config-3 sys-libs/zlib sys-devel/gnuconfig'
+  IUSE: default-gold doc +gold multitarget +nls +plugins static-libs test
+  RDEPEND: '>=sys-devel/binutils-config-3 sys-libs/zlib'
+  emerge.packages: sys-devel/binutils:2.34
+  kit: gentoo
+  original.package.name: sys-devel/binutils
+  original.package.version: 2.34-r2

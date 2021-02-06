@@ -1,0 +1,140 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: ceph
+  version: '>=0'
+  category: acct-group
+- name: ceph
+  version: '>=0'
+  category: acct-user
+- name: cpio
+  version: '>=0'
+  category: app-arch
+- name: snappy
+  version: '>=0'
+  category: app-arch
+- name: jq
+  version: '>=0'
+  category: app-misc
+- name: bash
+  version: '>=0'
+  category: app-shells
+- name: yaml-cpp
+  version: '>=0'
+  category: dev-cpp
+- name: yasm
+  version: '>=0'
+  category: dev-lang
+- name: crypto++
+  version: '>=0'
+  category: dev-libs
+- name: jemalloc
+  version: '>=0'
+  category: dev-libs
+- name: libaio
+  version: '>=0'
+  category: dev-libs
+- name: libnl
+  version: '>=0'
+  category: dev-libs-3
+- name: librdkafka
+  version: '>=0'
+  category: dev-libs
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: nss
+  version: '>=0'
+  category: dev-libs
+- name: protobuf
+  version: '>=0'
+  category: dev-libs
+- name: sphinx
+  version: '>=0'
+  category: dev-python
+- name: babeltrace
+  version: '>=0'
+  category: dev-util
+- name: cunit
+  version: '>=0'
+  category: dev-util
+- name: google-perftools
+  version: '>=0'
+  category: dev-util
+- name: gperf
+  version: '>=0'
+  category: dev-util
+- name: lttng-ust
+  version: '>=0'
+  category: dev-util
+- name: ragel
+  version: '>=0'
+  category: dev-util
+- name: c-ares
+  version: '>=0'
+  category: net-dns
+- name: gnutls
+  version: '>=0'
+  category: net-libs
+- name: rabbitmq-c
+  version: '>=0'
+  category: net-libs
+- name: openldap
+  version: '>=0'
+  category: net-nds
+- name: coreutils
+  version: '>=0'
+  category: sys-apps
+- name: findutils
+  version: '>=0'
+  category: sys-apps
+- name: grep
+  version: '>=0'
+  category: sys-apps
+- name: hwloc
+  version: '>=0'
+  category: sys-apps
+- name: keyutils
+  version: '>=0'
+  category: sys-apps
+- name: sed
+  version: '>=0'
+  category: sys-apps
+- name: which
+  version: '>=0'
+  category: sys-apps
+- name: oath-toolkit
+  version: '>=0'
+  category: sys-auth
+- name: bc
+  version: '>=0'
+  category: sys-devel
+- name: patch
+  version: '>=0'
+  category: sys-devel
+- name: btrfs-progs
+  version: '>=0'
+  category: sys-fs
+- name: fuse
+  version: '>=0'
+  category: sys-fs-3
+- name: xfsprogs
+  version: '>=0'
+  category: sys-fs
+- name: zfs
+  version: '>=0'
+  category: sys-fs
+- name: libpciaccess
+  version: '>=0'
+  category: x11-libs

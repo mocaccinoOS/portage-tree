@@ -1,0 +1,19 @@
+name: Class-Data-Inheritable
+version: 0.80.0
+category: dev-perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Inheritable, overridable class data
+uri:
+- https://metacpan.org/release/Class-Data-Inheritable
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  BDEPEND: dev-lang/perl
+  DEPEND: dev-lang/perl
+  RDEPEND: dev-lang/perl:=
+  emerge.packages: dev-perl/Class-Data-Inheritable
+  kit: gentoo
+  original.package.name: dev-perl/Class-Data-Inheritable
+  original.package.version: 0.80.0-r3

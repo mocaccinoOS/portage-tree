@@ -1,0 +1,38 @@
+name: tpm2-tss
+version: 2.4.3
+category: app-crypt
+use_flags:
+- gcrypt
+- -test
+- -doc
+- openssl
+- fapi
+requires:
+- name: tss
+  version: '>=0'
+  category: acct-user
+- name: json-c
+  version: '>=0'
+  category: dev-libs
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: curl
+  version: '>=0'
+  category: net-misc
+description: TCG Trusted Platform Module 2.0 Software Stack
+uri:
+- https://github.com/tpm2-software/tpm2-tss
+license: BSD-2
+labels:
+  BDEPEND: virtual/pkgconfig doc? ( app-doc/doxygen ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+  DEPEND: acct-group/tss acct-user/tss fapi? ( dev-libs/json-c net-misc/curl ) gcrypt? ( dev-libs/libgcrypt:0= ) openssl? ( dev-libs/openssl:0= ) test? ( dev-util/cmocka )
+  IUSE: doc +fapi gcrypt +openssl static-libs test kernel_linux
+  RDEPEND: acct-group/tss acct-user/tss fapi? ( dev-libs/json-c net-misc/curl ) gcrypt? ( dev-libs/libgcrypt:0= ) openssl? ( dev-libs/openssl:0= ) virtual/tmpfiles
+  emerge.packages: app-crypt/tpm2-tss
+  kit: gentoo
+  original.package.name: app-crypt/tpm2-tss
+  original.package.version: 2.4.3

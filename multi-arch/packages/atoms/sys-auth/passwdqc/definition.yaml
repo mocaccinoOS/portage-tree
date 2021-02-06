@@ -1,0 +1,18 @@
+name: passwdqc
+version: 1.4.0
+category: sys-auth
+requires:
+- name: pam
+  version: '>=0'
+  category: sys-libs
+description: Password strength checking library (and PAM module)
+uri:
+- http://www.openwall.com/passwdqc/
+license: Openwall BSD public-domain
+labels:
+  DEPEND: sys-libs/pam
+  RDEPEND: sys-libs/pam
+  emerge.packages: sys-auth/passwdqc
+  kit: gentoo
+  original.package.name: sys-auth/passwdqc
+  original.package.version: 1.4.0-r1

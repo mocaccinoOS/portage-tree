@@ -1,0 +1,28 @@
+name: ucspi-ssl
+version: 0.99e
+category: sys-apps
+use_flags:
+- libressl
+- perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: ucspi-tcp
+  version: '>=0'
+  category: sys-apps
+description: Command-line tools for building SSL client-server applications
+uri:
+- https://www.fehcom.de/ipnet/ucspi-ssl.html
+license: public-domain
+labels:
+  DEPEND: libressl? ( dev-libs/libressl:0= ) !libressl? ( dev-libs/openssl:0=[bindist=] ) perl? ( dev-lang/perl:= )
+  IUSE: bindist perl libressl
+  RDEPEND: libressl? ( dev-libs/libressl:0= ) !libressl? ( dev-libs/openssl:0=[bindist=] ) perl? ( dev-lang/perl:= ) sys-apps/ucspi-tcp
+  emerge.packages: sys-apps/ucspi-ssl
+  kit: gentoo
+  original.package.name: sys-apps/ucspi-ssl
+  original.package.version: 0.99e

@@ -1,0 +1,25 @@
+name: blt
+version: 2.4z
+category: dev-tcltk
+use_flags:
+- X
+- jpeg
+requires:
+- name: tk
+  version: '>=0'
+  category: dev-lang
+- name: libX11
+  version: '>=0'
+  category: x11-libs
+description: Extension to Tk, adding new widgets, geometry managers, and misc commands
+uri:
+- http://blt.sourceforge.net/ http://jos.decoster.googlepages.com/bltfortk8.5.2
+license: BSD
+labels:
+  DEPEND: dev-lang/tk:0= jpeg? ( virtual/jpeg:0= ) X? ( x11-libs/libX11 ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: jpeg static-libs X
+  RDEPEND: dev-lang/tk:0= jpeg? ( virtual/jpeg:0= ) X? ( x11-libs/libX11 )
+  emerge.packages: dev-tcltk/blt
+  kit: gentoo
+  original.package.name: dev-tcltk/blt
+  original.package.version: 2.4z-r13

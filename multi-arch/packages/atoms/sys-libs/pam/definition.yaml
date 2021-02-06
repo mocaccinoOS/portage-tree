@@ -1,0 +1,33 @@
+name: pam
+version: 1.4.0
+category: sys-libs
+use_flags:
+- audit
+- '>=sys-process/audit-2.2.2[abi_x86_32(-)'
+- berkdb
+- '>=sys-libs/db-4.8.30-r1:=[abi_x86_32(-)'
+- '>=net-libs/libtirpc-0.2.4-r2[abi_x86_32(-)'
+- filecaps
+- '>=virtual/libintl-0-r1[abi_x86_32(-)'
+- selinux
+- '>=sys-libs/libselinux-2.2.2-r4[abi_x86_32(-)'
+- nis
+- net-libs/libnsl[abi_x86_32(-)
+- virtual/libcrypt:=[abi_x86_32(-)
+requires:
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+description: Linux-PAM (Pluggable Authentication Modules)
+uri:
+- https://github.com/linux-pam/linux-pam
+license: '|| ( BSD GPL-2 )'
+labels:
+  BDEPEND: dev-libs/libxslt sys-devel/flex sys-devel/gettext virtual/pkgconfig virtual/yacc >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 filecaps? ( sys-libs/libcap )
+  DEPEND: virtual/libcrypt:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=virtual/libintl-0-r1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] audit? ( >=sys-process/audit-2.2.2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) berkdb? ( >=sys-libs/db-4.8.30-r1:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) selinux? ( >=sys-libs/libselinux-2.2.2-r4[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) nis? ( net-libs/libnsl[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=net-libs/libtirpc-0.2.4-r2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
+  IUSE: audit berkdb debug nis +pie selinux +filecaps split-usr abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: virtual/libcrypt:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=virtual/libintl-0-r1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] audit? ( >=sys-process/audit-2.2.2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) berkdb? ( >=sys-libs/db-4.8.30-r1:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) selinux? ( >=sys-libs/libselinux-2.2.2-r4[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) nis? ( net-libs/libnsl[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=net-libs/libtirpc-0.2.4-r2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) filecaps? ( sys-libs/libcap )
+  emerge.packages: sys-libs/pam
+  kit: gentoo
+  original.package.name: sys-libs/pam
+  original.package.version: 1.4.0_p20200829

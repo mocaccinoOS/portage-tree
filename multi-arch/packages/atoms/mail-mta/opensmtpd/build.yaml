@@ -1,0 +1,38 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: smtpd
+  version: '>=0'
+  category: acct-user
+- name: smtpq
+  version: '>=0'
+  category: acct-user
+- name: ca-certificates
+  version: '>=0'
+  category: app-misc
+- name: libevent
+  version: '>=0'
+  category: dev-libs
+- name: courier
+  version: '>=0'
+  category: mail-mta
+- name: libasr
+  version: '>=0'
+  category: net-libs
+- name: fts-standalone
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs

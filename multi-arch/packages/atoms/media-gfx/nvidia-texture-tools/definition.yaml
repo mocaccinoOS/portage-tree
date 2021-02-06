@@ -1,0 +1,45 @@
+name: nvidia-texture-tools
+version: 2.0.8
+category: media-gfx
+use_flags:
+- glew
+- glut
+- openexr
+- cg
+requires:
+- name: nvidia-cg-toolkit
+  version: '>=0'
+  category: media-gfx
+- name: glew
+  version: '>=0'
+  category: media-libs
+- name: ilmbase
+  version: '>=0'
+  category: media-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs
+- name: openexr
+  version: '>=0'
+  category: media-libs
+- name: tiff
+  version: '>=0'
+  category: media-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+- name: libX11
+  version: '>=0'
+  category: x11-libs
+description: A set of cuda-enabled texture tools and compressors
+uri:
+- http://developer.nvidia.com/object/texture_tools.html
+license: MIT
+labels:
+  DEPEND: media-libs/ilmbase:= media-libs/libpng:0= media-libs/tiff:0 sys-libs/zlib virtual/jpeg:0 virtual/opengl x11-libs/libX11 cg? ( media-gfx/nvidia-cg-toolkit ) glew? ( media-libs/glew:0= ) glut? ( media-libs/freeglut ) openexr? ( media-libs/openexr:= ) virtual/pkgconfig sys-devel/make >=dev-util/cmake-3.9.6
+  IUSE: cg glew glut openexr
+  RDEPEND: media-libs/ilmbase:= media-libs/libpng:0= media-libs/tiff:0 sys-libs/zlib virtual/jpeg:0 virtual/opengl x11-libs/libX11 cg? ( media-gfx/nvidia-cg-toolkit ) glew? ( media-libs/glew:0= ) glut? ( media-libs/freeglut ) openexr? ( media-libs/openexr:= )
+  emerge.packages: media-gfx/nvidia-texture-tools
+  kit: gentoo
+  original.package.name: media-gfx/nvidia-texture-tools
+  original.package.version: 2.0.8-r4

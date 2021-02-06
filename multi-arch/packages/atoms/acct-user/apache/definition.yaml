@@ -1,0 +1,16 @@
+name: apache
+version: "0"
+category: acct-user
+requires:
+- name: apache
+  version: '>=0'
+  category: acct-group
+description: 'System user: apache'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/apache
+  emerge.packages: acct-user/apache
+  kit: gentoo
+  original.package.name: acct-user/apache
+  original.package.version: "0"

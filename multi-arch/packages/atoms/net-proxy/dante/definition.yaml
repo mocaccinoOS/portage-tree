@@ -1,0 +1,35 @@
+name: dante
+version: 1.4.1
+category: net-proxy
+use_flags:
+- selinux
+- kerberos
+- pam
+- tcpd
+- upnp
+- userland_GNU
+requires:
+- name: miniupnpc
+  version: '>=0'
+  category: net-libs
+- name: selinux-dante
+  version: '>=0'
+  category: sec-policy
+- name: shadow
+  version: '>=0'
+  category: sys-apps
+- name: tcp-wrappers
+  version: '>=0'
+  category: sys-apps
+description: A free socks4,5 and msproxy implementation
+uri:
+- https://www.inet.no/dante/
+license: BSD GPL-2
+labels:
+  DEPEND: kerberos? ( virtual/krb5 ) pam? ( sys-libs/pam ) tcpd? ( sys-apps/tcp-wrappers ) upnp? ( net-libs/miniupnpc:= ) userland_GNU? ( sys-apps/shadow ) sys-devel/bison sys-devel/flex >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+  IUSE: debug kerberos pam selinux static-libs tcpd upnp
+  RDEPEND: kerberos? ( virtual/krb5 ) pam? ( sys-libs/pam ) tcpd? ( sys-apps/tcp-wrappers ) upnp? ( net-libs/miniupnpc:= ) userland_GNU? ( sys-apps/shadow ) selinux? ( sec-policy/selinux-dante )
+  emerge.packages: net-proxy/dante
+  kit: gentoo
+  original.package.name: net-proxy/dante
+  original.package.version: 1.4.1-r2

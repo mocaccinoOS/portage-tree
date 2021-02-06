@@ -1,7 +1,0 @@
-name: ide-smart
-version: 1.4+2
-category: app-admin
-labels:
-  emerge.packages: app-admin/ide-smart
-  original.package.name: app-admin/ide-smart
-  original.package.version: 1.4-r2

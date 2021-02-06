@@ -1,0 +1,21 @@
+name: ExtUtils-Config
+version: 0.8.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: A wrapper for perl's configuration
+uri:
+- https://metacpan.org/release/ExtUtils-Config
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: virtual/perl-Data-Dumper >=virtual/perl-ExtUtils-MakeMaker-6.300.0 test? ( virtual/perl-File-Spec virtual/perl-IO >=virtual/perl-Test-Simple-0.88 ) dev-lang/perl
+  IUSE: test
+  RDEPEND: virtual/perl-Data-Dumper dev-lang/perl:=
+  emerge.packages: dev-perl/ExtUtils-Config
+  kit: gentoo
+  original.package.name: dev-perl/ExtUtils-Config
+  original.package.version: 0.8.0

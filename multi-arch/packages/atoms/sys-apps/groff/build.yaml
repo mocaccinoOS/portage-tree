@@ -1,0 +1,35 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: texinfo
+  version: '>=0'
+  category: sys-apps
+- name: libICE
+  version: '>=0'
+  category: x11-libs
+- name: libSM
+  version: '>=0'
+  category: x11-libs
+- name: libX11
+  version: '>=0'
+  category: x11-libs
+- name: libXaw
+  version: '>=0'
+  category: x11-libs
+- name: libXmu
+  version: '>=0'
+  category: x11-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs

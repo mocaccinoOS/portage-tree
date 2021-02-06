@@ -1,0 +1,27 @@
+name: pptpclient
+version: 1.10.0
+category: net-dialup
+use_flags:
+- tk
+requires:
+- name: Tk
+  version: '>=0'
+  category: dev-perl
+- name: ppp
+  version: '>=0'
+  category: net-dialup
+- name: iproute2
+  version: '>=0'
+  category: sys-apps
+description: Linux client for PPTP
+uri:
+- http://pptpclient.sourceforge.net/
+license: GPL-2
+labels:
+  DEPEND: net-dialup/ppp dev-lang/perl tk? ( dev-perl/Tk )
+  IUSE: tk
+  RDEPEND: net-dialup/ppp dev-lang/perl tk? ( dev-perl/Tk ) sys-apps/iproute2
+  emerge.packages: net-dialup/pptpclient
+  kit: gentoo
+  original.package.name: net-dialup/pptpclient
+  original.package.version: 1.10.0

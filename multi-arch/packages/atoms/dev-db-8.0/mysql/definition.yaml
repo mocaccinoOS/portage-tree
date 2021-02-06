@@ -1,0 +1,27 @@
+name: mysql
+version: 8.0.21
+category: dev-db-8.0
+use_flags:
+- cjk
+- kernel_linux
+- tcmalloc
+- libressl
+- numa
+- selinux
+- prefix
+- server
+- jemalloc
+- -test
+description: A fast, multi-threaded, multi-user SQL database server
+uri:
+- https://www.mysql.com/
+license: GPL-2
+labels:
+  BDEPEND: sys-devel/make dev-util/cmake
+  DEPEND: '>=app-arch/lz4-0_p131:= app-arch/zstd:= sys-libs/ncurses:0= >=sys-libs/zlib-1.2.3:0= libressl? ( dev-libs/libressl:0= ) !libressl? ( >=dev-libs/openssl-1.0.0:0= ) server? ( dev-libs/icu:= dev-libs/libevent:=[ssl] >=dev-libs/protobuf-3.8:= net-libs/libtirpc:= cjk? ( app-text/mecab:= ) jemalloc? ( dev-libs/jemalloc:0= ) kernel_linux? ( dev-libs/libaio:0= sys-process/procps:0= ) numa? ( sys-process/numactl ) tcmalloc? ( dev-util/google-perftools:0= ) ) || ( >=sys-devel/gcc-3.4.6 >=sys-devel/gcc-apple-4.0 ) virtual/yacc server? ( net-libs/rpcsvc-proto ) test? ( acct-group/mysql acct-user/mysql dev-perl/JSON )'
+  IUSE: cjk cracklib debug jemalloc latin1 libressl numa +perl profiling router selinux +server tcmalloc test kernel_linux
+  RDEPEND: '>=app-arch/lz4-0_p131:= app-arch/zstd:= sys-libs/ncurses:0= >=sys-libs/zlib-1.2.3:0= libressl? ( dev-libs/libressl:0= ) !libressl? ( >=dev-libs/openssl-1.0.0:0= ) server? ( dev-libs/icu:= dev-libs/libevent:=[ssl] >=dev-libs/protobuf-3.8:= net-libs/libtirpc:= cjk? ( app-text/mecab:= ) jemalloc? ( dev-libs/jemalloc:0= ) kernel_linux? ( dev-libs/libaio:0= sys-process/procps:0= ) numa? ( sys-process/numactl ) tcmalloc? ( dev-util/google-perftools:0= ) ) !dev-db/mariadb !dev-db/mariadb-galera !dev-db/percona-server !dev-db/mysql-cluster !dev-db/mysql:0 !dev-db/mysql:5.7 selinux? ( sec-policy/selinux-mysql ) !prefix? ( acct-group/mysql acct-user/mysql dev-db/mysql-init-scripts )'
+  emerge.packages: dev-db/mysql:8.0
+  kit: gentoo
+  original.package.name: dev-db/mysql
+  original.package.version: 8.0.21-r1

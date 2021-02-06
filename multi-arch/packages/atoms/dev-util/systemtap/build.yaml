@@ -1,0 +1,41 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: cpio
+  version: '>=0'
+  category: app-arch
+- name: libvirt
+  version: '>=0'
+  category: app-emulation
+- name: xmlto
+  version: '>=0'
+  category: app-text
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: elfutils
+  version: '>=0'
+  category: dev-libs
+- name: json-c
+  version: '>=0'
+  category: dev-libs
+- name: nspr
+  version: '>=0'
+  category: dev-libs
+- name: nss
+  version: '>=0'
+  category: dev-libs
+- name: avahi
+  version: '>=0'
+  category: net-dns

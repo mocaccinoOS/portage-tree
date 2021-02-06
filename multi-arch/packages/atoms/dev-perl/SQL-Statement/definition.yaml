@@ -1,0 +1,34 @@
+name: SQL-Statement
+version: 1.412.0
+category: dev-perl
+use_flags:
+- -test
+- minimal
+requires:
+- name: Clone
+  version: '>=0'
+  category: dev-perl
+- name: Math-Base-Convert
+  version: '>=0'
+  category: dev-perl
+- name: Module-Runtime
+  version: '>=0'
+  category: dev-perl
+- name: Params-Util
+  version: '>=0'
+  category: dev-perl
+- name: Text-Soundex
+  version: '>=0'
+  category: dev-perl
+description: Small SQL parser and engine
+uri:
+- https://metacpan.org/release/SQL-Statement
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: '!minimal? ( dev-perl/Math-Base-Convert >=virtual/perl-Math-Complex-1.560.0 >=dev-perl/Text-Soundex-3.40.0 ) virtual/perl-Carp >=dev-perl/Clone-0.300.0 virtual/perl-Data-Dumper dev-perl/Module-Runtime >=dev-perl/Params-Util-1.0.0 >=virtual/perl-Scalar-List-Utils-1.0.0 virtual/perl-Text-Balanced virtual/perl-ExtUtils-MakeMaker test? ( dev-perl/Math-Base-Convert >=virtual/perl-Math-Complex-1.560.0 dev-perl/Test-Deep >=virtual/perl-Test-Simple-0.900.0 >=dev-perl/Text-Soundex-3.40.0 ) dev-lang/perl'
+  IUSE: test minimal
+  RDEPEND: '!minimal? ( dev-perl/Math-Base-Convert >=virtual/perl-Math-Complex-1.560.0 >=dev-perl/Text-Soundex-3.40.0 ) virtual/perl-Carp >=dev-perl/Clone-0.300.0 virtual/perl-Data-Dumper dev-perl/Module-Runtime >=dev-perl/Params-Util-1.0.0 >=virtual/perl-Scalar-List-Utils-1.0.0 virtual/perl-Text-Balanced dev-lang/perl:='
+  emerge.packages: dev-perl/SQL-Statement
+  kit: gentoo
+  original.package.name: dev-perl/SQL-Statement
+  original.package.version: 1.412.0

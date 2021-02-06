@@ -1,0 +1,25 @@
+name: pam_mktemp
+version: 1.1.1
+category: sys-auth
+use_flags:
+- selinux
+- prevent-removal
+requires:
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: pam
+  version: '>=0'
+  category: sys-libs
+description: Create per-user private temporary directories during login
+uri:
+- http://www.openwall.com/pam/
+license: BSD-2
+labels:
+  DEPEND: sys-libs/pam selinux? ( sys-libs/libselinux ) prevent-removal? ( sys-kernel/linux-headers )
+  IUSE: selinux +prevent-removal
+  RDEPEND: sys-libs/pam selinux? ( sys-libs/libselinux )
+  emerge.packages: sys-auth/pam_mktemp
+  kit: gentoo
+  original.package.name: sys-auth/pam_mktemp
+  original.package.version: 1.1.1

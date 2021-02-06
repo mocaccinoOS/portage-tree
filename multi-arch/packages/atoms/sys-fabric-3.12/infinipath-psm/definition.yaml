@@ -1,0 +1,18 @@
+name: infinipath-psm
+version: "3.2"
+category: sys-fabric-3.12
+requires:
+- name: infinipath-psm
+  version: '>=0'
+  category: sys-fabric-3.12
+description: OpenIB userspace driver for the PathScale InfiniBand HCAs
+uri:
+- https://www.openfabrics.org/
+license: '|| ( GPL-2 BSD-2 )'
+labels:
+  DEPEND: sys-fabric/libibverbs:3.12 virtual/pkgconfig >=app-arch/rpm2targz-9.0.0.3g virtual/pkgconfig
+  RDEPEND: sys-fabric/libibverbs:3.12 !sys-fabric/infinipath-psm:0 !sys-fabric/infinipath-psm:3.5
+  emerge.packages: sys-fabric/infinipath-psm:3.12
+  kit: gentoo
+  original.package.name: sys-fabric/infinipath-psm
+  original.package.version: "3.2"

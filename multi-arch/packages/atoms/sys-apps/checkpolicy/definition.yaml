@@ -1,0 +1,19 @@
+name: checkpolicy
+version: "3.0"
+category: sys-apps
+requires:
+- name: libsemanage
+  version: '>=0'
+  category: sys-libs
+description: SELinux policy compiler
+uri:
+- http://userspace.selinuxproject.org
+license: GPL-2
+labels:
+  DEPEND: '>=sys-libs/libsepol-3.0 >=sys-libs/libsemanage-3.0 sys-devel/flex sys-devel/bison'
+  IUSE: debug
+  RDEPEND: '>=sys-libs/libsemanage-3.0'
+  emerge.packages: sys-apps/checkpolicy
+  kit: gentoo
+  original.package.name: sys-apps/checkpolicy
+  original.package.version: "3.0"

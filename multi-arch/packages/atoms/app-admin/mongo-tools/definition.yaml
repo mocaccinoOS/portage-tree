@@ -1,7 +1,0 @@
-name: mongo-tools
-version: 4.2.8+2
-category: app-admin
-labels:
-  emerge.packages: app-admin/mongo-tools
-  original.package.name: app-admin/mongo-tools
-  original.package.version: 4.2.8

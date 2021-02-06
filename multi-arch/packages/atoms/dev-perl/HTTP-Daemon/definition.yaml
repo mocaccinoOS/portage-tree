@@ -1,0 +1,17 @@
+name: HTTP-Daemon
+version: 6.60.0
+category: dev-perl
+use_flags:
+- -test
+description: Base class for simple HTTP servers
+uri:
+- https://metacpan.org/release/HTTP-Daemon
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: '!<dev-perl/libwww-perl-6 virtual/perl-Carp >=dev-perl/HTTP-Date-6.0.0 >=dev-perl/HTTP-Message-6.0.0 virtual/perl-IO-Socket-IP >=dev-perl/LWP-MediaTypes-6.0.0 virtual/perl-Socket virtual/perl-ExtUtils-MakeMaker >=dev-perl/Module-Build-Tiny-0.34.0 test? ( virtual/perl-File-Spec virtual/perl-Module-Metadata virtual/perl-Test-Simple dev-perl/Test-Needs dev-perl/URI ) dev-lang/perl'
+  IUSE: test
+  RDEPEND: '!<dev-perl/libwww-perl-6 virtual/perl-Carp >=dev-perl/HTTP-Date-6.0.0 >=dev-perl/HTTP-Message-6.0.0 virtual/perl-IO-Socket-IP >=dev-perl/LWP-MediaTypes-6.0.0 virtual/perl-Socket dev-lang/perl:='
+  emerge.packages: dev-perl/HTTP-Daemon
+  kit: gentoo
+  original.package.name: dev-perl/HTTP-Daemon
+  original.package.version: 6.60.0

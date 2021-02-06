@@ -1,0 +1,41 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: sshd
+  version: '>=0'
+  category: acct-group
+- name: sshd
+  version: '>=0'
+  category: acct-user
+- name: libedit
+  version: '>=0'
+  category: dev-libs
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: ldns
+  version: '>=0'
+  category: net-libs
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: pam
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+- name: audit
+  version: '>=0'
+  category: sys-process

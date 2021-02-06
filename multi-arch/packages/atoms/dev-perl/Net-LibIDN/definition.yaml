@@ -1,0 +1,21 @@
+name: Net-LibIDN
+version: 0.120.0
+category: dev-perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+- name: libidn
+  version: '>=0'
+  category: net-dns
+description: Perl bindings for GNU Libidn
+uri:
+- https://metacpan.org/release/Net-LibIDN
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: net-dns/libidn:0= dev-lang/perl
+  RDEPEND: net-dns/libidn:0= dev-lang/perl:=
+  emerge.packages: dev-perl/Net-LibIDN
+  kit: gentoo
+  original.package.name: dev-perl/Net-LibIDN
+  original.package.version: 0.120.0-r2

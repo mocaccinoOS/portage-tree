@@ -1,0 +1,80 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: zstd
+  version: '>=0'
+  category: app-arch
+- name: libclc
+  version: '>=0'
+  category: dev-libs
+- name: wayland-protocols
+  version: '>=0'
+  category: dev-libs
+- name: mako
+  version: '>=0'
+  category: dev-python
+- name: glslang
+  version: '>=0'
+  category: dev-util
+- name: libglvnd
+  version: '>=0'
+  category: media-libs
+- name: lm-sensors
+  version: '>=0'
+  category: sys-apps
+- name: clang
+  version: '>=0'
+  category: sys-devel-10
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
+- name: libX11
+  version: '>=0'
+  category: x11-libs
+- name: libXdamage
+  version: '>=0'
+  category: x11-libs
+- name: libXext
+  version: '>=0'
+  category: x11-libs
+- name: libXfixes
+  version: '>=0'
+  category: x11-libs
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+- name: libXvMC
+  version: '>=0'
+  category: x11-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs
+- name: libdrm
+  version: '>=0'
+  category: x11-libs
+- name: libva
+  version: '>=0'
+  category: x11-libs
+- name: libvdpau
+  version: '>=0'
+  category: x11-libs
+- name: libxcb
+  version: '>=0'
+  category: x11-libs
+- name: libxshmfence
+  version: '>=0'
+  category: x11-libs

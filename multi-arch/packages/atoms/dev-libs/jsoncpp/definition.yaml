@@ -1,0 +1,16 @@
+name: jsoncpp
+version: 1.9.3
+category: dev-libs
+use_flags:
+- -doc
+description: C++ JSON reader and writer
+uri:
+- https://github.com/open-source-parsers/jsoncpp
+license: '|| ( public-domain MIT )'
+labels:
+  BDEPEND: '|| ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) doc? ( app-doc/doxygen ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2'
+  IUSE: doc test
+  emerge.packages: dev-libs/jsoncpp
+  kit: gentoo
+  original.package.name: dev-libs/jsoncpp
+  original.package.version: 1.9.3

@@ -1,0 +1,16 @@
+name: htmltidy
+version: "20090325"
+category: app-text
+use_flags:
+- -doc
+description: Tidy the layout and correct errors in HTML and XML documents
+uri:
+- http://tidy.sourceforge.net/
+license: GPL-2
+labels:
+  DEPEND: doc? ( app-doc/doxygen ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: debug doc static-libs
+  emerge.packages: app-text/htmltidy
+  kit: gentoo
+  original.package.name: app-text/htmltidy
+  original.package.version: 20090325-r2

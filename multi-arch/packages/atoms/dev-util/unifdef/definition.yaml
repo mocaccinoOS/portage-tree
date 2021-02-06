@@ -1,0 +1,12 @@
+name: unifdef
+version: "2.10"
+category: dev-util
+description: 'Remove #ifdef''ed lines from a file while otherwise leaving the file alone'
+uri:
+- https://dotat.at/prog/unifdef/
+license: BSD
+labels:
+  emerge.packages: dev-util/unifdef
+  kit: gentoo
+  original.package.name: dev-util/unifdef
+  original.package.version: "2.10"

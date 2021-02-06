@@ -1,0 +1,35 @@
+name: libteam
+version: "1.22"
+category: net-misc
+use_flags:
+- syslog
+- dbus
+- zmq
+requires:
+- name: jansson
+  version: '>=0'
+  category: dev-libs
+- name: libdaemon
+  version: '>=0'
+  category: dev-libs
+- name: libnl
+  version: '>=0'
+  category: dev-libs-3
+- name: zeromq
+  version: '>=0'
+  category: net-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+description: Library and tools set for controlling team network device
+uri:
+- http://libteam.org
+license: LGPL-2.1+
+labels:
+  DEPEND: '>=dev-libs/jansson-2.4 dev-libs/libdaemon >=dev-libs/libnl-3.2.19[utils] dbus? ( sys-apps/dbus ) zmq? ( >=net-libs/zeromq-3.2.0 ) >=app-portage/elt-patches-20170815'
+  IUSE: dbus debug examples static-libs +syslog zmq kernel_linux
+  RDEPEND: '>=dev-libs/jansson-2.4 dev-libs/libdaemon >=dev-libs/libnl-3.2.19[utils] dbus? ( sys-apps/dbus ) zmq? ( >=net-libs/zeromq-3.2.0 ) syslog? ( virtual/logger )'
+  emerge.packages: net-misc/libteam
+  kit: gentoo
+  original.package.name: net-misc/libteam
+  original.package.version: "1.22"

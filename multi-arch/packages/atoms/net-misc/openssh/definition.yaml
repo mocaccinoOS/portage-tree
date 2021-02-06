@@ -1,0 +1,40 @@
+name: openssh
+version: "8.1"
+category: net-misc
+requires:
+- name: sshd
+  version: '>=0'
+  category: acct-user
+- name: libedit
+  version: '>=0'
+  category: dev-libs
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: ldns
+  version: '>=0'
+  category: net-libs
+- name: lksctp-tools
+  version: '>=0'
+  category: net-misc
+- name: shadow
+  version: '>=0'
+  category: sys-apps
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+- name: xauth
+  version: '>=0'
+  category: x11-apps
+description: Port of OpenBSD's free SSH release
+uri:
+- https://www.openssh.com/
+license: BSD GPL-2
+labels:
+  DEPEND: acct-group/sshd acct-user/sshd !static? ( audit? ( sys-process/audit ) ldns? ( net-libs/ldns !bindist? ( net-libs/ldns[ecdsa,ssl(+)] ) bindist? ( net-libs/ldns[-ecdsa,ssl(+)] ) ) libedit? ( dev-libs/libedit:= ) sctp? ( net-misc/lksctp-tools ) selinux? ( >=sys-libs/libselinux-1.28 ) ssl? ( !libressl? ( || ( ( >=dev-libs/openssl-1.0.1:0[bindist=] <dev-libs/openssl-1.1.0:0[bindist=] ) >=dev-libs/openssl-1.1.0g:0[bindist=] ) dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) virtual/libcrypt:= >=sys-libs/zlib-1.2.3:= ) pam? ( sys-libs/pam ) kerberos? ( virtual/krb5 ) virtual/os-headers kernel_linux? ( >=sys-kernel/linux-headers-5.1 ) static? ( audit? ( sys-process/audit[static-libs(+)] ) ldns? ( net-libs/ldns[static-libs(+)] !bindist? ( net-libs/ldns[ecdsa,ssl(+)] ) bindist? ( net-libs/ldns[-ecdsa,ssl(+)] ) ) libedit? ( dev-libs/libedit:=[static-libs(+)] ) sctp? ( net-misc/lksctp-tools[static-libs(+)] ) selinux? ( >=sys-libs/libselinux-1.28[static-libs(+)] ) ssl? ( !libressl? ( || ( ( >=dev-libs/openssl-1.0.1:0[bindist=] <dev-libs/openssl-1.1.0:0[bindist=] ) >=dev-libs/openssl-1.1.0g:0[bindist=] ) dev-libs/openssl:0=[static-libs(+)] ) libressl? ( dev-libs/libressl:0=[static-libs(+)] ) ) virtual/libcrypt:=[static-libs(+)] >=sys-libs/zlib-1.2.3:=[static-libs(+)] )
+  IUSE: abi_mips_n32 audit bindist debug hpn kerberos kernel_linux ldns libedit libressl livecd pam +pie sctp selinux +ssl static test X X509 xmss
+  RDEPEND: acct-group/sshd acct-user/sshd !static? ( audit? ( sys-process/audit ) ldns? ( net-libs/ldns !bindist? ( net-libs/ldns[ecdsa,ssl(+)] ) bindist? ( net-libs/ldns[-ecdsa,ssl(+)] ) ) libedit? ( dev-libs/libedit:= ) sctp? ( net-misc/lksctp-tools ) selinux? ( >=sys-libs/libselinux-1.28 ) ssl? ( !libressl? ( || ( ( >=dev-libs/openssl-1.0.1:0[bindist=] <dev-libs/openssl-1.1.0:0[bindist=] ) >=dev-libs/openssl-1.1.0g:0[bindist=] ) dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) virtual/libcrypt:= >=sys-libs/zlib-1.2.3:= ) pam? ( sys-libs/pam ) kerberos? ( virtual/krb5 ) pam? ( >=sys-auth/pambase-20081028 ) userland_GNU? ( !prefix? ( sys-apps/shadow ) ) X? ( x11-apps/xauth )
+  emerge.packages: net-misc/openssh
+  kit: gentoo
+  original.package.name: net-misc/openssh
+  original.package.version: 8.1_p1-r4

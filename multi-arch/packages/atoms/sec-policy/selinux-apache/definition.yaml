@@ -1,0 +1,18 @@
+name: selinux-apache
+version: "2.20190609"
+category: sec-policy
+requires:
+- name: selinux-kerberos
+  version: '>=0'
+  category: sec-policy
+description: SELinux policy for apache
+uri:
+- https://wiki.gentoo.org/wiki/Project:SELinux
+license: GPL-2
+labels:
+  DEPEND: sec-policy/selinux-kerberos >=sys-apps/policycoreutils-2.0.82 >=sec-policy/selinux-base-policy-2.20190609-r1 sys-devel/m4 >=sys-apps/checkpolicy-2.0.21
+  RDEPEND: sec-policy/selinux-kerberos >=sys-apps/policycoreutils-2.0.82 >=sec-policy/selinux-base-policy-2.20190609-r1
+  emerge.packages: sec-policy/selinux-apache
+  kit: gentoo
+  original.package.name: sec-policy/selinux-apache
+  original.package.version: 2.20190609-r1

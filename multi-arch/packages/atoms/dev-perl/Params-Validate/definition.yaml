@@ -1,0 +1,21 @@
+name: Params-Validate
+version: 1.290.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: Module-Implementation
+  version: '>=0'
+  category: dev-perl
+description: Flexible system for validation of method/function call parameters
+uri:
+- https://metacpan.org/release/Params-Validate
+license: Artistic-2
+labels:
+  DEPEND: virtual/perl-Carp virtual/perl-Exporter dev-perl/Module-Implementation >=virtual/perl-Scalar-List-Utils-1.110.0 virtual/perl-XSLoader >=dev-perl/Module-Build-0.280.0 >=virtual/perl-JSON-PP-2.273.0 test? ( virtual/perl-ExtUtils-MakeMaker virtual/perl-File-Spec virtual/perl-File-Temp dev-perl/Test-Fatal >=virtual/perl-Test-Simple-0.960.0 dev-perl/Test-Requires ) dev-lang/perl
+  IUSE: test examples
+  RDEPEND: virtual/perl-Carp virtual/perl-Exporter dev-perl/Module-Implementation >=virtual/perl-Scalar-List-Utils-1.110.0 virtual/perl-XSLoader dev-lang/perl:=
+  emerge.packages: dev-perl/Params-Validate
+  kit: gentoo
+  original.package.name: dev-perl/Params-Validate
+  original.package.version: 1.290.0

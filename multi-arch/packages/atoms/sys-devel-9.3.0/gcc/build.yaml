@@ -1,0 +1,32 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: boehm-gc
+  version: '>=0'
+  category: dev-libs
+- name: gmp
+  version: '>=0'
+  category: dev-libs
+- name: isl
+  version: '>=0'
+  category: dev-libs
+- name: mpc
+  version: '>=0'
+  category: dev-libs
+- name: mpfr
+  version: '>=0'
+  category: dev-libs
+- name: glibc
+  version: '>=0'
+  category: sys-libs-2.2

@@ -1,0 +1,38 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: nvidia-texture-tools
+  version: '>=0'
+  category: media-gfx
+- name: allegro
+  version: '>=0'
+  category: media-libs-5
+- name: giflib
+  version: '>=0'
+  category: media-libs
+- name: libmng
+  version: '>=0'
+  category: media-libs
+- name: libsdl
+  version: '>=0'
+  category: media-libs
+- name: libXext
+  version: '>=0'
+  category: x11-libs
+- name: libXpm
+  version: '>=0'
+  category: x11-libs
+- name: libXrender
+  version: '>=0'
+  category: x11-libs

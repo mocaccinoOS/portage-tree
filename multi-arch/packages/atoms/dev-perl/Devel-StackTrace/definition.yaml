@@ -1,0 +1,21 @@
+name: Devel-StackTrace
+version: 2.20.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: An object representing a stack trace
+uri:
+- https://metacpan.org/release/Devel-StackTrace
+license: Artistic-2
+labels:
+  DEPEND: virtual/perl-File-Spec virtual/perl-Scalar-List-Utils virtual/perl-ExtUtils-MakeMaker test? ( >=virtual/perl-Test-Simple-0.960.0 ) dev-lang/perl
+  IUSE: test
+  RDEPEND: virtual/perl-File-Spec virtual/perl-Scalar-List-Utils dev-lang/perl:=
+  emerge.packages: dev-perl/Devel-StackTrace
+  kit: gentoo
+  original.package.name: dev-perl/Devel-StackTrace
+  original.package.version: 2.20.0

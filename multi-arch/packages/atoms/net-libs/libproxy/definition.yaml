@@ -1,0 +1,38 @@
+name: libproxy
+version: 0.4.15
+category: net-libs
+use_flags:
+- spidermonkey
+- webkit
+- kde
+- gnome
+- dev-libs/glib:2[abi_x86_32(-)
+- mono
+- networkmanager
+- sys-apps/dbus:0[abi_x86_32(-)
+requires:
+- name: mono
+  version: '>=0'
+  category: dev-lang
+- name: spidermonkey
+  version: '>=0'
+  category: dev-lang-78
+- name: kconfig
+  version: '>=0'
+  category: kde-frameworks-5
+- name: webkit-gtk
+  version: '>=0'
+  category: net-libs-4
+description: Library for automatic proxy configuration management
+uri:
+- https://github.com/libproxy/libproxy
+license: LGPL-2.1+
+labels:
+  BDEPEND: virtual/pkgconfig dev-util/ninja dev-util/cmake
+  DEPEND: gnome? ( dev-libs/glib:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) mono? ( dev-lang/mono ) networkmanager? ( sys-apps/dbus:0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) spidermonkey? ( >=dev-lang/spidermonkey-52.0.0:= ) webkit? ( net-libs/webkit-gtk:4 )
+  IUSE: gnome kde mono networkmanager spidermonkey test webkit abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: gnome? ( dev-libs/glib:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) mono? ( dev-lang/mono ) networkmanager? ( sys-apps/dbus:0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) spidermonkey? ( >=dev-lang/spidermonkey-52.0.0:= ) webkit? ( net-libs/webkit-gtk:4 ) kde? ( kde-frameworks/kconfig:5 )
+  emerge.packages: net-libs/libproxy
+  kit: gentoo
+  original.package.name: net-libs/libproxy
+  original.package.version: 0.4.15-r1

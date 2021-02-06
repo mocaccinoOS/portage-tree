@@ -1,0 +1,19 @@
+name: ipxe
+version: 1.0.0
+category: sys-firmware
+use_flags:
+- binary
+- amd64
+- iso
+- x86
+description: Open source network boot (PXE) firmware
+uri:
+- https://ipxe.org/
+license: GPL-2
+labels:
+  DEPEND: '!binary? ( amd64? ( app-arch/xz-utils dev-lang/perl sys-libs/zlib iso? ( sys-boot/syslinux virtual/cdrtools ) ) x86? ( app-arch/xz-utils dev-lang/perl sys-libs/zlib iso? ( sys-boot/syslinux virtual/cdrtools ) ) )'
+  IUSE: +binary efi ipv6 iso lkrn +qemu undi usb vmware savedconfig
+  emerge.packages: sys-firmware/ipxe
+  kit: gentoo
+  original.package.name: sys-firmware/ipxe
+  original.package.version: 1.0.0_p20190728

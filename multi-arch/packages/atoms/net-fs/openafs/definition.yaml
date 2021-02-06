@@ -1,0 +1,40 @@
+name: openafs
+version: 1.8.6
+category: net-fs
+use_flags:
+- ncurses
+- kernel_linux
+- tsm
+- apidoc
+- kauth
+- kerberos
+- amd64
+- perl
+- -doc
+- fuse
+requires:
+- name: tsm
+  version: '>=0'
+  category: app-backup
+- name: openafs-kernel
+  version: '>=0'
+  category: net-fs
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
+- name: pam
+  version: '>=0'
+  category: sys-libs
+description: The OpenAFS distributed file system
+uri:
+- https://www.openafs.org/
+license: IBM BSD openafs-krb5-a APSL-2
+labels:
+  BDEPEND: dev-lang/perl sys-devel/flex virtual/yacc apidoc? ( app-doc/doxygen[dot] media-gfx/graphviz ) doc? ( dev-libs/libxslt || ( dev-java/fop app-text/dblatex app-text/docbook-sgml-utils[jadetex] ) ) perl? ( dev-lang/swig ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+  DEPEND: '!net-fs/openafs-kernel virtual/libintl amd64? ( tsm? ( app-backup/tsm ) ) doc? ( app-text/docbook-xsl-stylesheets app-text/docbook-xml-dtd:4.3 ) fuse? ( sys-fs/fuse:0= ) kauth? ( sys-libs/pam ) kerberos? ( virtual/krb5 ) ncurses? ( sys-libs/ncurses:0= ) kernel_linux? ( sys-apps/kmod[tools] ) sys-apps/sed kernel_linux? ( virtual/linux-sources virtual/libelf )'
+  IUSE: apidoc bitmap-later debug doc fuse kauth kerberos +modules +namei ncurses perl +pthreaded-ubik +supergroups tsm ubik-read-while-write kernel_linux kernel_linux
+  RDEPEND: '!net-fs/openafs-kernel virtual/libintl amd64? ( tsm? ( app-backup/tsm ) ) doc? ( app-text/docbook-xsl-stylesheets app-text/docbook-xml-dtd:4.3 ) fuse? ( sys-fs/fuse:0= ) kauth? ( sys-libs/pam ) kerberos? ( virtual/krb5 ) ncurses? ( sys-libs/ncurses:0= ) kernel_linux? ( sys-apps/kmod[tools] ) virtual/tmpfiles'
+  emerge.packages: net-fs/openafs
+  kit: gentoo
+  original.package.name: net-fs/openafs
+  original.package.version: 1.8.6

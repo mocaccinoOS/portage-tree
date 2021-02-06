@@ -1,0 +1,13 @@
+name: iso-codes
+version: "4.4"
+category: app-text
+description: ISO language, territory, currency, script codes and their translations
+uri:
+- https://salsa.debian.org/iso-codes-team/iso-codes
+license: LGPL-2.1+
+labels:
+  BDEPEND: '|| ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) sys-devel/gettext'
+  emerge.packages: app-text/iso-codes
+  kit: gentoo
+  original.package.name: app-text/iso-codes
+  original.package.version: "4.4"

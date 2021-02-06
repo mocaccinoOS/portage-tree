@@ -1,23 +1,38 @@
 name: Alien-Build
-version: 2.230.0+2
+version: 2.230.0
 category: dev-perl
+use_flags:
+- zip
+- -test
 requires:
-- name: system-x
+- name: Archive-Zip
   version: '>=0'
-  category: layers
-- name: FFI-CheckLib
-  version: '>=0.110.0'
-  category: dev-perl
-- name: Path-Tiny
-  version: '>=0.77.0'
   category: dev-perl
 - name: Capture-Tiny
-  version: '>=0.170.0'
+  version: '>=0'
+  category: dev-perl
+- name: FFI-CheckLib
+  version: '>=0'
+  category: dev-perl
+- name: File-Which
+  version: '>=0'
   category: dev-perl
 - name: File-chdir
   version: '>=0'
   category: dev-perl
+- name: Path-Tiny
+  version: '>=0'
+  category: dev-perl
+description: Build external dependencies for use in CPAN
+uri:
+- https://metacpan.org/release/Alien-Build
+license: '|| ( Artistic GPL-1+ )'
 labels:
+  BDEPEND: zip? ( dev-perl/Archive-Zip ) virtual/perl-Archive-Tar >=dev-perl/Capture-Tiny-0.170.0 virtual/perl-ExtUtils-CBuilder >=virtual/perl-ExtUtils-MakeMaker-6.640.0 >=virtual/perl-ExtUtils-ParseXS-3.300.0 >=dev-perl/FFI-CheckLib-0.110.0 >=dev-perl/File-Which-1.100.0 dev-perl/File-chdir virtual/perl-JSON-PP >=dev-perl/Path-Tiny-0.77.0 >=virtual/perl-Scalar-List-Utils-1.330.0 >=virtual/perl-Test-Simple-1.302.96 >=virtual/perl-Text-ParseWords-3.260.0 virtual/pkgconfig test? ( dev-perl/Devel-Hide >=dev-perl/Test2-Suite-0.0.60 ) dev-lang/perl
+  DEPEND: dev-lang/perl
+  IUSE: test zip examples
+  RDEPEND: zip? ( dev-perl/Archive-Zip ) virtual/perl-Archive-Tar >=dev-perl/Capture-Tiny-0.170.0 virtual/perl-ExtUtils-CBuilder >=virtual/perl-ExtUtils-MakeMaker-6.640.0 >=virtual/perl-ExtUtils-ParseXS-3.300.0 >=dev-perl/FFI-CheckLib-0.110.0 >=dev-perl/File-Which-1.100.0 dev-perl/File-chdir virtual/perl-JSON-PP >=dev-perl/Path-Tiny-0.77.0 >=virtual/perl-Scalar-List-Utils-1.330.0 >=virtual/perl-Test-Simple-1.302.96 >=virtual/perl-Text-ParseWords-3.260.0 virtual/pkgconfig dev-lang/perl:=
   emerge.packages: dev-perl/Alien-Build
+  kit: gentoo
   original.package.name: dev-perl/Alien-Build
   original.package.version: 2.230.0

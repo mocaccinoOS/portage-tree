@@ -1,0 +1,40 @@
+name: ganglia
+version: 3.7.1
+category: sys-cluster
+use_flags:
+- pcre
+- python
+- python_targets_python2_7
+- '>=dev-lang/python-exec-2:=[python_targets_python2_7(-)'
+- minimal
+requires:
+- name: firebird
+  version: '>=0'
+  category: dev-db
+- name: apr
+  version: '>=0'
+  category: dev-libs-1
+- name: confuse
+  version: '>=0'
+  category: dev-libs
+- name: libpcre
+  version: '>=0'
+  category: dev-libs-3
+- name: rrdtool
+  version: '>=0'
+  category: net-analyzer
+- name: libnsl
+  version: '>=0'
+  category: net-libs
+description: A scalable distributed monitoring system for clusters and grids
+uri:
+- http://ganglia.sourceforge.net/
+license: BSD
+labels:
+  DEPEND: dev-libs/confuse dev-libs/expat >=dev-libs/apr-1.0 net-libs/libnsl:0= !dev-db/firebird pcre? ( dev-libs/libpcre ) python? ( python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,-python_single_target_python2_7(-)] ) virtual/pkgconfig
+  IUSE: minimal pcre python examples python_targets_python2_7
+  RDEPEND: dev-libs/confuse dev-libs/expat >=dev-libs/apr-1.0 net-libs/libnsl:0= !dev-db/firebird pcre? ( dev-libs/libpcre ) python? ( python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7 ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,-python_single_target_python2_7(-)] ) !minimal? ( net-analyzer/rrdtool )
+  emerge.packages: sys-cluster/ganglia
+  kit: gentoo
+  original.package.name: sys-cluster/ganglia
+  original.package.version: 3.7.1-r1

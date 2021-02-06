@@ -1,0 +1,16 @@
+name: kochi-substitute
+version: "20030809"
+category: media-fonts
+use_flags:
+- X
+description: Kochi Japanese TrueType fonts with Wadalab Fonts
+uri:
+- http://efont.sourceforge.jp/
+license: free-noncomm
+labels:
+  DEPEND: X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+  IUSE: X
+  emerge.packages: media-fonts/kochi-substitute
+  kit: gentoo
+  original.package.name: media-fonts/kochi-substitute
+  original.package.version: 20030809-r3

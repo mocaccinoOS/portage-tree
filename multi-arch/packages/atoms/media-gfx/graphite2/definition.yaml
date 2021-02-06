@@ -1,0 +1,21 @@
+name: graphite2
+version: 1.3.14
+category: media-gfx
+use_flags:
+- perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Library providing rendering capabilities for complex non-Roman writing systems
+uri:
+- https://scripts.sil.org/cms/scripts/page.php?site_id=projects&item_id=graphite_home
+license: LGPL-2.1
+labels:
+  DEPEND: perl? ( dev-lang/perl:= ) perl? ( dev-perl/Locale-Maketext-Lexicon dev-perl/Module-Build ) test? ( || ( dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) dev-libs/glib:2 || ( ( dev-lang/python:3.8 dev-python/fonttools[python_targets_python3_8(-),python_single_target_python3_8(+)] ) ( dev-lang/python:3.7 dev-python/fonttools[python_targets_python3_7(-),python_single_target_python3_7(+)] ) ( dev-lang/python:3.6 dev-python/fonttools[python_targets_python3_6(-),python_single_target_python3_6(+)] ) ) media-libs/fontconfig perl? ( virtual/perl-Test-Simple ) )
+  IUSE: perl test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: perl? ( dev-lang/perl:= )
+  emerge.packages: media-gfx/graphite2
+  kit: gentoo
+  original.package.name: media-gfx/graphite2
+  original.package.version: 1.3.14

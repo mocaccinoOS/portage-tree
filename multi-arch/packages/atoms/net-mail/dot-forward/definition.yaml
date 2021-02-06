@@ -1,0 +1,21 @@
+name: dot-forward
+version: "0.71"
+category: net-mail
+requires:
+- name: nofiles
+  version: '>=0'
+  category: acct-group
+- name: qmail
+  version: '>=0'
+  category: acct-group
+description: reads sendmail's .forward files under qmail
+uri:
+- http://cr.yp.to/dot-forward.html
+license: public-domain
+labels:
+  DEPEND: acct-group/nofiles acct-group/qmail
+  RDEPEND: acct-group/nofiles acct-group/qmail
+  emerge.packages: net-mail/dot-forward
+  kit: gentoo
+  original.package.name: net-mail/dot-forward
+  original.package.version: 0.71-r4

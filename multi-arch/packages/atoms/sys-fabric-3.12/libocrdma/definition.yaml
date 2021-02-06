@@ -1,0 +1,18 @@
+name: libocrdma
+version: 1.0.2
+category: sys-fabric-3.12
+requires:
+- name: libocrdma
+  version: '>=0'
+  category: sys-fabric-3.12
+description: OpenIB userspace driver for Emulex OneConnect RDMA
+uri:
+- https://www.openfabrics.org/
+license: '|| ( GPL-2 BSD-2 )'
+labels:
+  DEPEND: sys-fabric/libibverbs:3.12 >=app-arch/rpm2targz-9.0.0.3g
+  RDEPEND: '!sys-fabric/openib-userspace !sys-fabric/libocrdma:0 !sys-fabric/libocrdma:3.5'
+  emerge.packages: sys-fabric/libocrdma:3.12
+  kit: gentoo
+  original.package.name: sys-fabric/libocrdma
+  original.package.version: 1.0.2

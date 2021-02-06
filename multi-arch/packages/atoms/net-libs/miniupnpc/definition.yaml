@@ -1,0 +1,17 @@
+name: miniupnpc
+version: 2.1.20191224
+category: net-libs
+use_flags:
+- kernel_linux
+- verify-sig
+description: UPnP client library and a simple UPnP client
+uri:
+- http://miniupnp.free.fr/
+license: BSD
+labels:
+  BDEPEND: kernel_linux? ( sys-apps/lsb-release sys-apps/which ) verify-sig? ( app-crypt/openpgp-keys-miniupnp ) verify-sig? ( app-crypt/gnupg >=app-portage/gemato-16 )
+  IUSE: ipv6 kernel_linux static-libs verify-sig
+  emerge.packages: net-libs/miniupnpc
+  kit: gentoo
+  original.package.name: net-libs/miniupnpc
+  original.package.version: 2.1.20191224

@@ -1,0 +1,68 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: libpaper
+  version: '>=0'
+  category: app-text
+- name: poppler
+  version: '>=0'
+  category: app-text
+- name: teckit
+  version: '>=0'
+  category: app-text
+- name: gmp
+  version: '>=0'
+  category: dev-libs
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: mpfr
+  version: '>=0'
+  category: dev-libs
+- name: ptexenc
+  version: '>=0'
+  category: dev-libs
+- name: zziplib
+  version: '>=0'
+  category: dev-libs
+- name: clisp
+  version: '>=0'
+  category: dev-lisp-2
+- name: texlive-fontutils
+  version: '>=0'
+  category: dev-texlive
+- name: graphite2
+  version: '>=0'
+  category: media-gfx
+- name: gd
+  version: '>=0'
+  category: media-libs-2
+- name: harfbuzz
+  version: '>=0'
+  category: media-libs
+- name: ed
+  version: '>=0'
+  category: sys-apps
+- name: flex
+  version: '>=0'
+  category: sys-devel
+- name: libX11
+  version: '>=0'
+  category: x11-libs
+- name: libXmu
+  version: '>=0'
+  category: x11-libs
+- name: pixman
+  version: '>=0'
+  category: x11-libs

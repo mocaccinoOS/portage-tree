@@ -1,0 +1,25 @@
+name: libwacom
+version: "1.1"
+category: dev-libs
+use_flags:
+- -doc
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: libgudev
+  version: '>=0'
+  category: dev-libs
+description: Library for identifying Wacom tablets and their model-specific features
+uri:
+- https://github.com/linuxwacom/libwacom
+license: MIT
+labels:
+  BDEPEND: virtual/pkgconfig doc? ( app-doc/doxygen ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 virtual/pkgconfig
+  DEPEND: dev-libs/glib:2 dev-libs/libgudev:=
+  IUSE: doc test
+  RDEPEND: dev-libs/glib:2 dev-libs/libgudev:=
+  emerge.packages: dev-libs/libwacom
+  kit: gentoo
+  original.package.name: dev-libs/libwacom
+  original.package.version: "1.1"

@@ -1,0 +1,20 @@
+name: ragel
+version: 7.0.0.10
+category: dev-util
+requires:
+- name: colm
+  version: '>=0'
+  category: dev-util
+description: Compiles finite state machines from regular languages into executable code
+uri:
+- https://www.colm.net/open-source/ragel/
+license: MIT
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: ~dev-util/colm-0.13.0.5
+  IUSE: vim-syntax
+  RDEPEND: ~dev-util/colm-0.13.0.5
+  emerge.packages: dev-util/ragel
+  kit: gentoo
+  original.package.name: dev-util/ragel
+  original.package.version: 7.0.0.10-r2

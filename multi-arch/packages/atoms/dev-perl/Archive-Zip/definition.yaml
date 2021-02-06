@@ -1,0 +1,22 @@
+name: Archive-Zip
+version: 1.680.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: A wrapper that lets you read Zip archive members as if they were files
+uri:
+- https://metacpan.org/release/Archive-Zip
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  BDEPEND: '>=virtual/perl-Compress-Raw-Zlib-2.17.0 virtual/perl-Encode virtual/perl-File-Path >=virtual/perl-File-Spec-0.800.0 virtual/perl-File-Temp virtual/perl-IO virtual/perl-Time-Local virtual/perl-ExtUtils-MakeMaker test? ( app-arch/unzip >=virtual/perl-Test-Simple-0.880.0 ) dev-lang/perl'
+  DEPEND: dev-lang/perl
+  IUSE: test examples
+  RDEPEND: '>=virtual/perl-Compress-Raw-Zlib-2.17.0 virtual/perl-Encode virtual/perl-File-Path >=virtual/perl-File-Spec-0.800.0 virtual/perl-File-Temp virtual/perl-IO virtual/perl-Time-Local dev-lang/perl:='
+  emerge.packages: dev-perl/Archive-Zip
+  kit: gentoo
+  original.package.name: dev-perl/Archive-Zip
+  original.package.version: 1.680.0

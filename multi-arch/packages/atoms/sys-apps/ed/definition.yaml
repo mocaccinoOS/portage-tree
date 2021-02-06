@@ -1,0 +1,13 @@
+name: ed
+version: "1.16"
+category: sys-apps
+description: Your basic line editor
+uri:
+- https://www.gnu.org/software/ed/
+license: GPL-3
+labels:
+  DEPEND: sys-apps/texinfo
+  emerge.packages: sys-apps/ed
+  kit: gentoo
+  original.package.name: sys-apps/ed
+  original.package.version: "1.16"

@@ -1,0 +1,22 @@
+name: sysklogd
+version: 2.1.2
+category: app-admin
+use_flags:
+- logger
+requires:
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
+description: Standard log daemons
+uri:
+- https://troglobit.com/sysklogd.html https://github.com/troglobit/sysklogd
+license: BSD
+labels:
+  BDEPEND: virtual/pkgconfig
+  DEPEND: logger? ( !<sys-apps/util-linux-2.34-r3 !>=sys-apps/util-linux-2.34-r3[logger] )
+  IUSE: logger logrotate systemd
+  RDEPEND: logger? ( !<sys-apps/util-linux-2.34-r3 !>=sys-apps/util-linux-2.34-r3[logger] )
+  emerge.packages: app-admin/sysklogd
+  kit: gentoo
+  original.package.name: app-admin/sysklogd
+  original.package.version: 2.1.2

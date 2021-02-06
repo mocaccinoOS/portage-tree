@@ -1,0 +1,89 @@
+name: git
+version: 2.26.2
+category: dev-vcs
+use_flags:
+- libressl
+- curl
+- webdav
+- gpg
+- -python_single_target_python3_8
+- -python_single_target_python3_6
+- pcre
+- pcre-jit
+- subversion
+- nls
+- cvs
+- cgi
+- mediawiki
+- gnome-keyring
+- perl
+- tk
+- -test
+- iconv
+- python_single_target_python3_7
+- -emacs
+- highlight
+- -doc
+- perforce
+requires:
+- name: gnupg
+  version: '>=0'
+  category: app-crypt
+- name: highlight
+  version: '>=0'
+  category: app-text
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: libpcre
+  version: '>=0'
+  category: dev-libs-3
+- name: libpcre2
+  version: '>=0'
+  category: dev-libs
+- name: Authen-SASL
+  version: '>=0'
+  category: dev-perl
+- name: CGI
+  version: '>=0'
+  category: dev-perl
+- name: DBD-SQLite
+  version: '>=0'
+  category: dev-perl
+- name: DateTime-Format-ISO8601
+  version: '>=0'
+  category: dev-perl
+- name: Error
+  version: '>=0'
+  category: dev-perl
+- name: HTML-Tree
+  version: '>=0'
+  category: dev-perl
+- name: MailTools
+  version: '>=0'
+  category: dev-perl
+- name: MediaWiki-API
+  version: '>=0'
+  category: dev-perl
+- name: TermReadKey
+  version: '>=0'
+  category: dev-perl
+- name: cvsps
+  version: '>=0'
+  category: dev-vcs-3
+- name: subversion
+  version: '>=0'
+  category: dev-vcs
+description: 'stupid content tracker: distributed VCS designed for speed and efficiency'
+uri:
+- https://www.git-scm.com/
+license: GPL-2
+labels:
+  BDEPEND: doc? ( app-text/asciidoc app-text/docbook2X app-text/xmlto sys-apps/texinfo ) nls? ( sys-devel/gettext ) test? ( app-crypt/gnupg ) virtual/pkgconfig
+  DEPEND: gnome-keyring? ( app-crypt/libsecret ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:= ) sys-libs/zlib pcre? ( pcre-jit? ( dev-libs/libpcre2[jit(+)] ) !pcre-jit? ( dev-libs/libpcre ) ) perl? ( dev-lang/perl:=[-build(-)] ) tk? ( dev-lang/tk:0= ) curl? ( net-misc/curl webdav? ( dev-libs/expat ) ) emacs? ( >=app-editors/emacs-23.1:* ) iconv? ( virtual/libiconv )
+  IUSE: +blksha1 +curl cgi doc emacs gnome-keyring +gpg highlight +iconv libressl mediawiki mediawiki-experimental +nls +pcre +pcre-jit perforce +perl +ppcsha1 tk +threads +webdav xinetd cvs subversion test python_single_target_python3_6 python_single_target_python3_7 python_single_target_python3_8
+  RDEPEND: gnome-keyring? ( app-crypt/libsecret ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:= ) sys-libs/zlib pcre? ( pcre-jit? ( dev-libs/libpcre2[jit(+)] ) !pcre-jit? ( dev-libs/libpcre ) ) perl? ( dev-lang/perl:=[-build(-)] ) tk? ( dev-lang/tk:0= ) curl? ( net-misc/curl webdav? ( dev-libs/expat ) ) emacs? ( >=app-editors/emacs-23.1:* ) iconv? ( virtual/libiconv ) gpg? ( app-crypt/gnupg ) perl? ( dev-perl/Error dev-perl/MailTools dev-perl/Authen-SASL cgi? ( dev-perl/CGI highlight? ( app-text/highlight ) ) cvs? ( >=dev-vcs/cvsps-2.1:0 dev-perl/DBI dev-perl/DBD-SQLite ) mediawiki? ( dev-perl/DateTime-Format-ISO8601 dev-perl/HTML-Tree dev-perl/MediaWiki-API ) subversion? ( dev-vcs/subversion[-dso(-),perl] dev-perl/libwww-perl dev-perl/TermReadKey ) ) perforce? ( python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) )
+  emerge.packages: dev-vcs/git
+  kit: gentoo
+  original.package.name: dev-vcs/git
+  original.package.version: 2.26.2

@@ -1,0 +1,21 @@
+name: MRO-Compat
+version: 0.130.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Lets you build groups of accessors
+uri:
+- https://metacpan.org/release/MRO-Compat
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: virtual/perl-ExtUtils-MakeMaker test? ( >=virtual/perl-Test-Simple-0.470.0 ) dev-lang/perl
+  IUSE: test
+  RDEPEND: dev-lang/perl:=
+  emerge.packages: dev-perl/MRO-Compat
+  kit: gentoo
+  original.package.name: dev-perl/MRO-Compat
+  original.package.version: 0.130.0

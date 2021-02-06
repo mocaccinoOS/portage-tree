@@ -1,0 +1,17 @@
+name: qla-fc-firmware
+version: "20101015"
+category: sys-block
+requires:
+- name: linux-firmware
+  version: '>=0'
+  category: sys-kernel
+description: QLogic Linux Fibre Channel HBA Firmware for ql2xxx cards
+uri:
+- ftp://ftp.qlogic.com/outgoing/linux/firmware/
+license: qlogic-fibre-channel-firmware
+labels:
+  RDEPEND: '!sys-kernel/linux-firmware'
+  emerge.packages: sys-block/qla-fc-firmware
+  kit: gentoo
+  original.package.name: sys-block/qla-fc-firmware
+  original.package.version: "20101015"

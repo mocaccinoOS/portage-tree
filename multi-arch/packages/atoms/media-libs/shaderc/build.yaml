@@ -1,0 +1,29 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: gtest
+  version: '>=0'
+  category: dev-cpp
+- name: nose
+  version: '>=0'
+  category: dev-python
+- name: asciidoctor
+  version: '>=0'
+  category: dev-ruby
+- name: glslang
+  version: '>=0'
+  category: dev-util
+- name: spirv-tools
+  version: '>=0'
+  category: dev-util

@@ -1,0 +1,21 @@
+name: GSSAPI
+version: 0.280.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: GSSAPI - Perl extension providing access to the GSSAPIv2 library
+uri:
+- https://metacpan.org/release/GSSAPI
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: virtual/krb5 test? ( virtual/perl-Test-Simple ) dev-lang/perl:=[-build(-)]
+  IUSE: test
+  RDEPEND: virtual/krb5 dev-lang/perl:=[-build(-)]
+  emerge.packages: dev-perl/GSSAPI
+  kit: gentoo
+  original.package.name: dev-perl/GSSAPI
+  original.package.version: 0.280.0-r1

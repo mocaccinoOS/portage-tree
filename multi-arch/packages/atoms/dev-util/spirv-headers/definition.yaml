@@ -1,0 +1,13 @@
+name: spirv-headers
+version: 1.5.3
+category: dev-util
+description: Machine-readable files for the SPIR-V Registry
+uri:
+- https://www.khronos.org/registry/spir-v/
+license: MIT
+labels:
+  BDEPEND: dev-util/ninja >=dev-util/cmake-3.9.6
+  emerge.packages: dev-util/spirv-headers
+  kit: gentoo
+  original.package.name: dev-util/spirv-headers
+  original.package.version: 1.5.3

@@ -1,0 +1,14 @@
+name: kpathsea
+version: 6.3.2
+category: dev-libs
+description: Path searching library for TeX-related files
+uri:
+- http://tug.org/texlive/
+license: GPL-2
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815'
+  IUSE: doc source static-libs
+  emerge.packages: dev-libs/kpathsea
+  kit: gentoo
+  original.package.name: dev-libs/kpathsea
+  original.package.version: 6.3.2_p20200406

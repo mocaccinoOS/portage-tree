@@ -1,11 +1,21 @@
 name: File-chdir
-version: 0.101.100+2
+version: 0.101.100
 category: dev-perl
+use_flags:
+- -test
 requires:
-- name: system-x
+- name: perl
   version: '>=0'
-  category: layers
+  category: dev-lang
+description: An alternative to File::Spec and CWD
+uri:
+- https://metacpan.org/release/File-chdir
+license: '|| ( Artistic GPL-1+ )'
 labels:
+  DEPEND: virtual/perl-Carp virtual/perl-Exporter >=virtual/perl-File-Spec-3.27 >=virtual/perl-ExtUtils-MakeMaker-6.170.0 test? ( virtual/perl-Test-Simple ) dev-lang/perl
+  IUSE: test
+  RDEPEND: virtual/perl-Carp virtual/perl-Exporter >=virtual/perl-File-Spec-3.27 dev-lang/perl:=
   emerge.packages: dev-perl/File-chdir
+  kit: gentoo
   original.package.name: dev-perl/File-chdir
   original.package.version: 0.101.100

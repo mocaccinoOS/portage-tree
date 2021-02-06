@@ -1,0 +1,35 @@
+name: ki18n
+version: 5.74.0
+category: kde-frameworks-5
+use_flags:
+- python_single_target_python3_7
+- -python_single_target_python3_8
+- -python_single_target_python3_9
+- -doc
+- -test
+requires:
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: qtdeclarative
+  version: '>=0'
+  category: dev-qt-5
+- name: kf-env
+  version: '>=0'
+  category: kde-frameworks-5
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+description: Framework based on Gettext for internationalizing user interface text
+uri:
+- https://kde.org/products/frameworks/
+license: LGPL-2+
+labels:
+  BDEPEND: dev-util/ninja dev-util/cmake doc? ( >=app-doc/doxygen-1.8.13-r1 dev-qt/qthelp:5 ) >=kde-frameworks/extra-cmake-modules-5.74:5
+  DEPEND: python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) >=dev-qt/qtdeclarative-5.14.2:5 sys-devel/gettext virtual/libintl test? ( >=dev-qt/qtconcurrent-5.14.2:5 ) test? ( dev-qt/qttest:5 ) doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
+  IUSE: debug doc test python_single_target_python3_7 python_single_target_python3_8 python_single_target_python3_9
+  RDEPEND: python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) >=dev-qt/qtdeclarative-5.14.2:5 sys-devel/gettext virtual/libintl >=kde-frameworks/kf-env-4 doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5
+  emerge.packages: kde-frameworks/ki18n:5
+  kit: gentoo
+  original.package.name: kde-frameworks/ki18n
+  original.package.version: 5.74.0

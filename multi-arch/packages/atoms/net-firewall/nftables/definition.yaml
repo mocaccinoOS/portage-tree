@@ -1,17 +1,41 @@
 name: nftables
-version: 0.9.6+2
+version: 0.9.6
 category: net-firewall
+use_flags:
+- python_targets_python3_9
+- python_targets_python3_8
+- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- readline
+- python
+- json
+- python_targets_python3_6
+- python_targets_python3_7
+- xtables
+- gmp
+- -doc
 requires:
-- name: system-x
+- name: python
   version: '>=0'
-  category: layers
-- name: libnftnl
-  version: '>=1.1.7'
-  category: net-libs
+  category: dev-lang-3.7
 - name: gmp
   version: '>=0'
   category: dev-libs
+- name: jansson
+  version: '>=0'
+  category: dev-libs
+- name: iptables
+  version: '>=0'
+  category: net-firewall
+description: Linux kernel (3.13+) firewall, NAT and packet mangling tools
+uri:
+- https://netfilter.org/projects/nftables/
+license: GPL-2
 labels:
+  BDEPEND: doc? ( app-text/asciidoc >=app-text/docbook2X-0.8.8-r4 ) virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+  DEPEND: '>=net-libs/libmnl-1.0.4:0= gmp? ( dev-libs/gmp:0= ) json? ( dev-libs/jansson ) python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] ) readline? ( sys-libs/readline:0= ) >=net-libs/libnftnl-1.1.7:0= xtables? ( >=net-firewall/iptables-1.6.1 )'
+  IUSE: debug doc +gmp json +modern-kernel python +readline static-libs xtables kernel_linux python_targets_python3_6 python_targets_python3_7 python_targets_python3_8 python_targets_python3_9
+  RDEPEND: '>=net-libs/libmnl-1.0.4:0= gmp? ( dev-libs/gmp:0= ) json? ( dev-libs/jansson ) python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] ) readline? ( sys-libs/readline:0= ) >=net-libs/libnftnl-1.1.7:0= xtables? ( >=net-firewall/iptables-1.6.1 )'
   emerge.packages: net-firewall/nftables
+  kit: gentoo
   original.package.name: net-firewall/nftables
   original.package.version: 0.9.6

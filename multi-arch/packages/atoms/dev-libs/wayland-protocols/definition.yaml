@@ -1,0 +1,19 @@
+name: wayland-protocols
+version: "1.20"
+category: dev-libs
+requires:
+- name: wayland
+  version: '>=0'
+  category: dev-libs
+description: Wayland protocol files
+uri:
+- https://wayland.freedesktop.org/
+license: MIT
+labels:
+  BDEPEND: virtual/pkgconfig
+  DEPEND: dev-libs/wayland
+  RDEPEND: dev-libs/wayland
+  emerge.packages: dev-libs/wayland-protocols
+  kit: gentoo
+  original.package.name: dev-libs/wayland-protocols
+  original.package.version: "1.20"

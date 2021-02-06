@@ -1,0 +1,35 @@
+name: sysprof
+version: 3.36.0
+category: dev-util
+use_flags:
+- gtk
+- unwind
+requires:
+- name: libdazzle
+  version: '>=0'
+  category: dev-libs
+- name: sysprof-capture
+  version: '>=0'
+  category: dev-util-3
+- name: polkit
+  version: '>=0'
+  category: sys-auth
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3
+description: System-wide Linux Profiler
+uri:
+- http://sysprof.com/
+license: GPL-3+ GPL-2+
+labels:
+  BDEPEND: dev-libs/appstream-glib dev-util/gdbus-codegen dev-util/itstool >=sys-devel/gettext-0.19.8 >=sys-kernel/linux-headers-2.6.32 virtual/pkgconfig app-arch/xz-utils >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 virtual/pkgconfig
+  DEPEND: '>=dev-libs/glib-2.61.3:2 gtk? ( >=x11-libs/gtk+-3.22.0:3 >=dev-libs/libdazzle-3.30.0 ) >=sys-auth/polkit-0.114 unwind? ( sys-libs/libunwind:= ) >=dev-util/sysprof-capture-3.36.0:3 dev-util/desktop-file-utils x11-misc/shared-mime-info'
+  IUSE: gtk +unwind
+  RDEPEND: '>=dev-libs/glib-2.61.3:2 gtk? ( >=x11-libs/gtk+-3.22.0:3 >=dev-libs/libdazzle-3.30.0 ) >=sys-auth/polkit-0.114 unwind? ( sys-libs/libunwind:= ) >=dev-util/sysprof-capture-3.36.0:3'
+  emerge.packages: dev-util/sysprof
+  kit: gentoo
+  original.package.name: dev-util/sysprof
+  original.package.version: 3.36.0

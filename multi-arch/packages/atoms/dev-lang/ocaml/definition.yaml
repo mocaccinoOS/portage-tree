@@ -1,0 +1,24 @@
+name: ocaml
+version: 4.09.0
+category: dev-lang
+use_flags:
+- spacetime
+requires:
+- name: binutils-libs
+  version: '>=0'
+  category: sys-libs
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
+description: Programming language supporting functional, imperative & object-oriented styles
+uri:
+- https://ocaml.org/
+license: LGPL-2.1
+labels:
+  BDEPEND: sys-libs/binutils-libs:= spacetime? ( sys-libs/libunwind:= ) virtual/pkgconfig
+  IUSE: emacs flambda latex +ocamlopt spacetime xemacs
+  RDEPEND: sys-libs/binutils-libs:= spacetime? ( sys-libs/libunwind:= )
+  emerge.packages: dev-lang/ocaml
+  kit: gentoo
+  original.package.name: dev-lang/ocaml
+  original.package.version: 4.09.0

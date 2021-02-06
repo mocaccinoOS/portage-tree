@@ -1,0 +1,86 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: argon2
+  version: '>=0'
+  category: app-crypt
+- name: enchant
+  version: '>=0'
+  category: app-text-2
+- name: tidy-html5
+  version: '>=0'
+  category: app-text
+- name: cdb
+  version: '>=0'
+  category: dev-db
+- name: firebird
+  version: '>=0'
+  category: dev-db
+- name: freetds
+  version: '>=0'
+  category: dev-db
+- name: oracle-instantclient-basic
+  version: '>=0'
+  category: dev-db
+- name: qdbm
+  version: '>=0'
+  category: dev-db
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: tokyocabinet
+  version: '>=0'
+  category: dev-db
+- name: gmp
+  version: '>=0'
+  category: dev-libs
+- name: libffi
+  version: '>=0'
+  category: dev-libs
+- name: libpcre2
+  version: '>=0'
+  category: dev-libs
+- name: libsodium
+  version: '>=0'
+  category: dev-libs
+- name: libzip
+  version: '>=0'
+  category: dev-libs
+- name: mm
+  version: '>=0'
+  category: dev-libs-1.2
+- name: oniguruma
+  version: '>=0'
+  category: dev-libs
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: libwebp
+  version: '>=0'
+  category: media-libs
+- name: net-snmp
+  version: '>=0'
+  category: net-analyzer
+- name: curl
+  version: '>=0'
+  category: net-misc
+- name: acl
+  version: '>=0'
+  category: sys-apps
+- name: apache
+  version: '>=0'
+  category: www-servers-2
+- name: libXpm
+  version: '>=0'
+  category: x11-libs

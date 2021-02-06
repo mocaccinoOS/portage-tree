@@ -1,0 +1,15 @@
+name: spirv-tools
+version: "2020.3"
+category: dev-util
+description: Provides an API and commands for processing SPIR-V modules
+uri:
+- https://github.com/KhronosGroup/SPIRV-Tools
+license: Apache-2.0
+labels:
+  BDEPEND: '|| ( dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) >=dev-util/spirv-headers-1.5.3 dev-util/ninja dev-util/cmake'
+  DEPEND: '>=dev-util/spirv-headers-1.5.3'
+  IUSE: abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  emerge.packages: dev-util/spirv-tools
+  kit: gentoo
+  original.package.name: dev-util/spirv-tools
+  original.package.version: "2020.3"

@@ -1,0 +1,21 @@
+name: DateTime-Format-ISO8601
+version: 0.80.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: DateTime-Format-Builder
+  version: '>=0'
+  category: dev-perl
+description: Parses ISO8601 formats
+uri:
+- https://metacpan.org/release/DateTime-Format-ISO8601
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  DEPEND: dev-perl/DateTime dev-perl/DateTime-Format-Builder dev-perl/Module-Build test? ( dev-perl/File-Find-Rule ) dev-lang/perl:=[-build(-)]
+  IUSE: test
+  RDEPEND: dev-perl/DateTime dev-perl/DateTime-Format-Builder dev-lang/perl:=[-build(-)]
+  emerge.packages: dev-perl/DateTime-Format-ISO8601
+  kit: gentoo
+  original.package.name: dev-perl/DateTime-Format-ISO8601
+  original.package.version: 0.80.0-r1

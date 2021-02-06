@@ -1,0 +1,23 @@
+name: metamail
+version: 2.7.53.3
+category: net-mail
+requires:
+- name: mime-types
+  version: '>=0'
+  category: app-misc
+- name: debianutils
+  version: '>=0'
+  category: sys-apps
+description: Metamail (with Debian patches) - Generic MIME package
+uri:
+- http://ftp.funet.fi/pub/unix/mail/metamail/
+license: GPL-2
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: sys-libs/ncurses app-arch/sharutils net-mail/mailbase
+  IUSE: static-libs
+  RDEPEND: app-misc/mime-types sys-apps/debianutils !app-misc/run-mailcap
+  emerge.packages: net-mail/metamail
+  kit: gentoo
+  original.package.name: net-mail/metamail
+  original.package.version: 2.7.53.3-r2

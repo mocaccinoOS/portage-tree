@@ -1,0 +1,74 @@
+name: nvidia-drivers
+version: "455.28"
+category: x11-drivers
+use_flags:
+- tools
+- libglvnd
+- sys-libs/zlib[abi_x86_32(-)
+- gtk3
+- wayland
+- kernel_linux
+- dev-libs/wayland[abi_x86_32(-)
+- '>=x11-libs/libvdpau-1.0[abi_x86_32(-)'
+- driver
+- '>=x11-libs/libXext-1.3.2[abi_x86_32(-)'
+- media-libs/libglvnd[X,abi_x86_32(-)
+- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
+- X
+- uvm
+requires:
+- name: video
+  version: '>=0'
+  category: acct-group
+- name: pax-utils
+  version: '>=0'
+  category: app-misc
+- name: atk
+  version: '>=0'
+  category: dev-libs
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: jansson
+  version: '>=0'
+  category: dev-libs
+- name: libtirpc
+  version: '>=0'
+  category: net-libs
+- name: kmod
+  version: '>=0'
+  category: sys-apps
+- name: glibc
+  version: '>=0'
+  category: sys-libs-2.2
+- name: xorg-server
+  version: '>=0'
+  category: x11-base
+- name: cairo
+  version: '>=0'
+  category: x11-libs
+- name: gdk-pixbuf
+  version: '>=0'
+  category: x11-libs-2
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs
+- name: pango
+  version: '>=0'
+  category: x11-libs
+description: NVIDIA Accelerated Graphics Driver
+uri:
+- https://www.nvidia.com/Download/Find.aspx
+license: GPL-2 NVIDIA-r2
+labels:
+  BDEPEND: virtual/pkgconfig virtual/pkgconfig
+  DEPEND: driver? ( kernel_linux? ( acct-group/video ) ) kernel_linux? ( >=sys-libs/glibc-2.6.1 ) tools? ( dev-libs/atk dev-libs/glib:2 dev-libs/jansson gtk3? ( x11-libs/gtk+:3 ) x11-libs/cairo x11-libs/gdk-pixbuf[X] x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr x11-libs/libXv x11-libs/libXxf86vm x11-libs/pango[X] ) X? ( >=x11-libs/libvdpau-1.0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] app-misc/pax-utils libglvnd? ( media-libs/libglvnd[X,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) ) kernel_linux? ( virtual/linux-sources ) tools? ( sys-apps/dbus ) kernel_linux? ( sys-apps/kmod[tools] ) sys-apps/sed kernel_linux? ( virtual/linux-sources virtual/libelf ) sys-apps/pciutils
+  IUSE: compat +driver gtk3 kernel_FreeBSD kernel_linux +kms +libglvnd multilib static-libs +tools uvm wayland +X kernel_linux kernel_linux kernel_linux abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: driver? ( kernel_linux? ( acct-group/video ) ) kernel_linux? ( >=sys-libs/glibc-2.6.1 ) tools? ( dev-libs/atk dev-libs/glib:2 dev-libs/jansson gtk3? ( x11-libs/gtk+:3 ) x11-libs/cairo x11-libs/gdk-pixbuf[X] x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr x11-libs/libXv x11-libs/libXxf86vm x11-libs/pango[X] ) X? ( >=x11-libs/libvdpau-1.0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] app-misc/pax-utils libglvnd? ( media-libs/libglvnd[X,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) ) uvm? ( >=virtual/opencl-3 ) wayland? ( dev-libs/wayland[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) X? ( <x11-base/xorg-server-1.20.99:= >=x11-libs/libX11-1.6.2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=x11-libs/libXext-1.3.2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] sys-libs/zlib[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) kernel_linux? ( net-libs/libtirpc ) kernel_linux? ( sys-apps/kmod[tools] )
+  emerge.packages: x11-drivers/nvidia-drivers
+  kit: gentoo
+  original.package.name: x11-drivers/nvidia-drivers
+  original.package.version: "455.28"

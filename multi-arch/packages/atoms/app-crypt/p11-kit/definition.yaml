@@ -1,0 +1,30 @@
+name: p11-kit
+version: 0.23.19
+category: app-crypt
+use_flags:
+- '>=dev-libs/libtasn1-3.4:=[abi_x86_32(-)'
+- libffi
+- dev-libs/libffi:=[abi_x86_32(-)
+- systemd
+- trust
+- asn1
+requires:
+- name: ca-certificates
+  version: '>=0'
+  category: app-misc
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+description: Provides a standard configuration setup for installing PKCS#11
+uri:
+- https://p11-glue.github.io/p11-glue/p11-kit.html
+license: MIT
+labels:
+  BDEPEND: virtual/pkgconfig
+  DEPEND: asn1? ( >=dev-libs/libtasn1-3.4:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) libffi? ( dev-libs/libffi:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) systemd? ( sys-apps/systemd:= ) trust? ( app-misc/ca-certificates )
+  IUSE: +asn1 debug +libffi systemd +trust abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: asn1? ( >=dev-libs/libtasn1-3.4:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) libffi? ( dev-libs/libffi:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) systemd? ( sys-apps/systemd:= ) trust? ( app-misc/ca-certificates )
+  emerge.packages: app-crypt/p11-kit
+  kit: gentoo
+  original.package.name: app-crypt/p11-kit
+  original.package.version: 0.23.19-r1

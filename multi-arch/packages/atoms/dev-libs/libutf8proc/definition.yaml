@@ -1,0 +1,13 @@
+name: libutf8proc
+version: 2.2.0
+category: dev-libs
+description: A clean C Library for processing UTF-8 Unicode data
+uri:
+- http://www.netsurf-browser.org/
+license: MIT
+labels:
+  DEPEND: dev-util/netsurf-buildsystem
+  emerge.packages: dev-libs/libutf8proc
+  kit: gentoo
+  original.package.name: dev-libs/libutf8proc
+  original.package.version: 2.2.0_p1-r1

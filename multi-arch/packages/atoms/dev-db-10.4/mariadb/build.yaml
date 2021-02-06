@@ -1,0 +1,74 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: snappy
+  version: '>=0'
+  category: app-arch
+- name: groonga-normalizer-mysql
+  version: '>=0'
+  category: app-text
+- name: unixODBC
+  version: '>=0'
+  category: dev-db
+- name: java-config
+  version: '>=0'
+  category: dev-java-2
+- name: boost
+  version: '>=0'
+  category: dev-libs
+- name: jemalloc
+  version: '>=0'
+  category: dev-libs
+- name: judy
+  version: '>=0'
+  category: dev-libs
+- name: libaio
+  version: '>=0'
+  category: dev-libs
+- name: libpcre
+  version: '>=0'
+  category: dev-libs-3
+- name: libressl
+  version: '>=0'
+  category: dev-libs
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: google-perftools
+  version: '>=0'
+  category: dev-util
+- name: systemtap
+  version: '>=0'
+  category: dev-util
+- name: sed
+  version: '>=0'
+  category: sys-apps
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+- name: texinfo
+  version: '>=0'
+  category: sys-apps
+- name: binutils-libs
+  version: '>=0'
+  category: sys-libs
+- name: cracklib
+  version: '>=0'
+  category: sys-libs
+- name: numactl
+  version: '>=0'
+  category: sys-process
+- name: procps
+  version: '>=0'
+  category: sys-process

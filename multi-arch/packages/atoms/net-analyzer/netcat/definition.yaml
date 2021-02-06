@@ -1,0 +1,22 @@
+name: netcat
+version: "110"
+category: net-analyzer
+use_flags:
+- static
+- crypt
+requires:
+- name: libmix
+  version: '>=0'
+  category: dev-libs
+description: the network swiss army knife
+uri:
+- http://nc110.sourceforge.net/
+license: netcat
+labels:
+  DEPEND: '!static? ( crypt? ( dev-libs/libmix ) ) static? ( crypt? ( dev-libs/libmix[static-libs(+)] ) )'
+  IUSE: crypt ipv6 static
+  RDEPEND: '!static? ( crypt? ( dev-libs/libmix ) )'
+  emerge.packages: net-analyzer/netcat
+  kit: gentoo
+  original.package.name: net-analyzer/netcat
+  original.package.version: 110-r9

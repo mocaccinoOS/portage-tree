@@ -1,0 +1,17 @@
+name: edk2-ovmf
+version: "202008"
+category: sys-firmware
+use_flags:
+- binary
+- amd64
+description: UEFI firmware for 64-bit x86 virtual machines
+uri:
+- https://github.com/tianocore/edk2
+license: BSD-2 MIT
+labels:
+  DEPEND: '!binary? ( amd64? ( app-emulation/qemu >=dev-lang/nasm-2.0.7 >=sys-power/iasl-20160729 || ( dev-lang/python:3.8[sqlite] dev-lang/python:3.7[sqlite] dev-lang/python:3.6[sqlite] ) ) )'
+  IUSE: +binary
+  emerge.packages: sys-firmware/edk2-ovmf
+  kit: gentoo
+  original.package.name: sys-firmware/edk2-ovmf
+  original.package.version: "202008"

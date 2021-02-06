@@ -1,0 +1,31 @@
+name: rtkit
+version: "0.12"
+category: sys-auth
+use_flags:
+- systemd
+requires:
+- name: rtkit
+  version: '>=0'
+  category: acct-user
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: polkit
+  version: '>=0'
+  category: sys-auth
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+description: Realtime Policy and Watchdog Daemon
+uri:
+- https://github.com/heftig/rtkit
+license: GPL-3 BSD
+labels:
+  BDEPEND: virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: acct-group/rtkit acct-user/rtkit sys-apps/dbus sys-auth/polkit sys-libs/libcap systemd? ( sys-apps/systemd )
+  IUSE: systemd kernel_linux
+  RDEPEND: acct-group/rtkit acct-user/rtkit sys-apps/dbus sys-auth/polkit sys-libs/libcap systemd? ( sys-apps/systemd )
+  emerge.packages: sys-auth/rtkit
+  kit: gentoo
+  original.package.name: sys-auth/rtkit
+  original.package.version: 0.12-r1

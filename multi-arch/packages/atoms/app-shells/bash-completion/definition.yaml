@@ -1,0 +1,22 @@
+name: bash-completion
+version: "2.11"
+category: app-shells
+requires:
+- name: bash
+  version: '>=0'
+  category: app-shells
+- name: miscfiles
+  version: '>=0'
+  category: sys-apps
+description: Programmable Completion for bash
+uri:
+- https://github.com/scop/bash-completion
+license: GPL-2+
+labels:
+  DEPEND: test? ( >=app-shells/bash-4.3_p30-r1:0 sys-apps/miscfiles !!net-fs/mc || ( ( dev-lang/python:3.9 dev-python/pexpect[python_targets_python3_9(-),python_single_target_python3_9(+)] dev-python/pytest[python_targets_python3_9(-),python_single_target_python3_9(+)] ) ( dev-lang/python:3.8 dev-python/pexpect[python_targets_python3_8(-),python_single_target_python3_8(+)] dev-python/pytest[python_targets_python3_8(-),python_single_target_python3_8(+)] ) ( dev-lang/python:3.7 dev-python/pexpect[python_targets_python3_7(-),python_single_target_python3_7(+)] dev-python/pytest[python_targets_python3_7(-),python_single_target_python3_7(+)] ) ( dev-lang/python:3.6 dev-python/pexpect[python_targets_python3_6(-),python_single_target_python3_6(+)] dev-python/pytest[python_targets_python3_6(-),python_single_target_python3_6(+)] ) ) )
+  IUSE: +eselect test
+  RDEPEND: '>=app-shells/bash-4.3_p30-r1:0 sys-apps/miscfiles !!net-fs/mc'
+  emerge.packages: app-shells/bash-completion
+  kit: gentoo
+  original.package.name: app-shells/bash-completion
+  original.package.version: "2.11"

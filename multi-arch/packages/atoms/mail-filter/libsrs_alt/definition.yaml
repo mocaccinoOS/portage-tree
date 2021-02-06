@@ -1,0 +1,19 @@
+name: libsrs_alt
+version: "1.0"
+category: mail-filter
+requires:
+- name: Mail-SRS
+  version: '>=0'
+  category: dev-perl
+description: Sender Rewriting Scheme library for use with Exim
+uri:
+- https://opsec.eu/src/srs/
+license: GPL-2
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  IUSE: static-libs
+  RDEPEND: '!dev-perl/Mail-SRS'
+  emerge.packages: mail-filter/libsrs_alt
+  kit: gentoo
+  original.package.name: mail-filter/libsrs_alt
+  original.package.version: 1.0-r1

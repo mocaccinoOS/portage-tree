@@ -1,7 +1,0 @@
-name: cronbase
-version: "0.3.7+1"
-category: sys-process
-labels:
-  original.package.name: sys-process/cronbase
-  original.package.version: 0.3.7-r6
-  emerge.packages: "sys-process/cronbase"
