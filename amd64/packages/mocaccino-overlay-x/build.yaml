@@ -1,8 +1,10 @@
 requires:
-- category: "layers"
-  name: "system-core"
+- category: "layer"
+  name: "gentoo-portage"
   version: ">=0"
 steps:
-- cp -rvf package.use/* /etc/portage/package.use/
-- cp -rvf package.accept_keywords/* /etc/portage/package.accept_keywords/
-- cp -rvf package.license/* /etc/portage/package.license/
+- cp -rf package.use /etc/portage/
+- cp -rf make.conf /etc/portage/
+- cp -rf package.accept_keywords /etc/portage/
+- cp -rf package.license /etc/portage/
+- cp -rf package.mask /etc/portage/
