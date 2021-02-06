@@ -1,0 +1,25 @@
+requires:
+- category: "development"
+  name: "mocaccino-overlay-x"
+  version: ">=0"
+env:
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+- JOBS=7
+- LUET_NOLOCK=true
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs/
+- LUET_YES=true
+prelude:
+- >-
+  eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
+  emerge dev-perl/XML-Parser -j $JOBS &&
+  USE=-harfbuzz emerge media-libs/freetype -j $JOBS &&
+  wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz &&
+  emerge -uDNv --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS &&
+  emerge sys-apps/systemd -j $JOBS &&
+  perl-cleaner --all &&
+  rm /var/cache/distfiles/* -v
+- >-
+  curl https://get.mocaccino.org/luet/get_luet_root.sh | sh &&
+  luet install repository/mocaccino-extra-stable system/luet-extensions-live &&
+  luet install dev-util/pkgs-checker-minimal utils/jq &&
+  luet cleanup
