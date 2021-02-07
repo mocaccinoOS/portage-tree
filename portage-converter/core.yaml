@@ -26,6 +26,7 @@ artefacts:
 - tree: multi-arch/packages/atoms
   packages:
     - sys-devel/gcc:9.3.0
+    - sys-kernel/dracut
 #    - app-emulation/lxd
 #    - app-emulation/lxc
 
@@ -41,16 +42,35 @@ reposcan_requires_slot: true
 reposcan_contraints:
   packages:
     - dev-lang/python:3.7
+    - dev-lang/ruby:2.6
     - sys-devel/gcc:9.3.0
 
 reposcan_disabled_use_flags:
-  - test
-  - qt5
   - emacs
   - doc
+  - elibc_Darwin
+  - elibc_SunOS
+  - elibc_FreeBSD
+  - elogind
+  - libressl
+  - gtk-doc
+  - gles2-only
   - python_single_target_python3_6
   - python_single_target_python3_8
   - python_single_target_python3_9
+  - python_targets_python3_6
+  - python_targets_python3_8
+  - python_targets_python3_9
+  - ruby_targets_ruby25
+  - ruby_targets_ruby24
+  - ppc-aix
+  - x86-winnt
+  - kernel-builtin
+  - man
+  - minimal
+#  - qt5
+  - vim-syntax
+  - test
   - savedconfig
 
 reposcan_disabled_keywords:
