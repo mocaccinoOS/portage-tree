@@ -23,4 +23,4 @@ requires:
   category: dev-python
 - name: wxGTK
   version: '>=0'
-  category: x11-libs-3.0-gtk3
+  category: x11-libs-3.0

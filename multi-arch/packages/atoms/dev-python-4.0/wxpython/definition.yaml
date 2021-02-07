@@ -13,7 +13,7 @@ requires:
   category: dev-lang-2
 - name: wxGTK
   version: '>=0'
-  category: x11-libs-3.0-gtk3
+  category: x11-libs-3.0
 description: A blending of the wxWindows C++ class library with Python
 uri:
 - https://www.wxpython.org/

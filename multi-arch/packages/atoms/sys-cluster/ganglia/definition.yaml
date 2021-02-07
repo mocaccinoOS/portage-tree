@@ -3,9 +3,9 @@ version: 3.7.1
 category: sys-cluster
 use_flags:
 - -minimal
+- -python_targets_python2_7
 - pcre
 - python
-- python_targets_python2_7
 requires:
 - name: firebird
   version: '>=0'
@@ -17,6 +17,9 @@ requires:
   version: '>=0'
   category: dev-libs-1
 - name: confuse
+  version: '>=0'
+  category: dev-libs
+- name: expat
   version: '>=0'
   category: dev-libs
 - name: libpcre

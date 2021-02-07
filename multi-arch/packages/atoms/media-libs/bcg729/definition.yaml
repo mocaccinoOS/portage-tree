@@ -4,12 +4,12 @@ category: media-libs
 description: encoder and decoder of the ITU G729 Annex A/B speech codec
 uri:
 - https://github.com/BelledonneCommunications/bcg729
-license: GPL-3
+license: GPL-2
 labels:
-  BDEPEND: dev-util/ninja >=dev-util/cmake-3.9.6
+  DEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
   IUSE: static-libs
   RDEPEND: '!media-plugins/mediastreamer-bcg729'
   emerge.packages: media-libs/bcg729
   kit: gentoo
   original.package.name: media-libs/bcg729
-  original.package.version: 1.0.4-r1
+  original.package.version: 1.0.4

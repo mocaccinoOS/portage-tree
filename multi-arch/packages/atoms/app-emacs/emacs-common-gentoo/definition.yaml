@@ -13,9 +13,9 @@ uri:
 license: GPL-3+
 labels:
   DEPEND: games? ( acct-group/gamestat )
-  IUSE: games gui
+  IUSE: games X
   RDEPEND: games? ( acct-group/gamestat )
   emerge.packages: app-emacs/emacs-common-gentoo
   kit: gentoo
   original.package.name: app-emacs/emacs-common-gentoo
-  original.package.version: 1.6-r4
+  original.package.version: 1.6-r3
