@@ -2,13 +2,12 @@ name: libapparmor
 version: 2.13.4
 category: sys-libs
 use_flags:
+- -doc
+- -python_targets_python3_6
+- -python_targets_python3_8
 - perl
 - python
-- python_targets_python3_6
 - python_targets_python3_7
-- python_targets_python3_8
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- -doc
 requires:
 - name: perl
   version: '>=0'
@@ -16,6 +15,9 @@ requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 description: Library to support AppArmor userspace utilities
 uri:
 - https://gitlab.com/apparmor/apparmor/wikis/home

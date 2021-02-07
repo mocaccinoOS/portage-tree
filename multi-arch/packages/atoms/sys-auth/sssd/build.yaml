@@ -27,18 +27,9 @@ requires:
 - name: libnl
   version: '>=0'
   category: dev-libs-3
-- name: libpcre
-  version: '>=0'
-  category: dev-libs-3
-- name: popt
-  version: '>=0'
-  category: dev-libs
 - name: valgrind
   version: '>=0'
   category: dev-util
-- name: c-ares
-  version: '>=0'
-  category: net-dns
 - name: cifs-utils
   version: '>=0'
   category: net-fs
@@ -54,15 +45,6 @@ requires:
 - name: curl
   version: '>=0'
   category: net-misc
-- name: ldb
-  version: '>=0'
-  category: sys-libs
 - name: libsemanage
-  version: '>=0'
-  category: sys-libs
-- name: tdb
-  version: '>=0'
-  category: sys-libs
-- name: tevent
   version: '>=0'
   category: sys-libs

@@ -21,9 +21,6 @@ requires:
 - name: glew
   version: '>=0'
   category: media-libs
-- name: ilmbase
-  version: '>=0'
-  category: media-libs
 - name: libpng
   version: '>=0'
   category: media-libs
@@ -33,6 +30,3 @@ requires:
 - name: tiff
   version: '>=0'
   category: media-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs

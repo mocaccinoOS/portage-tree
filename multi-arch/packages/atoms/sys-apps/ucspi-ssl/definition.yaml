@@ -2,15 +2,12 @@ name: ucspi-ssl
 version: 0.99e
 category: sys-apps
 use_flags:
-- libressl
+- -libressl
 - perl
 requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: ucspi-tcp
   version: '>=0'
   category: sys-apps

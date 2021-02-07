@@ -2,19 +2,16 @@ name: tevent
 version: 0.10.2
 category: sys-libs
 use_flags:
+- -elibc_FreeBSD
 - -python_single_target_python3_6
 - -python_single_target_python3_8
-- elibc_FreeBSD
-- dev-libs/libbsd[abi_x86_32(-)
 - elibc_glibc
-- '>=sys-libs/talloc-2.3.1[abi_x86_32(-)'
 - python
 - python_single_target_python3_7
-- net-libs/libtirpc[abi_x86_32(-)
 requires:
-- name: python-exec
+- name: talloc
   version: '>=0'
-  category: dev-lang-2
+  category: sys-libs
 description: Samba tevent library
 uri:
 - https://tevent.samba.org/

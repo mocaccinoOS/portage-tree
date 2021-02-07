@@ -2,66 +2,73 @@ name: mesa
 version: 20.1.10
 category: media-libs
 use_flags:
-- '>=dev-libs/wayland-1.15.0:=[abi_x86_32(-)'
-- '>=x11-libs/libva-1.7.3:=[abi_x86_32(-)'
-- sys-libs/libselinux[abi_x86_32(-)
-- video_cards_r300
-- '>=media-libs/libglvnd-1.3.2[X'
-- sys-apps/lm-sensors:=[abi_x86_32(-)
-- video_cards_intel
+- X
+- gallium
+- llvm
+- lm-sensors
+- opencl
+- selinux
+- unwind
+- vaapi
+- valgrind
 - vdpau
 - video_cards_i915
-- '>=x11-libs/libdrm-2.4.100[video_cards_freedreno'
-- <sys-devel/clang-11:=[abi_x86_32(-)
-- opencl
-- '>=x11-libs/libXvMC-1.0.8:=[abi_x86_32(-)'
-- <sys-devel/llvm-11:=[abi_x86_32(-)
-- x11-libs/libXfixes:=[abi_x86_32(-)
-- app-arch/zstd:=[abi_x86_32(-)
-- xvmc
-- wayland
-- '>=x11-libs/libXxf86vm-1.1.3:=[abi_x86_32(-)'
-- sys-libs/libunwind[abi_x86_32(-)
-- lm-sensors
-- unwind
-- valgrind
-- '>=x11-libs/libvdpau-1.1:=[abi_x86_32(-)'
-- video_cards_r100
-- '>=sys-libs/zlib-1.2.8[abi_x86_32(-)'
-- sys-devel/clang:10[abi_x86_32(-)
-- zstd
-- X
-- '>=dev-libs/expat-2.1.0-r3:=[abi_x86_32(-)'
-- '>=x11-libs/libXext-1.3.2:=[abi_x86_32(-)'
-- '>=x11-libs/libxcb-1.13:=[abi_x86_32(-)'
-- x11-libs/libXrandr[abi_x86_32(-)
-- sys-devel/llvm:10[abi_x86_32(-)
-- sys-devel/clang:9[abi_x86_32(-)
-- video_cards_radeon
-- video_cards_r200
-- gallium
-- '>=x11-libs/libX11-1.6.2:=[abi_x86_32(-)'
 - video_cards_i965
-- vulkan-overlay
-- llvm
-- selinux
-- sys-devel/llvm:9[abi_x86_32(-)
-- '>=x11-libs/libXdamage-1.1.4-r1:=[abi_x86_32(-)'
-- virtual/libelf:0=[abi_x86_32(-)
-- dev-util/glslang:0=[abi_x86_32(-)
+- video_cards_intel
+- video_cards_r100
+- video_cards_r200
+- video_cards_r300
 - video_cards_r600
+- video_cards_radeon
 - video_cards_radeonsi
-- '>=virtual/opencl-3[abi_x86_32(-)'
-- '>=x11-libs/libxshmfence-1.1:=[abi_x86_32(-)'
-- vaapi
+- vulkan-overlay
+- wayland
+- xvmc
+- zstd
 requires:
+- name: zstd
+  version: '>=0'
+  category: app-arch
 - name: libclc
   version: '>=0'
   category: dev-libs
 - name: wayland-protocols
   version: '>=0'
   category: dev-libs
-- name: libdrm
+- name: glslang
+  version: '>=0'
+  category: dev-util
+- name: libglvnd
+  version: '>=0'
+  category: media-libs
+- name: lm-sensors
+  version: '>=0'
+  category: sys-apps
+- name: clang
+  version: '>=0'
+  category: sys-devel-10
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
+- name: libXdamage
+  version: '>=0'
+  category: x11-libs
+- name: libXvMC
+  version: '>=0'
+  category: x11-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs
+- name: libva
+  version: '>=0'
+  category: x11-libs
+- name: libvdpau
+  version: '>=0'
+  category: x11-libs
+- name: libxshmfence
   version: '>=0'
   category: x11-libs
 description: OpenGL-like graphic library for Linux

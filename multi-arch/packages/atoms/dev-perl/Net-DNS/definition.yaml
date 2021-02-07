@@ -2,20 +2,11 @@ name: Net-DNS
 version: 1.130.0
 category: dev-perl
 use_flags:
-- ipv6
-- minimal
+- -minimal
 - -test
+- ipv6
 requires:
-- name: Digest-BubbleBabble
-  version: '>=0'
-  category: dev-perl
 - name: Digest-HMAC
-  version: '>=0'
-  category: dev-perl
-- name: Net-LibIDN
-  version: '>=0'
-  category: dev-perl
-- name: Net-LibIDN2
   version: '>=0'
   category: dev-perl
 description: Perl Interface to the Domain Name System

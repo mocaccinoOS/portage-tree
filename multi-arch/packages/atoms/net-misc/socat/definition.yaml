@@ -2,14 +2,11 @@ name: socat
 version: 1.7.3.4
 category: net-misc
 use_flags:
-- ssl
-- libressl
+- -libressl
 - readline
+- ssl
 - tcpd
 requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps

@@ -2,19 +2,13 @@ name: exim
 version: 4.93.0.4
 category: mail-mta
 requires:
-- name: mysql-connector-c
-  version: '>=0'
-  category: dev-db
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
 - name: hiredis
   version: '>=0'
   category: dev-libs
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: libtasn1
+- name: libressl
   version: '>=0'
   category: dev-libs
 - name: dcc
@@ -32,34 +26,13 @@ requires:
 - name: libidn
   version: '>=0'
   category: net-dns
-- name: libidn2
-  version: '>=0'
-  category: net-dns
-- name: gnutls
-  version: '>=0'
-  category: net-libs
-- name: libnsl
-  version: '>=0'
-  category: net-libs
-- name: libtirpc
-  version: '>=0'
-  category: net-libs
 - name: selinux-exim
   version: '>=0'
   category: sec-policy
 - name: sed
   version: '>=0'
   category: sys-apps
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: libXmu
-  version: '>=0'
-  category: x11-libs
-- name: libXt
   version: '>=0'
   category: x11-libs
 description: A highly configurable, drop-in replacement for sendmail

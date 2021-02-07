@@ -2,13 +2,10 @@ name: asio
 version: 1.17.0
 category: dev-cpp
 use_flags:
+- -libressl
 - ssl
-- libressl
 requires:
 - name: boost
-  version: '>=0'
-  category: dev-libs
-- name: libressl
   version: '>=0'
   category: dev-libs
 description: Asynchronous Network Library

@@ -1,8 +1,6 @@
 name: libintl
 version: "0.21"
 category: dev-libs
-use_flags:
-- '>=virtual/libiconv-0-r1[abi_x86_32(-)'
 requires:
 - name: gettext
   version: '>=0'

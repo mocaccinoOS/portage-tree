@@ -2,16 +2,16 @@ name: netatalk
 version: 3.1.12
 category: net-fs
 use_flags:
-- ldap
-- zeroconf
-- dbus
-- ssl
-- cracklib
-- tracker
-- kerberos
 - acl
+- cracklib
+- dbus
+- kerberos
+- ldap
 - pam
+- ssl
 - tcpd
+- tracker
+- zeroconf
 requires:
 - name: yudit
   version: '>=0'
@@ -22,10 +22,7 @@ requires:
 - name: dbus-glib
   version: '>=0'
   category: dev-libs
-- name: libevent
-  version: '>=0'
-  category: dev-libs
-- name: libgcrypt
+- name: openssl
   version: '>=0'
   category: dev-libs
 - name: avahi

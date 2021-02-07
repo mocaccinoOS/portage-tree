@@ -2,9 +2,8 @@ name: json-glib
 version: 1.4.4
 category: dev-libs
 use_flags:
-- '>=dev-libs/glib-2.44.0:2[abi_x86_32(-)'
+- -gtk-doc
 - introspection
-- gtk-doc
 requires:
 - name: gobject-introspection
   version: '>=0'

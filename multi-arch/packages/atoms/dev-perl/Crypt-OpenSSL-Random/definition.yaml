@@ -2,14 +2,11 @@ name: Crypt-OpenSSL-Random
 version: 0.110.0
 category: dev-perl
 use_flags:
-- libressl
+- -libressl
 requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 description: OpenSSL/LibreSSL pseudo-random number generator access
 uri:
 - https://metacpan.org/release/Crypt-OpenSSL-Random

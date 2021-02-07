@@ -2,22 +2,19 @@ name: ruby
 version: 2.6.6
 category: dev-lang-2.6
 use_flags:
-- jit
-- ssl
-- gdbm
-- socks5
-- systemtap
-- jemalloc
-- libressl
-- tk
+- -libressl
 - berkdb
+- gdbm
+- jemalloc
+- jit
+- socks5
+- ssl
+- systemtap
+- tk
 requires:
 - name: eselect-ruby
   version: '>=0'
   category: app-eselect
-- name: tcl
-  version: '>=0'
-  category: dev-lang
 - name: tk
   version: '>=0'
   category: dev-lang
@@ -25,9 +22,6 @@ requires:
   version: '>=0'
   category: dev-libs
 - name: libffi
-  version: '>=0'
-  category: dev-libs
-- name: libressl
   version: '>=0'
   category: dev-libs
 - name: libyaml

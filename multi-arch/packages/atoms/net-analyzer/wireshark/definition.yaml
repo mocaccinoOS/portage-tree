@@ -2,34 +2,34 @@ name: wireshark
 version: 3.4.0
 category: net-analyzer
 use_flags:
-- maxminddb
-- filecaps
-- libxml2
-- lz4
-- snappy
-- -test
-- brotli
-- opus
-- zstd
-- sshdump
-- zlib
-- kerberos
-- ciscodump
-- lua
-- ssl
-- http2
-- sdjournal
-- -qt5
-- smi
-- spandsp
-- minizip
-- pcap
-- bcg729
-- ilbc
-- selinux
 - -doc
+- -test
+- bcg729
+- brotli
+- ciscodump
+- filecaps
+- http2
+- ilbc
+- kerberos
+- libxml2
+- lua
+- lz4
+- maxminddb
+- minizip
 - netlink
+- opus
+- pcap
+- qt5
 - sbc
+- sdjournal
+- selinux
+- smi
+- snappy
+- spandsp
+- sshdump
+- ssl
+- zlib
+- zstd
 requires:
 - name: pcap
   version: '>=0'
@@ -40,24 +40,18 @@ requires:
 - name: snappy
   version: '>=0'
   category: app-arch
-- name: zstd
-  version: '>=0'
-  category: app-arch
 - name: lua
   version: '>=0'
   category: dev-lang
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
 - name: libmaxminddb
   version: '>=0'
   category: dev-libs
-- name: libnl
+- name: qtmultimedia
   version: '>=0'
-  category: dev-libs-3
+  category: dev-qt-5
+- name: qtprintsupport
+  version: '>=0'
+  category: dev-qt-5
 - name: bcg729
   version: '>=0'
   category: media-libs
@@ -73,9 +67,6 @@ requires:
 - name: spandsp
   version: '>=0'
   category: media-libs
-- name: c-ares
-  version: '>=0'
-  category: net-dns
 - name: libpcap
   version: '>=0'
   category: net-libs
@@ -91,12 +82,9 @@ requires:
 - name: selinux-wireshark
   version: '>=0'
   category: sec-policy
-- name: systemd
+- name: xdg-utils
   version: '>=0'
-  category: sys-apps
-- name: libcap
-  version: '>=0'
-  category: sys-libs
+  category: x11-misc
 description: A network protocol analyzer formerly known as ethereal
 uri:
 - https://www.wireshark.org/

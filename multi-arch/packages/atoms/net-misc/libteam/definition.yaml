@@ -2,8 +2,8 @@ name: libteam
 version: "1.22"
 category: net-misc
 use_flags:
-- syslog
 - dbus
+- syslog
 - zmq
 requires:
 - name: jansson

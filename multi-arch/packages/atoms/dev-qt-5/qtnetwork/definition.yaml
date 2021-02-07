@@ -2,19 +2,16 @@ name: qtnetwork
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- networkmanager
-- kernel_linux
-- ssl
-- libressl
-- gssapi
-- libproxy
+- -libressl
 - -test
-- sctp
 - connman
+- gssapi
+- kernel_linux
+- libproxy
+- networkmanager
+- sctp
+- ssl
 requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: qtdbus
   version: '>=0'
   category: dev-qt-5

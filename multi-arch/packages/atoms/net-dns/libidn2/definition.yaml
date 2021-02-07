@@ -1,8 +1,10 @@
 name: libidn2
 version: 2.3.0
 category: net-dns
-use_flags:
-- dev-libs/libunistring[abi_x86_32(-)
+requires:
+- name: libunistring
+  version: '>=0'
+  category: dev-libs
 description: An implementation of the IDNA2008 specifications (RFCs 5890, 5891, 5892, 5893)
 uri:
 - https://www.gnu.org/software/libidn/#libidn2 https://gitlab.com/libidn/libidn2

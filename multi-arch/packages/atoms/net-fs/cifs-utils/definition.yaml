@@ -2,9 +2,9 @@ name: cifs-utils
 version: "6.11"
 category: net-fs
 use_flags:
+- ads
 - caps
 - pam
-- ads
 requires:
 - name: keyutils
   version: '>=0'

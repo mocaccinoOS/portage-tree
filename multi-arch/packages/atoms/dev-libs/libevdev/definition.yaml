@@ -2,9 +2,8 @@ name: libevdev
 version: 1.9.1
 category: dev-libs
 use_flags:
-- -test
-- dev-libs/check[abi_x86_32(-)
 - -doc
+- -test
 description: Handler library for evdev events
 uri:
 - https://www.freedesktop.org/wiki/Software/libevdev/ https://gitlab.freedesktop.org/libevdev/libevdev

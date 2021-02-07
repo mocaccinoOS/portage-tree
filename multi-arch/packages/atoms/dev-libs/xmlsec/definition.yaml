@@ -2,26 +2,14 @@ name: xmlsec
 version: 1.2.30
 category: dev-libs
 use_flags:
+- -libressl
+- -test
+- gcrypt
 - gnutls
 - nss
 - openssl
-- libressl
-- -test
-- gcrypt
 requires:
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: libxslt
-  version: '>=0'
-  category: dev-libs
-- name: nspr
   version: '>=0'
   category: dev-libs
 - name: nss

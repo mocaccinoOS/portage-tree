@@ -2,21 +2,20 @@ name: apache
 version: 2.4.46
 category: www-servers-2
 use_flags:
-- =dev-libs/apr-util-1*:=[gdbm=,ldap
-- apache2_modules_proxy_http2
-- apache2_modules_deflate
-- gdbm
-- apache2_modules_md
-- libressl
-- selinux
-- apache2_modules_session_crypto
-- ldap
+- -libressl
 - apache2_modules_brotli
+- apache2_modules_deflate
 - apache2_modules_http2
-- ssl
-- suexec-caps
+- apache2_modules_md
 - apache2_modules_mime
+- apache2_modules_proxy_http2
+- apache2_modules_session_crypto
+- gdbm
+- ldap
+- selinux
+- ssl
 - suexec
+- suexec-caps
 requires:
 - name: brotli
   version: '>=0'
@@ -24,7 +23,7 @@ requires:
 - name: mime-types
   version: '>=0'
   category: app-misc
-- name: apr-util
+- name: apr
   version: '>=0'
   category: dev-libs-1
 - name: libpcre
@@ -33,6 +32,9 @@ requires:
 - name: nghttp2
   version: '>=0'
   category: net-libs
+- name: openldap
+  version: '>=0'
+  category: net-nds
 - name: selinux-apache
   version: '>=0'
   category: sec-policy

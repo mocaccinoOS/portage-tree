@@ -3,10 +3,9 @@ version: "1.35"
 category: net-dns
 use_flags:
 - -emacs
+- java
 - mono
 - nls
-- '>=virtual/libintl-0-r1[abi_x86_32(-)'
-- java
 requires:
 - name: java-config
   version: '>=0'

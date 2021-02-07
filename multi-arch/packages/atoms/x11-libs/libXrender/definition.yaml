@@ -2,13 +2,12 @@ name: libXrender
 version: 0.9.10
 category: x11-libs
 use_flags:
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
-- name: xorg-proto
+- name: libX11
   version: '>=0'
-  category: x11-base
+  category: x11-libs
 description: X.Org Xrender library
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libXrender

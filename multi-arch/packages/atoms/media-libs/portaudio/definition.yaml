@@ -2,11 +2,13 @@ name: portaudio
 version: 19.06.00
 category: media-libs
 use_flags:
-- '>=media-libs/alsa-lib-1.0.27.2[abi_x86_32(-)'
-- jack
-- virtual/jack[abi_x86_32(-)
 - -doc
 - alsa
+- jack
+requires:
+- name: alsa-lib
+  version: '>=0'
+  category: media-libs
 description: A free, cross-platform, open-source, audio I/O library
 uri:
 - http://www.portaudio.com/

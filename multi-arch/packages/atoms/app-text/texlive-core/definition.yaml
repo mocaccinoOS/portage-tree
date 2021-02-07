@@ -3,9 +3,9 @@ version: "2020"
 category: app-text
 use_flags:
 - X
+- tk
 - xetex
 - xindy
-- tk
 requires:
 - name: libpaper
   version: '>=0'
@@ -19,9 +19,6 @@ requires:
 - name: teckit
   version: '>=0'
   category: app-text
-- name: gmp
-  version: '>=0'
-  category: dev-libs
 - name: mpfr
   version: '>=0'
   category: dev-libs
@@ -55,19 +52,10 @@ requires:
 - name: texlive-fontutils
   version: '>=0'
   category: dev-texlive
-- name: graphite2
-  version: '>=0'
-  category: media-gfx
 - name: gd
   version: '>=0'
   category: media-libs-2
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs
 - name: libXmu
-  version: '>=0'
-  category: x11-libs
-- name: pixman
   version: '>=0'
   category: x11-libs
 description: A complete TeX distribution

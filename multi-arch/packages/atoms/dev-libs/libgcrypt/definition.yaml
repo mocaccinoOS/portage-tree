@@ -2,8 +2,11 @@ name: libgcrypt
 version: 1.8.6
 category: dev-libs
 use_flags:
-- '>=dev-libs/libgpg-error-1.25[abi_x86_32(-)'
 - -doc
+requires:
+- name: libgpg-error
+  version: '>=0'
+  category: dev-libs
 description: General purpose crypto library based on the code used in GnuPG
 uri:
 - http://www.gnupg.org/

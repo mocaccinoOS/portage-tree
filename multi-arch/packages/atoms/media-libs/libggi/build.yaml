@@ -24,9 +24,6 @@ requires:
 - name: libXt
   version: '>=0'
   category: x11-libs
-- name: libXxf86dga
-  version: '>=0'
-  category: x11-libs
 - name: libXxf86vm
   version: '>=0'
   category: x11-libs

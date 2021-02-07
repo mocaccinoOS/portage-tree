@@ -2,10 +2,10 @@ name: sed
 version: "4.8"
 category: sys-apps
 use_flags:
-- selinux
-- static
 - acl
 - nls
+- selinux
+- static
 requires:
 - name: libselinux
   version: '>=0'

@@ -2,9 +2,8 @@ name: qtwidgets
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- ~dev-qt/qtgui-5.15.1[gles2-only=,png=,X
-- gtk
 - -test
+- gtk
 requires:
 - name: qtgui
   version: '>=0'
@@ -12,9 +11,6 @@ requires:
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
-- name: pango
-  version: '>=0'
-  category: x11-libs
 description: Set of components for creating classic desktop-style UIs for the Qt5 framework
 uri:
 - https://www.qt.io/

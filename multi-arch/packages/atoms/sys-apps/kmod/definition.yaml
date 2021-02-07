@@ -2,22 +2,23 @@ name: kmod
 version: "27"
 category: sys-apps
 use_flags:
-- dev-python/cython[python_targets_python3_6(-)
 - -doc
-- libressl
-- pkcs7
-- zlib
-- python
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- -libressl
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - lzma
-- python_targets_python3_6
-- python_targets_python3_8
+- pkcs7
+- python
 - python_targets_python3_7
+- zlib
 requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: openrc
   version: '>=0'
   category: sys-apps

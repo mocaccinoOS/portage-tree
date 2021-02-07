@@ -15,6 +15,12 @@ requires:
 - name: ca-certificates
   version: '>=0'
   category: app-misc
+- name: libffi
+  version: '>=0'
+  category: dev-libs
+- name: libtasn1
+  version: '>=0'
+  category: dev-libs
 - name: systemd
   version: '>=0'
   category: sys-apps

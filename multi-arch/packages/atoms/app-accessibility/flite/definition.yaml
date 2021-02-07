@@ -3,7 +3,10 @@ version: "1.4"
 category: app-accessibility
 use_flags:
 - alsa
-- '>=media-libs/alsa-lib-1.0.27.2[abi_x86_32(-)'
+requires:
+- name: alsa-lib
+  version: '>=0'
+  category: media-libs
 description: Flite text to speech engine
 uri:
 - http://www.speech.cs.cmu.edu/flite/index.html

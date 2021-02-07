@@ -2,8 +2,8 @@ name: edk2-ovmf
 version: "202008"
 category: sys-firmware
 use_flags:
-- binary
 - amd64
+- binary
 description: UEFI firmware for 64-bit x86 virtual machines
 uri:
 - https://github.com/tianocore/edk2

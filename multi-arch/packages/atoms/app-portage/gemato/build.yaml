@@ -15,9 +15,6 @@ requires:
 - name: gnupg
   version: '>=0'
   category: app-crypt
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
-- name: pypy3
+- name: requests
   version: '>=0'
   category: dev-python

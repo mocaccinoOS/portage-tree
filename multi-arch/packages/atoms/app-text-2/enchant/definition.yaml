@@ -2,8 +2,8 @@ name: enchant
 version: 2.2.8
 category: app-text-2
 use_flags:
-- hunspell
 - aspell
+- hunspell
 requires:
 - name: aspell
   version: '>=0'

@@ -5,15 +5,6 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
-- name: libpng
-  version: '>=0'
-  category: media-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXft
   version: '>=0'
   category: x11-libs

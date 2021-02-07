@@ -2,25 +2,22 @@ name: openvpn
 version: 2.4.9
 category: net-vpn
 use_flags:
-- pkcs11
-- pam
-- lz4
-- selinux
-- kernel_linux
+- -libressl
 - -test
-- ssl
-- mbedtls
-- libressl
-- lzo
-- systemd
 - iproute2
+- kernel_linux
+- lz4
+- lzo
+- mbedtls
+- pam
+- pkcs11
+- selinux
+- ssl
+- systemd
 requires:
 - name: openvpn
   version: '>=0'
   category: acct-user
-- name: lz4
-  version: '>=0'
-  category: app-arch
 - name: lzo
   version: '>=0'
   category: dev-libs-2
@@ -42,9 +39,6 @@ requires:
 - name: systemd
   version: '>=0'
   category: sys-apps
-- name: pam
-  version: '>=0'
-  category: sys-libs
 description: Robust and highly flexible tunneling application compatible with many OSes
 uri:
 - https://openvpn.net/

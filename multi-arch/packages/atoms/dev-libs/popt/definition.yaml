@@ -3,7 +3,6 @@ version: "1.16"
 category: dev-libs
 use_flags:
 - nls
-- '>=virtual/libintl-0-r1[abi_x86_32(-)'
 description: Parse Options - Command line parser
 uri:
 - http://rpm5.org/

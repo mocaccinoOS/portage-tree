@@ -3,9 +3,11 @@ version: 1.0.2
 category: media-libs
 use_flags:
 - X
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- '>=x11-libs/libXxf86dga-1.1.4[abi_x86_32(-)'
 - kernel_linux
+requires:
+- name: libXxf86dga
+  version: '>=0'
+  category: x11-libs
 description: Easy to use, but yet powerful, API for all possible input sources
 uri:
 - https://ibiblio.org/ggicore/packages/libgii.html

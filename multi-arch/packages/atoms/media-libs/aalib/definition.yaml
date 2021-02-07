@@ -2,13 +2,13 @@ name: aalib
 version: "1.4"
 category: media-libs
 use_flags:
-- '>=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)'
 - X
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
 - gpm
-- '>=sys-libs/gpm-1.20.7-r2[abi_x86_32(-)'
 - slang
-- '>=sys-libs/slang-2.2.4-r1[abi_x86_32(-)'
+requires:
+- name: libX11
+  version: '>=0'
+  category: x11-libs
 description: A ASCII-Graphics Library
 uri:
 - http://aa-project.sourceforge.net/aalib/

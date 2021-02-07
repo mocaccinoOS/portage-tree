@@ -2,24 +2,23 @@ name: newt
 version: 0.52.21
 category: dev-libs
 use_flags:
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - elibc_uclibc
 - gpm
-- tcl
-- python_targets_python3_6
 - python_targets_python3_7
-- python_targets_python3_8
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- tcl
 requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: popt
   version: '>=0'
   category: dev-libs
-- name: gpm
-  version: '>=0'
-  category: sys-libs
 description: Redhat's Newt windowing toolkit development files
 uri:
 - https://pagure.io/newt

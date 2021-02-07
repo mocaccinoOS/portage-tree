@@ -1,9 +1,10 @@
 name: libnsl
 version: 1.3.0
 category: net-libs
-use_flags:
-- '>=net-libs/libtirpc-1.2.0[abi_x86_32(-)'
 requires:
+- name: libtirpc
+  version: '>=0'
+  category: net-libs
 - name: glibc
   version: '>=0'
   category: sys-libs-2.2

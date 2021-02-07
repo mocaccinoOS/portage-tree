@@ -15,9 +15,6 @@ requires:
 - name: Mac-Pasteboard
   version: '>=0'
   category: dev-perl
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
 - name: ncurses
   version: '>=0'
   category: sys-libs
@@ -25,9 +22,6 @@ requires:
   version: '>=0'
   category: x11-libs-2
 - name: libXft
-  version: '>=0'
-  category: x11-libs
-- name: libXrender
   version: '>=0'
   category: x11-libs
 - name: startup-notification

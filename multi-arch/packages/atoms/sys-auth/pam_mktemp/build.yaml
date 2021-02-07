@@ -15,9 +15,6 @@ requires:
 - name: linux-headers
   version: '>=0'
   category: sys-kernel
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs

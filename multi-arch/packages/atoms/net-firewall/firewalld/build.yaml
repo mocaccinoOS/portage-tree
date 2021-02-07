@@ -15,9 +15,6 @@ requires:
 - name: PyQt5
   version: '>=0'
   category: dev-python
-- name: dbus-python
-  version: '>=0'
-  category: dev-python
 - name: decorator
   version: '>=0'
   category: dev-python
@@ -36,3 +33,6 @@ requires:
 - name: nftables
   version: '>=0'
   category: net-firewall
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3

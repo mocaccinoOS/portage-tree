@@ -2,19 +2,20 @@ name: libsemanage
 version: "3.0"
 category: sys-libs
 use_flags:
+- -python_targets_python3_6
+- -python_targets_python3_8
 - python
 - python_targets_python3_7
-- python_targets_python3_8
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- python_targets_python3_6
-- '>=sys-libs/libselinux-3.0[abi_x86_32(-)'
-- '>=sys-libs/libsepol-3.0[abi_x86_32(-)'
-- '>=sys-process/audit-2.2.2[abi_x86_32(-)'
-- '>=dev-libs/ustr-1.0.4-r2[abi_x86_32(-)'
 requires:
-- name: python
+- name: ustr
   version: '>=0'
-  category: dev-lang-3.7
+  category: dev-libs
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: audit
+  version: '>=0'
+  category: sys-process
 description: SELinux kernel and policy management library
 uri:
 - https://github.com/SELinuxProject/selinux/wiki

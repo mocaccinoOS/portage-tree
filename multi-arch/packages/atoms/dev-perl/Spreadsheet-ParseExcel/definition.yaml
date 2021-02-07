@@ -2,8 +2,8 @@ name: Spreadsheet-ParseExcel
 version: 0.650.0
 category: dev-perl
 use_flags:
-- cjk
 - -test
+- cjk
 - unicode
 requires:
 - name: Crypt-RC4

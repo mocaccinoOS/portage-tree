@@ -15,9 +15,6 @@ requires:
 - name: vacation
   version: '>=0'
   category: net-mail
-- name: openldap
-  version: '>=0'
-  category: net-nds
 - name: m4
   version: '>=0'
   category: sys-devel

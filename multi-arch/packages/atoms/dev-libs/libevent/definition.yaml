@@ -2,10 +2,8 @@ name: libevent
 version: 2.1.11
 category: dev-libs
 use_flags:
+- -libressl
 - ssl
-- libressl
-- '>=dev-libs/openssl-1.0.1h-r2:0=[abi_x86_32(-)'
-- dev-libs/libressl:0=[abi_x86_32(-)
 requires:
 - name: 9libs
   version: '>=0'

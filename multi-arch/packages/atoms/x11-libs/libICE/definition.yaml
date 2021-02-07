@@ -2,9 +2,9 @@ name: libICE
 version: 1.0.10
 category: x11-libs
 use_flags:
+- -ppc-aix
+- -x86-winnt
 - elibc_glibc
-- x86-winnt
-- ppc-aix
 requires:
 - name: libbsd
   version: '>=0'

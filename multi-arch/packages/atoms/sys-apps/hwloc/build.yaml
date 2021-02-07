@@ -12,9 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libtool
+- name: libxml2
   version: '>=0'
-  category: sys-devel-2
+  category: dev-libs-2
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
+- name: numactl
+  version: '>=0'
+  category: sys-process
 - name: nvidia-drivers
   version: '>=0'
   category: x11-drivers
+- name: libpciaccess
+  version: '>=0'
+  category: x11-libs

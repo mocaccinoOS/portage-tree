@@ -12,9 +12,27 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: brotli
+  version: '>=0'
+  category: app-arch
 - name: ca-certificates
   version: '>=0'
   category: app-misc
-- name: libtool
+- name: nss
   version: '>=0'
-  category: sys-devel-2
+  category: dev-libs
+- name: libmetalink
+  version: '>=0'
+  category: media-libs
+- name: rtmpdump
+  version: '>=0'
+  category: media-video
+- name: libssh2
+  version: '>=0'
+  category: net-libs
+- name: nghttp2
+  version: '>=0'
+  category: net-libs
+- name: openldap
+  version: '>=0'
+  category: net-nds

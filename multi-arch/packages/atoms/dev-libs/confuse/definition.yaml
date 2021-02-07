@@ -3,7 +3,6 @@ version: 3.2.2
 category: dev-libs
 use_flags:
 - nls
-- virtual/libintl[abi_x86_32(-)
 description: a configuration file parser library
 uri:
 - https://github.com/martinh/libconfuse

@@ -12,12 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
+- name: ustr
   version: '>=0'
-  category: dev-lang-3.7
-- name: swig
-  version: '>=0'
-  category: dev-lang
+  category: dev-libs
 - name: bison
   version: '>=0'
   category: sys-devel
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: audit
+  version: '>=0'
+  category: sys-process

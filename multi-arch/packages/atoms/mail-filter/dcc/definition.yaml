@@ -2,8 +2,8 @@ name: dcc
 version: 1.3.158
 category: mail-filter
 use_flags:
-- rrdtool
 - milter
+- rrdtool
 requires:
 - name: libmilter
   version: '>=0'

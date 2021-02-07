@@ -39,9 +39,6 @@ requires:
 - name: qmails
   version: '>=0'
   category: acct-user
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: libidn2
   version: '>=0'
   category: net-dns

@@ -2,16 +2,13 @@ name: gobject-introspection
 version: 1.64.1
 category: dev-libs
 use_flags:
-- -python_single_target_python3_8
-- doctool
-- gtk-doc
-- -test
+- -gtk-doc
 - -python_single_target_python3_6
+- -python_single_target_python3_8
+- -test
+- doctool
 - python_single_target_python3_7
 requires:
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: glib
   version: '>=0'
   category: dev-libs-2

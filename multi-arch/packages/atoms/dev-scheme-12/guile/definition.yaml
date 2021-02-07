@@ -1,9 +1,10 @@
 name: guile
 version: 2.2.7
 category: dev-scheme-12
-use_flags:
-- '>=dev-libs/boehm-gc-7.0:=[threads'
 requires:
+- name: boehm-gc
+  version: '>=0'
+  category: dev-libs
 - name: gmp
   version: '>=0'
   category: dev-libs
@@ -16,9 +17,6 @@ requires:
 - name: libunistring
   version: '>=0'
   category: dev-libs
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 - name: readline
   version: '>=0'
   category: sys-libs

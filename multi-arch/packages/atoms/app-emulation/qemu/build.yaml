@@ -24,24 +24,12 @@ requires:
 - name: capstone
   version: '>=0'
   category: dev-libs
-- name: nettle
-  version: '>=0'
-  category: dev-libs
-- name: libpng
-  version: '>=0'
-  category: media-libs
-- name: mesa
-  version: '>=0'
-  category: media-libs
 - name: sdl2-image
   version: '>=0'
   category: media-libs
 - name: virglrenderer
   version: '>=0'
   category: media-libs
-- name: pulseaudio
-  version: '>=0'
-  category: media-sound
 - name: libnfs
   version: '>=0'
   category: net-fs
@@ -57,9 +45,6 @@ requires:
 - name: vde
   version: '>=0'
   category: net-misc
-- name: attr
-  version: '>=0'
-  category: sys-apps
 - name: texinfo
   version: '>=0'
   category: sys-apps
@@ -81,15 +66,9 @@ requires:
 - name: multipath-tools
   version: '>=0'
   category: sys-fs
-- name: libcap
-  version: '>=0'
-  category: sys-libs
 - name: liburing
   version: '>=0'
   category: sys-libs
-- name: libxkbcommon
-  version: '>=0'
-  category: x11-libs
 - name: vte
   version: '>=0'
   category: x11-libs-2.91

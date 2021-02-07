@@ -2,16 +2,20 @@ name: p11-kit
 version: 0.23.19
 category: app-crypt
 use_flags:
-- '>=dev-libs/libtasn1-3.4:=[abi_x86_32(-)'
+- asn1
 - libffi
-- dev-libs/libffi:=[abi_x86_32(-)
 - systemd
 - trust
-- asn1
 requires:
 - name: ca-certificates
   version: '>=0'
   category: app-misc
+- name: libffi
+  version: '>=0'
+  category: dev-libs
+- name: libtasn1
+  version: '>=0'
+  category: dev-libs
 - name: systemd
   version: '>=0'
   category: sys-apps

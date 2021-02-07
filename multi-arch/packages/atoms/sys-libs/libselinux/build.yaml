@@ -15,12 +15,21 @@ requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: ruby
   version: '>=0'
   category: dev-lang-2.6
 - name: swig
   version: '>=0'
   category: dev-lang
+- name: libpcre2
+  version: '>=0'
+  category: dev-libs
 - name: fts-standalone
+  version: '>=0'
+  category: sys-libs
+- name: libsepol
   version: '>=0'
   category: sys-libs

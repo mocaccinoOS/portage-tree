@@ -24,18 +24,18 @@ requires:
 - name: lua
   version: '>=0'
   category: dev-lang
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: libmaxminddb
   version: '>=0'
   category: dev-libs
-- name: libnl
+- name: linguist-tools
   version: '>=0'
-  category: dev-libs-3
-- name: libxml2
+  category: dev-qt-5
+- name: qtmultimedia
   version: '>=0'
-  category: dev-libs-2
+  category: dev-qt-5
+- name: qtprintsupport
+  version: '>=0'
+  category: dev-qt-5
 - name: bcg729
   version: '>=0'
   category: media-libs
@@ -51,9 +51,6 @@ requires:
 - name: spandsp
   version: '>=0'
   category: media-libs
-- name: c-ares
-  version: '>=0'
-  category: net-dns
 - name: libpcap
   version: '>=0'
   category: net-libs
@@ -66,6 +63,6 @@ requires:
 - name: nghttp2
   version: '>=0'
   category: net-libs
-- name: systemd
+- name: xdg-utils
   version: '>=0'
-  category: sys-apps
+  category: x11-misc

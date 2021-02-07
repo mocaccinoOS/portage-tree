@@ -2,18 +2,16 @@ name: speech-dispatcher
 version: 0.9.1
 category: app-accessibility
 use_flags:
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- flite
-- nas
-- python_targets_python3_7
-- python_targets_python3_8
-- dev-python/pyxdg[python_targets_python3_6(-)
-- python
-- python_targets_python3_6
+- -python_targets_python3_6
+- -python_targets_python3_8
+- alsa
 - ao
 - espeak
-- alsa
+- flite
+- nas
 - pulseaudio
+- python
+- python_targets_python3_7
 requires:
 - name: espeak
   version: '>=0'
@@ -24,16 +22,10 @@ requires:
 - name: dotconf
   version: '>=0'
   category: dev-libs
-- name: glib
+- name: pyxdg
   version: '>=0'
-  category: dev-libs-2
+  category: dev-python
 - name: libao
-  version: '>=0'
-  category: media-libs
-- name: libsndfile
-  version: '>=0'
-  category: media-libs
-- name: nas
   version: '>=0'
   category: media-libs
 description: Speech synthesis interface

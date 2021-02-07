@@ -27,15 +27,6 @@ requires:
 - name: ldns
   version: '>=0'
   category: net-libs
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
-- name: audit
-  version: '>=0'
-  category: sys-process

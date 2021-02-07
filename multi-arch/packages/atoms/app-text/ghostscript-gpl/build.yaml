@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: jbig2dec
   version: '>=0'
   category: media-libs
@@ -27,15 +21,6 @@ requires:
 - name: libidn
   version: '>=0'
   category: net-dns
-- name: cups
-  version: '>=0'
-  category: net-print
-- name: dbus
-  version: '>=0'
-  category: sys-apps
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
-- name: libXext
-  version: '>=0'
-  category: x11-libs

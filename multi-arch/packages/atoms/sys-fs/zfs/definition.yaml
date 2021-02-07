@@ -2,27 +2,24 @@ name: zfs
 version: 0.8.5
 category: sys-fs
 use_flags:
-- dev-python/setuptools[python_targets_python3_6(-)
-- python_targets_python3_6
-- prefix
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- kernel-builtin
-- python_targets_python3_8
-- virtual/python-cffi[python_targets_python3_6(-)
-- net-libs/libtirpc[static-libs
-- dev-libs/libressl:0=[static-libs
-- minimal
-- dev-libs/openssl:0=[static-libs
-- python_targets_python3_7
-- sys-apps/util-linux[static-libs
-- python
-- sys-libs/zlib[static-libs(+)
-- libressl
+- -kernel-builtin
+- -libressl
+- -minimal
+- -python_targets_python3_6
+- -python_targets_python3_8
 - nls
-- virtual/libudev[static-libs(-)
+- prefix
+- python
+- python_targets_python3_7
 - rootfs
 - test-suite
 requires:
+- name: libtirpc
+  version: '>=0'
+  category: net-libs
+- name: kmod
+  version: '>=0'
+  category: sys-apps
 - name: parted
   version: '>=0'
   category: sys-block
@@ -36,9 +33,6 @@ requires:
   version: '>=0'
   category: sys-fs
 - name: udev-init-scripts
-  version: '>=0'
-  category: sys-fs
-- name: zfs-kmod
   version: '>=0'
   category: sys-fs
 - name: genkernel

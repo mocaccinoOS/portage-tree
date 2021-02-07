@@ -2,52 +2,39 @@ name: pulseaudio
 version: "13.0"
 category: media-sound
 use_flags:
-- x11-libs/libICE[abi_x86_32(-)
-- '>=sys-libs/libcap-2.22-r2[abi_x86_32(-)'
-- webrtc-aec
-- selinux
-- glib
-- '>=x11-libs/libxcb-1.6[abi_x86_32(-)'
-- asyncns
-- x11-libs/libXtst[abi_x86_32(-)
-- elogind
-- gdbm
-- system-wide
-- -qt5
-- libressl
-- zeroconf
-- udev
-- caps
-- elibc_glibc
-- systemd
-- libsamplerate
-- dbus
-- gconf
 - -doc
-- ssl
-- sox
-- alsa
-- bluetooth
-- gtk
+- -elogind
+- -libressl
 - -test
-- ofono-headset
-- tcpd
-- '>=sys-apps/dbus-1.0.0[abi_x86_32(-)'
-- elibc_uclibc
-- realtime
-- '>=media-libs/libsndfile-1.0.20[abi_x86_32(-)'
-- '>=x11-libs/libX11-1.4.0[abi_x86_32(-)'
-- lirc
-- sys-apps/systemd:0=[abi_x86_32(-)
 - X
-- orc
-- '>=dev-libs/glib-2.26.0:2[abi_x86_32(-)'
-- sys-apps/tcp-wrappers[abi_x86_32(-)
-- jack
-- net-libs/libasyncns[abi_x86_32(-)
+- alsa
+- asyncns
+- bluetooth
+- caps
+- dbus
+- elibc_glibc
+- elibc_uclibc
 - equalizer
-- x11-libs/libSM[abi_x86_32(-)
-- '>=x11-libs/libXtst-1.0.99.2[abi_x86_32(-)'
+- gconf
+- gdbm
+- glib
+- gtk
+- jack
+- libsamplerate
+- lirc
+- ofono-headset
+- orc
+- qt5
+- realtime
+- selinux
+- sox
+- ssl
+- system-wide
+- systemd
+- tcpd
+- udev
+- webrtc-aec
+- zeroconf
 requires:
 - name: lirc
   version: '>=0'
@@ -58,12 +45,15 @@ requires:
 - name: libltdl
   version: '>=0'
   category: dev-libs
-- name: libressl
+- name: PyQt5
   version: '>=0'
-  category: dev-libs
+  category: dev-python
 - name: gconf
   version: '>=0'
   category: gnome-base-2
+- name: libsndfile
+  version: '>=0'
+  category: media-libs
 - name: sbc
   version: '>=0'
   category: media-libs
@@ -82,21 +72,24 @@ requires:
 - name: avahi
   version: '>=0'
   category: net-dns
+- name: libasyncns
+  version: '>=0'
+  category: net-libs
 - name: ofono
   version: '>=0'
   category: net-misc
 - name: selinux-pulseaudio
   version: '>=0'
   category: sec-policy
+- name: tcp-wrappers
+  version: '>=0'
+  category: sys-apps
 - name: rtkit
   version: '>=0'
   category: sys-auth
-- name: gdbm
+- name: libXtst
   version: '>=0'
-  category: sys-libs
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
+  category: x11-libs
 description: A networked sound server with an advanced plugin system
 uri:
 - https://www.freedesktop.org/wiki/Software/PulseAudio/

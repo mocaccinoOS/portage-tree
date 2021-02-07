@@ -15,9 +15,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: jbigkit
-  version: '>=0'
-  category: media-libs
 - name: svgalib
   version: '>=0'
   category: media-libs

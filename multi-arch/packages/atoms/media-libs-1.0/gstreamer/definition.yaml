@@ -2,18 +2,23 @@ name: gstreamer
 version: 1.16.2
 category: media-libs-1.0
 use_flags:
-- sys-libs/libcap[abi_x86_32(-)
-- introspection
-- unwind
-- nls
-- '>=sys-libs/libunwind-1.2_rc1[abi_x86_32(-)'
-- dev-libs/elfutils[abi_x86_32(-)
-- '>=dev-libs/glib-2.40.0:2[abi_x86_32(-)'
 - caps
+- introspection
+- nls
+- unwind
 requires:
+- name: elfutils
+  version: '>=0'
+  category: dev-libs
 - name: gst-plugins-bad
   version: '>=0'
   category: media-libs-1.0
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
 description: Open source multimedia framework
 uri:
 - https://gstreamer.freedesktop.org/

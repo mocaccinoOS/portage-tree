@@ -2,8 +2,8 @@ name: libmicrohttpd
 version: 0.9.70
 category: net-libs
 use_flags:
-- ssl
 - -test
+- ssl
 requires:
 - name: libgcrypt
   version: '>=0'

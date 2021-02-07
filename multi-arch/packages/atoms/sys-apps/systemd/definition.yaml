@@ -2,43 +2,36 @@ name: systemd
 version: "246"
 category: sys-apps
 use_flags:
-- gcrypt
-- pwquality
-- lzma
-- pcre
-- pam
-- homed
-- build
-- elfutils
-- dns-over-tls
-- kmod
 - acl
-- selinux
-- lz4
-- gnuefi
-- xkb
 - apparmor
 - audit
-- '>=app-arch/lz4-0_p131:0=[abi_x86_32(-)'
-- importd
-- repart
-- nat
+- build
 - cryptsetup
-- idn
-- zstd
-- '>=app-arch/zstd-1.4.0:0=[abi_x86_32(-)'
-- resolvconf
-- http
-- qrcode
-- pkcs11
-- '>=app-arch/xz-utils-5.0.5-r1:0=[abi_x86_32(-)'
-- sys-libs/pam:=[abi_x86_32(-)
 - curl
+- dns-over-tls
+- elfutils
+- gcrypt
+- gnuefi
+- homed
+- http
+- idn
+- importd
+- kmod
+- lz4
+- lzma
+- nat
+- pam
+- pcre
+- pkcs11
+- pwquality
+- qrcode
+- repart
+- resolvconf
 - seccomp
-- '>=dev-libs/libgcrypt-1.4.5:0=[abi_x86_32(-)'
-- sys-libs/libcap:0=[abi_x86_32(-)
+- selinux
 - sysv-utils
-- '>=sys-apps/util-linux-2.30:0=[abi_x86_32(-)'
+- xkb
+- zstd
 requires:
 - name: adm
   version: '>=0'
@@ -67,18 +60,18 @@ requires:
 - name: systemd-timesync
   version: '>=0'
   category: acct-user
-- name: p11-kit
+- name: zstd
   version: '>=0'
-  category: app-crypt
+  category: app-arch
 - name: elfutils
+  version: '>=0'
+  category: dev-libs
+- name: openssl
   version: '>=0'
   category: dev-libs
 - name: qrencode
   version: '>=0'
   category: media-gfx
-- name: libidn2
-  version: '>=0'
-  category: net-dns
 - name: openresolv
   version: '>=0'
   category: net-dns

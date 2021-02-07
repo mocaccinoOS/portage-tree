@@ -11,9 +11,8 @@ uri:
 license: '|| ( GPL-2 BSD-2 )'
 labels:
   DEPEND: '>=app-arch/rpm2targz-9.0.0.3g'
-  IUSE: static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
   RDEPEND: '!sys-fabric/openib-userspace !sys-fabric/libibverbs:0 !sys-fabric/libibverbs:3.5'
   emerge.packages: sys-fabric/libibverbs:3.12
   kit: gentoo
   original.package.name: sys-fabric/libibverbs
-  original.package.version: 1.1.7-r1
+  original.package.version: 1.1.7

@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps

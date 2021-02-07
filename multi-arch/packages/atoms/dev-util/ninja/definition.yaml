@@ -2,14 +2,10 @@ name: ninja
 version: 1.10.0
 category: dev-util
 use_flags:
-- -emacs
 - -doc
+- -emacs
 - -test
-- vim-syntax
-requires:
-- name: vim
-  version: '>=0'
-  category: app-editors
+- -vim-syntax
 description: A small build system similar to make
 uri:
 - https://ninja-build.org/

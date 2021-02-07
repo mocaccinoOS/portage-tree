@@ -2,9 +2,9 @@ name: oath-toolkit
 version: 2.6.2
 category: sys-auth
 use_flags:
-- pskc
-- pam
 - -test
+- pam
+- pskc
 requires:
 - name: xmlsec
   version: '>=0'

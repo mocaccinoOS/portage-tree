@@ -15,16 +15,10 @@ requires:
 - name: acl
   version: '>=0'
   category: sys-apps
-- name: attr
-  version: '>=0'
-  category: sys-apps
 - name: skey
   version: '>=0'
   category: sys-auth
 - name: cracklib
-  version: '>=0'
-  category: sys-libs
-- name: libselinux
   version: '>=0'
   category: sys-libs
 - name: libsemanage
@@ -33,6 +27,3 @@ requires:
 - name: pam
   version: '>=0'
   category: sys-libs
-- name: audit
-  version: '>=0'
-  category: sys-process

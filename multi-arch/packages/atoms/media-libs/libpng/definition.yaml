@@ -1,8 +1,10 @@
 name: libpng
 version: 1.6.37
 category: media-libs
-use_flags:
-- '>=sys-libs/zlib-1.2.8-r1:=[abi_x86_32(-)'
+requires:
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: Portable Network Graphics library
 uri:
 - http://www.libpng.org/

@@ -12,9 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libtool
+- name: cairo
   version: '>=0'
-  category: sys-devel-2
-- name: xorg-proto
+  category: x11-libs
+- name: libXcursor
   version: '>=0'
-  category: x11-base
+  category: x11-libs
+- name: libXft
+  version: '>=0'
+  category: x11-libs
+- name: libXinerama
+  version: '>=0'
+  category: x11-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs

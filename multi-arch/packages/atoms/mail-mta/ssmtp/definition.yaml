@@ -2,10 +2,10 @@ name: ssmtp
 version: "2.64"
 category: mail-mta
 use_flags:
-- ssl
+- -libressl
 - gnutls
-- libressl
 - mta
+- ssl
 description: Extremely simple MTA to get mail off the system to a Mailhub
 uri:
 - ftp://ftp.debian.org/debian/pool/main/s/ssmtp/

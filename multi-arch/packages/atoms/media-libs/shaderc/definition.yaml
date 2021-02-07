@@ -1,9 +1,13 @@
 name: shaderc
 version: "2020.2"
 category: media-libs
-use_flags:
-- '>=dev-util/glslang-8.13.3560_pre20200404[abi_x86_32(-)'
-- '>=dev-util/spirv-tools-2020.3[abi_x86_32(-)'
+requires:
+- name: glslang
+  version: '>=0'
+  category: dev-util
+- name: spirv-tools
+  version: '>=0'
+  category: dev-util
 description: Collection of tools, libraries and tests for shader compilation
 uri:
 - https://github.com/google/shaderc

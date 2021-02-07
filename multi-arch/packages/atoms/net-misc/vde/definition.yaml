@@ -2,17 +2,14 @@ name: vde
 version: 2.3.2
 category: net-misc
 use_flags:
-- ssl
-- libressl
-- selinux
+- -libressl
 - pcap
+- selinux
+- ssl
 requires:
 - name: qemu
   version: '>=0'
   category: acct-group
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: libpcap
   version: '>=0'
   category: net-libs

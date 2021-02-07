@@ -27,9 +27,6 @@ requires:
 - name: libffi
   version: '>=0'
   category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: blt
   version: '>=0'
   category: dev-tcltk
@@ -46,8 +43,5 @@ requires:
   version: '>=0'
   category: sys-devel-9.3.0
 - name: gdbm
-  version: '>=0'
-  category: sys-libs
-- name: ncurses
   version: '>=0'
   category: sys-libs

@@ -2,35 +2,29 @@ name: cyrus-sasl
 version: 2.1.27
 category: dev-libs-2
 use_flags:
+- -libressl
 - authdaemond
-- sqlite
-- '>=dev-db/sqlite-3.8.2:3[abi_x86_32(-)'
-- '>=dev-libs/openssl-1.0.1h-r2:0=[abi_x86_32(-)'
-- selinux
+- berkdb
+- gdbm
+- java
+- kerberos
+- mysql
+- openldap
 - pam
 - postgres
-- gdbm
-- openldap
-- '>=sys-libs/gdbm-1.10-r1:=[abi_x86_32(-)'
-- '>=sys-libs/pam-0-r1[abi_x86_32(-)'
-- dev-libs/libressl:=[abi_x86_32(-)
-- libressl
-- '>=sys-libs/db-4.8.30-r1:=[abi_x86_32(-)'
-- '>=virtual/krb5-0-r1[abi_x86_32(-)'
-- '>=net-nds/openldap-2.4.38-r1[abi_x86_32(-)'
-- mysql
-- dev-db/mysql-connector-c:0=[abi_x86_32(-)
-- berkdb
-- kerberos
+- selinux
+- sqlite
 - ssl
-- java
 requires:
+- name: mysql-connector-c
+  version: '>=0'
+  category: dev-db
 - name: postgresql
   version: '>=0'
   category: dev-db-12
-- name: java-config
+- name: sqlite
   version: '>=0'
-  category: dev-java-2
+  category: dev-db-3
 - name: courier-imap
   version: '>=0'
   category: net-mail
@@ -49,4 +43,4 @@ labels:
   emerge.packages: dev-libs/cyrus-sasl:2
   kit: gentoo
   original.package.name: dev-libs/cyrus-sasl
-  original.package.version: 2.1.27-r4
+  original.package.version: 2.1.27-r3

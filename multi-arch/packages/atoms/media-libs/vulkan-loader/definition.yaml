@@ -2,10 +2,7 @@ name: vulkan-loader
 version: 1.2.141
 category: media-libs
 use_flags:
-- dev-libs/wayland:=[abi_x86_32(-)
 - X
-- x11-libs/libX11:=[abi_x86_32(-)
-- x11-libs/libXrandr:=[abi_x86_32(-)
 - wayland
 description: Vulkan Installable Client Driver (ICD) Loader
 uri:

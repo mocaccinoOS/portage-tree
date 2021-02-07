@@ -1,8 +1,10 @@
 name: mpfr
 version: 4.1.0
 category: dev-libs
-use_flags:
-- '>=dev-libs/gmp-5.0.0[abi_x86_32(-)'
+requires:
+- name: gmp
+  version: '>=0'
+  category: dev-libs
 description: library for multiple-precision floating-point computations with exact rounding
 uri:
 - https://www.mpfr.org/

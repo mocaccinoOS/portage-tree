@@ -2,21 +2,23 @@ name: nftables
 version: 0.9.6
 category: net-firewall
 use_flags:
-- python_targets_python3_9
-- python_targets_python3_8
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- readline
-- python
-- json
-- python_targets_python3_6
-- python_targets_python3_7
-- xtables
-- gmp
 - -doc
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- gmp
+- json
+- python
+- python_targets_python3_7
+- readline
+- xtables
 requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: gmp
   version: '>=0'
   category: dev-libs

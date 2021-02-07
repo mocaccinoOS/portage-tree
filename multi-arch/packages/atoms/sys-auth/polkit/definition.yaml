@@ -2,11 +2,11 @@ name: polkit
 version: "0.118"
 category: sys-auth
 use_flags:
-- systemd
-- selinux
-- elogind
-- pam
+- -elogind
 - introspection
+- pam
+- selinux
+- systemd
 requires:
 - name: polkitd
   version: '>=0'

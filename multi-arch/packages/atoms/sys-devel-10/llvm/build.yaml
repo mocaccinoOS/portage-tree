@@ -24,9 +24,6 @@ requires:
 - name: libpfm
   version: '>=0'
   category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: recommonmark
   version: '>=0'
   category: dev-python

@@ -12,13 +12,19 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: libarchive
+  version: '>=0'
+  category: app-arch
 - name: gpgme
   version: '>=0'
   category: app-crypt-1
-- name: python-exec
+- name: icu
   version: '>=0'
-  category: dev-lang-2
+  category: dev-libs
 - name: jansson
+  version: '>=0'
+  category: dev-libs
+- name: libbsd
   version: '>=0'
   category: dev-libs
 - name: Parse-Yapp
@@ -27,18 +33,15 @@ requires:
 - name: dnspython
   version: '>=0'
   category: dev-python
-- name: avahi
+- name: subunit
   version: '>=0'
-  category: net-dns
+  category: dev-python
 - name: bind-tools
   version: '>=0'
   category: net-dns
 - name: resolv_wrapper
   version: '>=0'
   category: net-dns
-- name: rpcsvc-proto
-  version: '>=0'
-  category: net-libs
 - name: socket_wrapper
   version: '>=0'
   category: net-libs
@@ -51,6 +54,12 @@ requires:
 - name: ceph
   version: '>=0'
   category: sys-cluster
+- name: ldb
+  version: '>=0'
+  category: sys-libs
+- name: liburing
+  version: '>=0'
+  category: sys-libs
 - name: nss_wrapper
   version: '>=0'
   category: sys-libs

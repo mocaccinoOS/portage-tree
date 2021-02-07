@@ -15,3 +15,6 @@ requires:
 - name: libaio
   version: '>=0'
   category: dev-libs
+- name: util-linux
+  version: '>=0'
+  category: sys-apps

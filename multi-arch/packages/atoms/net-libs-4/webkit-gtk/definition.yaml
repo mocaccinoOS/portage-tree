@@ -2,25 +2,21 @@ name: webkit-gtk
 version: 2.28.4
 category: net-libs-4
 use_flags:
-- jpeg2k
-- gtk-doc
-- X
-- '>=x11-libs/cairo-1.16.0:=[X'
-- geolocation
-- introspection
-- opengl
-- spell
-- '>=net-libs/libsoup-2.54:2.4[introspection'
-- gnome-keyring
-- libnotify
-- seccomp
-- gstreamer
-- gles2-only
-- '>=x11-libs/gtk+-3.22.0:3[aqua'
-- wayland
-- '>=media-libs/gst-plugins-base-1.14:1.0[egl'
-- egl
+- -gles2-only
+- -gtk-doc
 - -test
+- X
+- egl
+- geolocation
+- gnome-keyring
+- gstreamer
+- introspection
+- jpeg2k
+- libnotify
+- opengl
+- seccomp
+- spell
+- wayland
 requires:
 - name: libsecret
   version: '>=0'
@@ -31,19 +27,7 @@ requires:
 - name: enchant
   version: '>=0'
   category: app-text-2
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
-- name: atk
-  version: '>=0'
-  category: dev-libs
 - name: hyphen
-  version: '>=0'
-  category: dev-libs
-- name: icu
-  version: '>=0'
-  category: dev-libs
-- name: libgcrypt
   version: '>=0'
   category: dev-libs
 - name: libtasn1
@@ -55,21 +39,6 @@ requires:
 - name: wpebackend-fdo
   version: '>=0'
   category: gui-libs-1.0
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
-- name: gst-plugins-base
-  version: '>=0'
-  category: media-libs-1.0
-- name: gstreamer
-  version: '>=0'
-  category: media-libs-1.0
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs
 - name: libwebp
   version: '>=0'
   category: media-libs
@@ -88,18 +57,9 @@ requires:
 - name: xdg-dbus-proxy
   version: '>=0'
   category: sys-apps
-- name: libX11
+- name: gtk+
   version: '>=0'
-  category: x11-libs
-- name: libXcomposite
-  version: '>=0'
-  category: x11-libs
-- name: libXdamage
-  version: '>=0'
-  category: x11-libs
-- name: libXrender
-  version: '>=0'
-  category: x11-libs
+  category: x11-libs-3
 - name: libXt
   version: '>=0'
   category: x11-libs

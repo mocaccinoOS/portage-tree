@@ -2,15 +2,9 @@ name: xset
 version: 1.2.4
 category: x11-apps
 use_flags:
-- x86-winnt
-- ppc-aix
+- -ppc-aix
+- -x86-winnt
 requires:
-- name: libX11
-  version: '>=0'
-  category: x11-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
 - name: libXmu
   version: '>=0'
   category: x11-libs

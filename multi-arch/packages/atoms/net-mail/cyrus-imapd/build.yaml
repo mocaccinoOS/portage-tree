@@ -15,9 +15,9 @@ requires:
 - name: clamav
   version: '>=0'
   category: app-antivirus
-- name: sqlite
+- name: lmdb
   version: '>=0'
-  category: dev-db-3
+  category: dev-db
 - name: libical
   version: '>=0'
   category: dev-libs
@@ -36,3 +36,6 @@ requires:
 - name: leafnode
   version: '>=0'
   category: net-nntp
+- name: e2fsprogs-libs
+  version: '>=0'
+  category: sys-libs

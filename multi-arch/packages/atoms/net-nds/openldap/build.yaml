@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: ldap
-  version: '>=0'
-  category: acct-group
-- name: ldap
-  version: '>=0'
-  category: acct-user
 - name: heimdal
   version: '>=0'
   category: app-crypt
@@ -30,15 +24,18 @@ requires:
 - name: cyrus-sasl
   version: '>=0'
   category: dev-libs-2
-- name: libressl
+- name: libgcrypt
   version: '>=0'
   category: dev-libs
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: groff
   version: '>=0'
   category: sys-apps
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps
-- name: e2fsprogs-libs
-  version: '>=0'
-  category: sys-libs

@@ -2,10 +2,10 @@ name: iwd
 version: "1.9"
 category: net-wireless
 use_flags:
+- client
 - crda
 - standalone
 - systemd
-- client
 requires:
 - name: ell
   version: '>=0'

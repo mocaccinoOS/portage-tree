@@ -12,21 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: qtsvg
+  version: '>=0'
+  category: dev-qt-5
 - name: libpcap
   version: '>=0'
   category: net-libs
 - name: crda
   version: '>=0'
   category: net-wireless
-- name: dbus
-  version: '>=0'
-  category: sys-apps
 - name: pcsc-lite
   version: '>=0'
   category: sys-apps
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 - name: readline
   version: '>=0'
   category: sys-libs

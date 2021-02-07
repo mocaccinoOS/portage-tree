@@ -1,9 +1,10 @@
 name: mpc
 version: 1.2.0
 category: dev-libs
-use_flags:
-- '>=dev-libs/mpfr-4.1.0:0=[abi_x86_32(-)'
-- '>=dev-libs/gmp-5.0.0:0=[abi_x86_32(-)'
+requires:
+- name: mpfr
+  version: '>=0'
+  category: dev-libs
 description: A library for multiprecision complex arithmetic with exact rounding
 uri:
 - http://mpc.multiprecision.org/

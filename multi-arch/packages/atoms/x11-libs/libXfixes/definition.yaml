@@ -2,10 +2,13 @@ name: libXfixes
 version: 5.0.3
 category: x11-libs
 use_flags:
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- ppc-aix
-- x86-winnt
 - -doc
+- -ppc-aix
+- -x86-winnt
+requires:
+- name: libX11
+  version: '>=0'
+  category: x11-libs
 description: X.Org Xfixes library
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libXfixes

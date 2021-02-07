@@ -2,8 +2,8 @@ name: vala
 version: 0.48.9
 category: dev-lang-0.48
 use_flags:
-- valadoc
 - -test
+- valadoc
 requires:
 - name: vala-common
   version: '>=0'

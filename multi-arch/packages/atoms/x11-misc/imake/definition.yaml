@@ -2,8 +2,8 @@ name: imake
 version: 1.0.8
 category: x11-misc
 use_flags:
-- x86-winnt
-- ppc-aix
+- -ppc-aix
+- -x86-winnt
 requires:
 - name: xorg-cf-files
   version: '>=0'

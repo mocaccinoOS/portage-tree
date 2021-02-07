@@ -2,12 +2,15 @@ name: ki18n
 version: 5.74.0
 category: kde-frameworks-5
 use_flags:
-- python_single_target_python3_7
+- -doc
 - -python_single_target_python3_8
 - -python_single_target_python3_9
-- -doc
 - -test
+- python_single_target_python3_7
 requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

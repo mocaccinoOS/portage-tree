@@ -21,16 +21,10 @@ requires:
 - name: xmlto
   version: '>=0'
   category: app-text
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: elfutils
   version: '>=0'
   category: dev-libs
 - name: json-c
-  version: '>=0'
-  category: dev-libs
-- name: nspr
   version: '>=0'
   category: dev-libs
 - name: nss

@@ -2,8 +2,8 @@ name: firebird
 version: 3.0.4.33054.0
 category: dev-db
 use_flags:
-- xinetd
 - -doc
+- xinetd
 requires:
 - name: icu
   version: '>=0'

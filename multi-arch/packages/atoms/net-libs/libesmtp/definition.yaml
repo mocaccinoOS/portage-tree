@@ -2,12 +2,8 @@ name: libesmtp
 version: 1.0.6
 category: net-libs
 use_flags:
-- libressl
+- -libressl
 - ssl
-requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 description: lib that implements the client side of the SMTP protocol
 uri:
 - http://brianstafford.info/libesmtp/

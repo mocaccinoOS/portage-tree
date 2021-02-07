@@ -2,9 +2,9 @@ name: binutils
 version: "2.34"
 category: sys-devel-2.34
 use_flags:
-- nls
 - -doc
 - -test
+- nls
 requires:
 - name: binutils-config
   version: '>=0'

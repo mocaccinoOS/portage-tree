@@ -1,12 +1,10 @@
 name: unixODBC
 version: 2.3.7
 category: dev-db
-use_flags:
-- '>=virtual/libiconv-0-r1[abi_x86_32(-)'
-- dev-libs/libltdl:0[abi_x86_32(-)
-- '>=sys-devel/libtool-2.4.2-r1[abi_x86_32(-)'
-- '>=sys-libs/readline-6.2_p5-r1:0=[abi_x86_32(-)'
-- '>=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)'
+requires:
+- name: readline
+  version: '>=0'
+  category: sys-libs
 description: A complete ODBC driver manager
 uri:
 - http://www.unixodbc.org/

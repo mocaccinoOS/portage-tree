@@ -15,6 +15,9 @@ requires:
 - name: java-config
   version: '>=0'
   category: dev-java-2
-- name: libtool
+- name: tcl
   version: '>=0'
-  category: sys-devel-2
+  category: dev-lang
+- name: binutils
+  version: '>=0'
+  category: sys-devel-2.34

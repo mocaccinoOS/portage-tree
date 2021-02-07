@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
-- name: icu
-  version: '>=0'
-  category: dev-libs
 - name: json-glib
   version: '>=0'
   category: dev-libs
@@ -31,8 +25,5 @@ requires:
   version: '>=0'
   category: net-misc
 - name: dbus
-  version: '>=0'
-  category: sys-apps
-- name: util-linux
   version: '>=0'
   category: sys-apps

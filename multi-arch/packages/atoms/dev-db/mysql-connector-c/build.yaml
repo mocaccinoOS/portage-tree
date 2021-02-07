@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: cmake
+- name: zstd
   version: '>=0'
-  category: dev-util
-- name: ninja
+  category: app-arch
+- name: cyrus-sasl
   version: '>=0'
-  category: dev-util
+  category: dev-libs-2

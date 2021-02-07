@@ -2,13 +2,10 @@ name: startup-notification
 version: "0.12"
 category: x11-libs
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
 - name: libX11
-  version: '>=0'
-  category: x11-libs
-- name: libxcb
   version: '>=0'
   category: x11-libs
 - name: xcb-util

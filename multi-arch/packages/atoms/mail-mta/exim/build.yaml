@@ -12,19 +12,13 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: mysql-connector-c
-  version: '>=0'
-  category: dev-db
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
 - name: hiredis
   version: '>=0'
   category: dev-libs
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: libtasn1
+- name: libressl
   version: '>=0'
   category: dev-libs
 - name: libspf2
@@ -42,30 +36,9 @@ requires:
 - name: libidn
   version: '>=0'
   category: net-dns
-- name: libidn2
-  version: '>=0'
-  category: net-dns
-- name: gnutls
-  version: '>=0'
-  category: net-libs
-- name: libnsl
-  version: '>=0'
-  category: net-libs
-- name: libtirpc
-  version: '>=0'
-  category: net-libs
 - name: sed
   version: '>=0'
   category: sys-apps
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: libXmu
-  version: '>=0'
-  category: x11-libs
-- name: libXt
   version: '>=0'
   category: x11-libs

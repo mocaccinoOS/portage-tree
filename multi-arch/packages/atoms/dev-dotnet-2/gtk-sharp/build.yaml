@@ -15,21 +15,9 @@ requires:
 - name: mono
   version: '>=0'
   category: dev-lang
-- name: atk
-  version: '>=0'
-  category: dev-libs
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: XML-LibXML
   version: '>=0'
   category: dev-perl
 - name: libglade
   version: '>=0'
   category: gnome-base-2.0
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
-- name: pango
-  version: '>=0'
-  category: x11-libs

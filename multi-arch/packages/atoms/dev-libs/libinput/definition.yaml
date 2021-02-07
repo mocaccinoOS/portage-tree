@@ -2,8 +2,8 @@ name: libinput
 version: 1.16.1
 category: dev-libs
 use_flags:
-- input_devices_wacom
 - -test
+- input_devices_wacom
 requires:
 - name: libevdev
   version: '>=0'

@@ -18,9 +18,6 @@ requires:
 - name: gluster
   version: '>=0'
   category: acct-user
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: libaio
   version: '>=0'
   category: dev-libs
@@ -36,9 +33,6 @@ requires:
 - name: rpcsvc-proto
   version: '>=0'
   category: net-libs
-- name: libibverbs
-  version: '>=0'
-  category: sys-fabric-3.12
 - name: librdmacm
   version: '>=0'
   category: sys-fabric-3.12

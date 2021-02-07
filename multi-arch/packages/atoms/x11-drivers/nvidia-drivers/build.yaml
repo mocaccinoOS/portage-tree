@@ -15,15 +15,12 @@ requires:
 - name: video
   version: '>=0'
   category: acct-group
-- name: atk
-  version: '>=0'
-  category: dev-libs
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: jansson
   version: '>=0'
   category: dev-libs
+- name: libglvnd
+  version: '>=0'
+  category: media-libs
 - name: dbus
   version: '>=0'
   category: sys-apps
@@ -36,27 +33,15 @@ requires:
 - name: glibc
   version: '>=0'
   category: sys-libs-2.2
-- name: cairo
-  version: '>=0'
-  category: x11-libs
-- name: gdk-pixbuf
-  version: '>=0'
-  category: x11-libs-2
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
-- name: libXext
-  version: '>=0'
-  category: x11-libs
-- name: libXrandr
-  version: '>=0'
-  category: x11-libs
 - name: libXv
   version: '>=0'
   category: x11-libs
 - name: libXxf86vm
   version: '>=0'
   category: x11-libs
-- name: pango
+- name: libvdpau
   version: '>=0'
   category: x11-libs

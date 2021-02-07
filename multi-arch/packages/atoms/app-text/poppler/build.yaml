@@ -15,18 +15,12 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
-- name: nss
+- name: qtxml
   version: '>=0'
-  category: dev-libs
+  category: dev-qt-5
 - name: glib-utils
   version: '>=0'
   category: dev-util
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: openjpeg
   version: '>=0'
   category: media-libs-2

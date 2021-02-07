@@ -1,29 +1,11 @@
 name: nas
 version: 1.9.4
 category: media-libs
-use_flags:
-- '>=x11-libs/libXau-1.0.7-r1[abi_x86_32(-)'
-- '>=x11-libs/libXt-1.1.4[abi_x86_32(-)'
 requires:
-- name: libICE
-  version: '>=0'
-  category: x11-libs
-- name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libX11
+- name: libXau
   version: '>=0'
   category: x11-libs
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
-- name: libXmu
-  version: '>=0'
-  category: x11-libs
-- name: libXpm
   version: '>=0'
   category: x11-libs
 description: Network Audio System

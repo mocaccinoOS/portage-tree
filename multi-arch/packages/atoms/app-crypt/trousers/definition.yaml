@@ -2,7 +2,7 @@ name: trousers
 version: 0.3.14
 category: app-crypt
 use_flags:
-- libressl
+- -libressl
 - selinux
 requires:
 - name: tss
@@ -11,9 +11,6 @@ requires:
 - name: glib
   version: '>=0'
   category: dev-libs-2
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: selinux-tcsd
   version: '>=0'
   category: sec-policy

@@ -2,12 +2,12 @@ name: libzip
 version: 1.7.3
 category: dev-libs
 use_flags:
-- ssl
-- gnutls
-- mbedtls
-- libressl
+- -libressl
 - bzip2
+- gnutls
 - lzma
+- mbedtls
+- ssl
 requires:
 - name: bzip2
   version: '>=0'
@@ -15,18 +15,12 @@ requires:
 - name: xz-utils
   version: '>=0'
   category: app-arch
-- name: nettle
-  version: '>=0'
-  category: dev-libs
 - name: gnutls
   version: '>=0'
   category: net-libs
 - name: mbedtls
   version: '>=0'
   category: net-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 description: Library for manipulating zip archives
 uri:
 - https://nih.at/libzip/

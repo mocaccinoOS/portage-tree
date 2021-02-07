@@ -2,15 +2,15 @@ name: nfs-utils
 version: 2.5.1
 category: net-fs
 use_flags:
-- nfsv41
-- ldap
-- kerberos
-- tcpd
 - caps
+- kerberos
+- ldap
 - libmount
 - nfsv4
-- uuid
+- nfsv41
 - selinux
+- tcpd
+- uuid
 requires:
 - name: mit-krb5
   version: '>=0'
@@ -33,9 +33,6 @@ requires:
 - name: selinux-rpc
   version: '>=0'
   category: sec-policy
-- name: keyutils
-  version: '>=0'
-  category: sys-apps
 - name: lvm2
   version: '>=0'
   category: sys-fs

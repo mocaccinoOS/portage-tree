@@ -12,15 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libressl
+- name: wayland-protocols
   version: '>=0'
   category: dev-libs
 - name: libepoxy
   version: '>=0'
   category: media-libs
-- name: pambase
+- name: flex
   version: '>=0'
-  category: sys-auth
+  category: sys-devel
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
 - name: iceauth
   version: '>=0'
   category: x11-apps
@@ -42,9 +45,6 @@ requires:
 - name: libXfont2
   version: '>=0'
   category: x11-libs
-- name: libXi
-  version: '>=0'
-  category: x11-libs
 - name: libXrender
   version: '>=0'
   category: x11-libs
@@ -57,13 +57,13 @@ requires:
 - name: libdmx
   version: '>=0'
   category: x11-libs
-- name: libpciaccess
+- name: libdrm
+  version: '>=0'
+  category: x11-libs
+- name: libxshmfence
   version: '>=0'
   category: x11-libs
 - name: pixman
-  version: '>=0'
-  category: x11-libs
-- name: xcb-util
   version: '>=0'
   category: x11-libs
 - name: xcb-util-image

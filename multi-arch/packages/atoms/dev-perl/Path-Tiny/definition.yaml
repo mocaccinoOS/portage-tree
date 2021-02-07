@@ -2,12 +2,12 @@ name: Path-Tiny
 version: 0.104.0
 category: dev-perl
 use_flags:
-- minimal
+- -minimal
 - -test
 requires:
-- name: Unicode-UTF8
+- name: perl
   version: '>=0'
-  category: dev-perl
+  category: dev-lang
 description: File path utility
 uri:
 - https://metacpan.org/release/Path-Tiny

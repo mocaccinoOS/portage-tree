@@ -2,11 +2,11 @@ name: cmake
 version: 3.17.4
 category: dev-util
 use_flags:
-- -qt5
 - -doc
-- -test
 - -emacs
+- -test
 - ncurses
+- qt5
 requires:
 - name: libarchive
   version: '>=0'
@@ -14,22 +14,19 @@ requires:
 - name: rhash
   version: '>=0'
   category: app-crypt
-- name: expat
-  version: '>=0'
-  category: dev-libs
 - name: jsoncpp
   version: '>=0'
   category: dev-libs
 - name: libuv
   version: '>=0'
   category: dev-libs
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
 - name: curl
   version: '>=0'
   category: net-misc
 - name: ncurses
-  version: '>=0'
-  category: sys-libs
-- name: zlib
   version: '>=0'
   category: sys-libs
 description: Cross platform Make

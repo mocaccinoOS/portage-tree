@@ -15,18 +15,12 @@ requires:
 - name: dvipng
   version: '>=0'
   category: app-text
-- name: pypy3
+- name: typed-ast
   version: '>=0'
   category: dev-python
-- name: texlive-fontsextra
-  version: '>=0'
-  category: dev-texlive
 - name: texlive-latexextra
   version: '>=0'
   category: dev-texlive
 - name: texlive-luatex
   version: '>=0'
   category: dev-texlive
-- name: graphviz
-  version: '>=0'
-  category: media-gfx

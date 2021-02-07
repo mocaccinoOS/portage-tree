@@ -2,8 +2,8 @@ name: File-HomeDir
 version: 1.2.0
 category: dev-perl
 use_flags:
-- xdg
 - -test
+- xdg
 requires:
 - name: File-Which
   version: '>=0'

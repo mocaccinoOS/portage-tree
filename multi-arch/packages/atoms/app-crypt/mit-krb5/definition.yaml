@@ -2,35 +2,29 @@ name: mit-krb5
 version: 1.18.2
 category: app-crypt
 use_flags:
-- cpu_flags_x86_aes
-- amd64
 - -doc
-- '>=dev-libs/libverto-0.2.5[libev,abi_x86_32(-)'
-- '>=dev-libs/libverto-0.2.5[tevent,abi_x86_32(-)'
-- '>=net-nds/openldap-2.4.38-r1[abi_x86_32(-)'
-- sys-devel/gettext[abi_x86_32(-)
-- dev-libs/libressl:0=[abi_x86_32(-)
-- '>=dev-libs/libverto-0.2.5[libevent,abi_x86_32(-)'
-- selinux
+- -libressl
 - -test
-- nls
-- openldap
-- x86
-- '>=sys-apps/keyutils-1.5.8:=[abi_x86_32(-)'
-- '>=sys-libs/e2fsprogs-libs-1.42.9[abi_x86_32(-)'
-- pkinit
-- libressl
-- xinetd
+- amd64
+- cpu_flags_x86_aes
 - keyutils
 - lmdb
-- '>=dev-libs/openssl-1.0.1h-r2:0=[abi_x86_32(-)'
+- nls
+- openldap
+- pkinit
+- selinux
+- x86
+- xinetd
 requires:
-- name: heimdal
+- name: keyutils
   version: '>=0'
-  category: app-crypt
+  category: sys-apps
 - name: xinetd
   version: '>=0'
   category: sys-apps
+- name: gettext
+  version: '>=0'
+  category: sys-devel
 description: MIT Kerberos V
 uri:
 - https://web.mit.edu/kerberos/www/

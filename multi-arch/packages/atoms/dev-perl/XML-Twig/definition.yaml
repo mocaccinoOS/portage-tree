@@ -2,8 +2,8 @@ name: XML-Twig
 version: 3.520.0
 category: dev-perl
 use_flags:
-- nls
 - -test
+- nls
 requires:
 - name: Text-Iconv
   version: '>=0'

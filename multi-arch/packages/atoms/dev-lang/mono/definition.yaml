@@ -2,14 +2,11 @@ name: mono
 version: 6.6.0.161
 category: dev-lang
 use_flags:
+- -minimal
+- ia64
 - nls
 - pax_kernel
-- minimal
-- ia64
 requires:
-- name: libgdiplus
-  version: '>=0'
-  category: dev-dotnet
 - name: gettext
   version: '>=0'
   category: sys-devel

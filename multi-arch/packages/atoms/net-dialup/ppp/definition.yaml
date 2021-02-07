@@ -2,15 +2,12 @@ name: ppp
 version: 2.4.8
 category: net-dialup
 use_flags:
-- atm
-- pam
-- gtk
-- libressl
+- -libressl
 - activefilter
+- atm
+- gtk
+- pam
 requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: linux-atm
   version: '>=0'
   category: net-dialup

@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: Digest-BubbleBabble
-  version: '>=0'
-  category: dev-perl
 - name: Digest-HMAC
-  version: '>=0'
-  category: dev-perl
-- name: Net-LibIDN
-  version: '>=0'
-  category: dev-perl
-- name: Net-LibIDN2
   version: '>=0'
   category: dev-perl

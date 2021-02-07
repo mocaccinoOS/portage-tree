@@ -2,61 +2,63 @@ name: php
 version: 7.4.11
 category: dev-lang-7.4
 use_flags:
-- berkdb
-- curl
-- libressl
-- gdbm
-- ldap
-- ffi
-- zip
-- firebird
-- enchant
-- spell
-- xslt
-- ldap-sasl
-- oci8-instant-client
-- readline
-- apache2
-- iconv
-- sodium
-- webp
-- truetype
-- lmdb
-- odbc
-- ssl
-- libedit
-- '>=app-eselect/eselect-php-0.9.1[apache2'
-- selinux
-- nls
-- tidy
-- systemd
-- coverage
-- kerberos
-- xml
-- intl
-- mssql
-- zlib
+- -libressl
 - acl
-- unicode
+- apache2
+- argon2
+- berkdb
 - bzip2
-- qdbm
+- cdb
+- coverage
+- curl
+- enchant
+- ffi
+- firebird
 - fpm
 - gd
-- postgres
-- tokyocabinet
-- snmp
-- imap
-- iodbc
-- session-mm
+- gdbm
 - gmp
-- cdb
+- iconv
+- imap
+- intl
+- iodbc
+- kerberos
+- ldap
+- ldap-sasl
+- libedit
+- lmdb
+- mssql
+- nls
+- oci8-instant-client
+- odbc
+- postgres
+- qdbm
+- readline
+- selinux
+- session-mm
+- snmp
+- sodium
+- spell
 - sqlite
+- ssl
+- systemd
+- tidy
+- tokyocabinet
+- truetype
+- unicode
+- webp
+- xml
 - xpm
-- argon2
+- xslt
+- zip
+- zlib
 requires:
 - name: argon2
   version: '>=0'
   category: app-crypt
+- name: eselect-php
+  version: '>=0'
+  category: app-eselect
 - name: enchant
   version: '>=0'
   category: app-text-2
@@ -72,15 +74,15 @@ requires:
 - name: freetds
   version: '>=0'
   category: dev-db
+- name: lmdb
+  version: '>=0'
+  category: dev-db
 - name: oracle-instantclient-basic
   version: '>=0'
   category: dev-db
 - name: qdbm
   version: '>=0'
   category: dev-db
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
 - name: tokyocabinet
   version: '>=0'
   category: dev-db
@@ -117,9 +119,6 @@ requires:
 - name: gettext
   version: '>=0'
   category: sys-devel
-- name: apache
-  version: '>=0'
-  category: www-servers-2
 - name: libXpm
   version: '>=0'
   category: x11-libs

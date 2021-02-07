@@ -3,9 +3,11 @@ version: 1.2.0
 category: media-libs
 use_flags:
 - utils
-- media-libs/speexdsp[abi_x86_32(-)
 requires:
 - name: libogg
+  version: '>=0'
+  category: media-libs
+- name: speexdsp
   version: '>=0'
   category: media-libs
 description: Audio compression format designed for speech

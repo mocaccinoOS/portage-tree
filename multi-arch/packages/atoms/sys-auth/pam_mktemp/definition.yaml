@@ -2,12 +2,9 @@ name: pam_mktemp
 version: 1.1.1
 category: sys-auth
 use_flags:
-- selinux
 - prevent-removal
+- selinux
 requires:
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs

@@ -2,16 +2,23 @@ name: tk
 version: 8.6.8
 category: dev-lang
 use_flags:
-- aqua
-- xscreensaver
-- '>=media-libs/fontconfig-2.10.92[abi_x86_32(-)'
-- ~dev-lang/tcl-8.6.8:0=[abi_x86_32(-)
-- '>=x11-libs/libXScrnSaver-1.2.2-r1[abi_x86_32(-)'
-- '>=x11-libs/libXt-1.1.4[abi_x86_32(-)'
-- '>=x11-libs/libXft-2.3.1-r1[abi_x86_32(-)'
 - -test
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
+- aqua
 - truetype
+- xscreensaver
+requires:
+- name: tcl
+  version: '>=0'
+  category: dev-lang
+- name: libXScrnSaver
+  version: '>=0'
+  category: x11-libs
+- name: libXft
+  version: '>=0'
+  category: x11-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs
 description: Tk Widget Set
 uri:
 - http://www.tcl.tk/

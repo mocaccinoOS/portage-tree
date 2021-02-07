@@ -2,25 +2,25 @@ name: cyrus-imapd
 version: 3.0.13
 category: net-mail
 use_flags:
+- -test
 - afs
 - calalarm
-- mysql
-- snmp
 - caps
-- xapian
-- sqlite
-- lmdb
-- postgres
-- ldap
 - clamav
-- pam
-- -test
-- tcpd
-- kerberos
-- perl
 - http
+- kerberos
+- ldap
+- lmdb
+- mysql
 - nntp
+- pam
+- perl
+- postgres
+- snmp
+- sqlite
 - ssl
+- tcpd
+- xapian
 requires:
 - name: cyrus
   version: '>=0'
@@ -31,7 +31,13 @@ requires:
 - name: dump
   version: '>=0'
   category: app-arch
+- name: lmdb
+  version: '>=0'
+  category: dev-db
 - name: libical
+  version: '>=0'
+  category: dev-libs
+- name: openssl
   version: '>=0'
   category: dev-libs
 - name: xapian

@@ -21,9 +21,6 @@ requires:
 - name: libatomic_ops
   version: '>=0'
   category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: unifdef
   version: '>=0'
   category: dev-util
@@ -31,6 +28,9 @@ requires:
   version: '>=0'
   category: gnome-base-2
 - name: libsamplerate
+  version: '>=0'
+  category: media-libs
+- name: libsndfile
   version: '>=0'
   category: media-libs
 - name: sbc
@@ -48,6 +48,9 @@ requires:
 - name: avahi
   version: '>=0'
   category: net-dns
+- name: libasyncns
+  version: '>=0'
+  category: net-libs
 - name: ofono
   version: '>=0'
   category: net-misc
@@ -57,15 +60,12 @@ requires:
 - name: selinux-pulseaudio
   version: '>=0'
   category: sec-policy
+- name: tcp-wrappers
+  version: '>=0'
+  category: sys-apps
 - name: rtkit
   version: '>=0'
   category: sys-auth
-- name: gettext
+- name: libXtst
   version: '>=0'
-  category: sys-devel
-- name: gdbm
-  version: '>=0'
-  category: sys-libs
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
+  category: x11-libs

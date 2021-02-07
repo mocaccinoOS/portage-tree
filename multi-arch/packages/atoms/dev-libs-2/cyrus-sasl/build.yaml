@@ -12,12 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: mysql-connector-c
+  version: '>=0'
+  category: dev-db
 - name: postgresql
   version: '>=0'
   category: dev-db-12
-- name: java-config
+- name: sqlite
   version: '>=0'
-  category: dev-java-2
+  category: dev-db-3
 - name: courier-imap
   version: '>=0'
   category: net-mail

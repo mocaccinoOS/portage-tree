@@ -12,6 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: font-util
+- name: zlib
   version: '>=0'
-  category: media-fonts
+  category: sys-libs

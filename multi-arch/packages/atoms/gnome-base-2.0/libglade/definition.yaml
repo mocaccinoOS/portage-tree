@@ -2,11 +2,14 @@ name: libglade
 version: 2.6.4
 category: gnome-base-2.0
 use_flags:
-- '>=dev-libs/atk-2.10.0[abi_x86_32(-)'
-- '>=dev-libs/libxml2-2.9.1-r4[abi_x86_32(-)'
 - -test
-- '>=dev-libs/glib-2.34.3:2[abi_x86_32(-)'
-- '>=x11-libs/gtk+-2.24.23:2[abi_x86_32(-)'
+requires:
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3
 description: Library to construct graphical interfaces at runtime
 uri:
 - https://library.gnome.org/devel/libglade/stable/

@@ -2,9 +2,12 @@ name: ell
 version: "0.33"
 category: dev-libs
 use_flags:
-- glib
-- dev-libs/glib:2[abi_x86_32(-)
 - -test
+- glib
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 description: Embedded Linux Library provides core, low-level functionality for system daemons
 uri:
 - https://01.org/ell

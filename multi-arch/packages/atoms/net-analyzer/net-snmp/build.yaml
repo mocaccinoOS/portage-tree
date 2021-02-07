@@ -18,9 +18,6 @@ requires:
 - name: mysql-connector-c
   version: '>=0'
   category: dev-db
-- name: libnl
-  version: '>=0'
-  category: dev-libs-3
 - name: setuptools
   version: '>=0'
   category: dev-python

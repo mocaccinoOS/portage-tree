@@ -21,27 +21,12 @@ requires:
 - name: libassuan
   version: '>=0'
   category: dev-libs
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
 - name: libksba
   version: '>=0'
   category: dev-libs
 - name: npth
   version: '>=0'
   category: dev-libs
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: curl
   version: '>=0'
   category: net-misc
-- name: openldap
-  version: '>=0'
-  category: net-nds
-- name: readline
-  version: '>=0'
-  category: sys-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs

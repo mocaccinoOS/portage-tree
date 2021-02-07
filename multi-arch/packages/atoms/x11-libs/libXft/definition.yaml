@@ -2,13 +2,18 @@ name: libXft
 version: 2.3.3
 category: x11-libs
 use_flags:
-- '>=x11-libs/libXext-1.3.2[abi_x86_32(-)'
-- '>=x11-libs/libXrender-0.9.8[abi_x86_32(-)'
-- ppc-aix
-- x86-winnt
-- '>=media-libs/fontconfig-2.10.92[abi_x86_32(-)'
-- '>=media-libs/freetype-2.5.0.1[abi_x86_32(-)'
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
+- -ppc-aix
+- -x86-winnt
+requires:
+- name: fontconfig
+  version: '>=0'
+  category: media-libs-1.0
+- name: libXext
+  version: '>=0'
+  category: x11-libs
+- name: libXrender
+  version: '>=0'
+  category: x11-libs
 description: X.Org Xft library
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libXft

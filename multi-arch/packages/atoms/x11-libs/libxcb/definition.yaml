@@ -2,12 +2,15 @@ name: libxcb
 version: "1.14"
 category: x11-libs
 use_flags:
-- dev-libs/check[abi_x86_32(-)
 - -doc
-- '>=x11-libs/libXau-1.0.7-r1[abi_x86_32(-)'
-- '>=x11-libs/libXdmcp-1.1.1-r1[abi_x86_32(-)'
-- '>=x11-base/xcb-proto-1.14[abi_x86_32(-)'
 - -test
+requires:
+- name: libXau
+  version: '>=0'
+  category: x11-libs
+- name: libXdmcp
+  version: '>=0'
+  category: x11-libs
 description: X C-language Bindings library
 uri:
 - https://xcb.freedesktop.org/ https://gitlab.freedesktop.org/xorg/lib/libxcb

@@ -2,13 +2,15 @@ name: tdb
 version: 1.4.3
 category: sys-libs
 use_flags:
-- python_single_target_python3_7
-- -python_single_target_python3_8
-- elibc_FreeBSD
-- dev-libs/libbsd[abi_x86_32(-)
-- python
+- -elibc_FreeBSD
 - -python_single_target_python3_6
+- -python_single_target_python3_8
+- python
+- python_single_target_python3_7
 requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

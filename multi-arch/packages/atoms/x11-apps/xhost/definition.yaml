@@ -2,12 +2,9 @@ name: xhost
 version: 1.0.8
 category: x11-apps
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXau
   version: '>=0'
   category: x11-libs

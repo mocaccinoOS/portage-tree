@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: Devel-LexAlias
-  version: '>=0'
-  category: dev-perl
-- name: Perl-Tidy
-  version: '>=0'
-  category: dev-perl
 - name: Try-Tiny
   version: '>=0'
   category: dev-perl

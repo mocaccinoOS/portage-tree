@@ -42,16 +42,7 @@ requires:
 - name: libunwind
   version: '>=0'
   category: sys-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXdamage
-  version: '>=0'
-  category: x11-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
-- name: libXfixes
   version: '>=0'
   category: x11-libs
 - name: libXrandr
@@ -63,16 +54,10 @@ requires:
 - name: libXxf86vm
   version: '>=0'
   category: x11-libs
-- name: libdrm
-  version: '>=0'
-  category: x11-libs
 - name: libva
   version: '>=0'
   category: x11-libs
 - name: libvdpau
-  version: '>=0'
-  category: x11-libs
-- name: libxcb
   version: '>=0'
   category: x11-libs
 - name: libxshmfence

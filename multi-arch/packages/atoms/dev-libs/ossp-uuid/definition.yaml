@@ -2,11 +2,11 @@ name: ossp-uuid
 version: 1.6.2
 category: dev-libs
 use_flags:
+- perl
 - php
 - php_targets_php5-6
 - php_targets_php7-0
 - php_targets_php7-1
-- perl
 requires:
 - name: perl
   version: '>=0'

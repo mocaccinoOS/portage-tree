@@ -2,10 +2,10 @@ name: iptables
 version: 1.8.5
 category: net-firewall
 use_flags:
+- conntrack
 - netlink
 - nftables
 - pcap
-- conntrack
 requires:
 - name: arptables
   version: '>=0'

@@ -2,12 +2,9 @@ name: bash
 version: "5.0"
 category: app-shells
 use_flags:
-- readline
 - nls
+- readline
 requires:
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 - name: readline
   version: '>=0'
   category: sys-libs

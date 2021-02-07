@@ -2,24 +2,24 @@ name: pambase
 version: "20201103"
 category: sys-auth
 use_flags:
-- mktemp
-- pam_ssh
+- -elogind
 - caps
+- gnome-keyring
+- mktemp
+- pam_krb5
+- pam_ssh
+- passwdqc
 - pwquality
 - selinux
-- systemd
-- elogind
-- gnome-keyring
-- pam_krb5
-- passwdqc
 - sha512
+- systemd
 requires:
 - name: gnome-keyring
   version: '>=0'
   category: gnome-base
-- name: elogind
+- name: systemd
   version: '>=0'
-  category: sys-auth
+  category: sys-apps
 - name: pam_krb5
   version: '>=0'
   category: sys-auth

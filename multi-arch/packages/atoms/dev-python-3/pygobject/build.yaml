@@ -12,15 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: cairo
+- name: gobject-introspection
   version: '>=0'
-  category: x11-libs
-- name: gdk-pixbuf
+  category: dev-libs
+- name: pycairo
   version: '>=0'
-  category: x11-libs-2
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
-- name: pango
-  version: '>=0'
-  category: x11-libs
+  category: dev-python

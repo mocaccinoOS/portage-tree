@@ -5,9 +5,6 @@ use_flags:
 - ncurses
 - readline
 requires:
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 - name: readline
   version: '>=0'
   category: sys-libs

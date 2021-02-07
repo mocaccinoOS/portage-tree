@@ -2,13 +2,13 @@ name: freetds
 version: 1.00.558
 category: dev-db
 use_flags:
+- -libressl
 - gnutls
 - iconv
 - iodbc
 - kerberos
 - odbc
 - ssl
-- libressl
 requires:
 - name: libiodbc
   version: '>=0'

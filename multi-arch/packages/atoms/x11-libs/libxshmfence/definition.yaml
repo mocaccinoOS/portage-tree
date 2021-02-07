@@ -2,8 +2,8 @@ name: libxshmfence
 version: "1.3"
 category: x11-libs
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 description: Shared memory fences using futexes
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libxshmfence

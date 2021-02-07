@@ -2,7 +2,7 @@ name: dconf
 version: 0.36.0
 category: gnome-base
 use_flags:
-- gtk-doc
+- -gtk-doc
 - -test
 requires:
 - name: glib

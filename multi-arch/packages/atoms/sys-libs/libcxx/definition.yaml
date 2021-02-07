@@ -3,11 +3,13 @@ version: 10.0.1
 category: sys-libs
 use_flags:
 - libcxxabi
-- ~sys-libs/libcxxabi-10.0.1[libunwind=,static-libs
 requires:
 - name: gcc
   version: '>=0'
   category: sys-devel-9.3.0
+- name: libcxxabi
+  version: '>=0'
+  category: sys-libs
 description: New implementation of the C++ standard library, targeting C++11
 uri:
 - https://libcxx.llvm.org/

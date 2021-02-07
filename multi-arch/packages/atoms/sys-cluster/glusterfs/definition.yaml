@@ -2,26 +2,23 @@ name: glusterfs
 version: "7.7"
 category: sys-cluster
 use_flags:
-- fuse
-- libressl
-- -test
-- georeplication
-- -python_single_target_python3_6
-- python_single_target_python3_7
-- -python_single_target_python3_8
-- libtirpc
-- -python_single_target_python3_9
-- xml
-- elibc_glibc
 - -emacs
+- -libressl
+- -python_single_target_python3_6
+- -python_single_target_python3_8
+- -python_single_target_python3_9
+- -test
+- elibc_glibc
+- fuse
+- georeplication
 - infiniband
+- libtirpc
+- python_single_target_python3_7
+- xml
 requires:
 - name: gluster
   version: '>=0'
   category: acct-user
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: libaio
   version: '>=0'
   category: dev-libs
@@ -37,9 +34,6 @@ requires:
 - name: rpcsvc-proto
   version: '>=0'
   category: net-libs
-- name: libibverbs
-  version: '>=0'
-  category: sys-fabric-3.12
 - name: librdmacm
   version: '>=0'
   category: sys-fabric-3.12

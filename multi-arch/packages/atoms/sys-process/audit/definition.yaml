@@ -2,11 +2,10 @@ name: audit
 version: 2.8.4
 category: sys-process
 use_flags:
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- -python_targets_python3_6
 - gssapi
 - ldap
 - python
-- python_targets_python3_6
 - python_targets_python3_7
 requires:
 - name: openldap

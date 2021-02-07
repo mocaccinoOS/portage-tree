@@ -2,9 +2,11 @@ name: libcap
 version: "2.43"
 category: sys-libs
 use_flags:
-- '>=sys-apps/attr-2.4.47-r1[abi_x86_32(-)'
 - pam
-- sys-libs/pam[abi_x86_32(-)
+requires:
+- name: attr
+  version: '>=0'
+  category: sys-apps
 description: POSIX 1003.1e capabilities
 uri:
 - https://sites.google.com/site/fullycapable/

@@ -1,8 +1,6 @@
 name: oracle-instantclient
 version: 19.6.0.0
 category: dev-db
-use_flags:
-- '>=dev-libs/libaio-0.3.109-r5[abi_x86_32(-)'
 requires:
 - name: oracle-instantclient-jdbc
   version: '>=0'
@@ -13,6 +11,9 @@ requires:
 - name: oracle-instantclient-sqlplus
   version: '>=0'
   category: dev-db
+- name: libaio
+  version: '>=0'
+  category: dev-libs
 description: Oracle 18c Instant Client with SDK
 uri:
 - https://www.oracle.com/database/technologies/instant-client.html

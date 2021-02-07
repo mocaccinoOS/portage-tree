@@ -2,8 +2,11 @@ name: aspell
 version: 0.60.8
 category: app-text
 use_flags:
-- sys-libs/ncurses:0=[unicode
 - nls
+requires:
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
 description: A spell checker replacement for ispell
 uri:
 - http://aspell.net/

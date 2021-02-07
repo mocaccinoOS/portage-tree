@@ -2,42 +2,50 @@ name: allegro
 version: 5.2.5.0
 category: media-libs-5
 use_flags:
-- '>=x11-libs/libXcursor-1.1.14[abi_x86_32(-)'
-- alsa
-- pulseaudio
-- openal
 - X
-- jpeg
-- '>=media-libs/alsa-lib-1.0.27.2[abi_x86_32(-)'
-- '>=media-libs/freetype-2.5.0.1[abi_x86_32(-)'
-- '>=media-libs/libpng-1.5.18:0=[abi_x86_32(-)'
+- alsa
 - dumb
-- '>=virtual/jpeg-0-r2:0[abi_x86_32(-)'
-- '>=dev-games/physfs-2.0.3-r1[abi_x86_32(-)'
-- truetype
-- opengl
-- gtk
-- '>=x11-libs/libXrandr-1.4.2[abi_x86_32(-)'
-- '>=media-libs/openal-1.15.1[abi_x86_32(-)'
-- media-libs/opus[abi_x86_32(-)
-- vorbis
-- '>=virtual/glu-9.0-r1[abi_x86_32(-)'
-- '>=media-libs/flac-1.2.1-r5[abi_x86_32(-)'
 - flac
-- physfs
-- '>=media-sound/pulseaudio-2.1-r1[abi_x86_32(-)'
-- png
-- webp
+- gtk
+- jpeg
+- openal
+- opengl
 - opus
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- '>=x11-libs/libXinerama-1.1.3[abi_x86_32(-)'
-- '>=x11-libs/gtk+-2.24.23:2[abi_x86_32(-)'
-- '>=virtual/opengl-7.0-r1[abi_x86_32(-)'
-- media-libs/libwebp:0=[abi_x86_32(-)
-- '>=x11-libs/libXxf86vm-1.1.3[abi_x86_32(-)'
-- '>=media-libs/libvorbis-1.3.3-r1[abi_x86_32(-)'
-- '>=media-libs/dumb-0.9.3-r2:=[abi_x86_32(-)'
+- physfs
+- png
+- pulseaudio
+- truetype
+- vorbis
+- webp
 - xinerama
+requires:
+- name: physfs
+  version: '>=0'
+  category: dev-games
+- name: dumb
+  version: '>=0'
+  category: media-libs
+- name: flac
+  version: '>=0'
+  category: media-libs
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: libvorbis
+  version: '>=0'
+  category: media-libs
+- name: libwebp
+  version: '>=0'
+  category: media-libs
+- name: openal
+  version: '>=0'
+  category: media-libs
+- name: opus
+  version: '>=0'
+  category: media-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs
 description: Cross-platform library aimed at video game and multimedia programming
 uri:
 - https://liballeg.org/

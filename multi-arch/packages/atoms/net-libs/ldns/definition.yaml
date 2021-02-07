@@ -2,21 +2,19 @@ name: ldns
 version: 1.7.1
 category: net-libs
 use_flags:
-- libressl
-- '>=dev-libs/openssl-1.1.1:0=[-bindist,abi_x86_32(-)'
-- dev-libs/libressl[abi_x86_32(-)
-- ed448
-- '>=dev-libs/openssl-1.1.0:0=[-bindist,abi_x86_32(-)'
-- python_single_target_python3_7
-- python
-- '>=dev-libs/openssl-1.0.1e:0=[abi_x86_32(-)'
-- '>=dev-libs/openssl-1.0.1e:0=[-bindist,abi_x86_32(-)'
 - -doc
+- -libressl
+- -python_single_target_python3_6
+- -python_single_target_python3_8
 - ecdsa
 - ed25519
-- -python_single_target_python3_8
-- -python_single_target_python3_6
+- ed448
+- python
+- python_single_target_python3_7
 requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

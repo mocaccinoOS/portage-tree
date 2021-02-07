@@ -12,13 +12,7 @@ requires:
 - name: docbook-xml-dtd
   version: '>=0'
   category: app-text-4.5
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: glib
-  version: '>=0'
-  category: dev-libs-2
-- name: libxml2
   version: '>=0'
   category: dev-libs-2
 - name: libxslt
@@ -38,4 +32,4 @@ labels:
   emerge.packages: dev-util/gtk-doc
   kit: gentoo
   original.package.name: dev-util/gtk-doc
-  original.package.version: 1.32-r1
+  original.package.version: 1.32-r2

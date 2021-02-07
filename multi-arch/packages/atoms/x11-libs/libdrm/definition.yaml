@@ -2,9 +2,12 @@ name: libdrm
 version: 2.4.102
 category: x11-libs
 use_flags:
-- video_cards_intel
-- '>=x11-libs/libpciaccess-0.13.1-r1:=[abi_x86_32(-)'
 - valgrind
+- video_cards_intel
+requires:
+- name: libpciaccess
+  version: '>=0'
+  category: x11-libs
 description: X.Org libdrm library
 uri:
 - https://dri.freedesktop.org/ https://gitlab.freedesktop.org/mesa/drm

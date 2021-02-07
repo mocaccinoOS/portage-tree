@@ -48,9 +48,6 @@ requires:
 - name: gdbm
   version: '>=0'
   category: sys-libs
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
 - name: libXpm
   version: '>=0'
   category: x11-libs

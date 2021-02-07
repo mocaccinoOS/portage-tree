@@ -2,8 +2,8 @@ name: xprop
 version: 1.2.4
 category: x11-apps
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
 - name: libX11
   version: '>=0'

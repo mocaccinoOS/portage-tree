@@ -2,12 +2,9 @@ name: mkfontscale
 version: 1.2.1
 category: x11-apps
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
-- name: bzip2
-  version: '>=0'
-  category: app-arch
 - name: freetype
   version: '>=0'
   category: media-libs-2

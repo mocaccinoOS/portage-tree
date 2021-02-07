@@ -2,21 +2,21 @@ name: qtgui
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- eglfs
+- -gles2-only
+- -test
+- X
 - dbus
 - egl
-- libinput
-- jpeg
-- tslib
-- udev
-- png
-- vulkan
-- X
+- eglfs
 - evdev
-- -test
-- gles2-only
+- jpeg
+- libinput
+- png
+- tslib
 - tuio
+- udev
 - vnc
+- vulkan
 requires:
 - name: libinput
   version: '>=0'
@@ -33,28 +33,10 @@ requires:
 - name: fontconfig
   version: '>=0'
   category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs
-- name: libpng
-  version: '>=0'
-  category: media-libs
 - name: mesa
   version: '>=0'
   category: media-libs
-- name: libICE
-  version: '>=0'
-  category: x11-libs
 - name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
-- name: libxcb
   version: '>=0'
   category: x11-libs
 - name: libxkbcommon

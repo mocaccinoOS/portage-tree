@@ -15,3 +15,6 @@ requires:
 - name: xz-utils
   version: '>=0'
   category: app-arch
+- name: zlib
+  version: '>=0'
+  category: sys-libs

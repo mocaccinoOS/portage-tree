@@ -18,9 +18,6 @@ requires:
 - name: xz-utils
   version: '>=0'
   category: app-arch
-- name: nettle
-  version: '>=0'
-  category: dev-libs
 - name: gnutls
   version: '>=0'
   category: net-libs

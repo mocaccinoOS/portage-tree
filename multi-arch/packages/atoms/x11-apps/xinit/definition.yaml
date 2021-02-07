@@ -2,8 +2,8 @@ name: xinit
 version: 1.4.1
 category: x11-apps
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
 - name: xauth
   version: '>=0'

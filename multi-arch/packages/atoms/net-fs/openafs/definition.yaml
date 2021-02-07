@@ -2,16 +2,16 @@ name: openafs
 version: 1.8.6
 category: net-fs
 use_flags:
-- ncurses
-- kernel_linux
-- tsm
+- -doc
+- amd64
 - apidoc
+- fuse
 - kauth
 - kerberos
-- amd64
+- kernel_linux
+- ncurses
 - perl
-- -doc
-- fuse
+- tsm
 requires:
 - name: tsm
   version: '>=0'

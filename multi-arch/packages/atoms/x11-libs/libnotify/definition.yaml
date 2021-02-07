@@ -2,19 +2,16 @@ name: libnotify
 version: 0.7.9
 category: x11-libs
 use_flags:
+- -gtk-doc
 - -test
-- x11-libs/gtk+:3[abi_x86_32(-)
-- gtk-doc
-- '>=dev-libs/glib-2.26:2[abi_x86_32(-)'
-- x11-libs/gdk-pixbuf:2[abi_x86_32(-)
 - introspection
 requires:
 - name: eselect-notify-send
   version: '>=0'
   category: app-eselect
-- name: gobject-introspection
+- name: gdk-pixbuf
   version: '>=0'
-  category: dev-libs
+  category: x11-libs-2
 description: A library for sending desktop notifications
 uri:
 - https://gitlab.gnome.org/GNOME/libnotify

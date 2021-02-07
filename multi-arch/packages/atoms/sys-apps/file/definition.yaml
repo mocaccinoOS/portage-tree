@@ -2,25 +2,25 @@ name: file
 version: "5.39"
 category: sys-apps
 use_flags:
-- app-arch/bzip2[abi_x86_32(-)
-- python_targets_python3_9
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- python_targets_python3_7
-- sys-libs/libseccomp[abi_x86_32(-)
-- lzma
-- seccomp
-- dev-python/setuptools[python_targets_python3_6(-)
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - bzip2
-- app-arch/xz-utils[abi_x86_32(-)
-- python_targets_python3_6
+- lzma
 - python
-- python_targets_python3_8
+- python_targets_python3_7
+- seccomp
 - zlib
 requires:
 - name: python-magic
   version: '>=0'
   category: dev-python
+- name: setuptools
+  version: '>=0'
+  category: dev-python
+- name: libseccomp
+  version: '>=0'
+  category: sys-libs
 description: identify a file's format by scanning binary data for patterns
 uri:
 - https://www.darwinsys.com/file/

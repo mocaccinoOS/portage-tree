@@ -2,15 +2,14 @@ name: libdazzle
 version: 3.36.0
 category: dev-libs
 use_flags:
-- '>=x11-libs/gtk+-3.24.0:3[introspection'
+- -gtk-doc
+- -test
 - introspection
 - vala
-- gtk-doc
-- -test
 requires:
-- name: gobject-introspection
+- name: gtk+
   version: '>=0'
-  category: dev-libs
+  category: x11-libs-3
 description: Experimental new features for GTK+ and GLib
 uri:
 - https://gitlab.gnome.org/GNOME/libdazzle

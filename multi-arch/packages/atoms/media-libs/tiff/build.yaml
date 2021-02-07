@@ -12,6 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libtool
+- name: zstd
   version: '>=0'
-  category: sys-devel-2
+  category: app-arch
+- name: jbigkit
+  version: '>=0'
+  category: media-libs
+- name: libwebp
+  version: '>=0'
+  category: media-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs

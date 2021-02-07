@@ -2,17 +2,17 @@ name: glibc
 version: "2.32"
 category: sys-libs-2.2
 use_flags:
-- suid
-- selinux
-- audit
+- -doc
 - -test
+- audit
 - caps
 - compile-locales
-- -doc
-- systemtap
-- vanilla
 - gd
 - nscd
+- selinux
+- suid
+- systemtap
+- vanilla
 requires:
 - name: gzip
   version: '>=0'

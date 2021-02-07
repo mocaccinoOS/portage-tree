@@ -3,11 +3,11 @@ version: 3.36.0
 category: gnome-base
 use_flags:
 - -test
-- ssh-agent
-- filecaps
 - caps
+- filecaps
 - pam
 - selinux
+- ssh-agent
 requires:
 - name: gcr
   version: '>=0'

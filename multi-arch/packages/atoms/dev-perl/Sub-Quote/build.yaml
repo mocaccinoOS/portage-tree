@@ -15,6 +15,3 @@ requires:
 - name: Moo
   version: '>=0'
   category: dev-perl
-- name: Sub-Name
-  version: '>=0'
-  category: dev-perl

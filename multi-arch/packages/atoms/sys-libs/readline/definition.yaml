@@ -1,8 +1,10 @@
 name: readline
 version: "8.0"
 category: sys-libs
-use_flags:
-- '>=sys-libs/ncurses-5.9-r3:0=[static-libs'
+requires:
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
 description: Another cute console display library
 uri:
 - https://tiswww.case.edu/php/chet/readline/rltop.html

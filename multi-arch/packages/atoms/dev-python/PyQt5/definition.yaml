@@ -2,44 +2,41 @@ name: PyQt5
 version: 5.14.2
 category: dev-python
 use_flags:
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- sql
-- networkauth
-- webkit
-- python_targets_python3_9
-- dev-python/dbus-python[python_targets_python3_6(-)
-- positioning
-- opengl
-- testlib
-- python_targets_python3_7
-- websockets
-- xmlpatterns
-- python_targets_python3_8
-- declarative
-- '>=dev-qt/qtdeclarative-5.12:5[widgets'
-- '>=dev-python/PyQt5-sip-4.19.20:=[python_targets_python3_6(-)'
-- gui
-- dbus
-- printsupport
-- help
-- '>=dev-qt/qtmultimedia-5.12:5[widgets'
-- python_targets_python3_6
-- widgets
-- location
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - bluetooth
-- multimedia
-- sensors
-- network
-- webchannel
+- dbus
+- declarative
 - designer
-- x11extras
+- gui
+- help
+- location
+- multimedia
+- network
+- networkauth
+- opengl
+- positioning
+- printsupport
+- python_targets_python3_7
+- sensors
 - serialport
+- sql
 - svg
-- '>=dev-python/sip-4.19.20[python_targets_python3_6(-)'
+- testlib
+- webchannel
+- webkit
+- websockets
+- widgets
+- x11extras
+- xmlpatterns
 requires:
-- name: python
+- name: PyQt5-sip
   version: '>=0'
-  category: dev-lang-3.7
+  category: dev-python
+- name: dbus-python
+  version: '>=0'
+  category: dev-python
 - name: designer
   version: '>=0'
   category: dev-qt-5
@@ -59,9 +56,6 @@ requires:
   version: '>=0'
   category: dev-qt-5
 - name: qtsvg
-  version: '>=0'
-  category: dev-qt-5
-- name: qttest
   version: '>=0'
   category: dev-qt-5
 - name: qtwebsockets

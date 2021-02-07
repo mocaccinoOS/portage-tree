@@ -2,27 +2,22 @@ name: vte
 version: 0.60.3
 category: x11-libs-2.91
 use_flags:
-- x11-libs/pango[introspection
-- gtk-doc
-- vala
-- '>=x11-libs/gtk+-3.24.14:3[introspection'
+- -gtk-doc
 - crypt
 - icu
-- systemd
 - introspection
+- systemd
+- vala
 requires:
-- name: fribidi
-  version: '>=0'
-  category: dev-libs
 - name: icu
   version: '>=0'
   category: dev-libs
 - name: systemd
   version: '>=0'
   category: sys-apps
-- name: pango
+- name: gtk+
   version: '>=0'
-  category: x11-libs
+  category: x11-libs-3
 description: Library providing a virtual terminal emulator widget
 uri:
 - https://wiki.gnome.org/Apps/Terminal/VTE

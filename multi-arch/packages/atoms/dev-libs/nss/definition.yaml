@@ -1,10 +1,13 @@
 name: nss
 version: "3.58"
 category: dev-libs
-use_flags:
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
-- '>=dev-libs/nspr-4.29[abi_x86_32(-)'
-- '>=dev-db/sqlite-3.8.2[abi_x86_32(-)'
+requires:
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: nspr
+  version: '>=0'
+  category: dev-libs
 description: Mozilla's Network Security Services library that implements PKI support
 uri:
 - https://www.mozilla.org/projects/security/pki/nss/

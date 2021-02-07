@@ -15,6 +15,9 @@ requires:
 - name: xorg-proto
   version: '>=0'
   category: x11-base
+- name: libxcb
+  version: '>=0'
+  category: x11-libs
 - name: xtrans
   version: '>=0'
   category: x11-libs

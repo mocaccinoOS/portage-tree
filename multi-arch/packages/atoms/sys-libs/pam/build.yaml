@@ -15,12 +15,21 @@ requires:
 - name: libxslt
   version: '>=0'
   category: dev-libs
+- name: libnsl
+  version: '>=0'
+  category: net-libs
 - name: flex
   version: '>=0'
   category: sys-devel
-- name: libtool
+- name: db
   version: '>=0'
-  category: sys-devel-2
+  category: sys-libs-5.3
 - name: libcap
   version: '>=0'
   category: sys-libs
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: audit
+  version: '>=0'
+  category: sys-process

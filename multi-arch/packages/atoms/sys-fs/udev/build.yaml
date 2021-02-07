@@ -39,6 +39,6 @@ requires:
 - name: kmod
   version: '>=0'
   category: sys-apps
-- name: linux-headers
+- name: util-linux
   version: '>=0'
-  category: sys-kernel
+  category: sys-apps

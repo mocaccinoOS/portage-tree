@@ -2,8 +2,8 @@ name: swig
 version: 4.0.2
 category: dev-lang
 use_flags:
-- pcre
 - ccache
+- pcre
 requires:
 - name: libpcre
   version: '>=0'

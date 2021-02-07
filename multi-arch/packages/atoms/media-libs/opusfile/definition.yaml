@@ -2,13 +2,10 @@ name: opusfile
 version: "0.11"
 category: media-libs
 use_flags:
-- http
-- libressl
 - -doc
+- -libressl
+- http
 requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: libogg
   version: '>=0'
   category: media-libs

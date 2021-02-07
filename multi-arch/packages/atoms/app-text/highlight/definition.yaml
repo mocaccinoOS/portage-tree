@@ -2,11 +2,14 @@ name: highlight
 version: "3.57"
 category: app-text
 use_flags:
-- -qt5
+- qt5
 requires:
 - name: lua
   version: '>=0'
   category: dev-lang
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
 description: Converts source code to formatted text (HTML, LaTeX, etc.) with syntax highlight
 uri:
 - http://www.andre-simon.de/

@@ -39,12 +39,6 @@ requires:
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: libressl
-  version: '>=0'
-  category: dev-libs
-- name: lzo
-  version: '>=0'
-  category: dev-libs-2
 - name: google-perftools
   version: '>=0'
   category: dev-util
@@ -52,9 +46,6 @@ requires:
   version: '>=0'
   category: dev-util
 - name: sed
-  version: '>=0'
-  category: sys-apps
-- name: systemd
   version: '>=0'
   category: sys-apps
 - name: texinfo

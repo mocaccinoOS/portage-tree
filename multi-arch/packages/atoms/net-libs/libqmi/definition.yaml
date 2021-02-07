@@ -2,8 +2,8 @@ name: libqmi
 version: 1.22.2
 category: net-libs
 use_flags:
-- mbim
 - -doc
+- mbim
 requires:
 - name: libmbim
   version: '>=0'

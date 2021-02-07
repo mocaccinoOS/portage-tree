@@ -2,10 +2,12 @@ name: jq
 version: "1.6"
 category: app-misc
 use_flags:
-- '>=dev-libs/oniguruma-6.1.3:=[static-libs'
 - oniguruma
-- '>=dev-libs/oniguruma-6.1.3[static-libs'
 - static-libs
+requires:
+- name: oniguruma
+  version: '>=0'
+  category: dev-libs
 description: A lightweight and flexible command-line JSON processor
 uri:
 - https://stedolan.github.io/jq/

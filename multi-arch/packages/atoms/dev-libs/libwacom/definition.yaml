@@ -4,9 +4,6 @@ category: dev-libs
 use_flags:
 - -doc
 requires:
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: libgudev
   version: '>=0'
   category: dev-libs

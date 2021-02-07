@@ -4,22 +4,7 @@ category: sys-apps
 use_flags:
 - X
 requires:
-- name: libICE
-  version: '>=0'
-  category: x11-libs
-- name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: libXmu
-  version: '>=0'
-  category: x11-libs
-- name: libXt
   version: '>=0'
   category: x11-libs
 description: Text formatter used for man pages

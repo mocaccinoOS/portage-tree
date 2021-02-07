@@ -15,9 +15,6 @@ requires:
 - name: vala
   version: '>=0'
   category: dev-lang-0.48
-- name: gobject-introspection
+- name: gtk+
   version: '>=0'
-  category: dev-libs
-- name: glib-utils
-  version: '>=0'
-  category: dev-util
+  category: x11-libs-3

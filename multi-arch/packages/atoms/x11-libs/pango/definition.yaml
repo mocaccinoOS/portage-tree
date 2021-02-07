@@ -2,22 +2,16 @@ name: pango
 version: 1.42.4
 category: x11-libs
 use_flags:
-- '>=dev-libs/glib-2.50.2:2[abi_x86_32(-)'
-- '>=media-libs/fontconfig-2.12.92:1.0=[abi_x86_32(-)'
 - -test
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- '>=media-libs/harfbuzz-1.4.2:=[glib(+),truetype(+),abi_x86_32(-)'
-- '>=media-libs/freetype-2.5.0.1:2=[abi_x86_32(-)'
-- '>=x11-libs/libXrender-0.9.8[abi_x86_32(-)'
-- '>=x11-libs/cairo-1.12.14-r4:=[X'
-- '>=x11-libs/libXft-2.3.1-r1[abi_x86_32(-)'
-- '>=dev-libs/fribidi-0.19.7[abi_x86_32(-)'
-- introspection
 - X
+- introspection
 requires:
-- name: gobject-introspection
+- name: fribidi
   version: '>=0'
   category: dev-libs
+- name: libXft
+  version: '>=0'
+  category: x11-libs
 description: Internationalized text layout and rendering library
 uri:
 - https://www.pango.org/

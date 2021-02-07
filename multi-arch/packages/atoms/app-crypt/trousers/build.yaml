@@ -21,9 +21,6 @@ requires:
 - name: glib
   version: '>=0'
   category: dev-libs-2
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: libtool
   version: '>=0'
   category: sys-devel-2

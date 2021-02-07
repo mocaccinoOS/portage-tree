@@ -1,11 +1,13 @@
 name: gst-plugins-opus
 version: 1.16.2
 category: media-plugins-1.0
-use_flags:
-- '>=media-libs/gstreamer-1.2.4-r1:1.0[abi_x86_32(-)'
-- '>=media-libs/opus-1.1:=[abi_x86_32(-)'
-- '>=media-libs/gst-plugins-base-1.16.2:1.0[abi_x86_32(-)'
-- '>=dev-libs/glib-2.38.2-r1:2[abi_x86_32(-)'
+requires:
+- name: gst-plugins-base
+  version: '>=0'
+  category: media-libs-1.0
+- name: opus
+  version: '>=0'
+  category: media-libs
 description: Opus audio parser plugin for GStreamer
 uri:
 - https://gstreamer.freedesktop.org/

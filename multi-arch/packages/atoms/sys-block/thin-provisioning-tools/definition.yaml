@@ -2,8 +2,8 @@ name: thin-provisioning-tools
 version: 0.7.0
 category: sys-block
 use_flags:
-- static
 - -test
+- static
 requires:
 - name: expat
   version: '>=0'

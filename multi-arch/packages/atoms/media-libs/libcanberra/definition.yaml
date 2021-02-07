@@ -2,26 +2,15 @@ name: libcanberra
 version: "0.30"
 category: media-libs
 use_flags:
-- virtual/libudev:=[abi_x86_32(-)
-- gstreamer
-- '>=dev-libs/glib-2.32:2[abi_x86_32(-)'
-- media-libs/libvorbis[abi_x86_32(-)
 - alsa
-- x11-libs/gtk+:3[X,abi_x86_32(-)
 - gnome
-- sound
-- '>=media-sound/pulseaudio-0.9.11[abi_x86_32(-)'
-- gtk3
-- media-libs/gstreamer:1.0[abi_x86_32(-)
-- x11-libs/libX11[abi_x86_32(-)
-- sys-libs/tdb:=[abi_x86_32(-)
-- udev
-- pulseaudio
+- gstreamer
 - gtk
-- media-libs/alsa-lib:=[abi_x86_32(-)
+- gtk3
+- pulseaudio
+- sound
 - tdb
-- '>=x11-libs/gtk+-2.20.0:2[abi_x86_32(-)'
-- dev-libs/libltdl:0[abi_x86_32(-)
+- udev
 requires:
 - name: dconf
   version: '>=0'
@@ -29,6 +18,18 @@ requires:
 - name: gsettings-desktop-schemas
   version: '>=0'
   category: gnome-base
+- name: gstreamer
+  version: '>=0'
+  category: media-libs-1.0
+- name: libvorbis
+  version: '>=0'
+  category: media-libs
+- name: pulseaudio
+  version: '>=0'
+  category: media-sound
+- name: tdb
+  version: '>=0'
+  category: sys-libs
 - name: sound-theme-freedesktop
   version: '>=0'
   category: x11-themes

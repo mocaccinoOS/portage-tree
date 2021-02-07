@@ -20,9 +20,6 @@ requires:
 - name: shadow
   version: '>=0'
   category: sys-apps
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 - name: xauth
   version: '>=0'
   category: x11-apps

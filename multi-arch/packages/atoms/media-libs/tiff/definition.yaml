@@ -2,18 +2,25 @@ name: tiff
 version: 4.1.0
 category: media-libs
 use_flags:
-- '>=media-libs/jbigkit-2.1:=[abi_x86_32(-)'
-- zstd
-- '>=app-arch/zstd-1.3.7-r1:=[abi_x86_32(-)'
-- lzma
 - jbig
-- zlib
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
 - jpeg
-- '>=virtual/jpeg-0-r2:0=[abi_x86_32(-)'
-- '>=app-arch/xz-utils-5.0.5-r1[abi_x86_32(-)'
+- lzma
 - webp
-- media-libs/libwebp:=[abi_x86_32(-)
+- zlib
+- zstd
+requires:
+- name: zstd
+  version: '>=0'
+  category: app-arch
+- name: jbigkit
+  version: '>=0'
+  category: media-libs
+- name: libwebp
+  version: '>=0'
+  category: media-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: Tag Image File Format (TIFF) library
 uri:
 - http://libtiff.maptools.org

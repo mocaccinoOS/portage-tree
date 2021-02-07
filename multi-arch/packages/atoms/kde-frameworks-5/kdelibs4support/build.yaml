@@ -27,3 +27,6 @@ requires:
 - name: kded
   version: '>=0'
   category: kde-frameworks-5
+- name: kdoctools
+  version: '>=0'
+  category: kde-frameworks-5

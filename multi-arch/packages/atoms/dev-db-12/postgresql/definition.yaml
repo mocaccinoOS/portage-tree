@@ -2,34 +2,34 @@ name: postgresql
 version: "12.4"
 category: dev-db-12
 use_flags:
-- -python_single_target_python3_9
-- elibc_NetBSD
-- nls
-- xml
+- -elibc_FreeBSD
+- -libressl
 - -python_single_target_python3_6
 - -python_single_target_python3_8
-- zlib
-- selinux
-- elibc_FreeBSD
-- readline
-- systemd
-- python
-- python_single_target_python3_7
-- uuid
-- pam
-- llvm
-- server
-- libressl
-- perl
-- ldap
-- kerberos
+- -python_single_target_python3_9
+- elibc_NetBSD
+- elibc_OpenBSD
+- elibc_glibc
 - elibc_musl
 - elibc_uclibc
-- elibc_glibc
 - icu
-- elibc_OpenBSD
+- kerberos
+- ldap
+- llvm
+- nls
+- pam
+- perl
+- python
+- python_single_target_python3_7
+- readline
+- selinux
+- server
 - ssl
+- systemd
 - tcl
+- uuid
+- xml
+- zlib
 requires:
 - name: postgres
   version: '>=0'
@@ -37,9 +37,6 @@ requires:
 - name: eselect-postgresql
   version: '>=0'
   category: app-eselect
-- name: icu
-  version: '>=0'
-  category: dev-libs
 - name: libxslt
   version: '>=0'
   category: dev-libs

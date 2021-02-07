@@ -2,10 +2,10 @@ name: apr
 version: 1.7.0
 category: dev-libs-1
 use_flags:
-- selinux
-- elibc_glibc
 - -doc
+- elibc_glibc
 - elibc_mintlib
+- selinux
 requires:
 - name: selinux-base-policy
   version: '>=0'

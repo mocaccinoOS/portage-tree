@@ -18,6 +18,3 @@ requires:
 - name: util-linux
   version: '>=0'
   category: sys-apps
-- name: ncurses
-  version: '>=0'
-  category: sys-libs

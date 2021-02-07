@@ -2,11 +2,11 @@ name: tpm2-tss
 version: 2.4.3
 category: app-crypt
 use_flags:
-- gcrypt
-- -test
 - -doc
-- openssl
+- -test
 - fapi
+- gcrypt
+- openssl
 requires:
 - name: tss
   version: '>=0'

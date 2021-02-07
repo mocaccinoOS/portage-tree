@@ -2,31 +2,30 @@ name: spice
 version: 0.14.3
 category: app-emulation
 use_flags:
-- sasl
-- media-libs/opus[static-libs(+)
-- virtual/jpeg:0=[static-libs(+)
-- '>=dev-libs/glib-2.22:2[static-libs(+)'
-- app-arch/lz4:0=[static-libs(+)
-- dev-lang/orc[static-libs(+)
-- '>=x11-libs/pixman-0.17.7[static-libs(+)'
-- lz4
-- dev-libs/cyrus-sasl[static-libs(+)
-- dev-libs/openssl:0=[static-libs(+)
-- sys-libs/zlib[static-libs(+)
-- smartcard
-- libressl
+- -libressl
 - gstreamer
-- dev-libs/libressl:0=[static-libs(+)
+- lz4
+- sasl
+- smartcard
 requires:
+- name: lz4
+  version: '>=0'
+  category: app-arch
 - name: libcacard
   version: '>=0'
   category: app-emulation
+- name: cyrus-sasl
+  version: '>=0'
+  category: dev-libs-2
 - name: gst-plugins-base
   version: '>=0'
   category: media-libs-1.0
-- name: gstreamer
+- name: opus
   version: '>=0'
-  category: media-libs-1.0
+  category: media-libs
+- name: pixman
+  version: '>=0'
+  category: x11-libs
 description: SPICE server
 uri:
 - https://www.spice-space.org/

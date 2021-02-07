@@ -2,8 +2,8 @@ name: Alien-Build
 version: 2.230.0
 category: dev-perl
 use_flags:
-- zip
 - -test
+- zip
 requires:
 - name: Archive-Zip
   version: '>=0'

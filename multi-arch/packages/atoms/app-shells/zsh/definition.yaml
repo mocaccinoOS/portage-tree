@@ -2,10 +2,10 @@ name: zsh
 version: "5.8"
 category: app-shells
 use_flags:
-- pcre
-- gdbm
-- static
 - caps
+- gdbm
+- pcre
+- static
 requires:
 - name: libpcre
   version: '>=0'

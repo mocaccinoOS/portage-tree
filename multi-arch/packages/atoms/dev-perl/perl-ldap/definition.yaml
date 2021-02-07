@@ -3,8 +3,8 @@ version: 0.650.0
 category: dev-perl
 use_flags:
 - sasl
-- xml
 - ssl
+- xml
 requires:
 - name: Authen-SASL
   version: '>=0'

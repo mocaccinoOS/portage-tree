@@ -12,12 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: libxslt
   version: '>=0'
   category: dev-libs
-- name: pypy3
+- name: cython
   version: '>=0'
   category: dev-python

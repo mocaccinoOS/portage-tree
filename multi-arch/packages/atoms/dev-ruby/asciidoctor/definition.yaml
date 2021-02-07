@@ -2,10 +2,10 @@ name: asciidoctor
 version: 2.0.10
 category: dev-ruby
 use_flags:
-- ruby_targets_ruby26
-- ruby_targets_ruby25
-- -test
 - -doc
+- -ruby_targets_ruby25
+- -test
+- ruby_targets_ruby26
 requires:
 - name: ruby
   version: '>=0'

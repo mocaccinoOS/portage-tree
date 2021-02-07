@@ -2,19 +2,16 @@ name: bind-tools
 version: 9.16.6
 category: net-dns
 use_flags:
-- readline
-- caps
-- libressl
-- xml
 - -doc
-- idn
+- -libressl
+- caps
 - gssapi
+- idn
 - libedit
+- readline
+- xml
 requires:
 - name: libedit
-  version: '>=0'
-  category: dev-libs
-- name: libressl
   version: '>=0'
   category: dev-libs
 - name: libuv

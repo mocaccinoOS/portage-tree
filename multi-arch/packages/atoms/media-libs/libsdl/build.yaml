@@ -15,9 +15,24 @@ requires:
 - name: yasm
   version: '>=0'
   category: dev-lang
-- name: libtool
+- name: aalib
   version: '>=0'
-  category: sys-devel-2
-- name: xorg-proto
+  category: media-libs
+- name: audiofile
   version: '>=0'
-  category: x11-base
+  category: media-libs
+- name: libcaca
+  version: '>=0'
+  category: media-libs
+- name: nas
+  version: '>=0'
+  category: media-libs
+- name: pulseaudio
+  version: '>=0'
+  category: media-sound
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+- name: tslib
+  version: '>=0'
+  category: x11-libs

@@ -2,31 +2,29 @@ name: wxGTK
 version: 3.0.4
 category: x11-libs-3.0
 use_flags:
-- virtual/jpeg:0=[abi_x86_32(-)
-- libnotify
-- tiff
-- x11-libs/gtk+:2[aqua=,abi_x86_32(-)
-- gstreamer
-- virtual/opengl[abi_x86_32(-)
-- dev-libs/expat[abi_x86_32(-)
 - X
-- media-libs/gst-plugins-base:1.0[abi_x86_32(-)
-- '>=x11-libs/gtk+-2.18:2[abi_x86_32(-)'
-- x11-libs/libXxf86vm[abi_x86_32(-)
-- '>=dev-libs/glib-2.22:2[abi_x86_32(-)'
-- sys-libs/zlib[abi_x86_32(-)
-- x11-libs/pango[abi_x86_32(-)
-- opengl
-- x11-libs/gdk-pixbuf[abi_x86_32(-)
-- media-libs/gstreamer:1.0[abi_x86_32(-)
 - aqua
-- media-libs/libsdl2[abi_x86_32(-)
-- media-libs/libpng:0=[abi_x86_32(-)
-- x11-libs/libSM[abi_x86_32(-)
+- gstreamer
+- libnotify
+- opengl
 - sdl
-- media-libs/tiff:0[abi_x86_32(-)
-- x11-libs/libnotify[abi_x86_32(-)
-- virtual/glu[abi_x86_32(-)
+- tiff
+requires:
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: gst-plugins-base
+  version: '>=0'
+  category: media-libs-1.0
+- name: libsdl2
+  version: '>=0'
+  category: media-libs
+- name: libSM
+  version: '>=0'
+  category: x11-libs
+- name: libnotify
+  version: '>=0'
+  category: x11-libs
 description: GTK+ version of wxWidgets, a cross-platform C++ GUI toolkit
 uri:
 - https://wxwidgets.org/

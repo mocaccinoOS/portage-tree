@@ -12,6 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: brotli
+  version: '>=0'
+  category: app-arch
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
 - name: vala
   version: '>=0'
   category: dev-lang-0.48
@@ -24,6 +30,6 @@ requires:
 - name: samba
   version: '>=0'
   category: net-fs
-- name: zlib
+- name: libpsl
   version: '>=0'
-  category: sys-libs
+  category: net-libs

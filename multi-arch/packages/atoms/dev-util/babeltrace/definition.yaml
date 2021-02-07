@@ -8,9 +8,6 @@ requires:
 - name: popt
   version: '>=0'
   category: dev-libs
-- name: util-linux
-  version: '>=0'
-  category: sys-apps
 description: A command-line tool and library to read and convert trace files
 uri:
 - https://lttng.org

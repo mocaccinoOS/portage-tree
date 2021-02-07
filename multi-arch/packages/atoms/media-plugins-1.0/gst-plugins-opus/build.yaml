@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: sed
+- name: gst-plugins-base
   version: '>=0'
-  category: sys-apps
+  category: media-libs-1.0
+- name: opus
+  version: '>=0'
+  category: media-libs

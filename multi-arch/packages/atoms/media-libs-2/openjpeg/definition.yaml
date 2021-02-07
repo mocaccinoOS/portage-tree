@@ -10,12 +10,6 @@ requires:
 - name: libpng
   version: '>=0'
   category: media-libs
-- name: tiff
-  version: '>=0'
-  category: media-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 description: Open-source JPEG 2000 library
 uri:
 - https://www.openjpeg.org

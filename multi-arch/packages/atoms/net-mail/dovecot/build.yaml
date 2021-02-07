@@ -18,12 +18,6 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
-- name: lz4
-  version: '>=0'
-  category: app-arch
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
 - name: libexttextcat
   version: '>=0'
   category: app-text

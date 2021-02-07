@@ -18,9 +18,6 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 - name: readline
   version: '>=0'
   category: sys-libs

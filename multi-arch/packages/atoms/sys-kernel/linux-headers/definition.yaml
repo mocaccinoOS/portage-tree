@@ -11,4 +11,4 @@ labels:
   emerge.packages: sys-kernel/linux-headers
   kit: gentoo
   original.package.name: sys-kernel/linux-headers
-  original.package.version: "5.4"
+  original.package.version: 5.4-r1

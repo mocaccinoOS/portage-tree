@@ -12,6 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: wayland
+  version: '>=0'
+  category: dev-libs
 - name: vulkan-headers
   version: '>=0'
   category: dev-util
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs

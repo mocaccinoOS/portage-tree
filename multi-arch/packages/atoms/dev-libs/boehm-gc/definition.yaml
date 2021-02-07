@@ -1,8 +1,10 @@
 name: boehm-gc
 version: 8.0.4
 category: dev-libs
-use_flags:
-- '>=dev-libs/libatomic_ops-7.4[abi_x86_32(-)'
+requires:
+- name: libatomic_ops
+  version: '>=0'
+  category: dev-libs
 description: The Boehm-Demers-Weiser conservative garbage collector
 uri:
 - https://www.hboehm.info/gc/ https://github.com/ivmai/bdwgc/

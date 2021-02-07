@@ -4,12 +4,6 @@ category: media-libs
 use_flags:
 - -doc
 requires:
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: pango
   version: '>=0'
   category: x11-libs

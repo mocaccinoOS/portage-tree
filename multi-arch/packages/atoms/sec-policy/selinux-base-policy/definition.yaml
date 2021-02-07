@@ -1,8 +1,10 @@
 name: selinux-base-policy
 version: "2.20190609"
 category: sec-policy
-use_flags:
-- =sec-policy/selinux-base-2.20190609-r1[systemd
+requires:
+- name: selinux-base
+  version: '>=0'
+  category: sec-policy
 description: SELinux policy for core modules
 uri:
 - https://wiki.gentoo.org/wiki/Project:SELinux

@@ -2,17 +2,23 @@ name: elfutils
 version: "0.181"
 category: dev-libs
 use_flags:
-- '>=app-arch/xz-utils-5.0.5-r1[static-libs'
-- '>=sys-libs/zlib-1.2.8-r1[static-libs'
 - bzip2
-- valgrind
-- nls
-- '>=app-arch/bzip2-1.0.6-r4[static-libs'
 - lzma
+- nls
+- valgrind
 requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
 - name: libelf
   version: '>=0'
   category: dev-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: Libraries/utilities to handle ELF objects (drop in replacement for libelf)
 uri:
 - http://elfutils.org/

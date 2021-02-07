@@ -2,18 +2,15 @@ name: libftdi
 version: "1.4"
 category: dev-embedded-1
 use_flags:
-- python_single_target_python3_7
 - -doc
+- -python_single_target_python3_6
 - -python_single_target_python3_8
 - -python_single_target_python3_9
-- tools
 - cxx
 - python
-- -python_single_target_python3_6
+- python_single_target_python3_7
+- tools
 requires:
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: boost
   version: '>=0'
   category: dev-libs

@@ -2,8 +2,8 @@ name: XML-LibXML
 version: 2.20.100
 category: dev-perl
 use_flags:
+- -minimal
 - -test
-- minimal
 description: Perl binding for libxml2
 uri:
 - https://metacpan.org/release/XML-LibXML

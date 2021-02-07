@@ -2,15 +2,15 @@ name: ghostscript-gpl
 version: "9.52"
 category: app-text
 use_flags:
-- l10n_zh-TW
+- X
 - cups
 - dbus
+- gtk
+- l10n_ja
 - l10n_ko
 - l10n_zh-CN
+- l10n_zh-TW
 - tiff
-- X
-- l10n_ja
-- gtk
 - unicode
 requires:
 - name: poppler-data
@@ -28,12 +28,6 @@ requires:
 - name: urw-fonts
   version: '>=0'
   category: media-fonts
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: jbig2dec
   version: '>=0'
   category: media-libs
@@ -43,18 +37,9 @@ requires:
 - name: libidn
   version: '>=0'
   category: net-dns
-- name: cups
-  version: '>=0'
-  category: net-print
-- name: dbus
-  version: '>=0'
-  category: sys-apps
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
-- name: libXext
-  version: '>=0'
-  category: x11-libs
 description: Interpreter for the PostScript language and PDF
 uri:
 - https://ghostscript.com/

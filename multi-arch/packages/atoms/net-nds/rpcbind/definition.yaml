@@ -2,9 +2,9 @@ name: rpcbind
 version: 1.2.5
 category: net-nds
 use_flags:
+- selinux
 - systemd
 - tcpd
-- selinux
 requires:
 - name: libtirpc
   version: '>=0'

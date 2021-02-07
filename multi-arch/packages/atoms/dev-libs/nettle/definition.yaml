@@ -2,8 +2,11 @@ name: nettle
 version: "3.6"
 category: dev-libs
 use_flags:
-- '>=dev-libs/gmp-6.1:0=[static-libs'
 - gmp
+requires:
+- name: gmp
+  version: '>=0'
+  category: dev-libs
 description: Low-level cryptographic library
 uri:
 - http://www.lysator.liu.se/~nisse/nettle/

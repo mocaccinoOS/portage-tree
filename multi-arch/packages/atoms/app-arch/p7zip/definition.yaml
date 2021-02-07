@@ -2,10 +2,10 @@ name: p7zip
 version: "16.02"
 category: app-arch
 use_flags:
-- wxwidgets
-- amd64
-- x86
 - abi_x86_x32
+- amd64
+- wxwidgets
+- x86
 requires:
 - name: wxGTK
   version: '>=0'

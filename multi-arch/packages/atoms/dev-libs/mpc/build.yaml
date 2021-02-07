@@ -12,6 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: mpfr
   version: '>=0'
-  category: layers
+  category: dev-libs

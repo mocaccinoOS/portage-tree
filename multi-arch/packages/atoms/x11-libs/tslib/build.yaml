@@ -12,9 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: libevdev
+  version: '>=0'
+  category: dev-libs
 - name: cmake
   version: '>=0'
   category: dev-util
-- name: ninja
+- name: libsdl2
   version: '>=0'
-  category: dev-util
+  category: media-libs

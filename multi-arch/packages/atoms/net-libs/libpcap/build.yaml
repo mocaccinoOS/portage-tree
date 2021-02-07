@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: flex
+- name: libnl
   version: '>=0'
-  category: sys-devel
-- name: libtool
+  category: dev-libs-3
+- name: bluez
   version: '>=0'
-  category: sys-devel-2
+  category: net-wireless

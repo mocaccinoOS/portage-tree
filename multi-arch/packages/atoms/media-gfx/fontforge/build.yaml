@@ -12,19 +12,10 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: libltdl
   version: '>=0'
   category: dev-libs
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: giflib
-  version: '>=0'
-  category: media-libs
-- name: libpng
   version: '>=0'
   category: media-libs
 - name: libuninameslist
@@ -36,18 +27,6 @@ requires:
 - name: woff2
   version: '>=0'
   category: media-libs
-- name: cairo
-  version: '>=0'
-  category: x11-libs
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
-- name: libX11
-  version: '>=0'
-  category: x11-libs
-- name: libXi
-  version: '>=0'
-  category: x11-libs
-- name: pango
-  version: '>=0'
-  category: x11-libs

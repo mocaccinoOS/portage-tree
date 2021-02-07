@@ -2,47 +2,49 @@ name: curl
 version: 7.72.0
 category: net-misc
 use_flags:
-- net-libs/mbedtls:0=[abi_x86_32(-)
-- net-libs/nghttp3[abi_x86_32(-)
-- net-dns/libidn2:0=[static-libs
-- '>=net-libs/quiche-0.3.0[abi_x86_32(-)'
-- app-arch/brotli:=[abi_x86_32(-)
-- net-libs/gnutls:0=[static-libs
-- ldap
-- brotli
-- net-nds/openldap[abi_x86_32(-)
-- idn
-- http2
-- ssl
-- gnutls
-- dev-libs/libressl:0=[static-libs
-- adns
-- mbedtls
-- kerberos
-- libressl
-- dev-libs/openssl:0=[static-libs
-- net-dns/c-ares:0[abi_x86_32(-)
+- -libressl
 - -test
-- ssh
-- net-libs/libssh2[abi_x86_32(-)
-- nghttp3
-- quiche
-- media-video/rtmpdump[abi_x86_32(-)
-- rtmp
+- adns
+- brotli
+- gnutls
+- http2
+- idn
+- kerberos
+- ldap
+- mbedtls
 - metalink
-- sys-libs/zlib[abi_x86_32(-)
-- net-libs/ngtcp2[ssl,abi_x86_32(-)
-- dev-libs/nss:0[abi_x86_32(-)
+- nghttp3
 - nss
 - openssl
-- '>=media-libs/libmetalink-0.1.1[abi_x86_32(-)'
-- dev-libs/nettle:0=[abi_x86_32(-)
-- net-libs/nghttp2[abi_x86_32(-)
-- '>=virtual/krb5-0-r1[abi_x86_32(-)'
+- quiche
+- rtmp
+- ssh
+- ssl
 requires:
+- name: brotli
+  version: '>=0'
+  category: app-arch
 - name: ca-certificates
   version: '>=0'
   category: app-misc
+- name: nss
+  version: '>=0'
+  category: dev-libs
+- name: libmetalink
+  version: '>=0'
+  category: media-libs
+- name: rtmpdump
+  version: '>=0'
+  category: media-video
+- name: libssh2
+  version: '>=0'
+  category: net-libs
+- name: nghttp2
+  version: '>=0'
+  category: net-libs
+- name: openldap
+  version: '>=0'
+  category: net-nds
 description: A Client that groks URLs
 uri:
 - https://curl.haxx.se/

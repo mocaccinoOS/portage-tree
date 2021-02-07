@@ -2,9 +2,9 @@ name: findutils
 version: 4.7.0
 category: sys-apps
 use_flags:
-- selinux
-- nls
 - -test
+- nls
+- selinux
 requires:
 - name: libselinux
   version: '>=0'

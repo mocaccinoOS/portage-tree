@@ -21,3 +21,12 @@ requires:
 - name: ftgl
   version: '>=0'
   category: media-libs
+- name: imlib2
+  version: '>=0'
+  category: media-libs
+- name: slang
+  version: '>=0'
+  category: sys-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs

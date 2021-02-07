@@ -15,13 +15,13 @@ requires:
 - name: zstd
   version: '>=0'
   category: app-arch
-- name: p11-kit
-  version: '>=0'
-  category: app-crypt
 - name: docbook-xsl-stylesheets
   version: '>=0'
   category: app-text
 - name: elfutils
+  version: '>=0'
+  category: dev-libs
+- name: openssl
   version: '>=0'
   category: dev-libs
 - name: lxml
@@ -36,9 +36,6 @@ requires:
 - name: qrencode
   version: '>=0'
   category: media-gfx
-- name: libidn2
-  version: '>=0'
-  category: net-dns
 - name: iptables
   version: '>=0'
   category: net-firewall

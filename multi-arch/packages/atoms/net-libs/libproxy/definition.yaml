@@ -2,14 +2,12 @@ name: libproxy
 version: 0.4.15
 category: net-libs
 use_flags:
-- spidermonkey
-- webkit
-- kde
 - gnome
-- dev-libs/glib:2[abi_x86_32(-)
+- kde
 - mono
 - networkmanager
-- sys-apps/dbus:0[abi_x86_32(-)
+- spidermonkey
+- webkit
 requires:
 - name: mono
   version: '>=0'
@@ -23,6 +21,9 @@ requires:
 - name: webkit-gtk
   version: '>=0'
   category: net-libs-4
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 description: Library for automatic proxy configuration management
 uri:
 - https://github.com/libproxy/libproxy

@@ -2,19 +2,20 @@ name: at-spi2-core
 version: 2.36.0
 category: app-accessibility-2
 use_flags:
-- X
+- -gtk-doc
 - -test
-- '>=dev-libs/glib-2.36:2[abi_x86_32(-)'
-- x11-libs/libXtst[abi_x86_32(-)
-- x11-libs/libXi[abi_x86_32(-)
-- '>=sys-apps/dbus-1.5[abi_x86_32(-)'
+- X
 - introspection
-- gtk-doc
-- x11-libs/libX11[abi_x86_32(-)
 requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: libXtst
+  version: '>=0'
+  category: x11-libs
 description: D-Bus accessibility specifications and registration daemon
 uri:
 - https://wiki.gnome.org/Accessibility

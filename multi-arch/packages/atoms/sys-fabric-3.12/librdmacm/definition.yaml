@@ -1,8 +1,6 @@
 name: librdmacm
 version: 1.0.18
 category: sys-fabric-3.12
-use_flags:
-- sys-fabric/libibverbs:3.12[static-libs
 requires:
 - name: librdmacm
   version: '>=0'
@@ -12,10 +10,9 @@ uri:
 - https://www.openfabrics.org/
 license: '|| ( GPL-2 BSD-2 )'
 labels:
-  DEPEND: sys-fabric/libibverbs:3.12[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] >=app-arch/rpm2targz-9.0.0.3g
-  IUSE: static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
-  RDEPEND: sys-fabric/libibverbs:3.12[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] !sys-fabric/openib-userspace !sys-fabric/librdmacm:0 !sys-fabric/librdmacm:3.5
+  DEPEND: sys-fabric/libibverbs:3.12 >=app-arch/rpm2targz-9.0.0.3g
+  RDEPEND: sys-fabric/libibverbs:3.12 !sys-fabric/openib-userspace !sys-fabric/librdmacm:0 !sys-fabric/librdmacm:3.5
   emerge.packages: sys-fabric/librdmacm:3.12
   kit: gentoo
   original.package.name: sys-fabric/librdmacm
-  original.package.version: 1.0.18-r1
+  original.package.version: 1.0.18

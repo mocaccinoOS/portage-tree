@@ -2,16 +2,15 @@ name: mbedtls
 version: 2.24.0
 category: net-libs
 use_flags:
-- libressl
-- zlib
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
 - -doc
+- -libressl
 - -test
 - programs
+- zlib
 requires:
-- name: libressl
+- name: zlib
   version: '>=0'
-  category: dev-libs
+  category: sys-libs
 description: Cryptographic library for embedded systems
 uri:
 - https://tls.mbed.org/

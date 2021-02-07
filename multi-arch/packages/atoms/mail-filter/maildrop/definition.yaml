@@ -2,15 +2,15 @@ name: maildrop
 version: 3.0.0
 category: mail-filter
 use_flags:
-- gdbm
-- tools
-- mysql
-- ldap
 - authlib
-- dovecot
-- postgres
-- fam
 - berkdb
+- dovecot
+- fam
+- gdbm
+- ldap
+- mysql
+- postgres
+- tools
 requires:
 - name: dovecot
   version: '>=0'

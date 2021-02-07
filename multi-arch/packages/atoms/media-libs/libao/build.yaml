@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libtool
+- name: nas
   version: '>=0'
-  category: sys-devel-2
+  category: media-libs
+- name: pulseaudio
+  version: '>=0'
+  category: media-sound

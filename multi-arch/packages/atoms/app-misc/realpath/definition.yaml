@@ -2,8 +2,8 @@ name: realpath
 version: "1.18"
 category: app-misc
 use_flags:
-- nls
 - elibc_mintlib
+- nls
 description: Return the canonicalized absolute pathname
 uri:
 - http://packages.debian.org/unstable/utils/realpath

@@ -12,6 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: ncurses
+- name: libpcre
   version: '>=0'
-  category: sys-libs
+  category: dev-libs-3
+- name: oniguruma
+  version: '>=0'
+  category: dev-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs

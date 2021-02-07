@@ -1,8 +1,10 @@
 name: libedit
 version: 20191211.3.1
 category: dev-libs
-use_flags:
-- '>=sys-libs/ncurses-5.9-r3[static-libs'
+requires:
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
 description: BSD replacement for libreadline
 uri:
 - https://thrysoee.dk/editline/

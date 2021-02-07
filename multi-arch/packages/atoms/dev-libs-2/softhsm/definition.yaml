@@ -2,9 +2,9 @@ name: softhsm
 version: 2.6.1
 category: dev-libs-2
 use_flags:
-- migration-tool
-- libressl
+- -libressl
 - -test
+- migration-tool
 requires:
 - name: softhsm
   version: '>=0'

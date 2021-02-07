@@ -2,22 +2,16 @@ name: asciidoc
 version: 9.0.2
 category: app-text
 use_flags:
-- -python_single_target_python3_9
-- python_single_target_pypy3
 - -python_single_target_python3_6
-- python_single_target_python3_7
-- -test
 - -python_single_target_python3_8
+- -python_single_target_python3_9
+- -test
+- python_single_target_pypy3
+- python_single_target_python3_7
 requires:
 - name: docbook-xml-dtd
   version: '>=0'
   category: app-text-4.5
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: libxslt
   version: '>=0'
   category: dev-libs

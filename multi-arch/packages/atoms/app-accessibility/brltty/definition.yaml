@@ -2,30 +2,28 @@ name: brltty
 version: "6.1"
 category: app-accessibility
 use_flags:
-- tcl
-- java
-- gpm
-- pcm
-- speech
-- ncurses
-- systemd
-- usb
-- ocaml
-- icu
-- python_targets_python3_7
-- louis
-- iconv
-- xml
-- python
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- python_targets_python3_6
-- python_targets_python3_8
-- bluetooth
-- policykit
+- -python_targets_python3_6
+- -python_targets_python3_8
 - X
+- bluetooth
+- gpm
+- iconv
+- icu
+- java
+- louis
 - midi
+- ncurses
 - nls
-- '>=dev-python/cython-0.16[python_targets_python3_6(-)'
+- ocaml
+- pcm
+- policykit
+- python
+- python_targets_python3_7
+- speech
+- systemd
+- tcl
+- usb
+- xml
 requires:
 - name: at-spi2-core
   version: '>=0'
@@ -48,16 +46,10 @@ requires:
 - name: polkit
   version: '>=0'
   category: sys-auth
-- name: gpm
-  version: '>=0'
-  category: sys-libs
 - name: libXaw
   version: '>=0'
   category: x11-libs
 - name: libXfixes
-  version: '>=0'
-  category: x11-libs
-- name: libXtst
   version: '>=0'
   category: x11-libs
 description: Daemon that provides access to the Linux/Unix console for a blind person

@@ -2,11 +2,15 @@ name: libXpm
 version: 3.5.13
 category: x11-libs
 use_flags:
-- '>=x11-libs/libXext-1.3.2[abi_x86_32(-)'
-- '>=x11-libs/libXt-1.1.4[abi_x86_32(-)'
-- ppc-aix
-- x86-winnt
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
+- -ppc-aix
+- -x86-winnt
+requires:
+- name: libXext
+  version: '>=0'
+  category: x11-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs
 description: X.Org Xpm library
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libXpm

@@ -2,30 +2,27 @@ name: ibus
 version: 1.5.22
 category: app-i18n
 use_flags:
-- kde
-- unicode
-- dev-python/pygobject:3[python_targets_python3_6(-)
-- python
-- wayland
-- python_targets_python3_7
-- sys-apps/dbus[X
-- gtk2
-- python_targets_python3_8
+- -python_targets_python3_6
+- -python_targets_python3_8
 - -test
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- introspection
-- python_targets_python3_6
+- X
 - emoji
 - gtk
-- X
+- gtk2
+- introspection
+- kde
 - nls
+- python
+- python_targets_python3_7
+- unicode
+- wayland
 requires:
 - name: iso-codes
   version: '>=0'
   category: app-text
-- name: wayland
+- name: pygobject
   version: '>=0'
-  category: dev-libs
+  category: dev-python-3
 - name: qtgui
   version: '>=0'
   category: dev-qt-5
@@ -38,9 +35,6 @@ requires:
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
-- name: libXi
-  version: '>=0'
-  category: x11-libs
 description: Intelligent Input Bus for Linux / Unix OS
 uri:
 - https://github.com/ibus/ibus/wiki

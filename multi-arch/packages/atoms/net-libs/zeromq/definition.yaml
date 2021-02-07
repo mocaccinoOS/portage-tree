@@ -2,11 +2,11 @@ name: zeromq
 version: 4.3.3
 category: net-libs
 use_flags:
-- pgm
 - -doc
-- elibc_Darwin
-- unwind
+- -elibc_Darwin
+- pgm
 - sodium
+- unwind
 requires:
 - name: libsodium
   version: '>=0'

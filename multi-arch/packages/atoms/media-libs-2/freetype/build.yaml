@@ -12,6 +12,24 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: brotli
   version: '>=0'
-  category: layers
+  category: app-arch
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: harfbuzz
+  version: '>=0'
+  category: media-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs
+- name: libX11
+  version: '>=0'
+  category: x11-libs
+- name: libXau
+  version: '>=0'
+  category: x11-libs
+- name: libXdmcp
+  version: '>=0'
+  category: x11-libs

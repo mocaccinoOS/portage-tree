@@ -8,9 +8,6 @@ requires:
 - name: tk
   version: '>=0'
   category: dev-lang
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 description: Extension to Tk, adding new widgets, geometry managers, and misc commands
 uri:
 - http://blt.sourceforge.net/ http://jos.decoster.googlepages.com/bltfortk8.5.2

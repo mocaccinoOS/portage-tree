@@ -2,14 +2,13 @@ name: openrc
 version: 0.42.1
 category: sys-apps
 use_flags:
-- selinux
+- audit
 - bash
-- prefix
-- sysv-utils
-- '>=sys-apps/sysvinit-2.86-r6[selinux'
 - ncurses
 - pam
-- audit
+- prefix
+- selinux
+- sysv-utils
 requires:
 - name: bash
   version: '>=0'
@@ -35,9 +34,6 @@ requires:
 - name: udev-init-scripts
   version: '>=0'
   category: sys-fs
-- name: audit
-  version: '>=0'
-  category: sys-process
 - name: procps
   version: '>=0'
   category: sys-process

@@ -2,14 +2,13 @@ name: xar
 version: "1.8"
 category: app-arch
 use_flags:
-- sys-libs/zlib[abi_x86_32(-)
-- dev-libs/libxml2[abi_x86_32(-)
+- -libressl
 - kernel_Darwin
 - kernel_SunOS
-- libressl
-- dev-libs/openssl:0=[abi_x86_32(-)
-- dev-libs/libressl:0=[abi_x86_32(-)
-- app-arch/bzip2[abi_x86_32(-)
+requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
 description: An easily extensible archive format
 uri:
 - https://opensource.apple.com/source/xar/

@@ -21,12 +21,6 @@ requires:
 - name: dbus-glib
   version: '>=0'
   category: dev-libs
-- name: libevent
-  version: '>=0'
-  category: dev-libs
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
 - name: avahi
   version: '>=0'
   category: net-dns

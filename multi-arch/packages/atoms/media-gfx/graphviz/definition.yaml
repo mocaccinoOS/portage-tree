@@ -2,26 +2,26 @@ name: graphviz
 version: 2.42.3
 category: media-gfx
 use_flags:
-- python
-- tcl
-- java
-- lasi
+- -python_single_target_python3_6
 - -python_single_target_python3_8
-- ruby
 - X
 - cairo
-- guile
-- gts
-- pdf
-- postscript
-- nls
 - devil
-- -python_single_target_python3_6
-- svg
 - gtk
+- gts
+- guile
+- java
+- lasi
+- nls
+- pdf
 - perl
+- postscript
+- python
 - python_single_target_python3_7
-- -qt5
+- qt5
+- ruby
+- svg
+- tcl
 requires:
 - name: ghostscript-gpl
   version: '>=0'
@@ -35,15 +35,15 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: ruby
   version: '>=0'
   category: dev-lang-2.6
 - name: libltdl
   version: '>=0'
   category: dev-libs
+- name: qtprintsupport
+  version: '>=0'
+  category: dev-qt-5
 - name: librsvg
   version: '>=0'
   category: gnome-base-2
@@ -60,9 +60,6 @@ requires:
   version: '>=0'
   category: sci-libs
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: libXmu
   version: '>=0'
   category: x11-libs
 description: Open Source Graph Visualization Software

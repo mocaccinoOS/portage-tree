@@ -18,9 +18,6 @@ requires:
 - name: acl
   version: '>=0'
   category: sys-apps
-- name: attr
-  version: '>=0'
-  category: sys-apps
 - name: libcap
   version: '>=0'
   category: sys-libs

@@ -2,20 +2,17 @@ name: netpbm
 version: 10.76.00
 category: media-libs
 use_flags:
-- rle
 - X
 - jbig
+- jpeg
 - png
+- postscript
+- rle
+- svga
 - tiff
 - xml
 - zlib
-- postscript
-- svga
-- jpeg
 requires:
-- name: jbigkit
-  version: '>=0'
-  category: media-libs
 - name: svgalib
   version: '>=0'
   category: media-libs

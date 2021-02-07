@@ -2,54 +2,29 @@ name: ceph
 version: 14.2.11
 category: sys-cluster
 use_flags:
-- jemalloc
-- lttng
-- ssl
-- dev-python/more-itertools[python_targets_python3_6(-)
-- dev-python/pyopenssl[python_targets_python3_6(-)
-- dev-python/cython[python_targets_python3_6(-)
-- openssl
-- =dev-libs/boost-1.72*[threads,context,python,python_targets_python3_6(-)
-- diskprediction
-- dev-python/virtualenv[python_targets_python3_6(-)
-- dev-python/pecan[python_targets_python3_6(-)
-- xfs
-- radosgw
-- dev-python/requests-mock[python_targets_python3_6(-)
-- python_targets_python3_6
-- rabbitmq
-- kerberos
-- dev-python/werkzeug[python_targets_python3_6(-)
-- dev-python/routes[python_targets_python3_6(-)
-- dev-python/bcrypt[python_targets_python3_6(-)
-- babeltrace
-- dev-python/jinja[python_targets_python3_6(-)
-- system-boost
-- <dev-python/scipy-1.4.0[python_targets_python3_6(-)
-- x86
-- dev-python/coverage[python_targets_python3_6(-)
-- dev-python/requests[python_targets_python3_6(-)
-- amd64
-- sci-libs/scikits_learn[python_targets_python3_6(-)
-- dev-python/prettytable[python_targets_python3_6(-)
-- mgr
-- zfs
-- dev-python/flask[python_targets_python3_6(-)
-- dev-python/pyjwt[python_targets_python3_6(-)
+- -libressl
+- -python_targets_python3_6
+- -python_targets_python3_8
 - -test
-- ldap
+- amd64
+- babeltrace
+- diskprediction
 - fuse
-- dev-python/cherrypy[python_targets_python3_6(-)
-- libressl
-- dev-python/six[python_targets_python3_6(-)
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- dev-python/numpy[python_targets_python3_6(-)
+- jemalloc
 - kafka
+- kerberos
+- ldap
+- lttng
+- mgr
+- openssl
 - python_targets_python3_7
-- dev-libs/leveldb:=[snappy,tcmalloc(-)
-- dev-libs/xmlsec:=[!openssl
-- python_targets_python3_8
-- dev-python/pyyaml[python_targets_python3_6(-)
+- rabbitmq
+- radosgw
+- ssl
+- system-boost
+- x86
+- xfs
+- zfs
 requires:
 - name: ceph
   version: '>=0'
@@ -57,9 +32,6 @@ requires:
 - name: sudo
   version: '>=0'
   category: app-admin
-- name: snappy
-  version: '>=0'
-  category: app-arch
 - name: jq
   version: '>=0'
   category: app-misc
@@ -69,10 +41,16 @@ requires:
 - name: yaml-cpp
   version: '>=0'
   category: dev-cpp
+- name: boost
+  version: '>=0'
+  category: dev-libs
 - name: crypto++
   version: '>=0'
   category: dev-libs
 - name: jemalloc
+  version: '>=0'
+  category: dev-libs
+- name: leveldb
   version: '>=0'
   category: dev-libs
 - name: libnl
@@ -81,33 +59,51 @@ requires:
 - name: librdkafka
   version: '>=0'
   category: dev-libs
-- name: nss
-  version: '>=0'
-  category: dev-libs
 - name: protobuf
   version: '>=0'
   category: dev-libs
-- name: babeltrace
+- name: bcrypt
   version: '>=0'
-  category: dev-util
-- name: google-perftools
+  category: dev-python
+- name: cherrypy
+  version: '>=0'
+  category: dev-python
+- name: flask
+  version: '>=0'
+  category: dev-python
+- name: pecan
+  version: '>=0'
+  category: dev-python
+- name: prettytable
+  version: '>=0'
+  category: dev-python
+- name: pyjwt
+  version: '>=0'
+  category: dev-python
+- name: pyyaml
+  version: '>=0'
+  category: dev-python
+- name: requests
+  version: '>=0'
+  category: dev-python
+- name: routes
+  version: '>=0'
+  category: dev-python
+- name: babeltrace
   version: '>=0'
   category: dev-util
 - name: lttng-ust
   version: '>=0'
   category: dev-util
-- name: c-ares
-  version: '>=0'
-  category: net-dns
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: rabbitmq-c
   version: '>=0'
   category: net-libs
 - name: socat
   version: '>=0'
   category: net-misc
+- name: scikits_learn
+  version: '>=0'
+  category: sci-libs
 - name: gptfdisk
   version: '>=0'
   category: sys-apps
@@ -138,9 +134,6 @@ requires:
 - name: zfs
   version: '>=0'
   category: sys-fs
-- name: libpciaccess
-  version: '>=0'
-  category: x11-libs
 description: Ceph distributed filesystem
 uri:
 - https://ceph.com/

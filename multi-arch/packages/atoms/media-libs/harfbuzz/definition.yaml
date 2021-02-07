@@ -2,22 +2,24 @@ name: harfbuzz
 version: 2.7.2
 category: media-libs
 use_flags:
-- '>=dev-libs/icu-51.2-r1:=[abi_x86_32(-)'
-- truetype
-- '>=media-libs/freetype-2.5.0.1:2=[abi_x86_32(-)'
+- -doc
+- -test
 - cairo
 - glib
+- graphite
 - icu
 - introspection
-- -test
-- -doc
-- '>=dev-libs/glib-2.38:2[abi_x86_32(-)'
-- graphite
-- '>=media-gfx/graphite2-1.2.1:=[abi_x86_32(-)'
+- truetype
 requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: graphite2
+  version: '>=0'
+  category: media-gfx
 - name: cairo
   version: '>=0'
   category: x11-libs

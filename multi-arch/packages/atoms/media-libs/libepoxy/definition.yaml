@@ -2,10 +2,12 @@ name: libepoxy
 version: 1.5.4
 category: media-libs
 use_flags:
-- egl
-- media-libs/mesa[egl,abi_x86_32(-)
 - X
-- x11-libs/libX11[abi_x86_32(-)
+- egl
+requires:
+- name: mesa
+  version: '>=0'
+  category: media-libs
 description: Library for handling OpenGL function pointer management
 uri:
 - https://github.com/anholt/libepoxy

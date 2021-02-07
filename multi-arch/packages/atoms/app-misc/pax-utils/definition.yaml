@@ -2,18 +2,15 @@ name: pax-utils
 version: 1.2.6
 category: app-misc
 use_flags:
-- kernel_linux
-- python
 - -python_single_target_python3_6
-- python_single_target_python3_7
 - -python_single_target_python3_8
 - -python_single_target_python3_9
-- seccomp
 - caps
+- kernel_linux
+- python
+- python_single_target_python3_7
+- seccomp
 requires:
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: pyelftools
   version: '>=0'
   category: dev-python

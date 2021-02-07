@@ -1,8 +1,6 @@
 name: texlive-basic
 version: "2020"
 category: dev-texlive
-use_flags:
-- '>=app-text/texlive-core-2020[luajittex'
 requires:
 - name: texlive-fontsrecommended
   version: '>=0'

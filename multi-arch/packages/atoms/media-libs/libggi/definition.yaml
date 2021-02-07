@@ -2,9 +2,9 @@ name: libggi
 version: 2.2.2
 category: media-libs
 use_flags:
+- X
 - aalib
 - svga
-- X
 requires:
 - name: aalib
   version: '>=0'
@@ -16,9 +16,6 @@ requires:
   version: '>=0'
   category: media-libs
 - name: libXt
-  version: '>=0'
-  category: x11-libs
-- name: libXxf86dga
   version: '>=0'
   category: x11-libs
 - name: libXxf86vm

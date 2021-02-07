@@ -12,12 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: qtdbus
   version: '>=0'
   category: dev-qt-5
 - name: libproxy
   version: '>=0'
   category: net-libs
+- name: lksctp-tools
+  version: '>=0'
+  category: net-misc

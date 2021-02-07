@@ -2,8 +2,8 @@ name: Authen-SASL
 version: 2.160.0
 category: dev-perl
 use_flags:
-- kerberos
 - -test
+- kerberos
 requires:
 - name: Digest-HMAC
   version: '>=0'

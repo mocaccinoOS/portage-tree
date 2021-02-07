@@ -27,9 +27,6 @@ requires:
 - name: ca-certificates
   version: '>=0'
   category: app-misc
-- name: libtasn1
-  version: '>=0'
-  category: dev-libs
 - name: gnutls
   version: '>=0'
   category: net-libs
@@ -39,6 +36,3 @@ requires:
 - name: pcsc-lite
   version: '>=0'
   category: sys-apps
-- name: zlib
-  version: '>=0'
-  category: sys-libs

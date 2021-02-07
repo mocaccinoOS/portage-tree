@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: flaky
-  version: '>=0'
-  category: dev-python
-- name: pluggy
+- name: importlib_metadata
   version: '>=0'
   category: dev-python

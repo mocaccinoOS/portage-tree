@@ -15,9 +15,9 @@ requires:
 - name: libsecret
   version: '>=0'
   category: app-crypt
-- name: libidn2
+- name: gnutls
   version: '>=0'
-  category: net-dns
+  category: net-libs
 - name: libcap
   version: '>=0'
   category: sys-libs

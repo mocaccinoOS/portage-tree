@@ -2,8 +2,8 @@ name: libXau
 version: 1.0.9
 category: x11-libs
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
 - name: xorg-proto
   version: '>=0'

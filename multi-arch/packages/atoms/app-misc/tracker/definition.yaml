@@ -2,22 +2,13 @@ name: tracker
 version: 2.3.4
 category: app-misc
 use_flags:
+- -gtk-doc
 - networkmanager
 - stemmer
-- gtk-doc
 requires:
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
-- name: icu
-  version: '>=0'
-  category: dev-libs
 - name: json-glib
   version: '>=0'
   category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: snowball-stemmer
   version: '>=0'
   category: dev-libs
@@ -28,9 +19,6 @@ requires:
   version: '>=0'
   category: net-misc
 - name: dbus
-  version: '>=0'
-  category: sys-apps
-- name: util-linux
   version: '>=0'
   category: sys-apps
 description: A tagging metadata database, search tool and indexer

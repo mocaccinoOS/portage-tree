@@ -2,7 +2,7 @@ name: kded
 version: 5.74.0
 category: kde-frameworks-5
 use_flags:
-- man
+- -man
 requires:
 - name: qtwidgets
   version: '>=0'

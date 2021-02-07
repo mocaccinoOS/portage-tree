@@ -3,7 +3,6 @@ version: "1.38"
 category: dev-libs
 use_flags:
 - nls
-- '>=virtual/libintl-0-r1[abi_x86_32(-)'
 description: Contains error handling functions used by GnuPG software
 uri:
 - http://www.gnupg.org/related_software/libgpg-error

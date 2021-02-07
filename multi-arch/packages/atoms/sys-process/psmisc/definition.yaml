@@ -2,8 +2,8 @@ name: psmisc
 version: "23.3"
 category: sys-process
 use_flags:
-- selinux
 - nls
+- selinux
 requires:
 - name: libselinux
   version: '>=0'

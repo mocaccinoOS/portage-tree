@@ -2,19 +2,12 @@ name: procps
 version: 3.3.16
 category: sys-process
 use_flags:
+- -elogind
+- -test
+- kill
 - ncurses
 - selinux
 - systemd
-- sys-apps/systemd[abi_x86_32(-)
-- kill
-- elogind
-- sys-libs/libselinux[abi_x86_32(-)
-- '>=sys-libs/ncurses-5.7-r7:=[unicode'
-- -test
-requires:
-- name: elogind
-  version: '>=0'
-  category: sys-auth
 description: standard informational utilities and process-handling tools
 uri:
 - http://procps-ng.sourceforge.net/ https://gitlab.com/procps-ng/procps

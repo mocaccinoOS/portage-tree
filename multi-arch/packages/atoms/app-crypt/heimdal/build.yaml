@@ -15,15 +15,18 @@ requires:
 - name: mit-krb5-appl
   version: '>=0'
   category: app-crypt
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
 - name: JSON
   version: '>=0'
   category: dev-perl
 - name: openafs
   version: '>=0'
   category: net-fs
-- name: openldap
+- name: gdbm
   version: '>=0'
-  category: net-nds
+  category: sys-libs
 - name: libcap-ng
   version: '>=0'
   category: sys-libs

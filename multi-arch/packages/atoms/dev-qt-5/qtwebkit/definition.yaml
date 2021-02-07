@@ -2,16 +2,16 @@ name: qtwebkit
 version: 5.212.0_pre20200309-r1
 category: dev-qt-5
 use_flags:
-- webp
-- opengl
+- X
+- geolocation
 - gstreamer
 - hyphen
 - multimedia
-- printsupport
-- X
+- opengl
 - orientation
+- printsupport
 - qml
-- geolocation
+- webp
 requires:
 - name: sqlite
   version: '>=0'
@@ -19,9 +19,6 @@ requires:
 - name: hyphen
   version: '>=0'
   category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: libxslt
   version: '>=0'
   category: dev-libs

@@ -15,9 +15,6 @@ requires:
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: nettle
   version: '>=0'
   category: dev-libs

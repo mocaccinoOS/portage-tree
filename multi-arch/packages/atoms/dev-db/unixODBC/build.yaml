@@ -15,3 +15,6 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
+- name: readline
+  version: '>=0'
+  category: sys-libs

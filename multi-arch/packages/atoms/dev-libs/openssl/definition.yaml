@@ -2,10 +2,9 @@ name: openssl
 version: 1.1.1g
 category: dev-libs
 use_flags:
-- zlib
-- '>=sys-libs/zlib-1.2.8-r1[static-libs(+)'
-- sctp
 - -test
+- sctp
+- zlib
 requires:
 - name: c_rehash
   version: '>=0'

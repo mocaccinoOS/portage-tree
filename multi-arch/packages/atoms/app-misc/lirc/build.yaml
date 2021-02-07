@@ -21,15 +21,9 @@ requires:
 - name: setuptools
   version: '>=0'
   category: dev-python
-- name: alsa-lib
-  version: '>=0'
-  category: media-libs
 - name: portaudio
   version: '>=0'
   category: media-libs
-- name: libICE
-  version: '>=0'
-  category: x11-libs
 - name: libSM
   version: '>=0'
   category: x11-libs

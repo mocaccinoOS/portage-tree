@@ -2,9 +2,11 @@ name: libcxxabi
 version: 10.0.1
 category: sys-libs
 use_flags:
-- '>=sys-libs/libunwind-1.0.1-r1[static-libs'
-- '>=sys-libs/llvm-libunwind-3.9.0-r1[static-libs'
 - libunwind
+requires:
+- name: libunwind
+  version: '>=0'
+  category: sys-libs
 description: Low level support for a standard C++ library
 uri:
 - https://libcxxabi.llvm.org/

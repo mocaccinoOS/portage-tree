@@ -3,8 +3,8 @@ version: 1.12.0
 category: sys-firmware
 use_flags:
 - amd64
-- x86
 - binary
+- x86
 description: Open Source implementation of a 16-bit x86 BIOS
 uri:
 - https://www.seabios.org/

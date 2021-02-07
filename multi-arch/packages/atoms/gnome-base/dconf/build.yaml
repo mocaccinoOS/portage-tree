@@ -12,6 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
 - name: dbus
   version: '>=0'
   category: sys-apps
+- name: shared-mime-info
+  version: '>=0'
+  category: x11-misc

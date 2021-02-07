@@ -2,8 +2,8 @@ name: radvd
 version: "2.18"
 category: net-misc
 use_flags:
-- selinux
 - -test
+- selinux
 requires:
 - name: libdaemon
   version: '>=0'

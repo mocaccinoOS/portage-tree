@@ -12,12 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: heimdal
-  version: '>=0'
-  category: app-crypt
 - name: yasm
   version: '>=0'
   category: dev-lang
+- name: keyutils
+  version: '>=0'
+  category: sys-apps
 - name: xinetd
   version: '>=0'
   category: sys-apps

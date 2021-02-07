@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: Test-FailWarnings
+- name: perl
   version: '>=0'
-  category: dev-perl
-- name: Test-MockRandom
-  version: '>=0'
-  category: dev-perl
-- name: Unicode-UTF8
-  version: '>=0'
-  category: dev-perl
+  category: dev-lang

@@ -18,7 +18,7 @@ requires:
 - name: mime-types
   version: '>=0'
   category: app-misc
-- name: apr-util
+- name: apr
   version: '>=0'
   category: dev-libs-1
 - name: libpcre
@@ -27,6 +27,9 @@ requires:
 - name: nghttp2
   version: '>=0'
   category: net-libs
+- name: openldap
+  version: '>=0'
+  category: net-nds
 - name: libcap
   version: '>=0'
   category: sys-libs

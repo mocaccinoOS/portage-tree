@@ -2,13 +2,10 @@ name: Sub-Quote
 version: 2.4.0
 category: dev-perl
 use_flags:
-- minimal
+- -minimal
 - -test
 requires:
 - name: Moo
-  version: '>=0'
-  category: dev-perl
-- name: Sub-Name
   version: '>=0'
   category: dev-perl
 description: Efficient generation of subroutines via string eval

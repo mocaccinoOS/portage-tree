@@ -2,9 +2,9 @@ name: lame
 version: "3.100"
 category: media-sound
 use_flags:
+- cpu_flags_x86_mmx
 - frontend
 - sndfile
-- cpu_flags_x86_mmx
 requires:
 - name: libsndfile
   version: '>=0'

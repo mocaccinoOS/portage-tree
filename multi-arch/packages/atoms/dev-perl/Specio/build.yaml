@@ -24,9 +24,6 @@ requires:
 - name: Module-Runtime
   version: '>=0'
   category: dev-perl
-- name: Ref-Util
-  version: '>=0'
-  category: dev-perl
 - name: Role-Tiny
   version: '>=0'
   category: dev-perl

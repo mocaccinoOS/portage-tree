@@ -15,9 +15,6 @@ requires:
 - name: libedit
   version: '>=0'
   category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: libuv
   version: '>=0'
   category: dev-libs

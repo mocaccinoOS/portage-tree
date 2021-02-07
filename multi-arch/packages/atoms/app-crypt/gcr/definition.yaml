@@ -2,11 +2,10 @@ name: gcr
 version: 3.36.0
 category: app-crypt
 use_flags:
-- '>=x11-libs/gtk+-3.12:3[X,introspection'
-- introspection
-- gtk-doc
-- vala
+- -gtk-doc
 - gtk
+- introspection
+- vala
 requires:
 - name: gnupg
   version: '>=0'
@@ -14,12 +13,12 @@ requires:
 - name: p11-kit
   version: '>=0'
   category: app-crypt
-- name: gobject-introspection
-  version: '>=0'
-  category: dev-libs
 - name: dbus
   version: '>=0'
   category: sys-apps
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3
 description: Libraries for cryptographic UIs and accessing PKCS#11 modules
 uri:
 - https://gitlab.gnome.org/GNOME/gcr

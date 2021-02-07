@@ -2,29 +2,31 @@ name: libsoup
 version: 2.70.0
 category: net-libs-2.4
 use_flags:
-- '>=net-libs/glib-networking-2.38.2[ssl'
-- '>=dev-libs/glib-2.58:2[abi_x86_32(-)'
-- '>=dev-libs/libxml2-2.9.1-r4:2[abi_x86_32(-)'
-- gssapi
-- '>=dev-db/sqlite-3.8.2:3[abi_x86_32(-)'
+- -gtk-doc
 - brotli
-- vala
-- samba
-- virtual/krb5[abi_x86_32(-)
+- gssapi
 - introspection
-- '>=app-arch/brotli-1.0.6-r1:=[abi_x86_32(-)'
-- '>=net-libs/libpsl-0.20[abi_x86_32(-)'
-- gtk-doc
+- samba
+- vala
 requires:
+- name: brotli
+  version: '>=0'
+  category: app-arch
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
 - name: samba
   version: '>=0'
   category: net-fs
-- name: zlib
+- name: glib-networking
   version: '>=0'
-  category: sys-libs
+  category: net-libs
+- name: libpsl
+  version: '>=0'
+  category: net-libs
 description: HTTP client/server library for GNOME
 uri:
 - https://wiki.gnome.org/Projects/libsoup

@@ -2,10 +2,10 @@ name: netqmail
 version: "1.06"
 category: mail-mta
 use_flags:
-- ssl
-- libressl
+- -libressl
 - authcram
 - pop3
+- ssl
 requires:
 - name: alias
   version: '>=0'

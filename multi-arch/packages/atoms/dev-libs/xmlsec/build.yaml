@@ -12,19 +12,7 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: libxslt
-  version: '>=0'
-  category: dev-libs
-- name: nspr
   version: '>=0'
   category: dev-libs
 - name: nss

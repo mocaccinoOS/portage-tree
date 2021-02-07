@@ -2,7 +2,7 @@ name: esmtp
 version: "1.2"
 category: mail-mta
 use_flags:
-- libressl
+- -libressl
 requires:
 - name: libesmtp
   version: '>=0'

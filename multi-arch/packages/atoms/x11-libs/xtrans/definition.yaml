@@ -3,8 +3,8 @@ version: 1.4.0
 category: x11-libs
 use_flags:
 - -doc
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 description: X.Org xtrans library
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libxtrans

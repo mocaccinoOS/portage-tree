@@ -2,26 +2,22 @@ name: sssd
 version: 2.3.1
 category: sys-auth
 use_flags:
-- -python_single_target_python3_9
-- locator
-- nfsv4
-- selinux
-- pac
-- netlink
-- samba
-- '>=sys-libs/pam-0-r1[abi_x86_32(-)'
-- app-crypt/mit-krb5[abi_x86_32(-)
-- python_single_target_python3_7
-- -python_single_target_python3_8
 - -doc
-- '>=net-dns/c-ares-1.10.0-r1[abi_x86_32(-)'
-- acl
-- nls
-- man
+- -man
+- -python_single_target_python3_8
+- -python_single_target_python3_9
 - -test
-- '>=app-crypt/mit-krb5-1.12.2[abi_x86_32(-)'
-- systemd
+- acl
+- locator
+- netlink
+- nfsv4
+- nls
+- pac
 - python
+- python_single_target_python3_7
+- samba
+- selinux
+- systemd
 - valgrind
 requires:
 - name: p11-kit
@@ -36,18 +32,9 @@ requires:
 - name: libnl
   version: '>=0'
   category: dev-libs-3
-- name: libpcre
-  version: '>=0'
-  category: dev-libs-3
-- name: popt
+- name: openssl
   version: '>=0'
   category: dev-libs
-- name: c-ares
-  version: '>=0'
-  category: net-dns
-- name: cifs-utils
-  version: '>=0'
-  category: net-fs
 - name: nfs-utils
   version: '>=0'
   category: net-fs
@@ -63,22 +50,10 @@ requires:
 - name: selinux-sssd
   version: '>=0'
   category: sec-policy
-- name: gettext
-  version: '>=0'
-  category: sys-devel
 - name: glibc
   version: '>=0'
   category: sys-libs-2.2
-- name: ldb
-  version: '>=0'
-  category: sys-libs
 - name: libsemanage
-  version: '>=0'
-  category: sys-libs
-- name: tdb
-  version: '>=0'
-  category: sys-libs
-- name: tevent
   version: '>=0'
   category: sys-libs
 description: System Security Services Daemon provides access to identity and authentication

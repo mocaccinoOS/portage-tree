@@ -2,10 +2,12 @@ name: libunwind
 version: 1.4.0
 category: sys-libs
 use_flags:
-- app-arch/xz-utils[static-libs
-- lzma
 - libatomic
-- dev-libs/libatomic_ops[abi_x86_32(-)
+- lzma
+requires:
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
 description: Portable and efficient API to determine the call-chain of a program
 uri:
 - https://savannah.nongnu.org/projects/libunwind

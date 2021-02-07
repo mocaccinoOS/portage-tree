@@ -2,7 +2,7 @@ name: Specio
 version: 0.420.0
 category: dev-perl
 use_flags:
-- minimal
+- -minimal
 - -test
 requires:
 - name: Devel-StackTrace
@@ -15,9 +15,6 @@ requires:
   version: '>=0'
   category: dev-perl
 - name: Module-Runtime
-  version: '>=0'
-  category: dev-perl
-- name: Ref-Util
   version: '>=0'
   category: dev-perl
 - name: Role-Tiny

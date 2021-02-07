@@ -27,6 +27,9 @@ requires:
 - name: asciidoctor
   version: '>=0'
   category: dev-ruby
+- name: font-util
+  version: '>=0'
+  category: media-fonts
 - name: xcb-proto
   version: '>=0'
   category: x11-base
@@ -36,3 +39,6 @@ requires:
 - name: libXdmcp
   version: '>=0'
   category: x11-libs
+- name: util-macros
+  version: '>=0'
+  category: x11-misc

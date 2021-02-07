@@ -2,9 +2,9 @@ name: opensp
 version: 1.5.2
 category: app-text
 use_flags:
-- nls
 - -doc
 - -test
+- nls
 requires:
 - name: libnsl
   version: '>=0'

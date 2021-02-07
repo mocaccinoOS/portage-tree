@@ -2,9 +2,9 @@ name: font-misc-misc
 version: 1.1.2
 category: media-fonts
 use_flags:
+- -ppc-aix
+- -x86-winnt
 - X
-- ppc-aix
-- x86-winnt
 requires:
 - name: encodings
   version: '>=0'

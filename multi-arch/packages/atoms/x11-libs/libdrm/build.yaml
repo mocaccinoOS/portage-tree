@@ -21,3 +21,6 @@ requires:
 - name: valgrind
   version: '>=0'
   category: dev-util
+- name: libpciaccess
+  version: '>=0'
+  category: x11-libs

@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: cmake
+- name: libgcrypt
   version: '>=0'
-  category: dev-util
-- name: ninja
+  category: dev-libs
+- name: mbedtls
   version: '>=0'
-  category: dev-util
+  category: net-libs

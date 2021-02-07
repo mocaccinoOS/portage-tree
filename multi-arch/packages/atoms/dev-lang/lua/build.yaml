@@ -15,3 +15,6 @@ requires:
 - name: libtool
   version: '>=0'
   category: sys-devel-2
+- name: readline
+  version: '>=0'
+  category: sys-libs

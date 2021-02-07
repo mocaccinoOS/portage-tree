@@ -2,18 +2,9 @@ name: mtools
 version: 4.0.24
 category: sys-fs
 use_flags:
-- elibc_glibc
 - X
+- elibc_glibc
 requires:
-- name: libICE
-  version: '>=0'
-  category: x11-libs
-- name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXau
   version: '>=0'
   category: x11-libs

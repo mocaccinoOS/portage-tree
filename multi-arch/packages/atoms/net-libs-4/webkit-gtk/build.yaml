@@ -21,19 +21,7 @@ requires:
 - name: enchant
   version: '>=0'
   category: app-text-2
-- name: ruby
-  version: '>=0'
-  category: dev-lang-2.6
-- name: atk
-  version: '>=0'
-  category: dev-libs
 - name: hyphen
-  version: '>=0'
-  category: dev-libs
-- name: icu
-  version: '>=0'
-  category: dev-libs
-- name: libgcrypt
   version: '>=0'
   category: dev-libs
 - name: libtasn1
@@ -42,21 +30,6 @@ requires:
 - name: wpebackend-fdo
   version: '>=0'
   category: gui-libs-1.0
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
-- name: gst-plugins-base
-  version: '>=0'
-  category: media-libs-1.0
-- name: gstreamer
-  version: '>=0'
-  category: media-libs-1.0
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs
 - name: libwebp
   version: '>=0'
   category: media-libs
@@ -69,18 +42,18 @@ requires:
 - name: gst-plugins-opus
   version: '>=0'
   category: media-plugins-1.0
+- name: libsoup
+  version: '>=0'
+  category: net-libs-2.4
 - name: bubblewrap
   version: '>=0'
   category: sys-apps
 - name: xdg-dbus-proxy
   version: '>=0'
   category: sys-apps
-- name: libXcomposite
+- name: gtk+
   version: '>=0'
-  category: x11-libs
-- name: libXrender
-  version: '>=0'
-  category: x11-libs
+  category: x11-libs-3
 - name: libXt
   version: '>=0'
   category: x11-libs

@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
+- name: cracklib
   version: '>=0'
-  category: dev-lang-3.7
+  category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs

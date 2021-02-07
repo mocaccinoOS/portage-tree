@@ -2,8 +2,8 @@ name: patch
 version: 2.7.6
 category: sys-devel
 use_flags:
-- xattr
 - -test
+- xattr
 requires:
 - name: attr
   version: '>=0'

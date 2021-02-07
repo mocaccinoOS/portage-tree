@@ -2,10 +2,10 @@ name: vpopmail
 version: 5.4.33
 category: net-mail
 use_flags:
-- spamassassin
 - maildrop
 - mysql
 - postgres
+- spamassassin
 requires:
 - name: vpopmail
   version: '>=0'

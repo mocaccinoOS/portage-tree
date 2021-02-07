@@ -12,6 +12,30 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: zstd
+  version: '>=0'
+  category: app-arch
+- name: libb2
+  version: '>=0'
+  category: app-crypt
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: nettle
+  version: '>=0'
+  category: dev-libs
+- name: attr
+  version: '>=0'
+  category: sys-apps
 - name: e2fsprogs
   version: '>=0'
   category: sys-fs

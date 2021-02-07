@@ -2,9 +2,8 @@ name: libtirpc
 version: 1.2.6
 category: net-libs
 use_flags:
-- kerberos
-- '>=virtual/krb5-0-r1[abi_x86_32(-)'
 - elibc_musl
+- kerberos
 description: Transport Independent RPC library (SunRPC replacement)
 uri:
 - https://sourceforge.net/projects/libtirpc/

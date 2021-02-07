@@ -27,9 +27,6 @@ requires:
 - name: libmspack
   version: '>=0'
   category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
@@ -46,8 +43,5 @@ requires:
   version: '>=0'
   category: sys-libs
 - name: ncurses
-  version: '>=0'
-  category: sys-libs
-- name: zlib
   version: '>=0'
   category: sys-libs

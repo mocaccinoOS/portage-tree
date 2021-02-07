@@ -12,6 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: wayland
   version: '>=0'
-  category: layers
+  category: dev-libs
+- name: libXext
+  version: '>=0'
+  category: x11-libs
+- name: libXfixes
+  version: '>=0'
+  category: x11-libs
+- name: libdrm
+  version: '>=0'
+  category: x11-libs

@@ -15,9 +15,6 @@ requires:
 - name: libsodium
   version: '>=0'
   category: dev-libs
-- name: util-linux
-  version: '>=0'
-  category: sys-apps
 - name: libunwind
   version: '>=0'
   category: sys-libs

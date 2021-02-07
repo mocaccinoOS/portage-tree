@@ -2,16 +2,16 @@ name: mysql
 version: 8.0.21
 category: dev-db-8.0
 use_flags:
-- cjk
-- kernel_linux
-- tcmalloc
-- libressl
-- numa
-- selinux
-- prefix
-- server
-- jemalloc
+- -libressl
 - -test
+- cjk
+- jemalloc
+- kernel_linux
+- numa
+- prefix
+- selinux
+- server
+- tcmalloc
 description: A fast, multi-threaded, multi-user SQL database server
 uri:
 - https://www.mysql.com/

@@ -2,34 +2,30 @@ name: util-linux
 version: 2.35.2
 category: sys-apps
 use_flags:
-- hardlink
-- build
-- logger
+- -python_targets_python3_6
+- -python_targets_python3_8
 - -test
-- cramfs
-- selinux
-- python_targets_python3_6
-- caps
-- '>=sys-libs/libselinux-2.2.2-r4[abi_x86_32(-)'
-- kill
-- python_targets_python3_7
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- ppc64
-- udev
-- pam
-- python_targets_python3_8
-- readline
-- python
-- systemd
 - audit
-- '>=sys-libs/ncurses-5.2-r2:0=[unicode'
-- virtual/libintl[abi_x86_32(-)
-- nls
-- ppc
-- ncurses
-- su
+- build
+- caps
+- cramfs
 - cryptsetup
+- hardlink
+- kill
+- logger
+- ncurses
+- nls
+- pam
+- ppc
+- ppc64
+- python
+- python_targets_python3_7
+- readline
+- selinux
 - slang
+- su
+- systemd
+- udev
 requires:
 - name: sysklogd
   version: '>=0'
@@ -46,13 +42,7 @@ requires:
 - name: shadow
   version: '>=0'
   category: sys-apps
-- name: systemd
-  version: '>=0'
-  category: sys-apps
 - name: librtas
-  version: '>=0'
-  category: sys-libs
-- name: slang
   version: '>=0'
   category: sys-libs
 description: Various useful Linux utilities

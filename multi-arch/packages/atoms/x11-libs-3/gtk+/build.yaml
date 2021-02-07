@@ -12,18 +12,42 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: wayland-protocols
+- name: at-spi2-atk
+  version: '>=0'
+  category: app-accessibility-2
+- name: json-glib
   version: '>=0'
   category: dev-libs
-- name: gdbus-codegen
-  version: '>=0'
-  category: dev-util
-- name: harfbuzz
+- name: libepoxy
   version: '>=0'
   category: media-libs
-- name: libtool
+- name: rest
   version: '>=0'
-  category: sys-devel-2
-- name: xorg-proto
+  category: net-libs-0.7
+- name: cups
   version: '>=0'
-  category: x11-base
+  category: net-print
+- name: gdk-pixbuf
+  version: '>=0'
+  category: x11-libs-2
+- name: libXcomposite
+  version: '>=0'
+  category: x11-libs
+- name: libXcursor
+  version: '>=0'
+  category: x11-libs
+- name: libXi
+  version: '>=0'
+  category: x11-libs
+- name: libXinerama
+  version: '>=0'
+  category: x11-libs
+- name: libxkbcommon
+  version: '>=0'
+  category: x11-libs
+- name: pango
+  version: '>=0'
+  category: x11-libs
+- name: colord
+  version: '>=0'
+  category: x11-misc

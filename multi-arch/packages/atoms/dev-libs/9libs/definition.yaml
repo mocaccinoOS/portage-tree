@@ -1,9 +1,10 @@
 name: 9libs
 version: "1.0"
 category: dev-libs
-use_flags:
-- '>=x11-libs/libX11-1.0.0[static-libs'
-- '>=x11-libs/libXt-1.0.0[static-libs'
+requires:
+- name: libXt
+  version: '>=0'
+  category: x11-libs
 description: A package of Plan 9 compatibility libraries
 uri:
 - https://www.netlib.org/research/9libs/9libs-1.0.README

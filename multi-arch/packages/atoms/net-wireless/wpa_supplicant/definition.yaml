@@ -2,14 +2,17 @@ name: wpa_supplicant
 version: "2.9"
 category: net-wireless
 use_flags:
+- -libressl
 - dbus
-- kernel_linux
 - eap-sim
-- -qt5
+- kernel_linux
+- qt5
 - readline
-- libressl
 - selinux
 requires:
+- name: qtsvg
+  version: '>=0'
+  category: dev-qt-5
 - name: libpcap
   version: '>=0'
   category: net-libs
@@ -19,15 +22,9 @@ requires:
 - name: selinux-networkmanager
   version: '>=0'
   category: sec-policy
-- name: dbus
-  version: '>=0'
-  category: sys-apps
 - name: pcsc-lite
   version: '>=0'
   category: sys-apps
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 - name: readline
   version: '>=0'
   category: sys-libs

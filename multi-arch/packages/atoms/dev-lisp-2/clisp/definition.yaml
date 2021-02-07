@@ -2,18 +2,18 @@ name: clisp
 version: 2.49.92
 category: dev-lisp-2
 use_flags:
-- hyperspec
+- X
 - berkdb
+- dbus
+- fastcgi
+- gdbm
+- gtk
+- hyperspec
+- pcre
 - postgres
 - readline
-- dbus
-- zlib
-- pcre
 - svm
-- fastcgi
-- gtk
-- X
-- gdbm
+- zlib
 requires:
 - name: postgresql
   version: '>=0'
@@ -51,9 +51,6 @@ requires:
 - name: gdbm
   version: '>=0'
   category: sys-libs
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
 - name: libXpm
   version: '>=0'
   category: x11-libs

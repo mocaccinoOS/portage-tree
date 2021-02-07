@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: font-util
+- name: libXext
   version: '>=0'
-  category: media-fonts
-- name: xorg-proto
+  category: x11-libs
+- name: libXt
   version: '>=0'
-  category: x11-base
+  category: x11-libs

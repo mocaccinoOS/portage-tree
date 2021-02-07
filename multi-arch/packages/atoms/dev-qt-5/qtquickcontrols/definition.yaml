@@ -2,8 +2,8 @@ name: qtquickcontrols
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- widgets
 - -test
+- widgets
 requires:
 - name: qtdeclarative
   version: '>=0'

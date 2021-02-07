@@ -2,19 +2,19 @@ name: devil
 version: 1.7.8
 category: media-libs
 use_flags:
+- X
 - allegro
+- gif
 - glut
 - jpeg
-- tiff
 - mng
-- sdl
-- xpm
-- gif
-- X
 - nvtt
 - openexr
 - opengl
 - png
+- sdl
+- tiff
+- xpm
 requires:
 - name: nvidia-texture-tools
   version: '>=0'
@@ -31,9 +31,6 @@ requires:
 - name: libsdl
   version: '>=0'
   category: media-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
 - name: libXpm
   version: '>=0'
   category: x11-libs

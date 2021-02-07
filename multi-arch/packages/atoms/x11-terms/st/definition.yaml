@@ -2,15 +2,9 @@ name: st
 version: 0.8.4
 category: x11-terms
 requires:
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
 - name: ncurses
   version: '>=0'
   category: sys-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXft
   version: '>=0'
   category: x11-libs

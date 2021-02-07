@@ -12,6 +12,21 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: xorg-proto
+- name: expat
   version: '>=0'
-  category: x11-base
+  category: dev-libs
+- name: gst-plugins-base
+  version: '>=0'
+  category: media-libs-1.0
+- name: libsdl2
+  version: '>=0'
+  category: media-libs
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3
+- name: libSM
+  version: '>=0'
+  category: x11-libs
+- name: libnotify
+  version: '>=0'
+  category: x11-libs

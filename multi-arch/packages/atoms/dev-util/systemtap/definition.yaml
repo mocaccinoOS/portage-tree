@@ -2,28 +2,22 @@ name: systemtap
 version: "4.0"
 category: dev-util
 use_flags:
+- -python_single_target_python3_6
 - -python_single_target_python3_8
 - libvirt
+- python_single_target_python3_7
 - selinux
 - sqlite
 - ssl
 - zeroconf
-- -python_single_target_python3_6
-- python_single_target_python3_7
 requires:
 - name: libvirt
   version: '>=0'
   category: app-emulation
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: elfutils
   version: '>=0'
   category: dev-libs
 - name: json-c
-  version: '>=0'
-  category: dev-libs
-- name: nspr
   version: '>=0'
   category: dev-libs
 - name: nss

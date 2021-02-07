@@ -2,23 +2,19 @@ name: cups
 version: 2.3.3
 category: net-print
 use_flags:
+- X
+- acl
+- dbus
+- kerberos
+- kernel_linux
+- lprng-compat
 - pam
+- selinux
+- ssl
+- systemd
+- usb
 - xinetd
 - zeroconf
-- '>=net-dns/avahi-0.6.31-r2[abi_x86_32(-)'
-- kerberos
-- '>=sys-apps/dbus-1.6.18-r1[abi_x86_32(-)'
-- X
-- selinux
-- kernel_linux
-- systemd
-- dbus
-- ssl
-- '>=virtual/krb5-0-r1[abi_x86_32(-)'
-- acl
-- lprng-compat
-- '>=net-libs/gnutls-2.12.23-r6:0=[abi_x86_32(-)'
-- usb
 requires:
 - name: lp
   version: '>=0'
@@ -29,21 +25,15 @@ requires:
 - name: libpaper
   version: '>=0'
   category: app-text
+- name: avahi
+  version: '>=0'
+  category: net-dns
 - name: selinux-cups
   version: '>=0'
   category: sec-policy
-- name: attr
-  version: '>=0'
-  category: sys-apps
-- name: systemd
-  version: '>=0'
-  category: sys-apps
 - name: xinetd
   version: '>=0'
   category: sys-apps
-- name: pam
-  version: '>=0'
-  category: sys-libs
 - name: xdg-utils
   version: '>=0'
   category: x11-misc

@@ -2,11 +2,13 @@ name: libXcomposite
 version: 0.4.5
 category: x11-libs
 use_flags:
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- '>=x11-libs/libXfixes-5.0.1[abi_x86_32(-)'
-- ppc-aix
-- x86-winnt
 - -doc
+- -ppc-aix
+- -x86-winnt
+requires:
+- name: libXfixes
+  version: '>=0'
+  category: x11-libs
 description: X.Org Xcomposite library
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libXcomposite

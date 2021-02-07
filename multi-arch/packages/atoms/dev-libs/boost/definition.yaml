@@ -2,30 +2,27 @@ name: boost
 version: 1.72.0
 category: dev-libs
 use_flags:
-- python_targets_python3_6
+- -python_targets_python3_6
+- -python_targets_python3_8
 - bzip2
-- app-arch/bzip2:=[abi_x86_32(-)
-- python_targets_python3_8
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- python_targets_python3_7
-- app-arch/zstd:=[abi_x86_32(-)
-- virtual/libiconv[abi_x86_32(-)
-- '>=dev-libs/icu-3.6:=[abi_x86_32(-)'
-- app-arch/xz-utils:=[abi_x86_32(-)
-- mpi
-- python
-- dev-python/numpy[python_targets_python3_6(-)
-- lzma
-- numpy
-- zlib
-- sys-libs/zlib:=[abi_x86_32(-)
-- zstd
-- '>=virtual/mpi-2.0-r4[abi_x86_32(-)'
 - icu
+- lzma
+- mpi
+- numpy
+- python
+- python_targets_python3_7
+- zlib
+- zstd
 requires:
-- name: python
+- name: zstd
   version: '>=0'
-  category: dev-lang-3.7
+  category: app-arch
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: numpy
+  version: '>=0'
+  category: dev-python
 description: Boost Libraries for C++
 uri:
 - https://www.boost.org/

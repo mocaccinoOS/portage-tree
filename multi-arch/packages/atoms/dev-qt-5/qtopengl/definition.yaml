@@ -2,7 +2,7 @@ name: qtopengl
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- gles2-only
+- -gles2-only
 - -test
 requires:
 - name: qtwidgets

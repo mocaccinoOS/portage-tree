@@ -2,8 +2,8 @@ name: iceauth
 version: 1.0.8
 category: x11-apps
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
 - name: libICE
   version: '>=0'

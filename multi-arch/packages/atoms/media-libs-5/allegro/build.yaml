@@ -12,9 +12,30 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: cmake
+- name: physfs
   version: '>=0'
-  category: dev-util
-- name: xorg-proto
+  category: dev-games
+- name: dumb
   version: '>=0'
-  category: x11-base
+  category: media-libs
+- name: flac
+  version: '>=0'
+  category: media-libs
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: libvorbis
+  version: '>=0'
+  category: media-libs
+- name: libwebp
+  version: '>=0'
+  category: media-libs
+- name: openal
+  version: '>=0'
+  category: media-libs
+- name: opus
+  version: '>=0'
+  category: media-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs

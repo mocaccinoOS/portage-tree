@@ -2,9 +2,12 @@ name: xcb-util-keysyms
 version: 0.4.0
 category: x11-libs
 use_flags:
-- x11-libs/libxcb:=[abi_x86_32(-)
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
+requires:
+- name: libxcb
+  version: '>=0'
+  category: x11-libs
 description: X C-language Bindings sample implementations
 uri:
 - https://xcb.freedesktop.org/ https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms

@@ -2,14 +2,13 @@ name: libsvm
 version: "3.24"
 category: sci-libs
 use_flags:
-- python_targets_python3_7
-- python_targets_python3_8
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- tools
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - java
 - python
-- python_targets_python3_6
+- python_targets_python3_7
+- tools
 requires:
 - name: java-config
   version: '>=0'

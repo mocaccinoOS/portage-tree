@@ -2,10 +2,10 @@ name: linux-firmware
 version: "20201022"
 category: sys-kernel
 use_flags:
-- redistributable
-- initramfs
-- unknown-license
 - -savedconfig
+- initramfs
+- redistributable
+- unknown-license
 requires:
 - name: qla-fc-firmware
   version: '>=0'

@@ -2,22 +2,19 @@ name: pygobject
 version: 3.36.1
 category: dev-python-3
 use_flags:
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- '>=dev-python/pycairo-1.11.1[python_targets_python3_6(-)'
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - -test
-- dev-python/pytest[python_targets_python3_6(-)
-- python_targets_python3_6
-- python_targets_python3_8
-- python_targets_python3_7
 - cairo
+- python_targets_python3_7
 requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
-- name: cairo
+- name: pycairo
   version: '>=0'
-  category: x11-libs
+  category: dev-python
 description: Python bindings for GObject Introspection
 uri:
 - https://pygobject.readthedocs.io/

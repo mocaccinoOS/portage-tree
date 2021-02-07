@@ -15,6 +15,3 @@ requires:
 - name: tk
   version: '>=0'
   category: dev-lang
-- name: libX11
-  version: '>=0'
-  category: x11-libs

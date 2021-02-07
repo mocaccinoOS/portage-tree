@@ -2,10 +2,10 @@ name: ofono
 version: "1.16"
 category: net-misc
 use_flags:
-- udev
+- bluetooth
 - examples
 - tools
-- bluetooth
+- udev
 requires:
 - name: mobile-broadband-provider-info
   version: '>=0'

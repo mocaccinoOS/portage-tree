@@ -18,15 +18,15 @@ requires:
 - name: poppler
   version: '>=0'
   category: app-text
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: ruby
   version: '>=0'
   category: dev-lang-2.6
 - name: swig
   version: '>=0'
   category: dev-lang
+- name: qtprintsupport
+  version: '>=0'
+  category: dev-qt-5
 - name: guile
   version: '>=0'
   category: dev-scheme-12
@@ -48,12 +48,6 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
-- name: gdk-pixbuf
-  version: '>=0'
-  category: x11-libs-2
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: libXmu
   version: '>=0'
   category: x11-libs

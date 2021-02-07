@@ -2,16 +2,13 @@ name: Net-SSLeay
 version: 1.880.0
 category: dev-perl
 use_flags:
+- -libressl
+- -minimal
 - -test
-- minimal
-- libressl
 requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 description: Perl extension for using OpenSSL
 uri:
 - https://metacpan.org/release/Net-SSLeay

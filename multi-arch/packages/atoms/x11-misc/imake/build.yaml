@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: font-util
+- name: libtool
   version: '>=0'
-  category: media-fonts
+  category: sys-devel-2
 - name: xorg-proto
   version: '>=0'
   category: x11-base

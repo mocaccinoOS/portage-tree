@@ -12,9 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
+- name: PyQt5-sip
   version: '>=0'
-  category: dev-lang-3.7
+  category: dev-python
+- name: dbus-python
+  version: '>=0'
+  category: dev-python
+- name: sip
+  version: '>=0'
+  category: dev-python
 - name: designer
   version: '>=0'
   category: dev-qt-5
@@ -34,9 +40,6 @@ requires:
   version: '>=0'
   category: dev-qt-5
 - name: qtsvg
-  version: '>=0'
-  category: dev-qt-5
-- name: qttest
   version: '>=0'
   category: dev-qt-5
 - name: qtwebsockets

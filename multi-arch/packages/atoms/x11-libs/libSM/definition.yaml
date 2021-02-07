@@ -2,20 +2,18 @@ name: libSM
 version: 1.2.3
 category: x11-libs
 use_flags:
-- elibc_FreeBSD
 - -doc
-- ppc-aix
-- x86-winnt
-- '>=sys-apps/util-linux-2.24.1-r3[abi_x86_32(-)'
-- elibc_Darwin
+- -elibc_Darwin
+- -elibc_FreeBSD
+- -elibc_SunOS
+- -ppc-aix
+- -x86-winnt
 - uuid
-- '>=x11-libs/libICE-1.0.8-r1[abi_x86_32(-)'
-- elibc_SunOS
 requires:
-- name: xorg-proto
+- name: util-linux
   version: '>=0'
-  category: x11-base
-- name: xtrans
+  category: sys-apps
+- name: libICE
   version: '>=0'
   category: x11-libs
 description: X.Org Session Management library

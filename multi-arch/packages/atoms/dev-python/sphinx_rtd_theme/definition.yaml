@@ -2,21 +2,19 @@ name: sphinx_rtd_theme
 version: 0.4.3
 category: dev-python
 use_flags:
-- python_targets_python3_8
-- python_targets_python3_6
-- python_targets_python3_7
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_pypy3(-)'
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - -test
-- dev-python/readthedocs-sphinx-ext[python_targets_pypy3(-)
-- '>=dev-python/pytest-4.5.0[python_targets_pypy3(-)'
 - python_targets_pypy3
-- dev-python/sphinx[python_targets_pypy3(-)
-- '>=dev-python/setuptools-42.0.2[python_targets_pypy3(-)'
+- python_targets_python3_7
 requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: pypy3
   version: '>=0'
   category: dev-python

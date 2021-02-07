@@ -12,6 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: llvm
+- name: setuptools
   version: '>=0'
-  category: sys-devel-10
+  category: dev-python

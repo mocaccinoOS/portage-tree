@@ -2,20 +2,11 @@ name: pallets-sphinx-themes
 version: 1.1.2
 category: dev-python
 use_flags:
-- '>=dev-python/setuptools-42.0.2[python_targets_pypy3(-)'
-- dev-python/packaging[python_targets_pypy3(-)
-- dev-python/setuptools[python_targets_pypy3(-)
-- python_targets_python3_6
-- python_targets_python3_7
-- '>=dev-lang/python-exec-2:=[python_targets_pypy3(-)'
-- dev-python/jinja[python_targets_pypy3(-)
-- dev-python/sphinx[python_targets_pypy3(-)
+- -python_targets_python3_6
 - python_targets_pypy3
+- python_targets_python3_7
 requires:
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
-- name: pypy3
+- name: sphinx
   version: '>=0'
   category: dev-python
 description: Sphinx themes for Pallets and related projects

@@ -5,8 +5,8 @@ use_flags:
 - lz4
 - sasl
 - ssl
-- zstd
 - static-libs
+- zstd
 requires:
 - name: zstd
   version: '>=0'
@@ -17,9 +17,6 @@ requires:
 - name: openssl
   version: '>=0'
   category: dev-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 description: Apache Kafka C/C++ client library
 uri:
 - https://github.com/edenhill/librdkafka

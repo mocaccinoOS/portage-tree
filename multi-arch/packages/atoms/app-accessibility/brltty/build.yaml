@@ -30,18 +30,15 @@ requires:
 - name: findlib
   version: '>=0'
   category: dev-ml
+- name: cython
+  version: '>=0'
+  category: dev-python
 - name: polkit
   version: '>=0'
   category: sys-auth
-- name: gpm
-  version: '>=0'
-  category: sys-libs
 - name: libXaw
   version: '>=0'
   category: x11-libs
 - name: libXfixes
-  version: '>=0'
-  category: x11-libs
-- name: libXtst
   version: '>=0'
   category: x11-libs

@@ -15,9 +15,6 @@ requires:
 - name: libarchive
   version: '>=0'
   category: app-arch
-- name: zstd
-  version: '>=0'
-  category: app-arch
 - name: gnupg
   version: '>=0'
   category: app-crypt

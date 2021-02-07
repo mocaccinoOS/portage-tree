@@ -12,15 +12,21 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
+- name: lmdb
   version: '>=0'
-  category: dev-lang-3.7
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
-- name: libxslt
+  category: dev-db
+- name: popt
   version: '>=0'
   category: dev-libs
+- name: cmocka
+  version: '>=0'
+  category: dev-util
 - name: openldap
   version: '>=0'
   category: net-nds
+- name: tdb
+  version: '>=0'
+  category: sys-libs
+- name: tevent
+  version: '>=0'
+  category: sys-libs

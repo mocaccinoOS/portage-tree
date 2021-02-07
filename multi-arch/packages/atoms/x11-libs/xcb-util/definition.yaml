@@ -2,9 +2,12 @@ name: xcb-util
 version: 0.4.0
 category: x11-libs
 use_flags:
-- x86-winnt
-- '>=x11-libs/libxcb-1.9.1:=[abi_x86_32(-)'
-- ppc-aix
+- -ppc-aix
+- -x86-winnt
+requires:
+- name: libxcb
+  version: '>=0'
+  category: x11-libs
 description: X C-language Bindings sample implementations
 uri:
 - https://xcb.freedesktop.org/ https://gitlab.freedesktop.org/xorg/lib/libxcb-util

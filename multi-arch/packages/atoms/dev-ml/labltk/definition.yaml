@@ -1,9 +1,10 @@
 name: labltk
 version: 8.06.7
 category: dev-ml
-use_flags:
-- '>=dev-lang/ocaml-4.08:=[ocamlopt'
 requires:
+- name: ocaml
+  version: '>=0'
+  category: dev-lang
 - name: tk
   version: '>=0'
   category: dev-lang

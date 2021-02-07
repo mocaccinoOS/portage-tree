@@ -2,18 +2,16 @@ name: libpwquality
 version: 1.4.2
 category: dev-libs
 use_flags:
-- python_targets_python3_8
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- '>=sys-libs/cracklib-2.8:=[static-libs(+)'
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - pam
 - python
-- python_targets_python3_6
 - python_targets_python3_7
 requires:
-- name: python
+- name: cracklib
   version: '>=0'
-  category: dev-lang-3.7
+  category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs

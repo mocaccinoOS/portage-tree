@@ -12,18 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: gobject-introspection
+- name: bzip2
   version: '>=0'
-  category: dev-libs
+  category: app-arch
 - name: wayland-protocols
   version: '>=0'
   category: dev-libs
-- name: glib-utils
+- name: gst-plugins-base
   version: '>=0'
-  category: dev-util
-- name: gtk-doc-am
-  version: '>=0'
-  category: dev-util
-- name: sed
-  version: '>=0'
-  category: sys-apps
+  category: media-libs-1.0

@@ -2,17 +2,17 @@ name: apr-util
 version: 1.6.1
 category: dev-libs-1
 use_flags:
-- postgres
-- mysql
-- ldap
-- openssl
-- nss
-- odbc
-- libressl
-- sqlite
+- -doc
+- -libressl
 - berkdb
 - gdbm
-- -doc
+- ldap
+- mysql
+- nss
+- odbc
+- openssl
+- postgres
+- sqlite
 requires:
 - name: mariadb-connector-c
   version: '>=0'
@@ -20,9 +20,6 @@ requires:
 - name: postgresql
   version: '>=0'
   category: dev-db-12
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
 - name: apr
   version: '>=0'
   category: dev-libs-1

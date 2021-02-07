@@ -2,18 +2,18 @@ name: clamav
 version: 0.102.4
 category: app-antivirus
 use_flags:
-- libressl
-- clamdtop
+- -libressl
 - -test
-- iconv
-- milter
+- bzip2
+- clamdtop
 - clamsubmit
 - elibc_musl
+- iconv
 - libclamav-only
-- xml
-- selinux
-- bzip2
 - metadata-analysis-api
+- milter
+- selinux
+- xml
 requires:
 - name: clamav
   version: '>=0'
@@ -28,9 +28,6 @@ requires:
   version: '>=0'
   category: dev-libs
 - name: libmspack
-  version: '>=0'
-  category: dev-libs
-- name: libressl
   version: '>=0'
   category: dev-libs
 - name: tomsfastmath
@@ -49,9 +46,6 @@ requires:
   version: '>=0'
   category: sys-libs
 - name: ncurses
-  version: '>=0'
-  category: sys-libs
-- name: zlib
   version: '>=0'
   category: sys-libs
 description: Clam Anti-Virus Scanner

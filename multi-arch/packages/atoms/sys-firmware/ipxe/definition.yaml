@@ -2,8 +2,8 @@ name: ipxe
 version: 1.0.0
 category: sys-firmware
 use_flags:
-- binary
 - amd64
+- binary
 - iso
 - x86
 description: Open source network boot (PXE) firmware
@@ -16,4 +16,4 @@ labels:
   emerge.packages: sys-firmware/ipxe
   kit: gentoo
   original.package.name: sys-firmware/ipxe
-  original.package.version: 1.0.0_p20190728
+  original.package.version: 1.0.0_p20180211

@@ -2,14 +2,11 @@ name: rabbitmq-c
 version: 0.10.0
 category: net-libs
 use_flags:
-- ssl
-- libressl
-- tools
 - -doc
+- -libressl
+- ssl
+- tools
 requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: popt
   version: '>=0'
   category: dev-libs

@@ -2,11 +2,13 @@ name: DBD-mysql
 version: 4.50.0
 category: dev-perl
 use_flags:
-- mysql
-- mariadb
-- dev-db/mariadb-connector-c:=[ssl(+)
 - -test
+- mariadb
+- mysql
 requires:
+- name: mariadb-connector-c
+  version: '>=0'
+  category: dev-db
 - name: mysql-connector-c
   version: '>=0'
   category: dev-db

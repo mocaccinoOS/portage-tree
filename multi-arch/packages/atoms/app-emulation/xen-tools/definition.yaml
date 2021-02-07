@@ -2,27 +2,27 @@ name: xen-tools
 version: 4.13.2
 category: app-emulation
 use_flags:
-- python_single_target_python3_7
-- screen
-- x86
-- ovmf
-- arm
-- pam
-- api
-- arm64
 - -doc
-- sdl
-- qemu
-- system-ipxe
-- -python_single_target_python3_8
-- system-seabios
-- amd64
-- ocaml
-- rombios
-- hvm
 - -python_single_target_python3_6
+- -python_single_target_python3_8
+- amd64
+- api
+- arm
+- arm64
+- hvm
+- ocaml
+- ovmf
+- pam
 - python
+- python_single_target_python3_7
+- qemu
+- rombios
+- screen
+- sdl
+- system-ipxe
 - system-qemu
+- system-seabios
+- x86
 requires:
 - name: logrotate
   version: '>=0'
@@ -30,6 +30,9 @@ requires:
 - name: screen
   version: '>=0'
   category: app-misc
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

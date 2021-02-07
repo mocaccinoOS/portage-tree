@@ -2,8 +2,8 @@ name: opensmtpd
 version: 6.7.1
 category: mail-mta
 use_flags:
+- -libressl
 - berkdb
-- libressl
 - elibc_musl
 - pam
 requires:

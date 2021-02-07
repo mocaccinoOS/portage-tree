@@ -24,12 +24,9 @@ requires:
 - name: desktop-file-utils
   version: '>=0'
   category: dev-util
-- name: attr
+- name: avahi
   version: '>=0'
-  category: sys-apps
-- name: systemd
-  version: '>=0'
-  category: sys-apps
+  category: net-dns
 - name: xinetd
   version: '>=0'
   category: sys-apps

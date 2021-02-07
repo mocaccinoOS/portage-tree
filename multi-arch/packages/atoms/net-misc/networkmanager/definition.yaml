@@ -2,38 +2,28 @@ name: networkmanager
 version: 1.26.0
 category: net-misc
 use_flags:
-- '>=dev-libs/nss-3.11:=[abi_x86_32(-)'
-- systemd
-- elogind
+- -elogind
+- audit
 - bluetooth
+- connection-sharing
 - dhclient
-- '>=net-libs/gnutls-2.12:=[abi_x86_32(-)'
-- selinux
+- dhcpcd
+- gnutls
 - introspection
 - iwd
-- '>=virtual/libudev-175:=[abi_x86_32(-)'
-- audit
-- ovs
-- wifi
-- connection-sharing
-- teamd
-- ppp
-- net-libs/libndp[abi_x86_32(-)
-- policykit
-- ofono
-- '>=dev-libs/jansson-2.5[abi_x86_32(-)'
-- dhcpcd
-- dev-libs/libgcrypt:0=[abi_x86_32(-)
-- sys-apps/util-linux[abi_x86_32(-)
 - json
-- resolvconf
-- gnutls
-- nss
-- ncurses
-- -test
-- vala
-- '>=dev-libs/glib-2.40:2[abi_x86_32(-)'
 - modemmanager
+- ncurses
+- nss
+- ofono
+- ovs
+- policykit
+- ppp
+- resolvconf
+- selinux
+- systemd
+- teamd
+- wifi
 requires:
 - name: newt
   version: '>=0'
@@ -44,6 +34,9 @@ requires:
 - name: dnsmasq
   version: '>=0'
   category: net-dns
+- name: libndp
+  version: '>=0'
+  category: net-libs
 - name: dhcp
   version: '>=0'
   category: net-misc

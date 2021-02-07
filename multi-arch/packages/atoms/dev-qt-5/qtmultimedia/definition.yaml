@@ -2,14 +2,14 @@ name: qtmultimedia
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- gles2-only
-- openal
-- widgets
+- -gles2-only
+- -test
 - alsa
 - gstreamer
-- -test
+- openal
 - pulseaudio
 - qml
+- widgets
 requires:
 - name: qtdeclarative
   version: '>=0'
@@ -17,18 +17,9 @@ requires:
 - name: qtopengl
   version: '>=0'
   category: dev-qt-5
-- name: gst-plugins-base
-  version: '>=0'
-  category: media-libs-1.0
-- name: gstreamer
-  version: '>=0'
-  category: media-libs-1.0
 - name: openal
   version: '>=0'
   category: media-libs
-- name: pulseaudio
-  version: '>=0'
-  category: media-sound
 description: Multimedia (audio, video, radio, camera) library for the Qt5 framework
 uri:
 - https://www.qt.io/

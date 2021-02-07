@@ -2,11 +2,8 @@ name: openbsd-netcat
 version: "1.195"
 category: net-analyzer
 use_flags:
-- elibc_Darwin
+- -elibc_Darwin
 requires:
-- name: libbsd
-  version: '>=0'
-  category: dev-libs
 - name: netcat
   version: '>=0'
   category: net-analyzer

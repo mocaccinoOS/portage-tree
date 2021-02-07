@@ -2,10 +2,15 @@ name: tslib
 version: "1.21"
 category: x11-libs
 use_flags:
-- media-libs/libsdl2[abi_x86_32(-)
 - evdev
-- dev-libs/libevdev[abi_x86_32(-)
 - sdl
+requires:
+- name: libevdev
+  version: '>=0'
+  category: dev-libs
+- name: libsdl2
+  version: '>=0'
+  category: media-libs
 description: Touchscreen Access Library
 uri:
 - https://github.com/kergoth/tslib

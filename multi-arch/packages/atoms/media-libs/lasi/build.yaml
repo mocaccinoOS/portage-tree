@@ -12,15 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: cmake
   version: '>=0'
   category: dev-util
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: pango
   version: '>=0'
   category: x11-libs

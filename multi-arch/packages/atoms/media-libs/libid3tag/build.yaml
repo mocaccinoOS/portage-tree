@@ -15,6 +15,6 @@ requires:
 - name: gperf
   version: '>=0'
   category: dev-util
-- name: libtool
+- name: zlib
   version: '>=0'
-  category: sys-devel-2
+  category: sys-libs

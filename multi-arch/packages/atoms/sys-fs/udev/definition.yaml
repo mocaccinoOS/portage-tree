@@ -2,11 +2,9 @@ name: udev
 version: "245.5"
 category: sys-fs
 use_flags:
-- sys-libs/libcap:0=[abi_x86_32(-)
 - acl
 - kmod
 - selinux
-- '>=sys-apps/util-linux-2.30[abi_x86_32(-)'
 requires:
 - name: lp
   version: '>=0'

@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libibverbs
-  version: '>=0'
-  category: sys-fabric-3.12
 - name: librdmacm
   version: '>=0'
   category: sys-fabric-3.12

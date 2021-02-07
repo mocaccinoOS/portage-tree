@@ -2,8 +2,8 @@ name: ipset
 version: "6.38"
 category: net-firewall
 use_flags:
-- modules
 - kernel_linux
+- modules
 requires:
 - name: iptables
   version: '>=0'

@@ -3,9 +3,11 @@ version: "2.11"
 category: media-libs-2
 use_flags:
 - jpeg
-- '>=virtual/jpeg-0-r2:0[abi_x86_32(-)'
 - tiff
-- '>=media-libs/tiff-4.0.3-r6:0=[abi_x86_32(-)'
+requires:
+- name: tiff
+  version: '>=0'
+  category: media-libs
 description: A lightweight, speed optimized color management engine
 uri:
 - http://www.littlecms.com/

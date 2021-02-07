@@ -1,13 +1,13 @@
 name: glew
 version: 2.2.0
 category: media-libs
-use_flags:
-- '>=x11-libs/libXext-1.3.2[abi_x86_32(-)'
-- '>=x11-libs/libXi-1.7.2[abi_x86_32(-)'
-- '>=x11-libs/libXmu-1.1.1-r1[abi_x86_32(-)'
-- '>=virtual/glu-9.0-r1[abi_x86_32(-)'
-- '>=virtual/opengl-7.0-r1[abi_x86_32(-)'
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
+requires:
+- name: libXi
+  version: '>=0'
+  category: x11-libs
+- name: libXmu
+  version: '>=0'
+  category: x11-libs
 description: The OpenGL Extension Wrangler Library
 uri:
 - http://glew.sourceforge.net/

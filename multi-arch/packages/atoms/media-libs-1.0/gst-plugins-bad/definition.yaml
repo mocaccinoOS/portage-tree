@@ -2,31 +2,24 @@ name: gst-plugins-bad
 version: 1.16.2
 category: media-libs-1.0
 use_flags:
-- orc
-- '>=media-libs/gstreamer-1.2.4-r1:1.0[abi_x86_32(-)'
-- '>=dev-libs/wayland-1.11.0[abi_x86_32(-)'
-- '>=x11-libs/libdrm-2.4.55[abi_x86_32(-)'
-- wayland
-- '>=media-libs/gstreamer-1.16.2:1.0[abi_x86_32(-)'
-- vnc
-- introspection
-- X
-- '>=dev-lang/orc-0.4.17[abi_x86_32(-)'
-- '>=app-arch/bzip2-1.0.6-r4[abi_x86_32(-)'
-- bzip2
-- nls
 - -test
-- x11-libs/libX11[abi_x86_32(-)
-- '>=dev-libs/glib-2.40.0:2[abi_x86_32(-)'
-- '>=media-libs/gst-plugins-base-1.16.2:1.0[abi_x86_32(-)'
-- '>=dev-libs/glib-2.38.2-r1:2[abi_x86_32(-)'
+- X
+- bzip2
+- introspection
+- nls
+- orc
+- vnc
+- wayland
 requires:
-- name: gobject-introspection
+- name: bzip2
   version: '>=0'
-  category: dev-libs
+  category: app-arch
 - name: wayland-protocols
   version: '>=0'
   category: dev-libs
+- name: gst-plugins-base
+  version: '>=0'
+  category: media-libs-1.0
 description: Less plugins for GStreamer
 uri:
 - https://gstreamer.freedesktop.org/

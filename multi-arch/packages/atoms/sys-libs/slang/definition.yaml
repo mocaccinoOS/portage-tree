@@ -2,20 +2,21 @@ name: slang
 version: 2.3.2
 category: sys-libs
 use_flags:
-- zlib
-- '>=dev-libs/oniguruma-5.9.5:=[abi_x86_32(-)'
-- '>=dev-libs/libpcre-8.33-r1[abi_x86_32(-)'
-- readline
 - cjk
-- png
-- '>=media-libs/libpng-1.6.10:0=[abi_x86_32(-)'
 - pcre
-- '>=sys-libs/readline-6.2_p5-r1:0=[abi_x86_32(-)'
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
+- png
+- readline
+- zlib
 requires:
-- name: ncurses
+- name: libpcre
   version: '>=0'
-  category: sys-libs
+  category: dev-libs-3
+- name: oniguruma
+  version: '>=0'
+  category: dev-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs
 description: Multi-platform library designed to allow a developer to create robust software
 uri:
 - http://www.jedsoft.org/slang/

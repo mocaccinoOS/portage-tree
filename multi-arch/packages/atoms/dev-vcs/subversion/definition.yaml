@@ -2,17 +2,17 @@ name: subversion
 version: 1.14.0
 category: dev-vcs
 use_flags:
+- -doc
 - -test
-- sasl
+- apache2
+- berkdb
+- gnome-keyring
 - java
 - kwallet
-- berkdb
-- perl
-- apache2
-- -doc
-- gnome-keyring
-- ruby
 - nls
+- perl
+- ruby
+- sasl
 requires:
 - name: apache
   version: '>=0'

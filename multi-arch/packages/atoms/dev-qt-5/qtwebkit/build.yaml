@@ -18,9 +18,6 @@ requires:
 - name: hyphen
   version: '>=0'
   category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: qtmultimedia
   version: '>=0'
   category: dev-qt-5

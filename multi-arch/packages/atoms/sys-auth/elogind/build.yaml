@@ -36,6 +36,3 @@ requires:
 - name: util-linux
   version: '>=0'
   category: sys-apps
-- name: libselinux
-  version: '>=0'
-  category: sys-libs

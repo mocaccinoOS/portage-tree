@@ -2,8 +2,8 @@ name: NetAddr-IP
 version: 4.79.0
 category: dev-perl
 use_flags:
-- ipv6
 - -test
+- ipv6
 requires:
 - name: Socket6
   version: '>=0'

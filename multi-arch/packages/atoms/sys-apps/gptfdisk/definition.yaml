@@ -3,8 +3,8 @@ version: 1.0.4
 category: sys-apps
 use_flags:
 - kernel_linux
-- static
 - ncurses
+- static
 requires:
 - name: popt
   version: '>=0'
@@ -12,9 +12,6 @@ requires:
 - name: util-linux
   version: '>=0'
   category: sys-apps
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 description: GPT partition table manipulator for Linux
 uri:
 - https://www.rodsbooks.com/gdisk/

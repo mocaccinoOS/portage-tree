@@ -3,9 +3,13 @@ version: 2.0.3
 category: media-libs
 use_flags:
 - lcms
-- '>=media-libs/lcms-2.5:2[static-libs'
-- '>=sys-libs/zlib-1.2.8-r1[static-libs'
-- '>=virtual/jpeg-0-r2:0[static-libs'
+requires:
+- name: lcms
+  version: '>=0'
+  category: media-libs-2
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: Multiple Image Networkgraphics lib (animated png's)
 uri:
 - https://www.libmng.com/

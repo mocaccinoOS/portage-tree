@@ -12,13 +12,7 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXau
-  version: '>=0'
-  category: x11-libs
-- name: libXext
   version: '>=0'
   category: x11-libs
 - name: libXmu

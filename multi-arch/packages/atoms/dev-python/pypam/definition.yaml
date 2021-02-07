@@ -2,16 +2,17 @@ name: pypam
 version: 0.5.0
 category: dev-python
 use_flags:
-- '>=dev-python/setuptools-42.0.2[python_targets_python3_6(-)'
-- python_targets_python3_6
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - python_targets_python3_7
-- python_targets_python3_8
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
 requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: pam
   version: '>=0'
   category: sys-libs

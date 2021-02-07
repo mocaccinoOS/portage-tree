@@ -2,24 +2,32 @@ name: cairo
 version: 1.16.0
 category: x11-libs
 use_flags:
-- gles2-only
-- '>=x11-libs/pixman-0.32.4[abi_x86_32(-)'
-- '>=x11-libs/libXrender-0.9.8[abi_x86_32(-)'
-- '>=media-libs/fontconfig-2.10.92[abi_x86_32(-)'
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
+- -gles2-only
 - X
-- '>=media-libs/freetype-2.5.0.1:2[abi_x86_32(-)'
-- '>=media-libs/mesa-9.1.6[gles2,abi_x86_32(-)'
 - glib
-- '>=dev-libs/glib-2.34.3:2[abi_x86_32(-)'
-- '>=media-libs/mesa-9.1.6[egl,X(+),abi_x86_32(-)'
-- '>=x11-libs/libxcb-1.9.1[abi_x86_32(-)'
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- '>=x11-libs/libXext-1.3.2[abi_x86_32(-)'
-- '>=media-libs/libpng-1.6.10:0=[abi_x86_32(-)'
-- sys-libs/binutils-libs:0=[abi_x86_32(-)
 - opengl
-- '>=dev-libs/lzo-2.06-r1[abi_x86_32(-)'
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: fontconfig
+  version: '>=0'
+  category: media-libs-1.0
+- name: mesa
+  version: '>=0'
+  category: media-libs
+- name: binutils-libs
+  version: '>=0'
+  category: sys-libs
+- name: libXrender
+  version: '>=0'
+  category: x11-libs
+- name: pixman
+  version: '>=0'
+  category: x11-libs
 description: A vector graphics library with cross-device output support
 uri:
 - https://www.cairographics.org/ https://gitlab.freedesktop.org/cairo/cairo

@@ -15,9 +15,9 @@ requires:
 - name: vala
   version: '>=0'
   category: dev-lang-0.48
-- name: gobject-introspection
+- name: gdk-pixbuf
   version: '>=0'
-  category: dev-libs
-- name: glib-utils
+  category: x11-libs-2
+- name: pango
   version: '>=0'
-  category: dev-util
+  category: x11-libs

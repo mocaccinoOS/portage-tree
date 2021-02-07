@@ -2,18 +2,15 @@ name: mysql-connector-c
 version: 8.0.21
 category: dev-db
 use_flags:
+- -libressl
 - ldap
-- dev-libs/cyrus-sasl:=[abi_x86_32(-)
-- libressl
-- dev-libs/libressl:0=[abi_x86_32(-)
-- dev-libs/openssl:0=[abi_x86_32(-)
-- '>=app-arch/lz4-0_p131:=[abi_x86_32(-)'
-- app-arch/zstd:=[abi_x86_32(-)
-- sys-libs/zlib:=[abi_x86_32(-)
 requires:
 - name: mysql
   version: '>=0'
   category: dev-db-8.0
+- name: cyrus-sasl
+  version: '>=0'
+  category: dev-libs-2
 description: C client library for MariaDB/MySQL
 uri:
 - https://dev.mysql.com/downloads/

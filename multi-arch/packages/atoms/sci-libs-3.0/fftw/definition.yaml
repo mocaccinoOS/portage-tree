@@ -2,10 +2,9 @@ name: fftw
 version: 3.3.8
 category: sci-libs-3.0
 use_flags:
-- mpi
-- '>=virtual/mpi-2.0-r4[abi_x86_32(-)'
-- fortran
 - -test
+- fortran
+- mpi
 - quad
 description: Fast C library for the Discrete Fourier Transform
 uri:

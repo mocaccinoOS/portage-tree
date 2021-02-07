@@ -2,21 +2,18 @@ name: dhcp
 version: 4.4.2
 category: net-misc
 use_flags:
-- ldap
-- ssl
-- libressl
-- selinux
-- vim-syntax
+- -libressl
+- -vim-syntax
 - client
-- kernel_linux
 - ipv6
+- kernel_linux
+- ldap
+- selinux
+- ssl
 requires:
 - name: dhcp
   version: '>=0'
   category: acct-user
-- name: dhcpd-syntax
-  version: '>=0'
-  category: app-vim
 - name: openldap
   version: '>=0'
   category: net-nds

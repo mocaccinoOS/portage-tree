@@ -15,6 +15,3 @@ requires:
 - name: Alien-Libxml2
   version: '>=0'
   category: dev-perl
-- name: Test-LeakTrace
-  version: '>=0'
-  category: dev-perl

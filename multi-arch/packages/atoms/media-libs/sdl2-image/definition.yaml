@@ -2,16 +2,14 @@ name: sdl2-image
 version: 2.0.5
 category: media-libs
 use_flags:
-- webp
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
-- '>=media-libs/libpng-1.6.10:0[abi_x86_32(-)'
 - jpeg
-- '>=virtual/jpeg-0-r2:0[abi_x86_32(-)'
-- tiff
-- '>=media-libs/libsdl2-2.0.9[abi_x86_32(-)'
-- '>=media-libs/tiff-3.9.7-r1:0[abi_x86_32(-)'
 - png
-- '>=media-libs/libwebp-0.3.0[abi_x86_32(-)'
+- tiff
+- webp
+requires:
+- name: libsdl2
+  version: '>=0'
+  category: media-libs
 description: Image file loading library
 uri:
 - http://www.libsdl.org/projects/SDL_image/

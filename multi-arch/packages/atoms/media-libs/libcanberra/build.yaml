@@ -12,6 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: xz-utils
+- name: gstreamer
   version: '>=0'
-  category: app-arch
+  category: media-libs-1.0
+- name: libvorbis
+  version: '>=0'
+  category: media-libs
+- name: pulseaudio
+  version: '>=0'
+  category: media-sound
+- name: tdb
+  version: '>=0'
+  category: sys-libs

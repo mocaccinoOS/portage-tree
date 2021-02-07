@@ -2,8 +2,8 @@ name: jbig2dec
 version: "0.18"
 category: media-libs
 use_flags:
-- png
 - -test
+- png
 requires:
 - name: libpng
   version: '>=0'

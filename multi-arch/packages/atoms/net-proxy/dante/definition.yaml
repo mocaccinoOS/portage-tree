@@ -2,9 +2,9 @@ name: dante
 version: 1.4.1
 category: net-proxy
 use_flags:
-- selinux
 - kerberos
 - pam
+- selinux
 - tcpd
 - upnp
 - userland_GNU

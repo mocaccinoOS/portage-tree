@@ -2,8 +2,8 @@ name: courier-authlib
 version: 0.71.0
 category: net-libs
 use_flags:
+- -libressl
 - gdbm
-- libressl
 - ldap
 - mysql
 - pam

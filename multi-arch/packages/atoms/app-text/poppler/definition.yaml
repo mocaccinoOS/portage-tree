@@ -2,16 +2,16 @@ name: poppler
 version: 0.90.1
 category: app-text
 use_flags:
-- lcms
-- cjk
 - cairo
-- -qt5
+- cjk
 - curl
-- nss
 - introspection
 - jpeg
-- png
 - jpeg2k
+- lcms
+- nss
+- png
+- qt5
 - tiff
 requires:
 - name: poppler-data
@@ -20,15 +20,12 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
-- name: nss
+- name: qtgui
   version: '>=0'
-  category: dev-libs
-- name: fontconfig
+  category: dev-qt-5
+- name: qtxml
   version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
+  category: dev-qt-5
 - name: openjpeg
   version: '>=0'
   category: media-libs-2

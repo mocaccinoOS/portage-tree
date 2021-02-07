@@ -15,6 +15,6 @@ requires:
 - name: libogg
   version: '>=0'
   category: media-libs
-- name: libtool
+- name: speexdsp
   version: '>=0'
-  category: sys-devel-2
+  category: media-libs

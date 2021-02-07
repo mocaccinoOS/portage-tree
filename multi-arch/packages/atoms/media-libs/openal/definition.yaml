@@ -2,18 +2,23 @@ name: openal
 version: 1.20.1
 category: media-libs
 use_flags:
-- '>=media-libs/alsa-lib-1.0.27.2[abi_x86_32(-)'
-- media-libs/libsdl2[abi_x86_32(-)
-- oss
-- '>=media-sound/pulseaudio-2.1-r1[abi_x86_32(-)'
 - alsa
 - jack
-- virtual/jack[abi_x86_32(-)
+- oss
 - portaudio
-- sdl
-- '>=media-libs/portaudio-19_pre20111121-r1[abi_x86_32(-)'
 - pulseaudio
-- -qt5
+- qt5
+- sdl
+requires:
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
+- name: libsdl2
+  version: '>=0'
+  category: media-libs
+- name: portaudio
+  version: '>=0'
+  category: media-libs
 description: A software implementation of the OpenAL 3D audio API
 uri:
 - https://www.openal-soft.org/

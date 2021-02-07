@@ -2,14 +2,10 @@ name: libsndfile
 version: 1.0.30
 category: media-libs
 use_flags:
-- media-libs/libvorbis:=[abi_x86_32(-)
-- media-libs/opus:=[abi_x86_32(-)
+- -minimal
+- -test
 - alsa
 - sqlite
-- -test
-- minimal
-- media-libs/flac:=[abi_x86_32(-)
-- media-libs/libogg:=[abi_x86_32(-)
 requires:
 - name: sqlite
   version: '>=0'

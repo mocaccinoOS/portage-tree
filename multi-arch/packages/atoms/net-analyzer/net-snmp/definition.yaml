@@ -2,27 +2,27 @@ name: net-snmp
 version: "5.9"
 category: net-analyzer
 use_flags:
+- -doc
+- -libressl
+- -minimal
 - -python_single_target_python3_6
-- rpm
-- pci
+- -python_single_target_python3_8
+- X
+- bzip2
+- elf
+- lm-sensors
 - mysql
 - netlink
-- lm-sensors
-- zlib
-- -doc
-- python_single_target_python3_7
-- minimal
-- bzip2
 - pcap
+- pci
 - perl
-- libressl
-- X
+- python
+- python_single_target_python3_7
+- rpm
 - selinux
 - ssl
 - tcpd
-- python
-- -python_single_target_python3_8
-- elf
+- zlib
 requires:
 - name: rpm
   version: '>=0'
@@ -30,12 +30,6 @@ requires:
 - name: mysql-connector-c
   version: '>=0'
   category: dev-db
-- name: libnl
-  version: '>=0'
-  category: dev-libs-3
-- name: TermReadKey
-  version: '>=0'
-  category: dev-perl
 - name: Tk
   version: '>=0'
   category: dev-perl

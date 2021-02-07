@@ -1,13 +1,6 @@
 name: gtk-update-icon-cache
 version: 3.24.21
 category: dev-util
-requires:
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
-- name: gdk-pixbuf
-  version: '>=0'
-  category: x11-libs-2
 description: GTK update icon cache
 uri:
 - https://www.gtk.org/ https://gitlab.gnome.org/Community/gentoo/gtk-update-icon-cache

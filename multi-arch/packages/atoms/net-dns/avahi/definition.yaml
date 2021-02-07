@@ -2,32 +2,22 @@ name: avahi
 version: "0.8"
 category: net-dns
 use_flags:
-- x11-libs/gtk+:3[abi_x86_32(-)
-- dbus
-- dev-python/pygobject:3[python_targets_python3_6(-)
 - -doc
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- dev-libs/glib:2[abi_x86_32(-)
-- sys-apps/dbus[abi_x86_32(-)
-- -qt5
-- introspection
-- mono
-- selinux
+- -python_targets_python3_6
+- -python_targets_python3_8
 - autoipd
-- '>=dev-python/twisted-16.0.0[python_targets_python3_6(-)'
-- x11-libs/gtk+:2[abi_x86_32(-)
-- python_targets_python3_8
-- python
-- sys-libs/gdbm:=[abi_x86_32(-)
-- dev-libs/libevent:=[abi_x86_32(-)
-- kernel_linux
 - bookmarks
-- python_targets_python3_6
-- gtk2
+- dbus
 - gdbm
 - gtk
+- gtk2
+- introspection
+- kernel_linux
+- mono
+- python
 - python_targets_python3_7
-- dev-python/dbus-python[python_targets_python3_6(-)
+- qt5
+- selinux
 requires:
 - name: netdev
   version: '>=0'
@@ -41,12 +31,24 @@ requires:
 - name: gtk-sharp
   version: '>=0'
   category: dev-dotnet-2
-- name: gobject-introspection
-  version: '>=0'
-  category: dev-libs
 - name: libdaemon
   version: '>=0'
   category: dev-libs
+- name: libevent
+  version: '>=0'
+  category: dev-libs
+- name: dbus-python
+  version: '>=0'
+  category: dev-python
+- name: pygobject
+  version: '>=0'
+  category: dev-python-3
+- name: twisted
+  version: '>=0'
+  category: dev-python
+- name: qtcore
+  version: '>=0'
+  category: dev-qt-5
 - name: selinux-avahi
   version: '>=0'
   category: sec-policy

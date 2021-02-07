@@ -2,15 +2,9 @@ name: Eval-Closure
 version: 0.140.0
 category: dev-perl
 use_flags:
-- minimal
+- -minimal
 - -test
 requires:
-- name: Devel-LexAlias
-  version: '>=0'
-  category: dev-perl
-- name: Perl-Tidy
-  version: '>=0'
-  category: dev-perl
 - name: Try-Tiny
   version: '>=0'
   category: dev-perl

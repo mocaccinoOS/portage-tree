@@ -2,9 +2,9 @@ name: vpnc
 version: 0.5.3
 category: net-vpn
 use_flags:
+- gnutls
 - resolvconf
 - selinux
-- gnutls
 requires:
 - name: perl
   version: '>=0'

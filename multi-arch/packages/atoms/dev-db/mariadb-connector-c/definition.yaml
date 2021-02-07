@@ -2,19 +2,18 @@ name: mariadb-connector-c
 version: 3.1.9
 category: dev-db
 use_flags:
-- app-crypt/heimdal[abi_x86_32(-)
-- sys-libs/zlib:=[abi_x86_32(-)
-- virtual/libiconv:=[abi_x86_32(-)
+- -libressl
 - curl
-- kerberos
-- dev-libs/openssl:0=[abi_x86_32(-)
-- net-misc/curl:0=[abi_x86_32(-)
-- ssl
-- libressl
-- dev-libs/libressl:0=[abi_x86_32(-)
 - gnutls
-- '>=net-libs/gnutls-3.3.24:0=[abi_x86_32(-)'
-- app-crypt/mit-krb5[abi_x86_32(-)
+- kerberos
+- ssl
+requires:
+- name: mit-krb5
+  version: '>=0'
+  category: app-crypt
+- name: curl
+  version: '>=0'
+  category: net-misc
 description: C client library for MariaDB/MySQL
 uri:
 - https://mariadb.org/

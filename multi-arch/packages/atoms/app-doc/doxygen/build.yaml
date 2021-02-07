@@ -18,6 +18,9 @@ requires:
 - name: xapian
   version: '>=0'
   category: dev-libs
+- name: qtxml
+  version: '>=0'
+  category: dev-qt-5
 - name: graphviz
   version: '>=0'
   category: media-gfx

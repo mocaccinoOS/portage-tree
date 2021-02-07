@@ -3,22 +3,28 @@ version: 5.2.8
 category: sci-visualization
 use_flags:
 - -doc
-- libcaca
-- -qt5
-- lua
-- gd
-- latex
-- readline
-- libcerf
-- wxwidgets
-- cairo
-- ggi
-- svga
 - X
+- cairo
+- gd
+- ggi
+- latex
+- libcaca
+- libcerf
+- lua
+- qt5
+- readline
+- svga
+- wxwidgets
 requires:
 - name: lua
   version: '>=0'
   category: dev-lang
+- name: qtprintsupport
+  version: '>=0'
+  category: dev-qt-5
+- name: qtsvg
+  version: '>=0'
+  category: dev-qt-5
 - name: pgf
   version: '>=0'
   category: dev-tex
@@ -34,19 +40,7 @@ requires:
 - name: libcerf
   version: '>=0'
   category: sci-libs
-- name: readline
-  version: '>=0'
-  category: sys-libs
-- name: cairo
-  version: '>=0'
-  category: x11-libs
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: pango
   version: '>=0'
   category: x11-libs
 - name: wxGTK

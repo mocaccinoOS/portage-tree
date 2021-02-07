@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: spamd
-  version: '>=0'
-  category: acct-group
-- name: spamd
-  version: '>=0'
-  category: acct-user
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: DBD-Pg
   version: '>=0'
   category: dev-perl

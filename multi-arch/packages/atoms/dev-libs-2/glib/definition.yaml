@@ -2,28 +2,28 @@ name: glib
 version: 2.64.5
 category: dev-libs-2
 use_flags:
-- kernel_linux
-- '>=virtual/libiconv-0-r1[abi_x86_32(-)'
-- '>=sys-apps/util-linux-2.23[abi_x86_32(-)'
-- gtk-doc
-- systemtap
-- '>=dev-libs/libpcre-8.31:3[abi_x86_32(-)'
-- elibc_glibc
-- '>=virtual/libintl-0-r2[abi_x86_32(-)'
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
-- selinux
-- '>=sys-apps/attr-2.4.47-r1[abi_x86_32(-)'
-- '>=sys-libs/libselinux-2.2.2-r5[abi_x86_32(-)'
+- -gtk-doc
 - -test
+- elibc_glibc
 - fam
 - kernel_Winnt
-- '>=virtual/fam-0-r1[abi_x86_32(-)'
-- '>=dev-libs/libffi-3.0.13-r1:=[abi_x86_32(-)'
+- kernel_linux
+- selinux
+- systemtap
 - xattr
 requires:
+- name: libffi
+  version: '>=0'
+  category: dev-libs
 - name: gdbus-codegen
   version: '>=0'
   category: dev-util
+- name: attr
+  version: '>=0'
+  category: sys-apps
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
 description: The GLib library of C routines
 uri:
 - https://www.gtk.org/

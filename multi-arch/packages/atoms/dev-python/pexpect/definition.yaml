@@ -2,21 +2,15 @@ name: pexpect
 version: 4.8.0
 category: dev-python
 use_flags:
-- '>=dev-python/ptyprocess-0.5[python_targets_pypy3(-)'
+- -doc
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- -test
 - python_targets_pypy3
 - python_targets_python3_7
-- python_targets_python3_9
-- -test
-- '>=dev-lang/python-exec-2:=[python_targets_pypy3(-)'
-- python_targets_python3_6
-- python_targets_python3_8
-- -doc
-- '>=dev-python/pytest-4.5.0[python_targets_pypy3(-)'
 requires:
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
-- name: pypy3
+- name: ptyprocess
   version: '>=0'
   category: dev-python
 description: Python module for spawning child apps and responding to expected patterns

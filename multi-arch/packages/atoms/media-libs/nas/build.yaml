@@ -18,25 +18,10 @@ requires:
 - name: bison
   version: '>=0'
   category: sys-devel
-- name: libICE
-  version: '>=0'
-  category: x11-libs
-- name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libX11
+- name: libXau
   version: '>=0'
   category: x11-libs
 - name: libXaw
-  version: '>=0'
-  category: x11-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
-- name: libXmu
-  version: '>=0'
-  category: x11-libs
-- name: libXpm
   version: '>=0'
   category: x11-libs
 - name: gccmakedep

@@ -2,28 +2,28 @@ name: dovecot
 version: 2.3.11.3
 category: net-mail
 use_flags:
-- libressl
-- suid
-- sqlite
-- pam
-- solr
-- unwind
-- textcat
-- selinux
-- lucene
-- lua
-- postgres
+- -libressl
+- argon2
+- bzip2
+- caps
 - kerberos
-- vpopmail
-- zlib
 - ldap
+- lua
+- lucene
+- lz4
 - lzma
 - mysql
-- caps
+- pam
+- postgres
+- selinux
+- solr
+- sqlite
+- suid
 - tcpd
-- bzip2
-- argon2
-- lz4
+- textcat
+- unwind
+- vpopmail
+- zlib
 requires:
 - name: dovecot
   version: '>=0'
@@ -32,12 +32,6 @@ requires:
   version: '>=0'
   category: acct-user
 - name: bzip2
-  version: '>=0'
-  category: app-arch
-- name: lz4
-  version: '>=0'
-  category: app-arch
-- name: xz-utils
   version: '>=0'
   category: app-arch
 - name: libexttextcat

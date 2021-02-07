@@ -2,20 +2,20 @@ name: connman
 version: "1.38"
 category: net-misc
 use_flags:
-- nftables
-- wireguard
 - bluetooth
-- vpnc
-- wifi
+- iptables
 - iwd
 - l2tp
-- wispr
+- nftables
 - ofono
 - openconnect
-- policykit
 - openvpn
+- policykit
 - pptp
-- iptables
+- vpnc
+- wifi
+- wireguard
+- wispr
 requires:
 - name: pptpclient
   version: '>=0'

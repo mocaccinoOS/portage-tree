@@ -2,15 +2,13 @@ name: clang
 version: 10.0.1
 category: sys-devel-10
 use_flags:
-- python_single_target_python3_7
-- -python_single_target_python3_9
-- static-analyzer
-- dev-libs/libxml2:2=[abi_x86_32(-)
-- -python_single_target_python3_8
-- ~sys-devel/llvm-10.0.1:10=[debug=,llvm_targets_AArch64
 - -doc
-- xml
 - -python_single_target_python3_6
+- -python_single_target_python3_8
+- -python_single_target_python3_9
+- python_single_target_python3_7
+- static-analyzer
+- xml
 requires:
 - name: clang
   version: '>=0'

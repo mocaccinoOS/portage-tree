@@ -2,9 +2,12 @@ name: libxkbcommon
 version: 0.10.0
 category: x11-libs
 use_flags:
-- '>=x11-libs/libxcb-1.10:=[abi_x86_32(-)'
-- X
 - -doc
+- X
+requires:
+- name: libxcb
+  version: '>=0'
+  category: x11-libs
 description: keymap handling library for toolkits and window systems
 uri:
 - https://xkbcommon.org/ https://github.com/xkbcommon/libxkbcommon/

@@ -15,9 +15,9 @@ requires:
 - name: gperf
   version: '>=0'
   category: dev-util
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
 - name: gettext
   version: '>=0'
   category: sys-devel
-- name: libtool
-  version: '>=0'
-  category: sys-devel-2

@@ -2,13 +2,16 @@ name: fontconfig
 version: 2.13.1
 category: media-libs-1.0
 use_flags:
-- '>=dev-libs/expat-2.1.0-r3[abi_x86_32(-)'
-- '>=media-libs/freetype-2.9[abi_x86_32(-)'
-- elibc_Darwin
-- elibc_SunOS
-- sys-apps/util-linux[abi_x86_32(-)
-- virtual/libintl[abi_x86_32(-)
 - -doc
+- -elibc_Darwin
+- -elibc_SunOS
+requires:
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
 description: A library for configuring and customizing font access
 uri:
 - https://fontconfig.org/

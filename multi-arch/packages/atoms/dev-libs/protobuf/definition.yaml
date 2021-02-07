@@ -2,11 +2,13 @@ name: protobuf
 version: 3.12.4
 category: dev-libs
 use_flags:
-- -test
-- '>=dev-cpp/gtest-1.9[abi_x86_32(-)'
 - -emacs
+- -test
 - zlib
-- sys-libs/zlib[abi_x86_32(-)
+requires:
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: Google's Protocol Buffers - Extensible mechanism for serializing structured data
 uri:
 - https://developers.google.com/protocol-buffers/ https://github.com/protocolbuffers/protobuf

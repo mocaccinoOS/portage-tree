@@ -2,8 +2,8 @@ name: libfontenc
 version: 1.1.4
 category: x11-libs
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
 - name: zlib
   version: '>=0'

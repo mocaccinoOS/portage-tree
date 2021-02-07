@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: sqlite
   version: '>=0'
-  category: layers
+  category: dev-db-3
+- name: nspr
+  version: '>=0'
+  category: dev-libs

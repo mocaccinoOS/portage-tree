@@ -2,8 +2,11 @@ name: gdbm
 version: 1.18.1
 category: sys-libs
 use_flags:
-- sys-libs/readline:0=[abi_x86_32(-)
 - readline
+requires:
+- name: readline
+  version: '>=0'
+  category: sys-libs
 description: Standard GNU database libraries
 uri:
 - https://www.gnu.org/software/gdbm/

@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libressl
+- name: perl
   version: '>=0'
-  category: dev-libs
-- name: Test-Exception
-  version: '>=0'
-  category: dev-perl
-- name: Test-NoWarnings
-  version: '>=0'
-  category: dev-perl
-- name: Test-Warn
-  version: '>=0'
-  category: dev-perl
+  category: dev-lang

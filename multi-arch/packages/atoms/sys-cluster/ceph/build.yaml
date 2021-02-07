@@ -21,9 +21,6 @@ requires:
 - name: cpio
   version: '>=0'
   category: app-arch
-- name: snappy
-  version: '>=0'
-  category: app-arch
 - name: jq
   version: '>=0'
   category: app-misc
@@ -36,10 +33,16 @@ requires:
 - name: yasm
   version: '>=0'
   category: dev-lang
+- name: boost
+  version: '>=0'
+  category: dev-libs
 - name: crypto++
   version: '>=0'
   category: dev-libs
 - name: jemalloc
+  version: '>=0'
+  category: dev-libs
+- name: leveldb
   version: '>=0'
   category: dev-libs
 - name: libaio
@@ -51,25 +54,16 @@ requires:
 - name: librdkafka
   version: '>=0'
   category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
-- name: nss
-  version: '>=0'
-  category: dev-libs
 - name: protobuf
   version: '>=0'
   category: dev-libs
-- name: sphinx
+- name: cython
   version: '>=0'
   category: dev-python
 - name: babeltrace
   version: '>=0'
   category: dev-util
 - name: cunit
-  version: '>=0'
-  category: dev-util
-- name: google-perftools
   version: '>=0'
   category: dev-util
 - name: gperf
@@ -81,18 +75,9 @@ requires:
 - name: ragel
   version: '>=0'
   category: dev-util
-- name: c-ares
-  version: '>=0'
-  category: net-dns
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: rabbitmq-c
   version: '>=0'
   category: net-libs
-- name: openldap
-  version: '>=0'
-  category: net-nds
 - name: coreutils
   version: '>=0'
   category: sys-apps
@@ -123,9 +108,6 @@ requires:
 - name: patch
   version: '>=0'
   category: sys-devel
-- name: btrfs-progs
-  version: '>=0'
-  category: sys-fs
 - name: fuse
   version: '>=0'
   category: sys-fs-3
@@ -135,6 +117,3 @@ requires:
 - name: zfs
   version: '>=0'
   category: sys-fs
-- name: libpciaccess
-  version: '>=0'
-  category: x11-libs

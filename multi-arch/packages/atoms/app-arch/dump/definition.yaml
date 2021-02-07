@@ -2,15 +2,15 @@ name: dump
 version: 0.4.46
 category: app-arch
 use_flags:
-- sqlite
-- ermt
-- ssl
-- zlib
+- -libressl
 - bzip2
-- static
+- ermt
 - lzo
-- libressl
 - readline
+- sqlite
+- ssl
+- static
+- zlib
 requires:
 - name: bzip2
   version: '>=0'
@@ -18,15 +18,9 @@ requires:
 - name: sqlite
   version: '>=0'
   category: dev-db-3
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: lzo
   version: '>=0'
   category: dev-libs-2
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 description: Dump/restore ext2fs backup utilities
 uri:
 - http://dump.sourceforge.net/

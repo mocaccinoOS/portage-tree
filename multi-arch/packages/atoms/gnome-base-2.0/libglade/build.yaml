@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: desktop-file-utils
+- name: gtk+
   version: '>=0'
-  category: dev-util
-- name: gtk-doc-am
-  version: '>=0'
-  category: dev-util
-- name: libtool
-  version: '>=0'
-  category: sys-devel-2
-- name: shared-mime-info
-  version: '>=0'
-  category: x11-misc
+  category: x11-libs-3

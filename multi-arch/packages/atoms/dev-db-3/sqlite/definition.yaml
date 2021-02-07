@@ -2,16 +2,21 @@ name: sqlite
 version: 3.33.0
 category: dev-db-3
 use_flags:
-- dev-libs/icu:0=[abi_x86_32(-)
-- readline
-- tcl
-- dev-lang/tcl:0=[abi_x86_32(-)
 - -test
 - icu
-- sys-libs/readline:0=[abi_x86_32(-)
+- readline
+- tcl
 - tools
-- sys-libs/zlib:0=[abi_x86_32(-)
-- '>=dev-lang/tcl-8.6:0[abi_x86_32(-)'
+requires:
+- name: tcl
+  version: '>=0'
+  category: dev-lang
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: readline
+  version: '>=0'
+  category: sys-libs
 description: SQL database engine
 uri:
 - https://sqlite.org/

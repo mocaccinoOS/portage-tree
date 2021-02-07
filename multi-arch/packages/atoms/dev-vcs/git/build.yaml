@@ -15,6 +15,9 @@ requires:
 - name: libsecret
   version: '>=0'
   category: app-crypt
+- name: perl
+  version: '>=0'
+  category: dev-lang
 - name: tk
   version: '>=0'
   category: dev-lang
@@ -22,9 +25,6 @@ requires:
   version: '>=0'
   category: dev-libs-3
 - name: libpcre2
-  version: '>=0'
-  category: dev-libs
-- name: libressl
   version: '>=0'
   category: dev-libs
 - name: curl

@@ -2,8 +2,11 @@ name: acl
 version: 2.2.53
 category: sys-apps
 use_flags:
-- '>=sys-apps/attr-2.4.47-r1[abi_x86_32(-)'
 - nls
+requires:
+- name: attr
+  version: '>=0'
+  category: sys-apps
 description: access control list utilities, libraries and headers
 uri:
 - https://savannah.nongnu.org/projects/acl

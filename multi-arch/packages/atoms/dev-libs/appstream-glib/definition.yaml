@@ -2,18 +2,14 @@ name: appstream-glib
 version: 0.7.17
 category: dev-libs
 use_flags:
-- '>=x11-libs/gdk-pixbuf-2.31.5:2[introspection'
+- -gtk-doc
 - fonts
-- stemmer
 - introspection
-- gtk-doc
+- stemmer
 requires:
 - name: libarchive
   version: '>=0'
   category: app-arch
-- name: json-glib
-  version: '>=0'
-  category: dev-libs
 - name: libyaml
   version: '>=0'
   category: dev-libs
@@ -23,24 +19,9 @@ requires:
 - name: appdata-tools
   version: '>=0'
   category: dev-util
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: libsoup
   version: '>=0'
   category: net-libs-2.4
-- name: util-linux
-  version: '>=0'
-  category: sys-apps
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
-- name: pango
-  version: '>=0'
-  category: x11-libs
 description: Provides GObjects and helper methods to read and write AppStream metadata
 uri:
 - https://people.freedesktop.org/~hughsient/appstream-glib/

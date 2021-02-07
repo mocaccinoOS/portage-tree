@@ -1,8 +1,10 @@
 name: libid3tag
 version: 0.15.1b
 category: media-libs
-use_flags:
-- sys-libs/zlib[abi_x86_32(-)
+requires:
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: The MAD id3tag library
 uri:
 - http://www.underbit.com/products/mad/

@@ -2,27 +2,21 @@ name: gemato
 version: "16.2"
 category: app-portage
 use_flags:
-- '>=dev-python/pytest-5[python_targets_pypy3(-)'
-- dev-python/responses[python_targets_pypy3(-)
-- '>=dev-lang/python-exec-2:=[python_targets_pypy3(-)'
-- python_targets_pypy3
-- '>=dev-python/setuptools-42.0.2[python_targets_pypy3(-)'
-- python_targets_python3_9
-- dev-python/requests[python_targets_pypy3(-)
-- python_targets_python3_6
-- python_targets_python3_8
-- '>=dev-python/pytest-4.5.0[python_targets_pypy3(-)'
-- gpg
-- python_targets_python3_7
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - -test
+- gpg
+- python_targets_pypy3
+- python_targets_python3_7
 requires:
 - name: gnupg
   version: '>=0'
   category: app-crypt
-- name: python
+- name: requests
   version: '>=0'
-  category: dev-lang-3.7
-- name: pypy3
+  category: dev-python
+- name: setuptools
   version: '>=0'
   category: dev-python
 description: Stand-alone Manifest generation & verification tool

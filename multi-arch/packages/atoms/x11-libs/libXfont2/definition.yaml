@@ -2,15 +2,12 @@ name: libXfont2
 version: 2.0.4
 category: x11-libs
 use_flags:
-- x86-winnt
 - -doc
+- -ppc-aix
+- -x86-winnt
 - bzip2
 - truetype
-- ppc-aix
 requires:
-- name: bzip2
-  version: '>=0'
-  category: app-arch
 - name: freetype
   version: '>=0'
   category: media-libs-2

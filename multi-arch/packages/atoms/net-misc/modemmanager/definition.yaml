@@ -2,14 +2,14 @@ name: modemmanager
 version: 1.10.0
 category: net-misc
 use_flags:
+- -elogind
+- introspection
 - mbim
 - policykit
 - qmi
-- elogind
 - systemd
-- vala
 - udev
-- introspection
+- vala
 requires:
 - name: plugdev
   version: '>=0'

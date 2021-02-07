@@ -2,26 +2,29 @@ name: nghttp2
 version: 1.41.0
 category: net-libs
 use_flags:
-- utils
-- '>=sys-libs/zlib-1.2.3[abi_x86_32(-)'
-- dev-libs/libressl:=[abi_x86_32(-)
-- dev-libs/boost:=[abi_x86_32(-)
+- -libressl
 - -test
-- '>=dev-util/cunit-2.1[abi_x86_32(-)'
-- jemalloc
-- xml
 - cxx
-- dev-libs/jemalloc[abi_x86_32(-)
-- '>=dev-libs/libxml2-2.7.7:2[abi_x86_32(-)'
-- libressl
 - hpack-tools
-- net-dns/c-ares:=[abi_x86_32(-)
-- '>=dev-libs/openssl-1.0.2:0=[-bindist,abi_x86_32(-)'
-- '>=dev-libs/libev-4.15[abi_x86_32(-)'
+- jemalloc
+- utils
+- xml
 requires:
+- name: boost
+  version: '>=0'
+  category: dev-libs
 - name: jansson
   version: '>=0'
   category: dev-libs
+- name: jemalloc
+  version: '>=0'
+  category: dev-libs
+- name: libev
+  version: '>=0'
+  category: dev-libs
+- name: c-ares
+  version: '>=0'
+  category: net-dns
 description: HTTP/2 C Library
 uri:
 - https://nghttp2.org/

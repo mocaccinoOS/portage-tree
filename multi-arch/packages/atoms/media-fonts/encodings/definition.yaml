@@ -2,8 +2,8 @@ name: encodings
 version: 1.0.5
 category: media-fonts
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 description: X.Org font encodings
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/font/encodings

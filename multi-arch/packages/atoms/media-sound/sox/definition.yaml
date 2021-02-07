@@ -3,20 +3,20 @@ version: 14.4.2
 category: media-sound
 use_flags:
 - alsa
+- amr
+- ao
+- encode
 - flac
-- opus
+- id3tag
+- ladspa
 - mad
+- ogg
+- opus
+- png
+- pulseaudio
 - sndfile
 - twolame
-- amr
-- pulseaudio
-- encode
-- ladspa
-- ogg
 - wavpack
-- ao
-- id3tag
-- png
 requires:
 - name: flac
   version: '>=0'
@@ -51,18 +51,12 @@ requires:
 - name: lame
   version: '>=0'
   category: media-sound
-- name: pulseaudio
-  version: '>=0'
-  category: media-sound
 - name: twolame
   version: '>=0'
   category: media-sound
 - name: wavpack
   version: '>=0'
   category: media-sound
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 description: The swiss army knife of sound processing programs
 uri:
 - http://sox.sourceforge.net

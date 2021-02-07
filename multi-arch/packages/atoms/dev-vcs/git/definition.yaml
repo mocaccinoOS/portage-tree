@@ -2,29 +2,29 @@ name: git
 version: 2.26.2
 category: dev-vcs
 use_flags:
-- libressl
-- curl
-- webdav
-- gpg
-- -python_single_target_python3_8
+- -doc
+- -emacs
+- -libressl
 - -python_single_target_python3_6
+- -python_single_target_python3_8
+- -test
+- cgi
+- curl
+- cvs
+- gnome-keyring
+- gpg
+- highlight
+- iconv
+- mediawiki
+- nls
 - pcre
 - pcre-jit
-- subversion
-- nls
-- cvs
-- cgi
-- mediawiki
-- gnome-keyring
-- perl
-- tk
-- -test
-- iconv
-- python_single_target_python3_7
-- -emacs
-- highlight
-- -doc
 - perforce
+- perl
+- python_single_target_python3_7
+- subversion
+- tk
+- webdav
 requires:
 - name: gnupg
   version: '>=0'
@@ -32,6 +32,9 @@ requires:
 - name: highlight
   version: '>=0'
   category: app-text
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

@@ -2,11 +2,11 @@ name: libintl-perl
 version: 1.310.0
 category: dev-perl
 use_flags:
-- minimal
+- -minimal
 requires:
-- name: File-ShareDir
+- name: perl
   version: '>=0'
-  category: dev-perl
+  category: dev-lang
 description: High-Level Interface to Uniforum Message Translation
 uri:
 - http://guido-flohr.net/projects/libintl-perl https://metacpan.org/release/libintl-perl

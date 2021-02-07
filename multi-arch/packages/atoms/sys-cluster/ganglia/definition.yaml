@@ -2,15 +2,20 @@ name: ganglia
 version: 3.7.1
 category: sys-cluster
 use_flags:
+- -minimal
 - pcre
 - python
 - python_targets_python2_7
-- '>=dev-lang/python-exec-2:=[python_targets_python2_7(-)'
-- minimal
 requires:
 - name: firebird
   version: '>=0'
   category: dev-db
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: apr
   version: '>=0'
   category: dev-libs-1
@@ -20,9 +25,6 @@ requires:
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: rrdtool
-  version: '>=0'
-  category: net-analyzer
 - name: libnsl
   version: '>=0'
   category: net-libs

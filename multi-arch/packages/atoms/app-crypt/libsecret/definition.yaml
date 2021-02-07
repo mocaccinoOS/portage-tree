@@ -2,14 +2,13 @@ name: libsecret
 version: 0.20.3
 category: app-crypt
 use_flags:
-- introspection
-- '>=dev-libs/glib-2.44:2[abi_x86_32(-)'
-- -test
-- vala
 - crypt
-- '>=dev-libs/libgcrypt-1.2.2:0=[abi_x86_32(-)'
+- introspection
 requires:
 - name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
+- name: libgcrypt
   version: '>=0'
   category: dev-libs
 description: GObject library for accessing the freedesktop.org Secret Service API

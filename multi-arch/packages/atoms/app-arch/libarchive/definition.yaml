@@ -2,36 +2,43 @@ name: libarchive
 version: 3.4.3
 category: app-arch
 use_flags:
-- dev-libs/nettle:0=[abi_x86_32(-)
-- app-crypt/libb2[abi_x86_32(-)
-- app-arch/bzip2[abi_x86_32(-)
-- sys-apps/attr[abi_x86_32(-)
+- -libressl
+- acl
 - blake2
 - bzip2
-- expat
-- dev-libs/expat[abi_x86_32(-)
-- dev-libs/libxml2[abi_x86_32(-)
-- virtual/libiconv[abi_x86_32(-)
-- virtual/acl[abi_x86_32(-)
-- libressl
-- zlib
-- zstd
 - e2fsprogs
-- dev-libs/openssl:0=[abi_x86_32(-)
-- sys-libs/zlib[abi_x86_32(-)
-- acl
-- nettle
-- dev-libs/libressl:0=[abi_x86_32(-)
-- lzo
+- expat
 - iconv
-- '>=dev-libs/lzo-2[abi_x86_32(-)'
-- xattr
-- '>=app-arch/lz4-0_p131:0=[abi_x86_32(-)'
+- kernel_linux
 - lz4
 - lzma
-- app-arch/xz-utils[threads=,abi_x86_32(-)
-- app-arch/zstd[abi_x86_32(-)
-- kernel_linux
+- lzo
+- nettle
+- xattr
+- zlib
+- zstd
+requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: zstd
+  version: '>=0'
+  category: app-arch
+- name: libb2
+  version: '>=0'
+  category: app-crypt
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: nettle
+  version: '>=0'
+  category: dev-libs
+- name: attr
+  version: '>=0'
+  category: sys-apps
 description: Multi-format archive and compression library
 uri:
 - https://www.libarchive.org/

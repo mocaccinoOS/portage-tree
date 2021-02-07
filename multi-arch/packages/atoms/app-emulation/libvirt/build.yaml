@@ -48,9 +48,6 @@ requires:
 - name: nfs-utils
   version: '>=0'
   category: net-fs
-- name: libssh2
-  version: '>=0'
-  category: net-libs
 - name: radvd
   version: '>=0'
   category: net-misc

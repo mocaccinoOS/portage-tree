@@ -18,6 +18,9 @@ requires:
 - name: nasm
   version: '>=0'
   category: dev-lang
+- name: libogg
+  version: '>=0'
+  category: media-libs
 - name: gettext
   version: '>=0'
   category: sys-devel

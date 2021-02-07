@@ -2,8 +2,6 @@ name: libgudev
 version: "233"
 category: dev-libs
 use_flags:
-- '>=dev-libs/glib-2.38.0:2[abi_x86_32(-)'
-- '>=virtual/libudev-199:=[abi_x86_32(-)'
 - introspection
 description: GObject bindings for libudev
 uri:

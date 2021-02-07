@@ -3,7 +3,6 @@ version: "6.2"
 category: sys-libs
 use_flags:
 - gpm
-- sys-libs/gpm[abi_x86_32(-)
 description: console display library
 uri:
 - https://www.gnu.org/software/ncurses/ https://invisible-island.net/ncurses/

@@ -2,13 +2,9 @@ name: open-isns
 version: "0.98"
 category: sys-block
 use_flags:
-- libressl
+- -libressl
 - slp
 - ssl
-requires:
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 description: iSNS server and client for Linux
 uri:
 - https://github.com/open-iscsi/open-isns

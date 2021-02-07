@@ -2,29 +2,37 @@ name: libselinux
 version: "3.0"
 category: sys-libs
 use_flags:
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- ruby_targets_ruby24
-- ruby_targets_ruby25
-- '>=sys-libs/libsepol-3.0:=[abi_x86_32(-)'
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- -ruby_targets_ruby24
+- -ruby_targets_ruby25
 - elibc_musl
-- python
-- ruby_targets_ruby26
-- dev-libs/libpcre2:=[static-libs
 - pcre2
-- python_targets_python3_9
-- python_targets_python3_8
-- ruby
-- '>=dev-libs/libpcre-8.33-r1:=[static-libs'
+- python
 - python_targets_python3_7
-- python_targets_python3_6
+- ruby
+- ruby_targets_ruby26
 requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: ruby
   version: '>=0'
   category: dev-lang-2.6
+- name: libpcre
+  version: '>=0'
+  category: dev-libs-3
+- name: libpcre2
+  version: '>=0'
+  category: dev-libs
 - name: fts-standalone
+  version: '>=0'
+  category: sys-libs
+- name: libsepol
   version: '>=0'
   category: sys-libs
 description: SELinux userland library

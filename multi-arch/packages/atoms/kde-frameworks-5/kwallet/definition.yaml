@@ -2,10 +2,10 @@ name: kwallet
 version: 5.74.0
 category: kde-frameworks-5
 use_flags:
-- man
-- gpg
 - -doc
+- -man
 - -test
+- gpg
 requires:
 - name: gpgme
   version: '>=0'

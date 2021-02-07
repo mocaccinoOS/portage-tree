@@ -15,9 +15,6 @@ requires:
 - name: libX11
   version: '>=0'
   category: x11-libs
-- name: libxcb
-  version: '>=0'
-  category: x11-libs
 - name: xcb-util
   version: '>=0'
   category: x11-libs

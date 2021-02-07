@@ -15,15 +15,6 @@ requires:
 - name: kpathsea
   version: '>=0'
   category: dev-libs
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
 - name: gd
   version: '>=0'
   category: media-libs-2
-- name: libpng
-  version: '>=0'
-  category: media-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs

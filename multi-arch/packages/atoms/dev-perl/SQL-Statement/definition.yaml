@@ -2,22 +2,16 @@ name: SQL-Statement
 version: 1.412.0
 category: dev-perl
 use_flags:
+- -minimal
 - -test
-- minimal
 requires:
 - name: Clone
-  version: '>=0'
-  category: dev-perl
-- name: Math-Base-Convert
   version: '>=0'
   category: dev-perl
 - name: Module-Runtime
   version: '>=0'
   category: dev-perl
 - name: Params-Util
-  version: '>=0'
-  category: dev-perl
-- name: Text-Soundex
   version: '>=0'
   category: dev-perl
 description: Small SQL parser and engine

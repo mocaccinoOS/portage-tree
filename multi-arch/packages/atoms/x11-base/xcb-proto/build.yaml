@@ -15,6 +15,3 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: font-util
-  version: '>=0'
-  category: media-fonts

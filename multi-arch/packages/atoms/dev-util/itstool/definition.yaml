@@ -3,12 +3,9 @@ version: 2.0.6
 category: dev-util
 use_flags:
 - -python_single_target_python3_6
-- python_single_target_python3_7
 - -python_single_target_python3_8
+- python_single_target_python3_7
 requires:
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: libxml2
   version: '>=0'
   category: dev-libs-2

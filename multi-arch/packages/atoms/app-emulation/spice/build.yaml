@@ -18,9 +18,9 @@ requires:
 - name: qemu
   version: '>=0'
   category: app-emulation
-- name: orc
+- name: libressl
   version: '>=0'
-  category: dev-lang
+  category: dev-libs
 - name: pyparsing
   version: '>=0'
   category: dev-python
@@ -28,9 +28,6 @@ requires:
   version: '>=0'
   category: dev-python
 - name: gst-plugins-base
-  version: '>=0'
-  category: media-libs-1.0
-- name: gstreamer
   version: '>=0'
   category: media-libs-1.0
 - name: opus

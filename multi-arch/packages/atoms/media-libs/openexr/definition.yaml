@@ -1,9 +1,13 @@
 name: openexr
 version: 2.5.2
 category: media-libs
-use_flags:
-- media-libs/ilmbase:=[abi_x86_32(-)
-- sys-libs/zlib[abi_x86_32(-)
+requires:
+- name: ilmbase
+  version: '>=0'
+  category: media-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: ILM's OpenEXR high dynamic-range image file format libraries
 uri:
 - https://www.openexr.com/

@@ -2,12 +2,10 @@ name: gettext
 version: "0.21"
 category: sys-devel
 use_flags:
-- java
-- git
-- cvs
-- '>=virtual/libiconv-0-r1[abi_x86_32(-)'
-- '>=virtual/libintl-0-r2[abi_x86_32(-)'
 - acl
+- cvs
+- git
+- java
 - ncurses
 requires:
 - name: java-config

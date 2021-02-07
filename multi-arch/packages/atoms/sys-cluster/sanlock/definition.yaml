@@ -2,13 +2,15 @@ name: sanlock
 version: 3.6.0
 category: sys-cluster
 use_flags:
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
+- -python_targets_python3_6
 - python
-- python_targets_python3_6
 requires:
 - name: libaio
   version: '>=0'
   category: dev-libs
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
 description: shared storage lock manager
 uri:
 - https://pagure.io/sanlock

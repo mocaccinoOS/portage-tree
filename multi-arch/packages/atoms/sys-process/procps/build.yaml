@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: elogind
+- name: systemd
   version: '>=0'
-  category: sys-auth
+  category: sys-apps
+- name: ncurses
+  version: '>=0'
+  category: sys-libs

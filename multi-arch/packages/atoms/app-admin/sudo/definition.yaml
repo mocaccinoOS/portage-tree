@@ -2,23 +2,20 @@ name: sudo
 version: 1.9.3
 category: app-admin
 use_flags:
-- libressl
-- selinux
-- sasl
-- sssd
+- -libressl
 - gcrypt
-- ssl
-- sendmail
 - ldap
 - pam
+- sasl
+- selinux
+- sendmail
 - skey
+- ssl
+- sssd
 requires:
 - name: editor-wrapper
   version: '>=0'
   category: app-misc
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
 - name: selinux-sudo
   version: '>=0'
   category: sec-policy

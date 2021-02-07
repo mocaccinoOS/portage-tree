@@ -3,21 +3,26 @@ version: 1.4.0
 category: sys-libs
 use_flags:
 - audit
-- '>=sys-process/audit-2.2.2[abi_x86_32(-)'
 - berkdb
-- '>=sys-libs/db-4.8.30-r1:=[abi_x86_32(-)'
-- '>=net-libs/libtirpc-0.2.4-r2[abi_x86_32(-)'
 - filecaps
-- '>=virtual/libintl-0-r1[abi_x86_32(-)'
-- selinux
-- '>=sys-libs/libselinux-2.2.2-r4[abi_x86_32(-)'
 - nis
-- net-libs/libnsl[abi_x86_32(-)
-- virtual/libcrypt:=[abi_x86_32(-)
+- selinux
 requires:
+- name: libnsl
+  version: '>=0'
+  category: net-libs
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3
 - name: libcap
   version: '>=0'
   category: sys-libs
+- name: libselinux
+  version: '>=0'
+  category: sys-libs
+- name: audit
+  version: '>=0'
+  category: sys-process
 description: Linux-PAM (Pluggable Authentication Modules)
 uri:
 - https://github.com/linux-pam/linux-pam

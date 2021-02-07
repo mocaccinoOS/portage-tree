@@ -2,20 +2,14 @@ name: llvm
 version: 10.0.1
 category: sys-devel-10
 use_flags:
-- ncurses
-- '>=dev-libs/libffi-3.0.13-r1:0=[abi_x86_32(-)'
-- xar
 - exegesis
-- dev-libs/libedit:0=[abi_x86_32(-)
-- dev-libs/libxml2:2=[abi_x86_32(-)
-- libedit
-- '>=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)'
-- '>=sci-mathematics/z3-4.7.1:0=[abi_x86_32(-)'
-- z3
-- xml
 - gold
+- libedit
 - libffi
-- sys-libs/zlib:0=[abi_x86_32(-)
+- ncurses
+- xar
+- xml
+- z3
 requires:
 - name: llvm
   version: '>=0'

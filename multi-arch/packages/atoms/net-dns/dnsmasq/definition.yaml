@@ -2,15 +2,15 @@ name: dnsmasq
 version: "2.82"
 category: net-dns
 use_flags:
-- dbus
-- libidn2
-- nls
-- dnssec
-- static
-- selinux
-- lua
 - conntrack
+- dbus
+- dnssec
 - idn
+- libidn2
+- lua
+- nls
+- selinux
+- static
 requires:
 - name: dnsmasq
   version: '>=0'

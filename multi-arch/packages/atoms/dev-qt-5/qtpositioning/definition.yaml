@@ -2,9 +2,9 @@ name: qtpositioning
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- qml
 - -test
 - geoclue
+- qml
 requires:
 - name: qtdbus
   version: '>=0'

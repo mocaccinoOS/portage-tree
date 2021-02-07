@@ -24,15 +24,9 @@ requires:
 - name: systemd
   version: '>=0'
   category: sys-apps
-- name: elogind
-  version: '>=0'
-  category: sys-auth
 - name: autoconf-archive
   version: '>=0'
   category: sys-devel
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXt
   version: '>=0'
   category: x11-libs

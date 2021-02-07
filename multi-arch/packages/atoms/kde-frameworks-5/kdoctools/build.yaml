@@ -21,9 +21,6 @@ requires:
 - name: sgml-common
   version: '>=0'
   category: app-text
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: libxslt
   version: '>=0'
   category: dev-libs

@@ -2,14 +2,10 @@ name: pciutils
 version: 3.6.4
 category: sys-apps
 use_flags:
-- static-libs
-- zlib
-- '>=sys-libs/zlib-1.2.8-r1[static-libs(+),abi_x86_32(-)'
-- udev
-- '>=virtual/libudev-208[static-libs(-),abi_x86_32(-)'
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
-- '>=virtual/libudev-208[abi_x86_32(-)'
 - kmod
+- static-libs
+- udev
+- zlib
 requires:
 - name: hwids
   version: '>=0'

@@ -2,8 +2,8 @@ name: qtprintsupport
 version: 5.15.1
 category: dev-qt-5
 use_flags:
-- cups
 - -test
+- cups
 requires:
 - name: qtwidgets
   version: '>=0'

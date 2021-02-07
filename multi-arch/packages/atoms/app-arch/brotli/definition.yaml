@@ -2,16 +2,18 @@ name: brotli
 version: 1.0.9
 category: app-arch
 use_flags:
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - python
-- python_targets_python3_6
 - python_targets_python3_7
-- python_targets_python3_8
-- python_targets_python3_9
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
 requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 description: Generic-purpose lossless compression algorithm
 uri:
 - https://github.com/google/brotli

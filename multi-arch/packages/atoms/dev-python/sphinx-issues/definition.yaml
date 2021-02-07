@@ -2,19 +2,14 @@ name: sphinx-issues
 version: 1.2.0
 category: dev-python
 use_flags:
-- python_targets_python3_6
-- '>=dev-python/setuptools-42.0.2[python_targets_python3_6(-)'
-- dev-python/setuptools[python_targets_python3_6(-)
-- '>=dev-python/pytest-4.5.0[python_targets_python3_6(-)'
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- python_targets_python3_8
-- dev-python/sphinx[python_targets_python3_6(-)
+- -python_targets_python3_6
+- -python_targets_python3_8
 - -test
 - python_targets_python3_7
 requires:
-- name: python
+- name: sphinx
   version: '>=0'
-  category: dev-lang-3.7
+  category: dev-python
 description: A Sphinx extension for linking to your project's issue tracker
 uri:
 - https://github.com/sloria/sphinx-issues

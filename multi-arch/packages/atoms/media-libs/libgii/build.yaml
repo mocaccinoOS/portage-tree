@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libtool
-  version: '>=0'
-  category: sys-devel-2
 - name: linux-headers
   version: '>=0'
   category: sys-kernel
+- name: libXxf86dga
+  version: '>=0'
+  category: x11-libs

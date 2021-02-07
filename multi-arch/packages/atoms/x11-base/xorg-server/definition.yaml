@@ -2,29 +2,26 @@ name: xorg-server
 version: 1.20.9
 category: x11-base
 use_flags:
-- dmx
-- selinux
-- unwind
-- elogind
-- libressl
-- udev
-- wayland
-- libglvnd
-- kdrive
-- xephyr
-- minimal
-- ppc-aix
-- systemd
 - -doc
-- x86-winnt
+- -elogind
+- -libressl
+- -minimal
+- -ppc-aix
+- -x86-winnt
+- dmx
+- kdrive
+- libglvnd
+- selinux
+- systemd
+- udev
+- unwind
+- wayland
+- xephyr
 requires:
-- name: libressl
+- name: wayland-protocols
   version: '>=0'
   category: dev-libs
 - name: libepoxy
-  version: '>=0'
-  category: media-libs
-- name: libglvnd
   version: '>=0'
   category: media-libs
 - name: selinux-xserver
@@ -33,9 +30,6 @@ requires:
 - name: dbus
   version: '>=0'
   category: sys-apps
-- name: pambase
-  version: '>=0'
-  category: sys-auth
 - name: libunwind
   version: '>=0'
   category: sys-libs
@@ -57,16 +51,7 @@ requires:
 - name: libXaw
   version: '>=0'
   category: x11-libs
-- name: libXdmcp
-  version: '>=0'
-  category: x11-libs
-- name: libXfixes
-  version: '>=0'
-  category: x11-libs
 - name: libXfont2
-  version: '>=0'
-  category: x11-libs
-- name: libXi
   version: '>=0'
   category: x11-libs
 - name: libXrender
@@ -81,19 +66,13 @@ requires:
 - name: libdmx
   version: '>=0'
   category: x11-libs
-- name: libpciaccess
-  version: '>=0'
-  category: x11-libs
-- name: libxcb
+- name: libdrm
   version: '>=0'
   category: x11-libs
 - name: libxshmfence
   version: '>=0'
   category: x11-libs
 - name: pixman
-  version: '>=0'
-  category: x11-libs
-- name: xcb-util
   version: '>=0'
   category: x11-libs
 - name: xcb-util-image

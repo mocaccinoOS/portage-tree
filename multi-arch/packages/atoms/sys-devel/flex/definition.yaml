@@ -2,8 +2,8 @@ name: flex
 version: 2.6.4
 category: sys-devel
 use_flags:
-- nls
 - -test
+- nls
 requires:
 - name: m4
   version: '>=0'

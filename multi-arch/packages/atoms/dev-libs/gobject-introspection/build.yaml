@@ -21,6 +21,12 @@ requires:
 - name: markdown
   version: '>=0'
   category: dev-python
+- name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
 - name: bison
   version: '>=0'
   category: sys-devel
+- name: shared-mime-info
+  version: '>=0'
+  category: x11-misc

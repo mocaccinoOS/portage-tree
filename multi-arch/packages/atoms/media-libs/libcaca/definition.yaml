@@ -2,24 +2,16 @@ name: libcaca
 version: "0.99"
 category: media-libs
 use_flags:
-- '>=x11-libs/libXt-1.1.4[abi_x86_32(-)'
-- mono
-- ncurses
-- slang
-- '>=media-libs/freeglut-2.8.1[abi_x86_32(-)'
-- '>=virtual/opengl-7.0-r1[abi_x86_32(-)'
-- '>=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)'
-- '>=x11-libs/libX11-1.6.2[abi_x86_32(-)'
-- '>=sys-libs/slang-2.2.4-r1[abi_x86_32(-)'
-- opengl
+- -doc
 - -test
 - X
-- '>=virtual/glu-9.0-r1[abi_x86_32(-)'
-- truetype
-- '>=media-libs/imlib2-1.4.6-r2[abi_x86_32(-)'
 - imlib
 - java
-- -doc
+- mono
+- ncurses
+- opengl
+- slang
+- truetype
 requires:
 - name: java-config
   version: '>=0'
@@ -30,6 +22,12 @@ requires:
 - name: ftgl
   version: '>=0'
   category: media-libs
+- name: imlib2
+  version: '>=0'
+  category: media-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs
 description: A library that creates colored ASCII-art graphics
 uri:
 - http://libcaca.zoy.org/

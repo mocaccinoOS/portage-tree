@@ -2,12 +2,12 @@ name: libical
 version: 3.0.8
 category: dev-libs
 use_flags:
-- vala
+- -doc
+- -test
 - berkdb
 - glib
-- -doc
 - introspection
-- -test
+- vala
 requires:
 - name: glib
   version: '>=0'

@@ -2,16 +2,15 @@ name: msmtp
 version: 1.8.7
 category: mail-mta
 use_flags:
-- daemon
-- gnome-keyring
 - -doc
+- daemon
+- filecaps
+- gnome-keyring
+- idn
+- mta
 - nls
 - sasl
 - ssl
-- net-libs/gnutls[idn
-- mta
-- idn
-- filecaps
 requires:
 - name: msmtpd
   version: '>=0'

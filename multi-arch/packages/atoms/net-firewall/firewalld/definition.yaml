@@ -2,27 +2,18 @@ name: firewalld
 version: 0.7.1
 category: net-firewall
 use_flags:
-- python_single_target_python3_7
-- nftables
-- iptables
-- gui
 - -python_single_target_python3_6
+- gui
+- iptables
+- nftables
+- python_single_target_python3_7
 requires:
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: PyQt5
-  version: '>=0'
-  category: dev-python
-- name: dbus-python
   version: '>=0'
   category: dev-python
 - name: decorator
   version: '>=0'
   category: dev-python
-- name: pygobject
-  version: '>=0'
-  category: dev-python-3
 - name: python-slip
   version: '>=0'
   category: dev-python

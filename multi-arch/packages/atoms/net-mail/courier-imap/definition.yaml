@@ -2,13 +2,13 @@ name: courier-imap
 version: 5.0.7
 category: net-mail
 use_flags:
-- selinux
-- gnutls
-- libressl
-- userland_GNU
+- -libressl
 - berkdb
 - fam
 - gdbm
+- gnutls
+- selinux
+- userland_GNU
 requires:
 - name: selinux-courier
   version: '>=0'

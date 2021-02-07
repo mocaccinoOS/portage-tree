@@ -15,6 +15,3 @@ requires:
 - name: libsemanage
   version: '>=0'
   category: sys-libs
-- name: libsepol
-  version: '>=0'
-  category: sys-libs

@@ -2,11 +2,11 @@ name: geoclue
 version: 2.5.3
 category: app-misc-2.0
 use_flags:
-- modemmanager
-- zeroconf
+- -gtk-doc
 - introspection
-- gtk-doc
+- modemmanager
 - vala
+- zeroconf
 requires:
 - name: json-glib
   version: '>=0'
@@ -20,9 +20,6 @@ requires:
 - name: modemmanager
   version: '>=0'
   category: net-misc
-- name: dbus
-  version: '>=0'
-  category: sys-apps
 - name: libnotify
   version: '>=0'
   category: x11-libs

@@ -2,26 +2,30 @@ name: gnutls
 version: 3.6.15
 category: net-libs
 use_flags:
-- -test
-- dev-libs/libunistring:=[abi_x86_32(-)
-- '>=dev-libs/nettle-3.4.1:=[gmp,abi_x86_32(-)'
-- guile
-- '>=virtual/libintl-0-r1:=[abi_x86_32(-)'
-- '>=net-dns/unbound-1.4.20:=[abi_x86_32(-)'
-- '>=app-crypt/p11-kit-0.23.1:=[abi_x86_32(-)'
-- idn
-- dane
-- '>=net-dns/libidn2-0.16-r1:=[abi_x86_32(-)'
-- test-full
-- valgrind
-- pkcs11
-- '>=dev-libs/gmp-5.1.3-r1:=[abi_x86_32(-)'
-- tools
-- '>=dev-libs/libtasn1-4.9:=[abi_x86_32(-)'
-- nls
-- seccomp
 - -doc
+- -test
+- dane
+- guile
+- idn
+- nls
+- pkcs11
+- seccomp
+- test-full
+- tools
+- valgrind
 requires:
+- name: p11-kit
+  version: '>=0'
+  category: app-crypt
+- name: nettle
+  version: '>=0'
+  category: dev-libs
+- name: libidn2
+  version: '>=0'
+  category: net-dns
+- name: unbound
+  version: '>=0'
+  category: net-dns
 - name: autogen
   version: '>=0'
   category: sys-devel

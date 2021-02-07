@@ -3,7 +3,10 @@ version: "2.1"
 category: dev-util
 use_flags:
 - ncurses
-- '>=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)'
+requires:
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
 description: C Unit Test Framework
 uri:
 - http://cunit.sourceforge.net

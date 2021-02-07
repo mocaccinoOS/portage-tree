@@ -3,11 +3,11 @@ version: 1.8.17
 category: app-doc
 use_flags:
 - -doc
-- doxysearch
-- -qt5
-- sqlite
 - clang
 - dot
+- doxysearch
+- qt5
+- sqlite
 requires:
 - name: sqlite
   version: '>=0'
@@ -15,6 +15,9 @@ requires:
 - name: xapian
   version: '>=0'
   category: dev-libs
+- name: qtxml
+  version: '>=0'
+  category: dev-qt-5
 - name: graphviz
   version: '>=0'
   category: media-gfx

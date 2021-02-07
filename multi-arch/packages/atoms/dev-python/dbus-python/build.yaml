@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: pygobject
   version: '>=0'
   category: dev-python-3

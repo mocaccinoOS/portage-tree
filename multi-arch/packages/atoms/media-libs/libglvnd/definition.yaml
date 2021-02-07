@@ -2,10 +2,8 @@ name: libglvnd
 version: 1.3.2
 category: media-libs
 use_flags:
-- X
-- x11-libs/libX11[abi_x86_32(-)
-- x11-libs/libXext[abi_x86_32(-)
 - -test
+- X
 requires:
 - name: mesa
   version: '>=0'

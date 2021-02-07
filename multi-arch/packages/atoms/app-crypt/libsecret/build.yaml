@@ -18,12 +18,18 @@ requires:
 - name: gjs
   version: '>=0'
   category: dev-libs
-- name: pygobject
+- name: dbus-python
   version: '>=0'
-  category: dev-python-3
-- name: gdbus-codegen
+  category: dev-python
+- name: mock
   version: '>=0'
-  category: dev-util
+  category: dev-python
 - name: gtk-doc-am
   version: '>=0'
   category: dev-util
+- name: xhost
+  version: '>=0'
+  category: x11-apps
+- name: xorg-server
+  version: '>=0'
+  category: x11-base

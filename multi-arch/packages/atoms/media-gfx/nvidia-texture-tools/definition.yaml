@@ -2,18 +2,15 @@ name: nvidia-texture-tools
 version: 2.0.8
 category: media-gfx
 use_flags:
+- cg
 - glew
 - glut
 - openexr
-- cg
 requires:
 - name: nvidia-cg-toolkit
   version: '>=0'
   category: media-gfx
 - name: glew
-  version: '>=0'
-  category: media-libs
-- name: ilmbase
   version: '>=0'
   category: media-libs
 - name: libpng
@@ -25,12 +22,6 @@ requires:
 - name: tiff
   version: '>=0'
   category: media-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 description: A set of cuda-enabled texture tools and compressors
 uri:
 - http://developer.nvidia.com/object/texture_tools.html

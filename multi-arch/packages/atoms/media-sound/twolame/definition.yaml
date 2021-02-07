@@ -3,7 +3,10 @@ version: 0.4.0
 category: media-sound
 use_flags:
 - sndfile
-- '>=media-libs/libsndfile-1.0.25[abi_x86_32(-)'
+requires:
+- name: libsndfile
+  version: '>=0'
+  category: media-libs
 description: An optimised MPEG Audio Layer 2 (MP2) encoder
 uri:
 - https://www.twolame.org

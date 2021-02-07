@@ -2,8 +2,8 @@ name: netcat
 version: "110"
 category: net-analyzer
 use_flags:
-- static
 - crypt
+- static
 requires:
 - name: libmix
   version: '>=0'

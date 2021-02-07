@@ -24,9 +24,6 @@ requires:
 - name: udev-init-scripts
   version: '>=0'
   category: sys-fs
-- name: audit
-  version: '>=0'
-  category: sys-process
 - name: procps
   version: '>=0'
   category: sys-process

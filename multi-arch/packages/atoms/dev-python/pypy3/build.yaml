@@ -15,12 +15,6 @@ requires:
 - name: sqlite
   version: '>=0'
   category: dev-db-3
-- name: libressl
-  version: '>=0'
-  category: dev-libs
-- name: pypy3-exe-bin
-  version: '>=0'
-  category: dev-python-7.3.1
 - name: tix
   version: '>=0'
   category: dev-tcltk

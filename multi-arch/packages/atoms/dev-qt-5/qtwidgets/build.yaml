@@ -18,6 +18,3 @@ requires:
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
-- name: pango
-  version: '>=0'
-  category: x11-libs

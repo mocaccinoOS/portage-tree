@@ -2,12 +2,14 @@ name: gpm
 version: 1.20.7
 category: sys-libs
 use_flags:
-- '>=sys-libs/ncurses-5.9-r3:0=[abi_x86_32(-)'
 - selinux
 requires:
 - name: selinux-gpm
   version: '>=0'
   category: sec-policy
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
 description: Console-based mouse driver
 uri:
 - https://www.nico.schottelius.org/software/gpm/

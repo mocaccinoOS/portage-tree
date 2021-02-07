@@ -18,9 +18,6 @@ requires:
 - name: docbook-xsl-ns-stylesheets
   version: '>=0'
   category: app-text
-- name: gobject-introspection
+- name: gdk-pixbuf
   version: '>=0'
-  category: dev-libs
-- name: glib-utils
-  version: '>=0'
-  category: dev-util
+  category: x11-libs-2

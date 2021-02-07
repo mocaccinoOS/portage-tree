@@ -15,15 +15,9 @@ requires:
 - name: vala
   version: '>=0'
   category: dev-lang-0.48
-- name: fribidi
-  version: '>=0'
-  category: dev-libs
-- name: icu
-  version: '>=0'
-  category: dev-libs
 - name: systemd
   version: '>=0'
   category: sys-apps
-- name: pango
+- name: gtk+
   version: '>=0'
-  category: x11-libs
+  category: x11-libs-3

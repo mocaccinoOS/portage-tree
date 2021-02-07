@@ -2,25 +2,22 @@ name: rpm
 version: 4.14.2.1
 category: app-arch
 use_flags:
-- -python_single_target_python3_9
-- lua
 - -doc
 - -python_single_target_python3_6
-- acl
-- python
 - -python_single_target_python3_8
-- zstd
-- nls
+- -python_single_target_python3_9
+- -test
+- acl
 - caps
 - dbus
+- lua
+- nls
+- python
 - python_single_target_python3_7
 - selinux
-- -test
+- zstd
 requires:
 - name: libarchive
-  version: '>=0'
-  category: app-arch
-- name: zstd
   version: '>=0'
   category: app-arch
 - name: gnupg
@@ -32,6 +29,9 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

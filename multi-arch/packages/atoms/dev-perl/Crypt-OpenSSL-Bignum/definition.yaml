@@ -2,14 +2,11 @@ name: Crypt-OpenSSL-Bignum
 version: 0.90.0
 category: dev-perl
 use_flags:
-- libressl
+- -libressl
 requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 description: OpenSSL's multiprecision integer arithmetic
 uri:
 - https://metacpan.org/release/Crypt-OpenSSL-Bignum

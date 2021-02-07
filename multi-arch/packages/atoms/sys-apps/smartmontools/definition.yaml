@@ -2,12 +2,12 @@ name: smartmontools
 version: "7.1"
 category: sys-apps
 use_flags:
-- selinux
+- caps
 - daemon
+- selinux
+- static
 - systemd
 - update_drivedb
-- caps
-- static
 requires:
 - name: gnupg
   version: '>=0'

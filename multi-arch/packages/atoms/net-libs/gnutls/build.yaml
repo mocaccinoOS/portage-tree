@@ -15,18 +15,27 @@ requires:
 - name: dieharder
   version: '>=0'
   category: app-crypt
+- name: p11-kit
+  version: '>=0'
+  category: app-crypt
 - name: datefudge
   version: '>=0'
   category: app-misc
+- name: nettle
+  version: '>=0'
+  category: dev-libs
 - name: softhsm
   version: '>=0'
   category: dev-libs-2
-- name: valgrind
-  version: '>=0'
-  category: dev-util
 - name: ppp
   version: '>=0'
   category: net-dialup
+- name: libidn2
+  version: '>=0'
+  category: net-dns
+- name: unbound
+  version: '>=0'
+  category: net-dns
 - name: socat
   version: '>=0'
   category: net-misc

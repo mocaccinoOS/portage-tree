@@ -2,14 +2,14 @@ name: qdbm
 version: 1.8.78
 category: dev-db
 use_flags:
-- ruby
-- ruby_targets_ruby25
-- ruby_targets_ruby26
-- zlib
+- -ruby_targets_ruby25
 - bzip2
 - java
 - lzo
 - perl
+- ruby
+- ruby_targets_ruby26
+- zlib
 requires:
 - name: java-config
   version: '>=0'

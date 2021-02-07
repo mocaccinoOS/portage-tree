@@ -2,15 +2,17 @@ name: libssh2
 version: 1.9.0
 category: net-libs
 use_flags:
-- '>=dev-libs/openssl-1.0.1h-r2:0=[abi_x86_32(-)'
-- zlib
+- -libressl
 - gcrypt
-- '>=dev-libs/libgcrypt-1.5.3:0[abi_x86_32(-)'
-- libressl
 - mbedtls
-- net-libs/mbedtls[abi_x86_32(-)
-- dev-libs/libressl:0=[abi_x86_32(-)
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
+- zlib
+requires:
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+- name: mbedtls
+  version: '>=0'
+  category: net-libs
 description: Library implementing the SSH2 protocol
 uri:
 - https://www.libssh2.org

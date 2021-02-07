@@ -2,14 +2,16 @@ name: libpciaccess
 version: "0.16"
 category: x11-libs
 use_flags:
-- '>=sys-libs/zlib-1.2.8-r1:=[abi_x86_32(-)'
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 - zlib
 requires:
 - name: hwids
   version: '>=0'
   category: sys-apps
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: Library providing generic access to the PCI bus and devices
 uri:
 - https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/lib/libpciaccess

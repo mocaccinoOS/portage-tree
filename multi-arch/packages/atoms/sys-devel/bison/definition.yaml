@@ -2,8 +2,8 @@ name: bison
 version: 3.7.1
 category: sys-devel
 use_flags:
-- examples
 - -test
+- examples
 requires:
 - name: gettext
   version: '>=0'

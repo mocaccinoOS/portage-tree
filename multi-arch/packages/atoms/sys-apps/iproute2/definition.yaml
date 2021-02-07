@@ -2,13 +2,13 @@ name: iproute2
 version: 5.7.0
 category: sys-apps
 use_flags:
-- berkdb
+- -minimal
 - atm
-- selinux
-- minimal
+- berkdb
 - caps
 - elf
 - iptables
+- selinux
 requires:
 - name: libbsd
   version: '>=0'

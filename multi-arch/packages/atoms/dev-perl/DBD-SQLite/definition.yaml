@@ -2,8 +2,8 @@ name: DBD-SQLite
 version: 1.580.0
 category: dev-perl
 use_flags:
-- system-sqlite
 - -test
+- system-sqlite
 requires:
 - name: DBD-SQLite
   version: '>=0'

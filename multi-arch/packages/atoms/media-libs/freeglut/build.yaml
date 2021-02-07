@@ -15,6 +15,12 @@ requires:
 - name: cmake
   version: '>=0'
   category: dev-util
-- name: xorg-proto
+- name: libXi
   version: '>=0'
-  category: x11-base
+  category: x11-libs
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs

@@ -2,10 +2,10 @@ name: memcached
 version: 1.6.7
 category: net-misc
 use_flags:
-- selinux
-- sasl
 - -test
+- sasl
 - seccomp
+- selinux
 requires:
 - name: perl
   version: '>=0'

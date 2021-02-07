@@ -12,12 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: docbook-xml-dtd
+  version: '>=0'
+  category: app-text-4.5
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
 - name: glib-utils
   version: '>=0'
   category: dev-util
-- name: gettext
-  version: '>=0'
-  category: sys-devel

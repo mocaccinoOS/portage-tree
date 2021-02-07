@@ -2,12 +2,11 @@ name: gpgme
 version: 1.13.0
 category: app-crypt-1
 use_flags:
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- -qt5
+- -python_targets_python3_6
+- -python_targets_python3_8
 - python
-- python_targets_python3_6
 - python_targets_python3_7
-- python_targets_python3_8
+- qt5
 requires:
 - name: gnupg
   version: '>=0'
@@ -15,16 +14,22 @@ requires:
 - name: python
   version: '>=0'
   category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: qtcore
+  version: '>=0'
+  category: dev-qt-5
 description: GnuPG Made Easy is a library for making GnuPG easier to use
 uri:
 - http://www.gnupg.org/related_software/gpgme
 license: GPL-2 LGPL-2.1
 labels:
   BDEPEND: python? ( dev-lang/swig ) >=app-portage/elt-patches-20170815
-  DEPEND: '>=app-crypt/gnupg-2 >=dev-libs/libassuan-2.5.3:= >=dev-libs/libgpg-error-1.29:= python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) qt5? ( dev-qt/qtcore:5 ) qt5? ( dev-qt/qttest:5 )'
+  DEPEND: '>=app-crypt/gnupg-2 >=dev-libs/libassuan-2.0.2:= >=dev-libs/libgpg-error-1.29:= python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) qt5? ( dev-qt/qtcore:5 ) qt5? ( dev-qt/qttest:5 )'
   IUSE: common-lisp static-libs +cxx python qt5 python_targets_python3_6 python_targets_python3_7 python_targets_python3_8
-  RDEPEND: '>=app-crypt/gnupg-2 >=dev-libs/libassuan-2.5.3:= >=dev-libs/libgpg-error-1.29:= python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) qt5? ( dev-qt/qtcore:5 )'
+  RDEPEND: '>=app-crypt/gnupg-2 >=dev-libs/libassuan-2.0.2:= >=dev-libs/libgpg-error-1.29:= python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) qt5? ( dev-qt/qtcore:5 )'
   emerge.packages: app-crypt/gpgme:1
   kit: gentoo
   original.package.name: app-crypt/gpgme
-  original.package.version: 1.13.0-r1
+  original.package.version: 1.13.0

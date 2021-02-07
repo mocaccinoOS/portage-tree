@@ -18,3 +18,12 @@ requires:
 - name: glib-utils
   version: '>=0'
   category: dev-util
+- name: libpng
+  version: '>=0'
+  category: media-libs
+- name: tiff
+  version: '>=0'
+  category: media-libs
+- name: libX11
+  version: '>=0'
+  category: x11-libs

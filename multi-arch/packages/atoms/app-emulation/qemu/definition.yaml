@@ -2,71 +2,70 @@ name: qemu
 version: 5.1.0
 category: app-emulation
 use_flags:
-- python_targets_python3_8
-- numa
-- capstone
-- smartcard
-- glusterfs
-- xfs
-- gnutls
-- sdl-image
-- opengl
-- sdl
-- infiniband
-- qemu_softmmu_targets_x86_64
-- python
-- python_targets_python3_9
-- selinux
-- '>=dev-lang/python-exec-2:=[python_targets_python3_6(-)'
-- alsa
 - -doc
-- vte
-- qemu_softmmu_targets_i386
-- rbd
-- iscsi
-- python_targets_python3_7
-- filecaps
-- spice
-- slirp
-- python_targets_python3_6
-- aio
-- usbredir
-- nls
-- zstd
-- ssh
-- multipath
-- usb
-- sasl
-- xkb
-- xen
-- xattr
-- fdt
-- snappy
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
 - -test
-- ncurses
-- gtk
-- pulseaudio
-- curl
-- systemtap
-- jack
-- virgl
-- lzo
-- io-uring
-- jemalloc
-- vde
-- qemu_softmmu_targets_ppc64
-- bzip2
-- virtfs
-- png
-- caps
-- seccomp
-- jpeg
 - accessibility
-- static
+- aio
+- alsa
+- bzip2
+- caps
+- capstone
+- curl
+- fdt
+- filecaps
+- glusterfs
+- gnutls
+- gtk
+- infiniband
+- io-uring
+- iscsi
+- jack
+- jemalloc
+- jpeg
 - kernel_linux
-- pin-upstream-blobs
+- lzo
+- multipath
+- ncurses
 - nfs
+- nls
+- numa
+- opengl
+- pin-upstream-blobs
+- png
+- pulseaudio
+- python
+- python_targets_python3_7
+- qemu_softmmu_targets_i386
+- qemu_softmmu_targets_ppc64
+- qemu_softmmu_targets_x86_64
+- rbd
+- sasl
+- sdl
+- sdl-image
+- seccomp
+- selinux
+- slirp
+- smartcard
+- snappy
+- spice
+- ssh
+- static
 - static-user
+- systemtap
+- usb
+- usbredir
+- vde
+- virgl
+- virtfs
+- vte
+- xattr
+- xen
+- xfs
+- xkb
+- zstd
 requires:
 - name: kvm
   version: '>=0'
@@ -86,33 +85,15 @@ requires:
 - name: capstone
   version: '>=0'
   category: dev-libs
-- name: cyrus-sasl
-  version: '>=0'
-  category: dev-libs-2
-- name: nettle
-  version: '>=0'
-  category: dev-libs
 - name: systemtap
   version: '>=0'
   category: dev-util
-- name: libpng
-  version: '>=0'
-  category: media-libs
-- name: libsdl2
-  version: '>=0'
-  category: media-libs
-- name: mesa
-  version: '>=0'
-  category: media-libs
 - name: sdl2-image
   version: '>=0'
   category: media-libs
 - name: virglrenderer
   version: '>=0'
   category: media-libs
-- name: pulseaudio
-  version: '>=0'
-  category: media-sound
 - name: libnfs
   version: '>=0'
   category: net-fs
@@ -131,9 +112,6 @@ requires:
 - name: selinux-qemu
   version: '>=0'
   category: sec-policy
-- name: attr
-  version: '>=0'
-  category: sys-apps
 - name: dtc
   version: '>=0'
   category: sys-apps
@@ -161,21 +139,12 @@ requires:
 - name: multipath-tools
   version: '>=0'
   category: sys-fs
-- name: libcap
-  version: '>=0'
-  category: sys-libs
 - name: libseccomp
   version: '>=0'
   category: sys-libs
 - name: liburing
   version: '>=0'
   category: sys-libs
-- name: libxkbcommon
-  version: '>=0'
-  category: x11-libs
-- name: pixman
-  version: '>=0'
-  category: x11-libs
 description: QEMU + Kernel-based Virtual Machine userland tools
 uri:
 - http://www.qemu.org http://www.linux-kvm.org

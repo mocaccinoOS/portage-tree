@@ -15,6 +15,9 @@ requires:
 - name: argon2
   version: '>=0'
   category: app-crypt
+- name: eselect-php
+  version: '>=0'
+  category: app-eselect
 - name: enchant
   version: '>=0'
   category: app-text-2
@@ -30,15 +33,15 @@ requires:
 - name: freetds
   version: '>=0'
   category: dev-db
+- name: lmdb
+  version: '>=0'
+  category: dev-db
 - name: oracle-instantclient-basic
   version: '>=0'
   category: dev-db
 - name: qdbm
   version: '>=0'
   category: dev-db
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
 - name: tokyocabinet
   version: '>=0'
   category: dev-db

@@ -21,15 +21,12 @@ requires:
 - name: libassuan
   version: '>=0'
   category: dev-libs
-- name: libgcrypt
+- name: qtwidgets
   version: '>=0'
-  category: dev-libs
+  category: dev-qt-5
 - name: libcap
   version: '>=0'
   category: sys-libs
 - name: fltk
   version: '>=0'
   category: x11-libs-1
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3

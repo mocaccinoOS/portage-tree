@@ -2,16 +2,14 @@ name: lvm2
 version: 2.02.187
 category: sys-fs
 use_flags:
+- lvm2create_initrd
+- readline
+- sanlock
 - selinux
 - static
-- dev-libs/libaio[static-libs
-- readline
 - systemd
-- udev
-- '>=virtual/libudev-208:=[static-libs(-)'
 - thin
-- sanlock
-- lvm2create_initrd
+- udev
 requires:
 - name: makedev
   version: '>=0'

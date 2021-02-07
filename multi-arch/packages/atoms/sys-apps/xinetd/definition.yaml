@@ -2,9 +2,9 @@ name: xinetd
 version: 2.3.15.3
 category: sys-apps
 use_flags:
+- perl
 - selinux
 - tcpd
-- perl
 requires:
 - name: perl
   version: '>=0'

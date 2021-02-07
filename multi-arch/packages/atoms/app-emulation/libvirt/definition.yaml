@@ -2,32 +2,32 @@ name: libvirt
 version: 6.8.0
 category: app-emulation
 use_flags:
-- libssh
-- lvm
-- wireshark-plugins
-- rbd
-- zfs
-- fuse
-- policykit
-- iscsi
 - apparmor
-- firewalld
-- glusterfs
-- nfs
-- sasl
-- selinux
-- virt-network
-- qemu
+- audit
 - caps
 - dbus
 - dtrace
-- pcap
+- firewalld
+- fuse
+- glusterfs
+- iscsi
 - iscsi-direct
-- udev
+- libssh
+- lvm
+- nfs
 - numa
 - parted
-- audit
+- pcap
+- policykit
+- qemu
+- rbd
+- sasl
+- selinux
+- udev
+- virt-network
+- wireshark-plugins
 - xen
+- zfs
 requires:
 - name: qemu
   version: '>=0'
@@ -53,9 +53,6 @@ requires:
 - name: nfs-utils
   version: '>=0'
   category: net-fs
-- name: libssh2
-  version: '>=0'
-  category: net-libs
 - name: radvd
   version: '>=0'
   category: net-misc

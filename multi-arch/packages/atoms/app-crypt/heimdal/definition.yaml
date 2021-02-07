@@ -2,40 +2,33 @@ name: heimdal
 version: 7.6.0
 category: app-crypt
 use_flags:
-- '>=sys-libs/gdbm-1.10-r1:=[abi_x86_32(-)'
-- '>=sys-libs/db-4.8.30-r1:*[abi_x86_32(-)'
-- selinux
+- -libressl
 - -test
-- gdbm
-- hdb-ldap
-- '>=dev-db/sqlite-3.8.2[abi_x86_32(-)'
 - X
 - afs
-- dev-libs/libressl:=[abi_x86_32(-)
-- '>=dev-libs/openssl-1.0.1h-r2:0=[abi_x86_32(-)'
-- '>=sys-libs/readline-6.2_p5-r1:0=[abi_x86_32(-)'
-- '>=sys-libs/e2fsprogs-libs-1.42.9[abi_x86_32(-)'
-- ssl
-- libressl
 - berkdb
 - caps
+- gdbm
+- hdb-ldap
 - lmdb
+- selinux
+- ssl
 requires:
 - name: mit-krb5-appl
   version: '>=0'
   category: app-crypt
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
 - name: openafs
   version: '>=0'
   category: net-fs
-- name: openldap
+- name: gdbm
   version: '>=0'
-  category: net-nds
+  category: sys-libs
 - name: libcap-ng
   version: '>=0'
   category: sys-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXau
   version: '>=0'
   category: x11-libs

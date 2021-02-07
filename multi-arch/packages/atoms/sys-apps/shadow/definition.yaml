@@ -2,20 +2,17 @@ name: shadow
 version: "4.8"
 category: sys-apps
 use_flags:
+- acl
 - audit
-- skey
-- su
 - cracklib
-- selinux
 - nls
 - pam
+- selinux
+- skey
+- su
 - xattr
-- acl
 requires:
 - name: acl
-  version: '>=0'
-  category: sys-apps
-- name: attr
   version: '>=0'
   category: sys-apps
 - name: util-linux
@@ -27,9 +24,6 @@ requires:
 - name: skey
   version: '>=0'
   category: sys-auth
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 - name: libsemanage
   version: '>=0'
   category: sys-libs

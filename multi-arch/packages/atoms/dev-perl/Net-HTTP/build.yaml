@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: IO-Socket-INET6
-  version: '>=0'
-  category: dev-perl
-- name: IO-Socket-SSL
-  version: '>=0'
-  category: dev-perl
 - name: libwww-perl
   version: '>=0'
   category: dev-perl

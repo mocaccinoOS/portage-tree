@@ -2,8 +2,8 @@ name: xmlto
 version: 0.0.28
 category: app-text
 use_flags:
-- text
 - latex
+- text
 requires:
 - name: bash
   version: '>=0'

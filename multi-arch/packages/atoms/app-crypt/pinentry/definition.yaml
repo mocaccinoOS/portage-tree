@@ -2,12 +2,12 @@ name: pinentry
 version: 1.1.0
 category: app-crypt
 use_flags:
-- gtk
-- ncurses
-- -qt5
 - caps
 - fltk
 - gnome-keyring
+- gtk
+- ncurses
+- qt5
 requires:
 - name: gcr
   version: '>=0'
@@ -21,6 +21,9 @@ requires:
 - name: libassuan
   version: '>=0'
   category: dev-libs
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
 - name: libcap
   version: '>=0'
   category: sys-libs
@@ -30,9 +33,6 @@ requires:
 - name: fltk
   version: '>=0'
   category: x11-libs-1
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
 description: Simple passphrase entry dialogs which utilize the Assuan protocol
 uri:
 - https://gnupg.org/aegypten2/index.html

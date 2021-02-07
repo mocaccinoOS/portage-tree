@@ -2,12 +2,9 @@ name: xkbcomp
 version: 1.4.3
 category: x11-apps
 use_flags:
-- ppc-aix
-- x86-winnt
+- -ppc-aix
+- -x86-winnt
 requires:
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libxkbfile
   version: '>=0'
   category: x11-libs

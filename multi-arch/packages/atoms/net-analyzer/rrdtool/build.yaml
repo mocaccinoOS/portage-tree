@@ -12,12 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: libdbi
+  version: '>=0'
+  category: dev-db
 - name: lua
   version: '>=0'
   category: dev-lang
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: groff
   version: '>=0'
   category: sys-apps

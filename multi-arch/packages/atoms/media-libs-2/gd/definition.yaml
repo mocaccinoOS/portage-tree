@@ -2,23 +2,21 @@ name: gd
 version: 2.3.0
 category: media-libs-2
 use_flags:
-- media-libs/libwebp:=[abi_x86_32(-)
-- tiff
-- jpeg
-- media-libs/tiff:0[abi_x86_32(-)
-- truetype
-- xpm
-- png
-- '>=x11-libs/libXt-1.1.4[abi_x86_32(-)'
-- '>=sys-libs/zlib-1.2.8-r1[abi_x86_32(-)'
-- '>=x11-libs/libXpm-3.5.10-r1[abi_x86_32(-)'
-- '>=virtual/jpeg-0-r2:0=[abi_x86_32(-)'
-- '>=media-libs/freetype-2.5.0.1[abi_x86_32(-)'
-- webp
-- zlib
 - fontconfig
-- '>=media-libs/libpng-1.6.10:0=[abi_x86_32(-)'
-- '>=media-libs/fontconfig-2.10.92[abi_x86_32(-)'
+- jpeg
+- png
+- tiff
+- truetype
+- webp
+- xpm
+- zlib
+requires:
+- name: fontconfig
+  version: '>=0'
+  category: media-libs-1.0
+- name: libXpm
+  version: '>=0'
+  category: x11-libs
 description: Graphics library for fast image creation
 uri:
 - https://libgd.org/ https://www.boutell.com/gd/

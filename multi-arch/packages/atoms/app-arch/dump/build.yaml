@@ -18,15 +18,9 @@ requires:
 - name: sqlite
   version: '>=0'
   category: dev-db-3
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: lzo
   version: '>=0'
   category: dev-libs-2
 - name: e2fsprogs
   version: '>=0'
   category: sys-fs
-- name: ncurses
-  version: '>=0'
-  category: sys-libs

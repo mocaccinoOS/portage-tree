@@ -12,6 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: tiff
   version: '>=0'
-  category: layers
+  category: media-libs

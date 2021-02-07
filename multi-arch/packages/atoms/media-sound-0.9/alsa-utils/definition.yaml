@@ -2,11 +2,11 @@ name: alsa-utils
 version: 1.2.3
 category: media-sound-0.9
 use_flags:
-- bat
-- selinux
 - -doc
+- bat
 - libsamplerate
 - ncurses
+- selinux
 requires:
 - name: alsa-lib
   version: '>=0'

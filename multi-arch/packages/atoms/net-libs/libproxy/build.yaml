@@ -21,3 +21,6 @@ requires:
 - name: webkit-gtk
   version: '>=0'
   category: net-libs-4
+- name: dbus
+  version: '>=0'
+  category: sys-apps

@@ -12,6 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: xz-utils
+- name: gmp
   version: '>=0'
-  category: app-arch
+  category: dev-libs

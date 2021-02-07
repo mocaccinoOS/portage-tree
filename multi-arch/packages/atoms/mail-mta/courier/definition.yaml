@@ -2,15 +2,15 @@ name: courier
 version: 1.0.14
 category: mail-mta
 use_flags:
-- postgres
-- spell
-- fax
-- ldap
+- -libressl
 - fam
+- fax
 - gnutls
-- libressl
+- ldap
 - mysql
 - pam
+- postgres
+- spell
 requires:
 - name: mime-types
   version: '>=0'

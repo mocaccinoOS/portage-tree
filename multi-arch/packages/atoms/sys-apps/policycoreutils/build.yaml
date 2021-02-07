@@ -12,18 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: setools
+  version: '>=0'
+  category: app-admin
 - name: dbus-glib
   version: '>=0'
   category: dev-libs
-- name: dbus
+- name: ipy
   version: '>=0'
-  category: sys-apps
-- name: libcap-ng
-  version: '>=0'
-  category: sys-libs
-- name: libsepol
-  version: '>=0'
-  category: sys-libs
-- name: pam
+  category: dev-python
+- name: libsemanage
   version: '>=0'
   category: sys-libs

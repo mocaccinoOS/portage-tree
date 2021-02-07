@@ -2,20 +2,18 @@ name: librsvg
 version: 2.48.8
 category: gnome-base-2
 use_flags:
-- '>=virtual/rust-1.39[abi_x86_32(-)'
-- '>=media-libs/freetype-2.9:2[abi_x86_32(-)'
-- '>=x11-libs/gdk-pixbuf-2.20:2[introspection'
-- '>=dev-libs/glib-2.50.0:2[abi_x86_32(-)'
-- '>=x11-libs/pango-1.38.0[abi_x86_32(-)'
-- vala
-- '>=x11-libs/cairo-1.16.0[abi_x86_32(-)'
-- '>=media-libs/harfbuzz-2.0.0:=[abi_x86_32(-)'
-- '>=dev-libs/libxml2-2.9.1-r4:2[abi_x86_32(-)'
 - introspection
+- vala
 requires:
-- name: gobject-introspection
+- name: libxml2
   version: '>=0'
-  category: dev-libs
+  category: dev-libs-2
+- name: gdk-pixbuf
+  version: '>=0'
+  category: x11-libs-2
+- name: pango
+  version: '>=0'
+  category: x11-libs
 description: Scalable Vector Graphics (SVG) rendering library
 uri:
 - https://wiki.gnome.org/Projects/LibRsvg

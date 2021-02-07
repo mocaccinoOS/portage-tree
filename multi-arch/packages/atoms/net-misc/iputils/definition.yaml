@@ -2,22 +2,19 @@ name: iputils
 version: "20190709"
 category: net-misc
 use_flags:
-- gcrypt
+- -libressl
 - caps
-- nettle
-- libressl
-- nls
-- traceroute6
-- ssl
 - filecaps
+- gcrypt
 - idn
-- static
 - ipv6
+- nettle
+- nls
+- ssl
+- static
+- traceroute6
 requires:
 - name: libgcrypt
-  version: '>=0'
-  category: dev-libs
-- name: libressl
   version: '>=0'
   category: dev-libs
 - name: nettle

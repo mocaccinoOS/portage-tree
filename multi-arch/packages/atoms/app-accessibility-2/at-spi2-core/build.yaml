@@ -18,3 +18,9 @@ requires:
 - name: glib-utils
   version: '>=0'
   category: dev-util
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: libXtst
+  version: '>=0'
+  category: x11-libs

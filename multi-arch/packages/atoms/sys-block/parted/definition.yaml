@@ -3,10 +3,10 @@ version: "3.2"
 category: sys-block
 use_flags:
 - device-mapper
+- elibc_uclibc
 - nls
 - readline
 - selinux
-- elibc_uclibc
 requires:
 - name: libiconv
   version: '>=0'
@@ -15,9 +15,6 @@ requires:
   version: '>=0'
   category: sys-fs
 - name: libselinux
-  version: '>=0'
-  category: sys-libs
-- name: ncurses
   version: '>=0'
   category: sys-libs
 description: Create, destroy, resize, check, copy partitions and file systems

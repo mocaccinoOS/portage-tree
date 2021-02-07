@@ -2,12 +2,16 @@ name: libao
 version: 1.2.2
 category: media-libs
 use_flags:
-- '>=media-libs/nas-1.9.4[abi_x86_32(-)'
-- pulseaudio
-- '>=media-sound/pulseaudio-2.1-r1[abi_x86_32(-)'
 - alsa
-- '>=media-libs/alsa-lib-1.0.27.2[abi_x86_32(-)'
 - nas
+- pulseaudio
+requires:
+- name: nas
+  version: '>=0'
+  category: media-libs
+- name: pulseaudio
+  version: '>=0'
+  category: media-sound
 description: The Audio Output library
 uri:
 - https://www.xiph.org/ao/
