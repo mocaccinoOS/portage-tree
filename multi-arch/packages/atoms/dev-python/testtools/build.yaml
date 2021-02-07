@@ -1,0 +1,38 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: extras
+  version: '>=0'
+  category: dev-python
+- name: fixtures
+  version: '>=0'
+  category: dev-python
+- name: pyrsistent
+  version: '>=0'
+  category: dev-python
+- name: python-mimeparse
+  version: '>=0'
+  category: dev-python
+- name: sphinx
+  version: '>=0'
+  category: dev-python
+- name: testscenarios
+  version: '>=0'
+  category: dev-python
+- name: traceback2
+  version: '>=0'
+  category: dev-python
+- name: unittest2
+  version: '>=0'
+  category: dev-python

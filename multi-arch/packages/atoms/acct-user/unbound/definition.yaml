@@ -1,0 +1,16 @@
+name: unbound
+version: "0"
+category: acct-user
+requires:
+- name: unbound
+  version: '>=0'
+  category: acct-group
+description: unbound program user
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/unbound
+  emerge.packages: acct-user/unbound
+  kit: gentoo
+  original.package.name: acct-user/unbound
+  original.package.version: "0"

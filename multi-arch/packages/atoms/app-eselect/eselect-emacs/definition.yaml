@@ -1,0 +1,17 @@
+name: eselect-emacs
+version: "1.18"
+category: app-eselect
+requires:
+- name: eselect-ctags
+  version: '>=0'
+  category: app-eselect
+description: Manage multiple Emacs versions on one system
+uri:
+- https://wiki.gentoo.org/wiki/Project:Emacs
+license: GPL-2+
+labels:
+  RDEPEND: '>=app-admin/eselect-1.2.6 ~app-eselect/eselect-ctags-1.18'
+  emerge.packages: app-eselect/eselect-emacs
+  kit: gentoo
+  original.package.name: app-eselect/eselect-emacs
+  original.package.version: "1.18"

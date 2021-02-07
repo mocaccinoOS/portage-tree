@@ -1,0 +1,22 @@
+name: amd
+version: 2.4.6
+category: sci-libs
+use_flags:
+- -doc
+requires:
+- name: suitesparseconfig
+  version: '>=0'
+  category: sci-libs
+description: Library to order a sparse matrix prior to Cholesky factorization
+uri:
+- https://people.engr.tamu.edu/davis/suitesparse.html
+license: BSD
+labels:
+  BDEPEND: virtual/pkgconfig doc? ( virtual/latex-base )
+  DEPEND: '>=sci-libs/suitesparseconfig-5.4.0 virtual/fortran'
+  IUSE: doc fortran
+  RDEPEND: '>=sci-libs/suitesparseconfig-5.4.0 virtual/fortran'
+  emerge.packages: sci-libs/amd
+  kit: gentoo
+  original.package.name: sci-libs/amd
+  original.package.version: 2.4.6

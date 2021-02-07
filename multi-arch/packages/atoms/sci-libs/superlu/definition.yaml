@@ -1,0 +1,17 @@
+name: superlu
+version: 5.2.1
+category: sci-libs
+use_flags:
+- -test
+description: Sparse LU factorization library
+uri:
+- https://crd-legacy.lbl.gov/~xiaoye/SuperLU/
+license: BSD
+labels:
+  DEPEND: virtual/blas virtual/pkgconfig test? ( app-shells/tcsh ) sys-devel/make >=dev-util/cmake-3.9.6 virtual/fortran
+  IUSE: doc examples test
+  RDEPEND: virtual/blas virtual/fortran
+  emerge.packages: sci-libs/superlu
+  kit: gentoo
+  original.package.name: sci-libs/superlu
+  original.package.version: 5.2.1-r1

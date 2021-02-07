@@ -1,0 +1,16 @@
+name: libieee1284
+version: 0.2.11
+category: sys-libs
+use_flags:
+- -doc
+description: Library to query devices using IEEE1284
+uri:
+- http://cyberelk.net/tim/software/libieee1284/
+license: GPL-2
+labels:
+  BDEPEND: doc? ( app-text/docbook-sgml-utils >=app-text/docbook-sgml-dtd-4.1 app-text/docbook-dsssl-stylesheets dev-perl/XML-RegExp ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: doc static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  emerge.packages: sys-libs/libieee1284
+  kit: gentoo
+  original.package.name: sys-libs/libieee1284
+  original.package.version: 0.2.11-r8

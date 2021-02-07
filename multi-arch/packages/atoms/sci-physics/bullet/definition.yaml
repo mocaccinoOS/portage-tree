@@ -1,0 +1,22 @@
+name: bullet
+version: "2.86"
+category: sci-physics
+use_flags:
+- -doc
+requires:
+- name: freeglut
+  version: '>=0'
+  category: media-libs
+description: Continuous Collision Detection and Physics Library
+uri:
+- http://www.bulletphysics.com/
+license: ZLIB
+labels:
+  BDEPEND: doc? ( app-doc/doxygen[dot] ) dev-util/ninja dev-util/cmake
+  DEPEND: virtual/opengl media-libs/freeglut
+  IUSE: +bullet3 doc double-precision examples extras test
+  RDEPEND: virtual/opengl media-libs/freeglut
+  emerge.packages: sci-physics/bullet
+  kit: gentoo
+  original.package.name: sci-physics/bullet
+  original.package.version: "2.86"

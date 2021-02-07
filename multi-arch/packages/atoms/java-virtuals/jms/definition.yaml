@@ -1,0 +1,19 @@
+name: jms
+version: "1.1"
+category: java-virtuals
+requires:
+- name: java-config
+  version: '>=0'
+  category: dev-java-2
+description: Virtual for Java Message Service (JMS) API
+uri:
+- https://wiki.gentoo.org/wiki/No_homepage
+license: public-domain
+labels:
+  DEPEND: '>=dev-java/java-config-2.2.0-r3'
+  IUSE: elibc_FreeBSD
+  RDEPEND: '|| ( dev-java/glassfish-jms-api:0 dev-java/sun-jms:0 ) >=dev-java/java-config-2.2.0-r3'
+  emerge.packages: java-virtuals/jms
+  kit: gentoo
+  original.package.name: java-virtuals/jms
+  original.package.version: "1.1"

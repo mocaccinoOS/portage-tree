@@ -1,0 +1,30 @@
+name: spatialite
+version: 4.3.0a
+category: dev-db
+use_flags:
+- geos
+- proj
+- xls
+- xml
+requires:
+- name: freexl
+  version: '>=0'
+  category: dev-libs
+- name: geos
+  version: '>=0'
+  category: sci-libs
+- name: proj
+  version: '>=0'
+  category: sci-libs
+description: A complete Spatial DBMS in a nutshell built upon sqlite
+uri:
+- https://www.gaia-gis.it/gaia-sins/
+license: MPL-1.1
+labels:
+  DEPEND: '>=dev-db/sqlite-3.7.5:3[extensions(+)] sys-libs/zlib geos? ( >=sci-libs/geos-3.4 ) proj? ( sci-libs/proj:= ) xls? ( dev-libs/freexl ) xml? ( dev-libs/libxml2 )'
+  IUSE: +geos iconv +proj test +xls +xml
+  RDEPEND: '>=dev-db/sqlite-3.7.5:3[extensions(+)] sys-libs/zlib geos? ( >=sci-libs/geos-3.4 ) proj? ( sci-libs/proj:= ) xls? ( dev-libs/freexl ) xml? ( dev-libs/libxml2 )'
+  emerge.packages: dev-db/spatialite
+  kit: gentoo
+  original.package.name: dev-db/spatialite
+  original.package.version: 4.3.0a

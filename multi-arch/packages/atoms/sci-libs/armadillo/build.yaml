@@ -1,0 +1,32 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: tbb
+  version: '>=0'
+  category: dev-cpp
+- name: boost
+  version: '>=0'
+  category: dev-libs
+- name: arpack
+  version: '>=0'
+  category: sci-libs
+- name: hdf5
+  version: '>=0'
+  category: sci-libs
+- name: mkl
+  version: '>=0'
+  category: sci-libs
+- name: superlu
+  version: '>=0'
+  category: sci-libs

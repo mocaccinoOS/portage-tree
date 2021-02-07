@@ -1,0 +1,19 @@
+name: colamd
+version: 2.9.6
+category: sci-libs
+requires:
+- name: suitesparseconfig
+  version: '>=0'
+  category: sci-libs
+description: Column approximate minimum degree ordering algorithm
+uri:
+- https://people.engr.tamu.edu/davis/suitesparse.html
+license: BSD
+labels:
+  BDEPEND: virtual/pkgconfig
+  DEPEND: '>=sci-libs/suitesparseconfig-5.4.0'
+  RDEPEND: '>=sci-libs/suitesparseconfig-5.4.0'
+  emerge.packages: sci-libs/colamd
+  kit: gentoo
+  original.package.name: sci-libs/colamd
+  original.package.version: 2.9.6

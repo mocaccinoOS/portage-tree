@@ -1,0 +1,14 @@
+name: m17n-db
+version: 1.7.0
+category: dev-db
+description: Database for the m17n library
+uri:
+- https://savannah.nongnu.org/projects/m17n https://git.savannah.nongnu.org/cgit/m17n/m17n-db.git
+license: LGPL-2.1
+labels:
+  DEPEND: sys-devel/gettext
+  RDEPEND: virtual/libintl
+  emerge.packages: dev-db/m17n-db
+  kit: gentoo
+  original.package.name: dev-db/m17n-db
+  original.package.version: 1.7.0

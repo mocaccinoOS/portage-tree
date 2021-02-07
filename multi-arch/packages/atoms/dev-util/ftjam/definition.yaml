@@ -1,0 +1,13 @@
+name: ftjam
+version: 2.5.3
+category: dev-util
+description: A 100% compatible, enhanced implementation of the make alternative Jam
+uri:
+- http://freetype.sourceforge.net/jam/index.html
+license: perforce GPL-2
+labels:
+  BDEPEND: sys-devel/bison
+  emerge.packages: dev-util/ftjam
+  kit: gentoo
+  original.package.name: dev-util/ftjam
+  original.package.version: 2.5.3_rc2-r2

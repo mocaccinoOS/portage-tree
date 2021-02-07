@@ -1,0 +1,32 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: contextlib2
+  version: '>=0'
+  category: dev-python
+- name: execnet
+  version: '>=0'
+  category: dev-python
+- name: mock
+  version: '>=0'
+  category: dev-python
+- name: path-py
+  version: '>=0'
+  category: dev-python
+- name: pytest-virtualenv
+  version: '>=0'
+  category: dev-python
+- name: termcolor
+  version: '>=0'
+  category: dev-python

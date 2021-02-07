@@ -1,0 +1,21 @@
+name: emacs-common-gentoo
+version: "1.6"
+category: app-emacs
+use_flags:
+- games
+requires:
+- name: gamestat
+  version: '>=0'
+  category: acct-group
+description: Common files needed by all GNU Emacs versions
+uri:
+- https://wiki.gentoo.org/wiki/Project:Emacs
+license: GPL-3+
+labels:
+  DEPEND: games? ( acct-group/gamestat )
+  IUSE: games gui
+  RDEPEND: games? ( acct-group/gamestat )
+  emerge.packages: app-emacs/emacs-common-gentoo
+  kit: gentoo
+  original.package.name: app-emacs/emacs-common-gentoo
+  original.package.version: 1.6-r4

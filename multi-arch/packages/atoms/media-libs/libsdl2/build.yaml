@@ -12,6 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: fcitx
+  version: '>=0'
+  category: app-i18n-4
+- name: ibus
+  version: '>=0'
+  category: app-i18n
 - name: vulkan-headers
   version: '>=0'
   category: dev-util
@@ -28,15 +34,6 @@ requires:
   version: '>=0'
   category: x11-libs
 - name: libXcursor
-  version: '>=0'
-  category: x11-libs
-- name: libXi
-  version: '>=0'
-  category: x11-libs
-- name: libXinerama
-  version: '>=0'
-  category: x11-libs
-- name: libxkbcommon
   version: '>=0'
   category: x11-libs
 - name: tslib

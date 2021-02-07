@@ -1,0 +1,23 @@
+name: geos
+version: 3.8.1
+category: sci-libs
+use_flags:
+- -doc
+- ruby
+requires:
+- name: ruby
+  version: '>=0'
+  category: dev-lang-2.6
+description: Geometry engine library for Geographic Information Systems
+uri:
+- https://trac.osgeo.org/geos/
+license: LGPL-2.1
+labels:
+  BDEPEND: doc? ( app-doc/doxygen ) ruby? ( dev-lang/swig:0 )
+  DEPEND: ruby? ( dev-lang/ruby:* )
+  IUSE: doc ruby static-libs
+  RDEPEND: ruby? ( dev-lang/ruby:* )
+  emerge.packages: sci-libs/geos
+  kit: gentoo
+  original.package.name: sci-libs/geos
+  original.package.version: 3.8.1

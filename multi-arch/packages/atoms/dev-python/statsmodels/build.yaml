@@ -1,0 +1,41 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: ipykernel
+  version: '>=0'
+  category: dev-python
+- name: matplotlib
+  version: '>=0'
+  category: dev-python
+- name: nbconvert
+  version: '>=0'
+  category: dev-python
+- name: numpydoc
+  version: '>=0'
+  category: dev-python
+- name: pandas
+  version: '>=0'
+  category: dev-python
+- name: patsy
+  version: '>=0'
+  category: dev-python
+- name: pytest
+  version: '>=0'
+  category: dev-python
+- name: pytest-xdist
+  version: '>=0'
+  category: dev-python
+- name: scipy
+  version: '>=0'
+  category: dev-python

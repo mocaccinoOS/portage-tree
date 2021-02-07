@@ -1,0 +1,27 @@
+name: cython
+version: 0.29.21
+category: dev-python
+use_flags:
+- -emacs
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- python_targets_pypy3
+- python_targets_python2_7
+- python_targets_python3_7
+requires:
+- name: setuptools
+  version: '>=0'
+  category: dev-python
+description: A Python to C compiler
+uri:
+- https://cython.org https://pypi.org/project/Cython/ https://github.com/cython/cython
+license: Apache-2.0
+labels:
+  BDEPEND: emacs? ( >=app-editors/emacs-23.1:* ) test? ( python_targets_python3_6? ( dev-python/numpy[python_targets_python3_6(-)?,-python_single_target_python3_6(-),python_targets_python3_7(-)?,-python_single_target_python3_7(-),python_targets_python3_8(-)?,-python_single_target_python3_8(-)] ) python_targets_python3_7? ( dev-python/numpy[python_targets_python3_6(-)?,-python_single_target_python3_6(-),python_targets_python3_7(-)?,-python_single_target_python3_7(-),python_targets_python3_8(-)?,-python_single_target_python3_8(-)] ) python_targets_python3_8? ( dev-python/numpy[python_targets_python3_6(-)?,-python_single_target_python3_6(-),python_targets_python3_7(-)?,-python_single_target_python3_7(-),python_targets_python3_8(-)?,-python_single_target_python3_8(-)] ) ) doc? ( || ( ( dev-lang/python:3.9[threads(+)] dev-python/sphinx[python_targets_python3_9(-),python_single_target_python3_9(+)] ) ( dev-lang/python:3.8[threads(+)] dev-python/sphinx[python_targets_python3_8(-),python_single_target_python3_8(+)] ) ( dev-lang/python:3.7[threads(+)] dev-python/sphinx[python_targets_python3_7(-),python_single_target_python3_7(+)] ) ( dev-lang/python:3.6[threads(+)] dev-python/sphinx[python_targets_python3_6(-),python_single_target_python3_6(+)] ) ( >=dev-lang/python-2.7.5-r2:2.7[threads(+)] dev-python/sphinx[python_targets_python2_7(-),python_single_target_python2_7(+)] ) ( >=dev-python/pypy3-7.3.0:0[threads(+)] dev-python/sphinx[python_targets_pypy3(-),python_single_target_pypy3(+)] ) ) ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)] ) python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7[threads(+)] ) python_targets_python3_6? ( dev-lang/python:3.6[threads(+)] ) python_targets_python3_7? ( dev-lang/python:3.7[threads(+)] ) python_targets_python3_8? ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python2_7(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python2_7(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python2_7(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python2_7(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+  IUSE: emacs test doc python_targets_pypy3 python_targets_python2_7 python_targets_python3_6 python_targets_python3_7 python_targets_python3_8 python_targets_python3_9
+  RDEPEND: emacs? ( >=app-editors/emacs-23.1:* ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)] ) python_targets_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7[threads(+)] ) python_targets_python3_6? ( dev-lang/python:3.6[threads(+)] ) python_targets_python3_7? ( dev-lang/python:3.7[threads(+)] ) python_targets_python3_8? ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python2_7(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python2_7(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python2_7(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python2_7(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+  emerge.packages: dev-python/cython
+  kit: gentoo
+  original.package.name: dev-python/cython
+  original.package.version: 0.29.21

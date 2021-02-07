@@ -1,0 +1,33 @@
+name: ivtv-utils
+version: 1.4.1
+category: media-tv
+use_flags:
+- perl
+requires:
+- name: Config-IniFiles
+  version: '>=0'
+  category: dev-perl
+- name: Tk
+  version: '>=0'
+  category: dev-perl
+- name: Video-Frequencies
+  version: '>=0'
+  category: dev-perl
+- name: Video-ivtv
+  version: '>=0'
+  category: dev-perl
+- name: v4l-utils
+  version: '>=0'
+  category: media-tv
+description: IVTV utilities for Hauppauge PVR PCI cards
+uri:
+- http://www.ivtvdriver.org/
+license: GPL-2
+labels:
+  DEPEND: '!media-tv/ivtv'
+  IUSE: perl
+  RDEPEND: '!media-tv/ivtv media-tv/v4l-utils perl? ( dev-perl/Video-Frequencies dev-perl/Video-ivtv dev-perl/Config-IniFiles dev-perl/Tk virtual/perl-Getopt-Long )'
+  emerge.packages: media-tv/ivtv-utils
+  kit: gentoo
+  original.package.name: media-tv/ivtv-utils
+  original.package.version: 1.4.1

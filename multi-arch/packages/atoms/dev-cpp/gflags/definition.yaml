@@ -1,0 +1,14 @@
+name: gflags
+version: 2.2.1
+category: dev-cpp
+description: Google's C++ argument parsing library
+uri:
+- http://gflags.github.io/gflags/
+license: BSD
+labels:
+  BDEPEND: dev-util/ninja >=dev-util/cmake-3.9.6
+  IUSE: static-libs test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  emerge.packages: dev-cpp/gflags
+  kit: gentoo
+  original.package.name: dev-cpp/gflags
+  original.package.version: 2.2.1-r1

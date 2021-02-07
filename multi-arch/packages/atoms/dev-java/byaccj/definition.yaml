@@ -1,0 +1,12 @@
+name: byaccj
+version: "1.15"
+category: dev-java
+description: A java extension of BSD YACC-compatible parser generator
+uri:
+- http://byaccj.sourceforge.net/
+license: public-domain
+labels:
+  emerge.packages: dev-java/byaccj
+  kit: gentoo
+  original.package.name: dev-java/byaccj
+  original.package.version: 1.15-r2

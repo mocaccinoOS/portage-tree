@@ -1,0 +1,23 @@
+name: srt
+version: 1.4.1
+category: net-libs
+use_flags:
+- -libressl
+- gnutls
+requires:
+- name: gnutls
+  version: '>=0'
+  category: net-libs
+description: Secure Reliable Transport (SRT) library and tools
+uri:
+- https://github.com/Haivision/srt
+license: MPL-2.0
+labels:
+  BDEPEND: dev-util/ninja >=dev-util/cmake-3.9.6
+  DEPEND: gnutls? ( dev-libs/nettle:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] net-libs/gnutls:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) !gnutls? ( !libressl? ( dev-libs/openssl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) libressl? ( dev-libs/libressl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) )
+  IUSE: gnutls libressl abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: gnutls? ( dev-libs/nettle:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] net-libs/gnutls:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) !gnutls? ( !libressl? ( dev-libs/openssl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) libressl? ( dev-libs/libressl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) )
+  emerge.packages: net-libs/srt
+  kit: gentoo
+  original.package.name: net-libs/srt
+  original.package.version: 1.4.1-r1

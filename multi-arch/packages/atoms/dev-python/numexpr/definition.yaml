@@ -1,0 +1,28 @@
+name: numexpr
+version: 2.7.2
+category: dev-python
+use_flags:
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- mkl
+- python_targets_python3_7
+requires:
+- name: numpy
+  version: '>=0'
+  category: dev-python
+- name: mkl
+  version: '>=0'
+  category: sci-libs
+description: Fast numerical array expression evaluator for Python and NumPy
+uri:
+- https://github.com/pydata/numexpr
+license: MIT
+labels:
+  BDEPEND: python_targets_python3_6? ( dev-lang/python:3.6[threads(+)] ) python_targets_python3_7? ( dev-lang/python:3.7[threads(+)] ) python_targets_python3_8? ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] >=dev-python/setuptools-42.0.2[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+  IUSE: mkl python_targets_python3_6 python_targets_python3_7 python_targets_python3_8 python_targets_python3_9
+  RDEPEND: '>=dev-python/numpy-1.6[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] mkl? ( sci-libs/mkl ) python_targets_python3_6? ( dev-lang/python:3.6[threads(+)] ) python_targets_python3_7? ( dev-lang/python:3.7[threads(+)] ) python_targets_python3_8? ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]'
+  emerge.packages: dev-python/numexpr
+  kit: gentoo
+  original.package.name: dev-python/numexpr
+  original.package.version: 2.7.2

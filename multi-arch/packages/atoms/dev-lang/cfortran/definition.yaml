@@ -1,0 +1,13 @@
+name: cfortran
+version: "4.4"
+category: dev-lang
+description: Header file allowing to call Fortran routines from C and C++
+uri:
+- https://www-zeus.desy.de/~burow/cfortran/
+license: LGPL-2
+labels:
+  IUSE: examples
+  emerge.packages: dev-lang/cfortran
+  kit: gentoo
+  original.package.name: dev-lang/cfortran
+  original.package.version: 4.4-r3

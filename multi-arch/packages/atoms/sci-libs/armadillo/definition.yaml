@@ -1,0 +1,33 @@
+name: armadillo
+version: 8.300.2
+category: sci-libs
+use_flags:
+- arpack
+- blas
+- hdf5
+- lapack
+- mkl
+- superlu
+- tbb
+requires:
+- name: boost
+  version: '>=0'
+  category: dev-libs
+- name: arpack
+  version: '>=0'
+  category: sci-libs
+- name: superlu
+  version: '>=0'
+  category: sci-libs
+description: Streamlined C++ linear algebra library
+uri:
+- http://arma.sourceforge.net/
+license: Apache-2.0
+labels:
+  DEPEND: dev-libs/boost arpack? ( sci-libs/arpack ) blas? ( virtual/blas ) lapack? ( virtual/lapack ) superlu? ( >=sci-libs/superlu-5.2 ) arpack? ( virtual/pkgconfig ) blas? ( virtual/pkgconfig ) hdf5? ( sci-libs/hdf5 ) lapack? ( virtual/pkgconfig ) mkl? ( sci-libs/mkl ) tbb? ( dev-cpp/tbb ) sys-devel/make >=dev-util/cmake-3.9.6
+  IUSE: arpack blas debug doc examples hdf5 lapack mkl superlu tbb test
+  RDEPEND: dev-libs/boost arpack? ( sci-libs/arpack ) blas? ( virtual/blas ) lapack? ( virtual/lapack ) superlu? ( >=sci-libs/superlu-5.2 )
+  emerge.packages: sci-libs/armadillo
+  kit: gentoo
+  original.package.name: sci-libs/armadillo
+  original.package.version: 8.300.2

@@ -1,0 +1,14 @@
+name: freexl
+version: 1.0.5
+category: dev-libs
+description: Simple XLS data extraction library
+uri:
+- https://www.gaia-gis.it/fossil/freexl/index
+license: MPL-1.1
+labels:
+  DEPEND: virtual/libiconv
+  RDEPEND: virtual/libiconv
+  emerge.packages: dev-libs/freexl
+  kit: gentoo
+  original.package.name: dev-libs/freexl
+  original.package.version: 1.0.5

@@ -1,0 +1,13 @@
+name: pugixml
+version: "1.10"
+category: dev-libs
+description: Light-weight, simple, and fast XML parser for C++ with XPath support
+uri:
+- https://pugixml.org/ https://github.com/zeux/pugixml/
+license: MIT
+labels:
+  BDEPEND: dev-util/ninja dev-util/cmake
+  emerge.packages: dev-libs/pugixml
+  kit: gentoo
+  original.package.name: dev-libs/pugixml
+  original.package.version: "1.10"

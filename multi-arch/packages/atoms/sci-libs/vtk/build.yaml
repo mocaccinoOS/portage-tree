@@ -1,0 +1,74 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: webapp-config
+  version: '>=0'
+  category: app-admin
+- name: lz4
+  version: '>=0'
+  category: app-arch
+- name: eigen
+  version: '>=0'
+  category: dev-cpp-3
+- name: tbb
+  version: '>=0'
+  category: dev-cpp
+- name: R
+  version: '>=0'
+  category: dev-lang
+- name: pugixml
+  version: '>=0'
+  category: dev-libs
+- name: PyQt5
+  version: '>=0'
+  category: dev-python
+- name: autobahn
+  version: '>=0'
+  category: dev-python
+- name: constantly
+  version: '>=0'
+  category: dev-python
+- name: hyperlink
+  version: '>=0'
+  category: dev-python
+- name: mpi4py
+  version: '>=0'
+  category: dev-python
+- name: six
+  version: '>=0'
+  category: dev-python
+- name: glew
+  version: '>=0'
+  category: media-libs
+- name: libharu
+  version: '>=0'
+  category: media-libs
+- name: ffmpeg
+  version: '>=0'
+  category: media-video
+- name: exodusii
+  version: '>=0'
+  category: sci-libs
+- name: gdal
+  version: '>=0'
+  category: sci-libs
+- name: netcdf-cxx
+  version: '>=0'
+  category: sci-libs-3
+- name: xdmf2
+  version: '>=0'
+  category: sci-libs
+- name: nvidia-drivers
+  version: '>=0'
+  category: x11-drivers

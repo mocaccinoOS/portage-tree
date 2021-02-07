@@ -1,0 +1,13 @@
+name: ustr
+version: 1.0.4
+category: dev-libs
+description: Low-overhead managed string library for C
+uri:
+- http://www.and.org/ustr/
+license: '|| ( BSD-2 MIT LGPL-2 )'
+labels:
+  IUSE: static-libs ustr-import abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  emerge.packages: dev-libs/ustr
+  kit: gentoo
+  original.package.name: dev-libs/ustr
+  original.package.version: 1.0.4-r8

@@ -27,9 +27,6 @@ requires:
 - name: libpcre2
   version: '>=0'
   category: dev-libs
-- name: fts-standalone
-  version: '>=0'
-  category: sys-libs
 - name: libsepol
   version: '>=0'
   category: sys-libs

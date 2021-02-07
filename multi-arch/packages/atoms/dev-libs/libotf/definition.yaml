@@ -1,0 +1,24 @@
+name: libotf
+version: 0.9.16
+category: dev-libs
+use_flags:
+- X
+requires:
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: libXaw
+  version: '>=0'
+  category: x11-libs
+description: Library for handling OpenType fonts (OTF)
+uri:
+- http://www.nongnu.org/m17n/
+license: LGPL-2.1
+labels:
+  DEPEND: '>=media-libs/freetype-2.4.9 X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXt ) virtual/pkgconfig X? ( x11-base/xorg-proto x11-libs/libICE x11-libs/libXmu ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  IUSE: static-libs X
+  RDEPEND: '>=media-libs/freetype-2.4.9 X? ( x11-libs/libX11 x11-libs/libXaw x11-libs/libXt )'
+  emerge.packages: dev-libs/libotf
+  kit: gentoo
+  original.package.name: dev-libs/libotf
+  original.package.version: 0.9.16

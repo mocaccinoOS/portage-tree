@@ -1,0 +1,18 @@
+name: anthy
+version: 9100h
+category: app-i18n
+use_flags:
+- -emacs
+- canna-2ch
+description: Anthy -- free and secure Japanese input system
+uri:
+- http://anthy.osdn.jp/
+license: GPL-2 LGPL-2.1
+labels:
+  BDEPEND: canna-2ch? ( app-dicts/canna-2ch ) emacs? ( >=app-editors/emacs-23.1:* )
+  IUSE: canna-2ch emacs static-libs
+  RDEPEND: canna-2ch? ( app-dicts/canna-2ch ) emacs? ( >=app-editors/emacs-23.1:* )
+  emerge.packages: app-i18n/anthy
+  kit: gentoo
+  original.package.name: app-i18n/anthy
+  original.package.version: 9100h-r2

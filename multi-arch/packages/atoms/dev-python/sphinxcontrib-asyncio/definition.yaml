@@ -1,0 +1,27 @@
+name: sphinxcontrib-asyncio
+version: 0.2.0
+category: dev-python
+use_flags:
+- -doc
+- -python_targets_python3_6
+- -python_targets_python3_8
+- python_targets_python3_7
+requires:
+- name: namespace-sphinxcontrib
+  version: '>=0'
+  category: dev-python
+- name: sphinx
+  version: '>=0'
+  category: dev-python
+description: sphinx extension to support coroutines in markup
+uri:
+- https://github.com/aio-libs/sphinxcontrib-asyncio
+license: Apache-2.0
+labels:
+  DEPEND: dev-python/setuptools[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] doc? ( dev-python/sphinx[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] ) python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] >=dev-python/setuptools-42.0.2[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+  IUSE: doc python_targets_python3_6 python_targets_python3_7 python_targets_python3_8
+  RDEPEND: dev-python/sphinx[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] dev-python/namespace-sphinxcontrib[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)] python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+  emerge.packages: dev-python/sphinxcontrib-asyncio
+  kit: gentoo
+  original.package.name: dev-python/sphinxcontrib-asyncio
+  original.package.version: 0.2.0-r2

@@ -1,0 +1,29 @@
+name: pkgconfig
+version: 1.5.1
+category: dev-python
+use_flags:
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- -test
+- python_targets_pypy3
+- python_targets_python3_7
+requires:
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: pypy3
+  version: '>=0'
+  category: dev-python
+description: Interface Python with pkg-config
+uri:
+- https://pypi.org/project/pkgconfig/ https://github.com/matze/pkgconfig
+license: MIT
+labels:
+  BDEPEND: test? ( virtual/pkgconfig >=dev-python/pytest-4.5.0[python_targets_pypy3(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] dev-python/pyproject2setuppy[python_targets_pypy3(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+  IUSE: test python_targets_pypy3 python_targets_python3_6 python_targets_python3_7 python_targets_python3_8 python_targets_python3_9
+  RDEPEND: virtual/pkgconfig python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_pypy3(-),-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+  emerge.packages: dev-python/pkgconfig
+  kit: gentoo
+  original.package.name: dev-python/pkgconfig
+  original.package.version: 1.5.1

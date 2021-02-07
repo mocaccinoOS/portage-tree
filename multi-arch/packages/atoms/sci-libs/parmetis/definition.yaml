@@ -1,0 +1,21 @@
+name: parmetis
+version: 4.0.3
+category: sci-libs
+use_flags:
+- mpi
+requires:
+- name: metis
+  version: '>=0'
+  category: sci-libs
+description: Parallel (MPI) unstructured graph partitioning library
+uri:
+- http://www-users.cs.umn.edu/~karypis/metis/parmetis/
+license: all-rights-reserved
+labels:
+  DEPEND: mpi? ( virtual/mpi ) sys-devel/make >=dev-util/cmake-3.9.6
+  IUSE: doc double-precision examples int64 mpi openmp pcre static-libs
+  RDEPEND: mpi? ( virtual/mpi ) !<sci-libs/metis-5
+  emerge.packages: sci-libs/parmetis
+  kit: gentoo
+  original.package.name: sci-libs/parmetis
+  original.package.version: 4.0.3-r1

@@ -1,0 +1,18 @@
+name: Video-ivtv
+version: "0.13"
+category: dev-perl
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Video::ivtv perl module, for use with ivtv-ptune
+uri:
+- http://ivtv.sourceforge.net
+license: GPL-2
+labels:
+  DEPEND: dev-lang/perl
+  RDEPEND: dev-lang/perl:=
+  emerge.packages: dev-perl/Video-ivtv
+  kit: gentoo
+  original.package.name: dev-perl/Video-ivtv
+  original.package.version: 0.13-r2

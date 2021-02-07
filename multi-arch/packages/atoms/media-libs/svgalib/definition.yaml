@@ -18,4 +18,4 @@ labels:
   emerge.packages: media-libs/svgalib
   kit: gentoo
   original.package.name: media-libs/svgalib
-  original.package.version: 1.9.25-r8
+  original.package.version: 1.9.25-r7

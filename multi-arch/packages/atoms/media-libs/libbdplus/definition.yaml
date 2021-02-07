@@ -1,0 +1,21 @@
+name: libbdplus
+version: 0.1.2
+category: media-libs
+use_flags:
+- aacs
+requires:
+- name: libaacs
+  version: '>=0'
+  category: media-libs
+description: Blu-ray library for BD+ decryption
+uri:
+- https://www.videolan.org/developers/libbdplus.html
+license: LGPL-2.1
+labels:
+  DEPEND: dev-libs/libgcrypt:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] dev-libs/libgpg-error[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] aacs? ( >=media-libs/libaacs-0.7.0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) >=app-portage/elt-patches-20170815
+  IUSE: aacs static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: dev-libs/libgcrypt:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] dev-libs/libgpg-error[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] aacs? ( >=media-libs/libaacs-0.7.0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] )
+  emerge.packages: media-libs/libbdplus
+  kit: gentoo
+  original.package.name: media-libs/libbdplus
+  original.package.version: 0.1.2

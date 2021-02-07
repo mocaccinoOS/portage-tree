@@ -10,9 +10,6 @@ requires:
 - name: firebird
   version: '>=0'
   category: dev-db
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

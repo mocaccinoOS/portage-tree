@@ -1,0 +1,48 @@
+name: poco
+version: 1.9.0
+category: dev-libs
+use_flags:
+- -libressl
+- iodbc
+- mariadb
+- mysql
+- odbc
+- sqlite
+- ssl
+- xml
+- zip
+requires:
+- name: libiodbc
+  version: '>=0'
+  category: dev-db
+- name: mariadb-connector-c
+  version: '>=0'
+  category: dev-db
+- name: mysql-connector-c
+  version: '>=0'
+  category: dev-db
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: unixODBC
+  version: '>=0'
+  category: dev-db
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: libpcre
+  version: '>=0'
+  category: dev-libs-3
+description: C++ libraries for building network-based applications
+uri:
+- https://pocoproject.org/
+license: Boost-1.0
+labels:
+  BDEPEND: virtual/pkgconfig dev-util/ninja dev-util/cmake
+  DEPEND: '>=dev-libs/libpcre-8.42 mysql? ( !mariadb? ( dev-db/mysql-connector-c:0= ) mariadb? ( dev-db/mariadb-connector-c:0= ) ) odbc? ( iodbc? ( dev-db/libiodbc ) !iodbc? ( dev-db/unixODBC ) ) sqlite? ( dev-db/sqlite:3 ) ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) xml? ( dev-libs/expat ) zip? ( sys-libs/zlib )'
+  IUSE: 7z cppparser +crypto +data examples +file2pagecompiler iodbc +json libressl mariadb +mongodb mysql +net odbc +pagecompiler pdf pocodoc sqlite +ssl test +util +xml +zip
+  RDEPEND: '>=dev-libs/libpcre-8.42 mysql? ( !mariadb? ( dev-db/mysql-connector-c:0= ) mariadb? ( dev-db/mariadb-connector-c:0= ) ) odbc? ( iodbc? ( dev-db/libiodbc ) !iodbc? ( dev-db/unixODBC ) ) sqlite? ( dev-db/sqlite:3 ) ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) xml? ( dev-libs/expat ) zip? ( sys-libs/zlib )'
+  emerge.packages: dev-libs/poco
+  kit: gentoo
+  original.package.name: dev-libs/poco
+  original.package.version: 1.9.0-r2

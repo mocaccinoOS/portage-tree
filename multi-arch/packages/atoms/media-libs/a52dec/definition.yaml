@@ -1,0 +1,21 @@
+name: a52dec
+version: 0.7.4
+category: media-libs
+use_flags:
+- djbfft
+requires:
+- name: djbfft
+  version: '>=0'
+  category: sci-libs
+description: library for decoding ATSC A/52 streams used in DVD
+uri:
+- http://liba52.sourceforge.net/
+license: GPL-2
+labels:
+  DEPEND: djbfft? ( sci-libs/djbfft ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  IUSE: djbfft oss static-libs
+  RDEPEND: djbfft? ( sci-libs/djbfft )
+  emerge.packages: media-libs/a52dec
+  kit: gentoo
+  original.package.name: media-libs/a52dec
+  original.package.version: 0.7.4-r6

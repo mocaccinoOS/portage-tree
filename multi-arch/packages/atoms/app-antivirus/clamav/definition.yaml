@@ -2,12 +2,12 @@ name: clamav
 version: 0.102.4
 category: app-antivirus
 use_flags:
+- -elibc_musl
 - -libressl
 - -test
 - bzip2
 - clamdtop
 - clamsubmit
-- elibc_musl
 - iconv
 - libclamav-only
 - metadata-analysis-api
@@ -42,9 +42,6 @@ requires:
 - name: selinux-clamav
   version: '>=0'
   category: sec-policy
-- name: fts-standalone
-  version: '>=0'
-  category: sys-libs
 - name: ncurses
   version: '>=0'
   category: sys-libs

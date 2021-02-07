@@ -47,4 +47,4 @@ requires:
   category: x11-libs
 - name: wxGTK
   version: '>=0'
-  category: x11-libs-3.0
+  category: x11-libs-3.0-gtk3

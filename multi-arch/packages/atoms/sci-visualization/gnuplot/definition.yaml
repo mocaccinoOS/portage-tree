@@ -45,7 +45,7 @@ requires:
   category: x11-libs
 - name: wxGTK
   version: '>=0'
-  category: x11-libs-3.0
+  category: x11-libs-3.0-gtk3
 description: Command-line driven interactive plotting program
 uri:
 - http://www.gnuplot.info/

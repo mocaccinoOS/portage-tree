@@ -2,9 +2,9 @@ name: opensmtpd
 version: 6.7.1
 category: mail-mta
 use_flags:
+- -elibc_musl
 - -libressl
 - berkdb
-- elibc_musl
 - pam
 requires:
 - name: smtpd
@@ -22,9 +22,6 @@ requires:
 - name: libasr
   version: '>=0'
   category: net-libs
-- name: fts-standalone
-  version: '>=0'
-  category: sys-libs
 - name: zlib
   version: '>=0'
   category: sys-libs

@@ -1,0 +1,35 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: plugdev
+  version: '>=0'
+  category: acct-group
+- name: libltdl
+  version: '>=0'
+  category: dev-libs
+- name: lockdev
+  version: '>=0'
+  category: dev-libs
+- name: gd
+  version: '>=0'
+  category: media-libs-2
+- name: libexif
+  version: '>=0'
+  category: media-libs
+- name: flex
+  version: '>=0'
+  category: sys-devel
+- name: udev
+  version: '>=0'
+  category: sys-fs

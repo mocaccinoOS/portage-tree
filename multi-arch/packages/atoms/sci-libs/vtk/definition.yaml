@@ -1,0 +1,101 @@
+name: vtk
+version: 8.2.0
+category: sci-libs
+use_flags:
+- -doc
+- -python_single_target_python3_6
+- -python_single_target_python3_8
+- -test
+- R
+- boost
+- examples
+- ffmpeg
+- gdal
+- java
+- mpi
+- odbc
+- offscreen
+- postgres
+- python
+- python_single_target_python3_7
+- qt5
+- tbb
+- tcl
+- tk
+- video_cards_nvidia
+- web
+- xdmf2
+requires:
+- name: webapp-config
+  version: '>=0'
+  category: app-admin
+- name: lz4
+  version: '>=0'
+  category: app-arch
+- name: eigen
+  version: '>=0'
+  category: dev-cpp-3
+- name: tbb
+  version: '>=0'
+  category: dev-cpp
+- name: R
+  version: '>=0'
+  category: dev-lang
+- name: jsoncpp
+  version: '>=0'
+  category: dev-libs
+- name: pugixml
+  version: '>=0'
+  category: dev-libs
+- name: PyQt5
+  version: '>=0'
+  category: dev-python
+- name: autobahn
+  version: '>=0'
+  category: dev-python
+- name: mpi4py
+  version: '>=0'
+  category: dev-python
+- name: sip
+  version: '>=0'
+  category: dev-python
+- name: six
+  version: '>=0'
+  category: dev-python
+- name: glew
+  version: '>=0'
+  category: media-libs
+- name: libharu
+  version: '>=0'
+  category: media-libs
+- name: ffmpeg
+  version: '>=0'
+  category: media-video
+- name: exodusii
+  version: '>=0'
+  category: sci-libs
+- name: gdal
+  version: '>=0'
+  category: sci-libs
+- name: netcdf-cxx
+  version: '>=0'
+  category: sci-libs-3
+- name: xdmf2
+  version: '>=0'
+  category: sci-libs
+- name: nvidia-drivers
+  version: '>=0'
+  category: x11-drivers
+description: The Visualization Toolkit
+uri:
+- https://www.vtk.org/
+license: BSD LGPL-2
+labels:
+  BDEPEND: doc? ( app-doc/doxygen ) dev-util/ninja dev-util/cmake test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
+  DEPEND: app-arch/lz4 dev-cpp/eigen dev-db/sqlite dev-libs/double-conversion:0= dev-libs/expat dev-libs/jsoncpp:= dev-libs/libxml2:2 dev-libs/pugixml >=media-libs/freetype-2.5.4 media-libs/glew:0= >=media-libs/libharu-2.3.0-r2 media-libs/libpng:0= media-libs/libtheora media-libs/mesa media-libs/tiff:0 sci-libs/exodusii sci-libs/hdf5:= sci-libs/netcdf:0= sci-libs/netcdf-cxx:3 sys-libs/zlib virtual/jpeg:0 virtual/opengl x11-libs/libX11 x11-libs/libXmu x11-libs/libXt boost? ( dev-libs/boost:=[mpi?] ) examples? ( dev-qt/qtcore:5 dev-qt/qtgui:5 ) ffmpeg? ( media-video/ffmpeg ) gdal? ( sci-libs/gdal ) java? ( >=virtual/jdk-1.7:* ) mpi? ( virtual/mpi[cxx,romio] python_single_target_python3_6? ( python? ( dev-python/mpi4py[python_targets_python3_6(-)] ) ) python_single_target_python3_7? ( python? ( dev-python/mpi4py[python_targets_python3_7(-)] ) ) python_single_target_python3_8? ( python? ( dev-python/mpi4py[python_targets_python3_8(-)] ) ) ) odbc? ( dev-db/unixODBC ) offscreen? ( media-libs/mesa[osmesa] ) postgres? ( dev-db/postgresql:= ) python? ( python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_6? ( dev-python/sip[python_targets_python3_6(-)] ) python_single_target_python3_7? ( dev-python/sip[python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/sip[python_targets_python3_8(-)] ) ) qt5? ( dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtsql:5 dev-qt/qtx11extras:5 python_single_target_python3_6? ( python? ( dev-python/PyQt5[python_targets_python3_6(-)] ) ) python_single_target_python3_7? ( python? ( dev-python/PyQt5[python_targets_python3_7(-)] ) ) python_single_target_python3_8? ( python? ( dev-python/PyQt5[python_targets_python3_8(-)] ) ) ) R? ( dev-lang/R ) tbb? ( dev-cpp/tbb ) tcl? ( dev-lang/tcl:0= ) tk? ( dev-lang/tk:0= ) video_cards_nvidia? ( x11-drivers/nvidia-drivers[tools,static-libs] ) web? ( >=app-admin/webapp-config-1.50.15 python_single_target_python3_6? ( dev-python/autobahn[python_targets_python3_6(-)] dev-python/constantly[python_targets_python3_6(-)] dev-python/hyperlink[python_targets_python3_6(-)] dev-python/incremental[python_targets_python3_6(-)] dev-python/six[python_targets_python3_6(-)] dev-python/twisted[python_targets_python3_6(-)] dev-python/txaio[python_targets_python3_6(-)] dev-python/zope-interface[python_targets_python3_6(-)] ) python_single_target_python3_7? ( dev-python/autobahn[python_targets_python3_7(-)] dev-python/constantly[python_targets_python3_7(-)] dev-python/hyperlink[python_targets_python3_7(-)] dev-python/incremental[python_targets_python3_7(-)] dev-python/six[python_targets_python3_7(-)] dev-python/twisted[python_targets_python3_7(-)] dev-python/txaio[python_targets_python3_7(-)] dev-python/zope-interface[python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/autobahn[python_targets_python3_8(-)] dev-python/constantly[python_targets_python3_8(-)] dev-python/hyperlink[python_targets_python3_8(-)] dev-python/incremental[python_targets_python3_8(-)] dev-python/six[python_targets_python3_8(-)] dev-python/twisted[python_targets_python3_8(-)] dev-python/txaio[python_targets_python3_8(-)] dev-python/zope-interface[python_targets_python3_8(-)] ) ) xdmf2? ( sci-libs/xdmf2 ) java? ( >=dev-java/java-config-2.2.0-r3 )
+  IUSE: all-modules aqua boost doc examples ffmpeg gdal imaging java json mpi odbc offscreen postgres python qt5 R rendering tbb tcl theora tk video_cards_nvidia views web +X xdmf2 elibc_FreeBSD java python_single_target_python3_6 python_single_target_python3_7 python_single_target_python3_8 test
+  RDEPEND: app-arch/lz4 dev-cpp/eigen dev-db/sqlite dev-libs/double-conversion:0= dev-libs/expat dev-libs/jsoncpp:= dev-libs/libxml2:2 dev-libs/pugixml >=media-libs/freetype-2.5.4 media-libs/glew:0= >=media-libs/libharu-2.3.0-r2 media-libs/libpng:0= media-libs/libtheora media-libs/mesa media-libs/tiff:0 sci-libs/exodusii sci-libs/hdf5:= sci-libs/netcdf:0= sci-libs/netcdf-cxx:3 sys-libs/zlib virtual/jpeg:0 virtual/opengl x11-libs/libX11 x11-libs/libXmu x11-libs/libXt boost? ( dev-libs/boost:=[mpi?] ) examples? ( dev-qt/qtcore:5 dev-qt/qtgui:5 ) ffmpeg? ( media-video/ffmpeg ) gdal? ( sci-libs/gdal ) java? ( >=virtual/jdk-1.7:* ) mpi? ( virtual/mpi[cxx,romio] python_single_target_python3_6? ( python? ( dev-python/mpi4py[python_targets_python3_6(-)] ) ) python_single_target_python3_7? ( python? ( dev-python/mpi4py[python_targets_python3_7(-)] ) ) python_single_target_python3_8? ( python? ( dev-python/mpi4py[python_targets_python3_8(-)] ) ) ) odbc? ( dev-db/unixODBC ) offscreen? ( media-libs/mesa[osmesa] ) postgres? ( dev-db/postgresql:= ) python? ( python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_6? ( dev-python/sip[python_targets_python3_6(-)] ) python_single_target_python3_7? ( dev-python/sip[python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/sip[python_targets_python3_8(-)] ) ) qt5? ( dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtopengl:5 dev-qt/qtsql:5 dev-qt/qtx11extras:5 python_single_target_python3_6? ( python? ( dev-python/PyQt5[python_targets_python3_6(-)] ) ) python_single_target_python3_7? ( python? ( dev-python/PyQt5[python_targets_python3_7(-)] ) ) python_single_target_python3_8? ( python? ( dev-python/PyQt5[python_targets_python3_8(-)] ) ) ) R? ( dev-lang/R ) tbb? ( dev-cpp/tbb ) tcl? ( dev-lang/tcl:0= ) tk? ( dev-lang/tk:0= ) video_cards_nvidia? ( x11-drivers/nvidia-drivers[tools,static-libs] ) web? ( >=app-admin/webapp-config-1.50.15 python_single_target_python3_6? ( dev-python/autobahn[python_targets_python3_6(-)] dev-python/constantly[python_targets_python3_6(-)] dev-python/hyperlink[python_targets_python3_6(-)] dev-python/incremental[python_targets_python3_6(-)] dev-python/six[python_targets_python3_6(-)] dev-python/twisted[python_targets_python3_6(-)] dev-python/txaio[python_targets_python3_6(-)] dev-python/zope-interface[python_targets_python3_6(-)] ) python_single_target_python3_7? ( dev-python/autobahn[python_targets_python3_7(-)] dev-python/constantly[python_targets_python3_7(-)] dev-python/hyperlink[python_targets_python3_7(-)] dev-python/incremental[python_targets_python3_7(-)] dev-python/six[python_targets_python3_7(-)] dev-python/twisted[python_targets_python3_7(-)] dev-python/txaio[python_targets_python3_7(-)] dev-python/zope-interface[python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/autobahn[python_targets_python3_8(-)] dev-python/constantly[python_targets_python3_8(-)] dev-python/hyperlink[python_targets_python3_8(-)] dev-python/incremental[python_targets_python3_8(-)] dev-python/six[python_targets_python3_8(-)] dev-python/twisted[python_targets_python3_8(-)] dev-python/txaio[python_targets_python3_8(-)] dev-python/zope-interface[python_targets_python3_8(-)] ) ) xdmf2? ( sci-libs/xdmf2 ) java? ( >=dev-java/java-config-2.2.0-r3 )
+  emerge.packages: sci-libs/vtk
+  kit: gentoo
+  original.package.name: sci-libs/vtk
+  original.package.version: 8.2.0

@@ -1,0 +1,29 @@
+name: kyotocabinet
+version: 1.2.77
+category: dev-db
+use_flags:
+- lzma
+- lzo
+requires:
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+description: A straightforward implementation of DBM
+uri:
+- https://fallabs.com/kyotocabinet/
+license: GPL-3
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: sys-libs/zlib[static-libs?] lzma? ( app-arch/xz-utils:=[static-libs?] ) lzo? ( dev-libs/lzo:=[static-libs?] )
+  IUSE: debug doc examples +lzma +lzo static-libs
+  RDEPEND: sys-libs/zlib[static-libs?] lzma? ( app-arch/xz-utils:=[static-libs?] ) lzo? ( dev-libs/lzo:=[static-libs?] )
+  emerge.packages: dev-db/kyotocabinet
+  kit: gentoo
+  original.package.name: dev-db/kyotocabinet
+  original.package.version: 1.2.77

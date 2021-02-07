@@ -1,0 +1,62 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: cbor
+  version: '>=0'
+  category: dev-python
+- name: cbor2
+  version: '>=0'
+  category: dev-python
+- name: flatbuffers
+  version: '>=0'
+  category: dev-python
+- name: lz4
+  version: '>=0'
+  category: dev-python
+- name: msgpack
+  version: '>=0'
+  category: dev-python
+- name: py-ubjson
+  version: '>=0'
+  category: dev-python
+- name: pynacl
+  version: '>=0'
+  category: dev-python
+- name: pyqrcode
+  version: '>=0'
+  category: dev-python
+- name: pytrie
+  version: '>=0'
+  category: dev-python
+- name: service_identity
+  version: '>=0'
+  category: dev-python
+- name: snappy
+  version: '>=0'
+  category: dev-python
+- name: twisted
+  version: '>=0'
+  category: dev-python
+- name: txaio
+  version: '>=0'
+  category: dev-python
+- name: ujson
+  version: '>=0'
+  category: dev-python
+- name: wsaccel
+  version: '>=0'
+  category: dev-python
+- name: zope-interface
+  version: '>=0'
+  category: dev-python

@@ -22,4 +22,4 @@ labels:
   emerge.packages: sys-apps/net-tools
   kit: gentoo
   original.package.name: sys-apps/net-tools
-  original.package.version: 1.60_p20161110235919
+  original.package.version: 1.60_p20180626073013

@@ -1,0 +1,25 @@
+name: sphinx-gallery
+version: 0.3.1
+category: dev-python
+use_flags:
+- -python_targets_python3_6
+- python_targets_python3_7
+requires:
+- name: matplotlib
+  version: '>=0'
+  category: dev-python
+- name: sphinx
+  version: '>=0'
+  category: dev-python
+description: Sphinx extension to automatically generate an examples gallery
+uri:
+- https://sphinx-gallery.github.io/ https://github.com/sphinx-gallery/sphinx-gallery
+license: BSD
+labels:
+  DEPEND: dev-python/setuptools[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] >=dev-python/setuptools-42.0.2[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)]
+  IUSE: python_targets_python3_6 python_targets_python3_7
+  RDEPEND: dev-python/matplotlib[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] dev-python/pillow[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] dev-python/sphinx[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)] python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-)]
+  emerge.packages: dev-python/sphinx-gallery
+  kit: gentoo
+  original.package.name: dev-python/sphinx-gallery
+  original.package.version: 0.3.1-r1

@@ -9,7 +9,7 @@ use_flags:
 requires:
 - name: wxGTK
   version: '>=0'
-  category: x11-libs-3.0
+  category: x11-libs-3.0-gtk3
 description: Port of 7-Zip archiver for Unix
 uri:
 - http://p7zip.sourceforge.net/

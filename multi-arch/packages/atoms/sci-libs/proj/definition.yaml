@@ -1,0 +1,28 @@
+name: proj
+version: 7.0.1
+category: sci-libs
+use_flags:
+- curl
+- tiff
+requires:
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: tiff
+  version: '>=0'
+  category: media-libs
+- name: curl
+  version: '>=0'
+  category: net-misc
+description: PROJ coordinate transformation software
+uri:
+- https://proj4.org/
+license: MIT
+labels:
+  DEPEND: dev-db/sqlite:3 curl? ( net-misc/curl ) tiff? ( media-libs/tiff )
+  IUSE: curl europe static-libs test +tiff
+  RDEPEND: dev-db/sqlite:3 curl? ( net-misc/curl ) tiff? ( media-libs/tiff )
+  emerge.packages: sci-libs/proj
+  kit: gentoo
+  original.package.name: sci-libs/proj
+  original.package.version: 7.0.1

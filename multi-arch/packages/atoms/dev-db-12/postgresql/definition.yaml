@@ -3,6 +3,7 @@ version: "12.4"
 category: dev-db-12
 use_flags:
 - -elibc_FreeBSD
+- -elibc_musl
 - -libressl
 - -python_single_target_python3_6
 - -python_single_target_python3_8
@@ -10,7 +11,6 @@ use_flags:
 - elibc_NetBSD
 - elibc_OpenBSD
 - elibc_glibc
-- elibc_musl
 - elibc_uclibc
 - icu
 - kerberos

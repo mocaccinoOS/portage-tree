@@ -1,0 +1,40 @@
+name: cholmod
+version: 3.0.13
+category: sci-libs
+use_flags:
+- -doc
+- cuda
+- lapack
+- partition
+requires:
+- name: amd
+  version: '>=0'
+  category: sci-libs
+- name: camd
+  version: '>=0'
+  category: sci-libs
+- name: ccolamd
+  version: '>=0'
+  category: sci-libs
+- name: colamd
+  version: '>=0'
+  category: sci-libs
+- name: metis
+  version: '>=0'
+  category: sci-libs
+- name: nvidia-drivers
+  version: '>=0'
+  category: x11-drivers
+description: Sparse Cholesky factorization and update/downdate library
+uri:
+- https://people.engr.tamu.edu/davis/suitesparse.html
+license: LGPL-2.1+ modify? ( GPL-2+ ) matrixops? ( GPL-2+ )
+labels:
+  BDEPEND: virtual/pkgconfig doc? ( virtual/latex-base )
+  DEPEND: '>=sci-libs/amd-2.4 >=sci-libs/colamd-2.9 cuda? ( x11-drivers/nvidia-drivers dev-util/nvidia-cuda-toolkit ) lapack? ( virtual/lapack ) partition? ( >=sci-libs/camd-2.4 >=sci-libs/ccolamd-2.9 || ( >=sci-libs/metis-5.1.0 sci-libs/parmetis ) )'
+  IUSE: cuda doc +lapack +matrixops +modify +partition
+  RDEPEND: '>=sci-libs/amd-2.4 >=sci-libs/colamd-2.9 cuda? ( x11-drivers/nvidia-drivers dev-util/nvidia-cuda-toolkit ) lapack? ( virtual/lapack ) partition? ( >=sci-libs/camd-2.4 >=sci-libs/ccolamd-2.9 || ( >=sci-libs/metis-5.1.0 sci-libs/parmetis ) )'
+  emerge.packages: sci-libs/cholmod
+  kit: gentoo
+  original.package.name: sci-libs/cholmod
+  original.package.version: 3.0.13

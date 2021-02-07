@@ -1,0 +1,41 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: unzip
+  version: '>=0'
+  category: app-arch
+- name: ftjam
+  version: '>=0'
+  category: dev-util
+- name: tiff
+  version: '>=0'
+  category: media-libs
+- name: libXScrnSaver
+  version: '>=0'
+  category: x11-libs
+- name: libXau
+  version: '>=0'
+  category: x11-libs
+- name: libXdmcp
+  version: '>=0'
+  category: x11-libs
+- name: libXinerama
+  version: '>=0'
+  category: x11-libs
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs

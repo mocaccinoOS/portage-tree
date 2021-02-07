@@ -1,0 +1,38 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: anthy
+  version: '>=0'
+  category: app-i18n
+- name: aspell
+  version: '>=0'
+  category: app-text
+- name: m17n-db
+  version: '>=0'
+  category: dev-db
+- name: fribidi
+  version: '>=0'
+  category: dev-libs
+- name: libotf
+  version: '>=0'
+  category: dev-libs
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: gd
+  version: '>=0'
+  category: media-libs-2
+- name: libXft
+  version: '>=0'
+  category: x11-libs

@@ -51,6 +51,7 @@ reposcan_disabled_use_flags:
   - elibc_Darwin
   - elibc_SunOS
   - elibc_FreeBSD
+  - elibc_musl
   - elogind
   - libressl
   - gtk-doc

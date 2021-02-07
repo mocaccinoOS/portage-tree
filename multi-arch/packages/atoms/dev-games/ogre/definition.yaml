@@ -1,0 +1,66 @@
+name: ogre
+version: 1.9.0
+category: dev-games
+use_flags:
+- -doc
+- boost
+- cg
+- freeimage
+- gl3plus
+- gles2
+- gles3
+- ois
+- poco
+- tbb
+- threads
+- tools
+- zip
+requires:
+- name: tbb
+  version: '>=0'
+  category: dev-cpp
+- name: ois
+  version: '>=0'
+  category: dev-games
+- name: boost
+  version: '>=0'
+  category: dev-libs
+- name: poco
+  version: '>=0'
+  category: dev-libs
+- name: tinyxml
+  version: '>=0'
+  category: dev-libs
+- name: zziplib
+  version: '>=0'
+  category: dev-libs
+- name: nvidia-cg-toolkit
+  version: '>=0'
+  category: media-gfx
+- name: freeimage
+  version: '>=0'
+  category: media-libs
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: mesa
+  version: '>=0'
+  category: media-libs
+- name: libXaw
+  version: '>=0'
+  category: x11-libs
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+description: Object-oriented Graphics Rendering Engine
+uri:
+- https://www.ogre3d.org/
+license: MIT public-domain
+labels:
+  DEPEND: media-libs/freetype:2 virtual/opengl virtual/glu x11-libs/libX11 x11-libs/libXaw x11-libs/libXrandr x11-libs/libXt boost? ( dev-libs/boost:= ) cg? ( media-gfx/nvidia-cg-toolkit ) freeimage? ( media-libs/freeimage ) gles2? ( >=media-libs/mesa-9.0.0[gles2] ) gles3? ( >=media-libs/mesa-10.0.0[gles2] ) gl3plus? ( >=media-libs/mesa-9.2.5 ) ois? ( dev-games/ois ) threads? ( poco? ( dev-libs/poco ) tbb? ( dev-cpp/tbb ) ) tools? ( dev-libs/tinyxml[stl] ) zip? ( sys-libs/zlib dev-libs/zziplib ) virtual/pkgconfig x11-base/xorg-proto doc? ( app-doc/doxygen ) sys-devel/make >=dev-util/cmake-3.9.6
+  IUSE: +boost cg doc double-precision examples +freeimage gl3plus gles2 gles3 ois +opengl poco profile tbb threads tools +zip
+  RDEPEND: media-libs/freetype:2 virtual/opengl virtual/glu x11-libs/libX11 x11-libs/libXaw x11-libs/libXrandr x11-libs/libXt boost? ( dev-libs/boost:= ) cg? ( media-gfx/nvidia-cg-toolkit ) freeimage? ( media-libs/freeimage ) gles2? ( >=media-libs/mesa-9.0.0[gles2] ) gles3? ( >=media-libs/mesa-10.0.0[gles2] ) gl3plus? ( >=media-libs/mesa-9.2.5 ) ois? ( dev-games/ois ) threads? ( poco? ( dev-libs/poco ) tbb? ( dev-cpp/tbb ) ) tools? ( dev-libs/tinyxml[stl] ) zip? ( sys-libs/zlib dev-libs/zziplib )
+  emerge.packages: dev-games/ogre
+  kit: gentoo
+  original.package.name: dev-games/ogre
+  original.package.version: 1.9.0-r1

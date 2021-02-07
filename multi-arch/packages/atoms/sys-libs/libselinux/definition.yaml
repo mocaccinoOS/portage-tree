@@ -2,21 +2,18 @@ name: libselinux
 version: "3.0"
 category: sys-libs
 use_flags:
+- -elibc_musl
 - -python_targets_python3_6
 - -python_targets_python3_8
 - -python_targets_python3_9
 - -ruby_targets_ruby24
 - -ruby_targets_ruby25
-- elibc_musl
 - pcre2
 - python
 - python_targets_python3_7
 - ruby
 - ruby_targets_ruby26
 requires:
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
@@ -29,9 +26,6 @@ requires:
 - name: libpcre2
   version: '>=0'
   category: dev-libs
-- name: fts-standalone
-  version: '>=0'
-  category: sys-libs
 - name: libsepol
   version: '>=0'
   category: sys-libs

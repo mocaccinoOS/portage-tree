@@ -2,7 +2,7 @@ name: libtirpc
 version: 1.2.6
 category: net-libs
 use_flags:
-- elibc_musl
+- -elibc_musl
 - kerberos
 description: Transport Independent RPC library (SunRPC replacement)
 uri:

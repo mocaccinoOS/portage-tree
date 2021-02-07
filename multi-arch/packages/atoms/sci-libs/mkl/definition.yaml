@@ -1,0 +1,25 @@
+name: mkl
+version: 2020.4.304
+category: sci-libs
+requires:
+- name: eselect-blas
+  version: '>=0'
+  category: app-eselect
+- name: eselect-lapack
+  version: '>=0'
+  category: app-eselect
+- name: libomp
+  version: '>=0'
+  category: sys-libs
+description: Intel Math Kernel Library
+uri:
+- https://software.intel.com/en-us/intel-mkl
+license: ISSL
+labels:
+  BDEPEND: '>=app-arch/rpm2targz-9.0.0.3g'
+  IUSE: static-libs abi_x86_32 abi_x86_64
+  RDEPEND: app-eselect/eselect-blas app-eselect/eselect-lapack sys-libs/libomp[abi_x86_32(-)?,abi_x86_64(-)?]
+  emerge.packages: sci-libs/mkl
+  kit: gentoo
+  original.package.name: sci-libs/mkl
+  original.package.version: 2020.4.304

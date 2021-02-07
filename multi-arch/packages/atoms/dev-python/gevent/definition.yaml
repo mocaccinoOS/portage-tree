@@ -1,0 +1,41 @@
+name: gevent
+version: 20.6.2
+category: dev-python
+use_flags:
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- -test
+- python_targets_python3_7
+requires:
+- name: libev
+  version: '>=0'
+  category: dev-libs
+- name: libuv
+  version: '>=0'
+  category: dev-libs
+- name: greenlet
+  version: '>=0'
+  category: dev-python
+- name: zope-event
+  version: '>=0'
+  category: dev-python
+- name: zope-interface
+  version: '>=0'
+  category: dev-python
+- name: c-ares
+  version: '>=0'
+  category: net-dns
+description: Coroutine-based network library
+uri:
+- https://www.gevent.org/ https://pypi.org/project/gevent/
+license: MIT
+labels:
+  BDEPEND: doc? ( || ( ( dev-lang/python:3.9[ssl(+),threads(+)] dev-python/sphinx[python_targets_python3_9(-),python_single_target_python3_9(+)] ) ( dev-lang/python:3.8[ssl(+),threads(+)] dev-python/sphinx[python_targets_python3_8(-),python_single_target_python3_8(+)] ) ( dev-lang/python:3.7[ssl(+),threads(+)] dev-python/sphinx[python_targets_python3_7(-),python_single_target_python3_7(+)] ) ( dev-lang/python:3.6[ssl(+),threads(+)] dev-python/sphinx[python_targets_python3_6(-),python_single_target_python3_6(+)] ) ) ) python_targets_python3_6? ( dev-lang/python:3.6[ssl(+),threads(+)] ) python_targets_python3_7? ( dev-lang/python:3.7[ssl(+),threads(+)] ) python_targets_python3_8? ( dev-lang/python:3.8[ssl(+),threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[ssl(+),threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] >=dev-python/setuptools-42.0.2[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+  DEPEND: '>=dev-libs/libev-4.23:= dev-libs/libuv:= >=net-dns/c-ares-1.12:= >=dev-python/greenlet-0.4.14 dev-python/zope-event[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] dev-python/zope-interface[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] virtual/python-greenlet[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] test? ( dev-python/psutil[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] dev-python/requests[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] )'
+  IUSE: doc examples test doc python_targets_python3_6 python_targets_python3_7 python_targets_python3_8 python_targets_python3_9
+  RDEPEND: '>=dev-libs/libev-4.23:= dev-libs/libuv:= >=net-dns/c-ares-1.12:= >=dev-python/greenlet-0.4.14 dev-python/zope-event[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] dev-python/zope-interface[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] virtual/python-greenlet[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] python_targets_python3_6? ( dev-lang/python:3.6[ssl(+),threads(+)] ) python_targets_python3_7? ( dev-lang/python:3.7[ssl(+),threads(+)] ) python_targets_python3_8? ( dev-lang/python:3.8[ssl(+),threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[ssl(+),threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] >=dev-python/setuptools-42.0.2[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]'
+  emerge.packages: dev-python/gevent
+  kit: gentoo
+  original.package.name: dev-python/gevent
+  original.package.version: 20.6.2-r1

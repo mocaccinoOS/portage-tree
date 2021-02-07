@@ -1,0 +1,20 @@
+name: liblockfile
+version: "1.16"
+category: net-libs
+requires:
+- name: mail
+  version: '>=0'
+  category: acct-group
+description: Implements functions designed to lock the standard mailboxes
+uri:
+- https://github.com/miquels/liblockfile
+license: LGPL-2
+labels:
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: acct-group/mail
+  IUSE: static-libs
+  RDEPEND: acct-group/mail
+  emerge.packages: net-libs/liblockfile
+  kit: gentoo
+  original.package.name: net-libs/liblockfile
+  original.package.version: "1.16"

@@ -1,0 +1,18 @@
+name: raspberrypi-userland-bin
+version: "1.20190709"
+category: media-libs
+requires:
+- name: raspberrypi-userland
+  version: '>=0'
+  category: media-libs
+description: Raspberry Pi userspace tools and libraries
+uri:
+- https://github.com/raspberrypi/firmware
+license: BSD GPL-2 raspberrypi-videocore-bin
+labels:
+  IUSE: +hardfp examples
+  RDEPEND: '!media-libs/raspberrypi-userland'
+  emerge.packages: media-libs/raspberrypi-userland-bin
+  kit: gentoo
+  original.package.name: media-libs/raspberrypi-userland-bin
+  original.package.version: "1.20190709"

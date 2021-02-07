@@ -39,9 +39,6 @@ requires:
 - name: curl
   version: '>=0'
   category: net-misc
-- name: fts-standalone
-  version: '>=0'
-  category: sys-libs
 - name: ncurses
   version: '>=0'
   category: sys-libs

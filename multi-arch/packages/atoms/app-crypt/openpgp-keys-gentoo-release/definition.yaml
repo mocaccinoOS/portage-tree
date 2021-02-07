@@ -1,0 +1,16 @@
+name: openpgp-keys-gentoo-release
+version: "20200704"
+category: app-crypt
+use_flags:
+- -test
+description: OpenPGP keys used for Gentoo releases (snapshots, stages)
+uri:
+- https://www.gentoo.org/downloads/signatures/
+license: public-domain
+labels:
+  DEPEND: test? ( app-crypt/gnupg )
+  IUSE: test
+  emerge.packages: app-crypt/openpgp-keys-gentoo-release
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-gentoo-release
+  original.package.version: "20200704"

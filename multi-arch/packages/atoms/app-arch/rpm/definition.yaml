@@ -29,9 +29,6 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
