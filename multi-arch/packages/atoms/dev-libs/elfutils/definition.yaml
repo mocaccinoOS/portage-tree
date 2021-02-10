@@ -13,9 +13,6 @@ requires:
 - name: xz-utils
   version: '>=0'
   category: app-arch
-- name: libelf
-  version: '>=0'
-  category: dev-libs
 - name: zlib
   version: '>=0'
   category: sys-libs
@@ -25,9 +22,16 @@ uri:
 license: '|| ( GPL-2+ LGPL-3+ ) utils? ( GPL-3+ )'
 labels:
   BDEPEND: nls? ( sys-devel/gettext ) >=sys-devel/flex-2.5.4a sys-devel/m4
-  DEPEND: '>=sys-libs/zlib-1.2.8-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] bzip2? ( >=app-arch/bzip2-1.0.6-r4[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) lzma? ( >=app-arch/xz-utils-5.0.5-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) !dev-libs/libelf valgrind? ( dev-util/valgrind )'
-  IUSE: bzip2 lzma nls static-libs test +threads +utils valgrind abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
-  RDEPEND: '>=sys-libs/zlib-1.2.8-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] bzip2? ( >=app-arch/bzip2-1.0.6-r4[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) lzma? ( >=app-arch/xz-utils-5.0.5-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] ) !dev-libs/libelf'
+  DEPEND: '>=sys-libs/zlib-1.2.8-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    bzip2? ( >=app-arch/bzip2-1.0.6-r4[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) lzma? ( >=app-arch/xz-utils-5.0.5-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) !dev-libs/libelf valgrind? ( dev-util/valgrind )'
+  IUSE: bzip2 lzma nls static-libs test +threads +utils valgrind abi_x86_32 abi_x86_64
+    abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '>=sys-libs/zlib-1.2.8-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    bzip2? ( >=app-arch/bzip2-1.0.6-r4[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) lzma? ( >=app-arch/xz-utils-5.0.5-r1[static-libs?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) !dev-libs/libelf'
   emerge.packages: dev-libs/elfutils
   kit: gentoo
   original.package.name: dev-libs/elfutils

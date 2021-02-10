@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: ivtv-utils
-  version: '>=0'
-  category: media-tv
 - name: gettext
   version: '>=0'
   category: sys-devel

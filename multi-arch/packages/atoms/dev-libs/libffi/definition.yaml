@@ -9,7 +9,8 @@ uri:
 license: MIT
 labels:
   BDEPEND: test? ( dev-util/dejagnu )
-  IUSE: debug pax_kernel static-libs test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  IUSE: debug pax_kernel static-libs test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32
+    abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
   emerge.packages: dev-libs/libffi
   kit: gentoo
   original.package.name: dev-libs/libffi

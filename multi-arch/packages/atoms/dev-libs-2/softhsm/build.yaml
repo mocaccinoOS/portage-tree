@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: softhsm
+- name: sqlite
   version: '>=0'
-  category: dev-libs-2
+  category: dev-db-3
+- name: gcc
+  version: '>=0'
+  category: sys-devel-9.3.0

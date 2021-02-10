@@ -15,3 +15,6 @@ requires:
 - name: attr
   version: '>=0'
   category: sys-apps
+- name: gettext
+  version: '>=0'
+  category: sys-devel

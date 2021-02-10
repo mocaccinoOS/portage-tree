@@ -31,10 +31,23 @@ uri:
 - https://sourceware.org/docbook-tools/
 license: GPL-2
 labels:
-  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
-  DEPEND: '>=dev-lang/perl-5 app-text/docbook-dsssl-stylesheets app-text/openjade dev-perl/SGMLSpm ~app-text/docbook-xml-simple-dtd-4.1.2.4 ~app-text/docbook-xml-simple-dtd-1.0 app-text/docbook-xml-dtd ~app-text/docbook-sgml-dtd-3.0 ~app-text/docbook-sgml-dtd-3.1 ~app-text/docbook-sgml-dtd-4.0 ~app-text/docbook-sgml-dtd-4.1 ~app-text/docbook-sgml-dtd-4.2 ~app-text/docbook-sgml-dtd-4.4 jadetex? ( dev-texlive/texlive-formatsextra ) userland_GNU? ( sys-apps/which ) || ( www-client/lynx www-client/links www-client/elinks virtual/w3m )'
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: '>=dev-lang/perl-5 app-text/docbook-dsssl-stylesheets app-text/openjade
+    dev-perl/SGMLSpm ~app-text/docbook-xml-simple-dtd-4.1.2.4 ~app-text/docbook-xml-simple-dtd-1.0
+    app-text/docbook-xml-dtd ~app-text/docbook-sgml-dtd-3.0 ~app-text/docbook-sgml-dtd-3.1
+    ~app-text/docbook-sgml-dtd-4.0 ~app-text/docbook-sgml-dtd-4.1 ~app-text/docbook-sgml-dtd-4.2
+    ~app-text/docbook-sgml-dtd-4.4 jadetex? ( dev-texlive/texlive-formatsextra ) userland_GNU?
+    ( sys-apps/which ) || ( www-client/lynx www-client/links www-client/elinks virtual/w3m
+    )'
   IUSE: jadetex
-  RDEPEND: '>=dev-lang/perl-5 app-text/docbook-dsssl-stylesheets app-text/openjade dev-perl/SGMLSpm ~app-text/docbook-xml-simple-dtd-4.1.2.4 ~app-text/docbook-xml-simple-dtd-1.0 app-text/docbook-xml-dtd ~app-text/docbook-sgml-dtd-3.0 ~app-text/docbook-sgml-dtd-3.1 ~app-text/docbook-sgml-dtd-4.0 ~app-text/docbook-sgml-dtd-4.1 ~app-text/docbook-sgml-dtd-4.2 ~app-text/docbook-sgml-dtd-4.4 jadetex? ( dev-texlive/texlive-formatsextra ) userland_GNU? ( sys-apps/which ) || ( www-client/lynx www-client/links www-client/elinks virtual/w3m )'
+  RDEPEND: '>=dev-lang/perl-5 app-text/docbook-dsssl-stylesheets app-text/openjade
+    dev-perl/SGMLSpm ~app-text/docbook-xml-simple-dtd-4.1.2.4 ~app-text/docbook-xml-simple-dtd-1.0
+    app-text/docbook-xml-dtd ~app-text/docbook-sgml-dtd-3.0 ~app-text/docbook-sgml-dtd-3.1
+    ~app-text/docbook-sgml-dtd-4.0 ~app-text/docbook-sgml-dtd-4.1 ~app-text/docbook-sgml-dtd-4.2
+    ~app-text/docbook-sgml-dtd-4.4 jadetex? ( dev-texlive/texlive-formatsextra ) userland_GNU?
+    ( sys-apps/which ) || ( www-client/lynx www-client/links www-client/elinks virtual/w3m
+    )'
   emerge.packages: app-text/docbook-sgml-utils
   kit: gentoo
   original.package.name: app-text/docbook-sgml-utils

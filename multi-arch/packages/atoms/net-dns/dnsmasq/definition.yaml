@@ -2,6 +2,7 @@ name: dnsmasq
 version: "2.82"
 category: net-dns
 use_flags:
+- -selinux
 - conntrack
 - dbus
 - dnssec
@@ -9,7 +10,6 @@ use_flags:
 - libidn2
 - lua
 - nls
-- selinux
 - static
 requires:
 - name: dnsmasq
@@ -30,9 +30,6 @@ requires:
 - name: libnetfilter_conntrack
   version: '>=0'
   category: net-libs
-- name: selinux-dnsmasq
-  version: '>=0'
-  category: sec-policy
 - name: dbus
   version: '>=0'
   category: sys-apps
@@ -45,9 +42,18 @@ uri:
 license: '|| ( GPL-2 GPL-3 )'
 labels:
   BDEPEND: app-arch/xz-utils virtual/pkgconfig nls? ( sys-devel/gettext ) virtual/pkgconfig
-  DEPEND: acct-group/dnsmasq acct-user/dnsmasq dbus? ( sys-apps/dbus:= ) idn? ( !libidn2? ( net-dns/libidn:0= ) libidn2? ( >=net-dns/libidn2-2.0:= ) ) lua? ( dev-lang/lua:* ) conntrack? ( net-libs/libnetfilter_conntrack:= ) nls? ( sys-devel/gettext ) dnssec? ( dev-libs/nettle:=[gmp] static? ( >=dev-libs/nettle-3.4[static-libs(+)] ) )
-  IUSE: auth-dns conntrack dbus +dhcp dhcp-tools dnssec +dumpfile id idn libidn2 +inotify ipv6 lua nls script selinux static tftp
-  RDEPEND: acct-group/dnsmasq acct-user/dnsmasq dbus? ( sys-apps/dbus:= ) idn? ( !libidn2? ( net-dns/libidn:0= ) libidn2? ( >=net-dns/libidn2-2.0:= ) ) lua? ( dev-lang/lua:* ) conntrack? ( net-libs/libnetfilter_conntrack:= ) nls? ( sys-devel/gettext ) dnssec? ( !static? ( >=dev-libs/nettle-3.4:=[gmp] ) ) selinux? ( sec-policy/selinux-dnsmasq )
+  DEPEND: acct-group/dnsmasq acct-user/dnsmasq dbus? ( sys-apps/dbus:= ) idn? ( !libidn2?
+    ( net-dns/libidn:0= ) libidn2? ( >=net-dns/libidn2-2.0:= ) ) lua? ( dev-lang/lua:*
+    ) conntrack? ( net-libs/libnetfilter_conntrack:= ) nls? ( sys-devel/gettext )
+    dnssec? ( dev-libs/nettle:=[gmp] static? ( >=dev-libs/nettle-3.4[static-libs(+)]
+    ) )
+  IUSE: auth-dns conntrack dbus +dhcp dhcp-tools dnssec +dumpfile id idn libidn2 +inotify
+    ipv6 lua nls script selinux static tftp
+  RDEPEND: acct-group/dnsmasq acct-user/dnsmasq dbus? ( sys-apps/dbus:= ) idn? ( !libidn2?
+    ( net-dns/libidn:0= ) libidn2? ( >=net-dns/libidn2-2.0:= ) ) lua? ( dev-lang/lua:*
+    ) conntrack? ( net-libs/libnetfilter_conntrack:= ) nls? ( sys-devel/gettext )
+    dnssec? ( !static? ( >=dev-libs/nettle-3.4:=[gmp] ) ) selinux? ( sec-policy/selinux-dnsmasq
+    )
   emerge.packages: net-dns/dnsmasq
   kit: gentoo
   original.package.name: net-dns/dnsmasq

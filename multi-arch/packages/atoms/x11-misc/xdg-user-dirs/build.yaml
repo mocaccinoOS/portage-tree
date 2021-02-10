@@ -18,6 +18,9 @@ requires:
 - name: libxslt
   version: '>=0'
   category: dev-libs
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
 - name: gettext
   version: '>=0'
   category: sys-devel

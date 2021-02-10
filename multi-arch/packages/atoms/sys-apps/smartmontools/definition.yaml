@@ -2,9 +2,9 @@ name: smartmontools
 version: "7.1"
 category: sys-apps
 use_flags:
+- -selinux
 - caps
 - daemon
-- selinux
 - static
 - systemd
 - update_drivedb
@@ -12,23 +12,27 @@ requires:
 - name: gnupg
   version: '>=0'
   category: app-crypt
-- name: selinux-smartmon
-  version: '>=0'
-  category: sec-policy
 - name: systemd
   version: '>=0'
   category: sys-apps
 - name: libcap-ng
   version: '>=0'
   category: sys-libs
-description: Tools to monitor storage systems to provide advanced warning of disk degradation
+description: Tools to monitor storage systems to provide advanced warning of disk
+  degradation
 uri:
 - https://www.smartmontools.org
 license: GPL-2
 labels:
-  DEPEND: caps? ( static? ( sys-libs/libcap-ng[static-libs] ) !static? ( sys-libs/libcap-ng ) ) selinux? ( sys-libs/libselinux ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
+  DEPEND: caps? ( static? ( sys-libs/libcap-ng[static-libs] ) !static? ( sys-libs/libcap-ng
+    ) ) selinux? ( sys-libs/libselinux ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+    virtual/pkgconfig
   IUSE: caps +daemon selinux static systemd update_drivedb
-  RDEPEND: caps? ( static? ( sys-libs/libcap-ng[static-libs] ) !static? ( sys-libs/libcap-ng ) ) selinux? ( sys-libs/libselinux ) daemon? ( virtual/mailx ) selinux? ( sec-policy/selinux-smartmon ) systemd? ( sys-apps/systemd ) update_drivedb? ( app-crypt/gnupg || ( net-misc/curl net-misc/wget www-client/lynx dev-vcs/subversion ) )
+  RDEPEND: caps? ( static? ( sys-libs/libcap-ng[static-libs] ) !static? ( sys-libs/libcap-ng
+    ) ) selinux? ( sys-libs/libselinux ) daemon? ( virtual/mailx ) selinux? ( sec-policy/selinux-smartmon
+    ) systemd? ( sys-apps/systemd ) update_drivedb? ( app-crypt/gnupg || ( net-misc/curl
+    net-misc/wget www-client/lynx dev-vcs/subversion ) )
   emerge.packages: sys-apps/smartmontools
   kit: gentoo
   original.package.name: sys-apps/smartmontools

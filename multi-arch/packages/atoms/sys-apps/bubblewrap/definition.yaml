@@ -2,7 +2,7 @@ name: bubblewrap
 version: 0.4.1
 category: sys-apps
 use_flags:
-- selinux
+- -selinux
 requires:
 - name: libcap
   version: '>=0'
@@ -10,18 +10,18 @@ requires:
 - name: libseccomp
   version: '>=0'
   category: sys-libs
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 description: Unprivileged sandboxing tool, namespaces-powered chroot-like solution
 uri:
 - https://github.com/containers/bubblewrap/
 license: LGPL-2+
 labels:
-  BDEPEND: app-text/docbook-xml-dtd:4.3 app-text/docbook-xsl-stylesheets dev-libs/libxslt virtual/pkgconfig
-  DEPEND: sys-libs/libseccomp sys-libs/libcap selinux? ( >=sys-libs/libselinux-2.1.9 )
+  BDEPEND: app-text/docbook-xml-dtd:4.3 app-text/docbook-xsl-stylesheets dev-libs/libxslt
+    virtual/pkgconfig
+  DEPEND: sys-libs/libseccomp sys-libs/libcap selinux? ( >=sys-libs/libselinux-2.1.9
+    )
   IUSE: selinux +suid kernel_linux
-  RDEPEND: sys-libs/libseccomp sys-libs/libcap selinux? ( >=sys-libs/libselinux-2.1.9 )
+  RDEPEND: sys-libs/libseccomp sys-libs/libcap selinux? ( >=sys-libs/libselinux-2.1.9
+    )
   emerge.packages: sys-apps/bubblewrap
   kit: gentoo
   original.package.name: sys-apps/bubblewrap

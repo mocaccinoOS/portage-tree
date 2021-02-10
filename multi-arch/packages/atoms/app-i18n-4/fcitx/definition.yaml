@@ -41,15 +41,31 @@ requires:
 - name: xkeyboard-config
   version: '>=0'
   category: x11-misc
-description: Fcitx (Flexible Context-aware Input Tool with eXtension) input method framework
+description: Fcitx (Flexible Context-aware Input Tool with eXtension) input method
+  framework
 uri:
 - https://fcitx-im.org/ https://github.com/fcitx/fcitx
 license: BSD-1 GPL-2+ LGPL-2+ MIT
 labels:
-  BDEPEND: dev-util/glib-utils kde-frameworks/extra-cmake-modules:5 virtual/pkgconfig introspection? ( dev-libs/gobject-introspection ) nls? ( sys-devel/gettext ) dev-util/ninja dev-util/cmake
-  DEPEND: dev-libs/glib:2 sys-apps/dbus sys-apps/util-linux virtual/libiconv virtual/libintl x11-libs/libxkbcommon X? ( x11-libs/libX11 x11-libs/libXfixes x11-libs/libXinerama x11-libs/libXrender xml? ( x11-libs/libxkbfile x11-misc/xkeyboard-config ) ) cairo? ( x11-libs/cairo[X] x11-libs/libXext pango? ( x11-libs/pango ) !pango? ( media-libs/fontconfig ) ) enchant? ( app-text/enchant:0= ) gtk2? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3 ) lua? ( dev-lang/lua:= ) nls? ( sys-devel/gettext ) opencc? ( app-i18n/opencc:0= ) xml? ( app-text/iso-codes dev-libs/libxml2 )
-  IUSE: +X +autostart +cairo debug +enchant gtk2 +gtk3 +introspection lua nls opencc +pango static-libs +table test +xml
-  RDEPEND: dev-libs/glib:2 sys-apps/dbus sys-apps/util-linux virtual/libiconv virtual/libintl x11-libs/libxkbcommon X? ( x11-libs/libX11 x11-libs/libXfixes x11-libs/libXinerama x11-libs/libXrender xml? ( x11-libs/libxkbfile x11-misc/xkeyboard-config ) ) cairo? ( x11-libs/cairo[X] x11-libs/libXext pango? ( x11-libs/pango ) !pango? ( media-libs/fontconfig ) ) enchant? ( app-text/enchant:0= ) gtk2? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3 ) lua? ( dev-lang/lua:= ) nls? ( sys-devel/gettext ) opencc? ( app-i18n/opencc:0= ) xml? ( app-text/iso-codes dev-libs/libxml2 )
+  BDEPEND: dev-util/glib-utils kde-frameworks/extra-cmake-modules:5 virtual/pkgconfig
+    introspection? ( dev-libs/gobject-introspection ) nls? ( sys-devel/gettext ) dev-util/ninja
+    dev-util/cmake
+  DEPEND: dev-libs/glib:2 sys-apps/dbus sys-apps/util-linux virtual/libiconv virtual/libintl
+    x11-libs/libxkbcommon X? ( x11-libs/libX11 x11-libs/libXfixes x11-libs/libXinerama
+    x11-libs/libXrender xml? ( x11-libs/libxkbfile x11-misc/xkeyboard-config ) ) cairo?
+    ( x11-libs/cairo[X] x11-libs/libXext pango? ( x11-libs/pango ) !pango? ( media-libs/fontconfig
+    ) ) enchant? ( app-text/enchant:0= ) gtk2? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3
+    ) lua? ( dev-lang/lua:= ) nls? ( sys-devel/gettext ) opencc? ( app-i18n/opencc:0=
+    ) xml? ( app-text/iso-codes dev-libs/libxml2 )
+  IUSE: +X +autostart +cairo debug +enchant gtk2 +gtk3 +introspection lua nls opencc
+    +pango static-libs +table test +xml
+  RDEPEND: dev-libs/glib:2 sys-apps/dbus sys-apps/util-linux virtual/libiconv virtual/libintl
+    x11-libs/libxkbcommon X? ( x11-libs/libX11 x11-libs/libXfixes x11-libs/libXinerama
+    x11-libs/libXrender xml? ( x11-libs/libxkbfile x11-misc/xkeyboard-config ) ) cairo?
+    ( x11-libs/cairo[X] x11-libs/libXext pango? ( x11-libs/pango ) !pango? ( media-libs/fontconfig
+    ) ) enchant? ( app-text/enchant:0= ) gtk2? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3
+    ) lua? ( dev-lang/lua:= ) nls? ( sys-devel/gettext ) opencc? ( app-i18n/opencc:0=
+    ) xml? ( app-text/iso-codes dev-libs/libxml2 )
   emerge.packages: app-i18n/fcitx:4
   kit: gentoo
   original.package.name: app-i18n/fcitx

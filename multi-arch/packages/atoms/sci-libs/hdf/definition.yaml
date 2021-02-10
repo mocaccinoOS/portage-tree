@@ -17,9 +17,13 @@ uri:
 - https://www.hdfgroup.org/hdf4.html
 license: NCSA-HDF
 labels:
-  DEPEND: net-libs/libtirpc sys-libs/zlib virtual/jpeg:0 szip? ( virtual/szip ) test? ( virtual/szip ) fortran? ( virtual/fortran ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: net-libs/libtirpc sys-libs/zlib virtual/jpeg:0 szip? ( virtual/szip ) test?
+    ( virtual/szip ) fortran? ( virtual/fortran ) >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69
+    >=sys-devel/libtool-2.4
   IUSE: examples fortran szip static-libs test
-  RDEPEND: net-libs/libtirpc sys-libs/zlib virtual/jpeg:0 szip? ( virtual/szip ) fortran? ( virtual/fortran )
+  RDEPEND: net-libs/libtirpc sys-libs/zlib virtual/jpeg:0 szip? ( virtual/szip ) fortran?
+    ( virtual/fortran )
   emerge.packages: sci-libs/hdf
   kit: gentoo
   original.package.name: sci-libs/hdf

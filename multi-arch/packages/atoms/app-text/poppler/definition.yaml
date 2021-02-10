@@ -41,9 +41,20 @@ uri:
 license: GPL-2
 labels:
   BDEPEND: dev-util/glib-utils virtual/pkgconfig dev-util/ninja dev-util/cmake
-  DEPEND: media-libs/fontconfig media-libs/freetype sys-libs/zlib cairo? ( dev-libs/glib:2 x11-libs/cairo introspection? ( dev-libs/gobject-introspection:= ) ) curl? ( net-misc/curl ) jpeg? ( virtual/jpeg:0 ) jpeg2k? ( >=media-libs/openjpeg-2.3.0-r1:2= ) lcms? ( media-libs/lcms:2 ) nss? ( >=dev-libs/nss-3.19:0 ) png? ( media-libs/libpng:0= ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtxml:5 ) tiff? ( media-libs/tiff:0 )
-  IUSE: cairo cjk curl +cxx debug doc +introspection +jpeg +jpeg2k +lcms nss png qt5 tiff +utils
-  RDEPEND: media-libs/fontconfig media-libs/freetype sys-libs/zlib cairo? ( dev-libs/glib:2 x11-libs/cairo introspection? ( dev-libs/gobject-introspection:= ) ) curl? ( net-misc/curl ) jpeg? ( virtual/jpeg:0 ) jpeg2k? ( >=media-libs/openjpeg-2.3.0-r1:2= ) lcms? ( media-libs/lcms:2 ) nss? ( >=dev-libs/nss-3.19:0 ) png? ( media-libs/libpng:0= ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtxml:5 ) tiff? ( media-libs/tiff:0 ) cjk? ( app-text/poppler-data )
+  DEPEND: media-libs/fontconfig media-libs/freetype sys-libs/zlib cairo? ( dev-libs/glib:2
+    x11-libs/cairo introspection? ( dev-libs/gobject-introspection:= ) ) curl? ( net-misc/curl
+    ) jpeg? ( virtual/jpeg:0 ) jpeg2k? ( >=media-libs/openjpeg-2.3.0-r1:2= ) lcms?
+    ( media-libs/lcms:2 ) nss? ( >=dev-libs/nss-3.19:0 ) png? ( media-libs/libpng:0=
+    ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtxml:5 ) tiff? ( media-libs/tiff:0
+    )
+  IUSE: cairo cjk curl +cxx debug doc +introspection +jpeg +jpeg2k +lcms nss png qt5
+    tiff +utils
+  RDEPEND: media-libs/fontconfig media-libs/freetype sys-libs/zlib cairo? ( dev-libs/glib:2
+    x11-libs/cairo introspection? ( dev-libs/gobject-introspection:= ) ) curl? ( net-misc/curl
+    ) jpeg? ( virtual/jpeg:0 ) jpeg2k? ( >=media-libs/openjpeg-2.3.0-r1:2= ) lcms?
+    ( media-libs/lcms:2 ) nss? ( >=dev-libs/nss-3.19:0 ) png? ( media-libs/libpng:0=
+    ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtxml:5 ) tiff? ( media-libs/tiff:0
+    ) cjk? ( app-text/poppler-data )
   emerge.packages: app-text/poppler
   kit: gentoo
   original.package.name: app-text/poppler

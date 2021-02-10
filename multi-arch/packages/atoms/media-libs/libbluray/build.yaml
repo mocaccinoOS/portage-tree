@@ -21,3 +21,12 @@ requires:
 - name: fontconfig
   version: '>=0'
   category: media-libs-1.0
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2

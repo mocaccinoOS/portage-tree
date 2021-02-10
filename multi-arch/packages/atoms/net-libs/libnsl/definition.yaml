@@ -5,6 +5,7 @@ requires:
 - name: libtirpc
   version: '>=0'
   category: net-libs
+conflicts:
 - name: glibc
   version: '>=0'
   category: sys-libs-2.2
@@ -14,8 +15,10 @@ uri:
 license: LGPL-2.1+
 labels:
   DEPEND: '>=net-libs/libtirpc-1.2.0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]'
-  IUSE: abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
-  RDEPEND: '>=net-libs/libtirpc-1.2.0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?] !<sys-libs/glibc-2.26'
+  IUSE: abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32
+    abi_s390_64
+  RDEPEND: '>=net-libs/libtirpc-1.2.0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    !<sys-libs/glibc-2.26'
   emerge.packages: net-libs/libnsl
   kit: gentoo
   original.package.name: net-libs/libnsl

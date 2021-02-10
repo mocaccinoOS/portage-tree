@@ -27,6 +27,9 @@ requires:
 - name: rtmpdump
   version: '>=0'
   category: media-video
+- name: libidn2
+  version: '>=0'
+  category: net-dns
 - name: libssh2
   version: '>=0'
   category: net-libs

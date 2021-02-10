@@ -13,9 +13,11 @@ uri:
 - https://cgit.freedesktop.org/libqmi/
 license: LGPL-2
 labels:
-  DEPEND: '>=dev-libs/glib-2.36 dev-libs/libgudev mbim? ( >=net-libs/libmbim-1.18.0 ) doc? ( dev-util/gtk-doc ) virtual/pkgconfig'
+  DEPEND: '>=dev-libs/glib-2.36 dev-libs/libgudev mbim? ( >=net-libs/libmbim-1.18.0
+    ) doc? ( dev-util/gtk-doc ) virtual/pkgconfig'
   IUSE: doc +mbim static-libs
-  RDEPEND: '>=dev-libs/glib-2.36 dev-libs/libgudev mbim? ( >=net-libs/libmbim-1.18.0 )'
+  RDEPEND: '>=dev-libs/glib-2.36 dev-libs/libgudev mbim? ( >=net-libs/libmbim-1.18.0
+    )'
   emerge.packages: net-libs/libqmi
   kit: gentoo
   original.package.name: net-libs/libqmi

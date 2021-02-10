@@ -20,9 +20,13 @@ uri:
 license: GPL-2
 labels:
   BDEPEND: virtual/pkgconfig virtual/pkgconfig virtual/pkgconfig
-  DEPEND: dev-libs/json-c:= dev-libs/libaio dev-libs/userspace-rcu:= >=sys-fs/lvm2-2.02.45 >=virtual/libudev-232-r3 sys-libs/readline:0= rbd? ( sys-cluster/ceph ) systemd? ( sys-apps/systemd )
+  DEPEND: dev-libs/json-c:= dev-libs/libaio dev-libs/userspace-rcu:= >=sys-fs/lvm2-2.02.45
+    >=virtual/libudev-232-r3 sys-libs/readline:0= rbd? ( sys-cluster/ceph ) systemd?
+    ( sys-apps/systemd )
   IUSE: systemd rbd kernel_linux
-  RDEPEND: dev-libs/json-c:= dev-libs/libaio dev-libs/userspace-rcu:= >=sys-fs/lvm2-2.02.45 >=virtual/libudev-232-r3 sys-libs/readline:0= rbd? ( sys-cluster/ceph ) systemd? ( sys-apps/systemd )
+  RDEPEND: dev-libs/json-c:= dev-libs/libaio dev-libs/userspace-rcu:= >=sys-fs/lvm2-2.02.45
+    >=virtual/libudev-232-r3 sys-libs/readline:0= rbd? ( sys-cluster/ceph ) systemd?
+    ( sys-apps/systemd )
   emerge.packages: sys-fs/multipath-tools
   kit: gentoo
   original.package.name: sys-fs/multipath-tools

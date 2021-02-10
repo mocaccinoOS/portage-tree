@@ -18,6 +18,12 @@ requires:
 - name: rtkit
   version: '>=0'
   category: acct-user
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: polkit
   version: '>=0'
   category: sys-auth
+- name: libcap
+  version: '>=0'
+  category: sys-libs

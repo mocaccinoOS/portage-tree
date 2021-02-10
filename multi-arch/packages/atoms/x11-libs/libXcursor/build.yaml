@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: libX11
+  version: '>=0'
+  category: x11-libs
 - name: libXfixes
   version: '>=0'
   category: x11-libs

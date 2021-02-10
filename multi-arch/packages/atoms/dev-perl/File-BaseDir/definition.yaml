@@ -12,9 +12,12 @@ uri:
 - https://metacpan.org/release/File-BaseDir
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: virtual/perl-Carp virtual/perl-Exporter virtual/perl-File-Spec dev-perl/IPC-System-Simple dev-perl/Module-Build test? ( dev-perl/File-Which virtual/perl-File-Temp virtual/perl-Test-Simple ) dev-lang/perl
+  DEPEND: virtual/perl-Carp virtual/perl-Exporter virtual/perl-File-Spec dev-perl/IPC-System-Simple
+    dev-perl/Module-Build test? ( dev-perl/File-Which virtual/perl-File-Temp virtual/perl-Test-Simple
+    ) dev-lang/perl
   IUSE: test
-  RDEPEND: virtual/perl-Carp virtual/perl-Exporter virtual/perl-File-Spec dev-perl/IPC-System-Simple dev-lang/perl:=
+  RDEPEND: virtual/perl-Carp virtual/perl-Exporter virtual/perl-File-Spec dev-perl/IPC-System-Simple
+    dev-lang/perl:=
   emerge.packages: dev-perl/File-BaseDir
   kit: gentoo
   original.package.name: dev-perl/File-BaseDir

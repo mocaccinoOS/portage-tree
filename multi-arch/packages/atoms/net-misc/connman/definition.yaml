@@ -26,6 +26,9 @@ requires:
 - name: iptables
   version: '>=0'
   category: net-firewall
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: ofono
   version: '>=0'
   category: net-misc
@@ -52,10 +55,25 @@ uri:
 - https://01.org/connman
 license: GPL-2
 labels:
-  BDEPEND: virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig
-  DEPEND: '>=dev-libs/glib-2.16 >=sys-apps/dbus-1.2.24 sys-libs/readline:0= bluetooth? ( net-wireless/bluez ) iptables? ( >=net-firewall/iptables-1.4.8 ) iwd? ( net-wireless/iwd ) l2tp? ( net-dialup/xl2tpd ) nftables? ( >=net-libs/libnftnl-1.0.4:0= >=net-libs/libmnl-1.0.0:0= ) ofono? ( net-misc/ofono ) openconnect? ( net-vpn/openconnect ) openvpn? ( net-vpn/openvpn ) policykit? ( sys-auth/polkit ) pptp? ( net-dialup/pptpclient ) vpnc? ( net-vpn/vpnc ) wifi? ( >=net-wireless/wpa_supplicant-2.0[dbus] ) wireguard? ( >=net-libs/libmnl-1.0.0:0= ) wispr? ( net-libs/gnutls ) >=sys-kernel/linux-headers-2.6.39'
-  IUSE: bluetooth debug doc +ethernet examples iptables iwd l2tp networkmanager +nftables ofono openconnect openvpn policykit pptp tools vpnc +wifi wireguard wispr
-  RDEPEND: '>=dev-libs/glib-2.16 >=sys-apps/dbus-1.2.24 sys-libs/readline:0= bluetooth? ( net-wireless/bluez ) iptables? ( >=net-firewall/iptables-1.4.8 ) iwd? ( net-wireless/iwd ) l2tp? ( net-dialup/xl2tpd ) nftables? ( >=net-libs/libnftnl-1.0.4:0= >=net-libs/libmnl-1.0.0:0= ) ofono? ( net-misc/ofono ) openconnect? ( net-vpn/openconnect ) openvpn? ( net-vpn/openvpn ) policykit? ( sys-auth/polkit ) pptp? ( net-dialup/pptpclient ) vpnc? ( net-vpn/vpnc ) wifi? ( >=net-wireless/wpa_supplicant-2.0[dbus] ) wireguard? ( >=net-libs/libmnl-1.0.0:0= ) wispr? ( net-libs/gnutls ) virtual/tmpfiles'
+  BDEPEND: virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+    virtual/pkgconfig
+  DEPEND: '>=dev-libs/glib-2.16 >=sys-apps/dbus-1.2.24 sys-libs/readline:0= bluetooth?
+    ( net-wireless/bluez ) iptables? ( >=net-firewall/iptables-1.4.8 ) iwd? ( net-wireless/iwd
+    ) l2tp? ( net-dialup/xl2tpd ) nftables? ( >=net-libs/libnftnl-1.0.4:0= >=net-libs/libmnl-1.0.0:0=
+    ) ofono? ( net-misc/ofono ) openconnect? ( net-vpn/openconnect ) openvpn? ( net-vpn/openvpn
+    ) policykit? ( sys-auth/polkit ) pptp? ( net-dialup/pptpclient ) vpnc? ( net-vpn/vpnc
+    ) wifi? ( >=net-wireless/wpa_supplicant-2.0[dbus] ) wireguard? ( >=net-libs/libmnl-1.0.0:0=
+    ) wispr? ( net-libs/gnutls ) >=sys-kernel/linux-headers-2.6.39'
+  IUSE: bluetooth debug doc +ethernet examples iptables iwd l2tp networkmanager +nftables
+    ofono openconnect openvpn policykit pptp tools vpnc +wifi wireguard wispr
+  RDEPEND: '>=dev-libs/glib-2.16 >=sys-apps/dbus-1.2.24 sys-libs/readline:0= bluetooth?
+    ( net-wireless/bluez ) iptables? ( >=net-firewall/iptables-1.4.8 ) iwd? ( net-wireless/iwd
+    ) l2tp? ( net-dialup/xl2tpd ) nftables? ( >=net-libs/libnftnl-1.0.4:0= >=net-libs/libmnl-1.0.0:0=
+    ) ofono? ( net-misc/ofono ) openconnect? ( net-vpn/openconnect ) openvpn? ( net-vpn/openvpn
+    ) policykit? ( sys-auth/polkit ) pptp? ( net-dialup/pptpclient ) vpnc? ( net-vpn/vpnc
+    ) wifi? ( >=net-wireless/wpa_supplicant-2.0[dbus] ) wireguard? ( >=net-libs/libmnl-1.0.0:0=
+    ) wispr? ( net-libs/gnutls ) virtual/tmpfiles'
   emerge.packages: net-misc/connman
   kit: gentoo
   original.package.name: net-misc/connman

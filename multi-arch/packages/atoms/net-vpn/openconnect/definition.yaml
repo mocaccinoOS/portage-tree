@@ -3,8 +3,8 @@ version: "8.09"
 category: net-vpn
 use_flags:
 - -doc
+- -gnutls
 - -test
-- gnutls
 - gssapi
 - libproxy
 - lz4
@@ -18,18 +18,9 @@ requires:
 - name: stoken
   version: '>=0'
   category: app-crypt
-- name: tpm2-tss
+- name: libxml2
   version: '>=0'
-  category: app-crypt
-- name: trousers
-  version: '>=0'
-  category: app-crypt
-- name: ca-certificates
-  version: '>=0'
-  category: app-misc
-- name: gnutls
-  version: '>=0'
-  category: net-libs
+  category: dev-libs-2
 - name: libproxy
   version: '>=0'
   category: net-libs
@@ -44,10 +35,20 @@ uri:
 - http://www.infradead.org/openconnect.html
 license: LGPL-2.1 GPL-2
 labels:
-  BDEPEND: virtual/pkgconfig doc? ( || ( dev-lang/python:3.9[xml] dev-lang/python:3.8[xml] dev-lang/python:3.7[xml] dev-lang/python:3.6[xml] ) sys-apps/groff ) nls? ( sys-devel/gettext ) test? ( net-libs/socket_wrapper net-vpn/ocserv sys-libs/uid_wrapper )
-  DEPEND: dev-libs/libxml2 sys-libs/zlib !gnutls? ( >=dev-libs/openssl-1.0.1h:0= ) gnutls? ( app-crypt/trousers app-misc/ca-certificates dev-libs/nettle >=net-libs/gnutls-3.6.13:0= dev-libs/libtasn1:0= app-crypt/tpm2-tss ) gssapi? ( virtual/krb5 ) libproxy? ( net-libs/libproxy ) lz4? ( app-arch/lz4:= ) nls? ( virtual/libintl ) smartcard? ( sys-apps/pcsc-lite:0= ) stoken? ( app-crypt/stoken )
+  BDEPEND: virtual/pkgconfig doc? ( || ( dev-lang/python:3.9[xml] dev-lang/python:3.8[xml]
+    dev-lang/python:3.7[xml] dev-lang/python:3.6[xml] ) sys-apps/groff ) nls? ( sys-devel/gettext
+    ) test? ( net-libs/socket_wrapper net-vpn/ocserv sys-libs/uid_wrapper )
+  DEPEND: dev-libs/libxml2 sys-libs/zlib !gnutls? ( >=dev-libs/openssl-1.0.1h:0= )
+    gnutls? ( app-crypt/trousers app-misc/ca-certificates dev-libs/nettle >=net-libs/gnutls-3.6.13:0=
+    dev-libs/libtasn1:0= app-crypt/tpm2-tss ) gssapi? ( virtual/krb5 ) libproxy? (
+    net-libs/libproxy ) lz4? ( app-arch/lz4:= ) nls? ( virtual/libintl ) smartcard?
+    ( sys-apps/pcsc-lite:0= ) stoken? ( app-crypt/stoken )
   IUSE: doc +gnutls gssapi libproxy lz4 nls smartcard stoken test kernel_linux
-  RDEPEND: dev-libs/libxml2 sys-libs/zlib !gnutls? ( >=dev-libs/openssl-1.0.1h:0= ) gnutls? ( app-crypt/trousers app-misc/ca-certificates dev-libs/nettle >=net-libs/gnutls-3.6.13:0= dev-libs/libtasn1:0= app-crypt/tpm2-tss ) gssapi? ( virtual/krb5 ) libproxy? ( net-libs/libproxy ) lz4? ( app-arch/lz4:= ) nls? ( virtual/libintl ) smartcard? ( sys-apps/pcsc-lite:0= ) stoken? ( app-crypt/stoken ) sys-apps/iproute2
+  RDEPEND: dev-libs/libxml2 sys-libs/zlib !gnutls? ( >=dev-libs/openssl-1.0.1h:0=
+    ) gnutls? ( app-crypt/trousers app-misc/ca-certificates dev-libs/nettle >=net-libs/gnutls-3.6.13:0=
+    dev-libs/libtasn1:0= app-crypt/tpm2-tss ) gssapi? ( virtual/krb5 ) libproxy? (
+    net-libs/libproxy ) lz4? ( app-arch/lz4:= ) nls? ( virtual/libintl ) smartcard?
+    ( sys-apps/pcsc-lite:0= ) stoken? ( app-crypt/stoken ) sys-apps/iproute2
   emerge.packages: net-vpn/openconnect
   kit: gentoo
   original.package.name: net-vpn/openconnect

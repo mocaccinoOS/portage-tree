@@ -10,7 +10,8 @@ uri:
 - https://metacpan.org/release/Devel-GlobalDestruction
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: '>=dev-perl/Sub-Exporter-Progressive-0.1.11 virtual/perl-ExtUtils-MakeMaker dev-lang/perl'
+  DEPEND: '>=dev-perl/Sub-Exporter-Progressive-0.1.11 virtual/perl-ExtUtils-MakeMaker
+    dev-lang/perl'
   RDEPEND: '>=dev-perl/Sub-Exporter-Progressive-0.1.11 dev-lang/perl:='
   emerge.packages: dev-perl/Devel-GlobalDestruction
   kit: gentoo

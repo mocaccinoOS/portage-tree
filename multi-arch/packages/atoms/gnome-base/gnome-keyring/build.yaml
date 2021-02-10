@@ -30,9 +30,6 @@ requires:
 - name: openssh
   version: '>=0'
   category: net-misc
-- name: selinux-gnome
-  version: '>=0'
-  category: sec-policy
 - name: libcap-ng
   version: '>=0'
   category: sys-libs

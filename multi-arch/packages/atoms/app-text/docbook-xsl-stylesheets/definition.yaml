@@ -16,7 +16,8 @@ uri:
 license: BSD
 labels:
   IUSE: ruby
-  RDEPEND: '>=app-text/build-docbook-catalog-1.1 ruby? ( || ( dev-lang/ruby:2.5 dev-lang/ruby:2.6 ) virtual/rubygems )'
+  RDEPEND: '>=app-text/build-docbook-catalog-1.1 ruby? ( || ( dev-lang/ruby:2.5 dev-lang/ruby:2.6
+    ) virtual/rubygems )'
   emerge.packages: app-text/docbook-xsl-stylesheets
   kit: gentoo
   original.package.name: app-text/docbook-xsl-stylesheets

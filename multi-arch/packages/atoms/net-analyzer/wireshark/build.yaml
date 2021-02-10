@@ -21,6 +21,9 @@ requires:
 - name: snappy
   version: '>=0'
   category: app-arch
+- name: zstd
+  version: '>=0'
+  category: app-arch
 - name: lua
   version: '>=0'
   category: dev-lang
@@ -51,6 +54,9 @@ requires:
 - name: spandsp
   version: '>=0'
   category: media-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: libpcap
   version: '>=0'
   category: net-libs
@@ -63,6 +69,9 @@ requires:
 - name: nghttp2
   version: '>=0'
   category: net-libs
+- name: libcap
+  version: '>=0'
+  category: sys-libs
 - name: xdg-utils
   version: '>=0'
   category: x11-misc

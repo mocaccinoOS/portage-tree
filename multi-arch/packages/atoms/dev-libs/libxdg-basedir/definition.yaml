@@ -8,7 +8,8 @@ uri:
 - https://github.com/devnev/libxdg-basedir
 license: MIT
 labels:
-  DEPEND: doc? ( app-doc/doxygen ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: doc? ( app-doc/doxygen ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
   IUSE: doc static-libs
   emerge.packages: dev-libs/libxdg-basedir
   kit: gentoo

@@ -18,8 +18,10 @@ uri:
 - https://xerces.apache.org/xerces-c/
 license: Apache-2.0
 labels:
-  DEPEND: icu? ( dev-libs/icu:0= ) curl? ( net-misc/curl ) virtual/libiconv doc? ( app-doc/doxygen ) test? ( dev-lang/perl ) dev-util/ninja >=dev-util/cmake-3.9.6
-  IUSE: cpu_flags_x86_sse2 curl doc elibc_Darwin elibc_FreeBSD examples iconv icu static-libs test threads
+  DEPEND: icu? ( dev-libs/icu:0= ) curl? ( net-misc/curl ) virtual/libiconv doc? (
+    app-doc/doxygen ) test? ( dev-lang/perl ) dev-util/ninja >=dev-util/cmake-3.9.6
+  IUSE: cpu_flags_x86_sse2 curl doc elibc_Darwin elibc_FreeBSD examples iconv icu
+    static-libs test threads
   RDEPEND: icu? ( dev-libs/icu:0= ) curl? ( net-misc/curl ) virtual/libiconv
   emerge.packages: dev-libs/xerces-c
   kit: gentoo

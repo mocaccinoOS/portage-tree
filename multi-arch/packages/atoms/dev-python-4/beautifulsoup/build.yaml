@@ -12,18 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: html5lib
-  version: '>=0'
-  category: dev-python
-- name: lxml
-  version: '>=0'
-  category: dev-python
-- name: nose
-  version: '>=0'
-  category: dev-python
-- name: soupsieve
-  version: '>=0'
-  category: dev-python
-- name: sphinx
+- name: setuptools
   version: '>=0'
   category: dev-python

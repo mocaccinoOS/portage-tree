@@ -21,13 +21,13 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
+- name: gettext
+  version: '>=0'
+  category: sys-devel
 - name: db
   version: '>=0'
   category: sys-libs-5.3
 - name: libcap
-  version: '>=0'
-  category: sys-libs
-- name: libselinux
   version: '>=0'
   category: sys-libs
 - name: audit

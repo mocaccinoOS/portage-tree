@@ -18,9 +18,6 @@ requires:
 - name: libid3tag
   version: '>=0'
   category: media-libs
-- name: imlib2_loaders
-  version: '>=0'
-  category: media-plugins
 - name: libXext
   version: '>=0'
   category: x11-libs

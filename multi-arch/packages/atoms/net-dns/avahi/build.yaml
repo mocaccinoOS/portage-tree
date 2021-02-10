@@ -18,6 +18,9 @@ requires:
 - name: gtk-sharp
   version: '>=0'
   category: dev-dotnet-2
+- name: expat
+  version: '>=0'
+  category: dev-libs
 - name: libdaemon
   version: '>=0'
   category: dev-libs
@@ -27,6 +30,9 @@ requires:
 - name: dbus-python
   version: '>=0'
   category: dev-python
+- name: pygobject
+  version: '>=0'
+  category: dev-python-3
 - name: twisted
   version: '>=0'
   category: dev-python
@@ -36,6 +42,9 @@ requires:
 - name: intltool
   version: '>=0'
   category: dev-util
+- name: gdbm
+  version: '>=0'
+  category: sys-libs
 - name: libcap
   version: '>=0'
   category: sys-libs

@@ -1,6 +1,10 @@
 name: texlive-fontsrecommended
 version: "2020"
 category: dev-texlive
+requires:
+- name: texlive-basic
+  version: '>=0'
+  category: dev-texlive
 description: TeXLive Recommended fonts
 uri:
 - http://www.tug.org/texlive/

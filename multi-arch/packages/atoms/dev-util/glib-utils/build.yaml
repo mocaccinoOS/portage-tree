@@ -12,12 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
+- name: docbook-xsl-stylesheets
+  version: '>=0'
+  category: app-text
 - name: python
   version: '>=0'
   category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
-- name: glib
+- name: libxslt
   version: '>=0'
-  category: dev-libs-2
+  category: dev-libs

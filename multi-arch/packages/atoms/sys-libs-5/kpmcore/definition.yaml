@@ -1,0 +1,37 @@
+name: kpmcore
+version: 4.2.0
+category: sys-libs-5
+requires:
+- name: kcoreaddons
+  version: '>=0'
+  category: kde-frameworks-5
+- name: ki18n
+  version: '>=0'
+  category: kde-frameworks-5
+- name: kwidgetsaddons
+  version: '>=0'
+  category: kde-frameworks-5
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
+- name: polkit-qt
+  version: '>=0'
+  category: sys-auth
+description: Library for managing partitions
+uri:
+- https://apps.kde.org/en/partitionmanager
+license: GPL-3
+labels:
+  BDEPEND: '>=kde-frameworks/kauth-5.74.0:5 virtual/pkgconfig dev-util/ninja dev-util/cmake
+    >=kde-frameworks/extra-cmake-modules-5.74.0:5'
+  DEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5
+    >=kde-frameworks/kcoreaddons-5.74.0:5 >=kde-frameworks/ki18n-5.74.0:5 >=kde-frameworks/kwidgetsaddons-5.74.0:5
+    >=sys-apps/util-linux-2.33.2 sys-auth/polkit-qt dev-qt/qtcore:5'
+  IUSE: debug
+  RDEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5
+    >=kde-frameworks/kcoreaddons-5.74.0:5 >=kde-frameworks/ki18n-5.74.0:5 >=kde-frameworks/kwidgetsaddons-5.74.0:5
+    >=sys-apps/util-linux-2.33.2 sys-auth/polkit-qt >=kde-frameworks/kf-env-4 dev-qt/qtcore:5'
+  emerge.packages: sys-libs/kpmcore:5
+  kit: gentoo
+  original.package.name: sys-libs/kpmcore
+  original.package.version: 4.2.0

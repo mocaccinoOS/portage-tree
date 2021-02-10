@@ -15,9 +15,12 @@ uri:
 license: GPL-3+
 labels:
   BDEPEND: virtual/pkgconfig nls? ( sys-devel/gettext )
-  DEPEND: '!static? ( pcre? ( >=dev-libs/libpcre-7.8-r1 ) ) nls? ( virtual/libintl ) virtual/libiconv static? ( pcre? ( >=dev-libs/libpcre-7.8-r1[static-libs(+)] ) )'
+  DEPEND: '!static? ( pcre? ( >=dev-libs/libpcre-7.8-r1 ) ) nls? ( virtual/libintl
+    ) virtual/libiconv static? ( pcre? ( >=dev-libs/libpcre-7.8-r1[static-libs(+)]
+    ) )'
   IUSE: nls pcre static
-  RDEPEND: '!static? ( pcre? ( >=dev-libs/libpcre-7.8-r1 ) ) nls? ( virtual/libintl ) virtual/libiconv'
+  RDEPEND: '!static? ( pcre? ( >=dev-libs/libpcre-7.8-r1 ) ) nls? ( virtual/libintl
+    ) virtual/libiconv'
   emerge.packages: sys-apps/grep
   kit: gentoo
   original.package.name: sys-apps/grep

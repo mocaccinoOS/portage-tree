@@ -23,10 +23,21 @@ uri:
 - https://wiki.gnome.org/Apps/Terminal/VTE
 license: LGPL-3+ GPL-3+
 labels:
-  BDEPEND: dev-libs/libxml2:2 dev-util/glib-utils gtk-doc? ( >=dev-util/gtk-doc-1.13 app-text/docbook-xml-dtd:4.1.2 ) >=sys-devel/gettext-0.19.8 virtual/pkgconfig vala? ( || ( dev-lang/vala:0.50[vapigen(+)] dev-lang/vala:0.48[vapigen(+)] dev-lang/vala:0.46[vapigen(+)] dev-lang/vala:0.44[vapigen(+)] dev-lang/vala:0.40[vapigen(+)] dev-lang/vala:0.36[vapigen(+)] ) ) app-arch/xz-utils >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2
-  DEPEND: '>=x11-libs/gtk+-3.24.14:3[introspection?] >=dev-libs/fribidi-1.0.0 >=dev-libs/glib-2.52:2 crypt? ( >=net-libs/gnutls-3.2.7:0= ) icu? ( dev-libs/icu:= ) >=x11-libs/pango-1.22.0 >=dev-libs/libpcre2-10.21 systemd? ( >=sys-apps/systemd-220:= ) sys-libs/zlib introspection? ( >=dev-libs/gobject-introspection-1.56:= ) x11-libs/pango[introspection?] dev-util/desktop-file-utils x11-misc/shared-mime-info'
+  BDEPEND: dev-libs/libxml2:2 dev-util/glib-utils gtk-doc? ( >=dev-util/gtk-doc-1.13
+    app-text/docbook-xml-dtd:4.1.2 ) >=sys-devel/gettext-0.19.8 virtual/pkgconfig
+    vala? ( || ( dev-lang/vala:0.50[vapigen(+)] dev-lang/vala:0.48[vapigen(+)] dev-lang/vala:0.46[vapigen(+)]
+    dev-lang/vala:0.44[vapigen(+)] dev-lang/vala:0.40[vapigen(+)] dev-lang/vala:0.36[vapigen(+)]
+    ) ) app-arch/xz-utils >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2
+  DEPEND: '>=x11-libs/gtk+-3.24.14:3[introspection?] >=dev-libs/fribidi-1.0.0 >=dev-libs/glib-2.52:2
+    crypt? ( >=net-libs/gnutls-3.2.7:0= ) icu? ( dev-libs/icu:= ) >=x11-libs/pango-1.22.0
+    >=dev-libs/libpcre2-10.21 systemd? ( >=sys-apps/systemd-220:= ) sys-libs/zlib
+    introspection? ( >=dev-libs/gobject-introspection-1.56:= ) x11-libs/pango[introspection?]
+    dev-util/desktop-file-utils x11-misc/shared-mime-info'
   IUSE: +crypt debug gtk-doc +icu +introspection systemd +vala vanilla
-  RDEPEND: '>=x11-libs/gtk+-3.24.14:3[introspection?] >=dev-libs/fribidi-1.0.0 >=dev-libs/glib-2.52:2 crypt? ( >=net-libs/gnutls-3.2.7:0= ) icu? ( dev-libs/icu:= ) >=x11-libs/pango-1.22.0 >=dev-libs/libpcre2-10.21 systemd? ( >=sys-apps/systemd-220:= ) sys-libs/zlib introspection? ( >=dev-libs/gobject-introspection-1.56:= ) x11-libs/pango[introspection?]'
+  RDEPEND: '>=x11-libs/gtk+-3.24.14:3[introspection?] >=dev-libs/fribidi-1.0.0 >=dev-libs/glib-2.52:2
+    crypt? ( >=net-libs/gnutls-3.2.7:0= ) icu? ( dev-libs/icu:= ) >=x11-libs/pango-1.22.0
+    >=dev-libs/libpcre2-10.21 systemd? ( >=sys-apps/systemd-220:= ) sys-libs/zlib
+    introspection? ( >=dev-libs/gobject-introspection-1.56:= ) x11-libs/pango[introspection?]'
   emerge.packages: x11-libs/vte:2.91
   kit: gentoo
   original.package.name: x11-libs/vte

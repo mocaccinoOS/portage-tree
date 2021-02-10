@@ -15,6 +15,3 @@ requires:
 - name: gettext
   version: '>=0'
   category: sys-devel
-- name: libselinux
-  version: '>=0'
-  category: sys-libs

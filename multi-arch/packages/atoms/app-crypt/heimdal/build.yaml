@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: mit-krb5-appl
+- name: lmdb
   version: '>=0'
-  category: app-crypt
+  category: dev-db
 - name: sqlite
   version: '>=0'
   category: dev-db-3
@@ -24,6 +24,12 @@ requires:
 - name: openafs
   version: '>=0'
   category: net-fs
+- name: openldap
+  version: '>=0'
+  category: net-nds
+- name: e2fsprogs-libs
+  version: '>=0'
+  category: sys-libs
 - name: gdbm
   version: '>=0'
   category: sys-libs

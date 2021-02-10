@@ -29,9 +29,15 @@ uri:
 license: '|| ( GPL-2 FIPL-1.0 )'
 labels:
   BDEPEND: app-arch/unzip virtual/pkgconfig
-  DEPEND: sys-libs/zlib jpeg? ( virtual/jpeg:0 ) jpeg2k? ( media-libs/openjpeg:2= ) mng? ( media-libs/libmng:= ) openexr? ( media-libs/openexr:= ) png? ( media-libs/libpng:0= ) raw? ( media-libs/libraw:= ) tiff? ( media-libs/ilmbase:= media-libs/tiff:0 ) webp? ( media-libs/libwebp:= )
+  DEPEND: sys-libs/zlib jpeg? ( virtual/jpeg:0 ) jpeg2k? ( media-libs/openjpeg:2=
+    ) mng? ( media-libs/libmng:= ) openexr? ( media-libs/openexr:= ) png? ( media-libs/libpng:0=
+    ) raw? ( media-libs/libraw:= ) tiff? ( media-libs/ilmbase:= media-libs/tiff:0
+    ) webp? ( media-libs/libwebp:= )
   IUSE: jpeg jpeg2k mng openexr png raw static-libs tiff webp
-  RDEPEND: sys-libs/zlib jpeg? ( virtual/jpeg:0 ) jpeg2k? ( media-libs/openjpeg:2= ) mng? ( media-libs/libmng:= ) openexr? ( media-libs/openexr:= ) png? ( media-libs/libpng:0= ) raw? ( media-libs/libraw:= ) tiff? ( media-libs/ilmbase:= media-libs/tiff:0 ) webp? ( media-libs/libwebp:= )
+  RDEPEND: sys-libs/zlib jpeg? ( virtual/jpeg:0 ) jpeg2k? ( media-libs/openjpeg:2=
+    ) mng? ( media-libs/libmng:= ) openexr? ( media-libs/openexr:= ) png? ( media-libs/libpng:0=
+    ) raw? ( media-libs/libraw:= ) tiff? ( media-libs/ilmbase:= media-libs/tiff:0
+    ) webp? ( media-libs/libwebp:= )
   emerge.packages: media-libs/freeimage
   kit: gentoo
   original.package.name: media-libs/freeimage

@@ -5,7 +5,8 @@ requires:
 - name: kpathsea
   version: '>=0'
   category: dev-libs
-description: Tool that converts a PostScript type1 font into a corresponding TeX PK font
+description: Tool that converts a PostScript type1 font into a corresponding TeX PK
+  font
 uri:
 - http://tug.org/texlive/
 license: MIT

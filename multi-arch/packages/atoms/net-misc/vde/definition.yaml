@@ -3,8 +3,8 @@ version: 2.3.2
 category: net-misc
 use_flags:
 - -libressl
+- -selinux
 - pcap
-- selinux
 - ssl
 requires:
 - name: qemu
@@ -13,17 +13,17 @@ requires:
 - name: libpcap
   version: '>=0'
   category: net-libs
-- name: selinux-vde
-  version: '>=0'
-  category: sec-policy
-description: Virtual distributed ethernet emulator for emulators like qemu, bochs, and uml
+description: Virtual distributed ethernet emulator for emulators like qemu, bochs,
+  and uml
 uri:
 - https://virtualsquare.org
 license: GPL-2
 labels:
-  DEPEND: pcap? ( net-libs/libpcap ) ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) )
+  DEPEND: pcap? ( net-libs/libpcap ) ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl?
+    ( dev-libs/libressl:0= ) )
   IUSE: pcap selinux ssl libressl static-libs
-  RDEPEND: pcap? ( net-libs/libpcap ) ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) acct-group/qemu selinux? ( sec-policy/selinux-vde )
+  RDEPEND: pcap? ( net-libs/libpcap ) ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl?
+    ( dev-libs/libressl:0= ) ) acct-group/qemu selinux? ( sec-policy/selinux-vde )
   emerge.packages: net-misc/vde
   kit: gentoo
   original.package.name: net-misc/vde

@@ -18,6 +18,3 @@ requires:
 - name: nss
   version: '>=0'
   category: dev-libs
-- name: gnutls
-  version: '>=0'
-  category: net-libs

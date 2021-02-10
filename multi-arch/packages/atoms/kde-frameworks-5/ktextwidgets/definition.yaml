@@ -1,0 +1,42 @@
+name: ktextwidgets
+version: 5.74.0
+category: kde-frameworks-5
+use_flags:
+- -doc
+- -test
+- designer
+- speech
+requires:
+- name: qtspeech
+  version: '>=0'
+  category: dev-qt-5
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
+- name: kf-env
+  version: '>=0'
+  category: kde-frameworks-5
+description: Framework providing an assortment of widgets for displaying and editing
+  text
+uri:
+- https://kde.org/products/frameworks/
+license: LGPL-2+ LGPL-2.1+
+labels:
+  BDEPEND: dev-util/ninja dev-util/cmake test? ( x11-base/xorg-server[xvfb] x11-apps/xhost
+    ) designer? ( dev-qt/designer:5 ) doc? ( >=app-doc/doxygen-1.8.13-r1 dev-qt/qthelp:5
+    ) >=kde-frameworks/extra-cmake-modules-5.74:5
+  DEPEND: '>=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kcompletion-5.74*:5
+    =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kconfigwidgets-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5
+    =kde-frameworks/ki18n-5.74*:5 =kde-frameworks/kservice-5.74*:5 =kde-frameworks/kwidgetsaddons-5.74*:5
+    =kde-frameworks/sonnet-5.74*:5 speech? ( >=dev-qt/qtspeech-5.14.2:5 ) test? (
+    dev-qt/qttest:5 ) doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5'
+  IUSE: speech test debug designer doc test
+  RDEPEND: '>=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kcompletion-5.74*:5
+    =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kconfigwidgets-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5
+    =kde-frameworks/ki18n-5.74*:5 =kde-frameworks/kservice-5.74*:5 =kde-frameworks/kwidgetsaddons-5.74*:5
+    =kde-frameworks/sonnet-5.74*:5 speech? ( >=dev-qt/qtspeech-5.14.2:5 ) >=kde-frameworks/kf-env-4
+    doc? ( dev-qt/qt-docs:5 ) dev-qt/qtcore:5'
+  emerge.packages: kde-frameworks/ktextwidgets:5
+  kit: gentoo
+  original.package.name: kde-frameworks/ktextwidgets
+  original.package.version: 5.74.0

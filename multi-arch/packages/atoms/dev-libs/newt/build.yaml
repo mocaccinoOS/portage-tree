@@ -18,9 +18,15 @@ requires:
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
+- name: tcl
+  version: '>=0'
+  category: dev-lang
 - name: popt
   version: '>=0'
   category: dev-libs
+- name: gpm
+  version: '>=0'
+  category: sys-libs
 - name: slang
   version: '>=0'
   category: sys-libs

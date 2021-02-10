@@ -12,6 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: Encode-Locale
+  version: '>=0'
+  category: dev-perl
+- name: HTTP-Date
+  version: '>=0'
+  category: dev-perl
 - name: IO-HTML
+  version: '>=0'
+  category: dev-perl
+- name: LWP-MediaTypes
+  version: '>=0'
+  category: dev-perl
+- name: URI
   version: '>=0'
   category: dev-perl

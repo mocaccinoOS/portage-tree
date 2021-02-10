@@ -2,14 +2,7 @@ name: sysvinit
 version: "2.93"
 category: sys-apps
 use_flags:
-- selinux
-requires:
-- name: selinux-shutdown
-  version: '>=0'
-  category: sec-policy
-- name: openrc
-  version: '>=0'
-  category: sys-apps
+- -selinux
 description: /sbin/init - parent of all processes
 uri:
 - https://savannah.nongnu.org/projects/sysvinit
@@ -17,7 +10,8 @@ license: GPL-2
 labels:
   DEPEND: selinux? ( >=sys-libs/libselinux-1.28 ) virtual/os-headers
   IUSE: selinux ibm static kernel_FreeBSD
-  RDEPEND: selinux? ( >=sys-libs/libselinux-1.28 ) selinux? ( sec-policy/selinux-shutdown ) !<sys-apps/openrc-0.13
+  RDEPEND: selinux? ( >=sys-libs/libselinux-1.28 ) selinux? ( sec-policy/selinux-shutdown
+    ) !<sys-apps/openrc-0.13
   emerge.packages: sys-apps/sysvinit
   kit: gentoo
   original.package.name: sys-apps/sysvinit

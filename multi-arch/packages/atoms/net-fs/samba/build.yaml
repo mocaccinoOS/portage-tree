@@ -18,6 +18,12 @@ requires:
 - name: gpgme
   version: '>=0'
   category: app-crypt-1
+- name: mit-krb5
+  version: '>=0'
+  category: app-crypt
+- name: docbook-xsl-stylesheets
+  version: '>=0'
+  category: app-text
 - name: icu
   version: '>=0'
   category: dev-libs

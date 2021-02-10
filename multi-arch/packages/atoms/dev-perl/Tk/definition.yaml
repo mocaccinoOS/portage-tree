@@ -13,8 +13,10 @@ uri:
 - https://metacpan.org/release/Tk
 license: '|| ( Artistic GPL-1+ ) tcltk BSD'
 labels:
-  DEPEND: media-libs/freetype >=media-libs/libpng-1.4:0 virtual/jpeg x11-libs/libX11 x11-libs/libXft dev-lang/perl:=[-build(-)]
-  RDEPEND: media-libs/freetype >=media-libs/libpng-1.4:0 virtual/jpeg x11-libs/libX11 x11-libs/libXft dev-lang/perl:=[-build(-)]
+  DEPEND: media-libs/freetype >=media-libs/libpng-1.4:0 virtual/jpeg x11-libs/libX11
+    x11-libs/libXft dev-lang/perl:=[-build(-)]
+  RDEPEND: media-libs/freetype >=media-libs/libpng-1.4:0 virtual/jpeg x11-libs/libX11
+    x11-libs/libXft dev-lang/perl:=[-build(-)]
   emerge.packages: dev-perl/Tk
   kit: gentoo
   original.package.name: dev-perl/Tk

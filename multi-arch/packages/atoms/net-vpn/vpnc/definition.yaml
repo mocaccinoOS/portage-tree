@@ -2,9 +2,9 @@ name: vpnc
 version: 0.5.3
 category: net-vpn
 use_flags:
-- gnutls
+- -gnutls
+- -selinux
 - resolvconf
-- selinux
 requires:
 - name: perl
   version: '>=0'
@@ -12,15 +12,6 @@ requires:
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
-- name: openssl
-  version: '>=0'
-  category: dev-libs
-- name: gnutls
-  version: '>=0'
-  category: net-libs
-- name: selinux-vpn
-  version: '>=0'
-  category: sec-policy
 - name: iproute2
   version: '>=0'
   category: sys-apps
@@ -30,9 +21,12 @@ uri:
 license: GPL-2 BSD
 labels:
   BDEPEND: virtual/pkgconfig
-  DEPEND: dev-lang/perl dev-libs/libgcrypt:0= >=sys-apps/iproute2-2.6.19.20061214[-minimal] gnutls? ( net-libs/gnutls:0= ) !gnutls? ( dev-libs/openssl:0= )
+  DEPEND: dev-lang/perl dev-libs/libgcrypt:0= >=sys-apps/iproute2-2.6.19.20061214[-minimal]
+    gnutls? ( net-libs/gnutls:0= ) !gnutls? ( dev-libs/openssl:0= )
   IUSE: resolvconf +gnutls selinux kernel_linux
-  RDEPEND: dev-lang/perl dev-libs/libgcrypt:0= >=sys-apps/iproute2-2.6.19.20061214[-minimal] gnutls? ( net-libs/gnutls:0= ) !gnutls? ( dev-libs/openssl:0= ) resolvconf? ( virtual/resolvconf ) selinux? ( sec-policy/selinux-vpn ) virtual/tmpfiles
+  RDEPEND: dev-lang/perl dev-libs/libgcrypt:0= >=sys-apps/iproute2-2.6.19.20061214[-minimal]
+    gnutls? ( net-libs/gnutls:0= ) !gnutls? ( dev-libs/openssl:0= ) resolvconf? (
+    virtual/resolvconf ) selinux? ( sec-policy/selinux-vpn ) virtual/tmpfiles
   emerge.packages: net-vpn/vpnc
   kit: gentoo
   original.package.name: net-vpn/vpnc

@@ -21,6 +21,9 @@ requires:
 - name: tk
   version: '>=0'
   category: dev-lang
+- name: expat
+  version: '>=0'
+  category: dev-libs
 - name: libpcre
   version: '>=0'
   category: dev-libs-3

@@ -39,6 +39,9 @@ requires:
 - name: crypto++
   version: '>=0'
   category: dev-libs
+- name: expat
+  version: '>=0'
+  category: dev-libs
 - name: jemalloc
   version: '>=0'
   category: dev-libs
@@ -60,6 +63,9 @@ requires:
 - name: cython
   version: '>=0'
   category: dev-python
+- name: sphinx
+  version: '>=0'
+  category: dev-python
 - name: babeltrace
   version: '>=0'
   category: dev-util
@@ -75,9 +81,15 @@ requires:
 - name: ragel
   version: '>=0'
   category: dev-util
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: rabbitmq-c
   version: '>=0'
   category: net-libs
+- name: curl
+  version: '>=0'
+  category: net-misc
 - name: coreutils
   version: '>=0'
   category: sys-apps
@@ -105,6 +117,9 @@ requires:
 - name: bc
   version: '>=0'
   category: sys-devel
+- name: make
+  version: '>=0'
+  category: sys-devel
 - name: patch
   version: '>=0'
   category: sys-devel
@@ -117,3 +132,6 @@ requires:
 - name: zfs
   version: '>=0'
   category: sys-fs
+- name: libcap-ng
+  version: '>=0'
+  category: sys-libs

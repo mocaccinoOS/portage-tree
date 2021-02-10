@@ -2,6 +2,13 @@ name: perftest
 version: "2.0"
 category: sys-fabric-3.12
 requires:
+- name: libibumad
+  version: '>=0'
+  category: sys-fabric-3.12
+- name: librdmacm
+  version: '>=0'
+  category: sys-fabric-3.12
+conflicts:
 - name: perftest
   version: '>=0'
   category: sys-fabric-3.12
@@ -10,8 +17,10 @@ uri:
 - https://www.openfabrics.org/
 license: '|| ( GPL-2 BSD-2 )'
 labels:
-  DEPEND: sys-fabric/libibverbs:3.12 sys-fabric/libibumad:3.12 sys-fabric/librdmacm:3.12 >=app-arch/rpm2targz-9.0.0.3g
-  RDEPEND: sys-fabric/libibverbs:3.12 sys-fabric/libibumad:3.12 sys-fabric/librdmacm:3.12 !sys-fabric/perftest:0 !sys-fabric/perftest:3.5
+  DEPEND: sys-fabric/libibverbs:3.12 sys-fabric/libibumad:3.12 sys-fabric/librdmacm:3.12
+    >=app-arch/rpm2targz-9.0.0.3g
+  RDEPEND: sys-fabric/libibverbs:3.12 sys-fabric/libibumad:3.12 sys-fabric/librdmacm:3.12
+    !sys-fabric/perftest:0 !sys-fabric/perftest:3.5
   emerge.packages: sys-fabric/perftest:3.12
   kit: gentoo
   original.package.name: sys-fabric/perftest

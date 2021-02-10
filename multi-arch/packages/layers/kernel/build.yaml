@@ -21,5 +21,5 @@ steps:
 - cd /usr/src && eval 'rm linux || true' && ln -s linux-5.4.0-mocaccino linux
 requires:
 - category: "layers"
-  name: "system-core"
+  name: "build-seed"
   version: ">=0"

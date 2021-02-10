@@ -12,21 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: Locale-Maketext-Lexicon
   version: '>=0'
   category: dev-perl
 - name: Module-Build
   version: '>=0'
   category: dev-perl
-- name: fonttools
-  version: '>=0'
-  category: dev-python
 - name: cmake
   version: '>=0'
   category: dev-util
-- name: fontconfig
+- name: ninja
   version: '>=0'
-  category: media-libs-1.0
+  category: dev-util

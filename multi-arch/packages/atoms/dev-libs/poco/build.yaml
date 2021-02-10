@@ -27,6 +27,9 @@ requires:
 - name: unixODBC
   version: '>=0'
   category: dev-db
+- name: expat
+  version: '>=0'
+  category: dev-libs
 - name: libpcre
   version: '>=0'
   category: dev-libs-3

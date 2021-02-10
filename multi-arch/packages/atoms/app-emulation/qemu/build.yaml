@@ -24,6 +24,9 @@ requires:
 - name: capstone
   version: '>=0'
   category: dev-libs
+- name: systemtap
+  version: '>=0'
+  category: dev-util
 - name: sdl2-image
   version: '>=0'
   category: media-libs
@@ -45,6 +48,9 @@ requires:
 - name: vde
   version: '>=0'
   category: net-misc
+- name: attr
+  version: '>=0'
+  category: sys-apps
 - name: texinfo
   version: '>=0'
   category: sys-apps
@@ -66,6 +72,9 @@ requires:
 - name: multipath-tools
   version: '>=0'
   category: sys-fs
+- name: libseccomp
+  version: '>=0'
+  category: sys-libs
 - name: liburing
   version: '>=0'
   category: sys-libs

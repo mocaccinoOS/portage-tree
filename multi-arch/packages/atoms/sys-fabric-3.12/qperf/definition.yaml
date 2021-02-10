@@ -1,7 +1,7 @@
 name: qperf
 version: 0.4.9
 category: sys-fabric-3.12
-requires:
+conflicts:
 - name: qperf
   version: '>=0'
   category: sys-fabric-3.12

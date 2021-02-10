@@ -10,8 +10,10 @@ uri:
 - https://metacpan.org/release/Sub-Exporter
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: '>=dev-perl/Sub-Install-0.920.0 >=dev-perl/Data-OptList-0.100.0 >=dev-perl/Params-Util-0.140.0 dev-lang/perl:=[-build(-)]'
-  RDEPEND: '>=dev-perl/Sub-Install-0.920.0 >=dev-perl/Data-OptList-0.100.0 >=dev-perl/Params-Util-0.140.0 dev-lang/perl:=[-build(-)]'
+  DEPEND: '>=dev-perl/Sub-Install-0.920.0 >=dev-perl/Data-OptList-0.100.0 >=dev-perl/Params-Util-0.140.0
+    dev-lang/perl:=[-build(-)]'
+  RDEPEND: '>=dev-perl/Sub-Install-0.920.0 >=dev-perl/Data-OptList-0.100.0 >=dev-perl/Params-Util-0.140.0
+    dev-lang/perl:=[-build(-)]'
   emerge.packages: dev-perl/Sub-Exporter
   kit: gentoo
   original.package.name: dev-perl/Sub-Exporter

@@ -15,3 +15,6 @@ requires:
 - name: setuptools
   version: '>=0'
   category: dev-python
+- name: zlib
+  version: '>=0'
+  category: sys-libs

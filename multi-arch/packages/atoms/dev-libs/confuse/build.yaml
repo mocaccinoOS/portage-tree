@@ -15,6 +15,9 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
+- name: gettext
+  version: '>=0'
+  category: sys-devel
 - name: libtool
   version: '>=0'
   category: sys-devel-2

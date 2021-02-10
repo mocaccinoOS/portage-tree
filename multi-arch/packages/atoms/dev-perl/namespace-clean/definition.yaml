@@ -15,9 +15,11 @@ uri:
 - https://metacpan.org/release/namespace-clean
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: '>=dev-perl/B-Hooks-EndOfScope-0.120.0 >=dev-perl/Package-Stash-0.230.0 virtual/perl-ExtUtils-MakeMaker test? ( >=virtual/perl-Test-Simple-0.470.0 ) dev-lang/perl'
+  DEPEND: '>=dev-perl/B-Hooks-EndOfScope-0.120.0 >=dev-perl/Package-Stash-0.230.0
+    virtual/perl-ExtUtils-MakeMaker test? ( >=virtual/perl-Test-Simple-0.470.0 ) dev-lang/perl'
   IUSE: test
-  RDEPEND: '>=dev-perl/B-Hooks-EndOfScope-0.120.0 >=dev-perl/Package-Stash-0.230.0 dev-lang/perl:='
+  RDEPEND: '>=dev-perl/B-Hooks-EndOfScope-0.120.0 >=dev-perl/Package-Stash-0.230.0
+    dev-lang/perl:='
   emerge.packages: dev-perl/namespace-clean
   kit: gentoo
   original.package.name: dev-perl/namespace-clean

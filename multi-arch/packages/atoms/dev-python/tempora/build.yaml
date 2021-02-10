@@ -12,15 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: freezegun
+- name: setuptools_scm
   version: '>=0'
   category: dev-python
-- name: jaraco-functools
-  version: '>=0'
-  category: dev-python
-- name: pytest-freezegun
-  version: '>=0'
-  category: dev-python
-- name: pytz
+- name: toml
   version: '>=0'
   category: dev-python

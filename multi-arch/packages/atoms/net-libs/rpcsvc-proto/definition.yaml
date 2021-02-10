@@ -1,7 +1,7 @@
 name: rpcsvc-proto
 version: 1.4.2
 category: net-libs
-requires:
+conflicts:
 - name: glibc
   version: '>=0'
   category: sys-libs-2.2
@@ -10,7 +10,8 @@ uri:
 - https://github.com/thkukuk/rpcsvc-proto
 license: LGPL-2.1+ BSD
 labels:
-  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
   DEPEND: sys-devel/gettext
   RDEPEND: '!<sys-libs/glibc-2.26 virtual/libintl'
   emerge.packages: net-libs/rpcsvc-proto

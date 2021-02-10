@@ -12,7 +12,8 @@ uri:
 - http://www.unifont.org/lasi/
 license: GPL-2
 labels:
-  DEPEND: dev-libs/glib:2 media-libs/freetype:2 x11-libs/pango virtual/pkgconfig doc? ( app-doc/doxygen ) sys-devel/make >=dev-util/cmake-3.9.6
+  DEPEND: dev-libs/glib:2 media-libs/freetype:2 x11-libs/pango virtual/pkgconfig doc?
+    ( app-doc/doxygen ) sys-devel/make >=dev-util/cmake-3.9.6
   IUSE: doc examples
   RDEPEND: dev-libs/glib:2 media-libs/freetype:2 x11-libs/pango
   emerge.packages: media-libs/lasi

@@ -18,7 +18,9 @@ uri:
 - http://ebtables.sourceforge.net/
 license: GPL-2
 labels:
-  BDEPEND: '>=app-eselect/eselect-iptables-20200508 >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  BDEPEND: '>=app-eselect/eselect-iptables-20200508 >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69
+    >=sys-devel/libtool-2.4'
   IUSE: +perl static
   RDEPEND: '>=app-eselect/eselect-iptables-20200508 perl? ( dev-lang/perl ) net-misc/ethertypes'
   emerge.packages: net-firewall/ebtables

@@ -2,6 +2,10 @@ name: libipathverbs
 version: 1.2.1
 category: sys-fabric-3.12
 requires:
+- name: libibverbs
+  version: '>=0'
+  category: sys-fabric-3.12
+conflicts:
 - name: libipathverbs
   version: '>=0'
   category: sys-fabric-3.12

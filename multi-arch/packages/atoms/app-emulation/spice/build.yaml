@@ -21,6 +21,9 @@ requires:
 - name: libressl
   version: '>=0'
   category: dev-libs
+- name: openssl
+  version: '>=0'
+  category: dev-libs
 - name: pyparsing
   version: '>=0'
   category: dev-python

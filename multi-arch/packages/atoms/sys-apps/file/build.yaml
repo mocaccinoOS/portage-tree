@@ -12,6 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
 - name: setuptools
   version: '>=0'
   category: dev-python
+- name: zlib
+  version: '>=0'
+  category: sys-libs

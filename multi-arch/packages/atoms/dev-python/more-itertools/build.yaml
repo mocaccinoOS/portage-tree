@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: sphinx
-  version: '>=0'
-  category: dev-python
-- name: sphinx_rtd_theme
+- name: setuptools
   version: '>=0'
   category: dev-python

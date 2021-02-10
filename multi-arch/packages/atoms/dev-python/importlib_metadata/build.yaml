@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: importlib_resources
-  version: '>=0'
-  category: dev-python
-- name: packaging
-  version: '>=0'
-  category: dev-python
-- name: pyfakefs
+- name: setuptools_scm
   version: '>=0'
   category: dev-python

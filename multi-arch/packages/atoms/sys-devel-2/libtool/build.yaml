@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libltdl
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: automake
-  version: '>=0'
-  category: sys-devel-1.16
+  category: layers

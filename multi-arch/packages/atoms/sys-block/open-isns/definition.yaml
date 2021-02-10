@@ -10,9 +10,11 @@ uri:
 - https://github.com/open-iscsi/open-isns
 license: LGPL-2.1
 labels:
-  DEPEND: ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) slp? ( net-libs/openslp )
+  DEPEND: ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0=
+    ) ) slp? ( net-libs/openslp )
   IUSE: debug libressl slp ssl static
-  RDEPEND: ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0= ) ) slp? ( net-libs/openslp )
+  RDEPEND: ssl? ( !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:0=
+    ) ) slp? ( net-libs/openslp )
   emerge.packages: sys-block/open-isns
   kit: gentoo
   original.package.name: sys-block/open-isns

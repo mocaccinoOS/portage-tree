@@ -1,10 +1,6 @@
 name: autoconf-archive
 version: 2019.01.06
 category: sys-devel
-requires:
-- name: gnome-common
-  version: '>=0'
-  category: gnome-base-3
 description: GNU Autoconf Macro Archive
 uri:
 - https://www.gnu.org/software/autoconf-archive/

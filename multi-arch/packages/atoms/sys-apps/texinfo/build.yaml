@@ -24,3 +24,6 @@ requires:
 - name: gettext
   version: '>=0'
   category: sys-devel
+- name: ncurses
+  version: '>=0'
+  category: sys-libs

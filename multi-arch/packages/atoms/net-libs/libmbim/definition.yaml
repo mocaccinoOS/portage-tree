@@ -13,7 +13,8 @@ uri:
 license: LGPL-2
 labels:
   BDEPEND: dev-util/glib-utils
-  DEPEND: '>=dev-libs/glib-2.36:2 udev? ( dev-libs/libgudev:= ) dev-util/gtk-doc-am virtual/pkgconfig'
+  DEPEND: '>=dev-libs/glib-2.36:2 udev? ( dev-libs/libgudev:= ) dev-util/gtk-doc-am
+    virtual/pkgconfig'
   IUSE: static-libs udev
   RDEPEND: '>=dev-libs/glib-2.36:2 udev? ( dev-libs/libgudev:= )'
   emerge.packages: net-libs/libmbim

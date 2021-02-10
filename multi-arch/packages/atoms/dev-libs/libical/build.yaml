@@ -21,9 +21,15 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
+- name: icu
+  version: '>=0'
+  category: dev-libs
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
 - name: cmake
   version: '>=0'
   category: dev-util
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3

@@ -18,6 +18,9 @@ requires:
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
 - name: extra-cmake-modules
   version: '>=0'
   category: kde-frameworks-5

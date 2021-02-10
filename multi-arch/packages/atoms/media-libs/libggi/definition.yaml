@@ -26,9 +26,13 @@ uri:
 - https://ibiblio.org/ggicore/packages/libggi.html
 license: MIT
 labels:
-  DEPEND: '>=media-libs/libgii-1.0.2 aalib? ( >=media-libs/aalib-1.2-r1 ) svga? ( >=media-libs/svgalib-1.4.2 ) X? ( x11-libs/libXt x11-libs/libXxf86dga x11-libs/libXxf86vm ) X? ( x11-base/xorg-proto )'
+  DEPEND: '>=media-libs/libgii-1.0.2 aalib? ( >=media-libs/aalib-1.2-r1 ) svga? (
+    >=media-libs/svgalib-1.4.2 ) X? ( x11-libs/libXt x11-libs/libXxf86dga x11-libs/libXxf86vm
+    ) X? ( x11-base/xorg-proto )'
   IUSE: 3dfx aalib cpu_flags_x86_mmx debug fbcon svga vis X
-  RDEPEND: '>=media-libs/libgii-1.0.2 aalib? ( >=media-libs/aalib-1.2-r1 ) svga? ( >=media-libs/svgalib-1.4.2 ) X? ( x11-libs/libXt x11-libs/libXxf86dga x11-libs/libXxf86vm )'
+  RDEPEND: '>=media-libs/libgii-1.0.2 aalib? ( >=media-libs/aalib-1.2-r1 ) svga? (
+    >=media-libs/svgalib-1.4.2 ) X? ( x11-libs/libXt x11-libs/libXxf86dga x11-libs/libXxf86vm
+    )'
   emerge.packages: media-libs/libggi
   kit: gentoo
   original.package.name: media-libs/libggi

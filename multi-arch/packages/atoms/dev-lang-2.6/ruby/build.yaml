@@ -27,6 +27,9 @@ requires:
 - name: libyaml
   version: '>=0'
   category: dev-libs
+- name: systemtap
+  version: '>=0'
+  category: dev-util
 - name: dante
   version: '>=0'
   category: net-proxy

@@ -27,9 +27,34 @@ uri:
 license: LGPL-2+ GPL-2+
 labels:
   BDEPEND: app-arch/xz-utils >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2
-  DEPEND: '>=dev-libs/gobject-introspection-common-1.64.1 >=dev-libs/glib-2.58.0:2 dev-libs/libffi:= doctool? ( python_single_target_python3_6? ( dev-python/mako[python_targets_python3_6(-)] dev-python/markdown[python_targets_python3_6(-)] ) python_single_target_python3_7? ( dev-python/mako[python_targets_python3_7(-)] dev-python/markdown[python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/mako[python_targets_python3_8(-)] dev-python/markdown[python_targets_python3_8(-)] ) ) virtual/pkgconfig python_single_target_python3_6? ( dev-lang/python:3.6[xml] >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7[xml] >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8[xml] >=dev-lang/python-exec-2:=[python_targets_python3_8] ) gtk-doc? ( >=dev-util/gtk-doc-1.19 app-text/docbook-xml-dtd:4.3 app-text/docbook-xml-dtd:4.5 ) sys-devel/bison sys-devel/flex test? ( x11-libs/cairo[glib] python_single_target_python3_6? ( dev-python/mako[python_targets_python3_6(-)] dev-python/markdown[python_targets_python3_6(-)] ) python_single_target_python3_7? ( dev-python/mako[python_targets_python3_7(-)] dev-python/markdown[python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/mako[python_targets_python3_8(-)] dev-python/markdown[python_targets_python3_8(-)] ) ) dev-util/desktop-file-utils x11-misc/shared-mime-info'
-  IUSE: doctool gtk-doc test python_single_target_python3_6 python_single_target_python3_7 python_single_target_python3_8
-  RDEPEND: '>=dev-libs/gobject-introspection-common-1.64.1 >=dev-libs/glib-2.58.0:2 dev-libs/libffi:= doctool? ( python_single_target_python3_6? ( dev-python/mako[python_targets_python3_6(-)] dev-python/markdown[python_targets_python3_6(-)] ) python_single_target_python3_7? ( dev-python/mako[python_targets_python3_7(-)] dev-python/markdown[python_targets_python3_7(-)] ) python_single_target_python3_8? ( dev-python/mako[python_targets_python3_8(-)] dev-python/markdown[python_targets_python3_8(-)] ) ) virtual/pkgconfig python_single_target_python3_6? ( dev-lang/python:3.6[xml] >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7[xml] >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8[xml] >=dev-lang/python-exec-2:=[python_targets_python3_8] )'
+  DEPEND: '>=dev-libs/gobject-introspection-common-1.64.1 >=dev-libs/glib-2.58.0:2
+    dev-libs/libffi:= doctool? ( python_single_target_python3_6? ( dev-python/mako[python_targets_python3_6(-)]
+    dev-python/markdown[python_targets_python3_6(-)] ) python_single_target_python3_7?
+    ( dev-python/mako[python_targets_python3_7(-)] dev-python/markdown[python_targets_python3_7(-)]
+    ) python_single_target_python3_8? ( dev-python/mako[python_targets_python3_8(-)]
+    dev-python/markdown[python_targets_python3_8(-)] ) ) virtual/pkgconfig python_single_target_python3_6?
+    ( dev-lang/python:3.6[xml] >=dev-lang/python-exec-2:=[python_targets_python3_6]
+    ) python_single_target_python3_7? ( dev-lang/python:3.7[xml] >=dev-lang/python-exec-2:=[python_targets_python3_7]
+    ) python_single_target_python3_8? ( dev-lang/python:3.8[xml] >=dev-lang/python-exec-2:=[python_targets_python3_8]
+    ) gtk-doc? ( >=dev-util/gtk-doc-1.19 app-text/docbook-xml-dtd:4.3 app-text/docbook-xml-dtd:4.5
+    ) sys-devel/bison sys-devel/flex test? ( x11-libs/cairo[glib] python_single_target_python3_6?
+    ( dev-python/mako[python_targets_python3_6(-)] dev-python/markdown[python_targets_python3_6(-)]
+    ) python_single_target_python3_7? ( dev-python/mako[python_targets_python3_7(-)]
+    dev-python/markdown[python_targets_python3_7(-)] ) python_single_target_python3_8?
+    ( dev-python/mako[python_targets_python3_8(-)] dev-python/markdown[python_targets_python3_8(-)]
+    ) ) dev-util/desktop-file-utils x11-misc/shared-mime-info'
+  IUSE: doctool gtk-doc test python_single_target_python3_6 python_single_target_python3_7
+    python_single_target_python3_8
+  RDEPEND: '>=dev-libs/gobject-introspection-common-1.64.1 >=dev-libs/glib-2.58.0:2
+    dev-libs/libffi:= doctool? ( python_single_target_python3_6? ( dev-python/mako[python_targets_python3_6(-)]
+    dev-python/markdown[python_targets_python3_6(-)] ) python_single_target_python3_7?
+    ( dev-python/mako[python_targets_python3_7(-)] dev-python/markdown[python_targets_python3_7(-)]
+    ) python_single_target_python3_8? ( dev-python/mako[python_targets_python3_8(-)]
+    dev-python/markdown[python_targets_python3_8(-)] ) ) virtual/pkgconfig python_single_target_python3_6?
+    ( dev-lang/python:3.6[xml] >=dev-lang/python-exec-2:=[python_targets_python3_6]
+    ) python_single_target_python3_7? ( dev-lang/python:3.7[xml] >=dev-lang/python-exec-2:=[python_targets_python3_7]
+    ) python_single_target_python3_8? ( dev-lang/python:3.8[xml] >=dev-lang/python-exec-2:=[python_targets_python3_8]
+    )'
   emerge.packages: dev-libs/gobject-introspection
   kit: gentoo
   original.package.name: dev-libs/gobject-introspection

@@ -13,7 +13,8 @@ uri:
 - https://garrigue.github.io/labltk/
 license: QPL-1.0 LGPL-2
 labels:
-  DEPEND: '>=dev-lang/tk-8.0.3:= >=dev-lang/ocaml-4.08:=[ocamlopt?,X(+)?] >=dev-ml/findlib-1.5.5-r1 >=dev-ml/findlib-1.0.4-r1'
+  DEPEND: '>=dev-lang/tk-8.0.3:= >=dev-lang/ocaml-4.08:=[ocamlopt?,X(+)?] >=dev-ml/findlib-1.5.5-r1
+    >=dev-ml/findlib-1.0.4-r1'
   IUSE: +ocamlopt X
   RDEPEND: '>=dev-lang/tk-8.0.3:= >=dev-lang/ocaml-4.08:=[ocamlopt?,X(+)?]'
   emerge.packages: dev-ml/labltk

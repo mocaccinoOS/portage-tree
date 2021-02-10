@@ -15,6 +15,3 @@ requires:
 - name: eselect-lib-bin-symlink
   version: '>=0'
   category: app-eselect
-- name: libnotify
-  version: '>=0'
-  category: x11-libs

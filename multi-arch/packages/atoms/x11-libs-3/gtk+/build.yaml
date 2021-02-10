@@ -18,6 +18,9 @@ requires:
 - name: json-glib
   version: '>=0'
   category: dev-libs
+- name: gdbus-codegen
+  version: '>=0'
+  category: dev-util
 - name: libepoxy
   version: '>=0'
   category: media-libs

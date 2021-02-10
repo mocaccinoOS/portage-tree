@@ -15,6 +15,9 @@ requires:
 - name: iso-codes
   version: '>=0'
   category: app-text
+- name: orc
+  version: '>=0'
+  category: dev-lang
 - name: libgudev
   version: '>=0'
   category: dev-libs
@@ -24,6 +27,9 @@ requires:
 - name: graphene
   version: '>=0'
   category: media-libs
+- name: gstreamer
+  version: '>=0'
+  category: media-libs-1.0
 - name: libtheora
   version: '>=0'
   category: media-libs
@@ -33,6 +39,9 @@ requires:
 - name: tremor
   version: '>=0'
   category: media-libs
+- name: sed
+  version: '>=0'
+  category: sys-apps
 - name: libXv
   version: '>=0'
   category: x11-libs

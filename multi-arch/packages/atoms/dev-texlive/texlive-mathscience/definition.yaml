@@ -19,7 +19,8 @@ labels:
   BDEPEND: '>=app-text/texlive-core-2020 app-arch/xz-utils'
   DEPEND: '>=dev-texlive/texlive-fontsrecommended-2020 >=dev-texlive/texlive-latex-2020'
   IUSE: source doc
-  RDEPEND: '>=dev-texlive/texlive-fontsrecommended-2020 >=dev-texlive/texlive-latex-2020 dev-texlive/texlive-pstricks >=app-text/texlive-core-2020'
+  RDEPEND: '>=dev-texlive/texlive-fontsrecommended-2020 >=dev-texlive/texlive-latex-2020
+    dev-texlive/texlive-pstricks >=app-text/texlive-core-2020'
   emerge.packages: dev-texlive/texlive-mathscience
   kit: gentoo
   original.package.name: dev-texlive/texlive-mathscience

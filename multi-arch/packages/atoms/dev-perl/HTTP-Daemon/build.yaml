@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: HTTP-Message
+  version: '>=0'
+  category: dev-perl
 - name: Module-Build-Tiny
   version: '>=0'
   category: dev-perl

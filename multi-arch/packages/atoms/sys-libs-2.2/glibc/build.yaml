@@ -11,22 +11,3 @@ steps:
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
-requires:
-- name: gzip
-  version: '>=0'
-  category: app-arch
-- name: pax-utils
-  version: '>=0'
-  category: app-misc
-- name: gd
-  version: '>=0'
-  category: media-libs-2
-- name: openssh
-  version: '>=0'
-  category: net-misc
-- name: grep
-  version: '>=0'
-  category: sys-apps
-- name: gcc
-  version: '>=0'
-  category: sys-devel-9.3.0

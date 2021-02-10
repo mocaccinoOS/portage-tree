@@ -27,9 +27,24 @@ requires:
 - name: avahi
   version: '>=0'
   category: net-dns
+- name: gnutls
+  version: '>=0'
+  category: net-libs
+- name: acl
+  version: '>=0'
+  category: sys-apps
+- name: systemd
+  version: '>=0'
+  category: sys-apps
 - name: xinetd
   version: '>=0'
   category: sys-apps
+- name: pam
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 - name: shared-mime-info
   version: '>=0'
   category: x11-misc

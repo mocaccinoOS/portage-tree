@@ -13,7 +13,9 @@ uri:
 - http://blt.sourceforge.net/ http://jos.decoster.googlepages.com/bltfortk8.5.2
 license: BSD
 labels:
-  DEPEND: dev-lang/tk:0= jpeg? ( virtual/jpeg:0= ) X? ( x11-libs/libX11 ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: dev-lang/tk:0= jpeg? ( virtual/jpeg:0= ) X? ( x11-libs/libX11 ) >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69
+    >=sys-devel/libtool-2.4
   IUSE: jpeg static-libs X
   RDEPEND: dev-lang/tk:0= jpeg? ( virtual/jpeg:0= ) X? ( x11-libs/libX11 )
   emerge.packages: dev-tcltk/blt

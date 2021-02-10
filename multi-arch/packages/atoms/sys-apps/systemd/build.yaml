@@ -12,51 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: zstd
+- name: build-seed
   version: '>=0'
-  category: app-arch
-- name: docbook-xsl-stylesheets
-  version: '>=0'
-  category: app-text
-- name: elfutils
-  version: '>=0'
-  category: dev-libs
-- name: openssl
-  version: '>=0'
-  category: dev-libs
-- name: lxml
-  version: '>=0'
-  category: dev-python
-- name: gperf
-  version: '>=0'
-  category: dev-util
-- name: intltool
-  version: '>=0'
-  category: dev-util
-- name: qrencode
-  version: '>=0'
-  category: media-gfx
-- name: iptables
-  version: '>=0'
-  category: net-firewall
-- name: libmicrohttpd
-  version: '>=0'
-  category: net-libs
-- name: coreutils
-  version: '>=0'
-  category: sys-apps
-- name: dbus
-  version: '>=0'
-  category: sys-apps
-- name: kmod
-  version: '>=0'
-  category: sys-apps
-- name: gnu-efi
-  version: '>=0'
-  category: sys-boot
-- name: libapparmor
-  version: '>=0'
-  category: sys-libs
-- name: libxkbcommon
-  version: '>=0'
-  category: x11-libs
+  category: layers

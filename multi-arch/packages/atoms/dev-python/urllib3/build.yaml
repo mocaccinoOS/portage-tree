@@ -15,16 +15,19 @@ requires:
 - name: PySocks
   version: '>=0'
   category: dev-python
-- name: alabaster
-  version: '>=0'
-  category: dev-python
 - name: brotlipy
   version: '>=0'
   category: dev-python
 - name: certifi
   version: '>=0'
   category: dev-python
+- name: mock
+  version: '>=0'
+  category: dev-python
 - name: pyopenssl
+  version: '>=0'
+  category: dev-python
+- name: pytest
   version: '>=0'
   category: dev-python
 - name: trustme

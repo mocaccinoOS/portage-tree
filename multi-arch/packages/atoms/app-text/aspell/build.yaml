@@ -12,9 +12,15 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
 - name: gettext
   version: '>=0'
   category: sys-devel
 - name: libtool
   version: '>=0'
   category: sys-devel-2
+- name: ncurses
+  version: '>=0'
+  category: sys-libs

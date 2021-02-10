@@ -8,7 +8,8 @@ uri:
 - http://kldp.net/baekmuk/
 license: BSD
 labels:
-  DEPEND: X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings ) X? ( media-gfx/ebdftopcf )
+  DEPEND: X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings ) X? ( media-gfx/ebdftopcf
+    )
   IUSE: unicode X X
   emerge.packages: media-fonts/baekmuk-fonts
   kit: gentoo

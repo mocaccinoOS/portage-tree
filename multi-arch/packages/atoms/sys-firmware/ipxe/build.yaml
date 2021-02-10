@@ -21,3 +21,6 @@ requires:
 - name: syslinux
   version: '>=0'
   category: sys-boot
+- name: zlib
+  version: '>=0'
+  category: sys-libs

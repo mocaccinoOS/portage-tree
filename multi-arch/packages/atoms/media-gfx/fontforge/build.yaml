@@ -12,6 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: libltdl
   version: '>=0'
   category: dev-libs
@@ -27,6 +33,9 @@ requires:
 - name: woff2
   version: '>=0'
   category: media-libs
+- name: readline
+  version: '>=0'
+  category: sys-libs
 - name: gtk+
   version: '>=0'
   category: x11-libs-3

@@ -30,6 +30,9 @@ requires:
 - name: lcms
   version: '>=0'
   category: media-libs-2
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: polkit
   version: '>=0'
   category: sys-auth

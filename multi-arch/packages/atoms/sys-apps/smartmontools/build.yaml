@@ -15,6 +15,3 @@ requires:
 - name: libcap-ng
   version: '>=0'
   category: sys-libs
-- name: libselinux
-  version: '>=0'
-  category: sys-libs

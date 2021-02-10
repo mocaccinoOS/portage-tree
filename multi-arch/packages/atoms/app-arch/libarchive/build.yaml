@@ -39,3 +39,6 @@ requires:
 - name: e2fsprogs
   version: '>=0'
   category: sys-fs
+- name: zlib
+  version: '>=0'
+  category: sys-libs

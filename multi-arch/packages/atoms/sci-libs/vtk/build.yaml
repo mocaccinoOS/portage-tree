@@ -27,6 +27,9 @@ requires:
 - name: R
   version: '>=0'
   category: dev-lang
+- name: jsoncpp
+  version: '>=0'
+  category: dev-libs
 - name: pugixml
   version: '>=0'
   category: dev-libs
@@ -48,6 +51,12 @@ requires:
 - name: six
   version: '>=0'
   category: dev-python
+- name: qtopengl
+  version: '>=0'
+  category: dev-qt-5
+- name: qtsql
+  version: '>=0'
+  category: dev-qt-5
 - name: glew
   version: '>=0'
   category: media-libs

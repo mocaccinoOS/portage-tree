@@ -12,12 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: libxslt
+  version: '>=0'
+  category: dev-libs
 - name: vala-common
   version: '>=0'
   category: dev-libs
+- name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
 - name: graphviz
   version: '>=0'
   category: media-gfx
-- name: libsoup
+- name: shared-mime-info
   version: '>=0'
-  category: net-libs-2.4
+  category: x11-misc

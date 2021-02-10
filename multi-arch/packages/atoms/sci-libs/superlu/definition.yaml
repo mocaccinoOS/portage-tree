@@ -8,7 +8,8 @@ uri:
 - https://crd-legacy.lbl.gov/~xiaoye/SuperLU/
 license: BSD
 labels:
-  DEPEND: virtual/blas virtual/pkgconfig test? ( app-shells/tcsh ) sys-devel/make >=dev-util/cmake-3.9.6 virtual/fortran
+  DEPEND: virtual/blas virtual/pkgconfig test? ( app-shells/tcsh ) sys-devel/make
+    >=dev-util/cmake-3.9.6 virtual/fortran
   IUSE: doc examples test
   RDEPEND: virtual/blas virtual/fortran
   emerge.packages: sci-libs/superlu

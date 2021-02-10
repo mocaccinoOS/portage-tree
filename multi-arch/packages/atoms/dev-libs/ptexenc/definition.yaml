@@ -7,7 +7,8 @@ requires:
 - name: kpathsea
   version: '>=0'
   category: dev-libs
-description: Library for Japanese pTeX providing a better way of handling character encodings
+description: Library for Japanese pTeX providing a better way of handling character
+  encodings
 uri:
 - http://tutimura.ath.cx/ptexlive/?ptexenc
 license: BSD

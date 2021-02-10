@@ -10,7 +10,8 @@ license: BSD
 labels:
   BDEPEND: dev-util/ninja dev-util/cmake
   DEPEND: test? ( dev-cpp/gtest )
-  IUSE: test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  IUSE: test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32
+    abi_s390_32 abi_s390_64
   emerge.packages: app-arch/snappy
   kit: gentoo
   original.package.name: app-arch/snappy

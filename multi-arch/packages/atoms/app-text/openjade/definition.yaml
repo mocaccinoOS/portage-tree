@@ -13,7 +13,8 @@ uri:
 - http://openjade.sourceforge.net
 license: MIT
 labels:
-  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
   DEPEND: app-text/sgml-common >=app-text/opensp-1.5.1 dev-lang/perl
   RDEPEND: app-text/sgml-common >=app-text/opensp-1.5.1 >=app-text/sgml-common-0.6.3-r7
   emerge.packages: app-text/openjade

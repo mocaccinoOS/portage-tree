@@ -18,9 +18,11 @@ uri:
 - https://www.spice-space.org/
 license: GPL-3
 labels:
-  DEPEND: '>=dev-libs/nss-3.13 >=dev-libs/glib-2.22 passthrough? ( >=sys-apps/pcsc-lite-1.8 ) virtual/pkgconfig'
+  DEPEND: '>=dev-libs/nss-3.13 >=dev-libs/glib-2.22 passthrough? ( >=sys-apps/pcsc-lite-1.8
+    ) virtual/pkgconfig'
   IUSE: +passthrough static-libs
-  RDEPEND: '>=dev-libs/nss-3.13 >=dev-libs/glib-2.22 passthrough? ( >=sys-apps/pcsc-lite-1.8 )'
+  RDEPEND: '>=dev-libs/nss-3.13 >=dev-libs/glib-2.22 passthrough? ( >=sys-apps/pcsc-lite-1.8
+    )'
   emerge.packages: app-emulation/libcacard
   kit: gentoo
   original.package.name: app-emulation/libcacard

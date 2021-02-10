@@ -33,9 +33,15 @@ uri:
 - https://www.courier-mta.org/authlib/
 license: GPL-3
 labels:
-  DEPEND: net-mail/mailbase >=net-libs/courier-unicode-2.1 gdbm? ( sys-libs/gdbm ) !gdbm? ( sys-libs/db:= ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:= ) ldap? ( >=net-nds/openldap-1.2.11 ) mysql? ( dev-db/mysql-connector-c ) pam? ( sys-libs/pam ) postgres? ( dev-db/postgresql:= ) sqlite? ( dev-db/sqlite:3 )
+  DEPEND: net-mail/mailbase >=net-libs/courier-unicode-2.1 gdbm? ( sys-libs/gdbm )
+    !gdbm? ( sys-libs/db:= ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:=
+    ) ldap? ( >=net-nds/openldap-1.2.11 ) mysql? ( dev-db/mysql-connector-c ) pam?
+    ( sys-libs/pam ) postgres? ( dev-db/postgresql:= ) sqlite? ( dev-db/sqlite:3 )
   IUSE: berkdb crypt debug gdbm ldap libressl mysql pam postgres sqlite static-libs
-  RDEPEND: net-mail/mailbase >=net-libs/courier-unicode-2.1 gdbm? ( sys-libs/gdbm ) !gdbm? ( sys-libs/db:= ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:= ) ldap? ( >=net-nds/openldap-1.2.11 ) mysql? ( dev-db/mysql-connector-c ) pam? ( sys-libs/pam ) postgres? ( dev-db/postgresql:= ) sqlite? ( dev-db/sqlite:3 )
+  RDEPEND: net-mail/mailbase >=net-libs/courier-unicode-2.1 gdbm? ( sys-libs/gdbm
+    ) !gdbm? ( sys-libs/db:= ) !libressl? ( dev-libs/openssl:0= ) libressl? ( dev-libs/libressl:=
+    ) ldap? ( >=net-nds/openldap-1.2.11 ) mysql? ( dev-db/mysql-connector-c ) pam?
+    ( sys-libs/pam ) postgres? ( dev-db/postgresql:= ) sqlite? ( dev-db/sqlite:3 )
   emerge.packages: net-libs/courier-authlib
   kit: gentoo
   original.package.name: net-libs/courier-authlib

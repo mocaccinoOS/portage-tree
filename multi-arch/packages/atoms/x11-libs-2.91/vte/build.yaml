@@ -15,6 +15,15 @@ requires:
 - name: vala
   version: '>=0'
   category: dev-lang-0.48
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: libpcre2
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: systemd
   version: '>=0'
   category: sys-apps

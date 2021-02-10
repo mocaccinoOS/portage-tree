@@ -5,6 +5,7 @@ requires:
 - name: p11-kit
   version: '>=0'
   category: app-crypt
+conflicts:
 - name: java-config
   version: '>=0'
   category: dev-java-2

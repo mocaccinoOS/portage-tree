@@ -21,15 +21,12 @@ requires:
 - name: libedit
   version: '>=0'
   category: dev-libs
+- name: libffi
+  version: '>=0'
+  category: dev-libs
 - name: libpfm
   version: '>=0'
   category: dev-libs
-- name: recommonmark
-  version: '>=0'
-  category: dev-python
-- name: sphinx
-  version: '>=0'
-  category: dev-python
 - name: z3
   version: '>=0'
   category: sci-mathematics

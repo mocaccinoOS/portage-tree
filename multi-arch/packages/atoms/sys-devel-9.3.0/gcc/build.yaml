@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: boehm-gc
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: isl
-  version: '>=0'
-  category: dev-libs
-- name: mpc
-  version: '>=0'
-  category: dev-libs
-- name: glibc
-  version: '>=0'
-  category: sys-libs-2.2
+  category: layers

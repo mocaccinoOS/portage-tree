@@ -27,9 +27,15 @@ requires:
 - name: libtasn1
   version: '>=0'
   category: dev-libs
+- name: gperf
+  version: '>=0'
+  category: dev-util
 - name: wpebackend-fdo
   version: '>=0'
   category: gui-libs-1.0
+- name: gst-plugins-bad
+  version: '>=0'
+  category: media-libs-1.0
 - name: libwebp
   version: '>=0'
   category: media-libs

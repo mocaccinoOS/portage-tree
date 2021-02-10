@@ -15,3 +15,6 @@ requires:
 - name: pgf
   version: '>=0'
   category: dev-tex
+- name: texlive-basic
+  version: '>=0'
+  category: dev-texlive

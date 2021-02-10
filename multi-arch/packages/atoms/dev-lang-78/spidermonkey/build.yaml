@@ -18,9 +18,9 @@ requires:
 - name: nspr
   version: '>=0'
   category: dev-libs
-- name: six
-  version: '>=0'
-  category: dev-python
 - name: llvm
   version: '>=0'
   category: sys-devel-10
+- name: readline
+  version: '>=0'
+  category: sys-libs

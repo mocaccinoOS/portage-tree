@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: attrs
-  version: '>=0'
-  category: dev-python
-- name: pyasn1-modules
-  version: '>=0'
-  category: dev-python
-- name: pyopenssl
+- name: setuptools
   version: '>=0'
   category: dev-python

@@ -15,6 +15,9 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
+- name: qtgui
+  version: '>=0'
+  category: dev-qt-5
 - name: qtxml
   version: '>=0'
   category: dev-qt-5
@@ -24,6 +27,9 @@ requires:
 - name: openjpeg
   version: '>=0'
   category: media-libs-2
+- name: curl
+  version: '>=0'
+  category: net-misc
 - name: cairo
   version: '>=0'
   category: x11-libs

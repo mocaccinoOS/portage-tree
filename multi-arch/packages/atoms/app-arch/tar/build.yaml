@@ -15,6 +15,6 @@ requires:
 - name: attr
   version: '>=0'
   category: sys-apps
-- name: libselinux
+- name: gettext
   version: '>=0'
-  category: sys-libs
+  category: sys-devel

@@ -6,7 +6,8 @@ uri:
 - https://www.freedesktop.org/wiki/Software/XKeyboardConfig https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config
 license: MIT
 labels:
-  BDEPEND: '|| ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) dev-util/intltool sys-devel/gettext virtual/pkgconfig'
+  BDEPEND: '|| ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6
+    ) dev-util/intltool sys-devel/gettext virtual/pkgconfig'
   emerge.packages: x11-misc/xkeyboard-config
   kit: gentoo
   original.package.name: x11-misc/xkeyboard-config

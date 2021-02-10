@@ -27,3 +27,6 @@ requires:
 - name: iptables
   version: '>=0'
   category: net-firewall
+- name: readline
+  version: '>=0'
+  category: sys-libs

@@ -16,8 +16,10 @@ uri:
 - https://www.gnu.org/software/automake/
 license: GPL-2
 labels:
-  DEPEND: dev-lang/perl >=sys-devel/automake-wrapper-11 >=sys-devel/autoconf-2.69:* sys-devel/gnuconfig sys-apps/help2man
-  RDEPEND: dev-lang/perl >=sys-devel/automake-wrapper-11 >=sys-devel/autoconf-2.69:* sys-devel/gnuconfig
+  DEPEND: dev-lang/perl >=sys-devel/automake-wrapper-11 >=sys-devel/autoconf-2.69:*
+    sys-devel/gnuconfig sys-apps/help2man
+  RDEPEND: dev-lang/perl >=sys-devel/automake-wrapper-11 >=sys-devel/autoconf-2.69:*
+    sys-devel/gnuconfig
   emerge.packages: sys-devel/automake:1.16
   kit: gentoo
   original.package.name: sys-devel/automake

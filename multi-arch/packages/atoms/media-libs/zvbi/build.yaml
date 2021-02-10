@@ -18,6 +18,9 @@ requires:
 - name: gettext
   version: '>=0'
   category: sys-devel
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 - name: libXt
   version: '>=0'
   category: x11-libs

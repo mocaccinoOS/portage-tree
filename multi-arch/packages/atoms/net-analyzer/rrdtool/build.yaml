@@ -18,6 +18,9 @@ requires:
 - name: lua
   version: '>=0'
   category: dev-lang
+- name: tcl
+  version: '>=0'
+  category: dev-lang
 - name: groff
   version: '>=0'
   category: sys-apps

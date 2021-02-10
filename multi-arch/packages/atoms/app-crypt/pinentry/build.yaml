@@ -27,6 +27,9 @@ requires:
 - name: libcap
   version: '>=0'
   category: sys-libs
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
 - name: fltk
   version: '>=0'
   category: x11-libs-1

@@ -24,9 +24,13 @@ uri:
 - https://git.kernel.org/pub/scm/network/wireless/iwd.git/
 license: GPL-2
 labels:
-  DEPEND: sys-apps/dbus client? ( sys-libs/readline:0= ) ~dev-libs/ell-0.33 virtual/pkgconfig virtual/pkgconfig
-  IUSE: +client +crda +monitor ofono wired cpu_flags_x86_aes cpu_flags_x86_ssse3 standalone systemd kernel_linux
-  RDEPEND: sys-apps/dbus client? ( sys-libs/readline:0= ) ~dev-libs/ell-0.33 net-wireless/wireless-regdb crda? ( net-wireless/crda ) standalone? ( systemd? ( sys-apps/systemd ) !systemd? ( virtual/resolvconf ) )
+  DEPEND: sys-apps/dbus client? ( sys-libs/readline:0= ) ~dev-libs/ell-0.33 virtual/pkgconfig
+    virtual/pkgconfig
+  IUSE: +client +crda +monitor ofono wired cpu_flags_x86_aes cpu_flags_x86_ssse3 standalone
+    systemd kernel_linux
+  RDEPEND: sys-apps/dbus client? ( sys-libs/readline:0= ) ~dev-libs/ell-0.33 net-wireless/wireless-regdb
+    crda? ( net-wireless/crda ) standalone? ( systemd? ( sys-apps/systemd ) !systemd?
+    ( virtual/resolvconf ) )
   emerge.packages: net-wireless/iwd
   kit: gentoo
   original.package.name: net-wireless/iwd

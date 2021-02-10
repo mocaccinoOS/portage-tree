@@ -1,0 +1,18 @@
+name: efivar
+version: "37"
+category: sys-libs
+requires:
+- name: popt
+  version: '>=0'
+  category: dev-libs
+description: Tools and library to manipulate EFI variables
+uri:
+- https://github.com/rhinstaller/efivar
+license: GPL-2
+labels:
+  DEPEND: dev-libs/popt >=sys-kernel/linux-headers-3.18 virtual/pkgconfig
+  RDEPEND: dev-libs/popt
+  emerge.packages: sys-libs/efivar
+  kit: gentoo
+  original.package.name: sys-libs/efivar
+  original.package.version: "37"

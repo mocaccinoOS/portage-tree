@@ -5,6 +5,7 @@ requires:
 - name: eselect-lib-bin-symlink
   version: '>=0'
   category: app-eselect
+conflicts:
 - name: libnotify
   version: '>=0'
   category: x11-libs

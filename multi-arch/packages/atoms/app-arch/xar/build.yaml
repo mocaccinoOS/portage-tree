@@ -18,3 +18,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
+- name: zlib
+  version: '>=0'
+  category: sys-libs

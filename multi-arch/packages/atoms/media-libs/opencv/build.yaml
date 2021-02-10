@@ -18,6 +18,9 @@ requires:
 - name: ogre
   version: '>=0'
   category: dev-games
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 - name: protobuf
   version: '>=0'
   category: dev-libs

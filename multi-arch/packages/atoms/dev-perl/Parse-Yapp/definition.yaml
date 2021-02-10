@@ -2,6 +2,10 @@ name: Parse-Yapp
 version: 1.210.0
 category: dev-perl
 requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+conflicts:
 - name: samba
   version: '>=0'
   category: net-fs

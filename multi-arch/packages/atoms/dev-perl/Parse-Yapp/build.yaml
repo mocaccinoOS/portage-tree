@@ -12,6 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: samba
+- name: perl
   version: '>=0'
-  category: net-fs
+  category: dev-lang

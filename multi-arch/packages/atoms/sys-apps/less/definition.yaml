@@ -18,9 +18,11 @@ uri:
 - http://www.greenwoodsoftware.com/less/
 license: '|| ( GPL-3 BSD-2 )'
 labels:
-  DEPEND: '>=app-misc/editor-wrapper-3 >=sys-libs/ncurses-5.2:0= pcre? ( dev-libs/libpcre2 )'
+  DEPEND: '>=app-misc/editor-wrapper-3 >=sys-libs/ncurses-5.2:0= pcre? ( dev-libs/libpcre2
+    )'
   IUSE: pcre unicode
-  RDEPEND: '>=app-misc/editor-wrapper-3 >=sys-libs/ncurses-5.2:0= pcre? ( dev-libs/libpcre2 )'
+  RDEPEND: '>=app-misc/editor-wrapper-3 >=sys-libs/ncurses-5.2:0= pcre? ( dev-libs/libpcre2
+    )'
   emerge.packages: sys-apps/less
   kit: gentoo
   original.package.name: sys-apps/less

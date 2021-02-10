@@ -2,6 +2,10 @@ name: libibcm
 version: 1.0.5
 category: sys-fabric-3.12
 requires:
+- name: libibverbs
+  version: '>=0'
+  category: sys-fabric-3.12
+conflicts:
 - name: libibcm
   version: '>=0'
   category: sys-fabric-3.12

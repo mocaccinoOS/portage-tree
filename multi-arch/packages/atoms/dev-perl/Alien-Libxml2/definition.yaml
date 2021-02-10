@@ -15,7 +15,9 @@ uri:
 - https://metacpan.org/release/Alien-Libxml2
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  BDEPEND: '>=dev-perl/Alien-Build-2.120.0 dev-libs/libxml2:2= >=dev-perl/Alien-Build-2.120.0 virtual/perl-ExtUtils-CBuilder >=virtual/perl-ExtUtils-MakeMaker-6.520.0 test? ( >=dev-perl/Test2-Suite-0.0.60 ) dev-lang/perl'
+  BDEPEND: '>=dev-perl/Alien-Build-2.120.0 dev-libs/libxml2:2= >=dev-perl/Alien-Build-2.120.0
+    virtual/perl-ExtUtils-CBuilder >=virtual/perl-ExtUtils-MakeMaker-6.520.0 test?
+    ( >=dev-perl/Test2-Suite-0.0.60 ) dev-lang/perl'
   DEPEND: dev-libs/libxml2:2= dev-lang/perl
   IUSE: test
   RDEPEND: '>=dev-perl/Alien-Build-2.120.0 dev-libs/libxml2:2= dev-lang/perl:='

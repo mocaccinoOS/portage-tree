@@ -5,7 +5,8 @@ requires:
 - name: glib
   version: '>=0'
   category: dev-libs-2
-description: A general purpose TCP-IP emulator used by virtual machine hypervisors to provide virtual networking services.
+description: A general purpose TCP-IP emulator used by virtual machine hypervisors
+  to provide virtual networking services.
 uri:
 - https://gitlab.freedesktop.org/slirp/libslirp
 license: BSD

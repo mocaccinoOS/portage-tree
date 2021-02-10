@@ -2,11 +2,7 @@ name: dmidecode
 version: "3.2"
 category: sys-apps
 use_flags:
-- selinux
-requires:
-- name: selinux-dmidecode
-  version: '>=0'
-  category: sec-policy
+- -selinux
 description: DMI (Desktop Management Interface) table related utilities
 uri:
 - https://www.nongnu.org/dmidecode/

@@ -7,12 +7,14 @@ requires:
 - name: netcdf
   version: '>=0'
   category: sci-libs
-description: Model developed to store and retrieve transient data for finite element analyses
+description: Model developed to store and retrieve transient data for finite element
+  analyses
 uri:
 - https://github.com/certik/exodus
 license: BSD
 labels:
-  DEPEND: sci-libs/netcdf[hdf5] test? ( app-shells/tcsh ) sys-devel/make >=dev-util/cmake-3.9.6 test? ( virtual/fortran )
+  DEPEND: sci-libs/netcdf[hdf5] test? ( app-shells/tcsh ) sys-devel/make >=dev-util/cmake-3.9.6
+    test? ( virtual/fortran )
   IUSE: static-libs test
   RDEPEND: sci-libs/netcdf[hdf5]
   emerge.packages: sci-libs/exodusii

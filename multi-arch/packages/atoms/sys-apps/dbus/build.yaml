@@ -12,21 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: messagebus
+- name: build-seed
   version: '>=0'
-  category: acct-user
-- name: xmlto
-  version: '>=0'
-  category: app-text
-- name: expat
-  version: '>=0'
-  category: dev-libs
-- name: systemd
-  version: '>=0'
-  category: sys-apps
-- name: autoconf-archive
-  version: '>=0'
-  category: sys-devel
-- name: libXt
-  version: '>=0'
-  category: x11-libs
+  category: layers

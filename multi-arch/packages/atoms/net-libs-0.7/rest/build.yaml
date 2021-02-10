@@ -15,6 +15,9 @@ requires:
 - name: ca-certificates
   version: '>=0'
   category: app-misc
+- name: gtk-doc-am
+  version: '>=0'
+  category: dev-util
 - name: intltool
   version: '>=0'
   category: dev-util

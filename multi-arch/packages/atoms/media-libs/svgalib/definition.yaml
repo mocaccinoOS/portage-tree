@@ -12,10 +12,11 @@ uri:
 - http://www.svgalib.org/
 license: BSD
 labels:
-  DEPEND: kernel_linux? ( sys-apps/kmod[tools] ) sys-apps/sed kernel_linux? ( virtual/linux-sources virtual/libelf )
+  DEPEND: kernel_linux? ( sys-apps/kmod[tools] ) sys-apps/sed kernel_linux? ( virtual/linux-sources
+    virtual/libelf )
   IUSE: build +kernel-helper kernel_linux kernel_linux
   RDEPEND: kernel_linux? ( sys-apps/kmod[tools] )
   emerge.packages: media-libs/svgalib
   kit: gentoo
   original.package.name: media-libs/svgalib
-  original.package.version: 1.9.25-r7
+  original.package.version: 1.9.25-r8

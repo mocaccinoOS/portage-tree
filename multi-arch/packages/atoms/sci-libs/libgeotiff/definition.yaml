@@ -12,7 +12,8 @@ uri:
 - https://trac.osgeo.org/geotiff/ https://github.com/OSGeo/libgeotiff
 license: GPL-2
 labels:
-  BDEPEND: doc? ( app-doc/doxygen ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  BDEPEND: doc? ( app-doc/doxygen ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
   DEPEND: '>=media-libs/tiff-3.9.1:0 >=sci-libs/proj-6.0.0:= sys-libs/zlib virtual/jpeg:='
   IUSE: debug doc static-libs
   RDEPEND: '>=media-libs/tiff-3.9.1:0 >=sci-libs/proj-6.0.0:= sys-libs/zlib virtual/jpeg:='

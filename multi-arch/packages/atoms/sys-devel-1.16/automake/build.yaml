@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: help2man
+- name: build-seed
   version: '>=0'
-  category: sys-apps
-- name: autoconf
-  version: '>=0'
-  category: sys-devel-2.69
-- name: automake-wrapper
-  version: '>=0'
-  category: sys-devel
-- name: gnuconfig
-  version: '>=0'
-  category: sys-devel
+  category: layers

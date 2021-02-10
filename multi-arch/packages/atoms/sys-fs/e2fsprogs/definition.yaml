@@ -20,10 +20,13 @@ uri:
 - http://e2fsprogs.sourceforge.net/
 license: GPL-2 BSD
 labels:
-  BDEPEND: nls? ( sys-devel/gettext ) virtual/pkgconfig sys-apps/texinfo virtual/pkgconfig virtual/pkgconfig
-  DEPEND: ~sys-libs/e2fsprogs-libs-1.45.5 >=sys-apps/util-linux-2.16 cron? ( sys-fs/lvm2[-device-mapper-only(-)] ) fuse? ( sys-fs/fuse:0 ) nls? ( virtual/libintl )
+  BDEPEND: nls? ( sys-devel/gettext ) virtual/pkgconfig sys-apps/texinfo virtual/pkgconfig
+    virtual/pkgconfig
+  DEPEND: ~sys-libs/e2fsprogs-libs-1.45.5 >=sys-apps/util-linux-2.16 cron? ( sys-fs/lvm2[-device-mapper-only(-)]
+    ) fuse? ( sys-fs/fuse:0 ) nls? ( virtual/libintl )
   IUSE: cron fuse nls static-libs elibc_FreeBSD split-usr
-  RDEPEND: ~sys-libs/e2fsprogs-libs-1.45.5 >=sys-apps/util-linux-2.16 cron? ( sys-fs/lvm2[-device-mapper-only(-)] ) fuse? ( sys-fs/fuse:0 ) nls? ( virtual/libintl )
+  RDEPEND: ~sys-libs/e2fsprogs-libs-1.45.5 >=sys-apps/util-linux-2.16 cron? ( sys-fs/lvm2[-device-mapper-only(-)]
+    ) fuse? ( sys-fs/fuse:0 ) nls? ( virtual/libintl )
   emerge.packages: sys-fs/e2fsprogs
   kit: gentoo
   original.package.name: sys-fs/e2fsprogs

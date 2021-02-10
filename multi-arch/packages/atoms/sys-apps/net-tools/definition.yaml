@@ -2,13 +2,10 @@ name: net-tools
 version: "1.60"
 category: sys-apps
 use_flags:
+- -selinux
 - hostname
-- selinux
-requires:
+conflicts:
 - name: coreutils
-  version: '>=0'
-  category: sys-apps
-- name: openrc
   version: '>=0'
   category: sys-apps
 description: Standard Linux networking tools
@@ -18,7 +15,8 @@ license: GPL-2
 labels:
   DEPEND: selinux? ( sys-libs/libselinux ) selinux? ( virtual/pkgconfig ) app-arch/xz-utils
   IUSE: +arp +hostname ipv6 nis nls plipconfig selinux slattach static
-  RDEPEND: selinux? ( sys-libs/libselinux ) hostname? ( !sys-apps/coreutils[hostname] ) !<sys-apps/openrc-0.9.9.3
+  RDEPEND: selinux? ( sys-libs/libselinux ) hostname? ( !sys-apps/coreutils[hostname]
+    ) !<sys-apps/openrc-0.9.9.3
   emerge.packages: sys-apps/net-tools
   kit: gentoo
   original.package.name: sys-apps/net-tools

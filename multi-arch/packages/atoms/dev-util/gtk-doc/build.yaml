@@ -21,10 +21,19 @@ requires:
 - name: docbook-xml-dtd
   version: '>=0'
   category: app-text-4.5
+- name: docbook-xsl-stylesheets
+  version: '>=0'
+  category: app-text
+- name: libxslt
+  version: '>=0'
+  category: dev-libs
 - name: pygments
   version: '>=0'
   category: dev-python
 - name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
+- name: gtk-doc-am
   version: '>=0'
   category: dev-util
 - name: shared-mime-info

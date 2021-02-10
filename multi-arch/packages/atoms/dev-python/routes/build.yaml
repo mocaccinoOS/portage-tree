@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: nose
-  version: '>=0'
-  category: dev-python
-- name: repoze-lru
-  version: '>=0'
-  category: dev-python
-- name: six
-  version: '>=0'
-  category: dev-python
-- name: webob
+- name: setuptools
   version: '>=0'
   category: dev-python

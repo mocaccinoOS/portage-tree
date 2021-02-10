@@ -1,6 +1,9 @@
 name: extra-cmake-modules
 version: 5.74.0
 category: kde-frameworks-5
+use_flags:
+- -doc
+- -test
 requires:
 - name: libarchive
   version: '>=0'
@@ -10,7 +13,12 @@ uri:
 - https://invent.kde.org/frameworks/extra-cmake-modules
 license: BSD
 labels:
-  BDEPEND: doc? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 ) || ( ( dev-lang/python:3.9 dev-python/sphinx[python_targets_python3_9(-),python_single_target_python3_9(+)] ) ( dev-lang/python:3.8 dev-python/sphinx[python_targets_python3_8(-),python_single_target_python3_8(+)] ) ( dev-lang/python:3.7 dev-python/sphinx[python_targets_python3_7(-),python_single_target_python3_7(+)] ) ) >=dev-qt/qthelp-5.14.2:5 ) test? ( >=dev-qt/linguist-tools-5.14.2:5 >=dev-qt/qtcore-5.14.2:5 ) dev-util/ninja dev-util/cmake
+  BDEPEND: doc? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7
+    ) || ( ( dev-lang/python:3.9 dev-python/sphinx[python_targets_python3_9(-),python_single_target_python3_9(+)]
+    ) ( dev-lang/python:3.8 dev-python/sphinx[python_targets_python3_8(-),python_single_target_python3_8(+)]
+    ) ( dev-lang/python:3.7 dev-python/sphinx[python_targets_python3_7(-),python_single_target_python3_7(+)]
+    ) ) >=dev-qt/qthelp-5.14.2:5 ) test? ( >=dev-qt/linguist-tools-5.14.2:5 >=dev-qt/qtcore-5.14.2:5
+    ) dev-util/ninja dev-util/cmake
   IUSE: doc test
   RDEPEND: app-arch/libarchive[bzip2]
   emerge.packages: kde-frameworks/extra-cmake-modules:5

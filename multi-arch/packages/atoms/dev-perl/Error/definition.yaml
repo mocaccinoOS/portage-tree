@@ -12,7 +12,8 @@ uri:
 - https://metacpan.org/release/Error
 license: '|| ( Artistic GPL-1+ ) MIT'
 labels:
-  DEPEND: virtual/perl-Scalar-List-Utils >=dev-perl/Module-Build-0.280.801 test? ( virtual/perl-Test-Simple ) dev-lang/perl
+  DEPEND: virtual/perl-Scalar-List-Utils >=dev-perl/Module-Build-0.280.801 test? (
+    virtual/perl-Test-Simple ) dev-lang/perl
   IUSE: test
   RDEPEND: virtual/perl-Scalar-List-Utils dev-lang/perl:=
   emerge.packages: dev-perl/Error

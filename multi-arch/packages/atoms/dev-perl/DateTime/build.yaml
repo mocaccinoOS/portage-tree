@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: DateTime-Format-Mail
-  version: '>=0'
-  category: dev-perl
 - name: DateTime-Locale
   version: '>=0'
   category: dev-perl

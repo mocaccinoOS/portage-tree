@@ -1,13 +1,6 @@
 name: eselect-cdparanoia
 version: "0.1"
 category: app-eselect
-requires:
-- name: eselect-lib-bin-symlink
-  version: '>=0'
-  category: app-eselect
-- name: cdparanoia
-  version: '>=0'
-  category: media-sound
 description: Manage /usr/bin/cdparanoia symlink
 uri:
 - https://www.gentoo.org/proj/en/eselect/

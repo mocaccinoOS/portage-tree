@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: gtk+
+- name: docbook-xml-dtd
   version: '>=0'
-  category: x11-libs-3
+  category: app-text-4.5
+- name: gdk-pixbuf
+  version: '>=0'
+  category: x11-libs-2

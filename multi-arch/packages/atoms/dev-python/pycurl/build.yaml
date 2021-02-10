@@ -21,6 +21,12 @@ requires:
 - name: libressl
   version: '>=0'
   category: dev-libs
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: curl
   version: '>=0'
   category: net-misc

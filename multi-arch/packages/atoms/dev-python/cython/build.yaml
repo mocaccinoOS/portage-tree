@@ -12,12 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: emacs
-  version: '>=0'
-  category: app-editors-27
 - name: numpy
-  version: '>=0'
-  category: dev-python
-- name: sphinx
   version: '>=0'
   category: dev-python

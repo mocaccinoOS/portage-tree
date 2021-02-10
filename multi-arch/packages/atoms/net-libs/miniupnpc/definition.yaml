@@ -9,7 +9,8 @@ uri:
 - http://miniupnp.free.fr/
 license: BSD
 labels:
-  BDEPEND: kernel_linux? ( sys-apps/lsb-release sys-apps/which ) verify-sig? ( app-crypt/openpgp-keys-miniupnp ) verify-sig? ( app-crypt/gnupg >=app-portage/gemato-16 )
+  BDEPEND: kernel_linux? ( sys-apps/lsb-release sys-apps/which ) verify-sig? ( app-crypt/openpgp-keys-miniupnp
+    ) verify-sig? ( app-crypt/gnupg >=app-portage/gemato-16 )
   IUSE: ipv6 kernel_linux static-libs verify-sig
   emerge.packages: net-libs/miniupnpc
   kit: gentoo

@@ -20,9 +20,11 @@ uri:
 license: LGPL-2.1+
 labels:
   BDEPEND: virtual/pkgconfig
-  DEPEND: '>=dev-libs/glib-2.6:2 aspell? ( app-text/aspell ) hunspell? ( >=app-text/hunspell-1.2.1:0= )'
+  DEPEND: '>=dev-libs/glib-2.6:2 aspell? ( app-text/aspell ) hunspell? ( >=app-text/hunspell-1.2.1:0=
+    )'
   IUSE: aspell +hunspell
-  RDEPEND: '>=dev-libs/glib-2.6:2 aspell? ( app-text/aspell ) hunspell? ( >=app-text/hunspell-1.2.1:0= )'
+  RDEPEND: '>=dev-libs/glib-2.6:2 aspell? ( app-text/aspell ) hunspell? ( >=app-text/hunspell-1.2.1:0=
+    )'
   emerge.packages: app-text/enchant:2
   kit: gentoo
   original.package.name: app-text/enchant

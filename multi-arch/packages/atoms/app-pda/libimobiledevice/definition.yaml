@@ -1,0 +1,43 @@
+name: libimobiledevice
+version: 1.2.1_pre20200220
+category: app-pda
+use_flags:
+- -doc
+- -gnutls
+- -libressl
+- -python_targets_python3_6
+- -python_targets_python3_8
+- python
+- python_targets_python3_7
+requires:
+- name: libusbmuxd
+  version: '>=0'
+  category: app-pda
+description: Support library to communicate with Apple iPhone/iPod Touch devices
+uri:
+- https://www.libimobiledevice.org/
+license: GPL-2+ LGPL-2.1+
+labels:
+  BDEPEND: virtual/pkgconfig doc? ( app-doc/doxygen ) python? ( >=dev-python/cython-0.17[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+    ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15
+    ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: '>=app-pda/libplist-1.11:= >=app-pda/libusbmuxd-1.1.0:= gnutls? ( dev-libs/libgcrypt:0
+    >=dev-libs/libtasn1-1.1 >=net-libs/gnutls-2.2.0 ) !gnutls? ( !libressl? ( dev-libs/openssl:0=
+    ) libressl? ( dev-libs/libressl:0= ) ) python? ( python_targets_python3_6? ( dev-lang/python:3.6
+    ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+    app-pda/libplist[python(-),python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+    )'
+  IUSE: doc gnutls libressl python static-libs python_targets_python3_6 python_targets_python3_7
+    python_targets_python3_8
+  RDEPEND: '>=app-pda/libplist-1.11:= >=app-pda/libusbmuxd-1.1.0:= gnutls? ( dev-libs/libgcrypt:0
+    >=dev-libs/libtasn1-1.1 >=net-libs/gnutls-2.2.0 ) !gnutls? ( !libressl? ( dev-libs/openssl:0=
+    ) libressl? ( dev-libs/libressl:0= ) ) python? ( python_targets_python3_6? ( dev-lang/python:3.6
+    ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+    app-pda/libplist[python(-),python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-)]
+    )'
+  emerge.packages: app-pda/libimobiledevice
+  kit: gentoo
+  original.package.name: app-pda/libimobiledevice
+  original.package.version: 1.2.1_pre20200220

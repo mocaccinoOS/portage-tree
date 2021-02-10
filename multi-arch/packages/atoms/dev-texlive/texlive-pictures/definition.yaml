@@ -5,6 +5,9 @@ requires:
 - name: pgf
   version: '>=0'
   category: dev-tex
+- name: texlive-basic
+  version: '>=0'
+  category: dev-texlive
 description: TeXLive Graphics, pictures, diagrams
 uri:
 - http://www.tug.org/texlive/

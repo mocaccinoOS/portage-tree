@@ -24,10 +24,16 @@ requires:
 - name: lua
   version: '>=0'
   category: dev-lang
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
 - name: extra-cmake-modules
   version: '>=0'
   category: kde-frameworks-5
 - name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: util-linux
   version: '>=0'
   category: sys-apps
 - name: gtk+

@@ -12,18 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: blinker
-  version: '>=0'
-  category: dev-python
-- name: click
-  version: '>=0'
-  category: dev-python
-- name: itsdangerous
-  version: '>=0'
-  category: dev-python
-- name: jinja
-  version: '>=0'
-  category: dev-python
-- name: werkzeug
+- name: setuptools
   version: '>=0'
   category: dev-python

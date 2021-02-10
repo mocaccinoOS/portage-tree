@@ -18,9 +18,15 @@ requires:
 - name: libltdl
   version: '>=0'
   category: dev-libs
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
 - name: lockdev
   version: '>=0'
   category: dev-libs
+- name: gtk-doc-am
+  version: '>=0'
+  category: dev-util
 - name: gd
   version: '>=0'
   category: media-libs-2
@@ -30,6 +36,3 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
-- name: udev
-  version: '>=0'
-  category: sys-fs

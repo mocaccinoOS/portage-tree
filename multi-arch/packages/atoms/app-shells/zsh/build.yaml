@@ -15,9 +15,6 @@ requires:
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: baselayout
-  version: '>=0'
-  category: sys-apps
 - name: groff
   version: '>=0'
   category: sys-apps

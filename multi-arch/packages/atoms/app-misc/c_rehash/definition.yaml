@@ -1,7 +1,7 @@
 name: c_rehash
 version: "1.7"
 category: app-misc
-requires:
+conflicts:
 - name: openssl
   version: '>=0'
   category: dev-libs

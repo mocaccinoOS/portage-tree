@@ -26,9 +26,12 @@ uri:
 - http://libteam.org
 license: LGPL-2.1+
 labels:
-  DEPEND: '>=dev-libs/jansson-2.4 dev-libs/libdaemon >=dev-libs/libnl-3.2.19[utils] dbus? ( sys-apps/dbus ) zmq? ( >=net-libs/zeromq-3.2.0 ) >=app-portage/elt-patches-20170815'
+  DEPEND: '>=dev-libs/jansson-2.4 dev-libs/libdaemon >=dev-libs/libnl-3.2.19[utils]
+    dbus? ( sys-apps/dbus ) zmq? ( >=net-libs/zeromq-3.2.0 ) >=app-portage/elt-patches-20170815'
   IUSE: dbus debug examples static-libs +syslog zmq kernel_linux
-  RDEPEND: '>=dev-libs/jansson-2.4 dev-libs/libdaemon >=dev-libs/libnl-3.2.19[utils] dbus? ( sys-apps/dbus ) zmq? ( >=net-libs/zeromq-3.2.0 ) syslog? ( virtual/logger )'
+  RDEPEND: '>=dev-libs/jansson-2.4 dev-libs/libdaemon >=dev-libs/libnl-3.2.19[utils]
+    dbus? ( sys-apps/dbus ) zmq? ( >=net-libs/zeromq-3.2.0 ) syslog? ( virtual/logger
+    )'
   emerge.packages: net-misc/libteam
   kit: gentoo
   original.package.name: net-misc/libteam

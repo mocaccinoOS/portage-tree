@@ -27,6 +27,3 @@ requires:
 - name: libseccomp
   version: '>=0'
   category: sys-libs
-- name: libselinux
-  version: '>=0'
-  category: sys-libs

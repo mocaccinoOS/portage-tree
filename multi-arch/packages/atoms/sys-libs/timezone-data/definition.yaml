@@ -3,7 +3,7 @@ version: 2020a
 category: sys-libs
 use_flags:
 - nls
-requires:
+conflicts:
 - name: glibc
   version: '>=0'
   category: sys-libs-2.2

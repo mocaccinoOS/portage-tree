@@ -13,9 +13,11 @@ uri:
 - http://tiswww.case.edu/php/chet/bash/bashtop.html
 license: GPL-3
 labels:
-  DEPEND: '>=sys-libs/ncurses-5.2-r2:0= nls? ( virtual/libintl ) readline? ( >=sys-libs/readline-8.0:0= )'
+  DEPEND: '>=sys-libs/ncurses-5.2-r2:0= nls? ( virtual/libintl ) readline? ( >=sys-libs/readline-8.0:0=
+    )'
   IUSE: afs bashlogger examples mem-scramble +net nls plugins +readline
-  RDEPEND: '>=sys-libs/ncurses-5.2-r2:0= nls? ( virtual/libintl ) readline? ( >=sys-libs/readline-8.0:0= )'
+  RDEPEND: '>=sys-libs/ncurses-5.2-r2:0= nls? ( virtual/libintl ) readline? ( >=sys-libs/readline-8.0:0=
+    )'
   emerge.packages: app-shells/bash
   kit: gentoo
   original.package.name: app-shells/bash

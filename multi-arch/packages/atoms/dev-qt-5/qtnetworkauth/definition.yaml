@@ -13,7 +13,8 @@ uri:
 license: GPL-3
 labels:
   BDEPEND: dev-lang/perl virtual/pkgconfig
-  DEPEND: ~dev-qt/qtcore-5.15.1 ~dev-qt/qtnetwork-5.15.1 test? ( ~dev-qt/qttest-5.15.1 )
+  DEPEND: ~dev-qt/qtcore-5.15.1 ~dev-qt/qtnetwork-5.15.1 test? ( ~dev-qt/qttest-5.15.1
+    )
   IUSE: debug test
   RDEPEND: ~dev-qt/qtcore-5.15.1 ~dev-qt/qtnetwork-5.15.1 dev-qt/qtchooser
   emerge.packages: dev-qt/qtnetworkauth:5

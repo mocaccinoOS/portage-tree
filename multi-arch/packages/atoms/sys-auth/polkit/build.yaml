@@ -15,9 +15,15 @@ requires:
 - name: polkitd
   version: '>=0'
   category: acct-user
+- name: docbook-xml-dtd
+  version: '>=0'
+  category: app-text-4.5
 - name: spidermonkey
   version: '>=0'
   category: dev-lang-78
+- name: expat
+  version: '>=0'
+  category: dev-libs
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
@@ -27,9 +33,15 @@ requires:
 - name: gtk-doc-am
   version: '>=0'
   category: dev-util
+- name: intltool
+  version: '>=0'
+  category: dev-util
 - name: systemd
   version: '>=0'
   category: sys-apps
 - name: pambase
   version: '>=0'
   category: sys-auth
+- name: pam
+  version: '>=0'
+  category: sys-libs

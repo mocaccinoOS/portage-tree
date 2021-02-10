@@ -15,13 +15,19 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
-- name: libelf
+- name: xz-utils
   version: '>=0'
-  category: dev-libs
+  category: app-arch
 - name: valgrind
   version: '>=0'
   category: dev-util
 - name: flex
+  version: '>=0'
+  category: sys-devel
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: m4
   version: '>=0'
   category: sys-devel
 - name: zlib

@@ -2,11 +2,7 @@ name: openresolv
 version: 3.10.0
 category: net-dns
 use_flags:
-- selinux
-requires:
-- name: selinux-resolvconf
-  version: '>=0'
-  category: sec-policy
+- -selinux
 description: A framework for managing DNS information
 uri:
 - https://roy.marples.name/projects/openresolv

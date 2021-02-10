@@ -3,10 +3,6 @@ version: "1.195"
 category: net-analyzer
 use_flags:
 - -elibc_Darwin
-requires:
-- name: netcat
-  version: '>=0'
-  category: net-analyzer
 description: The OpenBSD network swiss army knife
 uri:
 - https://cvsweb.openbsd.org/src/usr.bin/nc/ https://salsa.debian.org/debian/netcat-openbsd

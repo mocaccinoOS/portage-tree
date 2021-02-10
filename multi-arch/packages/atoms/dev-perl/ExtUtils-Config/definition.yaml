@@ -12,7 +12,8 @@ uri:
 - https://metacpan.org/release/ExtUtils-Config
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: virtual/perl-Data-Dumper >=virtual/perl-ExtUtils-MakeMaker-6.300.0 test? ( virtual/perl-File-Spec virtual/perl-IO >=virtual/perl-Test-Simple-0.88 ) dev-lang/perl
+  DEPEND: virtual/perl-Data-Dumper >=virtual/perl-ExtUtils-MakeMaker-6.300.0 test?
+    ( virtual/perl-File-Spec virtual/perl-IO >=virtual/perl-Test-Simple-0.88 ) dev-lang/perl
   IUSE: test
   RDEPEND: virtual/perl-Data-Dumper dev-lang/perl:=
   emerge.packages: dev-perl/ExtUtils-Config

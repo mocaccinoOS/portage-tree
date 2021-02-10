@@ -4,10 +4,10 @@ category: sys-apps
 use_flags:
 - -python_single_target_python3_6
 - -python_single_target_python3_8
+- -selinux
 - libusb
 - policykit
 - python_single_target_python3_7
-- selinux
 - udev
 requires:
 - name: openct
@@ -16,12 +16,12 @@ requires:
 - name: pcscd
   version: '>=0'
   category: acct-user
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
-- name: selinux-pcscd
-  version: '>=0'
-  category: sec-policy
 - name: polkit
   version: '>=0'
   category: sys-auth
@@ -31,9 +31,20 @@ uri:
 license: BSD ISC MIT GPL-3+ GPL-2
 labels:
   BDEPEND: virtual/pkgconfig virtual/pkgconfig virtual/pkgconfig
-  DEPEND: libusb? ( virtual/libusb:1 ) udev? ( virtual/udev ) policykit? ( >=sys-auth/polkit-0.111 ) acct-group/openct acct-group/pcscd acct-user/pcscd python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] )
-  IUSE: libusb policykit selinux systemd +udev python_single_target_python3_6 python_single_target_python3_7 python_single_target_python3_8 abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
-  RDEPEND: libusb? ( virtual/libusb:1 ) udev? ( virtual/udev ) policykit? ( >=sys-auth/polkit-0.111 ) acct-group/openct acct-group/pcscd acct-user/pcscd python_single_target_python3_6? ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7? ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) selinux? ( sec-policy/selinux-pcscd )
+  DEPEND: libusb? ( virtual/libusb:1 ) udev? ( virtual/udev ) policykit? ( >=sys-auth/polkit-0.111
+    ) acct-group/openct acct-group/pcscd acct-user/pcscd python_single_target_python3_6?
+    ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7?
+    ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8?
+    ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] )
+  IUSE: libusb policykit selinux systemd +udev python_single_target_python3_6 python_single_target_python3_7
+    python_single_target_python3_8 abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32
+    abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: libusb? ( virtual/libusb:1 ) udev? ( virtual/udev ) policykit? ( >=sys-auth/polkit-0.111
+    ) acct-group/openct acct-group/pcscd acct-user/pcscd python_single_target_python3_6?
+    ( dev-lang/python:3.6 >=dev-lang/python-exec-2:=[python_targets_python3_6] ) python_single_target_python3_7?
+    ( dev-lang/python:3.7 >=dev-lang/python-exec-2:=[python_targets_python3_7] ) python_single_target_python3_8?
+    ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) selinux?
+    ( sec-policy/selinux-pcscd )
   emerge.packages: sys-apps/pcsc-lite
   kit: gentoo
   original.package.name: sys-apps/pcsc-lite

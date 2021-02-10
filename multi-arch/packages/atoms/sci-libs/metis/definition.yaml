@@ -1,10 +1,6 @@
 name: metis
 version: 5.1.0
 category: sci-libs
-requires:
-- name: parmetis
-  version: '>=0'
-  category: sci-libs
 description: A package for unstructured serial graph partitioning
 uri:
 - http://www-users.cs.umn.edu/~karypis/metis/metis/

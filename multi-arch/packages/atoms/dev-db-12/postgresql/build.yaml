@@ -21,7 +21,10 @@ requires:
 - name: eselect-postgresql
   version: '>=0'
   category: app-eselect
-- name: ossp-uuid
+- name: tcl
+  version: '>=0'
+  category: dev-lang
+- name: icu
   version: '>=0'
   category: dev-libs
 - name: openldap
@@ -30,9 +33,21 @@ requires:
 - name: less
   version: '>=0'
   category: sys-apps
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
 - name: bison
   version: '>=0'
   category: sys-devel
 - name: clang
   version: '>=0'
   category: sys-devel-10
+- name: pam
+  version: '>=0'
+  category: sys-libs
+- name: readline
+  version: '>=0'
+  category: sys-libs

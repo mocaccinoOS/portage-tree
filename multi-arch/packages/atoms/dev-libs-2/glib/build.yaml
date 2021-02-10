@@ -11,25 +11,3 @@ steps:
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
-requires:
-- name: libffi
-  version: '>=0'
-  category: dev-libs
-- name: gdbus-codegen
-  version: '>=0'
-  category: dev-util
-- name: meson
-  version: '>=0'
-  category: dev-util
-- name: ninja
-  version: '>=0'
-  category: dev-util
-- name: systemtap
-  version: '>=0'
-  category: dev-util
-- name: attr
-  version: '>=0'
-  category: sys-apps
-- name: util-linux
-  version: '>=0'
-  category: sys-apps

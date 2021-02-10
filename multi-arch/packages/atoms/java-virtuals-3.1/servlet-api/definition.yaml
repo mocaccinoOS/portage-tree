@@ -12,7 +12,8 @@ license: public-domain
 labels:
   DEPEND: '>=dev-java/java-config-2.2.0-r3'
   IUSE: elibc_FreeBSD
-  RDEPEND: '|| ( dev-java/tomcat-servlet-api:3.1 dev-java/resin-servlet-api:3.1 ) >=dev-java/java-config-2.2.0-r3'
+  RDEPEND: '|| ( dev-java/tomcat-servlet-api:3.1 dev-java/resin-servlet-api:3.1 )
+    >=dev-java/java-config-2.2.0-r3'
   emerge.packages: java-virtuals/servlet-api:3.1
   kit: gentoo
   original.package.name: java-virtuals/servlet-api

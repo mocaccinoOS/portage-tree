@@ -18,6 +18,3 @@ requires:
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps
-- name: libselinux
-  version: '>=0'
-  category: sys-libs

@@ -1,7 +1,7 @@
 name: gobject-introspection-common
 version: 1.64.1
 category: dev-libs
-requires:
+conflicts:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs

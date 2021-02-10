@@ -32,9 +32,14 @@ uri:
 - https://metacpan.org/release/Spreadsheet-ParseExcel
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: '>=dev-perl/OLE-StorageLite-0.19 dev-perl/IO-stringy dev-perl/Text-CSV_XS dev-perl/Crypt-RC4 dev-perl/Digest-Perl-MD5 unicode? ( dev-perl/Unicode-Map ) cjk? ( dev-perl/Jcode ) virtual/perl-ExtUtils-MakeMaker test? ( dev-perl/Unicode-Map dev-perl/Spreadsheet-WriteExcel dev-perl/Jcode ) dev-lang/perl:=[-build(-)]'
+  DEPEND: '>=dev-perl/OLE-StorageLite-0.19 dev-perl/IO-stringy dev-perl/Text-CSV_XS
+    dev-perl/Crypt-RC4 dev-perl/Digest-Perl-MD5 unicode? ( dev-perl/Unicode-Map )
+    cjk? ( dev-perl/Jcode ) virtual/perl-ExtUtils-MakeMaker test? ( dev-perl/Unicode-Map
+    dev-perl/Spreadsheet-WriteExcel dev-perl/Jcode ) dev-lang/perl:=[-build(-)]'
   IUSE: test cjk unicode
-  RDEPEND: '>=dev-perl/OLE-StorageLite-0.19 dev-perl/IO-stringy dev-perl/Text-CSV_XS dev-perl/Crypt-RC4 dev-perl/Digest-Perl-MD5 unicode? ( dev-perl/Unicode-Map ) cjk? ( dev-perl/Jcode ) dev-lang/perl:=[-build(-)]'
+  RDEPEND: '>=dev-perl/OLE-StorageLite-0.19 dev-perl/IO-stringy dev-perl/Text-CSV_XS
+    dev-perl/Crypt-RC4 dev-perl/Digest-Perl-MD5 unicode? ( dev-perl/Unicode-Map )
+    cjk? ( dev-perl/Jcode ) dev-lang/perl:=[-build(-)]'
   emerge.packages: dev-perl/Spreadsheet-ParseExcel
   kit: gentoo
   original.package.name: dev-perl/Spreadsheet-ParseExcel

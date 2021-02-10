@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
 - name: libbsd
   version: '>=0'
   category: dev-libs
@@ -21,9 +24,6 @@ requires:
 - name: iptables
   version: '>=0'
   category: net-firewall
-- name: arpd
-  version: '>=0'
-  category: net-misc
 - name: bison
   version: '>=0'
   category: sys-devel
@@ -31,8 +31,5 @@ requires:
   version: '>=0'
   category: sys-libs-5.3
 - name: libcap
-  version: '>=0'
-  category: sys-libs
-- name: libselinux
   version: '>=0'
   category: sys-libs

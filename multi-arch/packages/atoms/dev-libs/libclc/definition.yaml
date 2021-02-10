@@ -6,7 +6,9 @@ uri:
 - https://libclc.llvm.org/
 license: Apache-2.0-with-LLVM-exceptions || ( MIT BSD )
 labels:
-  BDEPEND: '|| ( sys-devel/clang:12 sys-devel/clang:11 sys-devel/clang:10 sys-devel/clang:9 sys-devel/clang:8 ) || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 )'
+  BDEPEND: '|| ( sys-devel/clang:12 sys-devel/clang:11 sys-devel/clang:10 sys-devel/clang:9
+    sys-devel/clang:8 ) || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7
+    dev-lang/python:3.6 )'
   DEPEND: '!!sys-devel/llvm:0'
   IUSE: video_cards_nvidia video_cards_r600 video_cards_radeonsi
   emerge.packages: dev-libs/libclc

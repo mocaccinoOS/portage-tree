@@ -18,6 +18,9 @@ requires:
 - name: avahi
   version: '>=0'
   category: net-dns
+- name: libsoup
+  version: '>=0'
+  category: net-libs-2.4
 - name: modemmanager
   version: '>=0'
   category: net-misc

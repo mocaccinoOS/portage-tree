@@ -17,7 +17,8 @@ uri:
 - https://sourceware.org/binutils/
 license: GPL-3+
 labels:
-  BDEPEND: doc? ( sys-apps/texinfo ) test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext ) sys-devel/flex virtual/yacc >=app-portage/elt-patches-20170815
+  BDEPEND: doc? ( sys-apps/texinfo ) test? ( dev-util/dejagnu ) nls? ( sys-devel/gettext
+    ) sys-devel/flex virtual/yacc >=app-portage/elt-patches-20170815
   DEPEND: '>=sys-devel/binutils-config-3 sys-libs/zlib sys-devel/gnuconfig'
   IUSE: default-gold doc +gold multitarget +nls +plugins static-libs test
   RDEPEND: '>=sys-devel/binutils-config-3 sys-libs/zlib'

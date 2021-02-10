@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: fontconfig
+- name: build-seed
   version: '>=0'
-  category: media-libs-1.0
-- name: libXpm
-  version: '>=0'
-  category: x11-libs
+  category: layers

@@ -33,10 +33,43 @@ uri:
 - https://kde.org/products/frameworks/
 license: LGPL-2+
 labels:
-  BDEPEND: dev-lang/perl dev-perl/URI dev-util/ninja dev-util/cmake test? ( x11-base/xorg-server[xvfb] x11-apps/xhost ) handbook? ( >=kde-frameworks/kdoctools-5.74:5 ) >=kde-frameworks/extra-cmake-modules-5.74:5
-  DEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtnetwork-5.14.2:5[ssl] >=dev-qt/qtprintsupport-5.14.2:5 >=dev-qt/qtsvg-5.14.2:5 >=dev-qt/qttest-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kauth-5.74*:5 =kde-frameworks/kcodecs-5.74*:5 =kde-frameworks/kcompletion-5.74*:5 =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kconfigwidgets-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5 =kde-frameworks/kdbusaddons-5.74*:5 >=kde-frameworks/kded-5.74:5 =kde-frameworks/kdesignerplugin-5.74*:5 =kde-frameworks/kdoctools-5.74*:5 =kde-frameworks/kemoticons-5.74*:5 =kde-frameworks/kglobalaccel-5.74*:5 =kde-frameworks/kguiaddons-5.74*:5 =kde-frameworks/ki18n-5.74*:5 =kde-frameworks/kiconthemes-5.74*:5 =kde-frameworks/kio-5.74*:5 =kde-frameworks/kitemviews-5.74*:5 =kde-frameworks/kjobwidgets-5.74*:5 =kde-frameworks/knotifications-5.74*:5 =kde-frameworks/kparts-5.74*:5 =kde-frameworks/kservice-5.74*:5 =kde-frameworks/ktextwidgets-5.74*:5 =kde-frameworks/kunitconversion-5.74*:5 =kde-frameworks/kwidgetsaddons-5.74*:5 =kde-frameworks/kwindowsystem-5.74*:5 =kde-frameworks/kxmlgui-5.74*:5 =kde-frameworks/solid-5.74*:5 app-text/docbook-xml-dtd:4.2 virtual/libintl !libressl? ( dev-libs/openssl:0 ) libressl? ( dev-libs/libressl ) X? ( >=dev-qt/qtx11extras-5.14.2:5 x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libxcb ) >=dev-qt/designer-5.14.2:5 test? ( >=dev-qt/qtconcurrent-5.14.2:5 ) X? ( x11-base/xorg-proto ) test? ( dev-qt/qttest:5 ) dev-qt/qtcore:5'
+  BDEPEND: dev-lang/perl dev-perl/URI dev-util/ninja dev-util/cmake test? ( x11-base/xorg-server[xvfb]
+    x11-apps/xhost ) handbook? ( >=kde-frameworks/kdoctools-5.74:5 ) >=kde-frameworks/extra-cmake-modules-5.74:5
+  DEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtnetwork-5.14.2:5[ssl]
+    >=dev-qt/qtprintsupport-5.14.2:5 >=dev-qt/qtsvg-5.14.2:5 >=dev-qt/qttest-5.14.2:5
+    >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kauth-5.74*:5 =kde-frameworks/kcodecs-5.74*:5
+    =kde-frameworks/kcompletion-5.74*:5 =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kconfigwidgets-5.74*:5
+    =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5 =kde-frameworks/kdbusaddons-5.74*:5
+    >=kde-frameworks/kded-5.74:5 =kde-frameworks/kdesignerplugin-5.74*:5 =kde-frameworks/kdoctools-5.74*:5
+    =kde-frameworks/kemoticons-5.74*:5 =kde-frameworks/kglobalaccel-5.74*:5 =kde-frameworks/kguiaddons-5.74*:5
+    =kde-frameworks/ki18n-5.74*:5 =kde-frameworks/kiconthemes-5.74*:5 =kde-frameworks/kio-5.74*:5
+    =kde-frameworks/kitemviews-5.74*:5 =kde-frameworks/kjobwidgets-5.74*:5 =kde-frameworks/knotifications-5.74*:5
+    =kde-frameworks/kparts-5.74*:5 =kde-frameworks/kservice-5.74*:5 =kde-frameworks/ktextwidgets-5.74*:5
+    =kde-frameworks/kunitconversion-5.74*:5 =kde-frameworks/kwidgetsaddons-5.74*:5
+    =kde-frameworks/kwindowsystem-5.74*:5 =kde-frameworks/kxmlgui-5.74*:5 =kde-frameworks/solid-5.74*:5
+    app-text/docbook-xml-dtd:4.2 virtual/libintl !libressl? ( dev-libs/openssl:0 )
+    libressl? ( dev-libs/libressl ) X? ( >=dev-qt/qtx11extras-5.14.2:5 x11-libs/libICE
+    x11-libs/libSM x11-libs/libX11 x11-libs/libxcb ) >=dev-qt/designer-5.14.2:5 test?
+    ( >=dev-qt/qtconcurrent-5.14.2:5 ) X? ( x11-base/xorg-proto ) test? ( dev-qt/qttest:5
+    ) dev-qt/qtcore:5'
   IUSE: libressl X test debug +handbook test
-  RDEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtnetwork-5.14.2:5[ssl] >=dev-qt/qtprintsupport-5.14.2:5 >=dev-qt/qtsvg-5.14.2:5 >=dev-qt/qttest-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kauth-5.74*:5 =kde-frameworks/kcodecs-5.74*:5 =kde-frameworks/kcompletion-5.74*:5 =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kconfigwidgets-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5 =kde-frameworks/kdbusaddons-5.74*:5 >=kde-frameworks/kded-5.74:5 =kde-frameworks/kdesignerplugin-5.74*:5 =kde-frameworks/kdoctools-5.74*:5 =kde-frameworks/kemoticons-5.74*:5 =kde-frameworks/kglobalaccel-5.74*:5 =kde-frameworks/kguiaddons-5.74*:5 =kde-frameworks/ki18n-5.74*:5 =kde-frameworks/kiconthemes-5.74*:5 =kde-frameworks/kio-5.74*:5 =kde-frameworks/kitemviews-5.74*:5 =kde-frameworks/kjobwidgets-5.74*:5 =kde-frameworks/knotifications-5.74*:5 =kde-frameworks/kparts-5.74*:5 =kde-frameworks/kservice-5.74*:5 =kde-frameworks/ktextwidgets-5.74*:5 =kde-frameworks/kunitconversion-5.74*:5 =kde-frameworks/kwidgetsaddons-5.74*:5 =kde-frameworks/kwindowsystem-5.74*:5 =kde-frameworks/kxmlgui-5.74*:5 =kde-frameworks/solid-5.74*:5 app-text/docbook-xml-dtd:4.2 virtual/libintl !libressl? ( dev-libs/openssl:0 ) libressl? ( dev-libs/libressl ) X? ( >=dev-qt/qtx11extras-5.14.2:5 x11-libs/libICE x11-libs/libSM x11-libs/libX11 x11-libs/libxcb ) =kde-frameworks/kinit-5.74*:5 =kde-frameworks/kitemmodels-5.74*:5 >=dev-qt/qtxml-5.14.2:5 >=kde-frameworks/kf-env-4 dev-qt/qtcore:5'
+  RDEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtnetwork-5.14.2:5[ssl]
+    >=dev-qt/qtprintsupport-5.14.2:5 >=dev-qt/qtsvg-5.14.2:5 >=dev-qt/qttest-5.14.2:5
+    >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kauth-5.74*:5 =kde-frameworks/kcodecs-5.74*:5
+    =kde-frameworks/kcompletion-5.74*:5 =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kconfigwidgets-5.74*:5
+    =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5 =kde-frameworks/kdbusaddons-5.74*:5
+    >=kde-frameworks/kded-5.74:5 =kde-frameworks/kdesignerplugin-5.74*:5 =kde-frameworks/kdoctools-5.74*:5
+    =kde-frameworks/kemoticons-5.74*:5 =kde-frameworks/kglobalaccel-5.74*:5 =kde-frameworks/kguiaddons-5.74*:5
+    =kde-frameworks/ki18n-5.74*:5 =kde-frameworks/kiconthemes-5.74*:5 =kde-frameworks/kio-5.74*:5
+    =kde-frameworks/kitemviews-5.74*:5 =kde-frameworks/kjobwidgets-5.74*:5 =kde-frameworks/knotifications-5.74*:5
+    =kde-frameworks/kparts-5.74*:5 =kde-frameworks/kservice-5.74*:5 =kde-frameworks/ktextwidgets-5.74*:5
+    =kde-frameworks/kunitconversion-5.74*:5 =kde-frameworks/kwidgetsaddons-5.74*:5
+    =kde-frameworks/kwindowsystem-5.74*:5 =kde-frameworks/kxmlgui-5.74*:5 =kde-frameworks/solid-5.74*:5
+    app-text/docbook-xml-dtd:4.2 virtual/libintl !libressl? ( dev-libs/openssl:0 )
+    libressl? ( dev-libs/libressl ) X? ( >=dev-qt/qtx11extras-5.14.2:5 x11-libs/libICE
+    x11-libs/libSM x11-libs/libX11 x11-libs/libxcb ) =kde-frameworks/kinit-5.74*:5
+    =kde-frameworks/kitemmodels-5.74*:5 >=dev-qt/qtxml-5.14.2:5 >=kde-frameworks/kf-env-4
+    dev-qt/qtcore:5'
   emerge.packages: kde-frameworks/kdelibs4support:5
   kit: gentoo
   original.package.name: kde-frameworks/kdelibs4support

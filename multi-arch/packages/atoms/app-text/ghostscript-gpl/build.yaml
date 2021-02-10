@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
 - name: jbig2dec
   version: '>=0'
   category: media-libs
@@ -24,3 +27,6 @@ requires:
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
+- name: libXt
+  version: '>=0'
+  category: x11-libs

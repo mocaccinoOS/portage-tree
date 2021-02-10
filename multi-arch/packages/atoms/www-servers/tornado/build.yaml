@@ -12,21 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: mock
-  version: '>=0'
-  category: dev-python
-- name: pycurl
-  version: '>=0'
-  category: dev-python
-- name: sphinx
-  version: '>=0'
-  category: dev-python
-- name: sphinx_rtd_theme
-  version: '>=0'
-  category: dev-python
-- name: sphinxcontrib-asyncio
-  version: '>=0'
-  category: dev-python
-- name: twisted
+- name: setuptools
   version: '>=0'
   category: dev-python

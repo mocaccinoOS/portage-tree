@@ -6,6 +6,10 @@ use_flags:
 - -test
 - migration-tool
 requires:
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+conflicts:
 - name: softhsm
   version: '>=0'
   category: dev-libs-2
@@ -15,9 +19,11 @@ uri:
 license: BSD
 labels:
   BDEPEND: virtual/pkgconfig sys-devel/gcc:=[cxx] test? ( dev-util/cppunit )
-  DEPEND: migration-tool? ( dev-db/sqlite:3= ) !libressl? ( dev-libs/openssl:0=[bindist=] ) libressl? ( dev-libs/libressl:= ) !~dev-libs/softhsm-2.0.0:0
+  DEPEND: migration-tool? ( dev-db/sqlite:3= ) !libressl? ( dev-libs/openssl:0=[bindist=]
+    ) libressl? ( dev-libs/libressl:= ) !~dev-libs/softhsm-2.0.0:0
   IUSE: bindist gost libressl migration-tool test
-  RDEPEND: migration-tool? ( dev-db/sqlite:3= ) !libressl? ( dev-libs/openssl:0=[bindist=] ) libressl? ( dev-libs/libressl:= ) !~dev-libs/softhsm-2.0.0:0
+  RDEPEND: migration-tool? ( dev-db/sqlite:3= ) !libressl? ( dev-libs/openssl:0=[bindist=]
+    ) libressl? ( dev-libs/libressl:= ) !~dev-libs/softhsm-2.0.0:0
   emerge.packages: dev-libs/softhsm:2
   kit: gentoo
   original.package.name: dev-libs/softhsm

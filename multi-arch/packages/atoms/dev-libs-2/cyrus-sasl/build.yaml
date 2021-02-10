@@ -24,3 +24,9 @@ requires:
 - name: courier-imap
   version: '>=0'
   category: net-mail
+- name: mailbase
+  version: '>=0'
+  category: net-mail
+- name: gdbm
+  version: '>=0'
+  category: sys-libs

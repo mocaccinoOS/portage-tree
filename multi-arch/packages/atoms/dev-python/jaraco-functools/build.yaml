@@ -12,9 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: jaraco-classes
+- name: setuptools_scm
   version: '>=0'
   category: dev-python
-- name: more-itertools
+- name: toml
   version: '>=0'
   category: dev-python

@@ -18,3 +18,6 @@ requires:
 - name: netcdf
   version: '>=0'
   category: sci-libs
+- name: make
+  version: '>=0'
+  category: sys-devel

@@ -30,9 +30,20 @@ uri:
 license: GPL-2
 labels:
   BDEPEND: sys-devel/make >=dev-util/cmake-3.9.6
-  DEPEND: sys-devel/flex sys-devel/bison doc? ( || ( dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) ) app-text/ghostscript-gpl dev-lang/perl media-libs/libpng:0= virtual/libiconv clang? ( <sys-devel/clang-10:= ) dot? ( media-gfx/graphviz media-libs/freetype ) doc? ( dev-texlive/texlive-bibtexextra dev-texlive/texlive-fontsextra dev-texlive/texlive-fontutils dev-texlive/texlive-latex dev-texlive/texlive-latexextra ) doxysearch? ( dev-libs/xapian:= ) qt5? ( dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) sqlite? ( dev-db/sqlite:3 ) !!sys-devel/llvm:0
+  DEPEND: sys-devel/flex sys-devel/bison doc? ( || ( dev-lang/python:3.8 dev-lang/python:3.7
+    dev-lang/python:3.6 ) ) app-text/ghostscript-gpl dev-lang/perl media-libs/libpng:0=
+    virtual/libiconv clang? ( <sys-devel/clang-10:= ) dot? ( media-gfx/graphviz media-libs/freetype
+    ) doc? ( dev-texlive/texlive-bibtexextra dev-texlive/texlive-fontsextra dev-texlive/texlive-fontutils
+    dev-texlive/texlive-latex dev-texlive/texlive-latexextra ) doxysearch? ( dev-libs/xapian:=
+    ) qt5? ( dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) sqlite? ( dev-db/sqlite:3
+    ) !!sys-devel/llvm:0
   IUSE: clang debug doc dot doxysearch qt5 sqlite userland_GNU
-  RDEPEND: app-text/ghostscript-gpl dev-lang/perl media-libs/libpng:0= virtual/libiconv clang? ( <sys-devel/clang-10:= ) dot? ( media-gfx/graphviz media-libs/freetype ) doc? ( dev-texlive/texlive-bibtexextra dev-texlive/texlive-fontsextra dev-texlive/texlive-fontutils dev-texlive/texlive-latex dev-texlive/texlive-latexextra ) doxysearch? ( dev-libs/xapian:= ) qt5? ( dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) sqlite? ( dev-db/sqlite:3 )
+  RDEPEND: app-text/ghostscript-gpl dev-lang/perl media-libs/libpng:0= virtual/libiconv
+    clang? ( <sys-devel/clang-10:= ) dot? ( media-gfx/graphviz media-libs/freetype
+    ) doc? ( dev-texlive/texlive-bibtexextra dev-texlive/texlive-fontsextra dev-texlive/texlive-fontutils
+    dev-texlive/texlive-latex dev-texlive/texlive-latexextra ) doxysearch? ( dev-libs/xapian:=
+    ) qt5? ( dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) sqlite? ( dev-db/sqlite:3
+    )
   emerge.packages: app-doc/doxygen
   kit: gentoo
   original.package.name: app-doc/doxygen

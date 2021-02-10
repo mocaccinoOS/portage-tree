@@ -12,7 +12,8 @@ uri:
 - https://metacpan.org/release/XML-NamespaceSupport
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: '>=virtual/perl-ExtUtils-MakeMaker-6.170.0 test? ( virtual/perl-Test-Simple ) dev-lang/perl'
+  DEPEND: '>=virtual/perl-ExtUtils-MakeMaker-6.170.0 test? ( virtual/perl-Test-Simple
+    ) dev-lang/perl'
   IUSE: test
   RDEPEND: dev-lang/perl:=
   emerge.packages: dev-perl/XML-NamespaceSupport

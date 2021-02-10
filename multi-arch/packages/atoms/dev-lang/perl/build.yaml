@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: bzip2
+- name: build-seed
   version: '>=0'
-  category: app-arch
-- name: db
-  version: '>=0'
-  category: sys-libs-5.3
-- name: gdbm
-  version: '>=0'
-  category: sys-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
+  category: layers

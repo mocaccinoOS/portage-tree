@@ -2,10 +2,15 @@ name: libibmad
 version: 1.3.11
 category: sys-fabric-3.12
 requires:
+- name: libibumad
+  version: '>=0'
+  category: sys-fabric-3.12
+conflicts:
 - name: libibmad
   version: '>=0'
   category: sys-fabric-3.12
-description: OpenIB library provides the API for use interfacing with IB management programs
+description: OpenIB library provides the API for use interfacing with IB management
+  programs
 uri:
 - https://www.openfabrics.org/
 license: '|| ( GPL-2 BSD-2 )'

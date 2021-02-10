@@ -21,9 +21,6 @@ requires:
 - name: cracklib
   version: '>=0'
   category: sys-libs
-- name: libsemanage
-  version: '>=0'
-  category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs

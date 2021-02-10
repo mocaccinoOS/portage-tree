@@ -11,10 +11,3 @@ steps:
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
-requires:
-- name: courier
-  version: '>=0'
-  category: mail-mta
-- name: procps
-  version: '>=0'
-  category: sys-process

@@ -18,3 +18,6 @@ requires:
 - name: ninja
   version: '>=0'
   category: dev-util
+- name: zlib
+  version: '>=0'
+  category: sys-libs

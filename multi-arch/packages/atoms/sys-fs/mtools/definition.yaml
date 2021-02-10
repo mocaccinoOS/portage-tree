@@ -16,9 +16,11 @@ uri:
 - https://www.gnu.org/software/mtools/ https://savannah.gnu.org/projects/mtools
 license: GPL-3
 labels:
-  DEPEND: '!elibc_glibc? ( virtual/libiconv ) X? ( x11-libs/libICE x11-libs/libXau x11-libs/libSM x11-libs/libX11 x11-libs/libXt )'
+  DEPEND: '!elibc_glibc? ( virtual/libiconv ) X? ( x11-libs/libICE x11-libs/libXau
+    x11-libs/libSM x11-libs/libX11 x11-libs/libXt )'
   IUSE: X elibc_glibc
-  RDEPEND: '!elibc_glibc? ( virtual/libiconv ) X? ( x11-libs/libICE x11-libs/libXau x11-libs/libSM x11-libs/libX11 x11-libs/libXt )'
+  RDEPEND: '!elibc_glibc? ( virtual/libiconv ) X? ( x11-libs/libICE x11-libs/libXau
+    x11-libs/libSM x11-libs/libX11 x11-libs/libXt )'
   emerge.packages: sys-fs/mtools
   kit: gentoo
   original.package.name: sys-fs/mtools

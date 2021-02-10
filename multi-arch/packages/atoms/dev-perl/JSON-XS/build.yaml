@@ -15,12 +15,6 @@ requires:
 - name: Canary-Stability
   version: '>=0'
   category: dev-perl
-- name: JSON
-  version: '>=0'
-  category: dev-perl
-- name: JSON-Any
-  version: '>=0'
-  category: dev-perl
 - name: Types-Serialiser
   version: '>=0'
   category: dev-perl

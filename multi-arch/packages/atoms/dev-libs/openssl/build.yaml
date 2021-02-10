@@ -21,3 +21,6 @@ requires:
 - name: lksctp-tools
   version: '>=0'
   category: net-misc
+- name: zlib
+  version: '>=0'
+  category: sys-libs

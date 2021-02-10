@@ -30,3 +30,6 @@ requires:
 - name: clang
   version: '>=0'
   category: sys-devel-10
+- name: make
+  version: '>=0'
+  category: sys-devel

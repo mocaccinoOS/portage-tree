@@ -12,7 +12,8 @@ uri:
 - https://metacpan.org/release/DateTime-Format-ISO8601
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: dev-perl/DateTime dev-perl/DateTime-Format-Builder dev-perl/Module-Build test? ( dev-perl/File-Find-Rule ) dev-lang/perl:=[-build(-)]
+  DEPEND: dev-perl/DateTime dev-perl/DateTime-Format-Builder dev-perl/Module-Build
+    test? ( dev-perl/File-Find-Rule ) dev-lang/perl:=[-build(-)]
   IUSE: test
   RDEPEND: dev-perl/DateTime dev-perl/DateTime-Format-Builder dev-lang/perl:=[-build(-)]
   emerge.packages: dev-perl/DateTime-Format-ISO8601

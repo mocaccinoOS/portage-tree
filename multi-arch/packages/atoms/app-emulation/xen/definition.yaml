@@ -8,7 +8,8 @@ uri:
 - https://www.xenproject.org
 license: GPL-2
 labels:
-  DEPEND: '|| ( dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) efi? ( >=sys-devel/binutils-2.22[multitarget] ) !efi? ( >=sys-devel/binutils-2.22 )'
+  DEPEND: '|| ( dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) efi?
+    ( >=sys-devel/binutils-2.22[multitarget] ) !efi? ( >=sys-devel/binutils-2.22 )'
   IUSE: debug efi flask
   emerge.packages: app-emulation/xen
   kit: gentoo

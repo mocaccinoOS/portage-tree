@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libtool
+- name: cmake
   version: '>=0'
-  category: sys-devel-2
+  category: dev-util
+- name: ninja
+  version: '>=0'
+  category: dev-util

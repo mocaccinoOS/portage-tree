@@ -11,9 +11,11 @@ uri:
 - https://ipxe.org/
 license: GPL-2
 labels:
-  DEPEND: '!binary? ( amd64? ( app-arch/xz-utils dev-lang/perl sys-libs/zlib iso? ( sys-boot/syslinux virtual/cdrtools ) ) x86? ( app-arch/xz-utils dev-lang/perl sys-libs/zlib iso? ( sys-boot/syslinux virtual/cdrtools ) ) )'
+  DEPEND: '!binary? ( amd64? ( app-arch/xz-utils dev-lang/perl sys-libs/zlib iso?
+    ( sys-boot/syslinux virtual/cdrtools ) ) x86? ( app-arch/xz-utils dev-lang/perl
+    sys-libs/zlib iso? ( sys-boot/syslinux virtual/cdrtools ) ) )'
   IUSE: +binary efi ipv6 iso lkrn +qemu undi usb vmware savedconfig
   emerge.packages: sys-firmware/ipxe
   kit: gentoo
   original.package.name: sys-firmware/ipxe
-  original.package.version: 1.0.0_p20180211
+  original.package.version: 1.0.0_p20190728

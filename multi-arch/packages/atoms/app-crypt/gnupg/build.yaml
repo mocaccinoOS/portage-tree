@@ -21,12 +21,18 @@ requires:
 - name: libassuan
   version: '>=0'
   category: dev-libs
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
 - name: libksba
   version: '>=0'
   category: dev-libs
 - name: npth
   version: '>=0'
   category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: curl
   version: '>=0'
   category: net-misc

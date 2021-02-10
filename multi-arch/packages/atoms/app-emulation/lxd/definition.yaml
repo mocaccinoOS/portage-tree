@@ -1,0 +1,54 @@
+name: lxd
+version: 4.0.3
+category: app-emulation
+use_flags:
+- nls
+- verify-sig
+requires:
+- name: lxd
+  version: '>=0'
+  category: acct-group
+- name: lxc
+  version: '>=0'
+  category: app-emulation
+- name: tcl
+  version: '>=0'
+  category: dev-lang
+- name: libuv
+  version: '>=0'
+  category: dev-libs
+- name: dnsmasq
+  version: '>=0'
+  category: net-dns
+- name: ebtables
+  version: '>=0'
+  category: net-firewall
+- name: iproute2
+  version: '>=0'
+  category: sys-apps
+- name: lxcfs
+  version: '>=0'
+  category: sys-fs
+- name: squashfs-tools
+  version: '>=0'
+  category: sys-fs
+description: Fast, dense and secure container management
+uri:
+- https://linuxcontainers.org/lxd/introduction/ https://github.com/lxc/lxd
+license: Apache-2.0 BSD BSD-2 LGPL-3 MIT MPL-2.0
+labels:
+  BDEPEND: '>=dev-lang/go-1.13 nls? ( sys-devel/gettext ) verify-sig? ( app-crypt/openpgp-keys-linuxcontainers
+    ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15
+    ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 virtual/pkgconfig verify-sig?
+    ( app-crypt/gnupg >=app-portage/gemato-16 )'
+  DEPEND: app-arch/xz-utils >=app-emulation/lxc-3.0.0[apparmor?,seccomp] dev-lang/tcl
+    dev-libs/libuv dev-libs/lzo net-dns/dnsmasq[dhcp,ipv6?]
+  IUSE: apparmor +ipv6 nls verify-sig kernel_linux verify-sig
+  RDEPEND: app-arch/xz-utils >=app-emulation/lxc-3.0.0[apparmor?,seccomp] dev-lang/tcl
+    dev-libs/libuv dev-libs/lzo net-dns/dnsmasq[dhcp,ipv6?] acct-group/lxd net-firewall/ebtables
+    net-firewall/iptables[ipv6?] sys-apps/iproute2[ipv6?] sys-fs/fuse:0= sys-fs/lxcfs
+    sys-fs/squashfs-tools virtual/acl
+  emerge.packages: app-emulation/lxd
+  kit: gentoo
+  original.package.name: app-emulation/lxd
+  original.package.version: 4.0.3-r2

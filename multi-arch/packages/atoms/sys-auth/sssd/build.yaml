@@ -27,6 +27,9 @@ requires:
 - name: libnl
   version: '>=0'
   category: dev-libs-3
+- name: libpcre
+  version: '>=0'
+  category: dev-libs-3
 - name: valgrind
   version: '>=0'
   category: dev-util
@@ -45,6 +48,3 @@ requires:
 - name: curl
   version: '>=0'
   category: net-misc
-- name: libsemanage
-  version: '>=0'
-  category: sys-libs

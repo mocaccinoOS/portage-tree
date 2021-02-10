@@ -16,9 +16,12 @@ uri:
 - http://ipset.netfilter.org/
 license: GPL-2
 labels:
-  DEPEND: '>=net-firewall/iptables-1.4.7 net-libs/libmnl modules? ( kernel_linux? ( sys-apps/kmod[tools] ) ) modules? ( sys-apps/sed kernel_linux? ( virtual/linux-sources virtual/libelf ) )'
+  DEPEND: '>=net-firewall/iptables-1.4.7 net-libs/libmnl modules? ( kernel_linux?
+    ( sys-apps/kmod[tools] ) ) modules? ( sys-apps/sed kernel_linux? ( virtual/linux-sources
+    virtual/libelf ) )'
   IUSE: kernel_linux kernel_linux kernel_linux modules
-  RDEPEND: '>=net-firewall/iptables-1.4.7 net-libs/libmnl modules? ( kernel_linux? ( sys-apps/kmod[tools] ) )'
+  RDEPEND: '>=net-firewall/iptables-1.4.7 net-libs/libmnl modules? ( kernel_linux?
+    ( sys-apps/kmod[tools] ) )'
   emerge.packages: net-firewall/ipset
   kit: gentoo
   original.package.name: net-firewall/ipset

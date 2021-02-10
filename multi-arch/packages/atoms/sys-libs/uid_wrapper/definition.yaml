@@ -7,7 +7,8 @@ uri:
 license: GPL-3
 labels:
   BDEPEND: dev-util/ninja dev-util/cmake
-  IUSE: abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  IUSE: abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32
+    abi_s390_64
   emerge.packages: sys-libs/uid_wrapper
   kit: gentoo
   original.package.name: sys-libs/uid_wrapper

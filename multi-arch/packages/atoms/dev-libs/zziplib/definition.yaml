@@ -12,12 +12,15 @@ requires:
 - name: zlib
   version: '>=0'
   category: sys-libs
-description: Lightweight library for extracting data from files archived in a single zip file
+description: Lightweight library for extracting data from files archived in a single
+  zip file
 uri:
 - https://github.com/gdraheim/zziplib http://zziplib.sourceforge.net/
 license: '|| ( LGPL-2.1 MPL-1.1 )'
 labels:
-  BDEPEND: doc? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) ) test? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7 dev-lang/python:3.6 ) app-arch/zip ) dev-util/ninja dev-util/cmake
+  BDEPEND: doc? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7
+    dev-lang/python:3.6 ) ) test? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 dev-lang/python:3.7
+    dev-lang/python:3.6 ) app-arch/zip ) dev-util/ninja dev-util/cmake
   DEPEND: sys-libs/zlib sdl? ( >=media-libs/libsdl-1.2.6 )
   IUSE: doc sdl static-libs test
   RDEPEND: sys-libs/zlib sdl? ( >=media-libs/libsdl-1.2.6 )

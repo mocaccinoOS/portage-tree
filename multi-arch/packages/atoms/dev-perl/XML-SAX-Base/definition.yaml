@@ -4,6 +4,10 @@ category: dev-perl
 use_flags:
 - -test
 requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+conflicts:
 - name: XML-SAX
   version: '>=0'
   category: dev-perl
@@ -12,7 +16,8 @@ uri:
 - https://metacpan.org/release/XML-SAX-Base
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: '!<dev-perl/XML-SAX-0.990.0 virtual/perl-ExtUtils-MakeMaker test? ( >=virtual/perl-Test-Simple-0.880.0 ) dev-lang/perl'
+  DEPEND: '!<dev-perl/XML-SAX-0.990.0 virtual/perl-ExtUtils-MakeMaker test? ( >=virtual/perl-Test-Simple-0.880.0
+    ) dev-lang/perl'
   IUSE: test
   RDEPEND: '!<dev-perl/XML-SAX-0.990.0 dev-lang/perl:='
   emerge.packages: dev-perl/XML-SAX-Base

@@ -12,6 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: libwww-perl
+- name: perl
   version: '>=0'
-  category: dev-perl
+  category: dev-lang

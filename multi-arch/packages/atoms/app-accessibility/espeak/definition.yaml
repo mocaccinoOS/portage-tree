@@ -16,9 +16,11 @@ uri:
 - http://espeak.sourceforge.net/
 license: GPL-3
 labels:
-  DEPEND: portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio ) app-arch/unzip
+  DEPEND: portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio
+    ) app-arch/unzip
   IUSE: portaudio pulseaudio
-  RDEPEND: portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio ) media-sound/sox
+  RDEPEND: portaudio? ( >=media-libs/portaudio-19_pre20071207 ) pulseaudio? ( media-sound/pulseaudio
+    ) media-sound/sox
   emerge.packages: app-accessibility/espeak
   kit: gentoo
   original.package.name: app-accessibility/espeak

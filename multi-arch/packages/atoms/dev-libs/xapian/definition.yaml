@@ -11,7 +11,8 @@ uri:
 license: GPL-2
 labels:
   DEPEND: sys-libs/zlib
-  IUSE: doc static-libs -cpu_flags_x86_sse +cpu_flags_x86_sse2 +inmemory +remote abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  IUSE: doc static-libs -cpu_flags_x86_sse +cpu_flags_x86_sse2 +inmemory +remote abi_x86_32
+    abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
   RDEPEND: sys-libs/zlib
   emerge.packages: dev-libs/xapian
   kit: gentoo

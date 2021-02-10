@@ -15,6 +15,9 @@ requires:
 - name: video
   version: '>=0'
   category: acct-group
+- name: pax-utils
+  version: '>=0'
+  category: app-misc
 - name: jansson
   version: '>=0'
   category: dev-libs

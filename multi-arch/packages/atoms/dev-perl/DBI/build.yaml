@@ -15,6 +15,3 @@ requires:
 - name: PlRPC
   version: '>=0'
   category: dev-perl
-- name: SQL-Statement
-  version: '>=0'
-  category: dev-perl

@@ -3,19 +3,13 @@ version: 0_pre20160424
 category: media-libs
 use_flags:
 - wayland
-requires:
-- name: wayland
-  version: '>=0'
-  category: dev-libs
-- name: raspberrypi-userland-bin
-  version: '>=0'
-  category: media-libs
 description: Raspberry Pi userspace tools and libraries
 uri:
 - https://github.com/raspberrypi/userland
 license: BSD
 labels:
-  DEPEND: '!media-libs/raspberrypi-userland-bin wayland? ( dev-libs/wayland ) wayland? ( virtual/pkgconfig ) sys-devel/make >=dev-util/cmake-3.9.6'
+  DEPEND: '!media-libs/raspberrypi-userland-bin wayland? ( dev-libs/wayland ) wayland?
+    ( virtual/pkgconfig ) sys-devel/make >=dev-util/cmake-3.9.6'
   IUSE: examples wayland
   RDEPEND: '!media-libs/raspberrypi-userland-bin wayland? ( dev-libs/wayland )'
   emerge.packages: media-libs/raspberrypi-userland

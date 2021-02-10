@@ -18,6 +18,12 @@ requires:
 - name: gluster
   version: '>=0'
   category: acct-user
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: libaio
   version: '>=0'
   category: dev-libs
@@ -33,6 +39,12 @@ requires:
 - name: rpcsvc-proto
   version: '>=0'
   category: net-libs
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
+- name: bison
+  version: '>=0'
+  category: sys-devel
 - name: librdmacm
   version: '>=0'
   category: sys-fabric-3.12
@@ -40,5 +52,11 @@ requires:
   version: '>=0'
   category: sys-fs-3
 - name: argp-standalone
+  version: '>=0'
+  category: sys-libs
+- name: glibc
+  version: '>=0'
+  category: sys-libs-2.2
+- name: readline
   version: '>=0'
   category: sys-libs

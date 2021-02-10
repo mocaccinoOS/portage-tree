@@ -12,15 +12,24 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: systemd
+  version: '>=0'
+  category: sys-apps
 - name: sanlock
   version: '>=0'
   category: sys-cluster
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
 - name: autoconf-archive
   version: '>=0'
   category: sys-devel
 - name: binutils
   version: '>=0'
   category: sys-devel-2.34
-- name: eudev
+- name: libtool
   version: '>=0'
-  category: sys-fs
+  category: sys-devel-2
+- name: readline
+  version: '>=0'
+  category: sys-libs

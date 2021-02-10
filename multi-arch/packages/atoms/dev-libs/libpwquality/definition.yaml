@@ -21,9 +21,18 @@ uri:
 license: '|| ( BSD GPL-2 )'
 labels:
   BDEPEND: '>=sys-devel/gettext-0.18.2 virtual/pkgconfig'
-  DEPEND: '>=sys-libs/cracklib-2.8:=[static-libs(+)?] pam? ( sys-libs/pam ) python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] )'
-  IUSE: pam python static-libs python_targets_python3_6 python_targets_python3_7 python_targets_python3_8 python_targets_python3_9 split-usr
-  RDEPEND: '>=sys-libs/cracklib-2.8:=[static-libs(+)?] pam? ( sys-libs/pam ) python? ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7? ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)] )'
+  DEPEND: '>=sys-libs/cracklib-2.8:=[static-libs(+)?] pam? ( sys-libs/pam ) python?
+    ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7?
+    ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9?
+    ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+    )'
+  IUSE: pam python static-libs python_targets_python3_6 python_targets_python3_7 python_targets_python3_8
+    python_targets_python3_9 split-usr
+  RDEPEND: '>=sys-libs/cracklib-2.8:=[static-libs(+)?] pam? ( sys-libs/pam ) python?
+    ( python_targets_python3_6? ( dev-lang/python:3.6 ) python_targets_python3_7?
+    ( dev-lang/python:3.7 ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9?
+    ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_6(-)?,python_targets_python3_7(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,-python_single_target_python3_6(-),-python_single_target_python3_7(-),-python_single_target_python3_8(-),-python_single_target_python3_9(-)]
+    )'
   emerge.packages: dev-libs/libpwquality
   kit: gentoo
   original.package.name: dev-libs/libpwquality

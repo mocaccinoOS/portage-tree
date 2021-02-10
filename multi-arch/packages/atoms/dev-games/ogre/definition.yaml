@@ -52,14 +52,29 @@ requires:
 - name: libXrandr
   version: '>=0'
   category: x11-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs
 description: Object-oriented Graphics Rendering Engine
 uri:
 - https://www.ogre3d.org/
 license: MIT public-domain
 labels:
-  DEPEND: media-libs/freetype:2 virtual/opengl virtual/glu x11-libs/libX11 x11-libs/libXaw x11-libs/libXrandr x11-libs/libXt boost? ( dev-libs/boost:= ) cg? ( media-gfx/nvidia-cg-toolkit ) freeimage? ( media-libs/freeimage ) gles2? ( >=media-libs/mesa-9.0.0[gles2] ) gles3? ( >=media-libs/mesa-10.0.0[gles2] ) gl3plus? ( >=media-libs/mesa-9.2.5 ) ois? ( dev-games/ois ) threads? ( poco? ( dev-libs/poco ) tbb? ( dev-cpp/tbb ) ) tools? ( dev-libs/tinyxml[stl] ) zip? ( sys-libs/zlib dev-libs/zziplib ) virtual/pkgconfig x11-base/xorg-proto doc? ( app-doc/doxygen ) sys-devel/make >=dev-util/cmake-3.9.6
-  IUSE: +boost cg doc double-precision examples +freeimage gl3plus gles2 gles3 ois +opengl poco profile tbb threads tools +zip
-  RDEPEND: media-libs/freetype:2 virtual/opengl virtual/glu x11-libs/libX11 x11-libs/libXaw x11-libs/libXrandr x11-libs/libXt boost? ( dev-libs/boost:= ) cg? ( media-gfx/nvidia-cg-toolkit ) freeimage? ( media-libs/freeimage ) gles2? ( >=media-libs/mesa-9.0.0[gles2] ) gles3? ( >=media-libs/mesa-10.0.0[gles2] ) gl3plus? ( >=media-libs/mesa-9.2.5 ) ois? ( dev-games/ois ) threads? ( poco? ( dev-libs/poco ) tbb? ( dev-cpp/tbb ) ) tools? ( dev-libs/tinyxml[stl] ) zip? ( sys-libs/zlib dev-libs/zziplib )
+  DEPEND: media-libs/freetype:2 virtual/opengl virtual/glu x11-libs/libX11 x11-libs/libXaw
+    x11-libs/libXrandr x11-libs/libXt boost? ( dev-libs/boost:= ) cg? ( media-gfx/nvidia-cg-toolkit
+    ) freeimage? ( media-libs/freeimage ) gles2? ( >=media-libs/mesa-9.0.0[gles2]
+    ) gles3? ( >=media-libs/mesa-10.0.0[gles2] ) gl3plus? ( >=media-libs/mesa-9.2.5
+    ) ois? ( dev-games/ois ) threads? ( poco? ( dev-libs/poco ) tbb? ( dev-cpp/tbb
+    ) ) tools? ( dev-libs/tinyxml[stl] ) zip? ( sys-libs/zlib dev-libs/zziplib ) virtual/pkgconfig
+    x11-base/xorg-proto doc? ( app-doc/doxygen ) sys-devel/make >=dev-util/cmake-3.9.6
+  IUSE: +boost cg doc double-precision examples +freeimage gl3plus gles2 gles3 ois
+    +opengl poco profile tbb threads tools +zip
+  RDEPEND: media-libs/freetype:2 virtual/opengl virtual/glu x11-libs/libX11 x11-libs/libXaw
+    x11-libs/libXrandr x11-libs/libXt boost? ( dev-libs/boost:= ) cg? ( media-gfx/nvidia-cg-toolkit
+    ) freeimage? ( media-libs/freeimage ) gles2? ( >=media-libs/mesa-9.0.0[gles2]
+    ) gles3? ( >=media-libs/mesa-10.0.0[gles2] ) gl3plus? ( >=media-libs/mesa-9.2.5
+    ) ois? ( dev-games/ois ) threads? ( poco? ( dev-libs/poco ) tbb? ( dev-cpp/tbb
+    ) ) tools? ( dev-libs/tinyxml[stl] ) zip? ( sys-libs/zlib dev-libs/zziplib )
   emerge.packages: dev-games/ogre
   kit: gentoo
   original.package.name: dev-games/ogre

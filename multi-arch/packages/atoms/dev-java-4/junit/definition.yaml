@@ -12,9 +12,11 @@ uri:
 - http://junit.org/
 license: EPL-1.0
 labels:
-  DEPEND: '>=virtual/jdk-1.6 dev-java/hamcrest-core:1.3 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip )'
+  DEPEND: '>=virtual/jdk-1.6 dev-java/hamcrest-core:1.3 >=dev-java/java-config-2.2.0-r3
+    source? ( app-arch/zip )'
   IUSE: examples elibc_FreeBSD doc source elibc_FreeBSD
-  RDEPEND: '>=virtual/jre-1.6 dev-java/hamcrest-core:1.3 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip )'
+  RDEPEND: '>=virtual/jre-1.6 dev-java/hamcrest-core:1.3 >=dev-java/java-config-2.2.0-r3
+    source? ( app-arch/zip )'
   emerge.packages: dev-java/junit:4
   kit: gentoo
   original.package.name: dev-java/junit

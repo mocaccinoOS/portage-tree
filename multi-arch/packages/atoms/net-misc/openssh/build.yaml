@@ -21,12 +21,15 @@ requires:
 - name: libedit
   version: '>=0'
   category: dev-libs
-- name: libressl
-  version: '>=0'
-  category: dev-libs
 - name: ldns
   version: '>=0'
   category: net-libs
+- name: lksctp-tools
+  version: '>=0'
+  category: net-misc
 - name: pam
+  version: '>=0'
+  category: sys-libs
+- name: zlib
   version: '>=0'
   category: sys-libs

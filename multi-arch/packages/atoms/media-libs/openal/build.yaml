@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
 - name: cmake
   version: '>=0'
   category: dev-util

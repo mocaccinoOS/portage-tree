@@ -18,6 +18,12 @@ requires:
 - name: libedit
   version: '>=0'
   category: dev-libs
-- name: xfsdump
+- name: util-linux
   version: '>=0'
-  category: sys-fs
+  category: sys-apps
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: readline
+  version: '>=0'
+  category: sys-libs

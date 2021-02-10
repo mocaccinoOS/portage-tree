@@ -1,0 +1,65 @@
+steps:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- |
+  mkdir /{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+package_dir: /{{ .Values.name }}
+requires:
+- name: yaml-cpp
+  version: '>=0'
+  category: dev-cpp
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: boost
+  version: '>=0'
+  category: dev-libs
+- name: libpwquality
+  version: '>=0'
+  category: dev-libs
+- name: qtconcurrent
+  version: '>=0'
+  category: dev-qt-5
+- name: qtsvg
+  version: '>=0'
+  category: dev-qt-5
+- name: qtwebengine
+  version: '>=0'
+  category: dev-qt-5
+- name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
+- name: kconfig
+  version: '>=0'
+  category: kde-frameworks-5
+- name: kcrash
+  version: '>=0'
+  category: kde-frameworks-5
+- name: kpackage
+  version: '>=0'
+  category: kde-frameworks-5
+- name: kparts
+  version: '>=0'
+  category: kde-frameworks-5
+- name: kservice
+  version: '>=0'
+  category: kde-frameworks-5
+- name: dmidecode
+  version: '>=0'
+  category: sys-apps
+- name: kpmcore
+  version: '>=0'
+  category: sys-libs-5
+- name: shared-mime-info
+  version: '>=0'
+  category: x11-misc

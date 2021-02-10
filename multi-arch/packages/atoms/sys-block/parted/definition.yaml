@@ -2,29 +2,29 @@ name: parted
 version: "3.2"
 category: sys-block
 use_flags:
+- -elibc_uclibc
+- -selinux
 - device-mapper
-- elibc_uclibc
 - nls
 - readline
-- selinux
 requires:
-- name: libiconv
-  version: '>=0'
-  category: dev-libs
 - name: e2fsprogs
   version: '>=0'
   category: sys-fs
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 description: Create, destroy, resize, check, copy partitions and file systems
 uri:
 - https://www.gnu.org/software/parted
 license: GPL-3
 labels:
-  DEPEND: '>=sys-fs/e2fsprogs-1.27 device-mapper? ( >=sys-fs/lvm2-2.02.45 ) readline? ( >=sys-libs/readline-5.2:0= >=sys-libs/ncurses-5.7-r7:0= ) selinux? ( sys-libs/libselinux ) elibc_uclibc? ( dev-libs/libiconv ) nls? ( >=sys-devel/gettext-0.12.1-r2 ) virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: '>=sys-fs/e2fsprogs-1.27 device-mapper? ( >=sys-fs/lvm2-2.02.45 ) readline?
+    ( >=sys-libs/readline-5.2:0= >=sys-libs/ncurses-5.7-r7:0= ) selinux? ( sys-libs/libselinux
+    ) elibc_uclibc? ( dev-libs/libiconv ) nls? ( >=sys-devel/gettext-0.12.1-r2 ) virtual/pkgconfig
+    >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15
+    ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
   IUSE: +debug device-mapper nls readline selinux static-libs
-  RDEPEND: '>=sys-fs/e2fsprogs-1.27 device-mapper? ( >=sys-fs/lvm2-2.02.45 ) readline? ( >=sys-libs/readline-5.2:0= >=sys-libs/ncurses-5.7-r7:0= ) selinux? ( sys-libs/libselinux ) elibc_uclibc? ( dev-libs/libiconv )'
+  RDEPEND: '>=sys-fs/e2fsprogs-1.27 device-mapper? ( >=sys-fs/lvm2-2.02.45 ) readline?
+    ( >=sys-libs/readline-5.2:0= >=sys-libs/ncurses-5.7-r7:0= ) selinux? ( sys-libs/libselinux
+    ) elibc_uclibc? ( dev-libs/libiconv )'
   emerge.packages: sys-block/parted
   kit: gentoo
   original.package.name: sys-block/parted

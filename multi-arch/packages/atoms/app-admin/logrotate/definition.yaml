@@ -2,28 +2,24 @@ name: logrotate
 version: 3.14.0
 category: app-admin
 use_flags:
+- -selinux
 - acl
 - cron
-- selinux
 requires:
 - name: popt
   version: '>=0'
   category: dev-libs
-- name: selinux-logrotate
-  version: '>=0'
-  category: sec-policy
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 description: Rotates, compresses, and mails system logs
 uri:
 - https://github.com/logrotate/logrotate
 license: GPL-2
 labels:
   BDEPEND: virtual/pkgconfig
-  DEPEND: '>=dev-libs/popt-1.5 selinux? ( sys-libs/libselinux ) acl? ( virtual/acl ) >=sys-apps/sed-4'
+  DEPEND: '>=dev-libs/popt-1.5 selinux? ( sys-libs/libselinux ) acl? ( virtual/acl
+    ) >=sys-apps/sed-4'
   IUSE: acl +cron selinux
-  RDEPEND: '>=dev-libs/popt-1.5 selinux? ( sys-libs/libselinux ) acl? ( virtual/acl ) selinux? ( sec-policy/selinux-logrotate ) cron? ( virtual/cron )'
+  RDEPEND: '>=dev-libs/popt-1.5 selinux? ( sys-libs/libselinux ) acl? ( virtual/acl
+    ) selinux? ( sec-policy/selinux-logrotate ) cron? ( virtual/cron )'
   emerge.packages: app-admin/logrotate
   kit: gentoo
   original.package.name: app-admin/logrotate

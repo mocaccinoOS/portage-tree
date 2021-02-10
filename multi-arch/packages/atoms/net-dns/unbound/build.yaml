@@ -18,12 +18,18 @@ requires:
 - name: unbound
   version: '>=0'
   category: acct-user
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
 - name: swig
   version: '>=0'
   category: dev-lang
+- name: expat
+  version: '>=0'
+  category: dev-libs
 - name: fstrm
   version: '>=0'
   category: dev-libs

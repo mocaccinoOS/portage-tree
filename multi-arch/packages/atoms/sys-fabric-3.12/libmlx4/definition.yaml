@@ -1,7 +1,7 @@
 name: libmlx4
 version: 1.0.5
 category: sys-fabric-3.12
-requires:
+conflicts:
 - name: libmlx4
   version: '>=0'
   category: sys-fabric-3.12

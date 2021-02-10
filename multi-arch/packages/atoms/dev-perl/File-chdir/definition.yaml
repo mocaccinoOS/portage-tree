@@ -12,7 +12,8 @@ uri:
 - https://metacpan.org/release/File-chdir
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: virtual/perl-Carp virtual/perl-Exporter >=virtual/perl-File-Spec-3.27 >=virtual/perl-ExtUtils-MakeMaker-6.170.0 test? ( virtual/perl-Test-Simple ) dev-lang/perl
+  DEPEND: virtual/perl-Carp virtual/perl-Exporter >=virtual/perl-File-Spec-3.27 >=virtual/perl-ExtUtils-MakeMaker-6.170.0
+    test? ( virtual/perl-Test-Simple ) dev-lang/perl
   IUSE: test
   RDEPEND: virtual/perl-Carp virtual/perl-Exporter >=virtual/perl-File-Spec-3.27 dev-lang/perl:=
   emerge.packages: dev-perl/File-chdir

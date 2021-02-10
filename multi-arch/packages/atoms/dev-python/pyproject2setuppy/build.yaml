@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: setuptools
+  version: '>=0'
+  category: dev-python
 - name: toml
   version: '>=0'
   category: dev-python

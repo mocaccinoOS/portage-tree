@@ -2,22 +2,20 @@ name: tar
 version: "1.32"
 category: app-arch
 use_flags:
+- -selinux
 - acl
 - elibc_glibc
 - nls
-- selinux
 - static
 - xattr
-requires:
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
 description: Use this to make tarballs :)
 uri:
 - https://www.gnu.org/software/tar/
 license: GPL-3+
 labels:
-  DEPEND: '!static? ( acl? ( virtual/acl ) ) selinux? ( sys-libs/libselinux ) nls? ( >=sys-devel/gettext-0.10.35 ) static? ( acl? ( virtual/acl[static-libs(+)] ) ) xattr? ( elibc_glibc? ( sys-apps/attr ) )'
+  DEPEND: '!static? ( acl? ( virtual/acl ) ) selinux? ( sys-libs/libselinux ) nls?
+    ( >=sys-devel/gettext-0.10.35 ) static? ( acl? ( virtual/acl[static-libs(+)] )
+    ) xattr? ( elibc_glibc? ( sys-apps/attr ) )'
   IUSE: acl elibc_glibc minimal nls selinux static userland_GNU xattr
   RDEPEND: '!static? ( acl? ( virtual/acl ) ) selinux? ( sys-libs/libselinux )'
   emerge.packages: app-arch/tar

@@ -10,9 +10,6 @@ requires:
 - name: postmaster
   version: '>=0'
   category: acct-user
-- name: metamail
-  version: '>=0'
-  category: net-mail
 - name: pam
   version: '>=0'
   category: sys-libs
@@ -22,7 +19,8 @@ uri:
 license: GPL-2
 labels:
   IUSE: pam
-  RDEPEND: acct-group/mail acct-user/mail acct-user/postmaster pam? ( sys-libs/pam ) !<net-mail/metamail-2.7.53.3-r2
+  RDEPEND: acct-group/mail acct-user/mail acct-user/postmaster pam? ( sys-libs/pam
+    ) !<net-mail/metamail-2.7.53.3-r2
   emerge.packages: net-mail/mailbase
   kit: gentoo
   original.package.name: net-mail/mailbase

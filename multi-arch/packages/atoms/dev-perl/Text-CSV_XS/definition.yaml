@@ -12,7 +12,8 @@ uri:
 - https://metacpan.org/release/Text-CSV_XS
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: virtual/perl-IO virtual/perl-XSLoader virtual/perl-ExtUtils-MakeMaker test? ( virtual/perl-Test-Simple ) dev-lang/perl
+  DEPEND: virtual/perl-IO virtual/perl-XSLoader virtual/perl-ExtUtils-MakeMaker test?
+    ( virtual/perl-Test-Simple ) dev-lang/perl
   IUSE: test examples
   RDEPEND: virtual/perl-IO virtual/perl-XSLoader dev-lang/perl:=
   emerge.packages: dev-perl/Text-CSV_XS

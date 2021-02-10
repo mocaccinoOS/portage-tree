@@ -15,3 +15,6 @@ requires:
 - name: cython
   version: '>=0'
   category: dev-python
+- name: setuptools
+  version: '>=0'
+  category: dev-python

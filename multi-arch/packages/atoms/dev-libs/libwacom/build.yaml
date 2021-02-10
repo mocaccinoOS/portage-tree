@@ -15,3 +15,9 @@ requires:
 - name: libgudev
   version: '>=0'
   category: dev-libs
+- name: meson
+  version: '>=0'
+  category: dev-util
+- name: ninja
+  version: '>=0'
+  category: dev-util

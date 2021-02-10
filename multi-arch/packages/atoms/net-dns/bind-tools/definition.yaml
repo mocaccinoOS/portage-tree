@@ -31,10 +31,18 @@ uri:
 - https://www.isc.org/software/bind
 license: Apache-2.0 BSD BSD-2 GPL-2 HPND ISC MPL-2.0
 labels:
-  BDEPEND: doc? ( dev-python/sphinx ) virtual/pkgconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
-  DEPEND: dev-libs/libuv:= caps? ( sys-libs/libcap ) !libressl? ( dev-libs/openssl:= ) libressl? ( dev-libs/libressl:= ) xml? ( dev-libs/libxml2 ) idn? ( net-dns/libidn2:= ) gssapi? ( virtual/krb5 ) libedit? ( dev-libs/libedit ) !libedit? ( readline? ( sys-libs/readline:= ) )
+  BDEPEND: doc? ( dev-python/sphinx ) virtual/pkgconfig >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69
+    >=sys-devel/libtool-2.4
+  DEPEND: dev-libs/libuv:= caps? ( sys-libs/libcap ) !libressl? ( dev-libs/openssl:=
+    ) libressl? ( dev-libs/libressl:= ) xml? ( dev-libs/libxml2 ) idn? ( net-dns/libidn2:=
+    ) gssapi? ( virtual/krb5 ) libedit? ( dev-libs/libedit ) !libedit? ( readline?
+    ( sys-libs/readline:= ) )
   IUSE: +caps doc gssapi idn ipv6 libedit libressl readline xml
-  RDEPEND: dev-libs/libuv:= caps? ( sys-libs/libcap ) !libressl? ( dev-libs/openssl:= ) libressl? ( dev-libs/libressl:= ) xml? ( dev-libs/libxml2 ) idn? ( net-dns/libidn2:= ) gssapi? ( virtual/krb5 ) libedit? ( dev-libs/libedit ) !libedit? ( readline? ( sys-libs/readline:= ) )
+  RDEPEND: dev-libs/libuv:= caps? ( sys-libs/libcap ) !libressl? ( dev-libs/openssl:=
+    ) libressl? ( dev-libs/libressl:= ) xml? ( dev-libs/libxml2 ) idn? ( net-dns/libidn2:=
+    ) gssapi? ( virtual/krb5 ) libedit? ( dev-libs/libedit ) !libedit? ( readline?
+    ( sys-libs/readline:= ) )
   emerge.packages: net-dns/bind-tools
   kit: gentoo
   original.package.name: net-dns/bind-tools

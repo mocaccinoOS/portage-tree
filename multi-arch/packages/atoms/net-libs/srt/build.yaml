@@ -18,6 +18,3 @@ requires:
 - name: ninja
   version: '>=0'
   category: dev-util
-- name: gnutls
-  version: '>=0'
-  category: net-libs

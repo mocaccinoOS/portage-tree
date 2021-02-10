@@ -12,15 +12,21 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: pygobject
+- name: python
   version: '>=0'
-  category: dev-python-3
-- name: sphinx
+  category: dev-lang-3.7
+- name: python-exec
   version: '>=0'
-  category: dev-python
-- name: tappy
+  category: dev-lang-2
+- name: glib
   version: '>=0'
-  category: dev-python
+  category: dev-libs-2
 - name: dbus
   version: '>=0'
   category: sys-apps
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2

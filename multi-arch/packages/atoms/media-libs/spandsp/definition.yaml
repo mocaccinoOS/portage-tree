@@ -13,7 +13,8 @@ uri:
 license: LGPL-2.1
 labels:
   DEPEND: media-libs/tiff virtual/jpeg doc? ( app-doc/doxygen dev-libs/libxslt )
-  IUSE: doc fixed-point cpu_flags_x86_mmx cpu_flags_x86_sse cpu_flags_x86_sse2 cpu_flags_x86_sse3 static-libs
+  IUSE: doc fixed-point cpu_flags_x86_mmx cpu_flags_x86_sse cpu_flags_x86_sse2 cpu_flags_x86_sse3
+    static-libs
   RDEPEND: media-libs/tiff virtual/jpeg
   emerge.packages: media-libs/spandsp
   kit: gentoo

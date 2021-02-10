@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: zstd
+- name: build-seed
   version: '>=0'
-  category: app-arch
-- name: cyrus-sasl
-  version: '>=0'
-  category: dev-libs-2
+  category: layers

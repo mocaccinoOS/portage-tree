@@ -30,6 +30,9 @@ requires:
 - name: openldap
   version: '>=0'
   category: net-nds
+- name: gdbm
+  version: '>=0'
+  category: sys-libs
 - name: libcap
   version: '>=0'
   category: sys-libs

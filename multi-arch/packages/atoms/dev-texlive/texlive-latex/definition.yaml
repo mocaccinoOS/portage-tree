@@ -2,6 +2,10 @@ name: texlive-latex
 version: "2020"
 category: dev-texlive
 requires:
+- name: texlive-basic
+  version: '>=0'
+  category: dev-texlive
+conflicts:
 - name: texlive-latexrecommended
   version: '>=0'
   category: dev-texlive
@@ -13,7 +17,8 @@ labels:
   BDEPEND: '>=app-text/texlive-core-2020 app-arch/xz-utils'
   DEPEND: '>=dev-texlive/texlive-basic-2020 !~dev-texlive/texlive-latexrecommended-2019'
   IUSE: source doc
-  RDEPEND: '>=dev-texlive/texlive-basic-2020 !~dev-texlive/texlive-latexrecommended-2019 >=app-text/texlive-core-2020'
+  RDEPEND: '>=dev-texlive/texlive-basic-2020 !~dev-texlive/texlive-latexrecommended-2019
+    >=app-text/texlive-core-2020'
   emerge.packages: dev-texlive/texlive-latex
   kit: gentoo
   original.package.name: dev-texlive/texlive-latex

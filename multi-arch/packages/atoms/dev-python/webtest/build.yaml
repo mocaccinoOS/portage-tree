@@ -15,21 +15,18 @@ requires:
 - name: beautifulsoup
   version: '>=0'
   category: dev-python-4
-- name: mock
-  version: '>=0'
-  category: dev-python
 - name: paste
   version: '>=0'
   category: dev-python
 - name: pastedeploy
   version: '>=0'
   category: dev-python
-- name: pyquery
+- name: six
   version: '>=0'
   category: dev-python
 - name: waitress
   version: '>=0'
   category: dev-python
-- name: wsgiproxy2
+- name: webob
   version: '>=0'
   category: dev-python

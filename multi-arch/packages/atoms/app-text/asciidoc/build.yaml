@@ -18,9 +18,9 @@ requires:
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
-- name: pypy3
+- name: autoconf
   version: '>=0'
-  category: dev-python
+  category: sys-devel-2.69
 - name: libtool
   version: '>=0'
   category: sys-devel-2

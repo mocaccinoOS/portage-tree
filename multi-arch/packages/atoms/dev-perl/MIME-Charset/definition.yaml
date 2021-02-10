@@ -16,9 +16,12 @@ uri:
 - https://metacpan.org/release/MIME-Charset
 license: '|| ( Artistic GPL-1+ )'
 labels:
-  DEPEND: '>=virtual/perl-Encode-1.980.0 l10n_ja? ( >=dev-perl/Encode-EUCJPASCII-0.20.0 ) l10n_zh? ( >=dev-perl/Encode-HanExtra-0.200.0 ) virtual/perl-ExtUtils-MakeMaker dev-lang/perl'
+  DEPEND: '>=virtual/perl-Encode-1.980.0 l10n_ja? ( >=dev-perl/Encode-EUCJPASCII-0.20.0
+    ) l10n_zh? ( >=dev-perl/Encode-HanExtra-0.200.0 ) virtual/perl-ExtUtils-MakeMaker
+    dev-lang/perl'
   IUSE: l10n_ja l10n_zh
-  RDEPEND: '>=virtual/perl-Encode-1.980.0 l10n_ja? ( >=dev-perl/Encode-EUCJPASCII-0.20.0 ) l10n_zh? ( >=dev-perl/Encode-HanExtra-0.200.0 ) dev-lang/perl:='
+  RDEPEND: '>=virtual/perl-Encode-1.980.0 l10n_ja? ( >=dev-perl/Encode-EUCJPASCII-0.20.0
+    ) l10n_zh? ( >=dev-perl/Encode-HanExtra-0.200.0 ) dev-lang/perl:='
   emerge.packages: dev-perl/MIME-Charset
   kit: gentoo
   original.package.name: dev-perl/MIME-Charset

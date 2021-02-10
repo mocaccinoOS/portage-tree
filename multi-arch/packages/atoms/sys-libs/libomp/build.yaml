@@ -12,12 +12,18 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: lit
+- name: perl
   version: '>=0'
-  category: dev-python
+  category: dev-lang
+- name: libffi
+  version: '>=0'
+  category: dev-libs
+- name: cmake
+  version: '>=0'
+  category: dev-util
+- name: ninja
+  version: '>=0'
+  category: dev-util
 - name: hwloc
   version: '>=0'
   category: sys-apps
-- name: clang
-  version: '>=0'
-  category: sys-devel-10

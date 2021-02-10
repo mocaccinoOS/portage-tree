@@ -1,7 +1,7 @@
 name: makedev
 version: 3.23.1
 category: sys-apps
-requires:
+conflicts:
 - name: baselayout
   version: '>=0'
   category: sys-apps

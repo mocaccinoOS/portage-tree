@@ -27,9 +27,15 @@ uri:
 - http://developer.nvidia.com/object/texture_tools.html
 license: MIT
 labels:
-  DEPEND: media-libs/ilmbase:= media-libs/libpng:0= media-libs/tiff:0 sys-libs/zlib virtual/jpeg:0 virtual/opengl x11-libs/libX11 cg? ( media-gfx/nvidia-cg-toolkit ) glew? ( media-libs/glew:0= ) glut? ( media-libs/freeglut ) openexr? ( media-libs/openexr:= ) virtual/pkgconfig sys-devel/make >=dev-util/cmake-3.9.6
+  DEPEND: media-libs/ilmbase:= media-libs/libpng:0= media-libs/tiff:0 sys-libs/zlib
+    virtual/jpeg:0 virtual/opengl x11-libs/libX11 cg? ( media-gfx/nvidia-cg-toolkit
+    ) glew? ( media-libs/glew:0= ) glut? ( media-libs/freeglut ) openexr? ( media-libs/openexr:=
+    ) virtual/pkgconfig sys-devel/make >=dev-util/cmake-3.9.6
   IUSE: cg glew glut openexr
-  RDEPEND: media-libs/ilmbase:= media-libs/libpng:0= media-libs/tiff:0 sys-libs/zlib virtual/jpeg:0 virtual/opengl x11-libs/libX11 cg? ( media-gfx/nvidia-cg-toolkit ) glew? ( media-libs/glew:0= ) glut? ( media-libs/freeglut ) openexr? ( media-libs/openexr:= )
+  RDEPEND: media-libs/ilmbase:= media-libs/libpng:0= media-libs/tiff:0 sys-libs/zlib
+    virtual/jpeg:0 virtual/opengl x11-libs/libX11 cg? ( media-gfx/nvidia-cg-toolkit
+    ) glew? ( media-libs/glew:0= ) glut? ( media-libs/freeglut ) openexr? ( media-libs/openexr:=
+    )
   emerge.packages: media-gfx/nvidia-texture-tools
   kit: gentoo
   original.package.name: media-gfx/nvidia-texture-tools

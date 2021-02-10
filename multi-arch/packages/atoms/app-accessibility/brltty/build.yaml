@@ -21,10 +21,16 @@ requires:
 - name: java-config
   version: '>=0'
   category: dev-java-2
+- name: tcl
+  version: '>=0'
+  category: dev-lang
 - name: icu
   version: '>=0'
   category: dev-libs
 - name: liblouis
+  version: '>=0'
+  category: dev-libs
+- name: libpcre2
   version: '>=0'
   category: dev-libs
 - name: findlib
@@ -33,9 +39,15 @@ requires:
 - name: cython
   version: '>=0'
   category: dev-python
+- name: bluez
+  version: '>=0'
+  category: net-wireless
 - name: polkit
   version: '>=0'
   category: sys-auth
+- name: gpm
+  version: '>=0'
+  category: sys-libs
 - name: libXaw
   version: '>=0'
   category: x11-libs

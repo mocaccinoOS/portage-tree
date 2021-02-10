@@ -10,7 +10,8 @@ requires:
 - name: libunwind
   version: '>=0'
   category: sys-libs
-description: Programming language supporting functional, imperative & object-oriented styles
+description: Programming language supporting functional, imperative & object-oriented
+  styles
 uri:
 - https://ocaml.org/
 license: LGPL-2.1

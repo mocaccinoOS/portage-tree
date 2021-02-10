@@ -18,7 +18,8 @@ labels:
   BDEPEND: dev-util/ninja dev-util/cmake
   DEPEND: doc? ( app-doc/doxygen ) tools? ( app-text/xmlto )
   IUSE: doc libressl test +ssl static-libs tools
-  RDEPEND: ssl? ( libressl? ( dev-libs/libressl:= ) !libressl? ( dev-libs/openssl:0= ) ) tools? ( dev-libs/popt )
+  RDEPEND: ssl? ( libressl? ( dev-libs/libressl:= ) !libressl? ( dev-libs/openssl:0=
+    ) ) tools? ( dev-libs/popt )
   emerge.packages: net-libs/rabbitmq-c
   kit: gentoo
   original.package.name: net-libs/rabbitmq-c

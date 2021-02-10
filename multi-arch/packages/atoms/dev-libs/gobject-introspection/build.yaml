@@ -15,6 +15,9 @@ requires:
 - name: gobject-introspection-common
   version: '>=0'
   category: dev-libs
+- name: libffi
+  version: '>=0'
+  category: dev-libs
 - name: mako
   version: '>=0'
   category: dev-python
@@ -22,6 +25,12 @@ requires:
   version: '>=0'
   category: dev-python
 - name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
+- name: meson
+  version: '>=0'
+  category: dev-util
+- name: ninja
   version: '>=0'
   category: dev-util
 - name: bison

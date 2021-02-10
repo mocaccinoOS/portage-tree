@@ -15,21 +15,15 @@ requires:
 - name: olefile
   version: '>=0'
   category: dev-python
-- name: pytest
-  version: '>=0'
-  category: dev-python
-- name: sphinx_rtd_theme
-  version: '>=0'
-  category: dev-python
-- name: imagemagick
-  version: '>=0'
-  category: media-gfx
 - name: libimagequant
   version: '>=0'
   category: media-gfx
-- name: xhost
+- name: freetype
   version: '>=0'
-  category: x11-apps
-- name: xorg-server
+  category: media-libs-2
+- name: openjpeg
   version: '>=0'
-  category: x11-base
+  category: media-libs-2
+- name: libxcb
+  version: '>=0'
+  category: x11-libs

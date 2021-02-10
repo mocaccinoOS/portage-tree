@@ -18,6 +18,9 @@ requires:
 - name: opencv
   version: '>=0'
   category: media-libs
+- name: make
+  version: '>=0'
+  category: sys-devel
 - name: cairo
   version: '>=0'
   category: x11-libs

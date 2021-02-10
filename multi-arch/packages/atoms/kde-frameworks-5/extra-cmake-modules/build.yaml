@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: sphinx
-  version: '>=0'
-  category: dev-python
-- name: linguist-tools
-  version: '>=0'
-  category: dev-qt-5
-- name: qthelp
-  version: '>=0'
-  category: dev-qt-5
 - name: cmake
   version: '>=0'
   category: dev-util

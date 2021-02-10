@@ -15,10 +15,17 @@ uri:
 - https://kde.org/products/frameworks/
 license: LGPL-2+
 labels:
-  BDEPEND: man? ( >=kde-frameworks/kdoctools-5.74:5 ) dev-util/ninja dev-util/cmake >=kde-frameworks/extra-cmake-modules-5.74:5
-  DEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5 =kde-frameworks/kdbusaddons-5.74*:5 =kde-frameworks/kinit-5.74*:5 =kde-frameworks/kservice-5.74*:5 dev-qt/qtcore:5'
+  BDEPEND: man? ( >=kde-frameworks/kdoctools-5.74:5 ) dev-util/ninja dev-util/cmake
+    >=kde-frameworks/extra-cmake-modules-5.74:5
+  DEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5
+    =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5
+    =kde-frameworks/kdbusaddons-5.74*:5 =kde-frameworks/kinit-5.74*:5 =kde-frameworks/kservice-5.74*:5
+    dev-qt/qtcore:5'
   IUSE: +man debug
-  RDEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5 =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5 =kde-frameworks/kdbusaddons-5.74*:5 =kde-frameworks/kinit-5.74*:5 =kde-frameworks/kservice-5.74*:5 >=kde-frameworks/kf-env-4 dev-qt/qtcore:5'
+  RDEPEND: '>=dev-qt/qtdbus-5.14.2:5 >=dev-qt/qtgui-5.14.2:5 >=dev-qt/qtwidgets-5.14.2:5
+    =kde-frameworks/kconfig-5.74*:5 =kde-frameworks/kcoreaddons-5.74*:5 =kde-frameworks/kcrash-5.74*:5
+    =kde-frameworks/kdbusaddons-5.74*:5 =kde-frameworks/kinit-5.74*:5 =kde-frameworks/kservice-5.74*:5
+    >=kde-frameworks/kf-env-4 dev-qt/qtcore:5'
   emerge.packages: kde-frameworks/kded:5
   kit: gentoo
   original.package.name: kde-frameworks/kded

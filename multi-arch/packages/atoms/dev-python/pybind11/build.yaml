@@ -12,21 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: eigen
-  version: '>=0'
-  category: dev-cpp-3
-- name: breathe
+- name: setuptools
   version: '>=0'
   category: dev-python
-- name: pytest
+- name: cmake
   version: '>=0'
-  category: dev-python
-- name: sphinx
-  version: '>=0'
-  category: dev-python
-- name: sphinx_rtd_theme
-  version: '>=0'
-  category: dev-python
+  category: dev-util
 - name: ninja
   version: '>=0'
   category: dev-util

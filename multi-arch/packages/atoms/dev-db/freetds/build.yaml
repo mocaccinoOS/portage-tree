@@ -18,9 +18,6 @@ requires:
 - name: unixODBC
   version: '>=0'
   category: dev-db
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: grep
   version: '>=0'
   category: sys-apps

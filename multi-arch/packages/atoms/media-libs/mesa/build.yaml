@@ -36,6 +36,9 @@ requires:
 - name: clang
   version: '>=0'
   category: sys-devel-10
+- name: gcc
+  version: '>=0'
+  category: sys-devel-9.3.0
 - name: libselinux
   version: '>=0'
   category: sys-libs

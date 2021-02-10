@@ -1,7 +1,10 @@
 name: ethertypes
 version: "0"
 category: net-misc
-requires:
+conflicts:
+- name: ebtables
+  version: '>=0'
+  category: net-firewall
 - name: iptables
   version: '>=0'
   category: net-firewall

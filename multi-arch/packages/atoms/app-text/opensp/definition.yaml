@@ -14,7 +14,9 @@ uri:
 - http://openjade.sourceforge.net/
 license: MIT
 labels:
-  DEPEND: net-libs/libnsl:0= nls? ( sys-devel/gettext ) doc? ( app-text/xmlto app-text/docbook-xml-dtd:4.1.2 ) test? ( app-text/docbook-xml-dtd:4.5 app-text/openjade app-text/sgml-common )
+  DEPEND: net-libs/libnsl:0= nls? ( sys-devel/gettext ) doc? ( app-text/xmlto app-text/docbook-xml-dtd:4.1.2
+    ) test? ( app-text/docbook-xml-dtd:4.5 app-text/openjade app-text/sgml-common
+    )
   IUSE: doc nls static-libs test
   RDEPEND: net-libs/libnsl:0=
   emerge.packages: app-text/opensp

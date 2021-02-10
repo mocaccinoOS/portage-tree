@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: build-seed
+  version: '>=0'
+  category: layers
 - name: java-config
   version: '>=0'
   category: dev-java-2

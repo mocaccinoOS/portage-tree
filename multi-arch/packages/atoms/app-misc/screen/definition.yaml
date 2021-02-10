@@ -2,15 +2,12 @@ name: screen
 version: 4.8.0
 category: app-misc
 use_flags:
+- -selinux
 - pam
-- selinux
 requires:
 - name: utmp
   version: '>=0'
   category: acct-group
-- name: selinux-screen
-  version: '>=0'
-  category: sec-policy
 - name: ncurses
   version: '>=0'
   category: sys-libs
@@ -22,10 +19,12 @@ uri:
 - https://www.gnu.org/software/screen/
 license: GPL-2
 labels:
-  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  BDEPEND: '>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
   DEPEND: '>=sys-libs/ncurses-5.2:0= pam? ( sys-libs/pam ) sys-apps/texinfo'
   IUSE: debug nethack pam selinux multiuser
-  RDEPEND: '>=sys-libs/ncurses-5.2:0= pam? ( sys-libs/pam ) acct-group/utmp selinux? ( sec-policy/selinux-screen ) virtual/tmpfiles'
+  RDEPEND: '>=sys-libs/ncurses-5.2:0= pam? ( sys-libs/pam ) acct-group/utmp selinux?
+    ( sec-policy/selinux-screen ) virtual/tmpfiles'
   emerge.packages: app-misc/screen
   kit: gentoo
   original.package.name: app-misc/screen

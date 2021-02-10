@@ -18,9 +18,12 @@ requires:
 - name: doxygen
   version: '>=0'
   category: app-doc
-- name: openafs-kernel
+- name: kmod
   version: '>=0'
-  category: net-fs
+  category: sys-apps
+- name: sed
+  version: '>=0'
+  category: sys-apps
 - name: fuse
   version: '>=0'
   category: sys-fs-3

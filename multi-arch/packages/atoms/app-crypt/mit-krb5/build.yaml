@@ -12,12 +12,21 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: lmdb
+  version: '>=0'
+  category: dev-db
 - name: yasm
   version: '>=0'
   category: dev-lang
+- name: openldap
+  version: '>=0'
+  category: net-nds
 - name: keyutils
   version: '>=0'
   category: sys-apps
 - name: xinetd
   version: '>=0'
   category: sys-apps
+- name: e2fsprogs-libs
+  version: '>=0'
+  category: sys-libs

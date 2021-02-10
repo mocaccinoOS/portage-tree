@@ -12,7 +12,8 @@ uri:
 - https://github.com/linuxwacom/libwacom
 license: MIT
 labels:
-  BDEPEND: virtual/pkgconfig doc? ( app-doc/doxygen ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 virtual/pkgconfig
+  BDEPEND: virtual/pkgconfig doc? ( app-doc/doxygen ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2
+    virtual/pkgconfig
   DEPEND: dev-libs/glib:2 dev-libs/libgudev:=
   IUSE: doc test
   RDEPEND: dev-libs/glib:2 dev-libs/libgudev:=

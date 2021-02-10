@@ -1,6 +1,14 @@
 name: File-Listing
 version: 6.40.0
 category: dev-perl
+requires:
+- name: HTTP-Date
+  version: '>=0'
+  category: dev-perl
+conflicts:
+- name: libwww-perl
+  version: '>=0'
+  category: dev-perl
 description: Parse directory listings
 uri:
 - https://metacpan.org/release/File-Listing

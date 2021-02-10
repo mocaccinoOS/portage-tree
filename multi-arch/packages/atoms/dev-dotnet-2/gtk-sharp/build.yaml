@@ -21,3 +21,6 @@ requires:
 - name: libglade
   version: '>=0'
   category: gnome-base-2.0
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16

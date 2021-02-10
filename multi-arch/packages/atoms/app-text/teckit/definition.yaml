@@ -13,7 +13,8 @@ uri:
 - http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&cat_id=TECkit
 license: '|| ( CPL-0.5 LGPL-2.1 )'
 labels:
-  DEPEND: sys-libs/zlib dev-libs/expat >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: sys-libs/zlib dev-libs/expat >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16
+    >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
   IUSE: static-libs
   RDEPEND: sys-libs/zlib dev-libs/expat
   emerge.packages: app-text/teckit

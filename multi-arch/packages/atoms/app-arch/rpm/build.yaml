@@ -39,6 +39,9 @@ requires:
 - name: dbus
   version: '>=0'
   category: sys-apps
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3
 - name: libcap
   version: '>=0'
   category: sys-libs

@@ -15,15 +15,24 @@ requires:
 - name: newt
   version: '>=0'
   category: dev-libs
+- name: ppp
+  version: '>=0'
+  category: net-dialup
 - name: dnsmasq
   version: '>=0'
   category: net-dns
 - name: openresolv
   version: '>=0'
   category: net-dns
+- name: iptables
+  version: '>=0'
+  category: net-firewall
 - name: libndp
   version: '>=0'
   category: net-libs
+- name: curl
+  version: '>=0'
+  category: net-misc
 - name: dhcp
   version: '>=0'
   category: net-misc
@@ -42,12 +51,9 @@ requires:
 - name: ofono
   version: '>=0'
   category: net-misc
-- name: elogind
+- name: util-linux
   version: '>=0'
-  category: sys-auth
-- name: xhost
+  category: sys-apps
+- name: audit
   version: '>=0'
-  category: x11-apps
-- name: xorg-server
-  version: '>=0'
-  category: x11-base
+  category: sys-process

@@ -15,6 +15,9 @@ requires:
 - name: oniguruma
   version: '>=0'
   category: dev-libs
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
 - name: bison
   version: '>=0'
   category: sys-devel

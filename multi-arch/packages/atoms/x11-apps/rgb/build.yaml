@@ -12,6 +12,9 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
 - name: libtool
   version: '>=0'
   category: sys-devel-2

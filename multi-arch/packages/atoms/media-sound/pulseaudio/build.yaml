@@ -21,6 +21,9 @@ requires:
 - name: libatomic_ops
   version: '>=0'
   category: dev-libs
+- name: libltdl
+  version: '>=0'
+  category: dev-libs
 - name: unifdef
   version: '>=0'
   category: dev-util
@@ -57,9 +60,6 @@ requires:
 - name: fftw
   version: '>=0'
   category: sci-libs-3.0
-- name: selinux-pulseaudio
-  version: '>=0'
-  category: sec-policy
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps

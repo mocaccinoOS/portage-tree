@@ -13,7 +13,9 @@ uri:
 - http://gts.sourceforge.net/
 license: LGPL-2
 labels:
-  DEPEND: dev-libs/glib:2 virtual/pkgconfig doc? ( dev-util/gtk-doc ) test? ( media-libs/netpbm ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: dev-libs/glib:2 virtual/pkgconfig doc? ( dev-util/gtk-doc ) test? ( media-libs/netpbm
+    ) >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15
+    ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
   IUSE: doc examples static-libs test
   RDEPEND: dev-libs/glib:2
   emerge.packages: sci-libs/gts

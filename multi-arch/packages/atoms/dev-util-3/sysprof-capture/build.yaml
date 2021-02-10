@@ -12,6 +12,21 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: sysprof
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: gdbus-codegen
   version: '>=0'
   category: dev-util
+- name: meson
+  version: '>=0'
+  category: dev-util
+- name: ninja
+  version: '>=0'
+  category: dev-util
+- name: linux-headers
+  version: '>=0'
+  category: sys-kernel

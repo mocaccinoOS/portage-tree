@@ -12,15 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: gmp
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: acl
-  version: '>=0'
-  category: sys-apps
-- name: libcap
-  version: '>=0'
-  category: sys-libs
-- name: libselinux
-  version: '>=0'
-  category: sys-libs
+  category: layers

@@ -2,6 +2,10 @@ name: LWP-MediaTypes
 version: 6.20.0
 category: dev-perl
 requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+conflicts:
 - name: libwww-perl
   version: '>=0'
   category: dev-perl

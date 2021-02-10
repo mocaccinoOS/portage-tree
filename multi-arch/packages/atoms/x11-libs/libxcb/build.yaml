@@ -30,6 +30,9 @@ requires:
 - name: font-util
   version: '>=0'
   category: media-fonts
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16
 - name: xcb-proto
   version: '>=0'
   category: x11-base

@@ -34,9 +34,15 @@ uri:
 license: GPL-2+
 labels:
   BDEPEND: dev-lang/perl
-  DEPEND: app-text/opensp dev-libs/libxslt dev-perl/Locale-gettext dev-perl/SGMLSpm dev-perl/TermReadKey dev-perl/Text-WrapI18N dev-perl/Unicode-LineBreak dev-perl/YAML-Tiny sys-devel/gettext app-text/docbook-xml-dtd:4.1.2 app-text/docbook-xsl-stylesheets dev-perl/Module-Build test? ( app-text/docbook-sgml-dtd:4.1 virtual/latex-base ) dev-lang/perl
+  DEPEND: app-text/opensp dev-libs/libxslt dev-perl/Locale-gettext dev-perl/SGMLSpm
+    dev-perl/TermReadKey dev-perl/Text-WrapI18N dev-perl/Unicode-LineBreak dev-perl/YAML-Tiny
+    sys-devel/gettext app-text/docbook-xml-dtd:4.1.2 app-text/docbook-xsl-stylesheets
+    dev-perl/Module-Build test? ( app-text/docbook-sgml-dtd:4.1 virtual/latex-base
+    ) dev-lang/perl
   IUSE: test
-  RDEPEND: app-text/opensp dev-libs/libxslt dev-perl/Locale-gettext dev-perl/SGMLSpm dev-perl/TermReadKey dev-perl/Text-WrapI18N dev-perl/Unicode-LineBreak dev-perl/YAML-Tiny sys-devel/gettext dev-lang/perl:=
+  RDEPEND: app-text/opensp dev-libs/libxslt dev-perl/Locale-gettext dev-perl/SGMLSpm
+    dev-perl/TermReadKey dev-perl/Text-WrapI18N dev-perl/Unicode-LineBreak dev-perl/YAML-Tiny
+    sys-devel/gettext dev-lang/perl:=
   emerge.packages: app-text/po4a
   kit: gentoo
   original.package.name: app-text/po4a

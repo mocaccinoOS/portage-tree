@@ -12,9 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: zlib
   version: '>=0'
   category: sys-libs

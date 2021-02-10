@@ -1,0 +1,25 @@
+name: re2
+version: 0.2020.08.01
+category: dev-libs
+use_flags:
+- icu
+requires:
+- name: icu
+  version: '>=0'
+  category: dev-libs
+description: An efficient, principled regular expression library
+uri:
+- https://github.com/google/re2
+license: BSD
+labels:
+  BDEPEND: icu? ( virtual/pkgconfig )
+  DEPEND: icu? ( dev-libs/icu:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    )
+  IUSE: icu abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32
+    abi_s390_32 abi_s390_64
+  RDEPEND: icu? ( dev-libs/icu:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    )
+  emerge.packages: dev-libs/re2
+  kit: gentoo
+  original.package.name: dev-libs/re2
+  original.package.version: 0.2020.08.01

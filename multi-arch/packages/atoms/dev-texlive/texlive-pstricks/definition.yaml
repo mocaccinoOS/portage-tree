@@ -5,6 +5,9 @@ requires:
 - name: pgf
   version: '>=0'
   category: dev-tex
+- name: texlive-plaingeneric
+  version: '>=0'
+  category: dev-texlive
 description: TeXLive PSTricks
 uri:
 - http://www.tug.org/texlive/
@@ -13,7 +16,8 @@ labels:
   BDEPEND: '>=app-text/texlive-core-2020 app-arch/xz-utils'
   DEPEND: '>=dev-texlive/texlive-basic-2020 >=dev-texlive/texlive-plaingeneric-2020'
   IUSE: source doc
-  RDEPEND: '>=dev-texlive/texlive-basic-2020 >=dev-texlive/texlive-plaingeneric-2020 dev-tex/pgf >=app-text/texlive-core-2020'
+  RDEPEND: '>=dev-texlive/texlive-basic-2020 >=dev-texlive/texlive-plaingeneric-2020
+    dev-tex/pgf >=app-text/texlive-core-2020'
   emerge.packages: dev-texlive/texlive-pstricks
   kit: gentoo
   original.package.name: dev-texlive/texlive-pstricks

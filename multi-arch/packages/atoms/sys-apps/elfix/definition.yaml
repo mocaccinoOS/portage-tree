@@ -13,9 +13,11 @@ uri:
 - https://www.gentoo.org/proj/en/hardened/pax-quickstart.xml https://dev.gentoo.org/~blueness/elfix/
 license: GPL-3
 labels:
-  DEPEND: ~dev-python/pypax-0.9.5[ptpax=,xtpax=] ptpax? ( dev-libs/elfutils ) xtpax? ( sys-apps/attr )
+  DEPEND: ~dev-python/pypax-0.9.5[ptpax=,xtpax=] ptpax? ( dev-libs/elfutils ) xtpax?
+    ( sys-apps/attr )
   IUSE: +ptpax +xtpax
-  RDEPEND: ~dev-python/pypax-0.9.5[ptpax=,xtpax=] ptpax? ( dev-libs/elfutils ) xtpax? ( sys-apps/attr )
+  RDEPEND: ~dev-python/pypax-0.9.5[ptpax=,xtpax=] ptpax? ( dev-libs/elfutils ) xtpax?
+    ( sys-apps/attr )
   emerge.packages: sys-apps/elfix
   kit: gentoo
   original.package.name: sys-apps/elfix

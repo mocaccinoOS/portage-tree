@@ -12,27 +12,6 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: cloudpickle
-  version: '>=0'
-  category: dev-python
-- name: loky
-  version: '>=0'
-  category: dev-python
-- name: lz4
-  version: '>=0'
-  category: dev-python
-- name: matplotlib
-  version: '>=0'
-  category: dev-python
-- name: numpydoc
-  version: '>=0'
-  category: dev-python
-- name: pandas
-  version: '>=0'
-  category: dev-python
-- name: sphinx-gallery
-  version: '>=0'
-  category: dev-python
-- name: threadpoolctl
+- name: setuptools
   version: '>=0'
   category: dev-python

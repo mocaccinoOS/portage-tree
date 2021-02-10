@@ -18,6 +18,15 @@ requires:
 - name: libepoxy
   version: '>=0'
   category: media-libs
+- name: libglvnd
+  version: '>=0'
+  category: media-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: systemd
+  version: '>=0'
+  category: sys-apps
 - name: flex
   version: '>=0'
   category: sys-devel
@@ -36,10 +45,10 @@ requires:
 - name: xkbcomp
   version: '>=0'
   category: x11-apps
-- name: nvidia-drivers
-  version: '>=0'
-  category: x11-drivers
 - name: libXaw
+  version: '>=0'
+  category: x11-libs
+- name: libXfixes
   version: '>=0'
   category: x11-libs
 - name: libXfont2
@@ -52,6 +61,9 @@ requires:
   version: '>=0'
   category: x11-libs
 - name: libXtst
+  version: '>=0'
+  category: x11-libs
+- name: libXv
   version: '>=0'
   category: x11-libs
 - name: libdmx

@@ -18,3 +18,9 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: m4
+  version: '>=0'
+  category: sys-devel

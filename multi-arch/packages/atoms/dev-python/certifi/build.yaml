@@ -18,6 +18,3 @@ requires:
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
-- name: pypy3
-  version: '>=0'
-  category: dev-python

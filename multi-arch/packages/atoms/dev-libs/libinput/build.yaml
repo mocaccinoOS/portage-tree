@@ -12,30 +12,12 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
 requires:
-- name: doxygen
-  version: '>=0'
-  category: app-doc
-- name: check
-  version: '>=0'
-  category: dev-libs
 - name: libevdev
   version: '>=0'
   category: dev-libs
 - name: libwacom
   version: '>=0'
   category: dev-libs
-- name: commonmark
-  version: '>=0'
-  category: dev-python
-- name: recommonmark
-  version: '>=0'
-  category: dev-python
-- name: sphinx
-  version: '>=0'
-  category: dev-python
-- name: sphinx_rtd_theme
-  version: '>=0'
-  category: dev-python
 - name: mtdev
   version: '>=0'
   category: sys-libs

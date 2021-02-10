@@ -18,6 +18,6 @@ requires:
 - name: cmake
   version: '>=0'
   category: dev-util
-- name: raspberrypi-userland-bin
+- name: make
   version: '>=0'
-  category: media-libs
+  category: sys-devel

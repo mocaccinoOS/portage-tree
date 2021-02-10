@@ -10,7 +10,8 @@ uri:
 - https://www.seabios.org/
 license: LGPL-3 GPL-3
 labels:
-  DEPEND: '!binary? ( amd64? ( >=sys-power/iasl-20060912 || ( dev-lang/python:3.6 ) ) x86? ( >=sys-power/iasl-20060912 || ( dev-lang/python:3.6 ) ) )'
+  DEPEND: '!binary? ( amd64? ( >=sys-power/iasl-20060912 || ( dev-lang/python:3.6
+    ) ) x86? ( >=sys-power/iasl-20060912 || ( dev-lang/python:3.6 ) ) )'
   IUSE: +binary debug +seavgabios
   emerge.packages: sys-firmware/seabios
   kit: gentoo

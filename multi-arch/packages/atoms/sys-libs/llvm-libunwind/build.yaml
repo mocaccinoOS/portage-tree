@@ -11,10 +11,3 @@ steps:
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 package_dir: /{{ .Values.name }}
-requires:
-- name: lit
-  version: '>=0'
-  category: dev-python
-- name: clang
-  version: '>=0'
-  category: sys-devel-10

@@ -18,9 +18,11 @@ uri:
 - https://wiki.gentoo.org/wiki/Project:Eselect
 license: GPL-2+ || ( GPL-2+ CC-BY-SA-4.0 )
 labels:
-  DEPEND: sys-apps/sed || ( sys-apps/coreutils app-misc/realpath ) doc? ( dev-python/docutils )
+  DEPEND: sys-apps/sed || ( sys-apps/coreutils app-misc/realpath ) doc? ( dev-python/docutils
+    )
   IUSE: doc emacs vim-syntax
-  RDEPEND: sys-apps/sed || ( sys-apps/coreutils app-misc/realpath ) sys-apps/file sys-libs/ncurses:0
+  RDEPEND: sys-apps/sed || ( sys-apps/coreutils app-misc/realpath ) sys-apps/file
+    sys-libs/ncurses:0
   emerge.packages: app-admin/eselect
   kit: gentoo
   original.package.name: app-admin/eselect
