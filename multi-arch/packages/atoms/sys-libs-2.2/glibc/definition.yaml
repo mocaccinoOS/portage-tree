@@ -4,6 +4,7 @@ category: sys-libs-2.2
 use_flags:
 - -doc
 - -selinux
+- -systemtap
 - -test
 - audit
 - caps
@@ -11,15 +12,11 @@ use_flags:
 - gd
 - nscd
 - suid
-- systemtap
 - vanilla
 requires:
 - name: gzip
   version: '>=0'
   category: app-arch
-- name: systemtap
-  version: '>=0'
-  category: dev-util
 - name: gd
   version: '>=0'
   category: media-libs-2

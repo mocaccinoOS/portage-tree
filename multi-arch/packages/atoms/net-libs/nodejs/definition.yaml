@@ -2,10 +2,10 @@ name: nodejs
 version: 14.15.0
 category: net-libs
 use_flags:
+- -systemtap
 - -test
 - system-icu
 - system-ssl
-- systemtap
 requires:
 - name: brotli
   version: '>=0'

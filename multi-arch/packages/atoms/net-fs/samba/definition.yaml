@@ -2,6 +2,7 @@ name: samba
 version: 4.12.9
 category: net-fs
 use_flags:
+- -fam
 - -python_single_target_python3_6
 - -python_single_target_python3_8
 - -selinux
@@ -14,7 +15,6 @@ use_flags:
 - cups
 - debug
 - dmapi
-- fam
 - gpg
 - json
 - ldap

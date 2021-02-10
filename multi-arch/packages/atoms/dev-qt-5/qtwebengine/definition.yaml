@@ -27,13 +27,7 @@ requires:
 - name: designer
   version: '>=0'
   category: dev-qt-5
-- name: qtcore
-  version: '>=0'
-  category: dev-qt-5
 - name: qtpositioning
-  version: '>=0'
-  category: dev-qt-5
-- name: qtprintsupport
   version: '>=0'
   category: dev-qt-5
 - name: qtwebchannel
@@ -48,9 +42,6 @@ requires:
 - name: ffmpeg
   version: '>=0'
   category: media-video
-- name: dbus
-  version: '>=0'
-  category: sys-apps
 - name: pciutils
   version: '>=0'
   category: sys-apps

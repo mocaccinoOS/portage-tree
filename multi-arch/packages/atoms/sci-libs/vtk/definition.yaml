@@ -62,12 +62,6 @@ requires:
 - name: six
   version: '>=0'
   category: dev-python
-- name: qtopengl
-  version: '>=0'
-  category: dev-qt-5
-- name: qtsql
-  version: '>=0'
-  category: dev-qt-5
 - name: glew
   version: '>=0'
   category: media-libs

@@ -1,6 +1,12 @@
 steps:
 - |
   {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- else }}
+  emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- end }}
+- |
+  {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- else }}
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
@@ -18,6 +24,9 @@ requires:
 - name: skey
   version: '>=0'
   category: sys-auth
+- name: linux-headers
+  version: '>=0'
+  category: sys-kernel
 - name: cracklib
   version: '>=0'
   category: sys-libs

@@ -54,9 +54,6 @@ requires:
 - name: jackcess
   version: '>=0'
   category: dev-java-1
-- name: perl
-  version: '>=0'
-  category: dev-lang
 - name: json-c
   version: '>=0'
   category: dev-libs

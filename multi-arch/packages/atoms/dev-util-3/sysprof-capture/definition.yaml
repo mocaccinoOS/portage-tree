@@ -1,6 +1,10 @@
 name: sysprof-capture
 version: 3.36.0
 category: dev-util-3
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 description: Static library for sysprof capture data generation
 uri:
 - http://sysprof.com/

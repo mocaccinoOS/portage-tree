@@ -19,9 +19,6 @@ requires:
 - name: proj
   version: '>=0'
   category: sci-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 description: A complete Spatial DBMS in a nutshell built upon sqlite
 uri:
 - https://www.gaia-gis.it/gaia-sins/

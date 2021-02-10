@@ -7,9 +7,6 @@ use_flags:
 - designer
 - nls
 requires:
-- name: qtcore
-  version: '>=0'
-  category: dev-qt-5
 - name: qtwidgets
   version: '>=0'
   category: dev-qt-5

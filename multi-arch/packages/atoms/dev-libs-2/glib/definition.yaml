@@ -2,14 +2,14 @@ name: glib
 version: 2.64.5
 category: dev-libs-2
 use_flags:
+- -fam
 - -gtk-doc
+- -kernel_Winnt
 - -selinux
+- -systemtap
 - -test
 - elibc_glibc
-- fam
-- kernel_Winnt
 - kernel_linux
-- systemtap
 - xattr
 requires:
 - name: libffi

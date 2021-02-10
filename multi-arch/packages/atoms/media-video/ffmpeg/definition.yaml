@@ -96,9 +96,6 @@ requires:
 - name: snappy
   version: '>=0'
   category: app-arch
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
 - name: tesseract
   version: '>=0'
   category: app-text

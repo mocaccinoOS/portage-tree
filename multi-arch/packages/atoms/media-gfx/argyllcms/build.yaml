@@ -1,6 +1,12 @@
 steps:
 - |
   {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- else }}
+  emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- end }}
+- |
+  {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- else }}
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
@@ -21,6 +27,9 @@ requires:
 - name: tiff
   version: '>=0'
   category: media-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 - name: libXScrnSaver
   version: '>=0'
   category: x11-libs

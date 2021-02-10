@@ -52,9 +52,6 @@ requires:
 - name: libXrandr
   version: '>=0'
   category: x11-libs
-- name: libXt
-  version: '>=0'
-  category: x11-libs
 description: Object-oriented Graphics Rendering Engine
 uri:
 - https://www.ogre3d.org/

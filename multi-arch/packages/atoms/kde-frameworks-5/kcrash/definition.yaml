@@ -6,18 +6,12 @@ use_flags:
 - -test
 - nls
 requires:
-- name: qtcore
-  version: '>=0'
-  category: dev-qt-5
 - name: qtx11extras
   version: '>=0'
   category: dev-qt-5
 - name: kf-env
   version: '>=0'
   category: kde-frameworks-5
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 description: Framework for intercepting and handling application crashes
 uri:
 - https://kde.org/products/frameworks/

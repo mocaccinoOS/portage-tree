@@ -3,6 +3,10 @@ version: 0_pre20160424
 category: media-libs
 use_flags:
 - wayland
+requires:
+- name: wayland
+  version: '>=0'
+  category: dev-libs
 description: Raspberry Pi userspace tools and libraries
 uri:
 - https://github.com/raspberrypi/userland

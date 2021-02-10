@@ -1,6 +1,12 @@
 steps:
 - |
   {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- else }}
+  emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- end }}
+- |
+  {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- else }}
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
@@ -18,9 +24,6 @@ requires:
 - name: ogre
   version: '>=0'
   category: dev-games
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: protobuf
   version: '>=0'
   category: dev-libs

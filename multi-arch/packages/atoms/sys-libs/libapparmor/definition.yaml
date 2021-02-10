@@ -3,11 +3,11 @@ version: 2.13.4
 category: sys-libs
 use_flags:
 - -doc
+- -perl
+- -python
 - -python_targets_python3_6
+- -python_targets_python3_7
 - -python_targets_python3_8
-- perl
-- python
-- python_targets_python3_7
 requires:
 - name: perl
   version: '>=0'

@@ -49,10 +49,6 @@ requires:
 - name: sandbox
   version: '>=0'
   category: sys-apps
-conflicts:
-- name: logrotate
-  version: '>=0'
-  category: app-admin
 description: Portage is the package management and distribution system for Gentoo
 uri:
 - https://wiki.gentoo.org/wiki/Project:Portage

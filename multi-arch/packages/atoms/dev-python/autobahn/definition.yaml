@@ -50,9 +50,6 @@ requires:
 - name: wsaccel
   version: '>=0'
   category: dev-python
-- name: zope-interface
-  version: '>=0'
-  category: dev-python
 description: WebSocket and WAMP for Twisted and Asyncio
 uri:
 - https://pypi.org/project/autobahn/ https://crossbar.io/autobahn/ https://github.com/crossbario/autobahn-python

@@ -16,12 +16,6 @@ requires:
 - name: yaml-cpp
   version: '>=0'
   category: dev-cpp
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: boost
   version: '>=0'
   category: dev-libs

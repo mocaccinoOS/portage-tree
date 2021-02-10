@@ -15,9 +15,6 @@ use_flags:
 - tiff
 - tk
 requires:
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
 - name: ghostscript-gpl
   version: '>=0'
   category: app-text
@@ -33,18 +30,9 @@ requires:
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: libpng
-  version: '>=0'
-  category: media-libs
-- name: tiff
-  version: '>=0'
-  category: media-libs
 - name: curl
   version: '>=0'
   category: net-misc
-- name: cairo
-  version: '>=0'
-  category: x11-libs
 - name: libXmu
   version: '>=0'
   category: x11-libs

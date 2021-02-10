@@ -1,6 +1,10 @@
 name: oracle-instantclient
 version: 19.6.0.0
 category: dev-db
+requires:
+- name: libaio
+  version: '>=0'
+  category: dev-libs
 description: Oracle 18c Instant Client with SDK
 uri:
 - https://www.oracle.com/database/technologies/instant-client.html

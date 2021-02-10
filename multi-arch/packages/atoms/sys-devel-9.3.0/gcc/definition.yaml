@@ -2,16 +2,13 @@ name: gcc
 version: 9.3.0
 category: sys-devel-9.3.0
 use_flags:
+- -objc-gc
+- -systemtap
 - -test
 - elibc_glibc
 - graphite
 - nls
-- objc-gc
-- systemtap
 requires:
-- name: boehm-gc
-  version: '>=0'
-  category: dev-libs
 - name: isl
   version: '>=0'
   category: dev-libs

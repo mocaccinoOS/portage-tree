@@ -1,6 +1,10 @@
 name: speexdsp
 version: "1.2"
 category: media-libs
+conflicts:
+- name: speex
+  version: '>=0'
+  category: media-libs
 description: Audio compression format designed for speech -- DSP
 uri:
 - https://www.speex.org/

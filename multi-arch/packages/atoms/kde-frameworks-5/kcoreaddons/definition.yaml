@@ -3,8 +3,8 @@ version: 5.74.0
 category: kde-frameworks-5
 use_flags:
 - -doc
+- -fam
 - -test
-- fam
 - nls
 requires:
 - name: qtcore

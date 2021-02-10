@@ -3,6 +3,10 @@ version: "6.2"
 category: sys-libs
 use_flags:
 - gpm
+requires:
+- name: gpm
+  version: '>=0'
+  category: sys-libs
 conflicts:
 - name: ncurses
   version: '>=0'

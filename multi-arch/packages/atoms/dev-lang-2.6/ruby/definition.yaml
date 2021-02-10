@@ -3,13 +3,13 @@ version: 2.6.6
 category: dev-lang-2.6
 use_flags:
 - -libressl
+- -systemtap
 - berkdb
 - gdbm
 - jemalloc
 - jit
 - socks5
 - ssl
-- systemtap
 - tk
 requires:
 - name: eselect-ruby
@@ -27,9 +27,6 @@ requires:
 - name: libyaml
   version: '>=0'
   category: dev-libs
-- name: systemtap
-  version: '>=0'
-  category: dev-util
 - name: dante
   version: '>=0'
   category: net-proxy

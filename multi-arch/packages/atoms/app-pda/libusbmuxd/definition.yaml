@@ -1,6 +1,10 @@
 name: libusbmuxd
 version: 2.0.1
 category: app-pda
+requires:
+- name: libplist
+  version: '>=0'
+  category: app-pda
 description: USB multiplex daemon for use with Apple iPhone/iPod Touch devices
 uri:
 - https://www.libimobiledevice.org/

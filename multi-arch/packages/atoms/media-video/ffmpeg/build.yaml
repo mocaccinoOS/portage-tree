@@ -1,6 +1,12 @@
 steps:
 - |
   {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- else }}
+  emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- end }}
+- |
+  {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- else }}
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
@@ -15,10 +21,10 @@ requires:
 - name: flite
   version: '>=0'
   category: app-accessibility
-- name: snappy
+- name: bzip2
   version: '>=0'
   category: app-arch
-- name: xz-utils
+- name: snappy
   version: '>=0'
   category: app-arch
 - name: tesseract
