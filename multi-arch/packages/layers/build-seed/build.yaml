@@ -10,7 +10,7 @@ env:
 - LUET_YES=true
 prelude:
 - >-
-  eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true'
+  eval 'emerge --unmerge dev-lang/python:3.8 dev-lang/python:3.9 dev-lang/python:2.7 dev-lang/ruby:2.5 || true' &&
   emerge dev-perl/XML-Parser -j $JOBS &&
   USE=-harfbuzz emerge media-libs/freetype -j $JOBS &&
   wget https://ftp.openssl.org/source/old/1.1.1/openssl-1.1.1g.tar.gz -O /var/cache/distfiles/openssl-1.1.1g.tar.gz &&
@@ -23,3 +23,8 @@ prelude:
   luet install repository/mocaccino-extra-stable system/luet-extensions-live system/luet-devkit &&
   luet install dev-util/pkgs-checker-minimal utils/jq &&
   luet cleanup
+steps:
+- >-
+  mkdir /usr/share/mocaccino/layers/ -p &&
+  qlist -ICv /usr/share/mocaccino/layers/{{ .Values.name }}.pkglist
+
