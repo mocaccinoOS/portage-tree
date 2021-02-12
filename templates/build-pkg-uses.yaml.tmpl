@@ -6,6 +6,7 @@ requires:
 package_dir: /{{ .Values.name }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 steps:
 
 - |
