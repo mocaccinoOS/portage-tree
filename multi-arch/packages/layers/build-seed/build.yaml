@@ -26,5 +26,5 @@ prelude:
 steps:
 - >-
   mkdir /usr/share/mocaccino/layers/ -p &&
-  qlist -ICv /usr/share/mocaccino/layers/{{ .Values.name }}.pkglist
+  qlist -ICv > /usr/share/mocaccino/layers/{{ .Values.name }}.pkglist
 
