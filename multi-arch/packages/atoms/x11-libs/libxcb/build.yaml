@@ -16,38 +16,9 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: doxygen
+- name: build-seed
   version: '>=0'
-  category: app-doc
-- name: asciidoc
-  version: '>=0'
-  category: app-text
-- name: xmlto
-  version: '>=0'
-  category: app-text
-- name: check
-  version: '>=0'
-  category: dev-libs
-- name: asciidoctor
-  version: '>=0'
-  category: dev-ruby
-- name: font-util
-  version: '>=0'
-  category: media-fonts
-- name: automake
-  version: '>=0'
-  category: sys-devel-1.16
-- name: xcb-proto
-  version: '>=0'
-  category: x11-base
-- name: libXau
-  version: '>=0'
-  category: x11-libs
-- name: libXdmcp
-  version: '>=0'
-  category: x11-libs
-- name: util-macros
-  version: '>=0'
-  category: x11-misc
+  category: layers

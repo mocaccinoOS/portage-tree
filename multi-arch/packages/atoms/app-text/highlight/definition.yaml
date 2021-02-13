@@ -2,7 +2,7 @@ name: highlight
 version: "3.57"
 category: app-text
 use_flags:
-- qt5
+- -qt5
 requires:
 - name: lua
   version: '>=0'

@@ -16,11 +16,15 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: gzip
   version: '>=0'
   category: app-arch
+- name: expat
+  version: '>=0'
+  category: dev-libs
 - name: libevent
   version: '>=0'
   category: dev-libs
@@ -45,6 +49,9 @@ requires:
 - name: gperf
   version: '>=0'
   category: dev-util
+- name: re2c
+  version: '>=0'
+  category: dev-util
 - name: lcms
   version: '>=0'
   category: media-libs-2
@@ -57,6 +64,9 @@ requires:
 - name: pciutils
   version: '>=0'
   category: sys-apps
+- name: bison
+  version: '>=0'
+  category: sys-devel
 - name: libXScrnSaver
   version: '>=0'
   category: x11-libs
@@ -64,5 +74,11 @@ requires:
   version: '>=0'
   category: x11-libs
 - name: libXcursor
+  version: '>=0'
+  category: x11-libs
+- name: libXdamage
+  version: '>=0'
+  category: x11-libs
+- name: libXrandr
   version: '>=0'
   category: x11-libs

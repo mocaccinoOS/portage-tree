@@ -3,14 +3,14 @@ version: 0.48.9
 category: dev-lang-0.48
 use_flags:
 - -test
-- valadoc
+- -valadoc
 requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 - name: vala-common
   version: '>=0'
   category: dev-libs
-- name: graphviz
-  version: '>=0'
-  category: media-gfx
 conflicts:
 - name: libsoup
   version: '>=0'

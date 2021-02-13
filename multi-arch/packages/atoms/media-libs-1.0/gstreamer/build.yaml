@@ -16,11 +16,15 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: elfutils
   version: '>=0'
   category: dev-libs
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
@@ -30,6 +34,9 @@ requires:
 - name: gtk-doc-am
   version: '>=0'
   category: dev-util
+- name: bison
+  version: '>=0'
+  category: sys-devel
 - name: libcap
   version: '>=0'
   category: sys-libs

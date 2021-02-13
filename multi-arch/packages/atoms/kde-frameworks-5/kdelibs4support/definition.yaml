@@ -2,10 +2,10 @@ name: kdelibs4support
 version: 5.74.0
 category: kde-frameworks-5
 use_flags:
+- -X
+- -handbook
 - -libressl
 - -test
-- X
-- handbook
 requires:
 - name: docbook-xml-dtd
   version: '>=0'

@@ -16,11 +16,9 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: sqlite
+- name: build-seed
   version: '>=0'
-  category: dev-db-3
-- name: DBI
-  version: '>=0'
-  category: dev-perl
+  category: layers

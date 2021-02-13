@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: ceph
@@ -24,6 +25,9 @@ requires:
 - name: ceph
   version: '>=0'
   category: acct-user
+- name: bzip2
+  version: '>=0'
+  category: app-arch
 - name: cpio
   version: '>=0'
   category: app-arch

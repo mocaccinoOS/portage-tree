@@ -16,29 +16,9 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: docbook-xml-dtd
+- name: build-seed
   version: '>=0'
-  category: app-text-4.5
-- name: docbook-xsl-stylesheets
-  version: '>=0'
-  category: app-text
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
-- name: libxslt
-  version: '>=0'
-  category: dev-libs
-- name: meson
-  version: '>=0'
-  category: dev-util
-- name: ninja
-  version: '>=0'
-  category: dev-util
-- name: gettext
-  version: '>=0'
-  category: sys-devel
-- name: gdk-pixbuf
-  version: '>=0'
-  category: x11-libs-2
+  category: layers

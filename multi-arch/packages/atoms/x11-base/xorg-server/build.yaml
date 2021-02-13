@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: wayland-protocols
@@ -52,6 +53,9 @@ requires:
   version: '>=0'
   category: x11-apps
 - name: libXaw
+  version: '>=0'
+  category: x11-libs
+- name: libXdmcp
   version: '>=0'
   category: x11-libs
 - name: libXfixes

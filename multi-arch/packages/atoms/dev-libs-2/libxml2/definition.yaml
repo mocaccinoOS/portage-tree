@@ -2,14 +2,14 @@ name: libxml2
 version: 2.9.10
 category: dev-libs-2
 use_flags:
+- -icu
+- -lzma
+- -python
 - -python_targets_python3_6
+- -python_targets_python3_7
 - -python_targets_python3_8
 - -python_targets_python3_9
-- icu
-- lzma
-- python
-- python_targets_python3_7
-- readline
+- -readline
 requires:
 - name: python
   version: '>=0'

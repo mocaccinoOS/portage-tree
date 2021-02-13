@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: linguist-tools
@@ -27,3 +28,6 @@ requires:
 - name: extra-cmake-modules
   version: '>=0'
   category: kde-frameworks-5
+- name: xorg-proto
+  version: '>=0'
+  category: x11-base

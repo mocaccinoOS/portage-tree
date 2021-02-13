@@ -2,20 +2,20 @@ name: apache
 version: 2.4.46
 category: www-servers-2
 use_flags:
+- -apache2_modules_brotli
+- -apache2_modules_deflate
+- -apache2_modules_http2
+- -apache2_modules_md
+- -apache2_modules_mime
+- -apache2_modules_proxy_http2
+- -apache2_modules_session_crypto
+- -gdbm
+- -ldap
 - -libressl
 - -selinux
-- apache2_modules_brotli
-- apache2_modules_deflate
-- apache2_modules_http2
-- apache2_modules_md
-- apache2_modules_mime
-- apache2_modules_proxy_http2
-- apache2_modules_session_crypto
-- gdbm
-- ldap
-- ssl
-- suexec
-- suexec-caps
+- -ssl
+- -suexec
+- -suexec-caps
 requires:
 - name: brotli
   version: '>=0'

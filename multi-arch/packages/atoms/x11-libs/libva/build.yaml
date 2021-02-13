@@ -16,20 +16,9 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: wayland
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: libX11
-  version: '>=0'
-  category: x11-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
-- name: libXfixes
-  version: '>=0'
-  category: x11-libs
-- name: libdrm
-  version: '>=0'
-  category: x11-libs
+  category: layers

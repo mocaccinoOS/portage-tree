@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: tbb
@@ -51,3 +52,6 @@ requires:
 - name: make
   version: '>=0'
   category: sys-devel
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs

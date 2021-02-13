@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: polkitd
@@ -30,7 +31,13 @@ requires:
 - name: expat
   version: '>=0'
   category: dev-libs
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 - name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
+- name: gobject-introspection-common
   version: '>=0'
   category: dev-libs
 - name: glib-utils

@@ -2,8 +2,8 @@ name: Sub-Name
 version: 0.210.0
 category: dev-perl
 use_flags:
+- -suggested
 - -test
-- suggested
 requires:
 - name: perl
   version: '>=0'

@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: brotli
@@ -30,7 +31,13 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
+- name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
 - name: glib-utils
+  version: '>=0'
+  category: dev-util
+- name: meson
   version: '>=0'
   category: dev-util
 - name: samba
@@ -39,3 +46,6 @@ requires:
 - name: libpsl
   version: '>=0'
   category: net-libs
+- name: shared-mime-info
+  version: '>=0'
+  category: x11-misc

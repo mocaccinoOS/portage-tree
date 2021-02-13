@@ -2,10 +2,10 @@ name: gettext
 version: "0.21"
 category: sys-devel
 use_flags:
+- -cvs
+- -git
+- -java
 - acl
-- cvs
-- git
-- java
 - ncurses
 requires:
 - name: java-config
@@ -14,9 +14,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: cvs
-  version: '>=0'
-  category: dev-vcs
 - name: git
   version: '>=0'
   category: dev-vcs

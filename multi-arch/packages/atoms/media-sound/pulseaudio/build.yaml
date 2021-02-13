@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: lirc
@@ -72,6 +73,12 @@ requires:
 - name: rtkit
   version: '>=0'
   category: sys-auth
+- name: m4
+  version: '>=0'
+  category: sys-devel
 - name: libXtst
+  version: '>=0'
+  category: x11-libs
+- name: libxcb
   version: '>=0'
   category: x11-libs

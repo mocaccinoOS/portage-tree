@@ -3,16 +3,16 @@ version: 2.2.20
 category: app-crypt
 use_flags:
 - -doc
+- -ldap
 - -selinux
+- -tofu
+- -usb
+- -wks-server
 - bzip2
-- ldap
 - nls
 - readline
 - smartcard
 - ssl
-- tofu
-- usb
-- wks-server
 requires:
 - name: bzip2
   version: '>=0'

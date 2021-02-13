@@ -2,29 +2,29 @@ name: git
 version: 2.26.2
 category: dev-vcs
 use_flags:
+- -cgi
+- -curl
+- -cvs
 - -doc
 - -emacs
+- -gnome-keyring
+- -gpg
+- -highlight
+- -iconv
 - -libressl
+- -mediawiki
+- -pcre
+- -pcre-jit
+- -perforce
+- -perl
 - -python_single_target_python3_6
+- -python_single_target_python3_7
 - -python_single_target_python3_8
+- -subversion
 - -test
-- cgi
-- curl
-- cvs
-- gnome-keyring
-- gpg
-- highlight
-- iconv
-- mediawiki
+- -tk
+- -webdav
 - nls
-- pcre
-- pcre-jit
-- perforce
-- perl
-- python_single_target_python3_7
-- subversion
-- tk
-- webdav
 requires:
 - name: gnupg
   version: '>=0'
@@ -50,9 +50,6 @@ requires:
 - name: CGI
   version: '>=0'
   category: dev-perl
-- name: DBD-SQLite
-  version: '>=0'
-  category: dev-perl
 - name: DateTime-Format-ISO8601
   version: '>=0'
   category: dev-perl
@@ -71,9 +68,6 @@ requires:
 - name: TermReadKey
   version: '>=0'
   category: dev-perl
-- name: cvsps
-  version: '>=0'
-  category: dev-vcs-3
 - name: subversion
   version: '>=0'
   category: dev-vcs

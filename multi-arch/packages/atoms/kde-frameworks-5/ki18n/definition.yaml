@@ -3,10 +3,10 @@ version: 5.74.0
 category: kde-frameworks-5
 use_flags:
 - -doc
+- -python_single_target_python3_7
 - -python_single_target_python3_8
 - -python_single_target_python3_9
 - -test
-- python_single_target_python3_7
 requires:
 - name: python
   version: '>=0'

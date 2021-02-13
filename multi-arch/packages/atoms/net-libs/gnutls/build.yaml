@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: dieharder
@@ -33,6 +34,9 @@ requires:
 - name: softhsm
   version: '>=0'
   category: dev-libs-2
+- name: guile
+  version: '>=0'
+  category: dev-scheme-12
 - name: ppp
   version: '>=0'
   category: net-dialup

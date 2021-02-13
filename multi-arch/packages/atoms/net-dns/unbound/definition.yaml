@@ -2,19 +2,19 @@ name: unbound
 version: 1.11.0
 category: net-dns
 use_flags:
+- -dnscrypt
+- -dnstap
+- -ecdsa
 - -libressl
+- -python
 - -python_single_target_python3_6
+- -python_single_target_python3_7
 - -python_single_target_python3_8
 - -python_single_target_python3_9
+- -redis
 - -selinux
+- -systemd
 - -test
-- dnscrypt
-- dnstap
-- ecdsa
-- python
-- python_single_target_python3_7
-- redis
-- systemd
 requires:
 - name: unbound
   version: '>=0'

@@ -2,7 +2,7 @@ name: valgrind
 version: 3.16.1
 category: dev-util
 use_flags:
-- mpi
+- -mpi
 description: An open-source memory debugger for GNU/Linux
 uri:
 - http://www.valgrind.org

@@ -16,23 +16,9 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: bzip2
+- name: build-seed
   version: '>=0'
-  category: app-arch
-- name: zstd
-  version: '>=0'
-  category: app-arch
-- name: icu
-  version: '>=0'
-  category: dev-libs
-- name: numpy
-  version: '>=0'
-  category: dev-python
-- name: boost-build
-  version: '>=0'
-  category: dev-util
-- name: zlib
-  version: '>=0'
-  category: sys-libs
+  category: layers

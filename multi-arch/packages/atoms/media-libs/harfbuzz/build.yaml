@@ -16,15 +16,22 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
+- name: gobject-introspection-common
   version: '>=0'
   category: dev-libs
 - name: icu
   version: '>=0'
   category: dev-libs
 - name: glib-utils
+  version: '>=0'
+  category: dev-util
+- name: meson
   version: '>=0'
   category: dev-util
 - name: graphite2

@@ -2,7 +2,7 @@ name: fstrm
 version: 0.3.0
 category: dev-libs
 use_flags:
-- utils
+- -utils
 requires:
 - name: libevent
   version: '>=0'

@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: java-config
@@ -24,6 +25,12 @@ requires:
 - name: tcl
   version: '>=0'
   category: dev-lang
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
 - name: binutils
   version: '>=0'
   category: sys-devel-2.34
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2

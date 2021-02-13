@@ -3,10 +3,10 @@ version: 4.0.1
 category: dev-util
 use_flags:
 - -python_targets_python3_6
+- -python_targets_python3_7
 - -python_targets_python3_8
 - -python_targets_python3_9
 - -test
-- python_targets_python3_7
 requires:
 - name: setuptools
   version: '>=0'

@@ -2,12 +2,12 @@ name: pinentry
 version: 1.1.0
 category: app-crypt
 use_flags:
-- caps
-- fltk
-- gnome-keyring
-- gtk
-- ncurses
-- qt5
+- -caps
+- -fltk
+- -gnome-keyring
+- -gtk
+- -ncurses
+- -qt5
 requires:
 - name: gcr
   version: '>=0'

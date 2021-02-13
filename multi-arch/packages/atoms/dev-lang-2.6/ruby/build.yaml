@@ -16,6 +16,7 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
 - name: eselect-ruby
@@ -43,5 +44,8 @@ requires:
   version: '>=0'
   category: sys-libs-5.3
 - name: gdbm
+  version: '>=0'
+  category: sys-libs
+- name: zlib
   version: '>=0'
   category: sys-libs

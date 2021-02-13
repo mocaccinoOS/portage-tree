@@ -2,7 +2,7 @@ name: nettle
 version: "3.6"
 category: dev-libs
 use_flags:
-- gmp
+- -gmp
 requires:
 - name: gmp
   version: '>=0'

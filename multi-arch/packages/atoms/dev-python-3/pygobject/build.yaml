@@ -16,8 +16,27 @@ steps:
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: gobject-introspection
   version: '>=0'
-  category: layers
+  category: dev-libs
+- name: libffi
+  version: '>=0'
+  category: dev-libs
+- name: pycairo
+  version: '>=0'
+  category: dev-python
+- name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
+- name: meson
+  version: '>=0'
+  category: dev-util
+- name: ninja
+  version: '>=0'
+  category: dev-util
+- name: shared-mime-info
+  version: '>=0'
+  category: x11-misc

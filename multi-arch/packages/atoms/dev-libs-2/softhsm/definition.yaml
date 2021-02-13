@@ -3,8 +3,8 @@ version: 2.6.1
 category: dev-libs-2
 use_flags:
 - -libressl
+- -migration-tool
 - -test
-- migration-tool
 requires:
 - name: sqlite
   version: '>=0'
