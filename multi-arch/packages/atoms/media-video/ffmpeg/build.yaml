@@ -22,9 +22,6 @@ requires:
 - name: flite
   version: '>=0'
   category: app-accessibility
-- name: bzip2
-  version: '>=0'
-  category: app-arch
 - name: snappy
   version: '>=0'
   category: app-arch

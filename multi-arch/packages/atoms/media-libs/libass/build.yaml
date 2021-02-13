@@ -28,6 +28,3 @@ requires:
 - name: fontconfig
   version: '>=0'
   category: media-libs-1.0
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs

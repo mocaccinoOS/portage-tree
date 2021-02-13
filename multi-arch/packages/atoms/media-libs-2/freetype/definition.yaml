@@ -2,16 +2,13 @@ name: freetype
 version: 2.10.4
 category: media-libs-2
 use_flags:
+- -brotli
 - X
-- brotli
 - bzip2
 - harfbuzz
 - png
 - utils
 requires:
-- name: brotli
-  version: '>=0'
-  category: app-arch
 - name: bzip2
   version: '>=0'
   category: app-arch

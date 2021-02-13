@@ -28,9 +28,15 @@ requires:
 - name: util-linux
   version: '>=0'
   category: sys-apps
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
 - name: gettext
   version: '>=0'
   category: sys-devel
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2
 - name: zlib
   version: '>=0'
   category: sys-libs

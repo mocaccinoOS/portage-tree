@@ -34,19 +34,10 @@ requires:
 - name: fontconfig
   version: '>=0'
   category: media-libs-1.0
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs
-- name: libpng
-  version: '>=0'
-  category: media-libs
 - name: mesa
   version: '>=0'
   category: media-libs
 - name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libX11
   version: '>=0'
   category: x11-libs
 - name: libdrm

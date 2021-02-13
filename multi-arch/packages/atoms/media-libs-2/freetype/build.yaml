@@ -19,6 +19,24 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: bzip2
   version: '>=0'
-  category: layers
+  category: app-arch
+- name: harfbuzz
+  version: '>=0'
+  category: media-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+- name: libX11
+  version: '>=0'
+  category: x11-libs
+- name: libXau
+  version: '>=0'
+  category: x11-libs
+- name: libXdmcp
+  version: '>=0'
+  category: x11-libs

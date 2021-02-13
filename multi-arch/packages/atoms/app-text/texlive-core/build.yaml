@@ -43,9 +43,6 @@ requires:
 - name: gd
   version: '>=0'
   category: media-libs-2
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs
 - name: ed
   version: '>=0'
   category: sys-apps

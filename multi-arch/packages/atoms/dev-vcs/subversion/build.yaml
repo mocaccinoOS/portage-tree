@@ -55,6 +55,9 @@ requires:
 - name: file
   version: '>=0'
   category: sys-apps
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16
 - name: apache
   version: '>=0'
   category: www-servers-2

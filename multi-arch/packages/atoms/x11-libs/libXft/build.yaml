@@ -34,9 +34,6 @@ requires:
 - name: xorg-proto
   version: '>=0'
   category: x11-base
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: libXext
   version: '>=0'
   category: x11-libs

@@ -19,6 +19,12 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2
 - name: zlib
   version: '>=0'
   category: sys-libs

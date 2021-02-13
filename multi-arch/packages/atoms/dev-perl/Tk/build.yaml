@@ -22,9 +22,6 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: libpng
-  version: '>=0'
-  category: media-libs
 - name: libXft
   version: '>=0'
   category: x11-libs

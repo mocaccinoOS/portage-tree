@@ -2,11 +2,11 @@ name: curl
 version: 7.72.0
 category: net-misc
 use_flags:
+- -brotli
 - -gnutls
 - -libressl
 - -test
 - adns
-- brotli
 - http2
 - idn
 - kerberos
@@ -21,9 +21,6 @@ use_flags:
 - ssh
 - ssl
 requires:
-- name: brotli
-  version: '>=0'
-  category: app-arch
 - name: ca-certificates
   version: '>=0'
   category: app-misc

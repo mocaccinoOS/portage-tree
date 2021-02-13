@@ -2,16 +2,13 @@ name: libsoup
 version: 2.70.0
 category: net-libs-2.4
 use_flags:
+- -brotli
 - -gtk-doc
-- brotli
 - gssapi
 - introspection
 - samba
 - vala
 requires:
-- name: brotli
-  version: '>=0'
-  category: app-arch
 - name: sqlite
   version: '>=0'
   category: dev-db-3

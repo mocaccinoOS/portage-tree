@@ -2,19 +2,16 @@ name: urllib3
 version: 1.25.10
 category: dev-python
 use_flags:
+- -brotli
 - -doc
 - -python_targets_pypy3
 - -python_targets_python3_6
 - -python_targets_python3_8
 - -python_targets_python3_9
 - -test
-- brotli
 - python_targets_python3_7
 requires:
 - name: PySocks
-  version: '>=0'
-  category: dev-python
-- name: brotlipy
   version: '>=0'
   category: dev-python
 - name: certifi

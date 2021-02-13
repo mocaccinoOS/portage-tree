@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: brotli
-  version: '>=0'
-  category: app-arch
 - name: sqlite
   version: '>=0'
   category: dev-db-3
@@ -38,6 +35,9 @@ requires:
   version: '>=0'
   category: dev-util
 - name: meson
+  version: '>=0'
+  category: dev-util
+- name: ninja
   version: '>=0'
   category: dev-util
 - name: samba
