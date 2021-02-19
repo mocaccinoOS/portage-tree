@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
 - name: skey
   version: '>=0'
   category: sys-auth

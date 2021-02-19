@@ -2,9 +2,9 @@ name: hwloc
 version: 1.11.13
 category: sys-apps
 use_flags:
+- -cuda
+- -gl
 - cairo
-- cuda
-- gl
 - numa
 - pci
 - plugins
@@ -25,9 +25,9 @@ requires:
 - name: numactl
   version: '>=0'
   category: sys-process
-- name: nvidia-drivers
+- name: cairo
   version: '>=0'
-  category: x11-drivers
+  category: x11-libs
 - name: libpciaccess
   version: '>=0'
   category: x11-libs

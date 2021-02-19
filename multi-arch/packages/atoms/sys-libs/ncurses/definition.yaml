@@ -8,9 +8,6 @@ requires:
   version: '>=0'
   category: sys-libs
 conflicts:
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
 - name: slang
   version: '>=0'
   category: sys-libs

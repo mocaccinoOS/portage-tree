@@ -19,6 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
+- name: fontconfig
+  version: '>=0'
+  category: media-libs-1.0
 - name: freetype
   version: '>=0'
   category: media-libs-2
@@ -31,9 +34,12 @@ requires:
 - name: libidn
   version: '>=0'
   category: net-dns
-- name: gtk+
+- name: cups
   version: '>=0'
-  category: x11-libs-3
+  category: net-print
+- name: libXext
+  version: '>=0'
+  category: x11-libs
 - name: libXt
   version: '>=0'
   category: x11-libs

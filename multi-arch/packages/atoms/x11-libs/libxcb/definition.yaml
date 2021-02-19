@@ -3,7 +3,9 @@ version: "1.14"
 category: x11-libs
 use_flags:
 - -doc
+- -ppc-aix
 - -test
+- -x86-winnt
 requires:
 - name: libXau
   version: '>=0'

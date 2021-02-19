@@ -37,22 +37,16 @@ requires:
 - name: autoconf
   version: '>=0'
   category: sys-devel-2.69
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16
 - name: libtool
   version: '>=0'
   category: sys-devel-2
 - name: binutils-libs
   version: '>=0'
   category: sys-libs
-- name: xorg-proto
-  version: '>=0'
-  category: x11-base
-- name: libXext
-  version: '>=0'
-  category: x11-libs
 - name: libXrender
-  version: '>=0'
-  category: x11-libs
-- name: libxcb
   version: '>=0'
   category: x11-libs
 - name: pixman

@@ -25,9 +25,6 @@ requires:
 - name: ninja
   version: '>=0'
   category: dev-util
-- name: valgrind
-  version: '>=0'
-  category: dev-util
 - name: libpciaccess
   version: '>=0'
   category: x11-libs

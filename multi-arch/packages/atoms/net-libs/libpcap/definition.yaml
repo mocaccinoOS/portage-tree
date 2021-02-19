@@ -2,16 +2,16 @@ name: libpcap
 version: 1.9.1
 category: net-libs
 use_flags:
-- bluetooth
+- -bluetooth
 - dbus
 - netlink
 requires:
 - name: libnl
   version: '>=0'
   category: dev-libs-3
-- name: bluez
+- name: dbus
   version: '>=0'
-  category: net-wireless
+  category: sys-apps
 description: A system-independent library for user-level network packet capture
 uri:
 - https://www.tcpdump.org/ https://github.com/the-tcpdump-group/libpcap

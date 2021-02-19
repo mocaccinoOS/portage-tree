@@ -28,6 +28,3 @@ requires:
 - name: ninja
   version: '>=0'
   category: dev-util
-- name: curl
-  version: '>=0'
-  category: net-misc

@@ -24,9 +24,6 @@ requires:
   version: '>=0'
   category: x11-misc
 conflicts:
-- name: librsvg
-  version: '>=0'
-  category: gnome-base-2
 - name: gtk+
   version: '>=0'
   category: x11-libs-3

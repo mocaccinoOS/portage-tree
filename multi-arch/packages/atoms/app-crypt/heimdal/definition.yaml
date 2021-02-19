@@ -26,6 +26,9 @@ requires:
 - name: openldap
   version: '>=0'
   category: net-nds
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3
 - name: e2fsprogs-libs
   version: '>=0'
   category: sys-libs

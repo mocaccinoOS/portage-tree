@@ -22,9 +22,6 @@ requires:
 - name: sqlite
   version: '>=0'
   category: dev-db-3
-- name: vala
-  version: '>=0'
-  category: dev-lang-0.48
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs

@@ -2,12 +2,12 @@ name: openldap
 version: 2.4.53
 category: net-nds
 use_flags:
-- -gnutls
 - -libressl
 - -minimal
 - -selinux
 - berkdb
 - cxx
+- gnutls
 - iodbc
 - kerberos
 - kinit
@@ -19,28 +19,15 @@ use_flags:
 - ssl
 - tcpd
 requires:
-- name: heimdal
-  version: '>=0'
-  category: app-crypt
-- name: libiodbc
-  version: '>=0'
-  category: dev-db
-- name: unixODBC
-  version: '>=0'
-  category: dev-db
-- name: perl
-  version: '>=0'
-  category: dev-lang
 - name: cyrus-sasl
   version: '>=0'
   category: dev-libs-2
-- name: tcp-wrappers
+- name: libgcrypt
   version: '>=0'
-  category: sys-apps
-conflicts:
-- name: heimdal
+  category: dev-libs
+- name: gnutls
   version: '>=0'
-  category: app-crypt
+  category: net-libs
 description: LDAP suite of application and development tools
 uri:
 - https://www.OpenLDAP.org/

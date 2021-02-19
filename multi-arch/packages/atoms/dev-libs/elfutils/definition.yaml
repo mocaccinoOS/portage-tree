@@ -2,10 +2,10 @@ name: elfutils
 version: "0.181"
 category: dev-libs
 use_flags:
+- -valgrind
 - bzip2
 - lzma
 - nls
-- valgrind
 requires:
 - name: bzip2
   version: '>=0'

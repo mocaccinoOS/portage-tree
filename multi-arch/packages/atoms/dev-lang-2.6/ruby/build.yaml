@@ -37,9 +37,6 @@ requires:
 - name: dante
   version: '>=0'
   category: net-proxy
-- name: gcc
-  version: '>=0'
-  category: sys-devel-9.3.0
 - name: db
   version: '>=0'
   category: sys-libs-5.3

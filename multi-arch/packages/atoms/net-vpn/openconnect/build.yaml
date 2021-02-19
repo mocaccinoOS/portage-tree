@@ -25,18 +25,24 @@ requires:
 - name: stoken
   version: '>=0'
   category: app-crypt
+- name: tpm2-tss
+  version: '>=0'
+  category: app-crypt
+- name: trousers
+  version: '>=0'
+  category: app-crypt
+- name: ca-certificates
+  version: '>=0'
+  category: app-misc
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: libproxy
   version: '>=0'
   category: net-libs
 - name: pcsc-lite
   version: '>=0'
   category: sys-apps
-- name: gettext
-  version: '>=0'
-  category: sys-devel
-- name: zlib
-  version: '>=0'
-  category: sys-libs

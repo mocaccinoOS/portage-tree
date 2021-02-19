@@ -19,24 +19,12 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: heimdal
-  version: '>=0'
-  category: app-crypt
-- name: libiodbc
-  version: '>=0'
-  category: dev-db
-- name: unixODBC
-  version: '>=0'
-  category: dev-db
 - name: cyrus-sasl
   version: '>=0'
   category: dev-libs-2
-- name: openssl
+- name: libgcrypt
   version: '>=0'
   category: dev-libs
-- name: groff
+- name: gnutls
   version: '>=0'
-  category: sys-apps
-- name: tcp-wrappers
-  version: '>=0'
-  category: sys-apps
+  category: net-libs

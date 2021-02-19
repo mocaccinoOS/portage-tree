@@ -2,8 +2,12 @@ name: srt
 version: 1.4.1
 category: net-libs
 use_flags:
-- -gnutls
 - -libressl
+- gnutls
+requires:
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 description: Secure Reliable Transport (SRT) library and tools
 uri:
 - https://github.com/Haivision/srt

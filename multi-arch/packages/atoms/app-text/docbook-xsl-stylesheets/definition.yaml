@@ -7,9 +7,6 @@ requires:
 - name: build-docbook-catalog
   version: '>=0'
   category: app-text
-- name: ruby
-  version: '>=0'
-  category: dev-lang-2.6
 description: XSL Stylesheets for Docbook
 uri:
 - https://github.com/docbook/wiki/wiki

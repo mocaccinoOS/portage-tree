@@ -2,8 +2,8 @@ name: vpnc
 version: 0.5.3
 category: net-vpn
 use_flags:
-- -gnutls
 - -selinux
+- gnutls
 - resolvconf
 requires:
 - name: perl
@@ -12,6 +12,12 @@ requires:
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: iproute2
   version: '>=0'
   category: sys-apps

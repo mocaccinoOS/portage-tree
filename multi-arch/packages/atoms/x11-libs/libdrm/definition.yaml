@@ -2,7 +2,7 @@ name: libdrm
 version: 2.4.102
 category: x11-libs
 use_flags:
-- valgrind
+- -valgrind
 - video_cards_intel
 requires:
 - name: libpciaccess

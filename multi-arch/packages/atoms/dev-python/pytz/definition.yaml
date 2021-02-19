@@ -14,6 +14,9 @@ requires:
 - name: python-exec
   version: '>=0'
   category: dev-lang-2
+- name: timezone-data
+  version: '>=0'
+  category: sys-libs
 description: World timezone definitions for Python
 uri:
 - https://pythonhosted.org/pytz/ https://pypi.org/project/pytz/

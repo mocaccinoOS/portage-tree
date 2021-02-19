@@ -54,10 +54,6 @@ requires:
 - name: colord
   version: '>=0'
   category: x11-misc
-conflicts:
-- name: vte
-  version: '>=0'
-  category: x11-libs-2.91
 description: Gimp ToolKit +
 uri:
 - https://www.gtk.org/

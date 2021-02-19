@@ -3,8 +3,8 @@ version: "8.09"
 category: net-vpn
 use_flags:
 - -doc
-- -gnutls
 - -test
+- gnutls
 - gssapi
 - libproxy
 - lz4
@@ -18,9 +18,21 @@ requires:
 - name: stoken
   version: '>=0'
   category: app-crypt
+- name: tpm2-tss
+  version: '>=0'
+  category: app-crypt
+- name: trousers
+  version: '>=0'
+  category: app-crypt
+- name: ca-certificates
+  version: '>=0'
+  category: app-misc
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: libproxy
   version: '>=0'
   category: net-libs

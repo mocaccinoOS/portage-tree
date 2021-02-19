@@ -19,18 +19,12 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: vala
+- name: glib
   version: '>=0'
-  category: dev-lang-0.48
+  category: dev-libs-2
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
-- name: setuptools
-  version: '>=0'
-  category: dev-python
-- name: gtk-doc
-  version: '>=0'
-  category: dev-util
 - name: meson
   version: '>=0'
   category: dev-util

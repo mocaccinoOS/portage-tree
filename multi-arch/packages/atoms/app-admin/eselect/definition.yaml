@@ -4,6 +4,9 @@ category: app-admin
 use_flags:
 - -doc
 requires:
+- name: coreutils
+  version: '>=0'
+  category: sys-apps
 - name: file
   version: '>=0'
   category: sys-apps

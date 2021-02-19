@@ -22,9 +22,6 @@ requires:
 - name: p11-kit
   version: '>=0'
   category: app-crypt
-- name: po4a
-  version: '>=0'
-  category: app-text
 - name: ding-libs
   version: '>=0'
   category: dev-libs
@@ -37,13 +34,10 @@ requires:
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: valgrind
+- name: openssl
   version: '>=0'
-  category: dev-util
+  category: dev-libs
 - name: cifs-utils
-  version: '>=0'
-  category: net-fs
-- name: nfs-utils
   version: '>=0'
   category: net-fs
 - name: samba

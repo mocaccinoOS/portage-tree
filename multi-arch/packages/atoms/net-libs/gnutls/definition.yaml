@@ -2,17 +2,17 @@ name: gnutls
 version: 3.6.15
 category: net-libs
 use_flags:
-- -dane
 - -doc
-- -guile
-- -idn
-- -pkcs11
-- -seccomp
 - -test
-- -test-full
-- -tools
 - -valgrind
+- dane
+- guile
+- idn
 - nls
+- pkcs11
+- seccomp
+- test-full
+- tools
 requires:
 - name: p11-kit
   version: '>=0'

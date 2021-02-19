@@ -22,3 +22,6 @@ requires:
 - name: setuptools
   version: '>=0'
   category: dev-python
+- name: timezone-data
+  version: '>=0'
+  category: sys-libs

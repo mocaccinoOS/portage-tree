@@ -2,7 +2,9 @@ name: libgusb
 version: 0.3.5
 category: dev-libs
 use_flags:
+- -gtk-doc
 - introspection
+- vala
 requires:
 - name: gobject-introspection
   version: '>=0'

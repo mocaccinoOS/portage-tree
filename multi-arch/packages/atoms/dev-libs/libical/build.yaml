@@ -22,9 +22,6 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: vala
-  version: '>=0'
-  category: dev-lang-0.48
 - name: glib
   version: '>=0'
   category: dev-libs-2
@@ -37,12 +34,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: cmake
-  version: '>=0'
-  category: dev-util
-- name: ninja
-  version: '>=0'
-  category: dev-util
 - name: db
   version: '>=0'
   category: sys-libs-5.3

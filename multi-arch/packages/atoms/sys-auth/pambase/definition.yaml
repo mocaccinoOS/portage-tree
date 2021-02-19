@@ -14,6 +14,9 @@ use_flags:
 - sha512
 - systemd
 requires:
+- name: libpwquality
+  version: '>=0'
+  category: dev-libs
 - name: gnome-keyring
   version: '>=0'
   category: gnome-base

@@ -1,10 +1,6 @@
 name: fuse-common
 version: 3.9.1
 category: sys-fs
-conflicts:
-- name: fuse
-  version: '>=0'
-  category: sys-fs-3
 description: Common files for multiple slots of sys-fs/fuse
 uri:
 - https://github.com/libfuse/libfuse

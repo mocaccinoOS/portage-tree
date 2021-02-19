@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: cmake
-  version: '>=0'
-  category: dev-util
 - name: ninja
   version: '>=0'
   category: dev-util

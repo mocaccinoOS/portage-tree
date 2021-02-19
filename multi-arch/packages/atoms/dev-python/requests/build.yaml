@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: PySocks
-  version: '>=0'
-  category: dev-python
-- name: cryptography
+- name: setuptools
   version: '>=0'
   category: dev-python

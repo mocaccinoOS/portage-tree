@@ -2,8 +2,8 @@ name: freetds
 version: 1.00.558
 category: dev-db
 use_flags:
-- -gnutls
 - -libressl
+- gnutls
 - iconv
 - iodbc
 - kerberos
@@ -19,6 +19,9 @@ requires:
 - name: bind-tools
   version: '>=0'
   category: net-dns
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: grep
   version: '>=0'
   category: sys-apps

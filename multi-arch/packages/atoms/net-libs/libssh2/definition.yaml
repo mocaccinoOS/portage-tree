@@ -3,16 +3,16 @@ version: 1.9.0
 category: net-libs
 use_flags:
 - -libressl
+- -mbedtls
 - gcrypt
-- mbedtls
 - zlib
 requires:
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
-- name: mbedtls
+- name: zlib
   version: '>=0'
-  category: net-libs
+  category: sys-libs
 description: Library implementing the SSH2 protocol
 uri:
 - https://www.libssh2.org

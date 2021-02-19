@@ -28,13 +28,6 @@ requires:
 - name: z3
   version: '>=0'
   category: sci-mathematics
-- name: binutils
-  version: '>=0'
-  category: sys-devel-2.34
-conflicts:
-- name: llvm
-  version: '>=0'
-  category: sys-devel-10
 description: Low Level Virtual Machine
 uri:
 - https://llvm.org/

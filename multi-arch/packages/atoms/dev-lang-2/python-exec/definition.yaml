@@ -1,10 +1,6 @@
 name: python-exec
 version: 2.4.6
 category: dev-lang-2
-conflicts:
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 description: Python script wrapper
 uri:
 - https://github.com/mgorny/python-exec/

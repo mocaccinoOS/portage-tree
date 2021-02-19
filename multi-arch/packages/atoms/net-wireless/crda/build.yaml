@@ -25,15 +25,6 @@ requires:
 - name: libnl
   version: '>=0'
   category: dev-libs-3
-- name: libressl
-  version: '>=0'
-  category: dev-libs
-- name: openssl
-  version: '>=0'
-  category: dev-libs
-- name: m2crypto
-  version: '>=0'
-  category: dev-python
 - name: wireless-regdb
   version: '>=0'
   category: net-wireless

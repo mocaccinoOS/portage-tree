@@ -19,24 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: sqlite
+- name: cmake
   version: '>=0'
-  category: dev-db-3
-- name: xapian
-  version: '>=0'
-  category: dev-libs
-- name: qtxml
-  version: '>=0'
-  category: dev-qt-5
-- name: graphviz
-  version: '>=0'
-  category: media-gfx
+  category: dev-util
 - name: bison
-  version: '>=0'
-  category: sys-devel
-- name: clang
-  version: '>=0'
-  category: sys-devel-10
-- name: make
   version: '>=0'
   category: sys-devel

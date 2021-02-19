@@ -25,15 +25,18 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
+- name: pciutils
+  version: '>=0'
+  category: sys-apps
 - name: ncurses
   version: '>=0'
   category: sys-libs
 - name: numactl
   version: '>=0'
   category: sys-process
-- name: nvidia-drivers
+- name: cairo
   version: '>=0'
-  category: x11-drivers
+  category: x11-libs
 - name: libpciaccess
   version: '>=0'
   category: x11-libs

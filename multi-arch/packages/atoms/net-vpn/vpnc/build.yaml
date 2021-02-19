@@ -19,12 +19,15 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: perl
-  version: '>=0'
-  category: dev-lang
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: iproute2
   version: '>=0'
   category: sys-apps

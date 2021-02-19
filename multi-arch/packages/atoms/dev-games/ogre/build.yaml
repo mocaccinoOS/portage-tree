@@ -49,9 +49,3 @@ requires:
 - name: mesa
   version: '>=0'
   category: media-libs
-- name: make
-  version: '>=0'
-  category: sys-devel
-- name: libXrandr
-  version: '>=0'
-  category: x11-libs

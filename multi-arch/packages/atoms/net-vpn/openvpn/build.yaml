@@ -28,9 +28,6 @@ requires:
 - name: pkcs11-helper
   version: '>=0'
   category: dev-libs
-- name: mbedtls
-  version: '>=0'
-  category: net-libs
 - name: iproute2
   version: '>=0'
   category: sys-apps

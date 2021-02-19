@@ -4,18 +4,18 @@ category: net-libs
 use_flags:
 - -doc
 - -libressl
+- -mbedtls
 - -test
 - gcrypt
 - gssapi
-- mbedtls
 - zlib
 requires:
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
-- name: mbedtls
+- name: zlib
   version: '>=0'
-  category: net-libs
+  category: sys-libs
 description: Access a working SSH implementation by means of a library
 uri:
 - https://www.libssh.org/

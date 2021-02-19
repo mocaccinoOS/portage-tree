@@ -2,9 +2,9 @@ name: jms
 version: "1.1"
 category: java-virtuals
 requires:
-- name: java-config
+- name: glassfish-jms-api
   version: '>=0'
-  category: dev-java-2
+  category: dev-java
 description: Virtual for Java Message Service (JMS) API
 uri:
 - https://wiki.gentoo.org/wiki/No_homepage

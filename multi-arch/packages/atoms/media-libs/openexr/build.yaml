@@ -22,6 +22,3 @@ requires:
 - name: ilmbase
   version: '>=0'
   category: media-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs

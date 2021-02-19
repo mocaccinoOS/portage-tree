@@ -25,12 +25,6 @@ requires:
 - name: cffi
   version: '>=0'
   category: dev-python
-- name: hypothesis
-  version: '>=0'
-  category: dev-python
-- name: pytest
-  version: '>=0'
-  category: dev-python
 - name: six
   version: '>=0'
   category: dev-python

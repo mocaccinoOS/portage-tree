@@ -2,24 +2,18 @@ name: ppp
 version: 2.4.8
 category: net-dialup
 use_flags:
+- -activefilter
+- -gtk
 - -libressl
-- activefilter
 - atm
-- gtk
 - pam
 requires:
 - name: linux-atm
   version: '>=0'
   category: net-dialup
-- name: libpcap
-  version: '>=0'
-  category: net-libs
 - name: pam
   version: '>=0'
   category: sys-libs
-- name: gtk+
-  version: '>=0'
-  category: x11-libs-3
 description: Point-to-Point Protocol (PPP)
 uri:
 - https://ppp.samba.org/

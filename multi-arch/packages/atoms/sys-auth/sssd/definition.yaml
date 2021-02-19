@@ -8,6 +8,7 @@ use_flags:
 - -python_single_target_python3_9
 - -selinux
 - -test
+- -valgrind
 - acl
 - locator
 - netlink
@@ -18,7 +19,6 @@ use_flags:
 - python_single_target_python3_7
 - samba
 - systemd
-- valgrind
 requires:
 - name: p11-kit
   version: '>=0'
@@ -35,9 +35,6 @@ requires:
 - name: openssl
   version: '>=0'
   category: dev-libs
-- name: nfs-utils
-  version: '>=0'
-  category: net-fs
 - name: samba
   version: '>=0'
   category: net-fs

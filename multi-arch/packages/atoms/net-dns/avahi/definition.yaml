@@ -3,21 +3,21 @@ version: "0.8"
 category: net-dns
 use_flags:
 - -doc
+- -gtk
+- -gtk2
+- -mono
 - -python_targets_python3_6
 - -python_targets_python3_8
+- -qt5
 - -selinux
 - autoipd
 - bookmarks
 - dbus
 - gdbm
-- gtk
-- gtk2
 - introspection
 - kernel_linux
-- mono
 - python
 - python_targets_python3_7
-- qt5
 requires:
 - name: netdev
   version: '>=0'
@@ -28,9 +28,6 @@ requires:
 - name: avahi-autoipd
   version: '>=0'
   category: acct-user
-- name: gtk-sharp
-  version: '>=0'
-  category: dev-dotnet-2
 - name: libdaemon
   version: '>=0'
   category: dev-libs
@@ -46,9 +43,6 @@ requires:
 - name: twisted
   version: '>=0'
   category: dev-python
-- name: qtcore
-  version: '>=0'
-  category: dev-qt-5
 - name: libcap
   version: '>=0'
   category: sys-libs

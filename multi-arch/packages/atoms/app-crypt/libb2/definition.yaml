@@ -3,10 +3,6 @@ version: 0.98.1
 category: app-crypt
 use_flags:
 - openmp
-requires:
-- name: gcc
-  version: '>=0'
-  category: sys-devel-9.3.0
 description: C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
 uri:
 - https://github.com/BLAKE2/libb2

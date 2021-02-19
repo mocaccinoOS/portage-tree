@@ -10,9 +10,6 @@ use_flags:
 - -x86-winnt
 - uuid
 requires:
-- name: util-linux
-  version: '>=0'
-  category: sys-apps
 - name: libICE
   version: '>=0'
   category: x11-libs

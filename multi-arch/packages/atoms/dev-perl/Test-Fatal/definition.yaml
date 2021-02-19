@@ -4,6 +4,9 @@ category: dev-perl
 use_flags:
 - -test
 requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
 - name: Try-Tiny
   version: '>=0'
   category: dev-perl

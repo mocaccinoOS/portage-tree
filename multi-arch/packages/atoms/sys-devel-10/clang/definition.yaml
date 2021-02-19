@@ -13,13 +13,12 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-- name: llvm
+- name: python
   version: '>=0'
-  category: sys-devel-10
-conflicts:
-- name: clang
+  category: dev-lang-3.7
+- name: python-exec
   version: '>=0'
-  category: sys-devel-10
+  category: dev-lang-2
 - name: llvm
   version: '>=0'
   category: sys-devel-10

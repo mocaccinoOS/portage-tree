@@ -1,10 +1,6 @@
 name: rpcsvc-proto
 version: 1.4.2
 category: net-libs
-conflicts:
-- name: glibc
-  version: '>=0'
-  category: sys-libs-2.2
 description: rpcsvc protocol definitions from glibc
 uri:
 - https://github.com/thkukuk/rpcsvc-proto

@@ -2,7 +2,7 @@ name: gsl
 version: "2.5"
 category: sci-libs
 use_flags:
-- -cblas-external
+- cblas-external
 description: The GNU Scientific Library
 uri:
 - https://www.gnu.org/software/gsl/

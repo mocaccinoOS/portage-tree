@@ -11,15 +11,9 @@ use_flags:
 - -python_targets_python3_9
 - -readline
 requires:
-- name: python
+- name: zlib
   version: '>=0'
-  category: dev-lang-3.7
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
-- name: icu
-  version: '>=0'
-  category: dev-libs
+  category: sys-libs
 description: XML C parser and toolkit
 uri:
 - http://www.xmlsoft.org/

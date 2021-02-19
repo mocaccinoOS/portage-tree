@@ -22,6 +22,3 @@ requires:
 - name: libsodium
   version: '>=0'
   category: dev-libs
-- name: libunwind
-  version: '>=0'
-  category: sys-libs

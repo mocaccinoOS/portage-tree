@@ -33,6 +33,9 @@ requires:
 - name: curl
   version: '>=0'
   category: net-misc
+- name: coreutils
+  version: '>=0'
+  category: sys-apps
 - name: libXmu
   version: '>=0'
   category: x11-libs

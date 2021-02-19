@@ -19,6 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: numpy
+- name: setuptools
   version: '>=0'
   category: dev-python

@@ -19,6 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
 - name: Try-Tiny
   version: '>=0'
   category: dev-perl

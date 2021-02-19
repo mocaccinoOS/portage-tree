@@ -21,10 +21,6 @@ requires:
 - name: systemd
   version: '>=0'
   category: sys-apps
-conflicts:
-- name: qtcore
-  version: '>=0'
-  category: dev-qt-5
 description: Cross-platform application development framework
 uri:
 - https://www.qt.io/

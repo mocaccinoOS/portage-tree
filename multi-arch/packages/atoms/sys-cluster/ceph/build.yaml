@@ -49,9 +49,6 @@ requires:
 - name: crypto++
   version: '>=0'
   category: dev-libs
-- name: expat
-  version: '>=0'
-  category: dev-libs
 - name: jemalloc
   version: '>=0'
   category: dev-libs
@@ -91,15 +88,12 @@ requires:
 - name: ragel
   version: '>=0'
   category: dev-util
-- name: gnutls
+- name: valgrind
   version: '>=0'
-  category: net-libs
+  category: dev-util
 - name: rabbitmq-c
   version: '>=0'
   category: net-libs
-- name: curl
-  version: '>=0'
-  category: net-misc
 - name: coreutils
   version: '>=0'
   category: sys-apps
@@ -125,9 +119,6 @@ requires:
   version: '>=0'
   category: sys-auth
 - name: bc
-  version: '>=0'
-  category: sys-devel
-- name: make
   version: '>=0'
   category: sys-devel
 - name: patch

@@ -19,6 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
+- name: gnupg
+  version: '>=0'
+  category: app-crypt
 - name: openpgp-keys-linuxcontainers
   version: '>=0'
   category: app-crypt

@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: valgrind
-  version: '>=0'
-  category: dev-util
 - name: help2man
   version: '>=0'
   category: sys-apps

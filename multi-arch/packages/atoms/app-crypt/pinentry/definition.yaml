@@ -9,30 +9,15 @@ use_flags:
 - -ncurses
 - -qt5
 requires:
-- name: gcr
-  version: '>=0'
-  category: app-crypt
-- name: libsecret
-  version: '>=0'
-  category: app-crypt
 - name: eselect-pinentry
   version: '>=0'
   category: app-eselect
 - name: libassuan
   version: '>=0'
   category: dev-libs
-- name: qtwidgets
+- name: libgcrypt
   version: '>=0'
-  category: dev-qt-5
-- name: libcap
-  version: '>=0'
-  category: sys-libs
-- name: ncurses
-  version: '>=0'
-  category: sys-libs
-- name: fltk
-  version: '>=0'
-  category: x11-libs-1
+  category: dev-libs
 description: Simple passphrase entry dialogs which utilize the Assuan protocol
 uri:
 - https://gnupg.org/aegypten2/index.html

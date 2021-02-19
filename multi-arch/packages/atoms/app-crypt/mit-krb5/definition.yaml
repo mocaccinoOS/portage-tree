@@ -19,6 +19,9 @@ requires:
 - name: lmdb
   version: '>=0'
   category: dev-db
+- name: libverto
+  version: '>=0'
+  category: dev-libs
 - name: openldap
   version: '>=0'
   category: net-nds

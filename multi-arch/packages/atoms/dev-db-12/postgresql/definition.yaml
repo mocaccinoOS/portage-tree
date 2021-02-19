@@ -37,6 +37,9 @@ requires:
 - name: eselect-postgresql
   version: '>=0'
   category: app-eselect
+- name: icu
+  version: '>=0'
+  category: dev-libs
 - name: libxslt
   version: '>=0'
   category: dev-libs

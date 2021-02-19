@@ -31,9 +31,6 @@ requires:
 - name: colamd
   version: '>=0'
   category: sci-libs
-- name: metis
-  version: '>=0'
-  category: sci-libs
 - name: nvidia-drivers
   version: '>=0'
   category: x11-drivers

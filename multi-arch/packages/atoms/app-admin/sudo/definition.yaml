@@ -16,9 +16,6 @@ requires:
 - name: editor-wrapper
   version: '>=0'
   category: app-misc
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
 - name: pambase
   version: '>=0'
   category: sys-auth

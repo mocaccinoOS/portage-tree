@@ -22,9 +22,15 @@ requires:
 - name: lmdb
   version: '>=0'
   category: dev-db
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: yasm
   version: '>=0'
   category: dev-lang
+- name: libverto
+  version: '>=0'
+  category: dev-libs
 - name: openldap
   version: '>=0'
   category: net-nds

@@ -22,9 +22,6 @@ requires:
 - name: newt
   version: '>=0'
   category: dev-libs
-- name: ppp
-  version: '>=0'
-  category: net-dialup
 - name: dnsmasq
   version: '>=0'
   category: net-dns

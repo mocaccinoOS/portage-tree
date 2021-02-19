@@ -22,6 +22,3 @@ requires:
 - name: setuptools
   version: '>=0'
   category: dev-python
-- name: mercurial
-  version: '>=0'
-  category: dev-vcs

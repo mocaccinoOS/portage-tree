@@ -22,9 +22,6 @@ requires:
 - name: xmltoman
   version: '>=0'
   category: app-doc
-- name: gtk-sharp
-  version: '>=0'
-  category: dev-dotnet-2
 - name: expat
   version: '>=0'
   category: dev-libs
@@ -43,9 +40,9 @@ requires:
 - name: twisted
   version: '>=0'
   category: dev-python
-- name: qtcore
+- name: glib-utils
   version: '>=0'
-  category: dev-qt-5
+  category: dev-util
 - name: intltool
   version: '>=0'
   category: dev-util

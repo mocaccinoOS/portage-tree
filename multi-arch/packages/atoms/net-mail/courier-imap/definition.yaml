@@ -3,17 +3,20 @@ version: 5.0.7
 category: net-mail
 use_flags:
 - -fam
-- -gnutls
 - -libressl
 - -selinux
 - berkdb
 - gdbm
+- gnutls
 - userland_GNU
 requires:
 - name: libidn
   version: '>=0'
   category: net-dns
 - name: courier-authlib
+  version: '>=0'
+  category: net-libs
+- name: gnutls
   version: '>=0'
   category: net-libs
 description: An IMAP daemon designed specifically for maildirs

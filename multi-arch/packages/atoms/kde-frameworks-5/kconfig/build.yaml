@@ -22,9 +22,6 @@ requires:
 - name: linguist-tools
   version: '>=0'
   category: dev-qt-5
-- name: qtgui
-  version: '>=0'
-  category: dev-qt-5
 - name: extra-cmake-modules
   version: '>=0'
   category: kde-frameworks-5

@@ -4,10 +4,6 @@ category: dev-perl
 use_flags:
 - -minimal
 - -test
-requires:
-- name: perl
-  version: '>=0'
-  category: dev-lang
 description: Minimal try/catch with proper localization of $@
 uri:
 - https://metacpan.org/release/Try-Tiny

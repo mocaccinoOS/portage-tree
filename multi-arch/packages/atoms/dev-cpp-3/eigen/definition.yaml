@@ -5,10 +5,6 @@ use_flags:
 - -doc
 - -test
 - cuda
-conflicts:
-- name: eigen
-  version: '>=0'
-  category: dev-cpp-3
 description: C++ template library for linear algebra
 uri:
 - http://eigen.tuxfamily.org/

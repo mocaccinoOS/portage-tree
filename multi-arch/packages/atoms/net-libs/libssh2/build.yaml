@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: libgcrypt
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: mbedtls
-  version: '>=0'
-  category: net-libs
+  category: layers

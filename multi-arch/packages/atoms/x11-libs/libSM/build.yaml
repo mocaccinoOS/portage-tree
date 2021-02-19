@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: util-linux
-  version: '>=0'
-  category: sys-apps
 - name: libICE
   version: '>=0'
   category: x11-libs

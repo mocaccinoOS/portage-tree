@@ -5,12 +5,18 @@ use_flags:
 - -test
 - gtk
 requires:
+- name: qtcore
+  version: '>=0'
+  category: dev-qt-5
 - name: qtgui
   version: '>=0'
   category: dev-qt-5
 - name: gtk+
   version: '>=0'
   category: x11-libs-3
+- name: libX11
+  version: '>=0'
+  category: x11-libs
 description: Set of components for creating classic desktop-style UIs for the Qt5
   framework
 uri:

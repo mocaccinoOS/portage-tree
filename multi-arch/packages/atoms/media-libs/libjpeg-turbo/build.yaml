@@ -19,15 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: java-config
-  version: '>=0'
-  category: dev-java-2
-- name: nasm
-  version: '>=0'
-  category: dev-lang
 - name: cmake
-  version: '>=0'
-  category: dev-util
-- name: ninja
   version: '>=0'
   category: dev-util

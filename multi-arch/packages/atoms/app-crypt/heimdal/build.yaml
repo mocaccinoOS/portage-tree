@@ -34,6 +34,9 @@ requires:
 - name: openldap
   version: '>=0'
   category: net-nds
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3
 - name: e2fsprogs-libs
   version: '>=0'
   category: sys-libs
@@ -43,9 +46,12 @@ requires:
 - name: libcap-ng
   version: '>=0'
   category: sys-libs
-- name: xhost
+- name: libX11
   version: '>=0'
-  category: x11-apps
-- name: xorg-server
+  category: x11-libs
+- name: libXau
   version: '>=0'
-  category: x11-base
+  category: x11-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs

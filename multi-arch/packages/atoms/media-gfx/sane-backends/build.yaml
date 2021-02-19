@@ -34,9 +34,6 @@ requires:
 - name: avahi
   version: '>=0'
   category: net-dns
-- name: curl
-  version: '>=0'
-  category: net-misc
 - name: systemd
   version: '>=0'
   category: sys-apps

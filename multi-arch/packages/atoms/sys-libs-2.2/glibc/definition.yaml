@@ -32,9 +32,6 @@ requires:
 - name: libcap
   version: '>=0'
   category: sys-libs
-- name: audit
-  version: '>=0'
-  category: sys-process
 conflicts:
 - name: openssh
   version: '>=0'

@@ -2,10 +2,10 @@ name: libsecret
 version: 0.20.3
 category: app-crypt
 use_flags:
-- -crypt
-- -introspection
 - -test
-- -vala
+- crypt
+- introspection
+- vala
 requires:
 - name: gobject-introspection
   version: '>=0'

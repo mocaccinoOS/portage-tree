@@ -8,15 +8,12 @@ use_flags:
 - acl
 - ncurses
 requires:
-- name: java-config
+- name: expat
   version: '>=0'
-  category: dev-java-2
+  category: dev-libs
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: git
-  version: '>=0'
-  category: dev-vcs
 - name: ncurses
   version: '>=0'
   category: sys-libs

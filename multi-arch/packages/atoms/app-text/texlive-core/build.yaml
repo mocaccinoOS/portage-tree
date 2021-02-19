@@ -28,6 +28,9 @@ requires:
 - name: teckit
   version: '>=0'
   category: app-text
+- name: icu
+  version: '>=0'
+  category: dev-libs
 - name: mpfr
   version: '>=0'
   category: dev-libs
@@ -40,6 +43,9 @@ requires:
 - name: clisp
   version: '>=0'
   category: dev-lisp-2
+- name: graphite2
+  version: '>=0'
+  category: media-gfx
 - name: gd
   version: '>=0'
   category: media-libs-2

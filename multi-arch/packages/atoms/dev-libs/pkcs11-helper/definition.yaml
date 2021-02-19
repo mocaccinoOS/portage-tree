@@ -3,13 +3,16 @@ version: 1.25.1
 category: dev-libs
 use_flags:
 - -doc
-- -gnutls
 - -libressl
+- gnutls
 - nss
 requires:
 - name: nss
   version: '>=0'
   category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 description: PKCS#11 helper library
 uri:
 - https://github.com/OpenSC/pkcs11-helper

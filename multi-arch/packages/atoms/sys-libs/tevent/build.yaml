@@ -22,9 +22,6 @@ requires:
 - name: libtirpc
   version: '>=0'
   category: net-libs
-- name: rpcsvc-proto
-  version: '>=0'
-  category: net-libs
 - name: talloc
   version: '>=0'
   category: sys-libs

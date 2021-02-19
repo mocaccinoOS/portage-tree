@@ -19,6 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
+- name: dbus-python
+  version: '>=0'
+  category: dev-python
 - name: mobile-broadband-provider-info
   version: '>=0'
   category: net-misc

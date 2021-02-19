@@ -5,10 +5,6 @@ use_flags:
 - -minimal
 - -test
 - cddb
-requires:
-- name: libcddb
-  version: '>=0'
-  category: media-libs
 description: A library to encapsulate CD-ROM reading and control
 uri:
 - https://www.gnu.org/software/libcdio/

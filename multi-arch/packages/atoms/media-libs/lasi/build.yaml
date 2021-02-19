@@ -22,9 +22,6 @@ requires:
 - name: cmake
   version: '>=0'
   category: dev-util
-- name: make
-  version: '>=0'
-  category: sys-devel
 - name: pango
   version: '>=0'
   category: x11-libs

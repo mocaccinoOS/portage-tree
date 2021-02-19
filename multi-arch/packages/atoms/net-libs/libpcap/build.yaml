@@ -22,6 +22,18 @@ requires:
 - name: libnl
   version: '>=0'
   category: dev-libs-3
-- name: bluez
+- name: dbus
   version: '>=0'
-  category: net-wireless
+  category: sys-apps
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16
+- name: flex
+  version: '>=0'
+  category: sys-devel
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2

@@ -3,7 +3,6 @@ version: 4.3.1
 category: media-video
 use_flags:
 - -doc
-- -gnutls
 - -libressl
 - -test
 - X
@@ -28,6 +27,7 @@ use_flags:
 - gcrypt
 - gme
 - gmp
+- gnutls
 - gsm
 - iconv
 - iec61883
@@ -96,6 +96,9 @@ requires:
 - name: snappy
   version: '>=0'
   category: app-arch
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
 - name: tesseract
   version: '>=0'
   category: app-text
@@ -103,9 +106,6 @@ requires:
   version: '>=0'
   category: dev-libs
 - name: libcdio-paranoia
-  version: '>=0'
-  category: dev-libs
-- name: openssl
   version: '>=0'
   category: dev-libs
 - name: librsvg

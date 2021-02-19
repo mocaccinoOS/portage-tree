@@ -1,0 +1,26 @@
+name: tomcat-servlet-api
+version: 9.0.38
+category: dev-java-4.0
+use_flags:
+- source
+requires:
+- name: zip
+  version: '>=0'
+  category: app-arch
+- name: java-config
+  version: '>=0'
+  category: dev-java-2
+description: Tomcat's Servlet API 4.0/JSP API 2.3/EL API 3.0 implementation
+uri:
+- https://tomcat.apache.org/
+license: Apache-2.0
+labels:
+  DEPEND: '>=virtual/jdk-1.8 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip
+    ) >=dev-java/ant-core-1.8.2:0 >=dev-java/javatoolkit-0.3.0-r2'
+  IUSE: elibc_FreeBSD source elibc_FreeBSD
+  RDEPEND: '>=virtual/jre-1.8 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip
+    )'
+  emerge.packages: dev-java/tomcat-servlet-api:4.0
+  kit: gentoo
+  original.package.name: dev-java/tomcat-servlet-api
+  original.package.version: 9.0.38

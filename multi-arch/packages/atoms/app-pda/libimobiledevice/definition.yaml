@@ -3,16 +3,22 @@ version: 1.2.1_pre20200220
 category: app-pda
 use_flags:
 - -doc
-- -gnutls
 - -libressl
 - -python_targets_python3_6
 - -python_targets_python3_8
+- gnutls
 - python
 - python_targets_python3_7
 requires:
 - name: libusbmuxd
   version: '>=0'
   category: app-pda
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 description: Support library to communicate with Apple iPhone/iPod Touch devices
 uri:
 - https://www.libimobiledevice.org/

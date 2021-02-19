@@ -4,10 +4,6 @@ category: sys-libs
 use_flags:
 - -test
 - libunwind
-requires:
-- name: libunwind
-  version: '>=0'
-  category: sys-libs
 description: Low level support for a standard C++ library
 uri:
 - https://libcxxabi.llvm.org/

@@ -25,6 +25,9 @@ requires:
 - name: gpgme
   version: '>=0'
   category: app-crypt-1
+- name: heimdal
+  version: '>=0'
+  category: app-crypt
 - name: mit-krb5
   version: '>=0'
   category: app-crypt
@@ -52,10 +55,7 @@ requires:
 - name: bind-tools
   version: '>=0'
   category: net-dns
-- name: resolv_wrapper
-  version: '>=0'
-  category: net-dns
-- name: socket_wrapper
+- name: rpcsvc-proto
   version: '>=0'
   category: net-libs
 - name: cups
@@ -71,11 +71,5 @@ requires:
   version: '>=0'
   category: sys-libs
 - name: liburing
-  version: '>=0'
-  category: sys-libs
-- name: nss_wrapper
-  version: '>=0'
-  category: sys-libs
-- name: uid_wrapper
   version: '>=0'
   category: sys-libs

@@ -43,3 +43,6 @@ requires:
 - name: which
   version: '>=0'
   category: sys-apps
+- name: lynx
+  version: '>=0'
+  category: www-client

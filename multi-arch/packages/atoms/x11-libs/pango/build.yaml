@@ -22,12 +22,21 @@ requires:
 - name: fribidi
   version: '>=0'
   category: dev-libs
+- name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
 - name: desktop-file-utils
+  version: '>=0'
+  category: dev-util
+- name: glib-utils
   version: '>=0'
   category: dev-util
 - name: gtk-doc-am
   version: '>=0'
   category: dev-util
+- name: cairo
+  version: '>=0'
+  category: x11-libs
 - name: libXft
   version: '>=0'
   category: x11-libs

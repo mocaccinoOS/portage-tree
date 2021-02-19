@@ -22,6 +22,9 @@ requires:
 - name: libgcrypt
   version: '>=0'
   category: dev-libs
-- name: mbedtls
+- name: cmake
   version: '>=0'
-  category: net-libs
+  category: dev-util
+- name: ninja
+  version: '>=0'
+  category: dev-util

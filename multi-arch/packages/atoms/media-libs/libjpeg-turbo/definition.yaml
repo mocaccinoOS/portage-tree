@@ -2,19 +2,15 @@ name: libjpeg-turbo
 version: 2.0.5
 category: media-libs
 use_flags:
+- -amd64-fbsd
+- -java
+- -x64-cygwin
+- -x64-macos
+- -x86
+- -x86-fbsd
+- -x86-linux
 - amd64
-- amd64-fbsd
 - amd64-linux
-- java
-- x64-cygwin
-- x64-macos
-- x86
-- x86-fbsd
-- x86-linux
-requires:
-- name: java-config
-  version: '>=0'
-  category: dev-java-2
 description: MMX, SSE, and SSE2 SIMD accelerated JPEG library
 uri:
 - https://libjpeg-turbo.org/ https://sourceforge.net/projects/libjpeg-turbo/

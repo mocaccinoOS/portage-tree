@@ -2,10 +2,10 @@ name: xmlsec
 version: 1.2.30
 category: dev-libs
 use_flags:
-- -gnutls
 - -libressl
 - -test
 - gcrypt
+- gnutls
 - nss
 - openssl
 requires:
@@ -15,6 +15,9 @@ requires:
 - name: nss
   version: '>=0'
   category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 description: Command line tool for signing, verifying, encrypting and decrypting XML
 uri:
 - https://www.aleksey.com/xmlsec

@@ -1,6 +1,42 @@
 name: opencv
 version: 4.5.0
 category: media-libs
+use_flags:
+- -python_targets_python3_6
+- -python_targets_python3_8
+- -python_targets_python3_9
+- contribfreetype
+- contribhdf
+- contribovis
+- cuda
+- eigen
+- ffmpeg
+- gdal
+- gflags
+- glog
+- gphoto2
+- gstreamer
+- gtk3
+- ieee1394
+- java
+- jpeg
+- jpeg2k
+- lapack
+- opencl
+- openexr
+- opengl
+- png
+- python
+- python_targets_python3_7
+- qt5
+- tesseract
+- threads
+- tiff
+- v4l
+- vaapi
+- vtk
+- webp
+- xine
 requires:
 - name: glog
   version: '>=0'
@@ -38,6 +74,7 @@ uri:
 - https://opencv.org
 license: Apache-2.0
 labels:
+  BDEPEND: virtual/pkgconfig dev-util/ninja dev-util/cmake
   DEPEND: app-arch/bzip2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
     dev-libs/protobuf:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
     sys-libs/zlib[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]

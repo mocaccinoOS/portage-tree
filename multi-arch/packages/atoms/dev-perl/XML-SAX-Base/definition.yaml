@@ -7,10 +7,6 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
-conflicts:
-- name: XML-SAX
-  version: '>=0'
-  category: dev-perl
 description: Base class SAX Drivers and Filters
 uri:
 - https://metacpan.org/release/XML-SAX-Base

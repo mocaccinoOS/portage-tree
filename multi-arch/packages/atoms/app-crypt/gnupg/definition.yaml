@@ -20,21 +20,18 @@ requires:
 - name: pinentry
   version: '>=0'
   category: app-crypt
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
 - name: libksba
   version: '>=0'
   category: dev-libs
 - name: npth
   version: '>=0'
   category: dev-libs
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: curl
   version: '>=0'
   category: net-misc
+- name: readline
+  version: '>=0'
+  category: sys-libs
 description: The GNU Privacy Guard, a GPL OpenPGP implementation
 uri:
 - https://gnupg.org/

@@ -34,13 +34,13 @@ requires:
 - name: fontconfig
   version: '>=0'
   category: media-libs-1.0
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
 - name: mesa
   version: '>=0'
   category: media-libs
 - name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libdrm
   version: '>=0'
   category: x11-libs
 - name: libxkbcommon

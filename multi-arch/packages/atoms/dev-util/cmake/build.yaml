@@ -19,6 +19,30 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: libarchive
   version: '>=0'
-  category: layers
+  category: app-arch
+- name: rhash
+  version: '>=0'
+  category: app-crypt
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: jsoncpp
+  version: '>=0'
+  category: dev-libs
+- name: libuv
+  version: '>=0'
+  category: dev-libs
+- name: qtwidgets
+  version: '>=0'
+  category: dev-qt-5
+- name: curl
+  version: '>=0'
+  category: net-misc
+- name: make
+  version: '>=0'
+  category: sys-devel
+- name: ncurses
+  version: '>=0'
+  category: sys-libs

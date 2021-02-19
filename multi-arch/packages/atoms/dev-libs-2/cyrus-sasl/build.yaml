@@ -22,18 +22,15 @@ requires:
 - name: mysql-connector-c
   version: '>=0'
   category: dev-db
-- name: postgresql
-  version: '>=0'
-  category: dev-db-12
 - name: sqlite
   version: '>=0'
   category: dev-db-3
-- name: courier-imap
-  version: '>=0'
-  category: net-mail
 - name: mailbase
   version: '>=0'
   category: net-mail
 - name: gdbm
+  version: '>=0'
+  category: sys-libs
+- name: pam
   version: '>=0'
   category: sys-libs

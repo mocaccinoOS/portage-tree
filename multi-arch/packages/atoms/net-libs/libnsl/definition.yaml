@@ -5,10 +5,6 @@ requires:
 - name: libtirpc
   version: '>=0'
   category: net-libs
-conflicts:
-- name: glibc
-  version: '>=0'
-  category: sys-libs-2.2
 description: Public client interface for NIS(YP) and NIS+ in a IPv6 ready version
 uri:
 - https://github.com/thkukuk/libnsl

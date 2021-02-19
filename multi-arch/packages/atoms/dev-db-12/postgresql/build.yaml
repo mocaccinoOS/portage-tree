@@ -28,6 +28,9 @@ requires:
 - name: eselect-postgresql
   version: '>=0'
   category: app-eselect
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: tcl
   version: '>=0'
   category: dev-lang
@@ -50,6 +53,9 @@ requires:
   version: '>=0'
   category: sys-devel
 - name: clang
+  version: '>=0'
+  category: sys-devel-10
+- name: llvm
   version: '>=0'
   category: sys-devel-10
 - name: pam

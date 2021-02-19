@@ -25,9 +25,12 @@ requires:
 - name: sqlite
   version: '>=0'
   category: dev-db-3
-- name: courier-imap
+- name: mailbase
   version: '>=0'
   category: net-mail
+- name: gdbm
+  version: '>=0'
+  category: sys-libs
 description: The Cyrus SASL (Simple Authentication and Security Layer)
 uri:
 - https://www.cyrusimap.org/sasl/

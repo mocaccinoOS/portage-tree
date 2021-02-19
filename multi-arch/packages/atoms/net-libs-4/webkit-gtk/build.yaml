@@ -28,7 +28,13 @@ requires:
 - name: enchant
   version: '>=0'
   category: app-text-2
+- name: ruby
+  version: '>=0'
+  category: dev-lang-2.6
 - name: hyphen
+  version: '>=0'
+  category: dev-libs
+- name: icu
   version: '>=0'
   category: dev-libs
 - name: libtasn1

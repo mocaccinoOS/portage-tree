@@ -45,10 +45,6 @@ requires:
 - name: zfs
   version: '>=0'
   category: sys-fs
-conflicts:
-- name: grub
-  version: '>=0'
-  category: sys-boot-2
 description: GNU GRUB boot loader
 uri:
 - https://www.gnu.org/software/grub/

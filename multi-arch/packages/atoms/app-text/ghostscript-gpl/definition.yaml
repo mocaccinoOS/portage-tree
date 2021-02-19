@@ -28,6 +28,9 @@ requires:
 - name: urw-fonts
   version: '>=0'
   category: media-fonts
+- name: fontconfig
+  version: '>=0'
+  category: media-libs-1.0
 - name: jbig2dec
   version: '>=0'
   category: media-libs
@@ -37,9 +40,12 @@ requires:
 - name: libidn
   version: '>=0'
   category: net-dns
-- name: gtk+
+- name: cups
   version: '>=0'
-  category: x11-libs-3
+  category: net-print
+- name: libXext
+  version: '>=0'
+  category: x11-libs
 description: Interpreter for the PostScript language and PDF
 uri:
 - https://ghostscript.com/

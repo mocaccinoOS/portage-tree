@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: vala
-  version: '>=0'
-  category: dev-lang-0.48
 - name: gdk-pixbuf
   version: '>=0'
   category: x11-libs-2

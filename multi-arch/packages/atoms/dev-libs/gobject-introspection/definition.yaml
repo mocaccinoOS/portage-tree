@@ -9,18 +9,18 @@ use_flags:
 - -test
 - python_single_target_python3_7
 requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: glib
   version: '>=0'
   category: dev-libs-2
 - name: gobject-introspection-common
   version: '>=0'
   category: dev-libs
-- name: mako
-  version: '>=0'
-  category: dev-python
-- name: markdown
-  version: '>=0'
-  category: dev-python
 description: Introspection system for GObject-based libraries
 uri:
 - https://wiki.gnome.org/Projects/GObjectIntrospection

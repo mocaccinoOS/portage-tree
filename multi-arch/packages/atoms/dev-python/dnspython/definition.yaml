@@ -12,10 +12,6 @@ requires:
 - name: cryptography
   version: '>=0'
   category: dev-python
-conflicts:
-- name: dnspython
-  version: '>=0'
-  category: dev-python
 description: DNS toolkit for Python
 uri:
 - http://www.dnspython.org/ https://pypi.org/project/dnspython/

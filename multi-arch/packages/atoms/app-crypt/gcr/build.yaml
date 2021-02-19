@@ -22,9 +22,6 @@ requires:
 - name: p11-kit
   version: '>=0'
   category: app-crypt
-- name: vala
-  version: '>=0'
-  category: dev-lang-0.48
 - name: libgcrypt
   version: '>=0'
   category: dev-libs

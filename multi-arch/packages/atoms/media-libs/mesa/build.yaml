@@ -19,6 +19,54 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: zstd
   version: '>=0'
-  category: layers
+  category: app-arch
+- name: libclc
+  version: '>=0'
+  category: dev-libs
+- name: wayland-protocols
+  version: '>=0'
+  category: dev-libs
+- name: libglvnd
+  version: '>=0'
+  category: media-libs
+- name: bison
+  version: '>=0'
+  category: sys-devel
+- name: gcc
+  version: '>=0'
+  category: sys-devel-9.3.0
+- name: llvm
+  version: '>=0'
+  category: sys-devel-10
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+- name: libXdamage
+  version: '>=0'
+  category: x11-libs
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+- name: libXvMC
+  version: '>=0'
+  category: x11-libs
+- name: libXxf86vm
+  version: '>=0'
+  category: x11-libs
+- name: libdrm
+  version: '>=0'
+  category: x11-libs
+- name: libva
+  version: '>=0'
+  category: x11-libs
+- name: libvdpau
+  version: '>=0'
+  category: x11-libs
+- name: libxcb
+  version: '>=0'
+  category: x11-libs
+- name: libxshmfence
+  version: '>=0'
+  category: x11-libs

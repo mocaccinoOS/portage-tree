@@ -5,10 +5,6 @@ use_flags:
 - -test
 - -vim-syntax
 - source
-requires:
-- name: ant-core
-  version: '>=0'
-  category: dev-java
 description: JFlex is a lexical analyzer generator for Java
 uri:
 - https://www.jflex.de/

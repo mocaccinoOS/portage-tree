@@ -28,6 +28,3 @@ requires:
 - name: llvm
   version: '>=0'
   category: sys-devel-10
-- name: libunwind
-  version: '>=0'
-  category: sys-libs

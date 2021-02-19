@@ -19,6 +19,7 @@ use_flags:
 - -qrcode
 - -repart
 - -selinux
+- -test
 - -xkb
 - acl
 - cryptsetup
@@ -96,24 +97,6 @@ requires:
 - name: zstd
   version: '>=0'
   category: app-arch
-- name: elfutils
-  version: '>=0'
-  category: dev-libs
-- name: openssl
-  version: '>=0'
-  category: dev-libs
-- name: qrencode
-  version: '>=0'
-  category: media-gfx
-- name: iptables
-  version: '>=0'
-  category: net-firewall
-- name: libmicrohttpd
-  version: '>=0'
-  category: net-libs
-- name: curl
-  version: '>=0'
-  category: net-misc
 - name: acl
   version: '>=0'
   category: sys-apps
@@ -123,25 +106,13 @@ requires:
 - name: kmod
   version: '>=0'
   category: sys-apps
-- name: sysvinit
-  version: '>=0'
-  category: sys-apps
-- name: libapparmor
-  version: '>=0'
-  category: sys-libs
 - name: libseccomp
   version: '>=0'
   category: sys-libs
-- name: libxkbcommon
-  version: '>=0'
-  category: x11-libs
 conflicts:
 - name: openresolv
   version: '>=0'
   category: net-dns
-- name: sysvinit
-  version: '>=0'
-  category: sys-apps
 description: System and service manager for Linux
 uri:
 - https://www.freedesktop.org/wiki/Software/systemd

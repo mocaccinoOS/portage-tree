@@ -16,10 +16,6 @@ requires:
 - name: setuptools
   version: '>=0'
   category: dev-python
-conflicts:
-- name: jinja
-  version: '>=0'
-  category: dev-python
 description: A full-featured template engine for Python
 uri:
 - https://jinja.palletsprojects.com/ https://pypi.org/project/Jinja2/

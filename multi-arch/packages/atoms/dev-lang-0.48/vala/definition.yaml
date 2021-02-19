@@ -11,10 +11,6 @@ requires:
 - name: vala-common
   version: '>=0'
   category: dev-libs
-conflicts:
-- name: libsoup
-  version: '>=0'
-  category: net-libs-2.4
 description: Compiler for the GObject type system
 uri:
 - https://wiki.gnome.org/Projects/Vala

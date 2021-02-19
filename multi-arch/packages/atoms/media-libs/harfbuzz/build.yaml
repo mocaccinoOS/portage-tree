@@ -19,24 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: gobject-introspection
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: gobject-introspection-common
-  version: '>=0'
-  category: dev-libs
-- name: icu
-  version: '>=0'
-  category: dev-libs
-- name: glib-utils
-  version: '>=0'
-  category: dev-util
-- name: meson
-  version: '>=0'
-  category: dev-util
-- name: graphite2
-  version: '>=0'
-  category: media-gfx
-- name: cairo
-  version: '>=0'
-  category: x11-libs
+  category: layers
