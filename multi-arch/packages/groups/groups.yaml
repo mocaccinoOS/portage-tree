@@ -705,6 +705,9 @@ groups:
   airdcppd:
     gid: 464
 
+  tsm:
+    gid: 465
+
   rstudio-server:
     gid: 466
 
