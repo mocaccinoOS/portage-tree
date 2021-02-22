@@ -1,0 +1,12 @@
+name: junit-portage
+version: "4.12"
+category: dev-java-4
+requires:
+- name: junit
+  version: "4.12"
+  category: dev-java-4
+labels:
+  emerge.packages: dev-java/junit:4
+  kit: gentoo
+  original.package.name: dev-java/junit
+  original.package.version: 4.12-r1

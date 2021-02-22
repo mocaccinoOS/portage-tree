@@ -1,0 +1,12 @@
+name: libsigsegv-portage
+version: "2.12"
+category: dev-libs
+requires:
+- name: libsigsegv
+  version: "2.12"
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/libsigsegv
+  kit: gentoo
+  original.package.name: dev-libs/libsigsegv
+  original.package.version: 2.12-r1

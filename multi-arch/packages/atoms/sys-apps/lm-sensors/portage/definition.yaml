@@ -1,0 +1,12 @@
+name: lm-sensors-portage
+version: 3.6.0
+category: sys-apps
+requires:
+- name: lm-sensors
+  version: 3.6.0
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/lm-sensors
+  kit: gentoo
+  original.package.name: sys-apps/lm-sensors
+  original.package.version: 3.6.0

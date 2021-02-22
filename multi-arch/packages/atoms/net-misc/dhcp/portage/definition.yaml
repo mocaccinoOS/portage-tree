@@ -1,0 +1,12 @@
+name: dhcp-portage
+version: 4.4.2
+category: net-misc
+requires:
+- name: dhcp
+  version: 4.4.2
+  category: net-misc
+labels:
+  emerge.packages: net-misc/dhcp
+  kit: gentoo
+  original.package.name: net-misc/dhcp
+  original.package.version: 4.4.2-r2

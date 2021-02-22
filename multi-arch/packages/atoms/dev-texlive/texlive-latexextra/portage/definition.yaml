@@ -1,0 +1,12 @@
+name: texlive-latexextra-portage
+version: "2020"
+category: dev-texlive
+requires:
+- name: texlive-latexextra
+  version: "2020"
+  category: dev-texlive
+labels:
+  emerge.packages: dev-texlive/texlive-latexextra
+  kit: gentoo
+  original.package.name: dev-texlive/texlive-latexextra
+  original.package.version: 2020-r2

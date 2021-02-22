@@ -1,0 +1,12 @@
+name: Sub-Exporter-Progressive-portage
+version: 0.1.13
+category: dev-perl
+requires:
+- name: Sub-Exporter-Progressive
+  version: 0.1.13
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Sub-Exporter-Progressive
+  kit: gentoo
+  original.package.name: dev-perl/Sub-Exporter-Progressive
+  original.package.version: 0.1.13

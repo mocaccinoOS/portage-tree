@@ -1,0 +1,12 @@
+name: libcap-ng-portage
+version: 0.7.10
+category: sys-libs
+requires:
+- name: libcap-ng
+  version: 0.7.10
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/libcap-ng
+  kit: gentoo
+  original.package.name: sys-libs/libcap-ng
+  original.package.version: 0.7.10

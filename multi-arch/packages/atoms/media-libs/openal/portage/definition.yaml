@@ -1,0 +1,12 @@
+name: openal-portage
+version: 1.20.1
+category: media-libs
+requires:
+- name: openal
+  version: 1.20.1
+  category: media-libs
+labels:
+  emerge.packages: media-libs/openal
+  kit: gentoo
+  original.package.name: media-libs/openal
+  original.package.version: 1.20.1

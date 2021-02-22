@@ -1,0 +1,12 @@
+name: courier-unicode-portage
+version: "2.1"
+category: net-libs
+requires:
+- name: courier-unicode
+  version: "2.1"
+  category: net-libs
+labels:
+  emerge.packages: net-libs/courier-unicode
+  kit: gentoo
+  original.package.name: net-libs/courier-unicode
+  original.package.version: 2.1-r1

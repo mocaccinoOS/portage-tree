@@ -1,0 +1,12 @@
+name: cups-portage
+version: 2.3.3
+category: net-print
+requires:
+- name: cups
+  version: 2.3.3
+  category: net-print
+labels:
+  emerge.packages: net-print/cups
+  kit: gentoo
+  original.package.name: net-print/cups
+  original.package.version: 2.3.3-r1

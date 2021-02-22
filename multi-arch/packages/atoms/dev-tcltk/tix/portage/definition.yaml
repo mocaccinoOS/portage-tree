@@ -1,0 +1,12 @@
+name: tix-portage
+version: 8.4.3
+category: dev-tcltk
+requires:
+- name: tix
+  version: 8.4.3
+  category: dev-tcltk
+labels:
+  emerge.packages: dev-tcltk/tix
+  kit: gentoo
+  original.package.name: dev-tcltk/tix
+  original.package.version: 8.4.3-r1

@@ -1,0 +1,12 @@
+name: hamcrest-generator-portage
+version: "1.3"
+category: dev-java-1.3
+requires:
+- name: hamcrest-generator
+  version: "1.3"
+  category: dev-java-1.3
+labels:
+  emerge.packages: dev-java/hamcrest-generator:1.3
+  kit: gentoo
+  original.package.name: dev-java/hamcrest-generator
+  original.package.version: 1.3-r2

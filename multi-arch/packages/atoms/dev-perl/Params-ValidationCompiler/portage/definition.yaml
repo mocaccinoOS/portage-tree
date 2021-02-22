@@ -1,0 +1,12 @@
+name: Params-ValidationCompiler-portage
+version: 0.260.0
+category: dev-perl
+requires:
+- name: Params-ValidationCompiler
+  version: 0.260.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Params-ValidationCompiler
+  kit: gentoo
+  original.package.name: dev-perl/Params-ValidationCompiler
+  original.package.version: 0.260.0

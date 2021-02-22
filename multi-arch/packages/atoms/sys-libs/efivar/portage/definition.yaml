@@ -1,0 +1,12 @@
+name: efivar-portage
+version: "37"
+category: sys-libs
+requires:
+- name: efivar
+  version: "37"
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/efivar
+  kit: gentoo
+  original.package.name: sys-libs/efivar
+  original.package.version: "37"

@@ -1,0 +1,12 @@
+name: nvidia-drivers-portage
+version: "455.28"
+category: x11-drivers
+requires:
+- name: nvidia-drivers
+  version: "455.28"
+  category: x11-drivers
+labels:
+  emerge.packages: x11-drivers/nvidia-drivers
+  kit: gentoo
+  original.package.name: x11-drivers/nvidia-drivers
+  original.package.version: "455.28"

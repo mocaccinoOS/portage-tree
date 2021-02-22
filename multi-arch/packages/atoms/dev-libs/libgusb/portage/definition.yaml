@@ -1,0 +1,12 @@
+name: libgusb-portage
+version: 0.3.5
+category: dev-libs
+requires:
+- name: libgusb
+  version: 0.3.5
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/libgusb
+  kit: gentoo
+  original.package.name: dev-libs/libgusb
+  original.package.version: 0.3.5

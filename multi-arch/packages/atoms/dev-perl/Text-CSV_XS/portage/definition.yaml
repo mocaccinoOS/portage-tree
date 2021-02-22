@@ -1,0 +1,12 @@
+name: Text-CSV_XS-portage
+version: 1.340.0
+category: dev-perl
+requires:
+- name: Text-CSV_XS
+  version: 1.340.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Text-CSV_XS
+  kit: gentoo
+  original.package.name: dev-perl/Text-CSV_XS
+  original.package.version: 1.340.0

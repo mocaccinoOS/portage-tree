@@ -1,0 +1,12 @@
+name: libarchive-portage
+version: 3.4.3
+category: app-arch
+requires:
+- name: libarchive
+  version: 3.4.3
+  category: app-arch
+labels:
+  emerge.packages: app-arch/libarchive
+  kit: gentoo
+  original.package.name: app-arch/libarchive
+  original.package.version: 3.4.3

@@ -1,0 +1,12 @@
+name: hdf5-portage
+version: 1.10.5
+category: sci-libs
+requires:
+- name: hdf5
+  version: 1.10.5
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/hdf5
+  kit: gentoo
+  original.package.name: sci-libs/hdf5
+  original.package.version: 1.10.5-r1

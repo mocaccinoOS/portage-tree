@@ -1,0 +1,12 @@
+name: hamcrest-core-portage
+version: "1.3"
+category: dev-java-1.3
+requires:
+- name: hamcrest-core
+  version: "1.3"
+  category: dev-java-1.3
+labels:
+  emerge.packages: dev-java/hamcrest-core:1.3
+  kit: gentoo
+  original.package.name: dev-java/hamcrest-core
+  original.package.version: 1.3-r1

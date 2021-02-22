@@ -1,0 +1,12 @@
+name: google-perftools-portage
+version: "2.7"
+category: dev-util
+requires:
+- name: google-perftools
+  version: "2.7"
+  category: dev-util
+labels:
+  emerge.packages: dev-util/google-perftools
+  kit: gentoo
+  original.package.name: dev-util/google-perftools
+  original.package.version: 2.7-r1

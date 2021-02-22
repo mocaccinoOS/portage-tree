@@ -1,0 +1,12 @@
+name: portend-portage
+version: "2.6"
+category: dev-python
+requires:
+- name: portend
+  version: "2.6"
+  category: dev-python
+labels:
+  emerge.packages: dev-python/portend
+  kit: gentoo
+  original.package.name: dev-python/portend
+  original.package.version: "2.6"

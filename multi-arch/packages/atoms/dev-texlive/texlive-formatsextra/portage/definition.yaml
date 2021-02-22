@@ -1,0 +1,12 @@
+name: texlive-formatsextra-portage
+version: "2020"
+category: dev-texlive
+requires:
+- name: texlive-formatsextra
+  version: "2020"
+  category: dev-texlive
+labels:
+  emerge.packages: dev-texlive/texlive-formatsextra
+  kit: gentoo
+  original.package.name: dev-texlive/texlive-formatsextra
+  original.package.version: 2020-r2

@@ -1,0 +1,12 @@
+name: fcitx-portage
+version: 4.2.9.6
+category: app-i18n-4
+requires:
+- name: fcitx
+  version: 4.2.9.6
+  category: app-i18n-4
+labels:
+  emerge.packages: app-i18n/fcitx:4
+  kit: gentoo
+  original.package.name: app-i18n/fcitx
+  original.package.version: 4.2.9.6

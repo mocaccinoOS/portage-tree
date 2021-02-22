@@ -1,0 +1,12 @@
+name: heimdal-portage
+version: 7.6.0
+category: app-crypt
+requires:
+- name: heimdal
+  version: 7.6.0
+  category: app-crypt
+labels:
+  emerge.packages: app-crypt/heimdal
+  kit: gentoo
+  original.package.name: app-crypt/heimdal
+  original.package.version: 7.6.0

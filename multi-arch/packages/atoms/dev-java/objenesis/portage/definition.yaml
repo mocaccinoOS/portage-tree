@@ -1,0 +1,12 @@
+name: objenesis-portage
+version: "1.3"
+category: dev-java
+requires:
+- name: objenesis
+  version: "1.3"
+  category: dev-java
+labels:
+  emerge.packages: dev-java/objenesis
+  kit: gentoo
+  original.package.name: dev-java/objenesis
+  original.package.version: 1.3-r1

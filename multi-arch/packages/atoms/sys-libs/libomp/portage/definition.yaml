@@ -1,0 +1,12 @@
+name: libomp-portage
+version: 10.0.1
+category: sys-libs
+requires:
+- name: libomp
+  version: 10.0.1
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/libomp
+  kit: gentoo
+  original.package.name: sys-libs/libomp
+  original.package.version: 10.0.1

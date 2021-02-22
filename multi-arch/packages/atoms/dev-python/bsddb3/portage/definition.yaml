@@ -1,0 +1,12 @@
+name: bsddb3-portage
+version: 6.2.7
+category: dev-python
+requires:
+- name: bsddb3
+  version: 6.2.7
+  category: dev-python
+labels:
+  emerge.packages: dev-python/bsddb3
+  kit: gentoo
+  original.package.name: dev-python/bsddb3
+  original.package.version: 6.2.7

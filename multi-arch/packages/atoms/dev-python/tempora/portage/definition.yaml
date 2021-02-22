@@ -1,0 +1,12 @@
+name: tempora-portage
+version: 4.0.0
+category: dev-python
+requires:
+- name: tempora
+  version: 4.0.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/tempora
+  kit: gentoo
+  original.package.name: dev-python/tempora
+  original.package.version: 4.0.0

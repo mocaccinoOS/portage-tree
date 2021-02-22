@@ -1,0 +1,12 @@
+name: debianutils-portage
+version: 4.11.1
+category: sys-apps
+requires:
+- name: debianutils
+  version: 4.11.1
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/debianutils
+  kit: gentoo
+  original.package.name: sys-apps/debianutils
+  original.package.version: 4.11.1

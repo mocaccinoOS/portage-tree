@@ -1,0 +1,12 @@
+name: gemato-portage
+version: "16.2"
+category: app-portage
+requires:
+- name: gemato
+  version: "16.2"
+  category: app-portage
+labels:
+  emerge.packages: app-portage/gemato
+  kit: gentoo
+  original.package.name: app-portage/gemato
+  original.package.version: "16.2"

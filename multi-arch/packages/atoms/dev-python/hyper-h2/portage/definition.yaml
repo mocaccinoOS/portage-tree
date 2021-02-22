@@ -1,0 +1,12 @@
+name: hyper-h2-portage
+version: 4.0.0
+category: dev-python
+requires:
+- name: hyper-h2
+  version: 4.0.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/hyper-h2
+  kit: gentoo
+  original.package.name: dev-python/hyper-h2
+  original.package.version: 4.0.0

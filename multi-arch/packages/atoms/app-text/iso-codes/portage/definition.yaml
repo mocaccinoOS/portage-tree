@@ -1,0 +1,12 @@
+name: iso-codes-portage
+version: "4.4"
+category: app-text
+requires:
+- name: iso-codes
+  version: "4.4"
+  category: app-text
+labels:
+  emerge.packages: app-text/iso-codes
+  kit: gentoo
+  original.package.name: app-text/iso-codes
+  original.package.version: "4.4"

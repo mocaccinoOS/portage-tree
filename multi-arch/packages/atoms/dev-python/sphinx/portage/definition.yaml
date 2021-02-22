@@ -1,0 +1,12 @@
+name: sphinx-portage
+version: 3.2.1
+category: dev-python
+requires:
+- name: sphinx
+  version: 3.2.1
+  category: dev-python
+labels:
+  emerge.packages: dev-python/sphinx
+  kit: gentoo
+  original.package.name: dev-python/sphinx
+  original.package.version: 3.2.1

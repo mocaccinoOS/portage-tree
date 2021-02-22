@@ -1,0 +1,12 @@
+name: jinja-portage
+version: 2.11.2
+category: dev-python
+requires:
+- name: jinja
+  version: 2.11.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/jinja
+  kit: gentoo
+  original.package.name: dev-python/jinja
+  original.package.version: 2.11.2-r1

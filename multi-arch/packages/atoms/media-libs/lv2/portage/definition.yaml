@@ -1,0 +1,12 @@
+name: lv2-portage
+version: 1.18.0
+category: media-libs
+requires:
+- name: lv2
+  version: 1.18.0
+  category: media-libs
+labels:
+  emerge.packages: media-libs/lv2
+  kit: gentoo
+  original.package.name: media-libs/lv2
+  original.package.version: 1.18.0

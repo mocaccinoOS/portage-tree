@@ -1,0 +1,12 @@
+name: sssd-portage
+version: 2.3.1
+category: sys-auth
+requires:
+- name: sssd
+  version: 2.3.1
+  category: sys-auth
+labels:
+  emerge.packages: sys-auth/sssd
+  kit: gentoo
+  original.package.name: sys-auth/sssd
+  original.package.version: 2.3.1-r2

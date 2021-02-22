@@ -1,0 +1,12 @@
+name: armadillo-portage
+version: 8.300.2
+category: sci-libs
+requires:
+- name: armadillo
+  version: 8.300.2
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/armadillo
+  kit: gentoo
+  original.package.name: sci-libs/armadillo
+  original.package.version: 8.300.2

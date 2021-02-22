@@ -1,0 +1,12 @@
+name: vamp-plugin-sdk-portage
+version: "2.10"
+category: media-libs
+requires:
+- name: vamp-plugin-sdk
+  version: "2.10"
+  category: media-libs
+labels:
+  emerge.packages: media-libs/vamp-plugin-sdk
+  kit: gentoo
+  original.package.name: media-libs/vamp-plugin-sdk
+  original.package.version: "2.10"

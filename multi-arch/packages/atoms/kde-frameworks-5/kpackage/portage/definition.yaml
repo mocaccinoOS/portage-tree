@@ -1,0 +1,12 @@
+name: kpackage-portage
+version: 5.74.0
+category: kde-frameworks-5
+requires:
+- name: kpackage
+  version: 5.74.0
+  category: kde-frameworks-5
+labels:
+  emerge.packages: kde-frameworks/kpackage:5
+  kit: gentoo
+  original.package.name: kde-frameworks/kpackage
+  original.package.version: 5.74.0-r1

@@ -1,0 +1,12 @@
+name: webtest-portage
+version: 2.0.35
+category: dev-python
+requires:
+- name: webtest
+  version: 2.0.35
+  category: dev-python
+labels:
+  emerge.packages: dev-python/webtest
+  kit: gentoo
+  original.package.name: dev-python/webtest
+  original.package.version: 2.0.35

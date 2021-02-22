@@ -1,0 +1,12 @@
+name: cunit-portage
+version: "2.1"
+category: dev-util
+requires:
+- name: cunit
+  version: "2.1"
+  category: dev-util
+labels:
+  emerge.packages: dev-util/cunit
+  kit: gentoo
+  original.package.name: dev-util/cunit
+  original.package.version: 2.1_p3

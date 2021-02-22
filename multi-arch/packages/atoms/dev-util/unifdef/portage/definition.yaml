@@ -1,0 +1,12 @@
+name: unifdef-portage
+version: "2.10"
+category: dev-util
+requires:
+- name: unifdef
+  version: "2.10"
+  category: dev-util
+labels:
+  emerge.packages: dev-util/unifdef
+  kit: gentoo
+  original.package.name: dev-util/unifdef
+  original.package.version: "2.10"

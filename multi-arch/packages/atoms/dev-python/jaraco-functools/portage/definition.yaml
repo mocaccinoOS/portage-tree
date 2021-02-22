@@ -1,0 +1,12 @@
+name: jaraco-functools-portage
+version: 3.0.1
+category: dev-python
+requires:
+- name: jaraco-functools
+  version: 3.0.1
+  category: dev-python
+labels:
+  emerge.packages: dev-python/jaraco-functools
+  kit: gentoo
+  original.package.name: dev-python/jaraco-functools
+  original.package.version: 3.0.1

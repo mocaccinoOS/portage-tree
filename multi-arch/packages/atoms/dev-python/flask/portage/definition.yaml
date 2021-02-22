@@ -1,0 +1,12 @@
+name: flask-portage
+version: 1.1.2
+category: dev-python
+requires:
+- name: flask
+  version: 1.1.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/flask
+  kit: gentoo
+  original.package.name: dev-python/flask
+  original.package.version: 1.1.2-r1

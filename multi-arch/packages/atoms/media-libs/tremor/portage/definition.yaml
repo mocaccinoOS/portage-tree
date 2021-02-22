@@ -1,0 +1,12 @@
+name: tremor-portage
+version: 0_pre20130223-r2
+category: media-libs
+requires:
+- name: tremor
+  version: 0_pre20130223-r2
+  category: media-libs
+labels:
+  emerge.packages: media-libs/tremor
+  kit: gentoo
+  original.package.name: media-libs/tremor
+  original.package.version: 0_pre20130223-r2

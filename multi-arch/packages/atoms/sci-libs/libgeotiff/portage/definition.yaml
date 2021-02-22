@@ -1,0 +1,12 @@
+name: libgeotiff-portage
+version: 1.5.1
+category: sci-libs
+requires:
+- name: libgeotiff
+  version: 1.5.1
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/libgeotiff
+  kit: gentoo
+  original.package.name: sci-libs/libgeotiff
+  original.package.version: 1.5.1-r1

@@ -1,0 +1,12 @@
+name: ois-portage
+version: "1.3"
+category: dev-games
+requires:
+- name: ois
+  version: "1.3"
+  category: dev-games
+labels:
+  emerge.packages: dev-games/ois
+  kit: gentoo
+  original.package.name: dev-games/ois
+  original.package.version: "1.3"

@@ -1,0 +1,12 @@
+name: http-parser-portage
+version: 2.9.3
+category: net-libs
+requires:
+- name: http-parser
+  version: 2.9.3
+  category: net-libs
+labels:
+  emerge.packages: net-libs/http-parser
+  kit: gentoo
+  original.package.name: net-libs/http-parser
+  original.package.version: 2.9.3

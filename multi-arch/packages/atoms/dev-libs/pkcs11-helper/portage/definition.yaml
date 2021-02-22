@@ -1,0 +1,12 @@
+name: pkcs11-helper-portage
+version: 1.25.1
+category: dev-libs
+requires:
+- name: pkcs11-helper
+  version: 1.25.1
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/pkcs11-helper
+  kit: gentoo
+  original.package.name: dev-libs/pkcs11-helper
+  original.package.version: 1.25.1

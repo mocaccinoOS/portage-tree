@@ -1,0 +1,12 @@
+name: xl2tpd-portage
+version: 1.3.10
+category: net-dialup
+requires:
+- name: xl2tpd
+  version: 1.3.10
+  category: net-dialup
+labels:
+  emerge.packages: net-dialup/xl2tpd
+  kit: gentoo
+  original.package.name: net-dialup/xl2tpd
+  original.package.version: 1.3.10

@@ -1,0 +1,12 @@
+name: ibm-powerpc-utils-portage
+version: 1.3.8
+category: sys-apps
+requires:
+- name: ibm-powerpc-utils
+  version: 1.3.8
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/ibm-powerpc-utils
+  kit: gentoo
+  original.package.name: sys-apps/ibm-powerpc-utils
+  original.package.version: 1.3.8-r1

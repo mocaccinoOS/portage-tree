@@ -1,0 +1,12 @@
+name: pybind11-portage
+version: 2.5.0
+category: dev-python
+requires:
+- name: pybind11
+  version: 2.5.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/pybind11
+  kit: gentoo
+  original.package.name: dev-python/pybind11
+  original.package.version: 2.5.0

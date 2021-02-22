@@ -1,0 +1,12 @@
+name: cfortran-portage
+version: "4.4"
+category: dev-lang
+requires:
+- name: cfortran
+  version: "4.4"
+  category: dev-lang
+labels:
+  emerge.packages: dev-lang/cfortran
+  kit: gentoo
+  original.package.name: dev-lang/cfortran
+  original.package.version: 4.4-r3

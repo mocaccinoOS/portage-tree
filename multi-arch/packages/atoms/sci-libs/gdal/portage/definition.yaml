@@ -1,0 +1,12 @@
+name: gdal-portage
+version: 3.0.4
+category: sci-libs
+requires:
+- name: gdal
+  version: 3.0.4
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/gdal
+  kit: gentoo
+  original.package.name: sci-libs/gdal
+  original.package.version: 3.0.4-r1

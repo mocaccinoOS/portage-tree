@@ -1,0 +1,12 @@
+name: cheroot-portage
+version: 8.4.4
+category: dev-python
+requires:
+- name: cheroot
+  version: 8.4.4
+  category: dev-python
+labels:
+  emerge.packages: dev-python/cheroot
+  kit: gentoo
+  original.package.name: dev-python/cheroot
+  original.package.version: 8.4.4

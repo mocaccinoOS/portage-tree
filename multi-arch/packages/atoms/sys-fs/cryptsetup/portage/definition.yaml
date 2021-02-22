@@ -1,0 +1,12 @@
+name: cryptsetup-portage
+version: 2.3.2
+category: sys-fs
+requires:
+- name: cryptsetup
+  version: 2.3.2
+  category: sys-fs
+labels:
+  emerge.packages: sys-fs/cryptsetup
+  kit: gentoo
+  original.package.name: sys-fs/cryptsetup
+  original.package.version: 2.3.2

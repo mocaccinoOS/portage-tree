@@ -1,0 +1,12 @@
+name: xxhash-portage
+version: 0.7.3
+category: dev-libs
+requires:
+- name: xxhash
+  version: 0.7.3
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/xxhash
+  kit: gentoo
+  original.package.name: dev-libs/xxhash
+  original.package.version: 0.7.3

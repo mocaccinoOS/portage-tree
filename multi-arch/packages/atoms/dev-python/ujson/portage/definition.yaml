@@ -1,0 +1,12 @@
+name: ujson-portage
+version: 3.2.0
+category: dev-python
+requires:
+- name: ujson
+  version: 3.2.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/ujson
+  kit: gentoo
+  original.package.name: dev-python/ujson
+  original.package.version: 3.2.0

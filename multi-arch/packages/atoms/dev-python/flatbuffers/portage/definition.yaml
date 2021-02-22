@@ -1,0 +1,12 @@
+name: flatbuffers-portage
+version: "1.12"
+category: dev-python
+requires:
+- name: flatbuffers
+  version: "1.12"
+  category: dev-python
+labels:
+  emerge.packages: dev-python/flatbuffers
+  kit: gentoo
+  original.package.name: dev-python/flatbuffers
+  original.package.version: "1.12"

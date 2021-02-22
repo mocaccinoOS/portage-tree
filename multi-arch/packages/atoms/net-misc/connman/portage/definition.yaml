@@ -1,0 +1,12 @@
+name: connman-portage
+version: "1.38"
+category: net-misc
+requires:
+- name: connman
+  version: "1.38"
+  category: net-misc
+labels:
+  emerge.packages: net-misc/connman
+  kit: gentoo
+  original.package.name: net-misc/connman
+  original.package.version: "1.38"

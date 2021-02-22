@@ -1,0 +1,12 @@
+name: file-portage
+version: "5.39"
+category: sys-apps
+requires:
+- name: file
+  version: "5.39"
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/file
+  kit: gentoo
+  original.package.name: sys-apps/file
+  original.package.version: 5.39-r3

@@ -1,0 +1,12 @@
+name: argyllcms-portage
+version: 2.1.2
+category: media-gfx
+requires:
+- name: argyllcms
+  version: 2.1.2
+  category: media-gfx
+labels:
+  emerge.packages: media-gfx/argyllcms
+  kit: gentoo
+  original.package.name: media-gfx/argyllcms
+  original.package.version: 2.1.2

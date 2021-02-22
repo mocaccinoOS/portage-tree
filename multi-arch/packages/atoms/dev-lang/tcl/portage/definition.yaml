@@ -1,0 +1,12 @@
+name: tcl-portage
+version: 8.6.8
+category: dev-lang
+requires:
+- name: tcl
+  version: 8.6.8
+  category: dev-lang
+labels:
+  emerge.packages: dev-lang/tcl
+  kit: gentoo
+  original.package.name: dev-lang/tcl
+  original.package.version: 8.6.8

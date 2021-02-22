@@ -1,0 +1,12 @@
+name: protobuf-portage
+version: 3.12.4
+category: dev-libs
+requires:
+- name: protobuf
+  version: 3.12.4
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/protobuf
+  kit: gentoo
+  original.package.name: dev-libs/protobuf
+  original.package.version: 3.12.4

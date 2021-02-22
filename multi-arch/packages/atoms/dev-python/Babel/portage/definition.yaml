@@ -1,0 +1,12 @@
+name: Babel-portage
+version: 2.8.0
+category: dev-python
+requires:
+- name: Babel
+  version: 2.8.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/Babel
+  kit: gentoo
+  original.package.name: dev-python/Babel
+  original.package.version: 2.8.0-r2

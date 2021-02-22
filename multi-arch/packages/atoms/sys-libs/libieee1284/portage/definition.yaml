@@ -1,0 +1,12 @@
+name: libieee1284-portage
+version: 0.2.11
+category: sys-libs
+requires:
+- name: libieee1284
+  version: 0.2.11
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/libieee1284
+  kit: gentoo
+  original.package.name: sys-libs/libieee1284
+  original.package.version: 0.2.11-r8

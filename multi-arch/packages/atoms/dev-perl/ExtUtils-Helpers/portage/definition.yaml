@@ -1,0 +1,12 @@
+name: ExtUtils-Helpers-portage
+version: 0.26.0
+category: dev-perl
+requires:
+- name: ExtUtils-Helpers
+  version: 0.26.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/ExtUtils-Helpers
+  kit: gentoo
+  original.package.name: dev-perl/ExtUtils-Helpers
+  original.package.version: 0.26.0

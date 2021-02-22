@@ -1,0 +1,12 @@
+name: libaacs-portage
+version: 0.11.0
+category: media-libs
+requires:
+- name: libaacs
+  version: 0.11.0
+  category: media-libs
+labels:
+  emerge.packages: media-libs/libaacs
+  kit: gentoo
+  original.package.name: media-libs/libaacs
+  original.package.version: 0.11.0

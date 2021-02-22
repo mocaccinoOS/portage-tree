@@ -1,0 +1,12 @@
+name: e2fsprogs-portage
+version: 1.45.5
+category: sys-fs
+requires:
+- name: e2fsprogs
+  version: 1.45.5
+  category: sys-fs
+labels:
+  emerge.packages: sys-fs/e2fsprogs
+  kit: gentoo
+  original.package.name: sys-fs/e2fsprogs
+  original.package.version: 1.45.5

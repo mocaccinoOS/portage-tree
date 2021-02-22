@@ -1,0 +1,12 @@
+name: xorg-cf-files-portage
+version: 1.0.6
+category: x11-misc
+requires:
+- name: xorg-cf-files
+  version: 1.0.6
+  category: x11-misc
+labels:
+  emerge.packages: x11-misc/xorg-cf-files
+  kit: gentoo
+  original.package.name: x11-misc/xorg-cf-files
+  original.package.version: 1.0.6-r1

@@ -1,0 +1,12 @@
+name: sane-backends-portage
+version: 1.0.30
+category: media-gfx
+requires:
+- name: sane-backends
+  version: 1.0.30
+  category: media-gfx
+labels:
+  emerge.packages: media-gfx/sane-backends
+  kit: gentoo
+  original.package.name: media-gfx/sane-backends
+  original.package.version: 1.0.30-r2

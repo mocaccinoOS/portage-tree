@@ -1,0 +1,12 @@
+name: jaraco-classes-portage
+version: 3.1.0
+category: dev-python
+requires:
+- name: jaraco-classes
+  version: 3.1.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/jaraco-classes
+  kit: gentoo
+  original.package.name: dev-python/jaraco-classes
+  original.package.version: 3.1.0

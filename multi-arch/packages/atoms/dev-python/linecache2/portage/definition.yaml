@@ -1,0 +1,12 @@
+name: linecache2-portage
+version: 1.0.0
+category: dev-python
+requires:
+- name: linecache2
+  version: 1.0.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/linecache2
+  kit: gentoo
+  original.package.name: dev-python/linecache2
+  original.package.version: 1.0.0-r1

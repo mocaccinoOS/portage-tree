@@ -1,0 +1,12 @@
+name: rtkit-portage
+version: "0.12"
+category: sys-auth
+requires:
+- name: rtkit
+  version: "0.12"
+  category: sys-auth
+labels:
+  emerge.packages: sys-auth/rtkit
+  kit: gentoo
+  original.package.name: sys-auth/rtkit
+  original.package.version: 0.12-r1

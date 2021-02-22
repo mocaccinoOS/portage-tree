@@ -1,0 +1,12 @@
+name: R-portage
+version: 3.4.1
+category: dev-lang
+requires:
+- name: R
+  version: 3.4.1
+  category: dev-lang
+labels:
+  emerge.packages: dev-lang/R
+  kit: gentoo
+  original.package.name: dev-lang/R
+  original.package.version: 3.4.1

@@ -1,0 +1,12 @@
+name: nv-codec-headers-portage
+version: 9.1.23.1
+category: media-libs
+requires:
+- name: nv-codec-headers
+  version: 9.1.23.1
+  category: media-libs
+labels:
+  emerge.packages: media-libs/nv-codec-headers
+  kit: gentoo
+  original.package.name: media-libs/nv-codec-headers
+  original.package.version: 9.1.23.1

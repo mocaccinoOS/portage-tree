@@ -1,0 +1,12 @@
+name: Role-Tiny-portage
+version: 2.0.6
+category: dev-perl
+requires:
+- name: Role-Tiny
+  version: 2.0.6
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Role-Tiny
+  kit: gentoo
+  original.package.name: dev-perl/Role-Tiny
+  original.package.version: 2.0.6

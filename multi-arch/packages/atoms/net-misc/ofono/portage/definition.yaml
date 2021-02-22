@@ -1,0 +1,12 @@
+name: ofono-portage
+version: "1.16"
+category: net-misc
+requires:
+- name: ofono
+  version: "1.16"
+  category: net-misc
+labels:
+  emerge.packages: net-misc/ofono
+  kit: gentoo
+  original.package.name: net-misc/ofono
+  original.package.version: "1.16"

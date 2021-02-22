@@ -1,0 +1,12 @@
+name: Log-Dispatch-portage
+version: 2.670.0
+category: dev-perl
+requires:
+- name: Log-Dispatch
+  version: 2.670.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Log-Dispatch
+  kit: gentoo
+  original.package.name: dev-perl/Log-Dispatch
+  original.package.version: 2.670.0

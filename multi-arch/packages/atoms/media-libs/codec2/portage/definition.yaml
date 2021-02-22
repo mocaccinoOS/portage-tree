@@ -1,0 +1,12 @@
+name: codec2-portage
+version: 0.8.1
+category: media-libs
+requires:
+- name: codec2
+  version: 0.8.1
+  category: media-libs
+labels:
+  emerge.packages: media-libs/codec2
+  kit: gentoo
+  original.package.name: media-libs/codec2
+  original.package.version: 0.8.1

@@ -1,0 +1,12 @@
+name: texlive-basic-portage
+version: "2020"
+category: dev-texlive
+requires:
+- name: texlive-basic
+  version: "2020"
+  category: dev-texlive
+labels:
+  emerge.packages: dev-texlive/texlive-basic
+  kit: gentoo
+  original.package.name: dev-texlive/texlive-basic
+  original.package.version: 2020-r1

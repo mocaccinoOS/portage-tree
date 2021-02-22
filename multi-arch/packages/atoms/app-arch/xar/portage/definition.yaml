@@ -1,0 +1,12 @@
+name: xar-portage
+version: "1.8"
+category: app-arch
+requires:
+- name: xar
+  version: "1.8"
+  category: app-arch
+labels:
+  emerge.packages: app-arch/xar
+  kit: gentoo
+  original.package.name: app-arch/xar
+  original.package.version: 1.8-r2

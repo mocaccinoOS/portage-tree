@@ -1,0 +1,12 @@
+name: leveldb-portage
+version: "1.20"
+category: dev-libs
+requires:
+- name: leveldb
+  version: "1.20"
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/leveldb
+  kit: gentoo
+  original.package.name: dev-libs/leveldb
+  original.package.version: "1.20"

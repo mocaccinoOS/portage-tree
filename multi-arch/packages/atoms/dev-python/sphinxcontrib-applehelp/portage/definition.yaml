@@ -1,0 +1,12 @@
+name: sphinxcontrib-applehelp-portage
+version: 1.0.2
+category: dev-python
+requires:
+- name: sphinxcontrib-applehelp
+  version: 1.0.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/sphinxcontrib-applehelp
+  kit: gentoo
+  original.package.name: dev-python/sphinxcontrib-applehelp
+  original.package.version: 1.0.2

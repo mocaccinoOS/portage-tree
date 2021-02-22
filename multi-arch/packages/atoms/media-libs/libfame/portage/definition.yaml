@@ -1,0 +1,12 @@
+name: libfame-portage
+version: 0.9.1
+category: media-libs
+requires:
+- name: libfame
+  version: 0.9.1
+  category: media-libs
+labels:
+  emerge.packages: media-libs/libfame
+  kit: gentoo
+  original.package.name: media-libs/libfame
+  original.package.version: 0.9.1-r2

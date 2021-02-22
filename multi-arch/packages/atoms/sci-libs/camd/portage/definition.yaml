@@ -1,0 +1,12 @@
+name: camd-portage
+version: 2.4.6
+category: sci-libs
+requires:
+- name: camd
+  version: 2.4.6
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/camd
+  kit: gentoo
+  original.package.name: sci-libs/camd
+  original.package.version: 2.4.6

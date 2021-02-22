@@ -1,0 +1,12 @@
+name: dumb-portage
+version: 0.9.3
+category: media-libs
+requires:
+- name: dumb
+  version: 0.9.3
+  category: media-libs
+labels:
+  emerge.packages: media-libs/dumb
+  kit: gentoo
+  original.package.name: media-libs/dumb
+  original.package.version: 0.9.3-r3

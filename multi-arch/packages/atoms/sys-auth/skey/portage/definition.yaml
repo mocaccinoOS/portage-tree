@@ -1,0 +1,12 @@
+name: skey-portage
+version: 1.1.5
+category: sys-auth
+requires:
+- name: skey
+  version: 1.1.5
+  category: sys-auth
+labels:
+  emerge.packages: sys-auth/skey
+  kit: gentoo
+  original.package.name: sys-auth/skey
+  original.package.version: 1.1.5-r11

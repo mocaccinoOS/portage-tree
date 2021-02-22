@@ -1,0 +1,12 @@
+name: pinentry-portage
+version: 1.1.0
+category: app-crypt
+requires:
+- name: pinentry
+  version: 1.1.0
+  category: app-crypt
+labels:
+  emerge.packages: app-crypt/pinentry
+  kit: gentoo
+  original.package.name: app-crypt/pinentry
+  original.package.version: 1.1.0-r3

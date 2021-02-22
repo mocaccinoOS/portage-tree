@@ -10,6 +10,9 @@ requires:
 - name: ca-certificates
   version: '>=0'
   category: app-misc
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 - name: gsettings-desktop-schemas
   version: '>=0'
   category: gnome-base

@@ -1,0 +1,12 @@
+name: texlive-pstricks-portage
+version: "2020"
+category: dev-texlive
+requires:
+- name: texlive-pstricks
+  version: "2020"
+  category: dev-texlive
+labels:
+  emerge.packages: dev-texlive/texlive-pstricks
+  kit: gentoo
+  original.package.name: dev-texlive/texlive-pstricks
+  original.package.version: "2020"

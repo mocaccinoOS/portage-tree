@@ -1,0 +1,12 @@
+name: jaraco-collections-portage
+version: 3.0.0
+category: dev-python
+requires:
+- name: jaraco-collections
+  version: 3.0.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/jaraco-collections
+  kit: gentoo
+  original.package.name: dev-python/jaraco-collections
+  original.package.version: 3.0.0

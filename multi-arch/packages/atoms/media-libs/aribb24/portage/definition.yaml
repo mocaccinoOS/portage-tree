@@ -1,0 +1,12 @@
+name: aribb24-portage
+version: 1.0.3
+category: media-libs
+requires:
+- name: aribb24
+  version: 1.0.3
+  category: media-libs
+labels:
+  emerge.packages: media-libs/aribb24
+  kit: gentoo
+  original.package.name: media-libs/aribb24
+  original.package.version: 1.0.3-r2

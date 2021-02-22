@@ -1,0 +1,12 @@
+name: hyperframe-portage
+version: 6.0.0
+category: dev-python
+requires:
+- name: hyperframe
+  version: 6.0.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/hyperframe
+  kit: gentoo
+  original.package.name: dev-python/hyperframe
+  original.package.version: 6.0.0

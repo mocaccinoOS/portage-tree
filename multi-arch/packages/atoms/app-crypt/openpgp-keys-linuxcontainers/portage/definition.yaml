@@ -1,0 +1,12 @@
+name: openpgp-keys-linuxcontainers-portage
+version: "20201014"
+category: app-crypt
+requires:
+- name: openpgp-keys-linuxcontainers
+  version: "20201014"
+  category: app-crypt
+labels:
+  emerge.packages: app-crypt/openpgp-keys-linuxcontainers
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-linuxcontainers
+  original.package.version: "20201014"

@@ -1,0 +1,12 @@
+name: newt-portage
+version: 0.52.21
+category: dev-libs
+requires:
+- name: newt
+  version: 0.52.21
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/newt
+  kit: gentoo
+  original.package.name: dev-libs/newt
+  original.package.version: 0.52.21-r1

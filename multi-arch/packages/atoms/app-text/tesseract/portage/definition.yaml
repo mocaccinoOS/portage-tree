@@ -1,0 +1,12 @@
+name: tesseract-portage
+version: 4.1.1
+category: app-text
+requires:
+- name: tesseract
+  version: 4.1.1
+  category: app-text
+labels:
+  emerge.packages: app-text/tesseract
+  kit: gentoo
+  original.package.name: app-text/tesseract
+  original.package.version: 4.1.1

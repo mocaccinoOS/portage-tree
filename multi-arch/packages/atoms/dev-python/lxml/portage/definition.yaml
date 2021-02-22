@@ -1,0 +1,12 @@
+name: lxml-portage
+version: 4.5.2
+category: dev-python
+requires:
+- name: lxml
+  version: 4.5.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/lxml
+  kit: gentoo
+  original.package.name: dev-python/lxml
+  original.package.version: 4.5.2-r1

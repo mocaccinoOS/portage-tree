@@ -1,0 +1,12 @@
+name: physfs-portage
+version: 3.0.2
+category: dev-games
+requires:
+- name: physfs
+  version: 3.0.2
+  category: dev-games
+labels:
+  emerge.packages: dev-games/physfs
+  kit: gentoo
+  original.package.name: dev-games/physfs
+  original.package.version: 3.0.2

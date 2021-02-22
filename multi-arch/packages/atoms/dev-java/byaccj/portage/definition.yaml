@@ -1,0 +1,12 @@
+name: byaccj-portage
+version: "1.15"
+category: dev-java
+requires:
+- name: byaccj
+  version: "1.15"
+  category: dev-java
+labels:
+  emerge.packages: dev-java/byaccj
+  kit: gentoo
+  original.package.name: dev-java/byaccj
+  original.package.version: 1.15-r2

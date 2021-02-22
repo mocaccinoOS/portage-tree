@@ -1,0 +1,12 @@
+name: amd-portage
+version: 2.4.6
+category: sci-libs
+requires:
+- name: amd
+  version: 2.4.6
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/amd
+  kit: gentoo
+  original.package.name: sci-libs/amd
+  original.package.version: 2.4.6

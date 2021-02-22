@@ -1,0 +1,12 @@
+name: py-ubjson-portage
+version: 0.16.1
+category: dev-python
+requires:
+- name: py-ubjson
+  version: 0.16.1
+  category: dev-python
+labels:
+  emerge.packages: dev-python/py-ubjson
+  kit: gentoo
+  original.package.name: dev-python/py-ubjson
+  original.package.version: 0.16.1

@@ -19,15 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: qtcore
-  version: '>=0'
-  category: dev-qt-5
 - name: qtgui
   version: '>=0'
   category: dev-qt-5
-- name: libX11
-  version: '>=0'
-  category: x11-libs
 - name: pango
   version: '>=0'
   category: x11-libs

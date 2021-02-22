@@ -1,0 +1,12 @@
+name: namespace-clean-portage
+version: 0.270.0
+category: dev-perl
+requires:
+- name: namespace-clean
+  version: 0.270.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/namespace-clean
+  kit: gentoo
+  original.package.name: dev-perl/namespace-clean
+  original.package.version: 0.270.0

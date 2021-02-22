@@ -1,0 +1,12 @@
+name: lockdev-portage
+version: 1.0.3.1.2
+category: dev-libs
+requires:
+- name: lockdev
+  version: 1.0.3.1.2
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/lockdev
+  kit: gentoo
+  original.package.name: dev-libs/lockdev
+  original.package.version: 1.0.3.1.2-r3

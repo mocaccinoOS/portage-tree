@@ -1,0 +1,12 @@
+name: traceback2-portage
+version: 1.4.0
+category: dev-python
+requires:
+- name: traceback2
+  version: 1.4.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/traceback2
+  kit: gentoo
+  original.package.name: dev-python/traceback2
+  original.package.version: 1.4.0-r1

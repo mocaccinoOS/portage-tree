@@ -1,0 +1,12 @@
+name: cbor2-portage
+version: 5.1.2
+category: dev-python
+requires:
+- name: cbor2
+  version: 5.1.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/cbor2
+  kit: gentoo
+  original.package.name: dev-python/cbor2
+  original.package.version: 5.1.2

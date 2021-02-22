@@ -1,0 +1,12 @@
+name: cherrypy-portage
+version: 18.6.0
+category: dev-python
+requires:
+- name: cherrypy
+  version: 18.6.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/cherrypy
+  kit: gentoo
+  original.package.name: dev-python/cherrypy
+  original.package.version: 18.6.0

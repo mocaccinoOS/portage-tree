@@ -1,0 +1,12 @@
+name: ceph-portage
+version: 14.2.11
+category: sys-cluster
+requires:
+- name: ceph
+  version: 14.2.11
+  category: sys-cluster
+labels:
+  emerge.packages: sys-cluster/ceph
+  kit: gentoo
+  original.package.name: sys-cluster/ceph
+  original.package.version: 14.2.11

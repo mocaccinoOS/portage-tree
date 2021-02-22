@@ -1,0 +1,12 @@
+name: libcxx-portage
+version: 10.0.1
+category: sys-libs
+requires:
+- name: libcxx
+  version: 10.0.1
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/libcxx
+  kit: gentoo
+  original.package.name: sys-libs/libcxx
+  original.package.version: 10.0.1

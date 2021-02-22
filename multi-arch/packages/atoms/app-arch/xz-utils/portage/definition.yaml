@@ -1,0 +1,12 @@
+name: xz-utils-portage
+version: 5.2.5
+category: app-arch
+requires:
+- name: xz-utils
+  version: 5.2.5
+  category: app-arch
+labels:
+  emerge.packages: app-arch/xz-utils
+  kit: gentoo
+  original.package.name: app-arch/xz-utils
+  original.package.version: 5.2.5

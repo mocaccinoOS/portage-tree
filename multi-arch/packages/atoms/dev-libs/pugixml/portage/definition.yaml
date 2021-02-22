@@ -1,0 +1,12 @@
+name: pugixml-portage
+version: "1.10"
+category: dev-libs
+requires:
+- name: pugixml
+  version: "1.10"
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/pugixml
+  kit: gentoo
+  original.package.name: dev-libs/pugixml
+  original.package.version: "1.10"

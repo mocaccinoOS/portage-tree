@@ -1,0 +1,12 @@
+name: olefile-portage
+version: "0.46"
+category: dev-python
+requires:
+- name: olefile
+  version: "0.46"
+  category: dev-python
+labels:
+  emerge.packages: dev-python/olefile
+  kit: gentoo
+  original.package.name: dev-python/olefile
+  original.package.version: 0.46-r1

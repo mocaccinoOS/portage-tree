@@ -1,0 +1,12 @@
+name: numactl-portage
+version: 2.0.12
+category: sys-process
+requires:
+- name: numactl
+  version: 2.0.12
+  category: sys-process
+labels:
+  emerge.packages: sys-process/numactl
+  kit: gentoo
+  original.package.name: sys-process/numactl
+  original.package.version: 2.0.12

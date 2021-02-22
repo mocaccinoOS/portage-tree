@@ -1,0 +1,12 @@
+name: MRO-Compat-portage
+version: 0.130.0
+category: dev-perl
+requires:
+- name: MRO-Compat
+  version: 0.130.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/MRO-Compat
+  kit: gentoo
+  original.package.name: dev-perl/MRO-Compat
+  original.package.version: 0.130.0

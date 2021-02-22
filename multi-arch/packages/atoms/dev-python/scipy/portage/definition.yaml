@@ -1,0 +1,12 @@
+name: scipy-portage
+version: 1.5.2
+category: dev-python
+requires:
+- name: scipy
+  version: 1.5.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/scipy
+  kit: gentoo
+  original.package.name: dev-python/scipy
+  original.package.version: 1.5.2

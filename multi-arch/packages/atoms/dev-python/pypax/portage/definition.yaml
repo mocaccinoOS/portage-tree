@@ -1,0 +1,12 @@
+name: pypax-portage
+version: 0.9.5
+category: dev-python
+requires:
+- name: pypax
+  version: 0.9.5
+  category: dev-python
+labels:
+  emerge.packages: dev-python/pypax
+  kit: gentoo
+  original.package.name: dev-python/pypax
+  original.package.version: 0.9.5

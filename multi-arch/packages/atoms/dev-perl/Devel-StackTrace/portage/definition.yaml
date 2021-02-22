@@ -1,0 +1,12 @@
+name: Devel-StackTrace-portage
+version: 2.20.0
+category: dev-perl
+requires:
+- name: Devel-StackTrace
+  version: 2.20.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Devel-StackTrace
+  kit: gentoo
+  original.package.name: dev-perl/Devel-StackTrace
+  original.package.version: 2.20.0

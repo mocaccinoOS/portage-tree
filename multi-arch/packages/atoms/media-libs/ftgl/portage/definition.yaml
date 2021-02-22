@@ -1,0 +1,12 @@
+name: ftgl-portage
+version: 2.1.3
+category: media-libs
+requires:
+- name: ftgl
+  version: 2.1.3
+  category: media-libs
+labels:
+  emerge.packages: media-libs/ftgl
+  kit: gentoo
+  original.package.name: media-libs/ftgl
+  original.package.version: 2.1.3_rc5

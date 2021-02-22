@@ -1,0 +1,12 @@
+steps:
+- |
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- LUET_PORTAGE_PKGFILES=0
+- LUET_PORTAGE_PKGMETA=1
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
+package_dir: /{{ .Values.name }}
+requires:
+- name: hpack
+  version: 4.0.0
+  category: dev-python

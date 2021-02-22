@@ -1,0 +1,12 @@
+name: hwloc-portage
+version: 1.11.13
+category: sys-apps
+requires:
+- name: hwloc
+  version: 1.11.13
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/hwloc
+  kit: gentoo
+  original.package.name: sys-apps/hwloc
+  original.package.version: 1.11.13

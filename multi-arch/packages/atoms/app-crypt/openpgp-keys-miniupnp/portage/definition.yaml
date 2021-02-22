@@ -1,0 +1,12 @@
+name: openpgp-keys-miniupnp-portage
+version: "20201006"
+category: app-crypt
+requires:
+- name: openpgp-keys-miniupnp
+  version: "20201006"
+  category: app-crypt
+labels:
+  emerge.packages: app-crypt/openpgp-keys-miniupnp
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-miniupnp
+  original.package.version: "20201006"

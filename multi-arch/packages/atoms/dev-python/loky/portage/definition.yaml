@@ -1,0 +1,12 @@
+name: loky-portage
+version: 2.9.0
+category: dev-python
+requires:
+- name: loky
+  version: 2.9.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/loky
+  kit: gentoo
+  original.package.name: dev-python/loky
+  original.package.version: 2.9.0

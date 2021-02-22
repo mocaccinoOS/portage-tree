@@ -1,0 +1,12 @@
+name: alabaster-portage
+version: 0.7.12
+category: dev-python
+requires:
+- name: alabaster
+  version: 0.7.12
+  category: dev-python
+labels:
+  emerge.packages: dev-python/alabaster
+  kit: gentoo
+  original.package.name: dev-python/alabaster
+  original.package.version: 0.7.12

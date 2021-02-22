@@ -1,0 +1,12 @@
+name: ebdftopcf-portage
+version: "2"
+category: media-gfx
+requires:
+- name: ebdftopcf
+  version: "2"
+  category: media-gfx
+labels:
+  emerge.packages: media-gfx/ebdftopcf
+  kit: gentoo
+  original.package.name: media-gfx/ebdftopcf
+  original.package.version: "2"

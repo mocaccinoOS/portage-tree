@@ -1,0 +1,12 @@
+name: nas-portage
+version: 1.9.4
+category: media-libs
+requires:
+- name: nas
+  version: 1.9.4
+  category: media-libs
+labels:
+  emerge.packages: media-libs/nas
+  kit: gentoo
+  original.package.name: media-libs/nas
+  original.package.version: 1.9.4-r2

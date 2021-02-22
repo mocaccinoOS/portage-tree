@@ -1,0 +1,12 @@
+name: zziplib-portage
+version: 0.13.71
+category: dev-libs
+requires:
+- name: zziplib
+  version: 0.13.71
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/zziplib
+  kit: gentoo
+  original.package.name: dev-libs/zziplib
+  original.package.version: 0.13.71-r2

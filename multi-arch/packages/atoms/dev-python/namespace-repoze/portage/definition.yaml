@@ -1,0 +1,12 @@
+name: namespace-repoze-portage
+version: "1"
+category: dev-python
+requires:
+- name: namespace-repoze
+  version: "1"
+  category: dev-python
+labels:
+  emerge.packages: dev-python/namespace-repoze
+  kit: gentoo
+  original.package.name: dev-python/namespace-repoze
+  original.package.version: "1"

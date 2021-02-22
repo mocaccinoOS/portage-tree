@@ -1,0 +1,12 @@
+name: mpi4py-portage
+version: 3.0.3
+category: dev-python
+requires:
+- name: mpi4py
+  version: 3.0.3
+  category: dev-python
+labels:
+  emerge.packages: dev-python/mpi4py
+  kit: gentoo
+  original.package.name: dev-python/mpi4py
+  original.package.version: 3.0.3

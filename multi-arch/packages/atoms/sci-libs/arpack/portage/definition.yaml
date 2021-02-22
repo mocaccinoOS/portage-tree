@@ -1,0 +1,12 @@
+name: arpack-portage
+version: 3.7.0
+category: sci-libs
+requires:
+- name: arpack
+  version: 3.7.0
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/arpack
+  kit: gentoo
+  original.package.name: sci-libs/arpack
+  original.package.version: 3.7.0

@@ -1,0 +1,12 @@
+name: jflex-portage
+version: 1.6.1
+category: dev-java
+requires:
+- name: jflex
+  version: 1.6.1
+  category: dev-java
+labels:
+  emerge.packages: dev-java/jflex
+  kit: gentoo
+  original.package.name: dev-java/jflex
+  original.package.version: 1.6.1

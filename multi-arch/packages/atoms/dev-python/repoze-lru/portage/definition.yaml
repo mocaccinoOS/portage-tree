@@ -1,0 +1,12 @@
+name: repoze-lru-portage
+version: "0.7"
+category: dev-python
+requires:
+- name: repoze-lru
+  version: "0.7"
+  category: dev-python
+labels:
+  emerge.packages: dev-python/repoze-lru
+  kit: gentoo
+  original.package.name: dev-python/repoze-lru
+  original.package.version: 0.7-r1

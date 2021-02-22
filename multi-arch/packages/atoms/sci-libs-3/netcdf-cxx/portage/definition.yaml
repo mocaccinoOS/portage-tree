@@ -1,0 +1,12 @@
+name: netcdf-cxx-portage
+version: "4.2"
+category: sci-libs-3
+requires:
+- name: netcdf-cxx
+  version: "4.2"
+  category: sci-libs-3
+labels:
+  emerge.packages: sci-libs/netcdf-cxx:3
+  kit: gentoo
+  original.package.name: sci-libs/netcdf-cxx
+  original.package.version: 4.2-r300

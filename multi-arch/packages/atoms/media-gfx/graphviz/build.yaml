@@ -61,6 +61,9 @@ requires:
 - name: flex
   version: '>=0'
   category: sys-devel
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3
 - name: libXaw
   version: '>=0'
   category: x11-libs

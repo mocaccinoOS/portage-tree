@@ -1,0 +1,12 @@
+name: less-portage
+version: "563"
+category: sys-apps
+requires:
+- name: less
+  version: "563"
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/less
+  kit: gentoo
+  original.package.name: sys-apps/less
+  original.package.version: 563-r1

@@ -1,0 +1,12 @@
+name: ktextwidgets-portage
+version: 5.74.0
+category: kde-frameworks-5
+requires:
+- name: ktextwidgets
+  version: 5.74.0
+  category: kde-frameworks-5
+labels:
+  emerge.packages: kde-frameworks/ktextwidgets:5
+  kit: gentoo
+  original.package.name: kde-frameworks/ktextwidgets
+  original.package.version: 5.74.0

@@ -1,0 +1,12 @@
+name: libharu-portage
+version: 2.3.0
+category: media-libs
+requires:
+- name: libharu
+  version: 2.3.0
+  category: media-libs
+labels:
+  emerge.packages: media-libs/libharu
+  kit: gentoo
+  original.package.name: media-libs/libharu
+  original.package.version: 2.3.0-r2

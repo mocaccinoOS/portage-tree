@@ -1,0 +1,12 @@
+name: lynx-portage
+version: 2.8.9
+category: www-client
+requires:
+- name: lynx
+  version: 2.8.9
+  category: www-client
+labels:
+  emerge.packages: www-client/lynx
+  kit: gentoo
+  original.package.name: www-client/lynx
+  original.package.version: 2.8.9_p1

@@ -1,0 +1,12 @@
+name: rrdtool-portage
+version: 1.7.2
+category: net-analyzer
+requires:
+- name: rrdtool
+  version: 1.7.2
+  category: net-analyzer
+labels:
+  emerge.packages: net-analyzer/rrdtool
+  kit: gentoo
+  original.package.name: net-analyzer/rrdtool
+  original.package.version: 1.7.2

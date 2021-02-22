@@ -1,0 +1,12 @@
+name: snappy-portage
+version: 0.5.1
+category: dev-python
+requires:
+- name: snappy
+  version: 0.5.1
+  category: dev-python
+labels:
+  emerge.packages: dev-python/snappy
+  kit: gentoo
+  original.package.name: dev-python/snappy
+  original.package.version: 0.5.1-r1

@@ -1,0 +1,12 @@
+name: clisp-portage
+version: 2.49.92
+category: dev-lisp-2
+requires:
+- name: clisp
+  version: 2.49.92
+  category: dev-lisp-2
+labels:
+  emerge.packages: dev-lisp/clisp:2
+  kit: gentoo
+  original.package.name: dev-lisp/clisp
+  original.package.version: 2.49.92

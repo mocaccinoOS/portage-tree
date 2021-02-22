@@ -1,0 +1,12 @@
+name: setuptools-portage
+version: 50.3.0
+category: dev-python
+requires:
+- name: setuptools
+  version: 50.3.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/setuptools
+  kit: gentoo
+  original.package.name: dev-python/setuptools
+  original.package.version: 50.3.0

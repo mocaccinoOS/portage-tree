@@ -1,0 +1,12 @@
+name: wsaccel-portage
+version: 0.6.2
+category: dev-python
+requires:
+- name: wsaccel
+  version: 0.6.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/wsaccel
+  kit: gentoo
+  original.package.name: dev-python/wsaccel
+  original.package.version: 0.6.2_p20170108

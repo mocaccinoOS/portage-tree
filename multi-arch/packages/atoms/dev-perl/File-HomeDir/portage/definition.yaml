@@ -1,0 +1,12 @@
+name: File-HomeDir-portage
+version: 1.2.0
+category: dev-perl
+requires:
+- name: File-HomeDir
+  version: 1.2.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/File-HomeDir
+  kit: gentoo
+  original.package.name: dev-perl/File-HomeDir
+  original.package.version: 1.2.0

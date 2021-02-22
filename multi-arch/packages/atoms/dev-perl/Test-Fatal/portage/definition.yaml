@@ -1,0 +1,12 @@
+name: Test-Fatal-portage
+version: 0.14.0
+category: dev-perl
+requires:
+- name: Test-Fatal
+  version: 0.14.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Test-Fatal
+  kit: gentoo
+  original.package.name: dev-perl/Test-Fatal
+  original.package.version: 0.14.0

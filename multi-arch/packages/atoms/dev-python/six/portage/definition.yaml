@@ -1,0 +1,12 @@
+name: six-portage
+version: 1.15.0
+category: dev-python
+requires:
+- name: six
+  version: 1.15.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/six
+  kit: gentoo
+  original.package.name: dev-python/six
+  original.package.version: 1.15.0-r1

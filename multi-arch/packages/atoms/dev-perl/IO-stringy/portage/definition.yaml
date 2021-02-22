@@ -1,0 +1,12 @@
+name: IO-stringy-portage
+version: 2.111.0
+category: dev-perl
+requires:
+- name: IO-stringy
+  version: 2.111.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/IO-stringy
+  kit: gentoo
+  original.package.name: dev-perl/IO-stringy
+  original.package.version: 2.111.0

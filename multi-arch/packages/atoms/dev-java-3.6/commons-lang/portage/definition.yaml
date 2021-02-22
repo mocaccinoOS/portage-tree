@@ -1,0 +1,12 @@
+name: commons-lang-portage
+version: "3.6"
+category: dev-java-3.6
+requires:
+- name: commons-lang
+  version: "3.6"
+  category: dev-java-3.6
+labels:
+  emerge.packages: dev-java/commons-lang:3.6
+  kit: gentoo
+  original.package.name: dev-java/commons-lang
+  original.package.version: "3.6"

@@ -1,0 +1,12 @@
+name: valgrind-portage
+version: 3.16.1
+category: dev-util
+requires:
+- name: valgrind
+  version: 3.16.1
+  category: dev-util
+labels:
+  emerge.packages: dev-util/valgrind
+  kit: gentoo
+  original.package.name: dev-util/valgrind
+  original.package.version: 3.16.1

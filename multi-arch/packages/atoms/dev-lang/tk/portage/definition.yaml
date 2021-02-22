@@ -1,0 +1,12 @@
+name: tk-portage
+version: 8.6.8
+category: dev-lang
+requires:
+- name: tk
+  version: 8.6.8
+  category: dev-lang
+labels:
+  emerge.packages: dev-lang/tk
+  kit: gentoo
+  original.package.name: dev-lang/tk
+  original.package.version: 8.6.8

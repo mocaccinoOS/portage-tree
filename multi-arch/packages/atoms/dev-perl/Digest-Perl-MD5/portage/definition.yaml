@@ -1,0 +1,12 @@
+name: Digest-Perl-MD5-portage
+version: 1.900.0
+category: dev-perl
+requires:
+- name: Digest-Perl-MD5
+  version: 1.900.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Digest-Perl-MD5
+  kit: gentoo
+  original.package.name: dev-perl/Digest-Perl-MD5
+  original.package.version: 1.900.0

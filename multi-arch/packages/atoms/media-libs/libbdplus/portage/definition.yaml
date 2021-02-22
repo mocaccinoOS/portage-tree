@@ -1,0 +1,12 @@
+name: libbdplus-portage
+version: 0.1.2
+category: media-libs
+requires:
+- name: libbdplus
+  version: 0.1.2
+  category: media-libs
+labels:
+  emerge.packages: media-libs/libbdplus
+  kit: gentoo
+  original.package.name: media-libs/libbdplus
+  original.package.version: 0.1.2

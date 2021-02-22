@@ -1,0 +1,12 @@
+name: ilmbase-portage
+version: 2.5.2
+category: media-libs
+requires:
+- name: ilmbase
+  version: 2.5.2
+  category: media-libs
+labels:
+  emerge.packages: media-libs/ilmbase
+  kit: gentoo
+  original.package.name: media-libs/ilmbase
+  original.package.version: 2.5.2

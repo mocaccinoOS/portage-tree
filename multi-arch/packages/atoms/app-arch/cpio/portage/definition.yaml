@@ -1,0 +1,12 @@
+name: cpio-portage
+version: "2.12"
+category: app-arch
+requires:
+- name: cpio
+  version: "2.12"
+  category: app-arch
+labels:
+  emerge.packages: app-arch/cpio
+  kit: gentoo
+  original.package.name: app-arch/cpio
+  original.package.version: 2.12-r1

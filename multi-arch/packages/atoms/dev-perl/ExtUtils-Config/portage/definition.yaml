@@ -1,0 +1,12 @@
+name: ExtUtils-Config-portage
+version: 0.8.0
+category: dev-perl
+requires:
+- name: ExtUtils-Config
+  version: 0.8.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/ExtUtils-Config
+  kit: gentoo
+  original.package.name: dev-perl/ExtUtils-Config
+  original.package.version: 0.8.0

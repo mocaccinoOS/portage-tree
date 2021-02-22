@@ -1,0 +1,12 @@
+name: elfutils-portage
+version: "0.181"
+category: dev-libs
+requires:
+- name: elfutils
+  version: "0.181"
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/elfutils
+  kit: gentoo
+  original.package.name: dev-libs/elfutils
+  original.package.version: "0.181"

@@ -1,0 +1,12 @@
+name: pypng-portage
+version: 0.0.20
+category: dev-python
+requires:
+- name: pypng
+  version: 0.0.20
+  category: dev-python
+labels:
+  emerge.packages: dev-python/pypng
+  kit: gentoo
+  original.package.name: dev-python/pypng
+  original.package.version: 0.0.20

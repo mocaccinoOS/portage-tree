@@ -1,0 +1,12 @@
+name: ffcall-portage
+version: "2.1"
+category: dev-libs
+requires:
+- name: ffcall
+  version: "2.1"
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/ffcall
+  kit: gentoo
+  original.package.name: dev-libs/ffcall
+  original.package.version: "2.1"

@@ -49,3 +49,6 @@ requires:
 - name: vtk
   version: '>=0'
   category: sci-libs
+- name: gtk+
+  version: '>=0'
+  category: x11-libs-3

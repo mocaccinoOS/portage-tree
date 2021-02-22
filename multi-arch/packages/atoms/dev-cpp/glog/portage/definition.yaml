@@ -1,0 +1,12 @@
+name: glog-portage
+version: 0.4.0
+category: dev-cpp
+requires:
+- name: glog
+  version: 0.4.0
+  category: dev-cpp
+labels:
+  emerge.packages: dev-cpp/glog
+  kit: gentoo
+  original.package.name: dev-cpp/glog
+  original.package.version: 0.4.0

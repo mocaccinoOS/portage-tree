@@ -1,0 +1,12 @@
+name: Module-Runtime-portage
+version: 0.16.0
+category: dev-perl
+requires:
+- name: Module-Runtime
+  version: 0.16.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Module-Runtime
+  kit: gentoo
+  original.package.name: dev-perl/Module-Runtime
+  original.package.version: 0.16.0

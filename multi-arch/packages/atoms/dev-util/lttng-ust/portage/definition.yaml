@@ -1,0 +1,12 @@
+name: lttng-ust-portage
+version: 2.11.0
+category: dev-util
+requires:
+- name: lttng-ust
+  version: 2.11.0
+  category: dev-util
+labels:
+  emerge.packages: dev-util/lttng-ust
+  kit: gentoo
+  original.package.name: dev-util/lttng-ust
+  original.package.version: 2.11.0

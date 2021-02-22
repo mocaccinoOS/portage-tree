@@ -1,0 +1,12 @@
+name: prettytable-portage
+version: 0.7.2
+category: dev-python
+requires:
+- name: prettytable
+  version: 0.7.2
+  category: dev-python
+labels:
+  emerge.packages: dev-python/prettytable
+  kit: gentoo
+  original.package.name: dev-python/prettytable
+  original.package.version: 0.7.2-r1

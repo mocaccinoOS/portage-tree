@@ -1,0 +1,12 @@
+name: avalon-logkit-portage
+version: "2.1"
+category: dev-java-2.0
+requires:
+- name: avalon-logkit
+  version: "2.1"
+  category: dev-java-2.0
+labels:
+  emerge.packages: dev-java/avalon-logkit:2.0
+  kit: gentoo
+  original.package.name: dev-java/avalon-logkit
+  original.package.version: 2.1-r8

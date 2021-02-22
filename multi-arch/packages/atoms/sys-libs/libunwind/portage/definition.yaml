@@ -1,0 +1,12 @@
+name: libunwind-portage
+version: 1.4.0
+category: sys-libs
+requires:
+- name: libunwind
+  version: 1.4.0
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/libunwind
+  kit: gentoo
+  original.package.name: sys-libs/libunwind
+  original.package.version: 1.4.0

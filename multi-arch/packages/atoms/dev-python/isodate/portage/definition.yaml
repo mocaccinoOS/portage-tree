@@ -1,0 +1,12 @@
+name: isodate-portage
+version: 0.6.0
+category: dev-python
+requires:
+- name: isodate
+  version: 0.6.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/isodate
+  kit: gentoo
+  original.package.name: dev-python/isodate
+  original.package.version: 0.6.0-r1

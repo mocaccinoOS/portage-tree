@@ -1,0 +1,12 @@
+name: qthelp-portage
+version: 5.15.1
+category: dev-qt-5
+requires:
+- name: qthelp
+  version: 5.15.1
+  category: dev-qt-5
+labels:
+  emerge.packages: dev-qt/qthelp:5
+  kit: gentoo
+  original.package.name: dev-qt/qthelp
+  original.package.version: 5.15.1

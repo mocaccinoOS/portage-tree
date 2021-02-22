@@ -1,0 +1,12 @@
+name: umfpack-portage
+version: 5.7.9
+category: sci-libs
+requires:
+- name: umfpack
+  version: 5.7.9
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/umfpack
+  kit: gentoo
+  original.package.name: sci-libs/umfpack
+  original.package.version: 5.7.9

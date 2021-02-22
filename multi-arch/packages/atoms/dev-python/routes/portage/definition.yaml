@@ -1,0 +1,12 @@
+name: routes-portage
+version: 2.4.1
+category: dev-python
+requires:
+- name: routes
+  version: 2.4.1
+  category: dev-python
+labels:
+  emerge.packages: dev-python/routes
+  kit: gentoo
+  original.package.name: dev-python/routes
+  original.package.version: 2.4.1-r1

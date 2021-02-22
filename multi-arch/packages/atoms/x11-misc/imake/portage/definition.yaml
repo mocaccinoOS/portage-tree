@@ -1,0 +1,12 @@
+name: imake-portage
+version: 1.0.8
+category: x11-misc
+requires:
+- name: imake
+  version: 1.0.8
+  category: x11-misc
+labels:
+  emerge.packages: x11-misc/imake
+  kit: gentoo
+  original.package.name: x11-misc/imake
+  original.package.version: 1.0.8

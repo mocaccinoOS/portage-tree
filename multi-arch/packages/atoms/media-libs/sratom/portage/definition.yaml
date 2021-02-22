@@ -1,0 +1,12 @@
+name: sratom-portage
+version: 0.6.6
+category: media-libs
+requires:
+- name: sratom
+  version: 0.6.6
+  category: media-libs
+labels:
+  emerge.packages: media-libs/sratom
+  kit: gentoo
+  original.package.name: media-libs/sratom
+  original.package.version: 0.6.6

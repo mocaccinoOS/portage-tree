@@ -1,0 +1,12 @@
+name: elfix-portage
+version: 0.9.5
+category: sys-apps
+requires:
+- name: elfix
+  version: 0.9.5
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/elfix
+  kit: gentoo
+  original.package.name: sys-apps/elfix
+  original.package.version: 0.9.5

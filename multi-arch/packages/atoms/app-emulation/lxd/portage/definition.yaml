@@ -1,0 +1,12 @@
+name: lxd-portage
+version: 4.0.3
+category: app-emulation
+requires:
+- name: lxd
+  version: 4.0.3
+  category: app-emulation
+labels:
+  emerge.packages: app-emulation/lxd
+  kit: gentoo
+  original.package.name: app-emulation/lxd
+  original.package.version: 4.0.3-r2

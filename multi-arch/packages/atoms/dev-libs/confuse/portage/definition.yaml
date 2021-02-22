@@ -1,0 +1,12 @@
+name: confuse-portage
+version: 3.2.2
+category: dev-libs
+requires:
+- name: confuse
+  version: 3.2.2
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/confuse
+  kit: gentoo
+  original.package.name: dev-libs/confuse
+  original.package.version: 3.2.2

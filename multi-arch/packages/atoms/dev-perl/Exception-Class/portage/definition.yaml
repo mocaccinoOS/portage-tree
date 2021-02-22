@@ -1,0 +1,12 @@
+name: Exception-Class-portage
+version: 1.430.0
+category: dev-perl
+requires:
+- name: Exception-Class
+  version: 1.430.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Exception-Class
+  kit: gentoo
+  original.package.name: dev-perl/Exception-Class
+  original.package.version: 1.430.0

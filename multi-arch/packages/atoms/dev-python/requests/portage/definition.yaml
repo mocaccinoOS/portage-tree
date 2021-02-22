@@ -1,0 +1,12 @@
+name: requests-portage
+version: 2.24.0
+category: dev-python
+requires:
+- name: requests
+  version: 2.24.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/requests
+  kit: gentoo
+  original.package.name: dev-python/requests
+  original.package.version: 2.24.0-r1

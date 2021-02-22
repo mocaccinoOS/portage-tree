@@ -1,0 +1,12 @@
+name: chardet-portage
+version: 3.0.4
+category: dev-python
+requires:
+- name: chardet
+  version: 3.0.4
+  category: dev-python
+labels:
+  emerge.packages: dev-python/chardet
+  kit: gentoo
+  original.package.name: dev-python/chardet
+  original.package.version: 3.0.4-r1

@@ -1,0 +1,12 @@
+name: pyxdg-portage
+version: "0.26"
+category: dev-python
+requires:
+- name: pyxdg
+  version: "0.26"
+  category: dev-python
+labels:
+  emerge.packages: dev-python/pyxdg
+  kit: gentoo
+  original.package.name: dev-python/pyxdg
+  original.package.version: 0.26-r2

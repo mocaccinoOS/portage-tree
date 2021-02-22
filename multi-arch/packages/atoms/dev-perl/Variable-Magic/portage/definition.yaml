@@ -1,0 +1,12 @@
+name: Variable-Magic-portage
+version: 0.620.0
+category: dev-perl
+requires:
+- name: Variable-Magic
+  version: 0.620.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Variable-Magic
+  kit: gentoo
+  original.package.name: dev-perl/Variable-Magic
+  original.package.version: 0.620.0

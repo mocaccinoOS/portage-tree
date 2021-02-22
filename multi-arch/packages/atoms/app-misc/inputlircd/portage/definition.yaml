@@ -1,0 +1,12 @@
+name: inputlircd-portage
+version: 0.0.1_pre15-r2
+category: app-misc
+requires:
+- name: inputlircd
+  version: 0.0.1_pre15-r2
+  category: app-misc
+labels:
+  emerge.packages: app-misc/inputlircd
+  kit: gentoo
+  original.package.name: app-misc/inputlircd
+  original.package.version: 0.0.1_pre15-r2

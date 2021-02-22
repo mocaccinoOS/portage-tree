@@ -1,0 +1,12 @@
+name: jms-portage
+version: "1.1"
+category: java-virtuals
+requires:
+- name: jms
+  version: "1.1"
+  category: java-virtuals
+labels:
+  emerge.packages: java-virtuals/jms
+  kit: gentoo
+  original.package.name: java-virtuals/jms
+  original.package.version: "1.1"

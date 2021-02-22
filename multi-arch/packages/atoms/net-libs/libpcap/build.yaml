@@ -31,9 +31,6 @@ requires:
 - name: automake
   version: '>=0'
   category: sys-devel-1.16
-- name: flex
-  version: '>=0'
-  category: sys-devel
 - name: libtool
   version: '>=0'
   category: sys-devel-2

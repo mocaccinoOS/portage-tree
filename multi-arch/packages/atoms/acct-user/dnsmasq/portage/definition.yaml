@@ -1,0 +1,12 @@
+name: dnsmasq-portage
+version: "0"
+category: acct-user
+requires:
+- name: dnsmasq
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/dnsmasq
+  kit: gentoo
+  original.package.name: acct-user/dnsmasq
+  original.package.version: "0"

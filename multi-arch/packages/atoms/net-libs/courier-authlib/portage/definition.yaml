@@ -1,0 +1,12 @@
+name: courier-authlib-portage
+version: 0.71.0
+category: net-libs
+requires:
+- name: courier-authlib
+  version: 0.71.0
+  category: net-libs
+labels:
+  emerge.packages: net-libs/courier-authlib
+  kit: gentoo
+  original.package.name: net-libs/courier-authlib
+  original.package.version: 0.71.0

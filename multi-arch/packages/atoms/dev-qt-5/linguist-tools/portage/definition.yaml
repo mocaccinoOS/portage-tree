@@ -1,0 +1,12 @@
+name: linguist-tools-portage
+version: 5.15.1
+category: dev-qt-5
+requires:
+- name: linguist-tools
+  version: 5.15.1
+  category: dev-qt-5
+labels:
+  emerge.packages: dev-qt/linguist-tools:5
+  kit: gentoo
+  original.package.name: dev-qt/linguist-tools
+  original.package.version: 5.15.1

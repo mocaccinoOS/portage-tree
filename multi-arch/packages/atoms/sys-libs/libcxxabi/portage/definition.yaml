@@ -1,0 +1,12 @@
+name: libcxxabi-portage
+version: 10.0.1
+category: sys-libs
+requires:
+- name: libcxxabi
+  version: 10.0.1
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/libcxxabi
+  kit: gentoo
+  original.package.name: sys-libs/libcxxabi
+  original.package.version: 10.0.1

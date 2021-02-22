@@ -1,0 +1,12 @@
+name: psutil-portage
+version: 5.7.0
+category: dev-python
+requires:
+- name: psutil
+  version: 5.7.0
+  category: dev-python
+labels:
+  emerge.packages: dev-python/psutil
+  kit: gentoo
+  original.package.name: dev-python/psutil
+  original.package.version: 5.7.0-r1

@@ -1,0 +1,12 @@
+name: dracut-portage
+version: "050"
+category: sys-kernel
+requires:
+- name: dracut
+  version: "050"
+  category: sys-kernel
+labels:
+  emerge.packages: sys-kernel/dracut
+  kit: gentoo
+  original.package.name: sys-kernel/dracut
+  original.package.version: 050-r2

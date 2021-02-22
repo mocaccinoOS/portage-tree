@@ -1,0 +1,12 @@
+name: dvipsk-portage
+version: "2020.1"
+category: app-text
+requires:
+- name: dvipsk
+  version: "2020.1"
+  category: app-text
+labels:
+  emerge.packages: app-text/dvipsk
+  kit: gentoo
+  original.package.name: app-text/dvipsk
+  original.package.version: 2020.1_p20200406

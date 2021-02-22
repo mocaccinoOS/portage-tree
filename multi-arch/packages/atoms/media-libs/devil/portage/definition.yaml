@@ -1,0 +1,12 @@
+name: devil-portage
+version: 1.7.8
+category: media-libs
+requires:
+- name: devil
+  version: 1.7.8
+  category: media-libs
+labels:
+  emerge.packages: media-libs/devil
+  kit: gentoo
+  original.package.name: media-libs/devil
+  original.package.version: 1.7.8-r2

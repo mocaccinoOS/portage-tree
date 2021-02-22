@@ -1,0 +1,12 @@
+name: texlive-fontsrecommended-portage
+version: "2020"
+category: dev-texlive
+requires:
+- name: texlive-fontsrecommended
+  version: "2020"
+  category: dev-texlive
+labels:
+  emerge.packages: dev-texlive/texlive-fontsrecommended
+  kit: gentoo
+  original.package.name: dev-texlive/texlive-fontsrecommended
+  original.package.version: "2020"

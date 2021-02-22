@@ -1,0 +1,12 @@
+name: lirc-portage
+version: 0.10.1
+category: app-misc
+requires:
+- name: lirc
+  version: 0.10.1
+  category: app-misc
+labels:
+  emerge.packages: app-misc/lirc
+  kit: gentoo
+  original.package.name: app-misc/lirc
+  original.package.version: 0.10.1-r3

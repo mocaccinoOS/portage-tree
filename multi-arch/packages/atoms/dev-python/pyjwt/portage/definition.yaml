@@ -1,0 +1,12 @@
+name: pyjwt-portage
+version: 1.7.1
+category: dev-python
+requires:
+- name: pyjwt
+  version: 1.7.1
+  category: dev-python
+labels:
+  emerge.packages: dev-python/pyjwt
+  kit: gentoo
+  original.package.name: dev-python/pyjwt
+  original.package.version: 1.7.1-r1

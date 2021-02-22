@@ -1,0 +1,12 @@
+name: graphene-portage
+version: 1.10.2
+category: media-libs
+requires:
+- name: graphene
+  version: 1.10.2
+  category: media-libs
+labels:
+  emerge.packages: media-libs/graphene
+  kit: gentoo
+  original.package.name: media-libs/graphene
+  original.package.version: 1.10.2

@@ -1,0 +1,12 @@
+name: File-Which-portage
+version: 1.220.0
+category: dev-perl
+requires:
+- name: File-Which
+  version: 1.220.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/File-Which
+  kit: gentoo
+  original.package.name: dev-perl/File-Which
+  original.package.version: 1.220.0

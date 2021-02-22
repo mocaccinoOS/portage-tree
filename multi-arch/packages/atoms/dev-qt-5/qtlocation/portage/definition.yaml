@@ -1,0 +1,12 @@
+name: qtlocation-portage
+version: 5.15.1
+category: dev-qt-5
+requires:
+- name: qtlocation
+  version: 5.15.1
+  category: dev-qt-5
+labels:
+  emerge.packages: dev-qt/qtlocation:5
+  kit: gentoo
+  original.package.name: dev-qt/qtlocation
+  original.package.version: 5.15.1

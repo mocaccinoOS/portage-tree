@@ -1,0 +1,12 @@
+name: argon2-portage
+version: "20190702"
+category: app-crypt
+requires:
+- name: argon2
+  version: "20190702"
+  category: app-crypt
+labels:
+  emerge.packages: app-crypt/argon2
+  kit: gentoo
+  original.package.name: app-crypt/argon2
+  original.package.version: "20190702"

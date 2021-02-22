@@ -1,0 +1,12 @@
+name: xdmf2-portage
+version: "1.0"
+category: sci-libs
+requires:
+- name: xdmf2
+  version: "1.0"
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/xdmf2
+  kit: gentoo
+  original.package.name: sci-libs/xdmf2
+  original.package.version: 1.0_p141226-r4

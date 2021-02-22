@@ -1,0 +1,12 @@
+name: jmock-portage
+version: 2.6.1
+category: dev-java-2
+requires:
+- name: jmock
+  version: 2.6.1
+  category: dev-java-2
+labels:
+  emerge.packages: dev-java/jmock:2
+  kit: gentoo
+  original.package.name: dev-java/jmock
+  original.package.version: 2.6.1

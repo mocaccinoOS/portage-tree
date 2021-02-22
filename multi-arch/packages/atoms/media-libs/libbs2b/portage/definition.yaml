@@ -1,0 +1,12 @@
+name: libbs2b-portage
+version: 3.1.0
+category: media-libs
+requires:
+- name: libbs2b
+  version: 3.1.0
+  category: media-libs
+labels:
+  emerge.packages: media-libs/libbs2b
+  kit: gentoo
+  original.package.name: media-libs/libbs2b
+  original.package.version: 3.1.0-r2

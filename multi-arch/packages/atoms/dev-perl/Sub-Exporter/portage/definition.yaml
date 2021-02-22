@@ -1,0 +1,12 @@
+name: Sub-Exporter-portage
+version: 0.987.0
+category: dev-perl
+requires:
+- name: Sub-Exporter
+  version: 0.987.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Sub-Exporter
+  kit: gentoo
+  original.package.name: dev-perl/Sub-Exporter
+  original.package.version: 0.987.0
