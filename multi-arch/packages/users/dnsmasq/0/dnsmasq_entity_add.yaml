@@ -1,0 +1,8 @@
+kind: "user"
+username: "dnsmasq"
+password: "x"
+uid: 275
+gid: 275
+info: "Created by entities"
+homedir: "/dev/null"
+shell: "/sbin/nologin"
