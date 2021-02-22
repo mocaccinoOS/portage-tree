@@ -37,6 +37,7 @@ skipped_resolutions:
 #  - artefacts/file1.yml
 
 build_template_file: ../templates/build-pkg-uses.yaml.tmpl
+build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
 artefacts:
 - tree: multi-arch/packages/atoms
@@ -99,7 +100,7 @@ artefacts:
       - gdbm
       - gtk
   packages:
-    - dev-lisp/clisp
+    - dev-lisp/clisp:2
 
 - tree: multi-arch/packages/atoms
   uses:
