@@ -1,17 +1,17 @@
 name: python
-version: 3.7.9
+version: "3.7.9+1"
 category: dev-lang-3.7
 use_flags:
+- -build
 - -libressl
 - -test
+- -tk
 - bluetooth
-- build
 - gdbm
 - ncurses
 - readline
 - sqlite
 - ssl
-- tk
 - xml
 requires:
 - name: bzip2
@@ -20,9 +20,6 @@ requires:
 - name: xz-utils
   version: '>=0'
   category: app-arch
-- name: mime-types
-  version: '>=0'
-  category: app-misc
 - name: sqlite
   version: '>=0'
   category: dev-db-3
@@ -32,16 +29,13 @@ requires:
 - name: libffi
   version: '>=0'
   category: dev-libs
-- name: blt
-  version: '>=0'
-  category: dev-tcltk
-- name: tix
-  version: '>=0'
-  category: dev-tcltk
 - name: util-linux
   version: '>=0'
   category: sys-apps
 - name: gdbm
+  version: '>=0'
+  category: sys-libs
+- name: zlib
   version: '>=0'
   category: sys-libs
 description: An interpreted, interactive, object-oriented programming language

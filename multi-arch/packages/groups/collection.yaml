@@ -963,6 +963,7 @@ packages:
 - <<: *group
   description: ""
   name: "tsm"
+  version: "0+6"
 
 - <<: *group
   description: ""
