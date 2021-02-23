@@ -2,26 +2,26 @@ name: qtgui
 version: 5.15.1
 category: dev-qt-5
 use_flags:
+- -eglfs
+- -evdev
 - -gles2-only
 - -test
+- -tslib
+- -tuio
+- -vnc
 - X
 - dbus
 - egl
-- eglfs
-- evdev
 - jpeg
 - libinput
 - png
-- tslib
-- tuio
 - udev
-- vnc
 - vulkan
 requires:
 - name: libinput
   version: '>=0'
   category: dev-libs
-- name: qtnetwork
+- name: qtdbus
   version: '>=0'
   category: dev-qt-5
 - name: gtk-update-icon-cache
@@ -40,9 +40,6 @@ requires:
   version: '>=0'
   category: x11-libs
 - name: libxkbcommon
-  version: '>=0'
-  category: x11-libs
-- name: tslib
   version: '>=0'
   category: x11-libs
 - name: xcb-util-image

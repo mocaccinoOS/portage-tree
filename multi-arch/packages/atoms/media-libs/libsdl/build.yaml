@@ -22,21 +22,15 @@ requires:
 - name: aalib
   version: '>=0'
   category: media-libs
+- name: alsa-lib
+  version: '>=0'
+  category: media-libs
 - name: audiofile
-  version: '>=0'
-  category: media-libs
-- name: libcaca
-  version: '>=0'
-  category: media-libs
-- name: nas
   version: '>=0'
   category: media-libs
 - name: pulseaudio
   version: '>=0'
   category: media-sound
 - name: libXrandr
-  version: '>=0'
-  category: x11-libs
-- name: tslib
   version: '>=0'
   category: x11-libs

@@ -3,10 +3,10 @@ version: 2.70.0
 category: net-libs-2.4
 use_flags:
 - -brotli
+- -gssapi
 - -gtk-doc
-- gssapi
+- -samba
 - introspection
-- samba
 - vala
 requires:
 - name: sqlite
@@ -18,9 +18,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: samba
-  version: '>=0'
-  category: net-fs
 - name: glib-networking
   version: '>=0'
   category: net-libs

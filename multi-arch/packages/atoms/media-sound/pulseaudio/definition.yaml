@@ -5,8 +5,14 @@ use_flags:
 - -doc
 - -elibc_uclibc
 - -elogind
+- -gconf
+- -gtk
 - -libressl
+- -libsamplerate
+- -qt5
 - -selinux
+- -sox
+- -system-wide
 - -test
 - X
 - alsa
@@ -16,20 +22,14 @@ use_flags:
 - dbus
 - elibc_glibc
 - equalizer
-- gconf
 - gdbm
 - glib
-- gtk
 - jack
-- libsamplerate
 - lirc
 - ofono-headset
 - orc
-- qt5
 - realtime
-- sox
 - ssl
-- system-wide
 - systemd
 - tcpd
 - udev
@@ -42,22 +42,16 @@ requires:
 - name: orc
   version: '>=0'
   category: dev-lang
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
 - name: libltdl
   version: '>=0'
   category: dev-libs
-- name: PyQt5
-  version: '>=0'
-  category: dev-python
-- name: gconf
-  version: '>=0'
-  category: gnome-base-2
 - name: libsndfile
   version: '>=0'
   category: media-libs
 - name: sbc
-  version: '>=0'
-  category: media-libs
-- name: soxr
   version: '>=0'
   category: media-libs
 - name: speexdsp
@@ -66,9 +60,6 @@ requires:
 - name: webrtc-audio-processing
   version: '>=0'
   category: media-libs
-- name: alsa-utils
-  version: '>=0'
-  category: media-sound-0.9
 - name: avahi
   version: '>=0'
   category: net-dns
@@ -78,15 +69,18 @@ requires:
 - name: ofono
   version: '>=0'
   category: net-misc
+- name: fftw
+  version: '>=0'
+  category: sci-libs-3.0
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps
 - name: rtkit
   version: '>=0'
   category: sys-auth
-- name: gtk+
+- name: gdbm
   version: '>=0'
-  category: x11-libs-3
+  category: sys-libs
 - name: libXtst
   version: '>=0'
   category: x11-libs

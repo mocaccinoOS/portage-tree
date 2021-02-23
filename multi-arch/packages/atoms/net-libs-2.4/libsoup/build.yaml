@@ -25,6 +25,9 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
 - name: desktop-file-utils
   version: '>=0'
   category: dev-util
@@ -37,12 +40,12 @@ requires:
 - name: ninja
   version: '>=0'
   category: dev-util
-- name: samba
-  version: '>=0'
-  category: net-fs
 - name: libpsl
   version: '>=0'
   category: net-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 - name: shared-mime-info
   version: '>=0'
   category: x11-misc

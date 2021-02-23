@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: libevdev
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: cmake
-  version: '>=0'
-  category: dev-util
-- name: libsdl2
-  version: '>=0'
-  category: media-libs
+  category: layers

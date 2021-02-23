@@ -2,49 +2,31 @@ name: net-snmp
 version: "5.9"
 category: net-analyzer
 use_flags:
+- -X
 - -doc
+- -elf
 - -libressl
+- -lm-sensors
 - -minimal
+- -mysql
+- -netlink
+- -pcap
+- -pci
+- -python
 - -python_single_target_python3_6
 - -python_single_target_python3_8
+- -rpm
 - -selinux
-- X
 - bzip2
-- elf
-- lm-sensors
-- mysql
-- netlink
-- pcap
-- pci
 - perl
-- python
 - python_single_target_python3_7
-- rpm
 - ssl
 - tcpd
 - zlib
 requires:
-- name: rpm
+- name: perl
   version: '>=0'
-  category: app-arch
-- name: mysql-connector-c
-  version: '>=0'
-  category: dev-db
-- name: Tk
-  version: '>=0'
-  category: dev-perl
-- name: setuptools
-  version: '>=0'
-  category: dev-python
-- name: libpcap
-  version: '>=0'
-  category: net-libs
-- name: lm-sensors
-  version: '>=0'
-  category: sys-apps
-- name: pciutils
-  version: '>=0'
-  category: sys-apps
+  category: dev-lang
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps

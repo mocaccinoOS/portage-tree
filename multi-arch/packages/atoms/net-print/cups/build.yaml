@@ -34,10 +34,10 @@ requires:
 - name: avahi
   version: '>=0'
   category: net-dns
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: acl
+  version: '>=0'
+  category: sys-apps
+- name: dbus
   version: '>=0'
   category: sys-apps
 - name: systemd

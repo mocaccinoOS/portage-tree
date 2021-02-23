@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
+- name: build-seed
   version: '>=0'
-  category: dev-lang-3.7
-- name: meson
-  version: '>=0'
-  category: dev-util
-- name: ninja
-  version: '>=0'
-  category: dev-util
+  category: layers

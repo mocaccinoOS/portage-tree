@@ -22,9 +22,6 @@ requires:
 - name: unzip
   version: '>=0'
   category: app-arch
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

@@ -2,34 +2,40 @@ name: rrdtool
 version: 1.7.2
 category: net-analyzer
 use_flags:
+- -dbi
+- -lua
 - -python_single_target_python3_6
 - -python_single_target_python3_8
+- -rados
+- -tcl
 - -test
-- dbi
 - graph
-- lua
 - perl
 - python
 - python_single_target_python3_7
-- rados
-- tcl
 - tcpd
 requires:
-- name: libdbi
-  version: '>=0'
-  category: dev-db
-- name: lua
-  version: '>=0'
-  category: dev-lang
 - name: perl
   version: '>=0'
   category: dev-lang
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: libpng
+  version: '>=0'
+  category: media-libs
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps
-- name: ceph
+- name: cairo
   version: '>=0'
-  category: sys-cluster
+  category: x11-libs
 - name: pango
   version: '>=0'
   category: x11-libs

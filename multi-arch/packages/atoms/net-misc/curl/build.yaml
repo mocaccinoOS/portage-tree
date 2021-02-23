@@ -19,24 +19,15 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: ca-certificates
+- name: libidn2
   version: '>=0'
-  category: app-misc
-- name: nss
-  version: '>=0'
-  category: dev-libs
-- name: libmetalink
-  version: '>=0'
-  category: media-libs
-- name: rtmpdump
-  version: '>=0'
-  category: media-video
-- name: libssh2
-  version: '>=0'
-  category: net-libs
+  category: net-dns
 - name: nghttp2
   version: '>=0'
   category: net-libs
-- name: openldap
+- name: autoconf
   version: '>=0'
-  category: net-nds
+  category: sys-devel-2.69
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2

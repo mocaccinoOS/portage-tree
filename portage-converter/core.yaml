@@ -90,6 +90,30 @@ artefacts:
 
 - tree: multi-arch/packages/atoms
   uses:
+    disabled:
+      - gconf
+      - gtk
+      - libsamplerate 
+      - qt5
+      - sox
+      - system-wide
+  packages:
+    - media-sound/pulseaudio
+
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
+  uses:
+    disabled:
+      - ldap
+  packages:
+    - gnome-base/gconf:2
+
+- tree: multi-arch/packages/atoms
+  uses:
     enabled:
       - X
       - berkdb
@@ -105,11 +129,21 @@ artefacts:
 - tree: multi-arch/packages/atoms
   uses:
     disabled:
+      - test
+      - java
+      - tcl
+  packages:
+    - sys-libs/db:5.3
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
       - bluetooth
   packages:
     - net-libs/libpcap
 
 - tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   uses:
     disabled:
       - webkit
@@ -120,6 +154,38 @@ artefacts:
       - gnome
   packages:
     - net-libs/libproxy
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - gssapi
+      - samba
+  packages:
+    - net-libs/libsoup:2.4
+
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - custom-cflags
+      - fbcon
+      - libcaca
+      - nas
+      - oss
+      - static-libs
+      - tslib
+  packages:
+    - media-libs/libsdl
+
+- tree: multi-arch/packages/atoms
+  uses:
+    enabled:
+      - ecdsa
+      - python
+      - python_single_target_python3_7
+      - systemd
+  packages:
+    - net-dns/unbound
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -174,6 +240,44 @@ artefacts:
   packages:
     - app-arch/lz4
 
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: gnutls
+          category: net-libs
+  packages:
+    - net-print/cups
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: cups
+          category: net-print
+  packages:
+    - x11-libs/gtk+:3
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
+  packages:
+    - dev-libs/libclc
+    - dev-libs/libnl:3
+    - dev-python/dbus-python
+    - dev-python/setuptools
+    - dev-python/pyyaml
+    - dev-util/glib-utils
+    - dev-util/itstool
+    - media-libs/alsa-lib
+    - net-wireless/bluez
+    - sys-apps/kmod
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -196,6 +300,16 @@ artefacts:
       - zink
   packages:
     - media-libs/mesa
+
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - audio
+      - ftdi
+      - inputlirc
+  packages:
+    - app-misc/lirc
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -246,7 +360,117 @@ artefacts:
     - sys-apps/systemd
 
 - tree: multi-arch/packages/atoms
-  ignore_build_deps: true
+  uses:
+    enabled:
+      - http2
+      - idn
+      - kerberos
+      - openssl
+      - ssl
+  packages:
+    - net-misc/curl
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - dbi
+      - lua
+      - rados
+      - rrdcgi
+      - ruby
+      - static-libs
+      - tcl
+      - test
+  packages:
+    - net-analyzer/rrdtool
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - X
+      - elf
+      - kmem
+      - lm-sensors
+      - mfd-rewrites
+      - minimal
+      - mysql
+      - netlink
+      - pcap
+      - pci
+      - python
+      - rpm
+      - smux
+  packages:
+    - net-analyzer/net-snmp
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - chromaprint
+      - cuda
+      - dav1d
+      - flite
+      - fontconfig
+      - frei0r
+      - fribidi
+      - gcrypt
+      - gme
+      - hardcoded-tables
+      - iec61883
+      - kvazaar
+      - ladspa
+      - libaom
+      - libaribb24
+      - libass
+      - libcaca
+      - libilbc
+      - librtmp
+      - libsoxr
+      - libtesseract
+      - libxml2
+      - lv2
+      - mipsdspr1
+      - mipsdspr2
+      - mipsfpu
+      - mmal
+      - modplug
+      - opencl
+      - oss
+      - pic
+      - rubberband
+      - samba
+      - snappy
+      - ssh
+      - static-libs
+      - video_cards_nvidia
+      - wavpack
+      - zeromq
+      - zimg
+      - zvbi
+  packages:
+    - media-video/ffmpeg
+
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - addc
+      - addns
+      - ceph
+      - cluster
+      - dmapi
+      - fam
+      - gpg
+      - iprint
+      - json
+      - profiling-data
+      - snapper
+      - syslog
+      - system-heimdal
+  packages:
+    - net-fs/samba
+
+- tree: multi-arch/packages/atoms
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.
@@ -261,6 +485,23 @@ artefacts:
       - wininst
   packages:
     - dev-lang/python:3.7
+
+- tree: multi-arch/packages/atoms
+  # To avoid cycle error on solver for packages
+  # available already from layers/build-seed i
+  # ignore buildtime deps.
+  uses:
+    disabled:
+      - debug
+      - eglfs
+      - evdev
+      - gles2-only
+      - test
+      - tslib
+      - tuio
+      - vnc
+  packages:
+    - dev-qt/qtgui:5
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
@@ -283,6 +524,7 @@ artefacts:
   # available already from layers/build-seed i
   # ignore buildtime deps.
   packages:
+    - app-misc/ca-certificates
     - app-i18n/fcitx
     - app-arch/xz-utils
     - app-arch/libarchive
@@ -304,7 +546,11 @@ artefacts:
     - dev-libs/gmp
     - dev-libs/gobject-introspection
     - dev-libs/gobject-introspection-common
+    - dev-libs/icu
+    - dev-libs/jsoncpp
+    - dev-libs/libevdev
     - dev-libs/libxml2
+    - dev-libs/libyaml
     - dev-perl/XML-SAX-Base
     - dev-python/cython
     - dev-util/meson
@@ -314,6 +560,7 @@ artefacts:
     - dev-util/ragel
     - dev-util/gtk-doc-am
     - dev-util/gtk-update-icon-cache
+    - dev-util/vulkan-headers
     - media-libs/alsa-topology-conf
     - media-libs/alsa-ucm-conf
     - media-libs/fontconfig
@@ -360,6 +607,7 @@ artefacts:
     - x11-libs/libXext
     - x11-libs/libXrender
     - x11-libs/libXfixes
+    - x11-libs/tslib
     - x11-libs/gdk-pixbuf
 
 
@@ -374,7 +622,6 @@ artefacts:
     - sys-apps/sed
     - sys-kernel/dracut
     - net-libs/nodejs
-    - net-misc/curl
     - net-misc/openssh
     - x11-libs/libdrm
 
@@ -396,7 +643,6 @@ reposcan_contraints:
 reposcan_disabled_use_flags:
   # !!internal use only!! used for creating build images and the first half of bootstrapping [make stage1]
   - build
-
 
   - emacs
   - doc

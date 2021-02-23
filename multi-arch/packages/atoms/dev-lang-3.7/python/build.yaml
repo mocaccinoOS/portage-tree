@@ -19,6 +19,30 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: bzip2
   version: '>=0'
-  category: layers
+  category: app-arch
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
+- name: sqlite
+  version: '>=0'
+  category: dev-db-3
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: libffi
+  version: '>=0'
+  category: dev-libs
+- name: bluez
+  version: '>=0'
+  category: net-wireless
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
+- name: gdbm
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs

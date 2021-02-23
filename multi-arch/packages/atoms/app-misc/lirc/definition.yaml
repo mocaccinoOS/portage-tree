@@ -2,32 +2,23 @@ name: lirc
 version: 0.10.1
 category: app-misc
 use_flags:
+- -audio
 - -doc
+- -ftdi
+- -inputlirc
 - -python_single_target_python3_6
 - X
-- audio
-- ftdi
 - gtk
-- inputlirc
 - python_single_target_python3_7
 - systemd
 - usb
 requires:
-- name: inputlircd
-  version: '>=0'
-  category: app-misc
-- name: libftdi
-  version: '>=0'
-  category: dev-embedded-1
 - name: pygobject
   version: '>=0'
   category: dev-python-3
 - name: pyyaml
   version: '>=0'
   category: dev-python
-- name: portaudio
-  version: '>=0'
-  category: media-libs
 - name: libSM
   version: '>=0'
   category: x11-libs

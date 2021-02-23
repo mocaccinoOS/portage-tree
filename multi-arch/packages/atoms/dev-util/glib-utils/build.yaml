@@ -25,9 +25,6 @@ requires:
 - name: docbook-xsl-stylesheets
   version: '>=0'
   category: app-text
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 - name: python-exec
   version: '>=0'
   category: dev-lang-2

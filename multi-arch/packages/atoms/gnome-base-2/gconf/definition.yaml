@@ -2,10 +2,10 @@ name: gconf
 version: 3.2.6
 category: gnome-base-2
 use_flags:
+- -ldap
 - -python_single_target_python3_8
 - -python_single_target_python3_9
 - introspection
-- ldap
 - policykit
 - python_single_target_python3_7
 requires:
@@ -18,9 +18,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: openldap
-  version: '>=0'
-  category: net-nds
 - name: polkit
   version: '>=0'
   category: sys-auth

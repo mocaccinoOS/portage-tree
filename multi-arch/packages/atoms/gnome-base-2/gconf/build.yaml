@@ -25,9 +25,6 @@ requires:
 - name: desktop-file-utils
   version: '>=0'
   category: dev-util
-- name: openldap
-  version: '>=0'
-  category: net-nds
 - name: polkit
   version: '>=0'
   category: sys-auth

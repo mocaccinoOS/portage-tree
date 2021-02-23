@@ -31,15 +31,15 @@ requires:
 - name: gdbus-codegen
   version: '>=0'
   category: dev-util
+- name: harfbuzz
+  version: '>=0'
+  category: media-libs
 - name: libepoxy
   version: '>=0'
   category: media-libs
 - name: rest
   version: '>=0'
   category: net-libs-0.7
-- name: cups
-  version: '>=0'
-  category: net-print
 - name: gdk-pixbuf
   version: '>=0'
   category: x11-libs-2

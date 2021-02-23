@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: libftdi
-  version: '>=0'
-  category: dev-embedded-1
 - name: libxslt
   version: '>=0'
   category: dev-libs
@@ -31,9 +28,6 @@ requires:
 - name: setuptools
   version: '>=0'
   category: dev-python
-- name: portaudio
-  version: '>=0'
-  category: media-libs
 - name: kmod
   version: '>=0'
   category: sys-apps

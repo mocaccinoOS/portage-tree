@@ -19,24 +19,24 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: rpm
+- name: bzip2
   version: '>=0'
   category: app-arch
-- name: mysql-connector-c
+- name: perl
   version: '>=0'
-  category: dev-db
-- name: setuptools
-  version: '>=0'
-  category: dev-python
-- name: libpcap
-  version: '>=0'
-  category: net-libs
-- name: lm-sensors
-  version: '>=0'
-  category: sys-apps
-- name: pciutils
-  version: '>=0'
-  category: sys-apps
+  category: dev-lang
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2
+- name: zlib
+  version: '>=0'
+  category: sys-libs

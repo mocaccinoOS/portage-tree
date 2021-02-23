@@ -34,21 +34,15 @@ requires:
 - name: swig
   version: '>=0'
   category: dev-lang
-- name: expat
-  version: '>=0'
-  category: dev-libs
-- name: fstrm
-  version: '>=0'
-  category: dev-libs
-- name: hiredis
-  version: '>=0'
-  category: dev-libs
-- name: libsodium
-  version: '>=0'
-  category: dev-libs
-- name: protobuf-c
+- name: libevent
   version: '>=0'
   category: dev-libs
 - name: systemd
   version: '>=0'
   category: sys-apps
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2

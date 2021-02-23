@@ -2,46 +2,34 @@ name: curl
 version: 7.72.0
 category: net-misc
 use_flags:
+- -adns
 - -brotli
+- -gnutls
+- -ldap
 - -libressl
 - -mbedtls
+- -metalink
+- -nghttp3
+- -nss
+- -quiche
+- -rtmp
+- -ssh
 - -test
-- adns
-- gnutls
 - http2
 - idn
 - kerberos
-- ldap
-- metalink
-- nghttp3
-- nss
 - openssl
-- quiche
-- rtmp
-- ssh
 - ssl
 requires:
-- name: ca-certificates
+- name: libidn2
   version: '>=0'
-  category: app-misc
-- name: nss
-  version: '>=0'
-  category: dev-libs
-- name: libmetalink
-  version: '>=0'
-  category: media-libs
-- name: rtmpdump
-  version: '>=0'
-  category: media-video
-- name: libssh2
-  version: '>=0'
-  category: net-libs
+  category: net-dns
 - name: nghttp2
   version: '>=0'
   category: net-libs
-- name: openldap
+- name: zlib
   version: '>=0'
-  category: net-nds
+  category: sys-libs
 description: A Client that groks URLs
 uri:
 - https://curl.haxx.se/

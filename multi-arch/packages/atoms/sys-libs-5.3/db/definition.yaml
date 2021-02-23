@@ -2,16 +2,9 @@ name: db
 version: 5.3.28
 category: sys-libs-5.3
 use_flags:
+- -java
+- -tcl
 - -test
-- java
-- tcl
-requires:
-- name: java-config
-  version: '>=0'
-  category: dev-java-2
-- name: tcl
-  version: '>=0'
-  category: dev-lang
 description: Oracle Berkeley DB
 uri:
 - http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html

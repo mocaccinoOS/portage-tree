@@ -22,12 +22,6 @@ requires:
 - name: libarchive
   version: '>=0'
   category: app-arch
-- name: gpgme
-  version: '>=0'
-  category: app-crypt-1
-- name: heimdal
-  version: '>=0'
-  category: app-crypt
 - name: mit-krb5
   version: '>=0'
   category: app-crypt
@@ -37,39 +31,33 @@ requires:
 - name: icu
   version: '>=0'
   category: dev-libs
-- name: jansson
+- name: libbsd
   version: '>=0'
   category: dev-libs
-- name: libbsd
+- name: libtasn1
   version: '>=0'
   category: dev-libs
 - name: Parse-Yapp
   version: '>=0'
   category: dev-perl
-- name: dnspython
-  version: '>=0'
-  category: dev-python
 - name: subunit
   version: '>=0'
   category: dev-python
-- name: bind-tools
+- name: lttng-ust
   version: '>=0'
-  category: net-dns
+  category: dev-util
 - name: rpcsvc-proto
   version: '>=0'
   category: net-libs
 - name: cups
   version: '>=0'
   category: net-print
-- name: dmapi
-  version: '>=0'
-  category: sys-apps
-- name: ceph
-  version: '>=0'
-  category: sys-cluster
 - name: ldb
   version: '>=0'
   category: sys-libs
 - name: liburing
+  version: '>=0'
+  category: sys-libs
+- name: readline
   version: '>=0'
   category: sys-libs

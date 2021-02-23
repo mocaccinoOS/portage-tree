@@ -22,7 +22,7 @@ requires:
 - name: libinput
   version: '>=0'
   category: dev-libs
-- name: qtnetwork
+- name: qtdbus
   version: '>=0'
   category: dev-qt-5
 - name: gtk-update-icon-cache
@@ -40,13 +40,13 @@ requires:
 - name: mesa
   version: '>=0'
   category: media-libs
+- name: linux-headers
+  version: '>=0'
+  category: sys-kernel
 - name: libSM
   version: '>=0'
   category: x11-libs
 - name: libxkbcommon
-  version: '>=0'
-  category: x11-libs
-- name: tslib
   version: '>=0'
   category: x11-libs
 - name: xcb-util-image

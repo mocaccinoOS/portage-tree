@@ -19,24 +19,27 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: libdbi
-  version: '>=0'
-  category: dev-db
-- name: lua
+- name: perl
   version: '>=0'
   category: dev-lang
-- name: tcl
+- name: python
   version: '>=0'
-  category: dev-lang
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+- name: libpng
+  version: '>=0'
+  category: media-libs
 - name: groff
   version: '>=0'
   category: sys-apps
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps
-- name: ceph
-  version: '>=0'
-  category: sys-cluster
 - name: pango
   version: '>=0'
   category: x11-libs

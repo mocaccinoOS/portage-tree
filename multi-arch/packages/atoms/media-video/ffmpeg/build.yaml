@@ -19,15 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: flite
-  version: '>=0'
-  category: app-accessibility
-- name: snappy
+- name: xz-utils
   version: '>=0'
   category: app-arch
-- name: tesseract
-  version: '>=0'
-  category: app-text
 - name: gmp
   version: '>=0'
   category: dev-libs
@@ -37,31 +31,13 @@ requires:
 - name: librsvg
   version: '>=0'
   category: gnome-base-2
-- name: aribb24
-  version: '>=0'
-  category: media-libs
-- name: chromaprint
+- name: alsa-lib
   version: '>=0'
   category: media-libs
 - name: codec2
   version: '>=0'
   category: media-libs
-- name: dav1d
-  version: '>=0'
-  category: media-libs
 - name: fdk-aac
-  version: '>=0'
-  category: media-libs
-- name: game-music-emu
-  version: '>=0'
-  category: media-libs
-- name: kvazaar
-  version: '>=0'
-  category: media-libs
-- name: libaom
-  version: '>=0'
-  category: media-libs
-- name: libass
   version: '>=0'
   category: media-libs
 - name: libbluray
@@ -70,21 +46,9 @@ requires:
 - name: libbs2b
   version: '>=0'
   category: media-libs
-- name: libcaca
-  version: '>=0'
-  category: media-libs
 - name: libdc1394
   version: '>=0'
   category: media-libs-2
-- name: libiec61883
-  version: '>=0'
-  category: media-libs
-- name: libilbc
-  version: '>=0'
-  category: media-libs
-- name: libmodplug
-  version: '>=0'
-  category: media-libs
 - name: libtheora
   version: '>=0'
   category: media-libs
@@ -95,12 +59,6 @@ requires:
   version: '>=0'
   category: media-libs
 - name: libwebp
-  version: '>=0'
-  category: media-libs
-- name: lilv
-  version: '>=0'
-  category: media-libs
-- name: nv-codec-headers
   version: '>=0'
   category: media-libs
 - name: openal
@@ -116,12 +74,6 @@ requires:
   version: '>=0'
   category: media-libs-2
 - name: opus
-  version: '>=0'
-  category: media-libs
-- name: raspberrypi-userland
-  version: '>=0'
-  category: media-libs
-- name: rubberband
   version: '>=0'
   category: media-libs
 - name: speex
@@ -145,15 +97,6 @@ requires:
 - name: xvid
   version: '>=0'
   category: media-libs
-- name: zimg
-  version: '>=0'
-  category: media-libs
-- name: zvbi
-  version: '>=0'
-  category: media-libs
-- name: frei0r-plugins
-  version: '>=0'
-  category: media-plugins
 - name: gsm
   version: '>=0'
   category: media-sound
@@ -163,37 +106,22 @@ requires:
 - name: twolame
   version: '>=0'
   category: media-sound
-- name: wavpack
-  version: '>=0'
-  category: media-sound
 - name: rav1e
   version: '>=0'
   category: media-video
-- name: rtmpdump
-  version: '>=0'
-  category: media-video
-- name: samba
-  version: '>=0'
-  category: net-fs
-- name: libssh
-  version: '>=0'
-  category: net-libs
 - name: srt
   version: '>=0'
   category: net-libs
-- name: zeromq
+- name: make
   version: '>=0'
-  category: net-libs
-- name: clang
-  version: '>=0'
-  category: sys-devel-10
+  category: sys-devel
 - name: linux-headers
   version: '>=0'
   category: sys-kernel
-- name: libavc1394
-  version: '>=0'
-  category: sys-libs
 - name: libXv
+  version: '>=0'
+  category: x11-libs
+- name: libdrm
   version: '>=0'
   category: x11-libs
 - name: libva
