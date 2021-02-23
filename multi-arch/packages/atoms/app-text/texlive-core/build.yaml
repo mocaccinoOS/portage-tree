@@ -40,9 +40,6 @@ requires:
 - name: zziplib
   version: '>=0'
   category: dev-libs
-- name: clisp
-  version: '>=0'
-  category: dev-lisp-2
 - name: graphite2
   version: '>=0'
   category: media-gfx

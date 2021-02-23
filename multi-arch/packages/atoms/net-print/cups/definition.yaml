@@ -2,18 +2,18 @@ name: cups
 version: 2.3.3
 category: net-print
 use_flags:
+- -lprng-compat
 - -selinux
+- -xinetd
 - X
 - acl
 - dbus
 - kerberos
 - kernel_linux
-- lprng-compat
 - pam
 - ssl
 - systemd
 - usb
-- xinetd
 - zeroconf
 requires:
 - name: lp
@@ -32,9 +32,6 @@ requires:
   version: '>=0'
   category: net-libs
 - name: dbus
-  version: '>=0'
-  category: sys-apps
-- name: xinetd
   version: '>=0'
   category: sys-apps
 - name: pam

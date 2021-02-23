@@ -43,9 +43,6 @@ requires:
 - name: systemd
   version: '>=0'
   category: sys-apps
-- name: xinetd
-  version: '>=0'
-  category: sys-apps
 - name: pam
   version: '>=0'
   category: sys-libs

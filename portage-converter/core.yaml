@@ -93,12 +93,22 @@ artefacts:
     disabled:
       - gconf
       - gtk
-      - libsamplerate 
+      - libsamplerate
       - qt5
       - sox
       - system-wide
+      - ofono-headset
   packages:
     - media-sound/pulseaudio
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - source
+      - tk
+      - xindy
+  packages:
+    - app-text/texlive-core
 
 - tree: multi-arch/packages/atoms
   replacements:
@@ -240,8 +250,30 @@ artefacts:
   packages:
     - app-arch/lz4
 
+
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - latex
+  packages:
+    - app-text/xmlto
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - subunit
+  packages:
+    - dev-libs/check
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - lprng-compat
+      - static-libs
+      - xinetd
   replacements:
     buildtime_deps:
       ignore:

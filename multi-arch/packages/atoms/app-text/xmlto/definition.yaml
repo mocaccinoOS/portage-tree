@@ -2,7 +2,7 @@ name: xmlto
 version: 0.0.28
 category: app-text
 use_flags:
-- latex
+- -latex
 - text
 requires:
 - name: bash
@@ -14,9 +14,6 @@ requires:
 - name: libxslt
   version: '>=0'
   category: dev-libs
-- name: texlive-formatsextra
-  version: '>=0'
-  category: dev-texlive
 - name: coreutils
   version: '>=0'
   category: sys-apps

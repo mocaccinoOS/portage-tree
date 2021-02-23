@@ -9,6 +9,7 @@ use_flags:
 - -gtk
 - -libressl
 - -libsamplerate
+- -ofono-headset
 - -qt5
 - -selinux
 - -sox
@@ -26,7 +27,6 @@ use_flags:
 - glib
 - jack
 - lirc
-- ofono-headset
 - orc
 - realtime
 - ssl
@@ -66,9 +66,9 @@ requires:
 - name: libasyncns
   version: '>=0'
   category: net-libs
-- name: ofono
+- name: bluez
   version: '>=0'
-  category: net-misc
+  category: net-wireless
 - name: fftw
   version: '>=0'
   category: sci-libs-3.0

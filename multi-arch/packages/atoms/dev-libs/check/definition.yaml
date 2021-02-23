@@ -3,11 +3,7 @@ version: 0.15.2
 category: dev-libs
 use_flags:
 - -doc
-- subunit
-requires:
-- name: subunit
-  version: '>=0'
-  category: dev-python
+- -subunit
 description: A unit test framework for C
 uri:
 - https://libcheck.github.io/check/

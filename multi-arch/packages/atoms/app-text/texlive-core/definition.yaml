@@ -2,10 +2,10 @@ name: texlive-core
 version: "2020"
 category: app-text
 use_flags:
+- -tk
+- -xindy
 - X
-- tk
 - xetex
-- xindy
 requires:
 - name: dvipsk
   version: '>=0'
@@ -31,16 +31,10 @@ requires:
 - name: zziplib
   version: '>=0'
   category: dev-libs
-- name: clisp
-  version: '>=0'
-  category: dev-lisp-2
 - name: File-HomeDir
   version: '>=0'
   category: dev-perl
 - name: Log-Dispatch
-  version: '>=0'
-  category: dev-perl
-- name: Tk
   version: '>=0'
   category: dev-perl
 - name: Unicode-LineBreak
