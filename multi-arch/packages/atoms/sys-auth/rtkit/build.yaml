@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: rtkit
-  version: '>=0'
-  category: acct-group
-- name: rtkit
-  version: '>=0'
-  category: acct-user
 - name: dbus
   version: '>=0'
   category: sys-apps

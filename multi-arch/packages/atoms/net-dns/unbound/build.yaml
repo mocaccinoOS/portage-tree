@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: unbound
-  version: '>=0'
-  category: acct-group
-- name: unbound
-  version: '>=0'
-  category: acct-user
 - name: python
   version: '>=0'
   category: dev-lang-3.7

@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: dhcp
-  version: '>=0'
-  category: acct-group
-- name: dhcp
-  version: '>=0'
-  category: acct-user
 - name: openldap
   version: '>=0'
   category: net-nds

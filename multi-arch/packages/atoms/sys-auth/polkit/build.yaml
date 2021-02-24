@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: polkitd
-  version: '>=0'
-  category: acct-user
 - name: docbook-xml-dtd
   version: '>=0'
   category: app-text-4.5

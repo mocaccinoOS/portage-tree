@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: sshd
-  version: '>=0'
-  category: acct-group
-- name: sshd
-  version: '>=0'
-  category: acct-user
 - name: libedit
   version: '>=0'
   category: dev-libs

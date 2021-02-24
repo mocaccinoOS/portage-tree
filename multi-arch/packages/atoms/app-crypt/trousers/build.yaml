@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: tss
-  version: '>=0'
-  category: acct-group
-- name: tss
-  version: '>=0'
-  category: acct-user
 - name: glib
   version: '>=0'
   category: dev-libs-2

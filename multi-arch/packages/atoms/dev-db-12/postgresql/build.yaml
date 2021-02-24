@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: postgres
-  version: '>=0'
-  category: acct-group
-- name: postgres
-  version: '>=0'
-  category: acct-user
 - name: eselect-postgresql
   version: '>=0'
   category: app-eselect

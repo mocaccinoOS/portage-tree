@@ -19,12 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: lp
-  version: '>=0'
-  category: acct-group
-- name: lpadmin
-  version: '>=0'
-  category: acct-group
 - name: libpaper
   version: '>=0'
   category: app-text
