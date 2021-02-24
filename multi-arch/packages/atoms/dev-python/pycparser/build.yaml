@@ -22,3 +22,6 @@ requires:
 - name: ply
   version: '>=0'
   category: dev-python
+- name: setuptools
+  version: '>=0'
+  category: dev-python

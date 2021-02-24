@@ -6,6 +6,9 @@ use_flags:
 - gpm
 - slang
 requires:
+- name: gpm
+  version: '>=0'
+  category: sys-libs
 - name: slang
   version: '>=0'
   category: sys-libs

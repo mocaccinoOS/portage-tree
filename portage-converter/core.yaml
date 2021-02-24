@@ -332,6 +332,8 @@ artefacts:
     - dev-python/setuptools
     - dev-python/pyyaml
     - dev-python/pycairo
+    - dev-python/pycparser
+    - dev-python/pygobject:3
     - dev-util/glib-utils
     - dev-util/itstool
     - media-libs/alsa-lib
