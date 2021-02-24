@@ -2,83 +2,59 @@ name: gdal
 version: 3.0.4
 category: sci-libs
 use_flags:
+- -armadillo
 - -doc
+- -fits
+- -gml
+- -hdf5
+- -java
+- -jpeg2k
+- -lzma
+- -mdb
+- -mysql
+- -netcdf
+- -odbc
+- -ogdi
+- -opencl
+- -oracle
+- -postgres
 - -python_targets_python3_6
 - -python_targets_python3_8
 - -python_targets_python3_9
-- armadillo
+- -spatialite
+- -sqlite
+- -webp
+- -xls
 - curl
-- fits
 - geos
 - gif
-- gml
-- hdf5
-- java
 - jpeg
-- jpeg2k
-- lzma
-- mdb
-- mysql
-- netcdf
-- odbc
-- ogdi
-- opencl
-- oracle
 - pdf
 - perl
 - png
-- postgres
 - python
 - python_targets_python3_7
-- spatialite
-- sqlite
-- webp
-- xls
 - zstd
 requires:
-- name: poppler
+- name: expat
   version: '>=0'
-  category: app-text
-- name: oracle-instantclient
-  version: '>=0'
-  category: dev-db
-- name: postgresql
-  version: '>=0'
-  category: dev-db-12
-- name: spatialite
-  version: '>=0'
-  category: dev-db
-- name: unixODBC
-  version: '>=0'
-  category: dev-db
-- name: jackcess
-  version: '>=0'
-  category: dev-java-1
+  category: dev-libs
 - name: json-c
   version: '>=0'
   category: dev-libs
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
-- name: xerces-c
+- name: libxml2
   version: '>=0'
-  category: dev-libs
-- name: numpy
+  category: dev-libs-2
+- name: giflib
   version: '>=0'
-  category: dev-python
-- name: armadillo
-  version: '>=0'
-  category: sci-libs
-- name: cfitsio
+  category: media-libs
+- name: geos
   version: '>=0'
   category: sci-libs
 - name: libgeotiff
-  version: '>=0'
-  category: sci-libs
-- name: netcdf
-  version: '>=0'
-  category: sci-libs
-- name: ogdi
   version: '>=0'
   category: sci-libs
 description: Translator library for raster geospatial data formats (includes OGR support)

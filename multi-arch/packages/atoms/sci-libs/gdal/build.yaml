@@ -19,54 +19,24 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: zstd
+- name: expat
   version: '>=0'
-  category: app-arch
-- name: poppler
-  version: '>=0'
-  category: app-text
-- name: oracle-instantclient
-  version: '>=0'
-  category: dev-db
-- name: postgresql
-  version: '>=0'
-  category: dev-db-12
-- name: spatialite
-  version: '>=0'
-  category: dev-db
-- name: unixODBC
-  version: '>=0'
-  category: dev-db
-- name: ant-core
-  version: '>=0'
-  category: dev-java
-- name: jackcess
-  version: '>=0'
-  category: dev-java-1
+  category: dev-libs
 - name: json-c
   version: '>=0'
   category: dev-libs
-- name: xerces-c
+- name: libxml2
   version: '>=0'
-  category: dev-libs
-- name: numpy
+  category: dev-libs-2
+- name: setuptools
   version: '>=0'
   category: dev-python
-- name: libwebp
+- name: giflib
   version: '>=0'
   category: media-libs
-- name: armadillo
-  version: '>=0'
-  category: sci-libs
-- name: cfitsio
+- name: geos
   version: '>=0'
   category: sci-libs
 - name: libgeotiff
-  version: '>=0'
-  category: sci-libs
-- name: netcdf
-  version: '>=0'
-  category: sci-libs
-- name: ogdi
   version: '>=0'
   category: sci-libs

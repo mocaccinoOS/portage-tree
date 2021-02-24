@@ -271,6 +271,33 @@ artefacts:
 - tree: multi-arch/packages/atoms
   uses:
     disabled:
+      - armadillo
+      - fits
+      - gml
+      - hdf5
+      - java
+      - jpeg2k
+      - lzma
+      - mdb
+      - mysql
+      - netcdf
+      - odbc
+      - ogdi
+      - opencl
+      - oracle
+      - postgres
+      - spatialite
+      - sqlite
+      - threads
+      - webp
+      - xls
+  packages:
+    - sci-libs/gdal
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
       - lprng-compat
       - static-libs
       - xinetd
