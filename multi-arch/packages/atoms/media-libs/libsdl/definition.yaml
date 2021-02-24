@@ -16,9 +16,6 @@ requires:
 - name: aalib
   version: '>=0'
   category: media-libs
-- name: alsa-lib
-  version: '>=0'
-  category: media-libs
 - name: audiofile
   version: '>=0'
   category: media-libs

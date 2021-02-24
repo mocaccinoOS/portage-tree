@@ -28,6 +28,9 @@ requires:
 - name: vulkan-headers
   version: '>=0'
   category: dev-util
+- name: libsamplerate
+  version: '>=0'
+  category: media-libs
 - name: mesa
   version: '>=0'
   category: media-libs

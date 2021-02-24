@@ -25,9 +25,6 @@ requires:
 - name: orc
   version: '>=0'
   category: dev-lang
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: libatomic_ops
   version: '>=0'
   category: dev-libs

@@ -34,9 +34,6 @@ requires:
 - name: libbsd
   version: '>=0'
   category: dev-libs
-- name: libtasn1
-  version: '>=0'
-  category: dev-libs
 - name: Parse-Yapp
   version: '>=0'
   category: dev-perl
@@ -56,8 +53,5 @@ requires:
   version: '>=0'
   category: sys-libs
 - name: liburing
-  version: '>=0'
-  category: sys-libs
-- name: readline
   version: '>=0'
   category: sys-libs

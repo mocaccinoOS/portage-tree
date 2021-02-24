@@ -19,15 +19,9 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: bzip2
+- name: python
   version: '>=0'
-  category: app-arch
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
+  category: dev-lang-3.7
 - name: setuptools
   version: '>=0'
   category: dev-python
-- name: zlib
-  version: '>=0'
-  category: sys-libs

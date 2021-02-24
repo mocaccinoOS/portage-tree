@@ -25,9 +25,6 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
 - name: desktop-file-utils
   version: '>=0'
   category: dev-util

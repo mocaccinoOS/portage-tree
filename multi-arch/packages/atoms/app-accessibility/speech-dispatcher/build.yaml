@@ -25,6 +25,9 @@ requires:
 - name: flite
   version: '>=0'
   category: app-accessibility
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
 - name: dotconf
   version: '>=0'
   category: dev-libs

@@ -19,24 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: boost
+- name: build-seed
   version: '>=0'
-  category: dev-libs
-- name: jansson
-  version: '>=0'
-  category: dev-libs
-- name: jemalloc
-  version: '>=0'
-  category: dev-libs
-- name: libev
-  version: '>=0'
-  category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
-- name: c-ares
-  version: '>=0'
-  category: net-dns
-- name: zlib
-  version: '>=0'
-  category: sys-libs
+  category: layers

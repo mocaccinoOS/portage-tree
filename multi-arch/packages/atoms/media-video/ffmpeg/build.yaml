@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
 - name: gmp
   version: '>=0'
   category: dev-libs
@@ -31,9 +28,6 @@ requires:
 - name: librsvg
   version: '>=0'
   category: gnome-base-2
-- name: alsa-lib
-  version: '>=0'
-  category: media-libs
 - name: codec2
   version: '>=0'
   category: media-libs
@@ -119,9 +113,6 @@ requires:
   version: '>=0'
   category: sys-kernel
 - name: libXv
-  version: '>=0'
-  category: x11-libs
-- name: libdrm
   version: '>=0'
   category: x11-libs
 - name: libva

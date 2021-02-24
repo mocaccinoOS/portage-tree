@@ -4,6 +4,9 @@ category: dev-util
 use_flags:
 - -libressl
 requires:
+- name: libssh2
+  version: '>=0'
+  category: net-libs
 - name: curl
   version: '>=0'
   category: net-misc

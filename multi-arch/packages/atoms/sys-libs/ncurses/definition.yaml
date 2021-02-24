@@ -2,11 +2,7 @@ name: ncurses
 version: "6.2"
 category: sys-libs
 use_flags:
-- gpm
-requires:
-- name: gpm
-  version: '>=0'
-  category: sys-libs
+- -gpm
 conflicts:
 - name: slang
   version: '>=0'

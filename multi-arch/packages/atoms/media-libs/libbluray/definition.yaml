@@ -2,9 +2,9 @@ name: libbluray
 version: 1.1.2
 category: media-libs
 use_flags:
+- -fontconfig
 - aacs
 - bdplus
-- fontconfig
 - java
 - truetype
 - xml
@@ -15,9 +15,9 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: fontconfig
+- name: freetype
   version: '>=0'
-  category: media-libs-1.0
+  category: media-libs-2
 - name: libbdplus
   version: '>=0'
   category: media-libs

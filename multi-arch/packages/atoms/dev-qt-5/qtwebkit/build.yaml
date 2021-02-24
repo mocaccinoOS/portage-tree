@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: sqlite
-  version: '>=0'
-  category: dev-db-3
 - name: ruby
   version: '>=0'
   category: dev-lang-2.6

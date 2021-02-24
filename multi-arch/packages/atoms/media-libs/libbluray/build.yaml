@@ -25,9 +25,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
 - name: freetype
   version: '>=0'
   category: media-libs-2

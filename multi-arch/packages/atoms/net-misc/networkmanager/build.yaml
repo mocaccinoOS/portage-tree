@@ -22,6 +22,9 @@ requires:
 - name: newt
   version: '>=0'
   category: dev-libs
+- name: nss
+  version: '>=0'
+  category: dev-libs
 - name: dnsmasq
   version: '>=0'
   category: net-dns
@@ -31,6 +34,9 @@ requires:
 - name: iptables
   version: '>=0'
   category: net-firewall
+- name: gnutls
+  version: '>=0'
+  category: net-libs
 - name: libndp
   version: '>=0'
   category: net-libs

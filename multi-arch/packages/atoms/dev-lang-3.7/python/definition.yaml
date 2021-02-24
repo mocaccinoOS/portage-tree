@@ -1,5 +1,5 @@
 name: python
-version: 3.7.9+1
+version: "3.7.9+1"
 category: dev-lang-3.7
 use_flags:
 - -build
@@ -33,9 +33,6 @@ requires:
   version: '>=0'
   category: sys-apps
 - name: gdbm
-  version: '>=0'
-  category: sys-libs
-- name: zlib
   version: '>=0'
   category: sys-libs
 description: An interpreted, interactive, object-oriented programming language

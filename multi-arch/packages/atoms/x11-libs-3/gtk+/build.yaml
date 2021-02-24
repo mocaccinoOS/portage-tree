@@ -31,9 +31,6 @@ requires:
 - name: gdbus-codegen
   version: '>=0'
   category: dev-util
-- name: harfbuzz
-  version: '>=0'
-  category: media-libs
 - name: libepoxy
   version: '>=0'
   category: media-libs

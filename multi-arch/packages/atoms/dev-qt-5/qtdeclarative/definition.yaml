@@ -6,6 +6,9 @@ use_flags:
 - localstorage
 - widgets
 requires:
+- name: qtnetwork
+  version: '>=0'
+  category: dev-qt-5
 - name: qtsql
   version: '>=0'
   category: dev-qt-5

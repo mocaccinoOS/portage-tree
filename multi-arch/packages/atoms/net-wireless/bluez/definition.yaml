@@ -42,9 +42,6 @@ requires:
 - name: hwids
   version: '>=0'
   category: sys-apps
-- name: readline
-  version: '>=0'
-  category: sys-libs
 description: Bluetooth Tools and System Daemons for Linux
 uri:
 - http://www.bluez.org

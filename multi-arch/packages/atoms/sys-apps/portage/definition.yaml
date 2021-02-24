@@ -2,6 +2,7 @@ name: portage
 version: 3.0.8
 category: sys-apps
 use_flags:
+- -build
 - -doc
 - -elibc_musl
 - -elibc_uclibc
@@ -12,34 +13,21 @@ use_flags:
 - -selinux
 - -test
 - apidoc
-- build
 - elibc_glibc
 - kernel_linux
 - python_targets_python3_7
 - rsync-verify
 - xattr
 requires:
-- name: eselect
-  version: '>=0'
-  category: app-admin
 - name: tar
   version: '>=0'
   category: app-arch
 - name: zstd
   version: '>=0'
   category: app-arch
-- name: openpgp-keys-gentoo-release
-  version: '>=0'
-  category: app-crypt
 - name: pax-utils
   version: '>=0'
   category: app-misc
-- name: gemato
-  version: '>=0'
-  category: app-portage
-- name: bash
-  version: '>=0'
-  category: app-shells
 - name: findutils
   version: '>=0'
   category: sys-apps

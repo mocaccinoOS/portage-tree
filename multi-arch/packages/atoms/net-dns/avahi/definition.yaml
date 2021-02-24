@@ -2,6 +2,7 @@ name: avahi
 version: "0.8"
 category: net-dns
 use_flags:
+- -bookmarks
 - -doc
 - -gtk
 - -gtk2
@@ -11,7 +12,6 @@ use_flags:
 - -qt5
 - -selinux
 - autoipd
-- bookmarks
 - dbus
 - gdbm
 - introspection
@@ -40,9 +40,6 @@ requires:
 - name: pygobject
   version: '>=0'
   category: dev-python-3
-- name: twisted
-  version: '>=0'
-  category: dev-python
 - name: libcap
   version: '>=0'
   category: sys-libs

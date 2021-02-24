@@ -37,6 +37,9 @@ requires:
 - name: eselect-postgresql
   version: '>=0'
   category: app-eselect
+- name: tcl
+  version: '>=0'
+  category: dev-lang
 - name: icu
   version: '>=0'
   category: dev-libs
@@ -47,6 +50,9 @@ requires:
   version: '>=0'
   category: net-nds
 - name: less
+  version: '>=0'
+  category: sys-apps
+- name: systemd
   version: '>=0'
   category: sys-apps
 - name: clang

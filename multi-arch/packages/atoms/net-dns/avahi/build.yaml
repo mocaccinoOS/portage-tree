@@ -37,9 +37,6 @@ requires:
 - name: pygobject
   version: '>=0'
   category: dev-python-3
-- name: twisted
-  version: '>=0'
-  category: dev-python
 - name: glib-utils
   version: '>=0'
   category: dev-util

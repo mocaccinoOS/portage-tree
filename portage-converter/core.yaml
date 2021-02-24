@@ -216,7 +216,7 @@ artefacts:
         - name: openldap
           category: net-nds
   packages:
-    - dev-libs/cyrus-sasl
+    - dev-libs/cyrus-sasl:2
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -226,7 +226,7 @@ artefacts:
         - name: gtk+
           category: x11-libs-3
   packages:
-    - dev-qt/qtwidgets
+    - dev-qt/qtwidgets:5
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -249,7 +249,6 @@ artefacts:
           category: net-nds
   packages:
     - app-arch/lz4
-
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -332,6 +331,7 @@ artefacts:
     - dev-python/dbus-python
     - dev-python/setuptools
     - dev-python/pyyaml
+    - dev-python/pycairo
     - dev-util/glib-utils
     - dev-util/itstool
     - media-libs/alsa-lib
@@ -339,6 +339,11 @@ artefacts:
     - sys-apps/kmod
 
 - tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
   uses:
     disabled:
       - d3d9
@@ -378,11 +383,27 @@ artefacts:
   packages:
     - media-libs/libjpeg-turbo
 
+
 - tree: multi-arch/packages/atoms
-  ignore_build_deps: false
-  # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
-  # ignore buildtime deps.
+  replacements:
+    buildtime_deps:
+      # We use this deps directly from build-seed layer.
+      ignore:
+        - name: cmake
+          category: dev-util
+        - name: ninja
+          category: dev-util
+        - name: python
+          category: dev-lang-3.7
+  packages:
+    - media-libs/vulkan-loader
+
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
   uses:
     disabled:
       - mono
@@ -390,6 +411,8 @@ artefacts:
       - gtk2
       # Disable it to avoid dep cycle. We need it with a split.
       - gtk
+      # Avoid injection of twisted-core
+      - bookmarks
   packages:
     - net-dns/avahi
 
@@ -582,6 +605,21 @@ artefacts:
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.
+  uses:
+    disabled:
+      - gpm
+      - ada
+      - profile
+      - threads
+      - trace
+  packages:
+    - sys-libs/ncurses
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  # To avoid cycle error on solver for packages
+  # available already from layers/build-seed i
+  # ignore buildtime deps.
   packages:
     - app-misc/ca-certificates
     - app-i18n/fcitx
@@ -596,6 +634,8 @@ artefacts:
     - dev-lang/rust
     - dev-lang/tcl
     - dev-lang/nasm
+    # BDEPEND of go requires itself.
+    - dev-lang/go
     - dev-libs/boost
     - dev-libs/boehm-gc
     - dev-libs/elfutils
@@ -607,11 +647,15 @@ artefacts:
     - dev-libs/gobject-introspection-common
     - dev-libs/icu
     - dev-libs/jsoncpp
+    - dev-libs/json-c
     - dev-libs/libevdev
     - dev-libs/libxml2
     - dev-libs/libyaml
     - dev-perl/XML-SAX-Base
     - dev-python/cython
+    - dev-python/constantly
+    - dev-python/ply
+    - dev-python/six
     - dev-util/meson
     - dev-util/ninja
     - dev-util/pkgconf
@@ -648,7 +692,6 @@ artefacts:
     - sys-devel/llvm
     - sys-fs/lvm2
     - sys-fs/udev-init-scripts
-    - sys-libs/ncurses
     - sys-libs/glibc
     - sys-libs/libunwind
     - sys-libs/llvm-libunwind

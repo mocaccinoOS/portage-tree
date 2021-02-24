@@ -22,6 +22,3 @@ requires:
 - name: nasm
   version: '>=0'
   category: dev-lang
-- name: perl
-  version: '>=0'
-  category: dev-lang

@@ -22,6 +22,9 @@ requires:
 - name: gzip
   version: '>=0'
   category: app-arch
+- name: snappy
+  version: '>=0'
+  category: app-arch
 - name: libevent
   version: '>=0'
   category: dev-libs

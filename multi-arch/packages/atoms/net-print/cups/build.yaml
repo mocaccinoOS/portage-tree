@@ -37,9 +37,6 @@ requires:
 - name: acl
   version: '>=0'
   category: sys-apps
-- name: dbus
-  version: '>=0'
-  category: sys-apps
 - name: systemd
   version: '>=0'
   category: sys-apps

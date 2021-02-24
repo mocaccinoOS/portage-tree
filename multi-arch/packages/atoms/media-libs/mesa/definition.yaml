@@ -41,6 +41,9 @@ requires:
 - name: clang
   version: '>=0'
   category: sys-devel-10
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 - name: libXdamage
   version: '>=0'
   category: x11-libs

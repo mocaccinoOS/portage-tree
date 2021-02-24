@@ -19,9 +19,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: perl
-  version: '>=0'
-  category: dev-lang
 - name: python
   version: '>=0'
   category: dev-lang-3.7
@@ -31,9 +28,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: libpng
-  version: '>=0'
-  category: media-libs
 - name: groff
   version: '>=0'
   category: sys-apps

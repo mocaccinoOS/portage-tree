@@ -2,32 +2,13 @@ name: nghttp2
 version: 1.41.0
 category: net-libs
 use_flags:
+- -cxx
+- -hpack-tools
+- -jemalloc
 - -libressl
 - -test
-- cxx
-- hpack-tools
-- jemalloc
-- utils
-- xml
-requires:
-- name: boost
-  version: '>=0'
-  category: dev-libs
-- name: jansson
-  version: '>=0'
-  category: dev-libs
-- name: jemalloc
-  version: '>=0'
-  category: dev-libs
-- name: libev
-  version: '>=0'
-  category: dev-libs
-- name: libxml2
-  version: '>=0'
-  category: dev-libs-2
-- name: c-ares
-  version: '>=0'
-  category: net-dns
+- -utils
+- -xml
 description: HTTP/2 C Library
 uri:
 - https://nghttp2.org/

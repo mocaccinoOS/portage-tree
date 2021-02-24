@@ -22,9 +22,6 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
-- name: libffi
-  version: '>=0'
-  category: dev-libs
 - name: pycairo
   version: '>=0'
   category: dev-python

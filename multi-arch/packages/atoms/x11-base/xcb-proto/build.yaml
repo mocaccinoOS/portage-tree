@@ -28,12 +28,6 @@ requires:
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: autoconf
-  version: '>=0'
-  category: sys-devel-2.69
-- name: automake
-  version: '>=0'
-  category: sys-devel-1.16
 - name: libtool
   version: '>=0'
   category: sys-devel-2

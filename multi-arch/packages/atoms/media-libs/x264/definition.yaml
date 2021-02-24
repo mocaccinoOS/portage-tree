@@ -2,9 +2,9 @@ name: x264
 version: 0.0.20190214
 category: media-libs
 use_flags:
+- -opencl
 - abi_x86_32
 - abi_x86_64
-- opencl
 description: A free library for encoding X264/AVC streams
 uri:
 - https://www.videolan.org/developers/x264.html

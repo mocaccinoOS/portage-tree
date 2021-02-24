@@ -28,6 +28,9 @@ requires:
 - name: glib
   version: '>=0'
   category: dev-libs-2
+- name: jansson
+  version: '>=0'
+  category: dev-libs
 - name: libnl
   version: '>=0'
   category: dev-libs-3
@@ -37,6 +40,12 @@ requires:
 - name: openssl
   version: '>=0'
   category: dev-libs
+- name: bind-tools
+  version: '>=0'
+  category: net-dns
+- name: c-ares
+  version: '>=0'
+  category: net-dns
 - name: cifs-utils
   version: '>=0'
   category: net-fs
@@ -49,3 +58,6 @@ requires:
 - name: curl
   version: '>=0'
   category: net-misc
+- name: dbus
+  version: '>=0'
+  category: sys-apps

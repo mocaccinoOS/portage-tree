@@ -22,6 +22,6 @@ requires:
 - name: qtgui
   version: '>=0'
   category: dev-qt-5
-- name: pango
+- name: gtk+
   version: '>=0'
-  category: x11-libs
+  category: x11-libs-3

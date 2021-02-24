@@ -42,9 +42,6 @@ requires:
 - name: orc
   version: '>=0'
   category: dev-lang
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
 - name: libltdl
   version: '>=0'
   category: dev-libs
@@ -78,9 +75,6 @@ requires:
 - name: rtkit
   version: '>=0'
   category: sys-auth
-- name: gdbm
-  version: '>=0'
-  category: sys-libs
 - name: libXtst
   version: '>=0'
   category: x11-libs

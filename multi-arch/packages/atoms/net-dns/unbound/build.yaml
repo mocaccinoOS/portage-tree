@@ -40,9 +40,6 @@ requires:
 - name: systemd
   version: '>=0'
   category: sys-apps
-- name: autoconf
-  version: '>=0'
-  category: sys-devel-2.69
 - name: libtool
   version: '>=0'
   category: sys-devel-2

@@ -2,12 +2,12 @@ name: util-linux
 version: 2.35.2
 category: sys-apps
 use_flags:
+- -build
 - -python_targets_python3_6
 - -python_targets_python3_8
 - -selinux
 - -test
 - audit
-- build
 - caps
 - cramfs
 - cryptsetup
@@ -27,10 +27,16 @@ use_flags:
 - systemd
 - udev
 requires:
-- name: systemd
+- name: libpcre2
   version: '>=0'
-  category: sys-apps
+  category: dev-libs
+- name: cryptsetup
+  version: '>=0'
+  category: sys-fs
 - name: librtas
+  version: '>=0'
+  category: sys-libs
+- name: pam
   version: '>=0'
   category: sys-libs
 - name: slang
