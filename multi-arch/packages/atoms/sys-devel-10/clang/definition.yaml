@@ -6,13 +6,19 @@ use_flags:
 - -python_single_target_python3_6
 - -python_single_target_python3_8
 - -python_single_target_python3_9
+- -xml
 - python_single_target_python3_7
 - static-analyzer
-- xml
 requires:
 - name: perl
   version: '>=0'
   category: dev-lang
+- name: python
+  version: '>=0'
+  category: dev-lang-3.7
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
 - name: llvm
   version: '>=0'
   category: sys-devel-10
