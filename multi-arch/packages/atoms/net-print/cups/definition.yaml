@@ -16,12 +16,6 @@ use_flags:
 - usb
 - zeroconf
 requires:
-- name: lp
-  version: '>=0'
-  category: acct-group
-- name: lpadmin
-  version: '>=0'
-  category: acct-group
 - name: libpaper
   version: '>=0'
   category: app-text

@@ -9,9 +9,6 @@ use_flags:
 - X
 - systemd
 requires:
-- name: messagebus
-  version: '>=0'
-  category: acct-user
 - name: expat
   version: '>=0'
   category: dev-libs

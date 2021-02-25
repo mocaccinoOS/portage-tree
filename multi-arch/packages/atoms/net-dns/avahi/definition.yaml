@@ -19,15 +19,6 @@ use_flags:
 - python
 - python_targets_python3_7
 requires:
-- name: netdev
-  version: '>=0'
-  category: acct-group
-- name: avahi
-  version: '>=0'
-  category: acct-user
-- name: avahi-autoipd
-  version: '>=0'
-  category: acct-user
 - name: libdaemon
   version: '>=0'
   category: dev-libs

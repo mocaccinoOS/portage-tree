@@ -26,9 +26,6 @@ requires:
 - name: libcap
   version: '>=0'
   category: sys-libs
-- name: readline
-  version: '>=0'
-  category: sys-libs
 description: 'bind tools: dig, nslookup, host, nsupdate, dnssec-keygen'
 uri:
 - https://www.isc.org/software/bind

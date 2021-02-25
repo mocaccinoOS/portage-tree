@@ -30,6 +30,8 @@ skipped_resolutions:
 
   categories:
     - virtual
+    - acct-group
+    - acct-user
 #    - cat2
 
 
@@ -555,6 +557,7 @@ artefacts:
     - net-fs/samba
 
 - tree: multi-arch/packages/atoms
+  override_version: "3.7.9+1"
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.
@@ -601,6 +604,17 @@ artefacts:
       - ssl
   packages:
     - app-crypt/gnupg
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  override_version: "1.2.11+1"
+  packages:
+    - sys-libs/zlib
+
+- tree: multi-arch/packages/atoms
+  override_version: "2.10.4+1"
+  packages:
+    - media-libs/freetype
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
@@ -651,7 +665,7 @@ artefacts:
     - dev-libs/jsoncpp
     - dev-libs/json-c
     - dev-libs/libevdev
-    - dev-libs/libxml2
+    - dev-libs/libxml2:2
     - dev-libs/libyaml
     - dev-perl/XML-SAX-Base
     - dev-python/cython
@@ -698,7 +712,6 @@ artefacts:
     - sys-libs/libunwind
     - sys-libs/llvm-libunwind
     - sys-libs/libcap
-    - sys-libs/zlib
     - sys-kernel/linux-headers
     - sys-process/procps
     - sys-process/audit
@@ -721,7 +734,6 @@ artefacts:
     - app-emulation/lxd
     - app-emulation/lxc
     - dev-util/cmake
-    - media-libs/freetype
     - sys-apps/file
     - sys-apps/sed
     - sys-kernel/dracut

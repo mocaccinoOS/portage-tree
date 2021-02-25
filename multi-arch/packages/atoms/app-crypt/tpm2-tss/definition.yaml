@@ -8,9 +8,6 @@ use_flags:
 - gcrypt
 - openssl
 requires:
-- name: tss
-  version: '>=0'
-  category: acct-user
 - name: json-c
   version: '>=0'
   category: dev-libs

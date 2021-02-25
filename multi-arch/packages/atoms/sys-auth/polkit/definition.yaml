@@ -8,9 +8,6 @@ use_flags:
 - pam
 - systemd
 requires:
-- name: polkitd
-  version: '>=0'
-  category: acct-user
 - name: spidermonkey
   version: '>=0'
   category: dev-lang-78

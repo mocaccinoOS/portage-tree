@@ -11,9 +11,6 @@ use_flags:
 - udev
 - vala
 requires:
-- name: plugdev
-  version: '>=0'
-  category: acct-group
 - name: libqmi
   version: '>=0'
   category: net-libs

@@ -5,9 +5,6 @@ use_flags:
 - nls
 - verify-sig
 requires:
-- name: lxd
-  version: '>=0'
-  category: acct-group
 - name: lxc
   version: '>=0'
   category: app-emulation

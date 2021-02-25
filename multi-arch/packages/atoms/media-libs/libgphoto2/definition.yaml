@@ -10,9 +10,6 @@ use_flags:
 - jpeg
 - serial
 requires:
-- name: plugdev
-  version: '>=0'
-  category: acct-group
 - name: libltdl
   version: '>=0'
   category: dev-libs

@@ -11,9 +11,6 @@ use_flags:
 - ldap
 - ssl
 requires:
-- name: dhcp
-  version: '>=0'
-  category: acct-user
 - name: openldap
   version: '>=0'
   category: net-nds

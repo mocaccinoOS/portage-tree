@@ -10,12 +10,6 @@ use_flags:
 - python_single_target_python3_7
 - udev
 requires:
-- name: openct
-  version: '>=0'
-  category: acct-group
-- name: pcscd
-  version: '>=0'
-  category: acct-user
 - name: python
   version: '>=0'
   category: dev-lang-3.7

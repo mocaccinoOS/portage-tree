@@ -12,9 +12,6 @@ use_flags:
 - nls
 - static
 requires:
-- name: dnsmasq
-  version: '>=0'
-  category: acct-user
 - name: lua
   version: '>=0'
   category: dev-lang

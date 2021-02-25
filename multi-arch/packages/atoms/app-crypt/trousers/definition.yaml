@@ -5,9 +5,6 @@ use_flags:
 - -libressl
 - -selinux
 requires:
-- name: tss
-  version: '>=0'
-  category: acct-user
 - name: glib
   version: '>=0'
   category: dev-libs-2

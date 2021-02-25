@@ -3,7 +3,7 @@ version: 2.1.11
 category: dev-libs
 use_flags:
 - -libressl
-- ssl
+- -ssl
 description: Library to execute a function when a specific event occurs on a file
   descriptor
 uri:

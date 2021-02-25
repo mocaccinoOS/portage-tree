@@ -15,9 +15,6 @@ use_flags:
 - ssl
 - systemd
 requires:
-- name: openvpn
-  version: '>=0'
-  category: acct-user
 - name: lzo
   version: '>=0'
   category: dev-libs-2

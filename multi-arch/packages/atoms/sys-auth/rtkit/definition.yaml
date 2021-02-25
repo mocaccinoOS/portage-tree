@@ -4,9 +4,6 @@ category: sys-auth
 use_flags:
 - systemd
 requires:
-- name: rtkit
-  version: '>=0'
-  category: acct-user
 - name: dbus
   version: '>=0'
   category: sys-apps

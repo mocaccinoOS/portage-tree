@@ -16,9 +16,6 @@ use_flags:
 - python_single_target_python3_7
 - systemd
 requires:
-- name: unbound
-  version: '>=0'
-  category: acct-user
 - name: python
   version: '>=0'
   category: dev-lang-3.7

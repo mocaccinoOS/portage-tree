@@ -4,12 +4,6 @@ category: net-mail
 use_flags:
 - pam
 requires:
-- name: mail
-  version: '>=0'
-  category: acct-user
-- name: postmaster
-  version: '>=0'
-  category: acct-user
 - name: pam
   version: '>=0'
   category: sys-libs
