@@ -8,10 +8,10 @@ use_flags:
 - -libedit
 - -xar
 - -xml
+- -z3
 - kernel_Darwin
 - libffi
 - ncurses
-- z3
 requires:
 - name: zlib
   version: '>=0'

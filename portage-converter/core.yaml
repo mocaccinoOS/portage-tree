@@ -648,6 +648,7 @@ artefacts:
       - libedit
       - xar
       - xml
+      - z3
   packages:
     - sys-devel/llvm:10
 
