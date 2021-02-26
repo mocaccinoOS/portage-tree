@@ -50,9 +50,6 @@ requires:
 - name: libXrandr
   version: '>=0'
   category: x11-libs
-- name: libXvMC
-  version: '>=0'
-  category: x11-libs
 - name: libXxf86vm
   version: '>=0'
   category: x11-libs

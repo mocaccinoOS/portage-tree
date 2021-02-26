@@ -7,6 +7,7 @@ use_flags:
 - -unwind
 - -valgrind
 - -vulkan-overlay
+- -xvmc
 - X
 - gallium
 - llvm
@@ -23,7 +24,6 @@ use_flags:
 - video_cards_radeon
 - video_cards_radeonsi
 - wayland
-- xvmc
 - zstd
 requires:
 - name: zstd
@@ -42,9 +42,6 @@ requires:
   version: '>=0'
   category: sys-devel-10
 - name: libXdamage
-  version: '>=0'
-  category: x11-libs
-- name: libXvMC
   version: '>=0'
   category: x11-libs
 - name: libXxf86vm
