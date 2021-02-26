@@ -3,31 +3,19 @@ version: 10.0.1
 category: sys-devel-10
 use_flags:
 - -doc
-- exegesis
-- gold
+- -exegesis
+- -gold
+- -libedit
+- -xar
+- -xml
 - kernel_Darwin
-- libedit
 - libffi
 - ncurses
-- xar
-- xml
 - z3
 requires:
-- name: xar
+- name: zlib
   version: '>=0'
-  category: app-arch
-- name: libedit
-  version: '>=0'
-  category: dev-libs
-- name: libffi
-  version: '>=0'
-  category: dev-libs
-- name: libpfm
-  version: '>=0'
-  category: dev-libs
-- name: z3
-  version: '>=0'
-  category: sci-mathematics
+  category: sys-libs
 description: Low Level Virtual Machine
 uri:
 - https://llvm.org/
