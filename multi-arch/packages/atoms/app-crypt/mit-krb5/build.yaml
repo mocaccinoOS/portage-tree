@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: lmdb
-  version: '>=0'
-  category: dev-db
 - name: python
   version: '>=0'
   category: dev-lang-3.7
@@ -32,15 +29,18 @@ requires:
 - name: libverto
   version: '>=0'
   category: dev-libs
-- name: openldap
-  version: '>=0'
-  category: net-nds
 - name: keyutils
   version: '>=0'
   category: sys-apps
-- name: xinetd
+- name: autoconf
   version: '>=0'
-  category: sys-apps
+  category: sys-devel-2.69
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2
 - name: e2fsprogs-libs
   version: '>=0'
   category: sys-libs

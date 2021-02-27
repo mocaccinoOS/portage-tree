@@ -4,31 +4,22 @@ category: app-crypt
 use_flags:
 - -doc
 - -libressl
+- -lmdb
+- -openldap
 - -selinux
 - -test
+- -xinetd
 - amd64
 - cpu_flags_x86_aes
 - keyutils
-- lmdb
 - nls
-- openldap
 - pkinit
 - x86
-- xinetd
 requires:
-- name: lmdb
-  version: '>=0'
-  category: dev-db
 - name: libverto
   version: '>=0'
   category: dev-libs
-- name: openldap
-  version: '>=0'
-  category: net-nds
 - name: keyutils
-  version: '>=0'
-  category: sys-apps
-- name: xinetd
   version: '>=0'
   category: sys-apps
 - name: gettext

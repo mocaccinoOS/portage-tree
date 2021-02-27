@@ -295,6 +295,15 @@ artefacts:
   packages:
     - sci-libs/gdal
 
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - openldap
+      - xinetd
+      - lmdb
+  packages:
+    - app-crypt/mit-krb5
+
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
   uses:
