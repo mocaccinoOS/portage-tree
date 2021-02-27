@@ -20,6 +20,12 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: autoconf
   version: '>=0'
-  category: layers
+  category: sys-devel-2.69
+- name: automake
+  version: '>=0'
+  category: sys-devel-1.16
+- name: libcap-ng
+  version: '>=0'
+  category: sys-libs

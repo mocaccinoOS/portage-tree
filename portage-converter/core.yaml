@@ -641,10 +641,11 @@ artefacts:
     - sys-devel/clang:10
 
 - tree: multi-arch/packages/atoms
-  ignore_build_deps: true
+  ignore_build_deps: false
   uses:
     disabled:
       - ldap
+      - gssapi
   packages:
     - sys-process/audit
 

@@ -2,9 +2,9 @@ name: audit
 version: 2.8.4
 category: sys-process
 use_flags:
+- -gssapi
 - -ldap
 - -python_targets_python3_6
-- gssapi
 - python
 - python_targets_python3_7
 requires:
