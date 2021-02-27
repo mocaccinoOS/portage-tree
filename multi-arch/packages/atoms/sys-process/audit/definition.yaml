@@ -2,15 +2,12 @@ name: audit
 version: 2.8.4
 category: sys-process
 use_flags:
+- -ldap
 - -python_targets_python3_6
 - gssapi
-- ldap
 - python
 - python_targets_python3_7
 requires:
-- name: openldap
-  version: '>=0'
-  category: net-nds
 - name: libcap-ng
   version: '>=0'
   category: sys-libs

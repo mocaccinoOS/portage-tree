@@ -644,6 +644,14 @@ artefacts:
   ignore_build_deps: true
   uses:
     disabled:
+      - ldap
+  packages:
+    - sys-process/audit
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  uses:
+    disabled:
       - exegesis
       - gold
       - libedit
@@ -733,7 +741,6 @@ artefacts:
     - sys-libs/libcap
     - sys-kernel/linux-headers
     - sys-process/procps
-    - sys-process/audit
     - x11-libs/libva
     - x11-libs/libxcb
     - x11-libs/libX11
