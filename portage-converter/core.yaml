@@ -312,6 +312,14 @@ artefacts:
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - libedit
+  packages:
+    - dev-libs/libpcre:3
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
   replacements:
     buildtime_deps:
       ignore:
