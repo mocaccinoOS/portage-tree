@@ -341,6 +341,7 @@ artefacts:
     - media-libs/alsa-lib
     - net-wireless/bluez
     - sys-apps/kmod
+    - sys-libs/libcap-ng
 
 - tree: multi-arch/packages/atoms
   replacements:
