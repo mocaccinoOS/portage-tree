@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 - name: yasm
   version: '>=0'
   category: dev-lang
@@ -44,3 +41,9 @@ requires:
 - name: e2fsprogs-libs
   version: '>=0'
   category: sys-libs
+- name: pkgconfig
+  version: '>=0'
+  category: virtual
+- name: yacc
+  version: '>=0'
+  category: virtual
