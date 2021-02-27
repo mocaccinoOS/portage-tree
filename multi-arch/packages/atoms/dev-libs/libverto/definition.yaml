@@ -2,10 +2,10 @@ name: libverto
 version: 0.2.5
 category: dev-libs
 use_flags:
+- -libevent
+- -tevent
 - glib
 - libev
-- libevent
-- tevent
 requires:
 - name: glib
   version: '>=0'
@@ -13,12 +13,6 @@ requires:
 - name: libev
   version: '>=0'
   category: dev-libs
-- name: libevent
-  version: '>=0'
-  category: dev-libs
-- name: tevent
-  version: '>=0'
-  category: sys-libs
 conflicts:
 - name: mit-krb5
   version: '>=0'

@@ -26,9 +26,3 @@ requires:
 - name: libev
   version: '>=0'
   category: dev-libs
-- name: libevent
-  version: '>=0'
-  category: dev-libs
-- name: tevent
-  version: '>=0'
-  category: sys-libs
