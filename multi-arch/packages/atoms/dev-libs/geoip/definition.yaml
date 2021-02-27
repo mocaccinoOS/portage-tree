@@ -1,10 +1,10 @@
 name: geoip
-version: 1.6.10+2
+version: 1.6.10+3
 category: dev-libs
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-libs/geoip
   original.package.name: dev-libs/geoip

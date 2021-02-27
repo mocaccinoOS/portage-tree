@@ -1,10 +1,10 @@
 name: IO-BufferedSelect
-version: 1.0.0+2
+version: 1.0.0+3
 category: dev-perl
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-perl/IO-BufferedSelect
   original.package.name: dev-perl/IO-BufferedSelect

@@ -1,13 +1,13 @@
 name: Path-Tiny
-version: 0.104.0+2
+version: 0.104.0+3
 category: dev-perl
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: Unicode-UTF8
-  version: '>=0.580.0'
-  category: dev-perl
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: Unicode-UTF8
+    version: '>=0.580.0'
+    category: dev-perl
 labels:
   emerge.packages: dev-perl/Path-Tiny
   original.package.name: dev-perl/Path-Tiny

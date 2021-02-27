@@ -1,13 +1,13 @@
 name: xfconf
-version: 4.14.3
+version: 4.14.3+1
 category: xfce-base
 requires:
-- name: libxfce4util
-  version: '>=4.10'
-  category: xfce-base
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: libxfce4util
+    version: '>=4.10'
+    category: xfce-base
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: xfce-base/xfconf
   original.package.name: xfce-base/xfconf

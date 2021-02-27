@@ -1,10 +1,10 @@
 name: os-prober
-version: 1.77+4
+version: 1.77+5
 category: sys-boot
 requires:
-- name: grub
-  version: '>=0'
-  category: sys-boot-2
+  - name: grub
+    version: '>=0'
+    category: sys-boot-2
 labels:
   emerge.packages: sys-boot/os-prober
   original.package.name: sys-boot/os-prober

@@ -1,13 +1,13 @@
 name: libnacl
-version: 1.6.1+2
+version: 1.6.1+3
 category: dev-python
 requires:
-- name: libsodium
-  version: '>=0'
-  category: dev-libs
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: libsodium
+    version: '>=0'
+    category: dev-libs
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-python/libnacl
   original.package.name: dev-python/libnacl

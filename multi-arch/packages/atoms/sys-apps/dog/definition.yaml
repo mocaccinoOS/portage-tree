@@ -1,8 +1,8 @@
 name: dog
-version: 1.7+2
+version: 1.7+3
 category: sys-apps
 uri:
-- https://packages.gentoo.org/package/sys-apps/dog
+  - https://packages.gentoo.org/package/sys-apps/dog
 license: GPL-2
 labels:
   emerge.packages: sys-apps/dog
