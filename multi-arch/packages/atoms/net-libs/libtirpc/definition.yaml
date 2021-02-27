@@ -4,6 +4,10 @@ category: net-libs
 use_flags:
 - -elibc_musl
 - kerberos
+requires:
+- name: krb5
+  version: '>=0'
+  category: virtual
 description: Transport Independent RPC library (SunRPC replacement)
 uri:
 - https://sourceforge.net/projects/libtirpc/
