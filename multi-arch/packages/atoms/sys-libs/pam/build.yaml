@@ -23,9 +23,6 @@ requires:
 - name: libxslt
   version: '>=0'
   category: dev-libs
-- name: libnsl
-  version: '>=0'
-  category: net-libs
 - name: flex
   version: '>=0'
   category: sys-devel
@@ -38,6 +35,15 @@ requires:
 - name: libcap
   version: '>=0'
   category: sys-libs
-- name: audit
+- name: libcrypt
   version: '>=0'
-  category: sys-process
+  category: virtual
+- name: libintl
+  version: '>=0'
+  category: virtual
+- name: pkgconfig
+  version: '>=0'
+  category: virtual
+- name: yacc
+  version: '>=0'
+  category: virtual

@@ -2,24 +2,24 @@ name: pam
 version: 1.4.0
 category: sys-libs
 use_flags:
+- -audit
+- -nis
 - -selinux
-- audit
 - berkdb
 - filecaps
-- nis
 requires:
-- name: libnsl
-  version: '>=0'
-  category: net-libs
 - name: db
   version: '>=0'
   category: sys-libs-5.3
 - name: libcap
   version: '>=0'
   category: sys-libs
-- name: audit
+- name: libcrypt
   version: '>=0'
-  category: sys-process
+  category: virtual
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: Linux-PAM (Pluggable Authentication Modules)
 uri:
 - https://github.com/linux-pam/linux-pam
