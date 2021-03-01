@@ -32,6 +32,9 @@ requires:
 - name: acl
   version: '>=0'
   category: sys-apps
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: systemd
   version: '>=0'
   category: sys-apps
@@ -41,6 +44,12 @@ requires:
 - name: zlib
   version: '>=0'
   category: sys-libs
+- name: krb5
+  version: '>=0'
+  category: virtual
+- name: libusb
+  version: '>=0'
+  category: virtual-1
 - name: shared-mime-info
   version: '>=0'
   category: x11-misc

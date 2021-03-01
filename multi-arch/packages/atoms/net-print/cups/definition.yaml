@@ -25,9 +25,21 @@ requires:
 - name: gnutls
   version: '>=0'
   category: net-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: pam
+  version: '>=0'
+  category: sys-libs
 - name: zlib
   version: '>=0'
   category: sys-libs
+- name: krb5
+  version: '>=0'
+  category: virtual
+- name: libusb
+  version: '>=0'
+  category: virtual-1
 - name: xdg-utils
   version: '>=0'
   category: x11-misc
