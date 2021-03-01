@@ -1,0 +1,23 @@
+name: os-headers
+version: "0"
+category: virtual
+use_flags:
+- -elibc_mingw
+- -kernel_Winnt
+- -prefix-guest
+- kernel_linux
+description: Virtual for operating system headers
+requires:
+  - name: linux-headers
+    category: sys-kernel
+    version: ">=0"
+uri:
+- ""
+labels:
+  RDEPEND: '!prefix-guest? ( || ( kernel_linux? ( sys-kernel/linux-headers:0 ) kernel_Winnt?
+    ( elibc_mingw? ( dev-util/mingw64-runtime ) ) ) ) prefix-guest? ( !sys-kernel/linux-headers
+    )'
+  emerge.packages: virtual/os-headers
+  kit: gentoo
+  original.package.name: virtual/os-headers
+  original.package.version: 0-r2
