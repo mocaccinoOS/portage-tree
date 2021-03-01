@@ -3,9 +3,9 @@ version: "4.8"
 category: sys-apps
 use_flags:
 - -selinux
+- -static
 - acl
 - nls
-- static
 description: Super-useful stream editor
 uri:
 - http://sed.sourceforge.net/

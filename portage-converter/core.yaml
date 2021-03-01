@@ -707,6 +707,13 @@ artefacts:
     - sys-devel/llvm:10
 
 - tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - static
+  packages:
+    - sys-apps/sed
+
+- tree: multi-arch/packages/atoms
   ignore_build_deps: true
   uses:
     disabled:
@@ -821,7 +828,6 @@ artefacts:
     - app-emulation/lxc
     - dev-util/cmake
     - sys-apps/file
-    - sys-apps/sed
     - sys-kernel/dracut
     - net-libs/nodejs
     - net-libs/libtirpc
