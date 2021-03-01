@@ -727,6 +727,20 @@ artefacts:
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
+  uses:
+    disabled:
+      - audit
+      - cryptsetup
+      - fdformat
+      - hardlink
+      - kill
+      - slang
+      - su
+  packages:
+    - sys-apps/util-linux
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.
@@ -786,7 +800,6 @@ artefacts:
     - net-libs/libssh2
     - sys-apps/attr
     - sys-apps/findutils
-    - sys-apps/util-linux
     - sys-apps/dbus
     - sys-devel/autoconf
     - sys-devel/autogen
@@ -916,6 +929,8 @@ reposcan_disabled_use_flags:
   - x64-macos
   - x64-cygwin
   - amd64-fbsd
+  - ppc
+  - ppc64
 
 reposcan_disabled_keywords:
   - ~amd64

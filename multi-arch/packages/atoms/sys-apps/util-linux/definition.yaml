@@ -2,56 +2,46 @@ name: util-linux
 version: 2.35.2
 category: sys-apps
 use_flags:
+- -audit
 - -build
+- -cryptsetup
+- -hardlink
+- -kill
+- -ppc
+- -ppc64
 - -python_targets_python3_6
 - -python_targets_python3_8
 - -selinux
+- -slang
+- -su
 - -test
-- audit
 - caps
 - cramfs
-- cryptsetup
-- hardlink
-- kill
 - logger
 - ncurses
 - nls
 - pam
-- ppc
-- ppc64
 - python
 - python_targets_python3_7
 - readline
-- slang
-- su
 - systemd
 - udev
 requires:
-- name: libpcre2
-  version: '>=0'
-  category: dev-libs
-- name: cryptsetup
-  version: '>=0'
-  category: sys-fs
-- name: librtas
+- name: libcap-ng
   version: '>=0'
   category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs
-- name: slang
+- name: readline
   version: '>=0'
   category: sys-libs
-conflicts:
-- name: coreutils
+- name: zlib
   version: '>=0'
-  category: sys-apps
-- name: shadow
+  category: sys-libs
+- name: libudev
   version: '>=0'
-  category: sys-apps
-- name: procps
-  version: '>=0'
-  category: sys-process
+  category: virtual
 description: Various useful Linux utilities
 uri:
 - https://www.kernel.org/pub/linux/utils/util-linux/ https://github.com/karelzak/util-linux
