@@ -2,39 +2,27 @@ name: coreutils
 version: "8.32"
 category: sys-apps
 use_flags:
+- -caps
+- -hostname
+- -kill
 - -selinux
+- -static
 - -test
 - acl
-- caps
 - gmp
-- hostname
-- kill
 - nls
-- static
 - xattr
 requires:
-- name: gmp
+- name: libintl
   version: '>=0'
-  category: dev-libs
-- name: acl
-  version: '>=0'
-  category: sys-apps
-- name: libcap
-  version: '>=0'
-  category: sys-libs
+  category: virtual
 conflicts:
-- name: net-tools
-  version: '>=0'
-  category: sys-apps
 - name: sandbox
   version: '>=0'
   category: sys-apps
 - name: util-linux
   version: '>=0'
   category: sys-apps
-- name: procps
-  version: '>=0'
-  category: sys-process
 description: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
 uri:
 - https://www.gnu.org/software/coreutils/

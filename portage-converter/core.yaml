@@ -29,7 +29,7 @@ skipped_resolutions:
       category: net-dialup
 
   categories:
-    - virtual
+    #   - virtual
     - acct-group
     - acct-user
 #    - cat2
@@ -81,6 +81,14 @@ artefacts:
       - openmp
   packages:
     - sys-devel/gettext
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - nis
+      - audit
+  packages:
+    - sys-libs/pam
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -296,6 +304,11 @@ artefacts:
     - sci-libs/gdal
 
 - tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
   uses:
     disabled:
       - openldap
@@ -303,6 +316,19 @@ artefacts:
       - lmdb
   packages:
     - app-crypt/mit-krb5
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - libevent
+      - tevent
+  packages:
+    - dev-libs/libverto
+
+- tree: multi-arch/packages/atoms
+  # TODO: add app-crypt/mit-krb5 on build
+  packages:
+    - virtual/krb5
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -682,6 +708,18 @@ artefacts:
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
+  uses:
+    disabled:
+      - caps
+      - hostname
+      - kill
+      - multicall
+      - static
+  packages:
+    - sys-apps/coreutils
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.
@@ -742,7 +780,6 @@ artefacts:
     - sys-apps/attr
     - sys-apps/findutils
     - sys-apps/util-linux
-    - sys-apps/coreutils
     - sys-apps/dbus
     - sys-devel/autoconf
     - sys-devel/autogen
@@ -754,6 +791,10 @@ artefacts:
     - sys-devel/flex
     - sys-fs/lvm2
     - sys-fs/udev-init-scripts
+    # TODO: fix dependency to media-lib/gd
+    # Calculating dependencies   . ... done!
+    # [ebuild   R    ] sys-libs/glibc-2.32-r2:2.2::gentoo  USE="audit* caps compile-locales* (crypt) gd* multiarch (multilib) nscd ssp (static-libs) suid (-cet) -custom-cflags -doc -headers-only -profile (-selinux) -static-pie -systemtap -test (-vanilla)" 18705 KiB
+    # [ebuild  N     ]  media-libs/gd-2.3.0:2/3::gentoo  USE="fontconfig jpeg png zlib -static-libs -test -tiff -truetype -webp -xpm" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="sse" 2480 KiB
     - sys-libs/glibc
     - sys-libs/libunwind
     - sys-libs/llvm-libunwind
@@ -783,6 +824,7 @@ artefacts:
     - sys-apps/sed
     - sys-kernel/dracut
     - net-libs/nodejs
+    - net-libs/libtirpc
     - net-misc/openssh
     - x11-libs/libdrm
 
@@ -808,6 +850,7 @@ reposcan_disabled_use_flags:
   - emacs
   - doc
   - doctool
+  - elibc_Cygwin
   - elibc_Darwin
   - elibc_FreeBSD
   - elibc_OpenBSD
