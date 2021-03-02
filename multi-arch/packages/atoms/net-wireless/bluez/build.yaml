@@ -1,4 +1,5 @@
 steps:
+- wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.55.tar.xz -O /var/cache/distfiles/bluez-5.55.tar.xz
 - |
   {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
