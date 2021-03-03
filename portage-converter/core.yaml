@@ -330,6 +330,17 @@ artefacts:
   packages:
     - virtual/krb5
 
+  # TODO: add sys-apps/systemd on virtual/libudev
+
+- tree: multi-arch/packages/atoms
+  # TODO: - add sys-kernel/linux-headers on build
+  #       - fix parsing of the runtime dep
+  uses:
+    disabled:
+      - prefix-guest
+  packages:
+    - virtual/os-headers
+
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
   uses:
@@ -711,6 +722,7 @@ artefacts:
     disabled:
       - static
   packages:
+    - app-arch/tar
     - sys-apps/sed
 
 - tree: multi-arch/packages/atoms
@@ -876,6 +888,7 @@ reposcan_disabled_use_flags:
   - elibc_NetBSD
   - elibc_SunOS
   - elibc_musl
+  - elibc_mingw
   - elibc_uclibc
   - elogind
   - libressl

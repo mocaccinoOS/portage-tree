@@ -3,10 +3,10 @@ version: "1.32"
 category: app-arch
 use_flags:
 - -selinux
+- -static
 - acl
 - elibc_glibc
 - nls
-- static
 - xattr
 description: Use this to make tarballs :)
 uri:
