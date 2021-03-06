@@ -9,6 +9,7 @@ use_flags:
 - pci
 - plugins
 - xml
+- X
 requires:
 - name: libltdl
   version: '>=0'

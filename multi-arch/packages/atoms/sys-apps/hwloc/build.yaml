@@ -1,4 +1,5 @@
 steps:
+- sed -e 's|$(use_enable static-libs static) \\|$(use_enable static-libs static) --disable-opencl \\|g' -i /var/db/repos/gentoo/sys-apps/hwloc/hwloc-1.11.13.ebuild
 - |
   {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
@@ -35,6 +36,9 @@ requires:
 - name: numactl
   version: '>=0'
   category: sys-process
+- name: pkgconfig
+  version: '>=0'
+  category: virtual
 - name: cairo
   version: '>=0'
   category: x11-libs
