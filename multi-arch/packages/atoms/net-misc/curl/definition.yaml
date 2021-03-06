@@ -30,6 +30,9 @@ requires:
 - name: zlib
   version: '>=0'
   category: sys-libs
+- name: krb5
+  version: '>=0'
+  category: virtual
 description: A Client that groks URLs
 uri:
 - https://curl.haxx.se/
