@@ -4,7 +4,11 @@ category: dev-lang-stable
 use_flags:
 - -elibc_musl
 - -libressl
-- system-bootstrap
+- -system-bootstrap
+- llvm_targets_AMDGPU
+- llvm_targets_BPF
+- llvm_targets_WebAssembly
+- llvm_targets_X86
 - system-llvm
 - wasm
 requires:
