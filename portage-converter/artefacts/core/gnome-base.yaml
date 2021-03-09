@@ -1,0 +1,13 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
+  uses:
+    disabled:
+      - ldap
+  packages:
+    - gnome-base/gconf:2
+

@@ -1,0 +1,15 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  # To avoid cycle error on solver for packages
+  # available already from layers/build-seed i
+  # ignore buildtime deps.
+  uses:
+    enabled:
+      - acl
+      - cxx
+      - ncurses
+      - nls
+      - openmp
+  packages:
+    - sys-devel/gettext

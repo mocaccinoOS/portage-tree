@@ -1,0 +1,11 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - source
+      - tk
+      - xindy
+  packages:
+    - app-text/texlive-core
+
+

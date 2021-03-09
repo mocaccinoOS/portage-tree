@@ -1,0 +1,46 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  # To avoid cycle error on solver for packages
+  # available already from layers/build-seed i
+  # ignore buildtime deps.
+  packages:
+    - dev-lang/python-exec
+    - dev-lang/perl
+    - dev-lang/vala:0.48
+    - dev-lang/tcl
+    - dev-lang/nasm
+    # BDEPEND of go requires itself.
+    - dev-lang/go
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  mutations:
+    uses:
+      - llvm_targets_AMDGPU
+      - llvm_targets_BPF
+      - llvm_targets_WebAssembly
+      - llvm_targets_X86
+  uses:
+    enabled:
+      - wasm
+      - system-llvm
+  packages:
+    - dev-lang/rust:stable
+
+- tree: multi-arch/packages/atoms
+  override_version: "3.7.9+1"
+  # To avoid cycle error on solver for packages
+  # available already from layers/build-seed i
+  # ignore buildtime deps.
+  uses:
+    disabled:
+      - build
+      - tk
+      - examples
+      - hardened
+      - libressl
+      - test
+      - wininst
+  packages:
+    - dev-lang/python:3.7

@@ -1,0 +1,27 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: app-crypt
+          name: mit-krb5
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: build-seed
+          category: layers
+  packages:
+    - virtual/krb5
+
+- tree: multi-arch/packages/atoms
+  # TODO: - add sys-kernel/linux-headers on build
+  #       - fix parsing of the runtime dep
+  uses:
+    disabled:
+      - prefix-guest
+  packages:
+    - virtual/os-headers
+
+
+# TODO: add sys-apps/systemd on virtual/libudev
+

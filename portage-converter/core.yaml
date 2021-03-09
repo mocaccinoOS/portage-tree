@@ -29,109 +29,27 @@ skipped_resolutions:
       category: net-dialup
 
   categories:
-    #   - virtual
     - acct-group
     - acct-user
-#    - cat2
 
 
-#include_files:
-#  - artefacts/file1.yml
+include_files:
+  - artefacts/core/virtual.yaml
+  - artefacts/core/dev-lang.yaml
+  - artefacts/core/gnome-base.yaml
+  - artefacts/core/app-text.yaml
+  - artefacts/core/media-sound.yaml
+  - artefacts/core/net-dialup.yaml
+  - artefacts/core/net-libs.yaml
+  - artefacts/core/sys-libs.yaml
+  - artefacts/core/dev-libs.yaml
+  - artefacts/core/sys-devel.yaml
+  - artefacts/core/sys-apps.yaml
 
 build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
 artefacts:
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
-  # ignore buildtime deps.
-  uses:
-    enabled:
-      - acl
-      - cryptsetup
-      - gcrypt
-      - hwdb
-      - kmod
-      - lz4
-      - lzma
-      - pam
-      - pcre
-      - policykit
-      - resolvconf
-      - seccomp
-      - sysv-utils
-      - zstd
-      - cgroup-hybrid
-  packages:
-    - sys-apps/systemd
-
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
-  # ignore buildtime deps.
-  uses:
-    enabled:
-      - acl
-      - cxx
-      - ncurses
-      - nls
-      - openmp
-  packages:
-    - sys-devel/gettext
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - nis
-      - audit
-  packages:
-    - sys-libs/pam
-
-- tree: multi-arch/packages/atoms
-  uses:
-    enabled:
-      - atm
-      - pam
-  packages:
-    - net-dialup/ppp
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - gconf
-      - gtk
-      - libsamplerate
-      - qt5
-      - sox
-      - system-wide
-      - ofono-headset
-  packages:
-    - media-sound/pulseaudio
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - source
-      - tk
-      - xindy
-  packages:
-    - app-text/texlive-core
-
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: python
-          category: dev-lang-3.7
-  uses:
-    disabled:
-      - ldap
-  packages:
-    - gnome-base/gconf:2
-
 - tree: multi-arch/packages/atoms
   uses:
     enabled:
@@ -145,44 +63,6 @@ artefacts:
       - gtk
   packages:
     - dev-lisp/clisp:2
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - test
-      - java
-      - tcl
-  packages:
-    - sys-libs/db:5.3
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - bluetooth
-  packages:
-    - net-libs/libpcap
-
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  uses:
-    disabled:
-      - webkit
-      - networkmanager
-      - spidermonkey
-      - mono
-      - kde
-      - gnome
-  packages:
-    - net-libs/libproxy
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - gssapi
-      - samba
-  packages:
-    - net-libs/libsoup:2.4
-
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -207,26 +87,6 @@ artefacts:
   packages:
     - net-dns/unbound
 
-- tree: multi-arch/packages/atoms
-  uses:
-    # Avoid cycle with nvidia-drivers
-    disabled:
-      - cuda
-      - gl
-  packages:
-    - sys-apps/hwloc
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: postgresql
-          category: dev-db-12
-        - name: openldap
-          category: net-nds
-  packages:
-    - dev-libs/cyrus-sasl:2
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -238,15 +98,6 @@ artefacts:
   packages:
     - dev-qt/qtwidgets:5
 
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: cmake
-          category: dev-util
-  packages:
-    - dev-libs/double-conversion
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -267,14 +118,6 @@ artefacts:
       - latex
   packages:
     - app-text/xmlto
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - subunit
-  packages:
-    - dev-libs/check
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -317,29 +160,6 @@ artefacts:
   packages:
     - app-crypt/mit-krb5
 
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - libevent
-      - tevent
-  packages:
-    - dev-libs/libverto
-
-- tree: multi-arch/packages/atoms
-  # TODO: add app-crypt/mit-krb5 on build
-  packages:
-    - virtual/krb5
-
-  # TODO: add sys-apps/systemd on virtual/libudev
-
-- tree: multi-arch/packages/atoms
-  # TODO: - add sys-kernel/linux-headers on build
-  #       - fix parsing of the runtime dep
-  uses:
-    disabled:
-      - prefix-guest
-  packages:
-    - virtual/os-headers
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -355,14 +175,6 @@ artefacts:
           category: net-libs
   packages:
     - net-print/cups
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - libedit
-  packages:
-    - dev-libs/libpcre:3
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
@@ -476,30 +288,6 @@ artefacts:
   packages:
     - net-dns/avahi
 
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
-  # ignore buildtime deps.
-  uses:
-    enabled:
-      - acl
-      - cryptsetup
-      - gcrypt
-      - hwdb
-      - kmod
-      - lz4
-      - lzma
-      - pam
-      - pcre
-      - policykit
-      - resolvconf
-      - seccomp
-      - sysv-utils
-      - zstd
-      - cgroup-hybrid
-  packages:
-    - sys-apps/systemd
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -612,22 +400,6 @@ artefacts:
   packages:
     - net-fs/samba
 
-- tree: multi-arch/packages/atoms
-  override_version: "3.7.9+1"
-  # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
-  # ignore buildtime deps.
-  uses:
-    disabled:
-      - build
-      - tk
-      - examples
-      - hardened
-      - libressl
-      - test
-      - wininst
-  packages:
-    - dev-lang/python:3.7
 
 - tree: multi-arch/packages/atoms
   # To avoid cycle error on solver for packages
@@ -661,31 +433,12 @@ artefacts:
   packages:
     - app-crypt/gnupg
 
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  override_version: "1.2.11+1"
-  packages:
-    - sys-libs/zlib
 
 - tree: multi-arch/packages/atoms
   override_version: "2.10.4+1"
   packages:
     - media-libs/freetype
 
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
-  # ignore buildtime deps.
-  uses:
-    disabled:
-      - gpm
-      - ada
-      - profile
-      - threads
-      - trace
-  packages:
-    - sys-libs/ncurses
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
@@ -725,17 +478,6 @@ artefacts:
     - app-arch/tar
     - sys-apps/sed
 
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  uses:
-    disabled:
-      - caps
-      - hostname
-      - kill
-      - multicall
-      - static
-  packages:
-    - sys-apps/coreutils
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
@@ -764,14 +506,6 @@ artefacts:
     - sys-devel/gcc:9.3.0
     - dev-db/mysql-connector-c
     - dev-db/sqlite
-    - dev-lang/python-exec
-    - dev-lang/perl
-    - dev-lang/vala:0.48
-    - dev-lang/rust
-    - dev-lang/tcl
-    - dev-lang/nasm
-    # BDEPEND of go requires itself.
-    - dev-lang/go
     - dev-libs/boost
     - dev-libs/boehm-gc
     - dev-libs/elfutils

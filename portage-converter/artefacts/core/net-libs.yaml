@@ -1,0 +1,30 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - bluetooth
+  packages:
+    - net-libs/libpcap
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  uses:
+    disabled:
+      - webkit
+      - networkmanager
+      - spidermonkey
+      - mono
+      - kde
+      - gnome
+  packages:
+    - net-libs/libproxy
+
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - gssapi
+      - samba
+  packages:
+    - net-libs/libsoup:2.4
+

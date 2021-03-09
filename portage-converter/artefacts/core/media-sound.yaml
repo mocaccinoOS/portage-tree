@@ -1,0 +1,13 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - gconf
+      - gtk
+      - libsamplerate
+      - qt5
+      - sox
+      - system-wide
+      - ofono-headset
+  packages:
+    - media-sound/pulseaudio

@@ -1,0 +1,65 @@
+artefacts:
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  # To avoid cycle error on solver for packages
+  # available already from layers/build-seed i
+  # ignore buildtime deps.
+  uses:
+    enabled:
+      - acl
+      - cryptsetup
+      - gcrypt
+      - hwdb
+      - kmod
+      - lz4
+      - lzma
+      - pam
+      - pcre
+      - policykit
+      - resolvconf
+      - seccomp
+      - sysv-utils
+      - zstd
+      - cgroup-hybrid
+  packages:
+    - sys-apps/systemd
+
+- tree: multi-arch/packages/atoms
+  mutations:
+    uses:
+      - X
+  uses:
+    # Avoid cycle with nvidia-drivers
+    disabled:
+      - cuda
+      - gl
+  packages:
+    - sys-apps/hwloc
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  uses:
+    disabled:
+      - caps
+      - hostname
+      - kill
+      - multicall
+      - static
+  packages:
+    - sys-apps/coreutils
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  uses:
+    disabled:
+      - audit
+      - cryptsetup
+      - fdformat
+      - hardlink
+      - kill
+      - slang
+      - su
+  packages:
+    - sys-apps/util-linux
+

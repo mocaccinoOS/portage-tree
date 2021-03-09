@@ -1,0 +1,50 @@
+artefacts:
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: postgresql
+          category: dev-db-12
+        - name: openldap
+          category: net-nds
+  packages:
+    - dev-libs/cyrus-sasl:2
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: cmake
+          category: dev-util
+  packages:
+    - dev-libs/double-conversion
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - subunit
+  packages:
+    - dev-libs/check
+
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - libevent
+      - tevent
+  packages:
+    - dev-libs/libverto
+
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - libedit
+  packages:
+    - dev-libs/libpcre:3
+
+
