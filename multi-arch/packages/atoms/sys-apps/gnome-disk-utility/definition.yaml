@@ -1,24 +1,24 @@
 name: gnome-disk-utility
-version: 3.36.3+3
+version: 3.36.3+4
 category: sys-apps
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: xz-utils
-  version: '>=5.0.5'
-  category: app-arch
-- name: libdvdread
-  version: '>=4.2.0'
-  category: media-libs
-- name: X
-  version: '>=0'
-  category: layers
-- name: sys-fs
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: xz-utils
+    version: '>=5.0.5'
+    category: app-arch
+  - name: libdvdread
+    version: '>=4.2.0'
+    category: media-libs
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: sys-fs
+    version: '>=0'
+    category: layers
 uri:
-- https://wiki.gnome.org/Apps/Disks
+  - https://wiki.gnome.org/Apps/Disks
 license: GPL-2+
 labels:
   emerge.packages: sys-apps/gnome-disk-utility

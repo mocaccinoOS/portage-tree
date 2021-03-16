@@ -1,13 +1,13 @@
 name: efibootmgr
-version: 16+2
+version: 16+3
 category: sys-boot
 requires:
-- name: X
-  version: '>=0'
-  category: layers
-- name: efivar
-  version: '>=25'
-  category: sys-libs
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: efivar
+    version: '>=25'
+    category: sys-libs
 labels:
   emerge.packages: sys-boot/efibootmgr
   original.package.name: sys-boot/efibootmgr

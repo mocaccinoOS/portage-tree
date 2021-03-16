@@ -1,18 +1,18 @@
 name: seamonkey
-version: 2.53.4+3
+version: 2.53.4+4
 category: www-client
 requires:
-- name: X
-  version: '>=0'
-  category: layers
-- name: plasma
-  version: '>=0'
-  category: layers
-- name: enigmail
-  version: '>=0'
-  category: x11-plugins
+  - name: X
+    version: '>=0'
+    category: layers
+  - name: plasma
+    version: '>=0'
+    category: layers
+  - name: enigmail
+    version: '>=0'
+    category: x11-plugins
 uri:
-- http://www.seamonkey-project.org
+  - http://www.seamonkey-project.org
 license: MPL-2.0 GPL-2 LGPL-2.1
 labels:
   emerge.packages: www-client/seamonkey

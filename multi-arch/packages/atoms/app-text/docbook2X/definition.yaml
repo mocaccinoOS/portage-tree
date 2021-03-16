@@ -1,13 +1,13 @@
 name: docbook2X
-version: 0.8.8+5
+version: 0.8.8+6
 category: app-text
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
-- name: XML-LibXML
-  version: '>=0'
-  category: dev-perl
+  - name: system-x
+    version: '>=0'
+    category: layers
+  - name: XML-LibXML
+    version: '>=0'
+    category: dev-perl
 labels:
   emerge.packages: app-text/docbook2X
   original.package.name: app-text/docbook2X

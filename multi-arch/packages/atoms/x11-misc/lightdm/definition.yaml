@@ -1,12 +1,12 @@
 name: lightdm
-version: 1.30.0+3
+version: 1.30.0+4
 category: x11-misc
 requires:
-- name: X
-  version: '>=0'
-  category: layers
+  - name: X
+    version: '>=0'
+    category: layers
 uri:
-- https://launchpad.net/lightdm
+  - https://launchpad.net/lightdm
 license: GPL-3 LGPL-3
 labels:
   emerge.packages: x11-misc/lightdm

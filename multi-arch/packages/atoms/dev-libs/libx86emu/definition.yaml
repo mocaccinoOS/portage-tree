@@ -1,8 +1,8 @@
 name: libx86emu
-version: 1.1+2
+version: 1.1+3
 category: dev-libs
 uri:
-- https://www.opensuse.org/
+  - https://www.opensuse.org/
 license: HPND
 labels:
   emerge.packages: dev-libs/libx86emu

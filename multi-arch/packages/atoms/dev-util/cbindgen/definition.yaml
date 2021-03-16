@@ -1,8 +1,8 @@
 name: cbindgen
-version: 0.15.0+2
+version: 0.15.0+3
 category: dev-util
 uri:
-- https://github.com/eqrion/cbindgen/
+  - https://github.com/eqrion/cbindgen/
 license: MIT MPL-2.0
 labels:
   emerge.packages: dev-util/cbindgen

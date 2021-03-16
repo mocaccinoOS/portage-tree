@@ -1,10 +1,10 @@
 name: libnftnl
-version: 1.1.7+2
+version: 1.1.7+3
 category: net-libs
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: net-libs/libnftnl
   original.package.name: net-libs/libnftnl

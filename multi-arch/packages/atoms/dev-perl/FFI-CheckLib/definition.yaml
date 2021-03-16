@@ -1,10 +1,10 @@
 name: FFI-CheckLib
-version: 0.250.0+2
+version: 0.250.0+3
 category: dev-perl
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-perl/FFI-CheckLib
   original.package.name: dev-perl/FFI-CheckLib

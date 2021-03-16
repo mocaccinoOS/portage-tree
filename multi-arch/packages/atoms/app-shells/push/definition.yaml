@@ -1,8 +1,8 @@
 name: push
-version: 3.4+2
+version: 3.4+3
 category: app-shells
 uri:
-- https://github.com/vaeth/push/
+  - https://github.com/vaeth/push/
 license: BSD
 labels:
   emerge.packages: app-shells/push

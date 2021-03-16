@@ -1,10 +1,10 @@
 name: gnome-clocks
-version: 3.36.2
+version: 3.36.2+1
 category: gnome-extra
 requires:
-- name: gnome
-  version: '>=0'
-  category: layers
+  - name: gnome
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: gnome-extra/gnome-clocks
   original.package.name: gnome-extra/gnome-clocks

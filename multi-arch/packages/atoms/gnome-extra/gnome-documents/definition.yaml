@@ -1,16 +1,16 @@
 name: gnome-documents
-version: 3.34.0
+version: 3.34.0+1
 category: gnome-extra
 requires:
-- name: gnome-online-miners
-  version: '>=0'
-  category: net-misc
-- name: gnome
-  version: '>=0'
-  category: layers
-- name: libzapojit
-  version: '>=0.0.2'
-  category: net-libs
+  - name: gnome-online-miners
+    version: '>=0'
+    category: net-misc
+  - name: gnome
+    version: '>=0'
+    category: layers
+  - name: libzapojit
+    version: '>=0.0.2'
+    category: net-libs
 labels:
   emerge.packages: gnome-extra/gnome-documents
   original.package.name: gnome-extra/gnome-documents

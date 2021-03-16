@@ -1,10 +1,10 @@
 name: Capture-Tiny
-version: 0.480.0+2
+version: 0.480.0+3
 category: dev-perl
 requires:
-- name: system-x
-  version: '>=0'
-  category: layers
+  - name: system-x
+    version: '>=0'
+    category: layers
 labels:
   emerge.packages: dev-perl/Capture-Tiny
   original.package.name: dev-perl/Capture-Tiny
