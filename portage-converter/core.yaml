@@ -45,6 +45,7 @@ include_files:
   - artefacts/core/dev-libs.yaml
   - artefacts/core/sys-devel.yaml
   - artefacts/core/sys-apps.yaml
+  - artefacts/core/sci-libs.yaml
 
 build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
@@ -119,32 +120,6 @@ artefacts:
   packages:
     - app-text/xmlto
 
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - armadillo
-      - fits
-      - gml
-      - hdf5
-      - java
-      - jpeg2k
-      - lzma
-      - mdb
-      - mysql
-      - netcdf
-      - odbc
-      - ogdi
-      - opencl
-      - oracle
-      - postgres
-      - spatialite
-      - sqlite
-      - threads
-      - webp
-      - xls
-  packages:
-    - sci-libs/gdal
 
 - tree: multi-arch/packages/atoms
   replacements:
@@ -476,22 +451,6 @@ artefacts:
       - static
   packages:
     - app-arch/tar
-    - sys-apps/sed
-
-
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  uses:
-    disabled:
-      - audit
-      - cryptsetup
-      - fdformat
-      - hardlink
-      - kill
-      - slang
-      - su
-  packages:
-    - sys-apps/util-linux
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true

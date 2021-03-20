@@ -63,3 +63,9 @@ artefacts:
   packages:
     - sys-apps/util-linux
 
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - static
+  packages:
+    - sys-apps/sed
