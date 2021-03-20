@@ -1,0 +1,12 @@
+name: cblas-portage
+version: "3.8"
+category: virtual
+requires:
+- name: cblas
+  version: "3.8"
+  category: virtual
+labels:
+  emerge.packages: virtual/cblas
+  kit: gentoo
+  original.package.name: virtual/cblas
+  original.package.version: "3.8"
