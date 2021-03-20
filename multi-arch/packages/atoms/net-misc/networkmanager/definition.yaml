@@ -3,30 +3,36 @@ version: 1.26.0
 category: net-misc
 use_flags:
 - -elogind
+- -gnutls
+- -iwd
+- -ofono
+- -resolvconf
 - -selinux
+- -teamd
 - -test
+- -vala
 - audit
 - bluetooth
 - connection-sharing
 - dhclient
 - dhcpcd
-- gnutls
 - introspection
-- iwd
 - json
 - modemmanager
 - ncurses
 - nss
-- ofono
 - ovs
 - policykit
 - ppp
-- resolvconf
 - systemd
-- teamd
-- vala
 - wifi
 requires:
+- name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
+- name: jansson
+  version: '>=0'
+  category: dev-libs
 - name: newt
   version: '>=0'
   category: dev-libs
@@ -39,15 +45,9 @@ requires:
 - name: dnsmasq
   version: '>=0'
   category: net-dns
-- name: openresolv
-  version: '>=0'
-  category: net-dns
 - name: iptables
   version: '>=0'
   category: net-firewall
-- name: gnutls
-  version: '>=0'
-  category: net-libs
 - name: libndp
   version: '>=0'
   category: net-libs
@@ -63,21 +63,18 @@ requires:
 - name: iputils
   version: '>=0'
   category: net-misc
-- name: libteam
+- name: mobile-broadband-provider-info
   version: '>=0'
   category: net-misc
 - name: modemmanager
   version: '>=0'
   category: net-misc
-- name: ofono
-  version: '>=0'
-  category: net-misc
-- name: iwd
+- name: bluez
   version: '>=0'
   category: net-wireless
-- name: wpa_supplicant
+- name: audit
   version: '>=0'
-  category: net-wireless
+  category: sys-process
 description: A set of co-operative tools that make networking simple and straightforward
 uri:
 - https://wiki.gnome.org/Projects/NetworkManager
