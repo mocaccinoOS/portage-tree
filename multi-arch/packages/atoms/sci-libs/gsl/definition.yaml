@@ -3,6 +3,10 @@ version: "2.5"
 category: sci-libs
 use_flags:
 - cblas-external
+requires:
+- name: cblas
+  version: '>=0'
+  category: virtual
 description: The GNU Scientific Library
 uri:
 - https://www.gnu.org/software/gsl/
