@@ -1,0 +1,12 @@
+name: lapack-portage
+version: 3.9.0
+category: sci-libs
+requires:
+- name: lapack
+  version: 3.9.0
+  category: sci-libs
+labels:
+  emerge.packages: sci-libs/lapack
+  kit: gentoo
+  original.package.name: sci-libs/lapack
+  original.package.version: 3.9.0
