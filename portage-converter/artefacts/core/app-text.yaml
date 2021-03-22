@@ -8,4 +8,11 @@ artefacts:
   packages:
     - app-text/texlive-core
 
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - latex
+  packages:
+    - app-text/xmlto
 

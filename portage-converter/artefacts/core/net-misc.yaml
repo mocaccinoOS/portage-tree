@@ -1,0 +1,25 @@
+artefacts:
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      # openresolv is not installable with systemd.
+      - resolvconf
+      - vala
+      - gnutls
+      - iwd
+      - teamd
+      - ofono
+  packages:
+    - net-misc/networkmanager
+
+- tree: multi-arch/packages/atoms
+  uses:
+    enabled:
+      - http2
+      - idn
+      - kerberos
+      - openssl
+      - ssl
+  packages:
+    - net-misc/curl

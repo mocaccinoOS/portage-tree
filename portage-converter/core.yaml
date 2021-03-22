@@ -32,20 +32,21 @@ skipped_resolutions:
     - acct-group
     - acct-user
 
-
 include_files:
-  - artefacts/core/virtual.yaml
-  - artefacts/core/dev-lang.yaml
-  - artefacts/core/gnome-base.yaml
-  - artefacts/core/app-text.yaml
-  - artefacts/core/media-sound.yaml
-  - artefacts/core/net-dialup.yaml
-  - artefacts/core/net-libs.yaml
-  - artefacts/core/sys-libs.yaml
-  - artefacts/core/dev-libs.yaml
-  - artefacts/core/sys-devel.yaml
-  - artefacts/core/sys-apps.yaml
-  - artefacts/core/sci-libs.yaml
+- artefacts/core/app-text.yaml
+- artefacts/core/virtual.yaml
+- artefacts/core/dev-lang.yaml
+- artefacts/core/dev-libs.yaml
+- artefacts/core/gnome-base.yaml
+- artefacts/core/media-sound.yaml
+- artefacts/core/media-libs.yaml
+- artefacts/core/net-dialup.yaml
+- artefacts/core/net-libs.yaml
+- artefacts/core/net-misc.yaml
+- artefacts/core/sci-libs.yaml
+- artefacts/core/sys-apps.yaml
+- artefacts/core/sys-devel.yaml
+- artefacts/core/sys-libs.yaml
 
 build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
@@ -112,15 +113,6 @@ artefacts:
   packages:
     - app-arch/lz4
 
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - latex
-  packages:
-    - app-text/xmlto
-
-
 - tree: multi-arch/packages/atoms
   replacements:
     buildtime_deps:
@@ -184,34 +176,6 @@ artefacts:
     - sys-apps/kmod
     - sys-libs/libcap-ng
 
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: python
-          category: dev-lang-3.7
-  uses:
-    disabled:
-      - d3d9
-      - debug
-      - gles1
-      - osmesa
-      - lm-sensors
-      - unwind
-      - xvmc
-      - valgrind
-      - vulkan-overlay
-      - video_cards_freedreno
-      - video_cards_iris
-      - video_cards_lima
-      - video_cards_panfrost
-      - video_cards_v3d
-      - video_cards_vc4
-      - video_cards_vivante
-      - zink
-  packages:
-    - media-libs/mesa
-
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -222,28 +186,6 @@ artefacts:
   packages:
     - app-misc/lirc
 
-- tree: multi-arch/packages/atoms
-  uses:
-    enabled:
-      - amd64
-      - amd64-linux
-  packages:
-    - media-libs/libjpeg-turbo
-
-
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      # We use this deps directly from build-seed layer.
-      ignore:
-        - name: cmake
-          category: dev-util
-        - name: ninja
-          category: dev-util
-        - name: python
-          category: dev-lang-3.7
-  packages:
-    - media-libs/vulkan-loader
 
 - tree: multi-arch/packages/atoms
   replacements:
@@ -262,18 +204,6 @@ artefacts:
       - bookmarks
   packages:
     - net-dns/avahi
-
-
-- tree: multi-arch/packages/atoms
-  uses:
-    enabled:
-      - http2
-      - idn
-      - kerberos
-      - openssl
-      - ssl
-  packages:
-    - net-misc/curl
 
 - tree: multi-arch/packages/atoms
   uses:
@@ -408,13 +338,6 @@ artefacts:
   packages:
     - app-crypt/gnupg
 
-
-- tree: multi-arch/packages/atoms
-  override_version: "2.10.4+1"
-  packages:
-    - media-libs/freetype
-
-
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
   uses:
@@ -493,14 +416,6 @@ artefacts:
     - dev-util/gtk-doc-am
     - dev-util/gtk-update-icon-cache
     - dev-util/vulkan-headers
-    - media-libs/alsa-topology-conf
-    - media-libs/alsa-ucm-conf
-    - media-libs/fontconfig
-    - media-libs/libpng
-    - media-libs/gd
-    - media-libs/tiff
-    - media-libs/libglvnd
-    - media-libs/harfbuzz
     - net-mail/courier-imap
     - net-libs/libssh2
     - sys-apps/attr
