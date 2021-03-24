@@ -12,7 +12,7 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
@@ -20,24 +20,18 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
-- name: nettle
-  version: '>=0'
-  category: dev-libs
 - name: meson
   version: '>=0'
   category: dev-util
 - name: ninja
   version: '>=0'
   category: dev-util
-- name: libidn2
-  version: '>=0'
-  category: net-dns
-- name: gettext
-  version: '>=0'
-  category: sys-devel
 - name: libcap
   version: '>=0'
   category: sys-libs
+- name: os-headers
+  version: '>=0'
+  category: virtual
+- name: pkgconfig
+  version: '>=0'
+  category: virtual
