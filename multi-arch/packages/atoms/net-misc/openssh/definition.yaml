@@ -4,6 +4,7 @@ category: net-misc
 use_flags:
 - -libressl
 - -selinux
+- -static
 - X
 - audit
 - bindist
@@ -15,24 +16,17 @@ use_flags:
 - prefix
 - sctp
 - ssl
-- static
 - userland_GNU
 requires:
-- name: libedit
-  version: '>=0'
-  category: dev-libs
-- name: ldns
-  version: '>=0'
-  category: net-libs
-- name: lksctp-tools
-  version: '>=0'
-  category: net-misc
 - name: shadow
   version: '>=0'
   category: sys-apps
-- name: zlib
+- name: pam
   version: '>=0'
   category: sys-libs
+- name: krb5
+  version: '>=0'
+  category: virtual
 - name: xauth
   version: '>=0'
   category: x11-apps

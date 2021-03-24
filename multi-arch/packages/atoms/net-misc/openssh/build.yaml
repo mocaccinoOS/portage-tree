@@ -12,7 +12,7 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
@@ -20,18 +20,21 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libedit
+- name: autoconf
   version: '>=0'
-  category: dev-libs
-- name: ldns
+  category: sys-devel-2.69
+- name: automake
   version: '>=0'
-  category: net-libs
-- name: lksctp-tools
+  category: sys-devel-1.16
+- name: libtool
   version: '>=0'
-  category: net-misc
+  category: sys-devel-2
 - name: pam
   version: '>=0'
   category: sys-libs
-- name: zlib
+- name: krb5
   version: '>=0'
-  category: sys-libs
+  category: virtual
+- name: os-headers
+  version: '>=0'
+  category: virtual
