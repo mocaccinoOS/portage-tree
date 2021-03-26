@@ -2,8 +2,8 @@ name: libpcre2
 version: "10.35"
 category: dev-libs
 use_flags:
+- -libedit
 - bzip2
-- libedit
 - readline
 - userland_GNU
 - zlib
@@ -11,9 +11,6 @@ requires:
 - name: bzip2
   version: '>=0'
   category: app-arch
-- name: libedit
-  version: '>=0'
-  category: dev-libs
 - name: readline
   version: '>=0'
   category: sys-libs
