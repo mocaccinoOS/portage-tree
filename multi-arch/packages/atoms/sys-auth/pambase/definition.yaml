@@ -3,13 +3,13 @@ version: "20201103"
 category: sys-auth
 use_flags:
 - -elogind
+- -pam_krb5
+- -pam_ssh
+- -passwdqc
 - -selinux
 - caps
 - gnome-keyring
 - mktemp
-- pam_krb5
-- pam_ssh
-- passwdqc
 - pwquality
 - sha512
 - systemd
@@ -23,16 +23,7 @@ requires:
 - name: systemd
   version: '>=0'
   category: sys-apps
-- name: pam_krb5
-  version: '>=0'
-  category: sys-auth
 - name: pam_mktemp
-  version: '>=0'
-  category: sys-auth
-- name: pam_ssh
-  version: '>=0'
-  category: sys-auth
-- name: passwdqc
   version: '>=0'
   category: sys-auth
 description: PAM base configuration files
