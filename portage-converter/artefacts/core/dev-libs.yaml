@@ -38,13 +38,12 @@ artefacts:
   packages:
     - dev-libs/libverto
 
-
-# Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
   uses:
     disabled:
       - libedit
   packages:
     - dev-libs/libpcre:3
+    - dev-libs/libpcre2
 
 

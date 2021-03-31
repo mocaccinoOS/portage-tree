@@ -23,3 +23,20 @@ artefacts:
       - ssl
   packages:
     - net-misc/curl
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - static
+  packages:
+    - net-misc/openssh
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - static
+      - idn
+      - gcrypt
+      - nettle
+  packages:
+    - net-misc/iputils
