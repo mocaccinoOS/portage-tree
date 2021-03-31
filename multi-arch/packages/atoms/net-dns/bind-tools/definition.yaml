@@ -3,29 +3,27 @@ version: 9.16.6
 category: net-dns
 use_flags:
 - -doc
+- -idn
+- -libedit
 - -libressl
 - caps
 - gssapi
-- idn
-- libedit
 - readline
 - xml
+- ipv6
 requires:
-- name: libedit
-  version: '>=0'
-  category: dev-libs
 - name: libuv
   version: '>=0'
   category: dev-libs
 - name: libxml2
   version: '>=0'
   category: dev-libs-2
-- name: libidn2
-  version: '>=0'
-  category: net-dns
 - name: libcap
   version: '>=0'
   category: sys-libs
+- name: krb5
+  version: '>=0'
+  category: virtual
 description: 'bind tools: dig, nslookup, host, nsupdate, dnssec-keygen'
 uri:
 - https://www.isc.org/software/bind
