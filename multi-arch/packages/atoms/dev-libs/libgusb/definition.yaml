@@ -12,6 +12,9 @@ requires:
 - name: hwids
   version: '>=0'
   category: sys-apps
+- name: libusb
+  version: '>=0'
+  category: virtual-1
 description: GObject wrapper for libusb
 uri:
 - https://github.com/hughsie/libgusb
