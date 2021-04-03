@@ -46,4 +46,14 @@ artefacts:
     - dev-libs/libpcre:3
     - dev-libs/libpcre2
 
+- tree: multi-arch/packages/atoms
+  packages:
+    - dev-libs/libgusb
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - mpi
+  packages:
+    - dev-libs/boost
 

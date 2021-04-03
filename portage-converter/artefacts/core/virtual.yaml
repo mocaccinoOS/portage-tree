@@ -14,6 +14,25 @@ artefacts:
     - virtual/krb5
 
 - tree: multi-arch/packages/atoms
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: dev-libs
+          name: iconv
+
+    runtime_deps:
+      packages:
+        - category: dev-libs
+          name: iconv
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: build-seed
+          category: layers
+  packages:
+    - virtual/libiconv
+
+- tree: multi-arch/packages/atoms
   # TODO: - add sys-kernel/linux-headers on build
   #       - fix parsing of the runtime dep
   uses:
