@@ -7,6 +7,7 @@ package_dir: /{{ .Values.name }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 steps:
 
 - |
@@ -22,5 +23,5 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
