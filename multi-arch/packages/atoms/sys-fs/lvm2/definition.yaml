@@ -2,27 +2,21 @@ name: lvm2
 version: 2.02.187
 category: sys-fs
 use_flags:
+- -lvm2create_initrd
+- -sanlock
 - -selinux
-- lvm2create_initrd
 - readline
-- sanlock
 - static
 - systemd
 - thin
 - udev
 requires:
-- name: makedev
-  version: '>=0'
-  category: sys-apps
-- name: systemd
+- name: util-linux
   version: '>=0'
   category: sys-apps
 - name: thin-provisioning-tools
   version: '>=0'
   category: sys-block
-- name: sanlock
-  version: '>=0'
-  category: sys-cluster
 conflicts:
 - name: cryptsetup
   version: '>=0'
