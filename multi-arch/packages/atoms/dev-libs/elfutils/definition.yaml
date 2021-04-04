@@ -2,15 +2,12 @@ name: elfutils
 version: "0.181"
 category: dev-libs
 use_flags:
+- -lzma
 - -valgrind
 - bzip2
-- lzma
 - nls
 requires:
 - name: bzip2
-  version: '>=0'
-  category: app-arch
-- name: xz-utils
   version: '>=0'
   category: app-arch
 - name: zlib
