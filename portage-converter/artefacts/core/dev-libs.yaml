@@ -57,3 +57,30 @@ artefacts:
   packages:
     - dev-libs/boost
 
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  uses:
+    disabled:
+      # Follow sabayon way.
+      - lzma
+  packages:
+    - dev-libs/elfutils
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  packages:
+    - dev-libs/boost
+    - dev-libs/boehm-gc
+    - dev-libs/expat
+    - dev-libs/fribidi
+    - dev-libs/glib
+    - dev-libs/gmp
+    - dev-libs/gobject-introspection
+    - dev-libs/gobject-introspection-common
+    - dev-libs/icu
+    - dev-libs/jsoncpp
+    - dev-libs/json-c
+    - dev-libs/libevdev
+    - dev-libs/libxml2:2
+    - dev-libs/libyaml
+
