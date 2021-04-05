@@ -1,0 +1,17 @@
+name: logger
+version: "0"
+category: virtual
+requires:
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+description: Virtual for system loggers
+uri:
+- ""
+labels:
+  RDEPEND: '|| ( app-admin/metalog app-admin/rsyslog app-admin/socklog app-admin/sysklogd
+    app-admin/syslog-ng sys-apps/busybox[syslog] >=sys-apps/systemd-38 )'
+  emerge.packages: virtual/logger
+  kit: gentoo
+  original.package.name: virtual/logger
+  original.package.version: 0-r1
