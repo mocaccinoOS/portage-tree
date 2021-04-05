@@ -1,0 +1,12 @@
+name: rubygems-portage
+version: "15"
+category: virtual
+requires:
+- name: rubygems
+  version: "15"
+  category: virtual
+labels:
+  emerge.packages: virtual/rubygems
+  kit: gentoo
+  original.package.name: virtual/rubygems
+  original.package.version: "15"

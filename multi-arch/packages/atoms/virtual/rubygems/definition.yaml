@@ -1,0 +1,24 @@
+name: rubygems
+version: "15"
+category: virtual
+use_flags:
+- -ruby_targets_ruby25
+- ruby_targets_ruby26
+requires:
+- name: rubygems
+  version: '>=0'
+  category: dev-ruby
+description: Virtual ebuild for rubygems
+uri:
+- ""
+labels:
+  DEPEND: ruby_targets_ruby25? ( dev-lang/ruby:2.5 ) ruby_targets_ruby26? ( dev-lang/ruby:2.6
+    )
+  IUSE: ruby_targets_ruby25 ruby_targets_ruby26
+  RDEPEND: ruby_targets_ruby25? ( >=dev-ruby/rubygems-2.7.3[ruby_targets_ruby25] )
+    ruby_targets_ruby26? ( >=dev-ruby/rubygems-3.0.1[ruby_targets_ruby26] ) ruby_targets_ruby25?
+    ( dev-lang/ruby:2.5 ) ruby_targets_ruby26? ( dev-lang/ruby:2.6 )
+  emerge.packages: virtual/rubygems
+  kit: gentoo
+  original.package.name: virtual/rubygems
+  original.package.version: "15"
