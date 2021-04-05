@@ -1,0 +1,12 @@
+name: texi2dvi-portage
+version: "0"
+category: virtual
+requires:
+- name: texi2dvi
+  version: "0"
+  category: virtual
+labels:
+  emerge.packages: virtual/texi2dvi
+  kit: gentoo
+  original.package.name: virtual/texi2dvi
+  original.package.version: 0-r2
