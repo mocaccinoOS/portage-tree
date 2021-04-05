@@ -6,11 +6,11 @@ use_flags:
 - -kernel_Winnt
 - -prefix-guest
 - kernel_linux
-description: Virtual for operating system headers
 requires:
-  - name: linux-headers
-    category: sys-kernel
-    version: ">=0"
+- name: linux-headers
+  version: '>=0'
+  category: sys-kernel
+description: Virtual for operating system headers
 uri:
 - ""
 labels:
