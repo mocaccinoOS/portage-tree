@@ -48,6 +48,7 @@ include_files:
 - artefacts/core/sys-apps.yaml
 - artefacts/core/sys-devel.yaml
 - artefacts/core/sys-libs.yaml
+- artefacts/core/sys-fs.yaml
 
 build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
@@ -399,8 +400,6 @@ artefacts:
     - sys-devel/make
     - sys-devel/patch
     - sys-devel/flex
-    - sys-fs/lvm2
-    - sys-fs/udev-init-scripts
     # TODO: fix dependency to media-lib/gd
     # Calculating dependencies   . ... done!
     # [ebuild   R    ] sys-libs/glibc-2.32-r2:2.2::gentoo  USE="audit* caps compile-locales* (crypt) gd* multiarch (multilib) nscd ssp (static-libs) suid (-cet) -custom-cflags -doc -headers-only -profile (-selinux) -static-pie -systemtap -test (-vanilla)" 18705 KiB

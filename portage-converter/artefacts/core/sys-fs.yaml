@@ -1,0 +1,15 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  packages:
+    - sys-fs/udev-init-scripts
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  uses:
+    disabled:
+      - lvm2create_initrd
+      - device-mapper-only
+      - sanlock
+  packages:
+    - sys-fs/lvm2
