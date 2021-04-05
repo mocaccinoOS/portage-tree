@@ -1,0 +1,22 @@
+name: lapack
+version: "3.8"
+category: virtual
+use_flags:
+- eselect-ldso
+requires:
+- name: lapack
+  version: '>=0'
+  category: sci-libs
+description: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
+uri:
+- ""
+labels:
+  DEPEND: '>=sci-libs/lapack-3.8.0[eselect-ldso?] eselect-ldso? ( || ( >=sci-libs/lapack-3.8.0[eselect-ldso]
+    sci-libs/openblas[eselect-ldso] ) )'
+  IUSE: eselect-ldso
+  RDEPEND: '>=sci-libs/lapack-3.8.0[eselect-ldso?] eselect-ldso? ( || ( >=sci-libs/lapack-3.8.0[eselect-ldso]
+    sci-libs/openblas[eselect-ldso] ) )'
+  emerge.packages: virtual/lapack
+  kit: gentoo
+  original.package.name: virtual/lapack
+  original.package.version: "3.8"
