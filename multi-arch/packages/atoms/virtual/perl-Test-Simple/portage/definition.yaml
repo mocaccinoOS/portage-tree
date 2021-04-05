@@ -1,0 +1,12 @@
+name: perl-Test-Simple-portage
+version: 1.302.162
+category: virtual
+requires:
+- name: perl-Test-Simple
+  version: 1.302.162
+  category: virtual
+labels:
+  emerge.packages: virtual/perl-Test-Simple
+  kit: gentoo
+  original.package.name: virtual/perl-Test-Simple
+  original.package.version: 1.302.162
