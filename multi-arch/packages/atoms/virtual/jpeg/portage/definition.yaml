@@ -1,0 +1,12 @@
+name: jpeg-portage
+version: "100"
+category: virtual
+requires:
+- name: jpeg
+  version: "100"
+  category: virtual
+labels:
+  emerge.packages: virtual/jpeg
+  kit: gentoo
+  original.package.name: virtual/jpeg
+  original.package.version: "100"
