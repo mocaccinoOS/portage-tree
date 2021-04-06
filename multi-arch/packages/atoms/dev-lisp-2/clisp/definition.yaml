@@ -39,6 +39,9 @@ requires:
 - name: gdbm
   version: '>=0'
   category: sys-libs
+- name: libiconv
+  version: '>=0'
+  category: virtual
 - name: libXpm
   version: '>=0'
   category: x11-libs

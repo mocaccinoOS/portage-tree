@@ -52,6 +52,9 @@ requires:
 - name: clang
   version: '>=0'
   category: sys-devel-10
+- name: krb5
+  version: '>=0'
+  category: virtual
 description: PostgreSQL RDBMS
 uri:
 - https://www.postgresql.org/

@@ -35,6 +35,3 @@ requires:
 - name: fortran
   version: '>=0'
   category: virtual
-- name: pkgconfig
-  version: '>=0'
-  category: virtual

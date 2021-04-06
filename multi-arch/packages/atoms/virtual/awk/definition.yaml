@@ -5,6 +5,10 @@ requires:
 - name: gawk
   version: '>=0'
   category: sys-apps
+conflicts:
+- name: gawk
+  version: '>=0'
+  category: sys-apps
 description: Virtual for awk implementation
 uri:
 - ""

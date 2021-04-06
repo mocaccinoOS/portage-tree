@@ -20,6 +20,12 @@ requires:
 - name: util-linux
   version: '>=0'
   category: sys-apps
+- name: pkgconfig
+  version: '>=0'
+  category: virtual
+- name: udev
+  version: '>=0'
+  category: virtual
 description: Generic initramfs generation tool
 uri:
 - https://dracut.wiki.kernel.org

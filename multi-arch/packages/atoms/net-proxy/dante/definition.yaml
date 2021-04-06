@@ -18,6 +18,9 @@ requires:
 - name: tcp-wrappers
   version: '>=0'
   category: sys-apps
+- name: krb5
+  version: '>=0'
+  category: virtual
 description: A free socks4,5 and msproxy implementation
 uri:
 - https://www.inet.no/dante/

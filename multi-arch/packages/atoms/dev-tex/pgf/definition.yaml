@@ -2,9 +2,9 @@ name: pgf
 version: 3.1.4b
 category: dev-tex
 requires:
-- name: texlive-latexrecommended
+- name: latex-base
   version: '>=0'
-  category: dev-texlive
+  category: virtual
 description: The TeX Portable Graphic Format
 uri:
 - https://github.com/pgf-tikz/pgf
