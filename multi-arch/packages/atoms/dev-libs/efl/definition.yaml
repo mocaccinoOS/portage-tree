@@ -2,108 +2,117 @@ name: efl
 version: 1.24.4
 category: dev-libs
 use_flags:
+- -connman
 - -doc
 - -elogind
 - -gles2-only
+- -glib
+- -gnutls
+- -gstreamer
+- -hyphen
+- -ibus
+- -jpeg2k
+- -json
 - -libressl
+- -lua
+- -mono
+- -opengl
+- -physics
+- -postscript
+- -raw
+- -scim
+- -sdl
+- -tslib
+- -unwind
+- -vnc
+- -webp
+- -xpresent
 - X
-- connman
 - drm
 - fontconfig
 - fribidi
-- glib
-- gnutls
-- gstreamer
-- hyphen
-- ibus
-- jpeg2k
-- json
-- lua
 - luajit
-- mono
 - nls
-- opengl
 - pdf
-- physics
-- postscript
 - pulseaudio
-- raw
-- scim
-- sdl
 - sound
 - ssl
 - svg
 - system-lz4
 - systemd
 - tiff
-- tslib
-- unwind
 - v4l
-- vnc
 - wayland
-- webp
 - xpm
-- xpresent
 - zeroconf
 requires:
-- name: scim
+- name: lz4
   version: '>=0'
-  category: app-i18n
-- name: libspectre
-  version: '>=0'
-  category: app-text
+  category: app-arch
 - name: poppler
   version: '>=0'
   category: app-text
-- name: lua
-  version: '>=0'
-  category: dev-lang
 - name: luajit
   version: '>=0'
   category: dev-lang-2
-- name: mono
-  version: '>=0'
-  category: dev-lang
 - name: check
   version: '>=0'
   category: dev-libs
 - name: fribidi
   version: '>=0'
   category: dev-libs
-- name: hyphen
-  version: '>=0'
-  category: dev-libs
 - name: libinput
   version: '>=0'
   category: dev-libs
-- name: gst-plugins-base
+- name: wayland
+  version: '>=0'
+  category: dev-libs
+- name: librsvg
+  version: '>=0'
+  category: gnome-base-2
+- name: fontconfig
   version: '>=0'
   category: media-libs-1.0
-- name: libraw
+- name: giflib
   version: '>=0'
   category: media-libs
 - name: libv4l
   version: '>=0'
   category: media-libs
-- name: rlottie
+- name: mesa
   version: '>=0'
   category: media-libs
-- name: libvncserver
+- name: tiff
   version: '>=0'
-  category: net-libs
-- name: connman
+  category: media-libs
+- name: pulseaudio
   version: '>=0'
-  category: net-misc
-- name: bullet
+  category: media-sound
+- name: dbus
   version: '>=0'
-  category: sci-physics
+  category: sys-apps
+- name: libXScrnSaver
+  version: '>=0'
+  category: x11-libs
 - name: libXcomposite
+  version: '>=0'
+  category: x11-libs
+- name: libXcursor
+  version: '>=0'
+  category: x11-libs
+- name: libXinerama
   version: '>=0'
   category: x11-libs
 - name: libXpm
   version: '>=0'
   category: x11-libs
-- name: libXpresent
+- name: libXrandr
+  version: '>=0'
+  category: x11-libs
+- name: libdrm
+  version: '>=0'
+  category: x11-libs
+- name: libxkbcommon
   version: '>=0'
   category: x11-libs
 description: Enlightenment Foundation Libraries all-in-one package

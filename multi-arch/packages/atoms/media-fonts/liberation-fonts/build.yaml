@@ -23,6 +23,3 @@ requires:
 - name: encodings
   version: '>=0'
   category: media-fonts
-- name: fontforge
-  version: '>=0'
-  category: media-gfx

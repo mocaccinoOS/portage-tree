@@ -3,19 +3,19 @@ version: 1.9.14
 category: media-sound-2
 use_flags:
 - -doc
+- -ieee1394
 - -python_single_target_python3_6
 - -python_single_target_python3_8
 - alsa
 - dbus
-- ieee1394
 - metadata
 - opus
 - pam
 - python_single_target_python3_7
 requires:
-- name: libffado
+- name: dbus-python
   version: '>=0'
-  category: media-libs
+  category: dev-python
 - name: libsamplerate
   version: '>=0'
   category: media-libs
@@ -31,6 +31,9 @@ requires:
 - name: db
   version: '>=0'
   category: sys-libs-5.3
+- name: readline
+  version: '>=0'
+  category: sys-libs
 description: Jackdmp jack implemention for multi-processor machine
 uri:
 - https://jackaudio.org/

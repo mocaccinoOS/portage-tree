@@ -20,9 +20,9 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libffado
+- name: python
   version: '>=0'
-  category: media-libs
+  category: dev-lang-3.7
 - name: libsamplerate
   version: '>=0'
   category: media-libs
@@ -32,6 +32,12 @@ requires:
 - name: opus
   version: '>=0'
   category: media-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: db
   version: '>=0'
   category: sys-libs-5.3
+- name: readline
+  version: '>=0'
+  category: sys-libs

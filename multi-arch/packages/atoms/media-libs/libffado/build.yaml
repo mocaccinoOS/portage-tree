@@ -29,9 +29,6 @@ requires:
 - name: libconfig
   version: '>=0'
   category: dev-libs
-- name: PyQt5
-  version: '>=0'
-  category: dev-python
 - name: scons
   version: '>=0'
   category: dev-util
@@ -41,9 +38,9 @@ requires:
 - name: libiec61883
   version: '>=0'
   category: media-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: libavc1394
   version: '>=0'
   category: sys-libs
-- name: xdg-utils
-  version: '>=0'
-  category: x11-misc

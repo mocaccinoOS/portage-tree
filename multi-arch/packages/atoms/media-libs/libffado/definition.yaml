@@ -4,8 +4,8 @@ category: media-libs
 use_flags:
 - -python_single_target_python3_6
 - -python_single_target_python3_8
+- -qt5
 - python_single_target_python3_7
-- qt5
 requires:
 - name: libxmlpp
   version: '>=0'
@@ -16,21 +16,18 @@ requires:
 - name: libconfig
   version: '>=0'
   category: dev-libs
-- name: PyQt5
-  version: '>=0'
-  category: dev-python
 - name: alsa-lib
   version: '>=0'
   category: media-libs
 - name: libiec61883
   version: '>=0'
   category: media-libs
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: libavc1394
   version: '>=0'
   category: sys-libs
-- name: xdg-utils
-  version: '>=0'
-  category: x11-misc
 description: Driver for IEEE1394 (Firewire) audio interfaces
 uri:
 - http://www.ffado.org

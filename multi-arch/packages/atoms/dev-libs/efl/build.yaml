@@ -23,69 +23,72 @@ requires:
 - name: lz4
   version: '>=0'
   category: app-arch
-- name: scim
-  version: '>=0'
-  category: app-i18n
-- name: libspectre
-  version: '>=0'
-  category: app-text
 - name: poppler
   version: '>=0'
   category: app-text
-- name: lua
-  version: '>=0'
-  category: dev-lang
 - name: luajit
   version: '>=0'
   category: dev-lang-2
-- name: mono
-  version: '>=0'
-  category: dev-lang
 - name: check
   version: '>=0'
   category: dev-libs
 - name: fribidi
   version: '>=0'
   category: dev-libs
-- name: hyphen
-  version: '>=0'
-  category: dev-libs
 - name: libinput
   version: '>=0'
   category: dev-libs
-- name: gst-plugins-base
+- name: wayland
+  version: '>=0'
+  category: dev-libs
+- name: librsvg
+  version: '>=0'
+  category: gnome-base-2
+- name: fontconfig
   version: '>=0'
   category: media-libs-1.0
-- name: libraw
+- name: freetype
   version: '>=0'
-  category: media-libs
-- name: libsdl2
+  category: media-libs-2
+- name: giflib
   version: '>=0'
   category: media-libs
 - name: libv4l
   version: '>=0'
   category: media-libs
-- name: libwebp
+- name: mesa
   version: '>=0'
   category: media-libs
-- name: rlottie
+- name: tiff
   version: '>=0'
   category: media-libs
-- name: libvncserver
+- name: pulseaudio
   version: '>=0'
-  category: net-libs
-- name: connman
+  category: media-sound
+- name: curl
   version: '>=0'
   category: net-misc
-- name: bullet
+- name: dbus
   version: '>=0'
-  category: sci-physics
+  category: sys-apps
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+- name: libXScrnSaver
+  version: '>=0'
+  category: x11-libs
 - name: libXcomposite
+  version: '>=0'
+  category: x11-libs
+- name: libXcursor
+  version: '>=0'
+  category: x11-libs
+- name: libXinerama
   version: '>=0'
   category: x11-libs
 - name: libXpm
   version: '>=0'
   category: x11-libs
-- name: libXpresent
+- name: libxkbcommon
   version: '>=0'
   category: x11-libs
