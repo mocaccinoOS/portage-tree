@@ -12,7 +12,7 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
@@ -32,3 +32,9 @@ requires:
 - name: libraw1394
   version: '>=0'
   category: sys-libs
+- name: libusb
+  version: '>=0'
+  category: virtual-1
+- name: pkgconfig
+  version: '>=0'
+  category: virtual

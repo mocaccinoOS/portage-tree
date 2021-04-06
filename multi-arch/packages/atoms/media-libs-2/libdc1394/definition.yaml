@@ -7,6 +7,9 @@ requires:
 - name: libraw1394
   version: '>=0'
   category: sys-libs
+- name: libusb
+  version: '>=0'
+  category: virtual-1
 description: Library to interface with IEEE 1394 cameras following the IIDC specification
 uri:
 - https://sourceforge.net/projects/libdc1394/
