@@ -17,6 +17,15 @@ requires:
 - name: ncurses
   version: '>=0'
   category: sys-libs
+- name: acl
+  version: '>=0'
+  category: virtual
+- name: libiconv
+  version: '>=0'
+  category: virtual
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: GNU locale utilities
 uri:
 - https://www.gnu.org/software/gettext/
