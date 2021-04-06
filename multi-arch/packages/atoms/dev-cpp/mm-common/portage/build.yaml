@@ -7,6 +7,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: yaml-cpp
-  version: 0.6.3
+- name: mm-common
+  version: 1.0.1
   category: dev-cpp
