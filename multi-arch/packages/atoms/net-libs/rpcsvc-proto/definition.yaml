@@ -1,6 +1,10 @@
 name: rpcsvc-proto
 version: 1.4.2
 category: net-libs
+requires:
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: rpcsvc protocol definitions from glibc
 uri:
 - https://github.com/thkukuk/rpcsvc-proto

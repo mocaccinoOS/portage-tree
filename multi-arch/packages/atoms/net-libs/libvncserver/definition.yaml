@@ -1,0 +1,55 @@
+name: libvncserver
+version: 0.9.13
+category: net-libs
+use_flags:
+- -libressl
+- gcrypt
+- gnutls
+- jpeg
+- lzo
+- png
+- sasl
+- ssl
+- systemd
+- zlib
+requires:
+- name: cyrus-sasl
+  version: '>=0'
+  category: dev-libs-2
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
+- name: libpng
+  version: '>=0'
+  category: media-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
+- name: systemd
+  version: '>=0'
+  category: sys-apps
+- name: jpeg
+  version: '>=0'
+  category: virtual
+description: library for creating vnc servers
+uri:
+- https://libvnc.github.io/
+license: GPL-2 GPL-2+ LGPL-2.1+ BSD MIT
+labels:
+  BDEPEND: dev-util/ninja dev-util/cmake
+  DEPEND: gcrypt? ( >=dev-libs/libgcrypt-1.5.3:0= ) ssl? ( !gnutls? ( !libressl? (
+    >=dev-libs/openssl-1.0.2:0= ) libressl? ( >=dev-libs/libressl-2.7.0:0= ) ) gnutls?
+    ( >=net-libs/gnutls-2.12.23-r6:0= ) ) jpeg? ( >=virtual/jpeg-0-r2:0 ) lzo? ( dev-libs/lzo
+    ) png? ( >=media-libs/libpng-1.6.10:0= ) sasl? ( dev-libs/cyrus-sasl ) systemd?
+    ( sys-apps/systemd:= ) zlib? ( >=sys-libs/zlib-1.2.8-r1:0= )
+  IUSE: +24bpp +filetransfer gcrypt gnutls ipv6 +jpeg libressl lzo +png sasl ssl systemd
+    +threads +zlib
+  RDEPEND: gcrypt? ( >=dev-libs/libgcrypt-1.5.3:0= ) ssl? ( !gnutls? ( !libressl?
+    ( >=dev-libs/openssl-1.0.2:0= ) libressl? ( >=dev-libs/libressl-2.7.0:0= ) ) gnutls?
+    ( >=net-libs/gnutls-2.12.23-r6:0= ) ) jpeg? ( >=virtual/jpeg-0-r2:0 ) lzo? ( dev-libs/lzo
+    ) png? ( >=media-libs/libpng-1.6.10:0= ) sasl? ( dev-libs/cyrus-sasl ) systemd?
+    ( sys-apps/systemd:= ) zlib? ( >=sys-libs/zlib-1.2.8-r1:0= )
+  emerge.packages: net-libs/libvncserver
+  kit: gentoo
+  original.package.name: net-libs/libvncserver
+  original.package.version: 0.9.13

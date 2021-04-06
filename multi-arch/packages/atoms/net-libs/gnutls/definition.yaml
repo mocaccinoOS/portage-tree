@@ -29,6 +29,9 @@ requires:
 - name: autogen
   version: '>=0'
   category: sys-devel
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: A TLS 1.2 and SSL 3.0 implementation for the GNU project
 uri:
 - http://www.gnutls.org/
