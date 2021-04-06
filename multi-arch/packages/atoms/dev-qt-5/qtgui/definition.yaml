@@ -36,6 +36,9 @@ requires:
 - name: mesa
   version: '>=0'
   category: media-libs
+- name: jpeg
+  version: '>=0'
+  category: virtual
 - name: libSM
   version: '>=0'
   category: x11-libs

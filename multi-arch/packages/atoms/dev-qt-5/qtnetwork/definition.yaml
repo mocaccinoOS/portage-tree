@@ -27,6 +27,9 @@ requires:
 - name: networkmanager
   version: '>=0'
   category: net-misc
+- name: krb5
+  version: '>=0'
+  category: virtual
 description: Network abstraction library for the Qt5 framework
 uri:
 - https://www.qt.io/

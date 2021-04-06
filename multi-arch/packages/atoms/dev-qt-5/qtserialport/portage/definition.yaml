@@ -1,12 +1,12 @@
-name: qtwebengine-portage
+name: qtserialport-portage
 version: 5.15.1
 category: dev-qt-5
 requires:
-- name: qtwebengine
+- name: qtserialport
   version: 5.15.1
   category: dev-qt-5
 labels:
-  emerge.packages: dev-qt/qtwebengine:5
+  emerge.packages: dev-qt/qtserialport:5
   kit: gentoo
-  original.package.name: dev-qt/qtwebengine
+  original.package.name: dev-qt/qtserialport
   original.package.version: 5.15.1

@@ -1,12 +1,12 @@
-name: qtspeech-portage
+name: qtbluetooth-portage
 version: 5.15.1
 category: dev-qt-5
 requires:
-- name: qtspeech
+- name: qtbluetooth
   version: 5.15.1
   category: dev-qt-5
 labels:
-  emerge.packages: dev-qt/qtspeech:5
+  emerge.packages: dev-qt/qtbluetooth:5
   kit: gentoo
-  original.package.name: dev-qt/qtspeech
+  original.package.name: dev-qt/qtbluetooth
   original.package.version: 5.15.1
