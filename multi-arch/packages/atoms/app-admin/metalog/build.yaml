@@ -12,7 +12,7 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
@@ -20,15 +20,18 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: skey
+- name: libpcre
   version: '>=0'
-  category: sys-auth
-- name: sssd
+  category: dev-libs-3
+- name: autoconf
   version: '>=0'
-  category: sys-auth
-- name: bison
+  category: sys-devel-2.69
+- name: autoconf-archive
   version: '>=0'
   category: sys-devel
-- name: zlib
+- name: automake
   version: '>=0'
-  category: sys-libs
+  category: sys-devel-1.16
+- name: libtool
+  version: '>=0'
+  category: sys-devel-2
