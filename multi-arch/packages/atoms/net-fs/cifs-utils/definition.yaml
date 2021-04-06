@@ -18,6 +18,9 @@ requires:
 - name: talloc
   version: '>=0'
   category: sys-libs
+- name: krb5
+  version: '>=0'
+  category: virtual
 description: Tools for Managing Linux CIFS Client Filesystems
 uri:
 - https://wiki.samba.org/index.php/LinuxCIFS_utils
