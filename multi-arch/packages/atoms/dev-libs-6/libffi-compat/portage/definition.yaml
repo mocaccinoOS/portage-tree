@@ -1,0 +1,12 @@
+name: libffi-compat-portage
+version: 3.2.1
+category: dev-libs-6
+requires:
+- name: libffi-compat
+  version: 3.2.1
+  category: dev-libs-6
+labels:
+  emerge.packages: dev-libs/libffi-compat:6
+  kit: gentoo
+  original.package.name: dev-libs/libffi-compat
+  original.package.version: 3.2.1-r3
