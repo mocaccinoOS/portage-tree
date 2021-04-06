@@ -19,6 +19,9 @@ requires:
 - name: readline
   version: '>=0'
   category: sys-libs
+- name: resolvconf
+  version: '>=0'
+  category: virtual
 description: Wireless daemon for linux
 uri:
 - https://git.kernel.org/pub/scm/network/wireless/iwd.git/
