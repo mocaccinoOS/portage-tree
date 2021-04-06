@@ -42,6 +42,12 @@ requires:
 - name: attr
   version: '>=0'
   category: sys-apps
+- name: acl
+  version: '>=0'
+  category: virtual
+- name: libiconv
+  version: '>=0'
+  category: virtual
 description: Multi-format archive and compression library
 uri:
 - https://www.libarchive.org/
