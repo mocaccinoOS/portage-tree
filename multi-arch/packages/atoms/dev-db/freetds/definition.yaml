@@ -31,6 +31,9 @@ requires:
 - name: binutils
   version: '>=0'
   category: sys-devel-2.34
+- name: awk
+  version: '>=0'
+  category: virtual
 description: Tabular Datastream Library
 uri:
 - https://www.freetds.org/

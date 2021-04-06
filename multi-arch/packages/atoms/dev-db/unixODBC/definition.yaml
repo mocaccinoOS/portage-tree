@@ -8,6 +8,9 @@ requires:
 - name: readline
   version: '>=0'
   category: sys-libs
+- name: libiconv
+  version: '>=0'
+  category: virtual
 description: A complete ODBC driver manager
 uri:
 - http://www.unixodbc.org/
