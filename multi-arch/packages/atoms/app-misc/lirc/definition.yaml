@@ -19,6 +19,9 @@ requires:
 - name: pyyaml
   version: '>=0'
   category: dev-python
+- name: libusb
+  version: '>=0'
+  category: virtual-1
 - name: libSM
   version: '>=0'
   category: x11-libs
