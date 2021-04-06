@@ -5,12 +5,13 @@ use_flags:
 - X
 - opengl
 - wayland
-# Added for virtual/opengl
-- abi_x86_32
 requires:
 - name: wayland
   version: '>=0'
   category: dev-libs
+- name: opengl
+  version: '>=0'
+  category: virtual
 - name: libXext
   version: '>=0'
   category: x11-libs

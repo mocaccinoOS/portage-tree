@@ -8,6 +8,9 @@ requires:
 - name: fontconfig
   version: '>=0'
   category: media-libs-1.0
+- name: ttf-fonts
+  version: '>=0'
+  category: virtual
 - name: libXext
   version: '>=0'
   category: x11-libs
