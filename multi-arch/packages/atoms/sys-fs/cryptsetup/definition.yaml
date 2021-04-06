@@ -2,29 +2,20 @@ name: cryptsetup
 version: 2.3.2
 category: sys-fs
 use_flags:
+- -argon2
 - -libressl
-- argon2
+- -nettle
+- -openssl
+- -pwquality
+- -static
+- -static-libs
+- -udev
 - gcrypt
-- nettle
-- openssl
-- pwquality
-- static
-- static-libs
-- udev
 requires:
-- name: argon2
-  version: '>=0'
-  category: app-crypt
 - name: json-c
   version: '>=0'
   category: dev-libs
 - name: libgcrypt
-  version: '>=0'
-  category: dev-libs
-- name: libpwquality
-  version: '>=0'
-  category: dev-libs
-- name: nettle
   version: '>=0'
   category: dev-libs
 - name: popt
