@@ -21,6 +21,9 @@ requires:
 - name: gobject-introspection-common
   version: '>=0'
   category: dev-libs
+- name: pkgconfig
+  version: '>=0'
+  category: virtual
 description: Introspection system for GObject-based libraries
 uri:
 - https://wiki.gnome.org/Projects/GObjectIntrospection

@@ -5,6 +5,10 @@ use_flags:
 - -minimal
 - -test
 - cddb
+requires:
+- name: libiconv
+  version: '>=0'
+  category: virtual
 description: A library to encapsulate CD-ROM reading and control
 uri:
 - https://www.gnu.org/software/libcdio/

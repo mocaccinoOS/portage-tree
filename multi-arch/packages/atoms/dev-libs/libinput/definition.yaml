@@ -15,6 +15,12 @@ requires:
 - name: mtdev
   version: '>=0'
   category: sys-libs
+- name: libudev
+  version: '>=0'
+  category: virtual
+- name: udev
+  version: '>=0'
+  category: virtual
 description: Library to handle input devices in Wayland
 uri:
 - https://www.freedesktop.org/wiki/Software/libinput/ https://gitlab.freedesktop.org/libinput/libinput

@@ -1,0 +1,12 @@
+name: efl-portage
+version: 1.24.4
+category: dev-libs
+requires:
+- name: efl
+  version: 1.24.4
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/efl
+  kit: gentoo
+  original.package.name: dev-libs/efl
+  original.package.version: 1.24.4

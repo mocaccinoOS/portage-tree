@@ -12,7 +12,7 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
 - name: cmake
   version: '>=0'
   category: dev-util
@@ -30,8 +27,5 @@ requires:
   version: '>=0'
   category: dev-util
 - name: http-parser
-  version: '>=0'
-  category: net-libs
-- name: libssh2
   version: '>=0'
   category: net-libs

@@ -38,6 +38,3 @@ requires:
 - name: libusb
   version: '>=0'
   category: virtual-1
-- name: pkgconfig
-  version: '>=0'
-  category: virtual

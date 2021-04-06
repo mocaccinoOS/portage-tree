@@ -7,6 +7,9 @@ requires:
 - name: gobject-introspection
   version: '>=0'
   category: dev-libs
+- name: libudev
+  version: '>=0'
+  category: virtual
 conflicts:
 - name: systemd
   version: '>=0'

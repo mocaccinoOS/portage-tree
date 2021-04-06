@@ -17,21 +17,12 @@ requires:
 - name: zstd
   version: '>=0'
   category: app-arch
-- name: python
-  version: '>=0'
-  category: dev-lang-3.7
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: icu
   version: '>=0'
   category: dev-libs
 - name: numpy
   version: '>=0'
   category: dev-python
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 - name: libiconv
   version: '>=0'
   category: virtual

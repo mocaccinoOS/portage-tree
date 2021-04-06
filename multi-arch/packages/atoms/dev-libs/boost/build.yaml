@@ -23,9 +23,6 @@ requires:
 - name: zstd
   version: '>=0'
   category: app-arch
-- name: python-exec
-  version: '>=0'
-  category: dev-lang-2
 - name: icu
   version: '>=0'
   category: dev-libs

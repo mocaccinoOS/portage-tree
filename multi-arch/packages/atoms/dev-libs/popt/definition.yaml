@@ -3,6 +3,10 @@ version: "1.16"
 category: dev-libs
 use_flags:
 - nls
+requires:
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: Parse Options - Command line parser
 uri:
 - http://rpm5.org/

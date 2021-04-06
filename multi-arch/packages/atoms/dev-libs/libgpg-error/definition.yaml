@@ -3,6 +3,10 @@ version: "1.38"
 category: dev-libs
 use_flags:
 - nls
+requires:
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: Contains error handling functions used by GnuPG software
 uri:
 - http://www.gnupg.org/related_software/libgpg-error

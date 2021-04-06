@@ -2,16 +2,16 @@ name: libgit2
 version: 1.0.1
 category: dev-libs
 use_flags:
+- -gssapi
 - -libressl
-- gssapi
-- ssh
+- -ssh
 requires:
 - name: http-parser
   version: '>=0'
   category: net-libs
-- name: libssh2
+- name: zlib
   version: '>=0'
-  category: net-libs
+  category: sys-libs
 description: A linkable library for Git
 uri:
 - https://libgit2.org
