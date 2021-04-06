@@ -25,6 +25,9 @@ requires:
 - name: libcap
   version: '>=0'
   category: sys-libs
+- name: libelf
+  version: '>=0'
+  category: virtual
 description: kernel routing and traffic control utilities
 uri:
 - https://wiki.linuxfoundation.org/networking/iproute2

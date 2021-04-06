@@ -9,6 +9,12 @@ requires:
 - name: libpcre
   version: '>=0'
   category: dev-libs-3
+- name: libiconv
+  version: '>=0'
+  category: virtual
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: GNU regular expression matcher
 uri:
 - https://www.gnu.org/software/grep/

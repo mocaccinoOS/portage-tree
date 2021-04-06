@@ -2,7 +2,7 @@ name: acl
 version: 2.2.53
 category: sys-apps
 use_flags:
-- nls
+- -nls
 requires:
 - name: attr
   version: '>=0'

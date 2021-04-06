@@ -21,6 +21,9 @@ requires:
 - name: skey
   version: '>=0'
   category: sys-auth
+- name: audit
+  version: '>=0'
+  category: sys-process
 conflicts:
 - name: util-linux
   version: '>=0'

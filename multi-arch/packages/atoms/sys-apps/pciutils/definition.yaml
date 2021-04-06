@@ -13,6 +13,9 @@ requires:
 - name: kmod
   version: '>=0'
   category: sys-apps
+- name: libudev
+  version: '>=0'
+  category: virtual
 description: Various utilities dealing with the PCI bus
 uri:
 - https://mj.ucw.cz/sw/pciutils/ https://git.kernel.org/?p=utils/pciutils/pciutils.git

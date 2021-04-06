@@ -33,12 +33,6 @@ requires:
 - name: pam
   version: '>=0'
   category: sys-libs
-- name: readline
-  version: '>=0'
-  category: sys-libs
-- name: zlib
-  version: '>=0'
-  category: sys-libs
 - name: libudev
   version: '>=0'
   category: virtual

@@ -7,6 +7,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: dmidecode
-  version: "3.2"
+- name: gawk
+  version: 5.1.0
   category: sys-apps

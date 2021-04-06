@@ -3,6 +3,10 @@ version: "20200204"
 category: sys-apps
 use_flags:
 - udev
+requires:
+- name: udev
+  version: '>=0'
+  category: virtual
 description: Hardware (PCI, USB, OUI, IAB) IDs databases
 uri:
 - https://github.com/gentoo/hwids

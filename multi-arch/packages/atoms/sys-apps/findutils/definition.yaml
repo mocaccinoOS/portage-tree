@@ -5,6 +5,10 @@ use_flags:
 - -selinux
 - -test
 - nls
+requires:
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: GNU utilities for finding files
 uri:
 - https://www.gnu.org/software/findutils/
