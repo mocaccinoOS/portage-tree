@@ -49,11 +49,17 @@ requires:
 - name: gd
   version: '>=0'
   category: media-libs-2
+- name: perl-Getopt-Long
+  version: '>=0'
+  category: virtual
 - name: libXmu
   version: '>=0'
   category: x11-libs
 conflicts:
 - name: texlive-basic
+  version: '>=0'
+  category: dev-texlive
+- name: texlive-fontutils
   version: '>=0'
   category: dev-texlive
 description: A complete TeX distribution

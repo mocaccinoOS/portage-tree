@@ -20,6 +20,27 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: fontconfig
   version: '>=0'
-  category: layers
+  category: media-libs-1.0
+- name: freetype
+  version: '>=0'
+  category: media-libs-2
+- name: jbig2dec
+  version: '>=0'
+  category: media-libs
+- name: openjpeg
+  version: '>=0'
+  category: media-libs-2
+- name: libidn
+  version: '>=0'
+  category: net-dns
+- name: cups
+  version: '>=0'
+  category: net-print
+- name: libXext
+  version: '>=0'
+  category: x11-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs

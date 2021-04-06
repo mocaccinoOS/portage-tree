@@ -7,6 +7,9 @@ requires:
 - name: build-docbook-catalog
   version: '>=0'
   category: app-text
+- name: rubygems
+  version: '>=0'
+  category: virtual
 description: XSL Stylesheets for Docbook
 uri:
 - https://github.com/docbook/wiki/wiki
