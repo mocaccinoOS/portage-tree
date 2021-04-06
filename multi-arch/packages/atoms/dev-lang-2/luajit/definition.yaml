@@ -1,0 +1,13 @@
+name: luajit
+version: 2.1.0
+category: dev-lang-2
+description: Just-In-Time Compiler for the Lua programming language
+uri:
+- http://luajit.org/
+license: MIT
+labels:
+  IUSE: lua52compat static-libs
+  emerge.packages: dev-lang/luajit:2
+  kit: gentoo
+  original.package.name: dev-lang/luajit
+  original.package.version: 2.1.0_beta3-r1
