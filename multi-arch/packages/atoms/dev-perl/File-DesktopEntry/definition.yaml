@@ -10,6 +10,9 @@ requires:
 - name: URI
   version: '>=0'
   category: dev-perl
+- name: perl-File-Path
+  version: '>=0'
+  category: virtual
 description: Object to handle .desktop files
 uri:
 - https://metacpan.org/release/File-DesktopEntry

@@ -10,6 +10,9 @@ requires:
 - name: Try-Tiny
   version: '>=0'
   category: dev-perl
+- name: perl-Carp
+  version: '>=0'
+  category: virtual
 description: Loads one of several alternate underlying implementations for a module
 uri:
 - https://metacpan.org/release/Module-Implementation

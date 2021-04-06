@@ -7,6 +7,12 @@ requires:
 - name: ExtUtils-Config
   version: '>=0'
   category: dev-perl
+- name: perl-Carp
+  version: '>=0'
+  category: virtual
+- name: perl-File-Spec
+  version: '>=0'
+  category: virtual
 description: Build.PL install path logic made easy
 uri:
 - https://metacpan.org/release/ExtUtils-InstallPaths

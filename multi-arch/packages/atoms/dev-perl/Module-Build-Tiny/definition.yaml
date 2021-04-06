@@ -10,6 +10,30 @@ requires:
 - name: ExtUtils-InstallPaths
   version: '>=0'
   category: dev-perl
+- name: perl-CPAN-Meta
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-CBuilder
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-Install
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-ParseXS
+  version: '>=0'
+  category: virtual
+- name: perl-File-Path
+  version: '>=0'
+  category: virtual
+- name: perl-Getopt-Long
+  version: '>=0'
+  category: virtual
+- name: perl-Test-Harness
+  version: '>=0'
+  category: virtual
+- name: perl-podlators
+  version: '>=0'
+  category: virtual
 description: A tiny replacement for Module::Build
 uri:
 - https://metacpan.org/release/Module-Build-Tiny

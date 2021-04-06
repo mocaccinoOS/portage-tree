@@ -4,9 +4,12 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-IO
   version: '>=0'
-  category: dev-lang
+  category: virtual
+- name: perl-XSLoader
+  version: '>=0'
+  category: virtual
 description: Comma-separated values manipulation routines
 uri:
 - https://metacpan.org/release/Text-CSV_XS

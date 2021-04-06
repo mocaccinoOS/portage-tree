@@ -4,9 +4,9 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Locale-Maketext
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Use other catalog formats in Maketext
 uri:
 - https://metacpan.org/release/Locale-Maketext-Lexicon

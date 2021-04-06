@@ -4,9 +4,15 @@ category: dev-perl
 use_flags:
 - -minimal
 requires:
-- name: perl
+- name: libintl
   version: '>=0'
-  category: dev-lang
+  category: virtual
+- name: perl-File-Spec
+  version: '>=0'
+  category: virtual
+- name: perl-version
+  version: '>=0'
+  category: virtual
 description: High-Level Interface to Uniforum Message Translation
 uri:
 - http://guido-flohr.net/projects/libintl-perl https://metacpan.org/release/libintl-perl

@@ -2,9 +2,9 @@ name: Digest-Perl-MD5
 version: 1.900.0
 category: dev-perl
 requires:
-- name: perl
+- name: perl-Exporter
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Pure perl implementation of MD5
 uri:
 - https://metacpan.org/release/Digest-Perl-MD5

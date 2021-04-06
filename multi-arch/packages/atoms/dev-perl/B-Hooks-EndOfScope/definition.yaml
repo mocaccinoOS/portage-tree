@@ -13,6 +13,9 @@ requires:
 - name: Variable-Magic
   version: '>=0'
   category: dev-perl
+- name: perl-Scalar-List-Utils
+  version: '>=0'
+  category: virtual
 description: Execute code after a scope finished compilation
 uri:
 - https://metacpan.org/release/B-Hooks-EndOfScope

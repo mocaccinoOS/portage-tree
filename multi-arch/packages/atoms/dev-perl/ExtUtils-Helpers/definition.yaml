@@ -4,9 +4,18 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Carp
   version: '>=0'
-  category: dev-lang
+  category: virtual
+- name: perl-Exporter
+  version: '>=0'
+  category: virtual
+- name: perl-File-Spec
+  version: '>=0'
+  category: virtual
+- name: perl-Text-ParseWords
+  version: '>=0'
+  category: virtual
 description: Various portability utilities for module builders
 uri:
 - https://metacpan.org/release/ExtUtils-Helpers

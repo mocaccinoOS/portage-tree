@@ -2,9 +2,9 @@ name: Encode-HanExtra
 version: 0.230.0
 category: dev-perl
 requires:
-- name: perl
+- name: perl-Encode
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Extra sets of Chinese encodings
 uri:
 - https://metacpan.org/release/Encode-HanExtra

@@ -2,9 +2,9 @@ name: Unicode-EastAsianWidth
 version: 1.330.0
 category: dev-perl
 requires:
-- name: perl
+- name: perl-File-Spec
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: East Asian Width properties
 uri:
 - https://metacpan.org/release/Unicode-EastAsianWidth

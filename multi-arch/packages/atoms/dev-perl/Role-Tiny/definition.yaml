@@ -4,9 +4,9 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Exporter
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Roles. Like a nouvelle cuisine portion size slice of Moose
 uri:
 - https://metacpan.org/release/Role-Tiny

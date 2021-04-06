@@ -11,6 +11,12 @@ requires:
 - name: Module-Implementation
   version: '>=0'
   category: dev-perl
+- name: perl-Getopt-Long
+  version: '>=0'
+  category: virtual
+- name: perl-Scalar-List-Utils
+  version: '>=0'
+  category: virtual
 description: Routines for manipulating stashes
 uri:
 - https://metacpan.org/release/Package-Stash

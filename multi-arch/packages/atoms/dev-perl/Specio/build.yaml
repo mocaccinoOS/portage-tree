@@ -12,7 +12,7 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
@@ -41,3 +41,15 @@ requires:
 - name: Test-Fatal
   version: '>=0'
   category: dev-perl
+- name: perl-IO
+  version: '>=0'
+  category: virtual
+- name: perl-Storable
+  version: '>=0'
+  category: virtual
+- name: perl-parent
+  version: '>=0'
+  category: virtual
+- name: perl-version
+  version: '>=0'
+  category: virtual

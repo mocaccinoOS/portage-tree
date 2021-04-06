@@ -4,9 +4,9 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Encode
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Determine the locale encoding
 uri:
 - https://metacpan.org/release/Encode-Locale

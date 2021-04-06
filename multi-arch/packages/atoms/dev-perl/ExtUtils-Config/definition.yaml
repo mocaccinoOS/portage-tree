@@ -4,9 +4,9 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Data-Dumper
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: A wrapper for perl's configuration
 uri:
 - https://metacpan.org/release/ExtUtils-Config

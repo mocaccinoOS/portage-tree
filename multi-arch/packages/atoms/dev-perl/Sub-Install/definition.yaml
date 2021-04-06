@@ -4,9 +4,12 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Carp
   version: '>=0'
-  category: dev-lang
+  category: virtual
+- name: perl-Scalar-List-Utils
+  version: '>=0'
+  category: virtual
 description: Install subroutines into packages easily
 uri:
 - https://metacpan.org/release/Sub-Install

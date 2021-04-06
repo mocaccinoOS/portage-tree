@@ -19,6 +19,12 @@ requires:
 - name: namespace-autoclean
   version: '>=0'
   category: dev-perl
+- name: perl-Encode
+  version: '>=0'
+  category: virtual
+- name: perl-Sys-Syslog
+  version: '>=0'
+  category: virtual
 description: Dispatches messages to one or more outputs
 uri:
 - https://metacpan.org/release/Log-Dispatch

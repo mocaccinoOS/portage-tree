@@ -26,6 +26,18 @@ requires:
 - name: Test-Fatal
   version: '>=0'
   category: dev-perl
+- name: perl-IO
+  version: '>=0'
+  category: virtual
+- name: perl-Storable
+  version: '>=0'
+  category: virtual
+- name: perl-parent
+  version: '>=0'
+  category: virtual
+- name: perl-version
+  version: '>=0'
+  category: virtual
 description: Type constraints and coercions for Perl
 uri:
 - https://metacpan.org/release/Specio

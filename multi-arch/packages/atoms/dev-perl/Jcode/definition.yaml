@@ -2,9 +2,9 @@ name: Jcode
 version: 2.70.0
 category: dev-perl
 requires:
-- name: perl
+- name: perl-MIME-Base64
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Japanese transcoding module for Perl
 uri:
 - https://metacpan.org/release/Jcode

@@ -2,9 +2,9 @@ name: HTTP-Date
 version: 6.20.0
 category: dev-perl
 requires:
-- name: perl
+- name: perl-Time-Local
   version: '>=0'
-  category: dev-lang
+  category: virtual
 conflicts:
 - name: libwww-perl
   version: '>=0'

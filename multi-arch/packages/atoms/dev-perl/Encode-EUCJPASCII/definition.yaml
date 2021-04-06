@@ -2,9 +2,9 @@ name: Encode-EUCJPASCII
 version: 0.30.0
 category: dev-perl
 requires:
-- name: perl
+- name: perl-Encode
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: An eucJP-open mapping
 uri:
 - https://metacpan.org/release/Encode-EUCJPASCII

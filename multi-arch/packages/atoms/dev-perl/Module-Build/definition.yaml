@@ -4,9 +4,51 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-CPAN-Meta
   version: '>=0'
-  category: dev-lang
+  category: virtual
+- name: perl-Data-Dumper
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-CBuilder
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-Install
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-MakeMaker
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-Manifest
+  version: '>=0'
+  category: virtual
+- name: perl-ExtUtils-ParseXS
+  version: '>=0'
+  category: virtual
+- name: perl-File-Spec
+  version: '>=0'
+  category: virtual
+- name: perl-Getopt-Long
+  version: '>=0'
+  category: virtual
+- name: perl-Module-Metadata
+  version: '>=0'
+  category: virtual
+- name: perl-Perl-OSType
+  version: '>=0'
+  category: virtual
+- name: perl-Test-Harness
+  version: '>=0'
+  category: virtual
+- name: perl-Text-ParseWords
+  version: '>=0'
+  category: virtual
+- name: perl-podlators
+  version: '>=0'
+  category: virtual
+- name: perl-version
+  version: '>=0'
+  category: virtual
 description: Build and install Perl modules
 uri:
 - https://metacpan.org/release/Module-Build

@@ -10,6 +10,9 @@ requires:
 - name: dbus
   version: '>=0'
   category: sys-apps
+- name: perl-Time-HiRes
+  version: '>=0'
+  category: virtual
 description: Perl extension for the DBus message system
 uri:
 - https://metacpan.org/release/Net-DBus

@@ -5,9 +5,9 @@ use_flags:
 - -minimal
 - -test
 requires:
-- name: perl
+- name: perl-Scalar-List-Utils
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Efficient generation of subroutines via string eval
 uri:
 - https://metacpan.org/release/Sub-Quote

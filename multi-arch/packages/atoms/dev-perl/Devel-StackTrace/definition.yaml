@@ -4,9 +4,12 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-File-Spec
   version: '>=0'
-  category: dev-lang
+  category: virtual
+- name: perl-Scalar-List-Utils
+  version: '>=0'
+  category: virtual
 description: An object representing a stack trace
 uri:
 - https://metacpan.org/release/Devel-StackTrace

@@ -5,6 +5,9 @@ requires:
 - name: perl
   version: '>=0'
   category: dev-lang
+- name: libiconv
+  version: '>=0'
+  category: virtual
 description: A Perl interface to the iconv() codeset conversion function
 uri:
 - https://metacpan.org/release/Text-Iconv

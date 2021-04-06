@@ -4,9 +4,33 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Carp
   version: '>=0'
-  category: dev-lang
+  category: virtual
+- name: perl-Data-Dumper
+  version: '>=0'
+  category: virtual
+- name: perl-Encode
+  version: '>=0'
+  category: virtual
+- name: perl-Exporter
+  version: '>=0'
+  category: virtual
+- name: perl-File-Spec
+  version: '>=0'
+  category: virtual
+- name: perl-MIME-Base64
+  version: '>=0'
+  category: virtual
+- name: perl-Scalar-List-Utils
+  version: '>=0'
+  category: virtual
+- name: perl-libnet
+  version: '>=0'
+  category: virtual
+- name: perl-parent
+  version: '>=0'
+  category: virtual
 description: Uniform Resource Identifiers (absolute and relative)
 uri:
 - https://metacpan.org/release/URI

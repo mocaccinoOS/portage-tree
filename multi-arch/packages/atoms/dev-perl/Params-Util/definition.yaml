@@ -4,9 +4,9 @@ category: dev-perl
 use_flags:
 - -test
 requires:
-- name: perl
+- name: perl-Scalar-List-Utils
   version: '>=0'
-  category: dev-lang
+  category: virtual
 description: Utility functions to aid in parameter checking
 uri:
 - https://metacpan.org/release/Params-Util

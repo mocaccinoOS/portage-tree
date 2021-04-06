@@ -8,6 +8,12 @@ requires:
 - name: URI
   version: '>=0'
   category: dev-perl
+- name: perl-IO
+  version: '>=0'
+  category: virtual
+- name: perl-IO-Compress
+  version: '>=0'
+  category: virtual
 conflicts:
 - name: libwww-perl
   version: '>=0'
