@@ -20,6 +20,9 @@ requires:
 - name: curl
   version: '>=0'
   category: net-misc
+- name: tmpfiles
+  version: '>=0'
+  category: virtual
 description: TCG Trusted Platform Module 2.0 Software Stack
 uri:
 - https://github.com/tpm2-software/tpm2-tss
