@@ -36,6 +36,9 @@ requires:
 - name: polkit
   version: '>=0'
   category: sys-auth
+- name: udev
+  version: '>=0'
+  category: virtual
 description: System service to accurately color manage input and output devices
 uri:
 - https://www.freedesktop.org/software/colord/
