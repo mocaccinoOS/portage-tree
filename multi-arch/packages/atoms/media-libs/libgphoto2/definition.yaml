@@ -25,6 +25,9 @@ requires:
 - name: libexif
   version: '>=0'
   category: media-libs
+- name: libusb
+  version: '>=0'
+  category: virtual-1
 description: Library that implements support for numerous digital cameras
 uri:
 - http://www.gphoto.org/

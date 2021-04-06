@@ -8,6 +8,12 @@ requires:
 - name: argp-standalone
   version: '>=0'
   category: sys-libs
+- name: jpeg
+  version: '>=0'
+  category: virtual
+- name: libudev
+  version: '>=0'
+  category: virtual
 description: Separate libraries ebuild from upstream v4l-utils package
 uri:
 - https://git.linuxtv.org/v4l-utils.git

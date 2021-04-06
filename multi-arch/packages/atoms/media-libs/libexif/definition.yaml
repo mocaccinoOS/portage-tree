@@ -4,6 +4,10 @@ category: media-libs
 use_flags:
 - -doc
 - nls
+requires:
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: Library for parsing, editing, and saving EXIF data
 uri:
 - https://libexif.github.io/ https://github.com/libexif/libexif

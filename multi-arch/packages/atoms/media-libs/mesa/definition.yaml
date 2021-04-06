@@ -41,6 +41,12 @@ requires:
 - name: clang
   version: '>=0'
   category: sys-devel-10
+- name: libelf
+  version: '>=0'
+  category: virtual
+- name: opencl
+  version: '>=0'
+  category: virtual
 - name: libXdamage
   version: '>=0'
   category: x11-libs

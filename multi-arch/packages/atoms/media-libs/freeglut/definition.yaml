@@ -2,6 +2,12 @@ name: freeglut
 version: 3.2.1
 category: media-libs
 requires:
+- name: glu
+  version: '>=0'
+  category: virtual
+- name: opengl
+  version: '>=0'
+  category: virtual
 - name: libXi
   version: '>=0'
   category: x11-libs
