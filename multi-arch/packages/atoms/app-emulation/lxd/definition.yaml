@@ -29,6 +29,9 @@ requires:
 - name: squashfs-tools
   version: '>=0'
   category: sys-fs
+- name: acl
+  version: '>=0'
+  category: virtual
 description: Fast, dense and secure container management
 uri:
 - https://linuxcontainers.org/lxd/introduction/ https://github.com/lxc/lxd

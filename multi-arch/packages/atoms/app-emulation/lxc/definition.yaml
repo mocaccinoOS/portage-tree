@@ -17,6 +17,9 @@ requires:
 - name: util-linux
   version: '>=0'
   category: sys-apps
+- name: awk
+  version: '>=0'
+  category: virtual
 description: LinuX Containers userspace utilities
 uri:
 - https://linuxcontainers.org/ https://github.com/lxc/lxc
