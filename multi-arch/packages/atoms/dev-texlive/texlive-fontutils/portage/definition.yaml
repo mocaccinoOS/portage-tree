@@ -1,0 +1,12 @@
+name: texlive-fontutils-portage
+version: "2020"
+category: dev-texlive
+requires:
+- name: texlive-fontutils
+  version: "2020"
+  category: dev-texlive
+labels:
+  emerge.packages: dev-texlive/texlive-fontutils
+  kit: gentoo
+  original.package.name: dev-texlive/texlive-fontutils
+  original.package.version: "2020"
