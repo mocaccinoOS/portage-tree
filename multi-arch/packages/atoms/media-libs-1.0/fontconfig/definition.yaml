@@ -12,6 +12,9 @@ requires:
 - name: freetype
   version: '>=0'
   category: media-libs-2
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: A library for configuring and customizing font access
 uri:
 - https://fontconfig.org/
