@@ -1,6 +1,9 @@
 artefacts:
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - java
   replacements:
     buildtime_deps:
       ignore:
@@ -69,7 +72,6 @@ artefacts:
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
   packages:
-    - dev-libs/boost
     - dev-libs/boehm-gc
     - dev-libs/expat
     - dev-libs/fribidi

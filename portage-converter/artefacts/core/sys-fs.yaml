@@ -1,5 +1,9 @@
 artefacts:
 - tree: multi-arch/packages/atoms
+  packages:
+    - sys-fs/lsscsi
+
+- tree: multi-arch/packages/atoms
   ignore_build_deps: true
   packages:
     - sys-fs/udev-init-scripts
@@ -13,3 +17,40 @@ artefacts:
       - sanlock
   packages:
     - sys-fs/lvm2
+
+- tree: multi-arch/packages/atoms
+  mutations:
+    runtime_deps:
+      packages:
+        - category: app-arch
+          name: lz4
+        - category: sys-libs
+          name: zlib
+        - category: app-arch
+          name: xz-utils
+        - category: app-arch
+          name: zstd
+        - category: sys-apps
+          name: attr
+        - category: dev-libs-2
+          name: lzo
+    buildtime_deps:
+      packages:
+        - category: app-arch
+          name: lz4
+        - category: sys-libs
+          name: zlib
+        - category: app-arch
+          name: xz-utils
+        - category: app-arch
+          name: zstd
+        - category: sys-apps
+          name: attr
+        - category: dev-libs-2
+          name: lzo
+
+  uses:
+    disabled:
+      - static
+  packages:
+    - sys-fs/squashfs-tools

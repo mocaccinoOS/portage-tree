@@ -7,4 +7,11 @@ artefacts:
   packages:
     - net-dialup/ppp
 
-
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: build-seed
+          category: layers
+  packages:
+    - net-dialup/linux-atm

@@ -34,6 +34,13 @@ artefacts:
 - tree: multi-arch/packages/atoms
   uses:
     disabled:
+      - vala
+  packages:
+    - net-misc/modemmanager
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
       - static
       - idn
       - gcrypt

@@ -1,8 +1,11 @@
 artefacts:
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - mpi
   packages:
-    - sci-libs/gsl
+    - sci-libs/fftw:3.0
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms

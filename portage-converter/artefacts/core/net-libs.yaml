@@ -28,3 +28,24 @@ artefacts:
   packages:
     - net-libs/libsoup:2.4
 
+- tree: multi-arch/packages/atoms
+  packages:
+    - net-libs/nodejs
+    - net-libs/libtirpc
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  packages:
+    - net-libs/libssh2
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - cxx
+      - hpack-tools
+      - jemalloc
+      - xml
+      - utils
+  packages:
+    - net-libs/nghttp2
+

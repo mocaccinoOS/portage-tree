@@ -1,0 +1,26 @@
+artefacts:
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - static
+  packages:
+    - app-arch/tar
+
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: cmake
+          category: dev-util
+        - name: openldap
+          category: net-nds
+  packages:
+    - app-arch/lz4
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  packages:
+    - app-arch/xz-utils
+    - app-arch/libarchive
+
