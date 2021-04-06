@@ -20,9 +20,9 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: font-util
+- name: encodings
   version: '>=0'
   category: media-fonts
-- name: mkfontscale
+- name: fontforge
   version: '>=0'
-  category: x11-apps
+  category: media-gfx

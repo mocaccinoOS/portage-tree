@@ -1,0 +1,12 @@
+name: baekmuk-fonts-portage
+version: "2.2"
+category: media-fonts
+requires:
+- name: baekmuk-fonts
+  version: "2.2"
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/baekmuk-fonts
+  kit: gentoo
+  original.package.name: media-fonts/baekmuk-fonts
+  original.package.version: 2.2-r2
