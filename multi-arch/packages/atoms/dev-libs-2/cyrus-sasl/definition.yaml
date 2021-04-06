@@ -2,12 +2,12 @@ name: cyrus-sasl
 version: 2.1.27
 category: dev-libs-2
 use_flags:
+- -java
 - -libressl
 - -selinux
 - authdaemond
 - berkdb
 - gdbm
-- java
 - kerberos
 - mysql
 - openldap
@@ -25,9 +25,6 @@ requires:
 - name: sqlite
   version: '>=0'
   category: dev-db-3
-- name: java-config
-  version: '>=0'
-  category: dev-java-2
 - name: mailbase
   version: '>=0'
   category: net-mail

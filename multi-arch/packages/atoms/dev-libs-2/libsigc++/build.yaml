@@ -20,6 +20,12 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: build-seed
+- name: desktop-file-utils
   version: '>=0'
-  category: layers
+  category: dev-util
+- name: m4
+  version: '>=0'
+  category: sys-devel
+- name: shared-mime-info
+  version: '>=0'
+  category: x11-misc
