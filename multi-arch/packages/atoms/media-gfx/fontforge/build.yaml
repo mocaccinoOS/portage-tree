@@ -20,36 +20,30 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: unzip
+- name: python
   version: '>=0'
-  category: app-arch
-- name: ftjam
+  category: dev-lang-3.7
+- name: python-exec
   version: '>=0'
-  category: dev-util
+  category: dev-lang-2
+- name: libltdl
+  version: '>=0'
+  category: dev-libs
+- name: giflib
+  version: '>=0'
+  category: media-libs
+- name: libuninameslist
+  version: '>=0'
+  category: media-libs
 - name: tiff
   version: '>=0'
   category: media-libs
-- name: zlib
+- name: woff2
   version: '>=0'
-  category: sys-libs
+  category: media-libs
 - name: jpeg
   version: '>=0'
   category: virtual
-- name: libXScrnSaver
+- name: gtk+
   version: '>=0'
-  category: x11-libs
-- name: libXau
-  version: '>=0'
-  category: x11-libs
-- name: libXdmcp
-  version: '>=0'
-  category: x11-libs
-- name: libXinerama
-  version: '>=0'
-  category: x11-libs
-- name: libXrandr
-  version: '>=0'
-  category: x11-libs
-- name: libXxf86vm
-  version: '>=0'
-  category: x11-libs
+  category: x11-libs-3
