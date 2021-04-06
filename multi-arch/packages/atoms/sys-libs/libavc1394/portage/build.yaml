@@ -7,6 +7,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: librtas
-  version: 2.0.2
+- name: libavc1394
+  version: 0.5.4
   category: sys-libs

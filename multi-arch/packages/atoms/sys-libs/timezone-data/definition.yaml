@@ -3,6 +3,10 @@ version: 2020a
 category: sys-libs
 use_flags:
 - nls
+requires:
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: Timezone data (/usr/share/zoneinfo) and utilities (tzselect/zic/zdump)
 uri:
 - https://www.iana.org/time-zones
