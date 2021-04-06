@@ -3,13 +3,13 @@ version: 1.10.0
 category: net-misc
 use_flags:
 - -elogind
+- -vala
 - introspection
 - mbim
 - policykit
 - qmi
 - systemd
 - udev
-- vala
 requires:
 - name: libqmi
   version: '>=0'

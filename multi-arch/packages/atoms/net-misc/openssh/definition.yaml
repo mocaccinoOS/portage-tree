@@ -21,9 +21,6 @@ requires:
 - name: shadow
   version: '>=0'
   category: sys-apps
-- name: pam
-  version: '>=0'
-  category: sys-libs
 - name: krb5
   version: '>=0'
   category: virtual
