@@ -8,6 +8,9 @@ requires:
 - name: readline
   version: '>=0'
   category: sys-libs
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: The standard GNU Bourne again shell
 uri:
 - http://tiswww.case.edu/php/chet/bash/bashtop.html
