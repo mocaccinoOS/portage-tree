@@ -4,9 +4,6 @@ category: virtual
 use_flags:
 - firmware
 requires:
-- name: gentoo-sources
-  version: '>=0'
-  category: sys-kernel-5.4.72
 - name: linux-firmware
   version: '>=0'
   category: sys-kernel

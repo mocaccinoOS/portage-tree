@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: gentoo-sources
+- name: kernel-5.4
   version: '>=0'
-  category: sys-kernel
+  category: layers
