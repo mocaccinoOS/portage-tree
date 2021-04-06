@@ -32,6 +32,3 @@ requires:
 - name: krb5
   version: '>=0'
   category: virtual
-- name: pkgconfig
-  version: '>=0'
-  category: virtual

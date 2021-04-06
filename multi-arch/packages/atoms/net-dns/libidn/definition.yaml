@@ -13,6 +13,12 @@ requires:
 - name: mono
   version: '>=0'
   category: dev-lang
+- name: jre
+  version: '>=0'
+  category: virtual-1.8
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: Internationalized Domain Names (IDN) implementation
 uri:
 - https://www.gnu.org/software/libidn/
