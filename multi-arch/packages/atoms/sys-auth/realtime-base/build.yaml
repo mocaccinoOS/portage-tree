@@ -12,7 +12,7 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
@@ -20,45 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: p11-kit
+- name: build-seed
   version: '>=0'
-  category: app-crypt
-- name: ding-libs
-  version: '>=0'
-  category: dev-libs
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
-- name: jansson
-  version: '>=0'
-  category: dev-libs
-- name: libnl
-  version: '>=0'
-  category: dev-libs-3
-- name: libpcre
-  version: '>=0'
-  category: dev-libs-3
-- name: openssl
-  version: '>=0'
-  category: dev-libs
-- name: bind-tools
-  version: '>=0'
-  category: net-dns
-- name: c-ares
-  version: '>=0'
-  category: net-dns
-- name: cifs-utils
-  version: '>=0'
-  category: net-fs
-- name: samba
-  version: '>=0'
-  category: net-fs
-- name: http-parser
-  version: '>=0'
-  category: net-libs
-- name: curl
-  version: '>=0'
-  category: net-misc
-- name: dbus
-  version: '>=0'
-  category: sys-apps
+  category: layers

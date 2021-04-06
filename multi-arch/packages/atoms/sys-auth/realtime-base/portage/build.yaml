@@ -7,6 +7,6 @@ env:
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 package_dir: /{{ .Values.name }}
 requires:
-- name: pam_krb5
-  version: "4.9"
+- name: realtime-base
+  version: "0.1"
   category: sys-auth
