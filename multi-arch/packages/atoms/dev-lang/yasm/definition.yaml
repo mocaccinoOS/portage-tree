@@ -3,6 +3,10 @@ version: 1.3.0
 category: dev-lang
 use_flags:
 - nls
+requires:
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: An assembler for x86 and x86_64 instruction sets
 uri:
 - https://yasm.tortall.net/
