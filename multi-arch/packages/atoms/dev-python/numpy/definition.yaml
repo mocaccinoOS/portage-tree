@@ -12,6 +12,15 @@ requires:
 - name: setuptools
   version: '>=0'
   category: dev-python
+- name: cblas
+  version: '>=0'
+  category: virtual
+- name: fortran
+  version: '>=0'
+  category: virtual
+- name: lapack
+  version: '>=0'
+  category: virtual
 description: Fast array and numerical python library
 uri:
 - https://www.numpy.org
