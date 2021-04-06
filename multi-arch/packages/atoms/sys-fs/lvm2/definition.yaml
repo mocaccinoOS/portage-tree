@@ -11,9 +11,6 @@ use_flags:
 - thin
 - udev
 requires:
-- name: util-linux
-  version: '>=0'
-  category: sys-apps
 - name: thin-provisioning-tools
   version: '>=0'
   category: sys-block
