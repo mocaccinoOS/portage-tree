@@ -2,26 +2,26 @@ name: squashfs-tools
 version: "4.4"
 category: sys-fs
 use_flags:
+- -static
 - lz4
 - lzma
 - lzo
-- static
 - xattr
 - xz
 - zstd
 requires:
-- name: zstd
-  version: '>=0'
-  category: app-arch
-- name: lzo
-  version: '>=0'
-  category: dev-libs-2
-- name: attr
-  version: '>=0'
-  category: sys-apps
 - name: zlib
   version: '>=0'
   category: sys-libs
+- name: zstd
+  version: '>=0'
+  category: app-arch
+- name: attr
+  version: '>=0'
+  category: sys-apps
+- name: lzo
+  version: '>=0'
+  category: dev-libs-2
 description: tools to create and extract Squashfs filesystems
 uri:
 - https://github.com/plougher/squashfs-tools
