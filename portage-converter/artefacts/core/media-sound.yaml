@@ -11,3 +11,12 @@ artefacts:
       - ofono-headset
   packages:
     - media-sound/pulseaudio
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      # Break loop with pulseaudio
+      - ieee1394
+  packages:
+    - media-sound/jack2:2
+

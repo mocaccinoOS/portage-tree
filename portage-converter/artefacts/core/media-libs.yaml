@@ -30,6 +30,19 @@ artefacts:
 
 - tree: multi-arch/packages/atoms
   uses:
+    disabled:
+      - qt5
+  packages:
+    - media-libs/libffado
+
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      # We use this deps directly from build-seed layer.
+      ignore:
+        - name: cmake
+          category: dev-util
+  uses:
     enabled:
       - amd64
       - amd64-linux

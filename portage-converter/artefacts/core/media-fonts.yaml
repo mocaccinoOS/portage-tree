@@ -1,0 +1,12 @@
+artefacts:
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: fontforge
+          category: media-gfx
+        - name: build-seed
+          category: layers
+  packages:
+    - media-fonts/liberation-fonts

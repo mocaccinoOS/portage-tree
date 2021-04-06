@@ -44,6 +44,7 @@ include_files:
 - artefacts/core/dev-lang.yaml
 - artefacts/core/dev-libs.yaml
 - artefacts/core/gnome-base.yaml
+- artefacts/core/media-fonts.yaml
 - artefacts/core/media-sound.yaml
 - artefacts/core/media-libs.yaml
 - artefacts/core/net-dialup.yaml

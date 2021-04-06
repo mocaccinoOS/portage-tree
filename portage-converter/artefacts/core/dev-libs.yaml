@@ -86,3 +86,37 @@ artefacts:
     - dev-libs/libxml2:2
     - dev-libs/libyaml
 
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - gstreamer
+      - connman
+      - glib
+      - gnutls
+      - hyphen
+      - harfbuzz
+      - json
+      - ibus
+      - ico
+      - jpeg2k
+      - lua
+      - mono
+      - opengl
+      - physics
+      - pmaps
+      - postscript
+      - psd
+      - raw
+      - scim
+      - sdl
+      - tga
+      - tgv
+      - tslib
+      - unwind
+      - vnc
+      - webp
+      - xcf
+      - xim
+      - xpresent
+  packages:
+    - dev-libs/efl
