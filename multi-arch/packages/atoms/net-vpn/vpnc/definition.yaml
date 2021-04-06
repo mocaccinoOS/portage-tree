@@ -21,6 +21,12 @@ requires:
 - name: iproute2
   version: '>=0'
   category: sys-apps
+- name: resolvconf
+  version: '>=0'
+  category: virtual
+- name: tmpfiles
+  version: '>=0'
+  category: virtual
 description: Free client for Cisco VPN routing software
 uri:
 - https://www.unix-ag.uni-kl.de/~massar/vpnc/
