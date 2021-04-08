@@ -442,3 +442,17 @@ artefacts:
           category: layers
   packages:
     - virtual/jdk:1.8
+
+- tree: multi-arch/packages/atoms
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: dev-libs
+          name: libusb
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: build-seed
+          category: layers
+  packages:
+    - virtual/libusb:1

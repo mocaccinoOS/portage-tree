@@ -11,6 +11,23 @@ artefacts:
     - dev-lang/tcl
     - dev-lang/nasm
     # BDEPEND of go requires itself.
+    - dev-lang/go-bootstrap
+
+- tree: multi-arch/packages/atoms
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: dev-lang
+          name: go-bootstrap
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: build-seed
+          category: layers
+      ignore:
+        - name: go
+          category: dev-lang
+  packages:
     - dev-lang/go
 
 - tree: multi-arch/packages/atoms
