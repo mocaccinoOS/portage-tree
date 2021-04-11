@@ -2,13 +2,13 @@ name: shadow
 version: "4.8"
 category: sys-apps
 use_flags:
+- -audit
 - -selinux
+- -skey
 - acl
-- audit
 - cracklib
 - nls
 - pam
-- skey
 - su
 - xattr
 requires:
@@ -18,12 +18,12 @@ requires:
 - name: pambase
   version: '>=0'
   category: sys-auth
-- name: skey
+- name: cracklib
   version: '>=0'
-  category: sys-auth
-- name: audit
+  category: sys-libs
+- name: pam
   version: '>=0'
-  category: sys-process
+  category: sys-libs
 conflicts:
 - name: util-linux
   version: '>=0'

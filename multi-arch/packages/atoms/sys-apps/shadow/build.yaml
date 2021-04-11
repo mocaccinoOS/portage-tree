@@ -20,18 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: acl
+- name: build-seed
   version: '>=0'
-  category: sys-apps
-- name: skey
-  version: '>=0'
-  category: sys-auth
-- name: cracklib
-  version: '>=0'
-  category: sys-libs
-- name: pam
-  version: '>=0'
-  category: sys-libs
-- name: audit
-  version: '>=0'
-  category: sys-process
+  category: layers

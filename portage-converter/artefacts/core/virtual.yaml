@@ -339,7 +339,7 @@ artefacts:
     buildtime_deps:
       packages:
         - category: dev-libs
-          name: ocl-lcd
+          name: ocl-icd
   replacements:
     buildtime_deps:
       ignore:

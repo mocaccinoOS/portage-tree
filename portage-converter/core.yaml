@@ -159,6 +159,7 @@ artefacts:
         - name: python
           category: dev-lang-3.7
   packages:
+    - app-portage/gemato
     - dev-libs/libclc
     - dev-libs/libnl:3
     - dev-python/dbus-python
@@ -328,6 +329,11 @@ artefacts:
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: false
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
   uses:
     disabled:
       - ldap

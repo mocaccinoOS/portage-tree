@@ -69,3 +69,13 @@ artefacts:
       - static
   packages:
     - sys-apps/sed
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  uses:
+    disabled:
+      - audit
+      - bcrypt
+      - skey
+  packages:
+    - sys-apps/shadow

@@ -37,3 +37,13 @@ artefacts:
       - trace
   packages:
     - sys-libs/ncurses
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: false
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.7
+  packages:
+    - sys-libs/cracklib
