@@ -23,9 +23,6 @@ requires:
 - name: gettext
   version: '>=0'
   category: sys-devel
-- name: argp-standalone
-  version: '>=0'
-  category: sys-libs
 - name: jpeg
   version: '>=0'
   category: virtual

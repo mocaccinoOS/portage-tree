@@ -5,9 +5,6 @@ use_flags:
 - elibc_glibc
 - jpeg
 requires:
-- name: argp-standalone
-  version: '>=0'
-  category: sys-libs
 - name: jpeg
   version: '>=0'
   category: virtual

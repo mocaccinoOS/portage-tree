@@ -83,3 +83,6 @@ artefacts:
     - media-libs/libglvnd
     - media-libs/harfbuzz
 
+- tree: multi-arch/packages/atoms
+  packages:
+    - media-libs/libv4l
