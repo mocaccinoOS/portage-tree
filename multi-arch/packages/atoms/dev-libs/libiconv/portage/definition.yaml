@@ -1,0 +1,12 @@
+name: libiconv-portage
+version: "1.15"
+category: dev-libs
+requires:
+- name: libiconv
+  version: "1.15"
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/libiconv
+  kit: gentoo
+  original.package.name: dev-libs/libiconv
+  original.package.version: "1.15"
