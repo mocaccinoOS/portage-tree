@@ -3,10 +3,10 @@ version: "4.8"
 category: sys-apps
 use_flags:
 - -audit
+- -cracklib
 - -selinux
 - -skey
 - acl
-- cracklib
 - nls
 - pam
 - su
@@ -18,9 +18,6 @@ requires:
 - name: pambase
   version: '>=0'
   category: sys-auth
-- name: cracklib
-  version: '>=0'
-  category: sys-libs
 - name: pam
   version: '>=0'
   category: sys-libs
