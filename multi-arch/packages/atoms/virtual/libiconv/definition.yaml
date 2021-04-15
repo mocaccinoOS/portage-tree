@@ -7,7 +7,7 @@ use_flags:
 - elibc_glibc
 - elibc_mintlib
 requires:
-- name: iconv
+- name: libiconv
   version: '>=0'
   category: dev-libs
 description: Virtual for the GNU conversion library
