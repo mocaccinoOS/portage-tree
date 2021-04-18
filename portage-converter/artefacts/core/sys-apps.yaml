@@ -77,5 +77,6 @@ artefacts:
       - audit
       - bcrypt
       - skey
+      - cracklib
   packages:
     - sys-apps/shadow

@@ -17,13 +17,13 @@ artefacts:
   mutations:
     buildtime_deps:
       packages:
-        - category: dev-libs
-          name: iconv
+        - category: sys-libs
+          name: glibc
 
     runtime_deps:
       packages:
-        - category: dev-libs
-          name: iconv
+        - category: sys-libs
+          name: glibc
   replacements:
     buildtime_deps:
       ignore:
