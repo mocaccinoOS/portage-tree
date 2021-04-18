@@ -7,9 +7,9 @@ use_flags:
 - elibc_glibc
 - elibc_mintlib
 requires:
-- name: libiconv
+- name: glibc
   version: '>=0'
-  category: dev-libs
+  category: sys-libs
 description: Virtual for the GNU conversion library
 uri:
 - ""
