@@ -1,6 +1,9 @@
 artefacts:
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - fontforge
   replacements:
     buildtime_deps:
       ignore:
