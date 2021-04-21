@@ -45,6 +45,7 @@ include_files:
 - artefacts/core/app-text.yaml
 - artefacts/core/virtual.yaml
 - artefacts/core/dev-lang.yaml
+- artefacts/core/dev-qt.yaml
 - artefacts/core/dev-libs.yaml
 - artefacts/core/gnome-base.yaml
 - artefacts/core/media-fonts.yaml
@@ -103,16 +104,7 @@ artefacts:
       - tslib
   packages:
     - media-libs/libsdl
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: gtk+
-          category: x11-libs-3
-  packages:
-    - dev-qt/qtwidgets:5
+    - media-libs/libsdl2
 
 
 - tree: multi-arch/packages/atoms
@@ -291,23 +283,6 @@ artefacts:
 
 
 - tree: multi-arch/packages/atoms
-  # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
-  # ignore buildtime deps.
-  uses:
-    disabled:
-      - debug
-      - eglfs
-      - evdev
-      - gles2-only
-      - test
-      - tslib
-      - tuio
-      - vnc
-  packages:
-    - dev-qt/qtgui:5
-
-- tree: multi-arch/packages/atoms
   ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
@@ -403,7 +378,6 @@ artefacts:
     - sys-libs/libcap
     - sys-kernel/linux-headers
     - sys-process/procps
-    - x11-libs/tslib
     - x11-libs/libxcb
     - x11-libs/libX11
     - x11-libs/libXcomposite

@@ -1,0 +1,38 @@
+artefacts:
+# Break gentoo buildtime dep cycle
+- tree: multi-arch/packages/atoms
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: gtk+
+          category: x11-libs-3
+  packages:
+    - dev-qt/qtwidgets:5
+
+- tree: multi-arch/packages/atoms
+  # To avoid cycle error on solver for packages
+  # available already from layers/build-seed i
+  # ignore buildtime deps.
+  uses:
+    disabled:
+      - debug
+      - eglfs
+      - evdev
+      - gles2-only
+      - test
+      - tslib
+      - tuio
+      - vnc
+  packages:
+    - dev-qt/qtgui:5
+
+- tree: multi-arch/packages/atoms
+  uses:
+    disabled:
+      - oci8
+      - freetds
+      - odbc
+      - postgres
+  packages:
+    - dev-qt/qtsql:5
+
