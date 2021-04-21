@@ -9,7 +9,7 @@ use_flags:
 requires:
 - name: glibc
   version: '>=0'
-  category: sys-libs
+  category: sys-libs-2.2
 description: Virtual for the GNU conversion library
 uri:
 - ""

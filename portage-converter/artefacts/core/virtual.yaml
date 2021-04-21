@@ -17,12 +17,12 @@ artefacts:
   mutations:
     buildtime_deps:
       packages:
-        - category: sys-libs
+        - category: sys-libs-2.2
           name: glibc
 
     runtime_deps:
       packages:
-        - category: sys-libs
+        - category: sys-libs-2.2
           name: glibc
   replacements:
     buildtime_deps:

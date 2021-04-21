@@ -22,4 +22,4 @@ package_dir: /{{ .Values.name }}
 requires:
 - name: glibc
   version: '>=0'
-  category: sys-libs
+  category: sys-libs-2.2
