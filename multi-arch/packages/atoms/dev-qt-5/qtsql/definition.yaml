@@ -2,26 +2,17 @@ name: qtsql
 version: 5.15.1
 category: dev-qt-5
 use_flags:
+- -freetds
+- -oci8
+- -odbc
+- -postgres
 - -test
-- freetds
 - mysql
-- oci8
-- odbc
-- postgres
 - sqlite
 requires:
-- name: freetds
-  version: '>=0'
-  category: dev-db
 - name: mysql-connector-c
   version: '>=0'
   category: dev-db
-- name: oracle-instantclient
-  version: '>=0'
-  category: dev-db
-- name: postgresql
-  version: '>=0'
-  category: dev-db-12
 - name: sqlite
   version: '>=0'
   category: dev-db-3
