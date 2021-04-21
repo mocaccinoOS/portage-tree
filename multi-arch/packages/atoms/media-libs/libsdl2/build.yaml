@@ -26,18 +26,27 @@ requires:
 - name: ibus
   version: '>=0'
   category: app-i18n
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: wayland
+  version: '>=0'
+  category: dev-libs
 - name: vulkan-headers
   version: '>=0'
   category: dev-util
-- name: libsamplerate
+- name: alsa-lib
   version: '>=0'
   category: media-libs
-- name: nas
+- name: libsamplerate
   version: '>=0'
   category: media-libs
 - name: pulseaudio
   version: '>=0'
   category: media-sound
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: glu
   version: '>=0'
   category: virtual
@@ -53,9 +62,12 @@ requires:
 - name: libXcursor
   version: '>=0'
   category: x11-libs
+- name: libXi
+  version: '>=0'
+  category: x11-libs
 - name: libXinerama
   version: '>=0'
   category: x11-libs
-- name: tslib
+- name: libxkbcommon
   version: '>=0'
   category: x11-libs
