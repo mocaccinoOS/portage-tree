@@ -22,4 +22,4 @@ package_dir: /{{ .Values.name }}
 requires:
 - name: libusb
   version: '>=0'
-  category: dev-libs
+  category: dev-libs-1

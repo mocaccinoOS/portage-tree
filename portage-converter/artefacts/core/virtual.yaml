@@ -447,7 +447,7 @@ artefacts:
   mutations:
     buildtime_deps:
       packages:
-        - category: dev-libs
+        - category: dev-libs-1
           name: libusb
   replacements:
     buildtime_deps:
