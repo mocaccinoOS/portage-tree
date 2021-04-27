@@ -372,10 +372,6 @@ artefacts:
     # Calculating dependencies   . ... done!
     # [ebuild   R    ] sys-libs/glibc-2.32-r2:2.2::gentoo  USE="audit* caps compile-locales* (crypt) gd* multiarch (multilib) nscd ssp (static-libs) suid (-cet) -custom-cflags -doc -headers-only -profile (-selinux) -static-pie -systemtap -test (-vanilla)" 18705 KiB
     # [ebuild  N     ]  media-libs/gd-2.3.0:2/3::gentoo  USE="fontconfig jpeg png zlib -static-libs -test -tiff -truetype -webp -xpm" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="sse" 2480 KiB
-    - sys-libs/glibc
-    - sys-libs/libunwind
-    - sys-libs/llvm-libunwind
-    - sys-libs/libcap
     - sys-kernel/linux-headers
     - sys-process/procps
     - x11-libs/libxcb

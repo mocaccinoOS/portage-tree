@@ -47,3 +47,20 @@ artefacts:
           category: dev-lang-3.7
   packages:
     - sys-libs/cracklib
+
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  packages:
+    - sys-libs/glibc
+    - sys-libs/libunwind
+    - sys-libs/llvm-libunwind
+    - sys-libs/libcap
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  mutations:
+    uses:
+      - -static-libs
+  packages:
+    - sys-libs/libunwind
