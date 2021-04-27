@@ -20,18 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: miniupnpc
+- name: db
   version: '>=0'
-  category: net-libs
-- name: shadow
-  version: '>=0'
-  category: sys-apps
-- name: tcp-wrappers
-  version: '>=0'
-  category: sys-apps
-- name: bison
-  version: '>=0'
-  category: sys-devel
-- name: krb5
-  version: '>=0'
-  category: virtual
+  category: sys-libs-5.3

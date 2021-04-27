@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: gettext
+- name: freetype
   version: '>=0'
-  category: sys-devel
+  category: media-libs-2

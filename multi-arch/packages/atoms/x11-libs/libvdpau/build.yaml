@@ -20,15 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: pkgconfig
+- name: lz4
   version: '>=0'
-  category: virtual
-- name: xorg-proto
-  version: '>=0'
-  category: x11-base
-- name: libX11
-  version: '>=0'
-  category: x11-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
+  category: app-arch

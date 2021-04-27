@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: perl
+- name: clang
   version: '>=0'
-  category: dev-lang
+  category: sys-devel-10

@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: ninja
+- name: gcc
   version: '>=0'
-  category: dev-util
+  category: sys-devel-9.3.0

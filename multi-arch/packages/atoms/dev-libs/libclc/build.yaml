@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: clang
+- name: opencl
   version: '>=0'
-  category: sys-devel-10
+  category: virtual

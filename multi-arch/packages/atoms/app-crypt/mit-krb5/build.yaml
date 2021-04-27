@@ -20,27 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: yasm
+- name: libXfixes
   version: '>=0'
-  category: dev-lang
-- name: libverto
-  version: '>=0'
-  category: dev-libs
-- name: keyutils
-  version: '>=0'
-  category: sys-apps
-- name: autoconf
-  version: '>=0'
-  category: sys-devel-2.69
-- name: automake
-  version: '>=0'
-  category: sys-devel-1.16
-- name: libtool
-  version: '>=0'
-  category: sys-devel-2
-- name: e2fsprogs-libs
-  version: '>=0'
-  category: sys-libs
-- name: yacc
-  version: '>=0'
-  category: virtual
+  category: x11-libs
