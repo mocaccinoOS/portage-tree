@@ -4,6 +4,7 @@ category: sys-libs
 use_flags:
 - libatomic
 - lzma
+- -static-libs
 requires:
 - name: xz-utils
   version: '>=0'
