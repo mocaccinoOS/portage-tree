@@ -3,7 +3,7 @@ requires:
   version: '>=0'
   category: layers
 
-package_dir: /{{ .Values.name }}
+package_dir: /pkgdir/{{ .Values.name }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
@@ -23,5 +23,5 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /pkgdir/ || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}

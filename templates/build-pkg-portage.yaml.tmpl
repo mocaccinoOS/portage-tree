@@ -1,8 +1,9 @@
-package_dir: /{{ .Values.name }}
+package_dir: /pkgdir/{{ .Values.name }}
 env:
 - LUET_PORTAGE_PKGFILES=0
 - LUET_PORTAGE_PKGMETA=1
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 steps:
 - |
+  eval 'rm -rf /pkgdir/ || true' && mkdir /pkgdir/{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
