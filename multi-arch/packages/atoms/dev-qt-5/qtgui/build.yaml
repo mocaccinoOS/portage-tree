@@ -20,48 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libinput
-  version: '>=0'
-  category: dev-libs
-- name: qtdbus
-  version: '>=0'
-  category: dev-qt-5
-- name: gtk-update-icon-cache
-  version: '>=0'
-  category: dev-util
-- name: vulkan-headers
-  version: '>=0'
-  category: dev-util
-- name: fontconfig
-  version: '>=0'
-  category: media-libs-1.0
-- name: freetype
-  version: '>=0'
-  category: media-libs-2
-- name: mesa
-  version: '>=0'
-  category: media-libs
-- name: linux-headers
-  version: '>=0'
-  category: sys-kernel
-- name: jpeg
-  version: '>=0'
-  category: virtual
-- name: libSM
-  version: '>=0'
-  category: x11-libs
-- name: libxkbcommon
-  version: '>=0'
-  category: x11-libs
-- name: xcb-util-image
-  version: '>=0'
-  category: x11-libs
-- name: xcb-util-keysyms
-  version: '>=0'
-  category: x11-libs
-- name: xcb-util-renderutil
-  version: '>=0'
-  category: x11-libs
 - name: xcb-util-wm
   version: '>=0'
   category: x11-libs

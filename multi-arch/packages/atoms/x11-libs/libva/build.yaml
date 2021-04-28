@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libelf
+- name: libgcrypt
   version: '>=0'
-  category: virtual
+  category: dev-libs

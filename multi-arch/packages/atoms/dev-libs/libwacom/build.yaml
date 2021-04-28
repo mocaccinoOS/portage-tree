@@ -20,12 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libgudev
+- name: dbus
   version: '>=0'
-  category: dev-libs
-- name: meson
-  version: '>=0'
-  category: dev-util
-- name: ninja
-  version: '>=0'
-  category: dev-util
+  category: sys-apps

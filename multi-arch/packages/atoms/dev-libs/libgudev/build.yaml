@@ -20,21 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: gobject-introspection
+- name: libevdev
   version: '>=0'
   category: dev-libs
-- name: desktop-file-utils
-  version: '>=0'
-  category: dev-util
-- name: glib-utils
-  version: '>=0'
-  category: dev-util
-- name: gtk-doc-am
-  version: '>=0'
-  category: dev-util
-- name: libudev
-  version: '>=0'
-  category: virtual
-- name: shared-mime-info
-  version: '>=0'
-  category: x11-misc
