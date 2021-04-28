@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libva
+- name: docbook-xml-dtd
   version: '>=0'
-  category: x11-libs
+  category: app-text-4.5

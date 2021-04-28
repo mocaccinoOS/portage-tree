@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: unzip
+- name: kmod
   version: '>=0'
-  category: app-arch
+  category: sys-apps
