@@ -20,15 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libedit
+- name: texinfo
   version: '>=0'
-  category: dev-libs
-- name: flex
-  version: '>=0'
-  category: sys-devel
-- name: readline
-  version: '>=0'
-  category: sys-libs
-- name: yacc
-  version: '>=0'
-  category: virtual
+  category: sys-apps

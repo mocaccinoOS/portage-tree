@@ -27,6 +27,9 @@ use_flags:
 - systemd
 - wifi
 requires:
+- name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
 - name: jansson
   version: '>=0'
   category: dev-libs
@@ -69,6 +72,9 @@ requires:
 - name: bluez
   version: '>=0'
   category: net-wireless
+- name: readline
+  version: '>=0'
+  category: sys-libs
 - name: audit
   version: '>=0'
   category: sys-process

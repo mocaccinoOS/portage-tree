@@ -20,18 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: perl
+- name: datefudge
   version: '>=0'
-  category: dev-lang
-- name: libintl
-  version: '>=0'
-  category: virtual
-- name: perl-ExtUtils-MakeMaker
-  version: '>=0'
-  category: virtual
-- name: perl-File-Spec
-  version: '>=0'
-  category: virtual
-- name: perl-version
-  version: '>=0'
-  category: virtual
+  category: app-misc

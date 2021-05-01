@@ -20,12 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: perl
+- name: jsoncpp
   version: '>=0'
-  category: dev-lang
-- name: gettext
-  version: '>=0'
-  category: sys-devel
-- name: perl-ExtUtils-MakeMaker
-  version: '>=0'
-  category: virtual
+  category: dev-libs

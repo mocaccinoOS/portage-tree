@@ -20,12 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: python-exec
+- name: avahi
   version: '>=0'
-  category: dev-lang-2
-- name: swig
-  version: '>=0'
-  category: dev-lang
-- name: bison
-  version: '>=0'
-  category: sys-devel
+  category: net-dns

@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: xz-utils
+- name: libndp
   version: '>=0'
-  category: app-arch
-- name: libxslt
-  version: '>=0'
-  category: dev-libs
+  category: net-libs

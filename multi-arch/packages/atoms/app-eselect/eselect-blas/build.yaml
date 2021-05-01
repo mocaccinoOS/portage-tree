@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: eselect
+- name: libedit
   version: '>=0'
-  category: app-admin
+  category: dev-libs

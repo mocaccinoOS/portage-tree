@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: help2man
+- name: libvdpau
   version: '>=0'
-  category: sys-apps
-- name: yacc
-  version: '>=0'
-  category: virtual
+  category: x11-libs

@@ -20,12 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: java-config
+- name: openldap
   version: '>=0'
-  category: dev-java-2
-- name: mono
-  version: '>=0'
-  category: dev-lang
-- name: jdk
-  version: '>=0'
-  category: virtual-1.8
+  category: net-nds

@@ -20,15 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: python
+- name: iptables
   version: '>=0'
-  category: dev-lang-3.7
-- name: elfutils
-  version: '>=0'
-  category: dev-libs
-- name: setuptools
-  version: '>=0'
-  category: dev-python
-- name: attr
-  version: '>=0'
-  category: sys-apps
+  category: net-firewall

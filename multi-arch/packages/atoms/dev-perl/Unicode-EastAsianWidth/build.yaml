@@ -20,12 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: perl
+- name: guile
   version: '>=0'
-  category: dev-lang
-- name: perl-ExtUtils-MakeMaker
-  version: '>=0'
-  category: virtual
-- name: perl-File-Spec
-  version: '>=0'
-  category: virtual
+  category: dev-scheme-12

@@ -20,39 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: docbook-xml-dtd
+- name: libmbim
   version: '>=0'
-  category: app-text-4.5
-- name: spidermonkey
-  version: '>=0'
-  category: dev-lang-78
-- name: expat
-  version: '>=0'
-  category: dev-libs
-- name: glib
-  version: '>=0'
-  category: dev-libs-2
-- name: gobject-introspection
-  version: '>=0'
-  category: dev-libs
-- name: gobject-introspection-common
-  version: '>=0'
-  category: dev-libs
-- name: glib-utils
-  version: '>=0'
-  category: dev-util
-- name: gtk-doc-am
-  version: '>=0'
-  category: dev-util
-- name: intltool
-  version: '>=0'
-  category: dev-util
-- name: systemd
-  version: '>=0'
-  category: sys-apps
-- name: pambase
-  version: '>=0'
-  category: sys-auth
-- name: pam
-  version: '>=0'
-  category: sys-libs
+  category: net-libs

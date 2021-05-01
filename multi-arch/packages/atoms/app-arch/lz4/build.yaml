@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: gcc
+- name: perl-File-Spec
   version: '>=0'
-  category: sys-devel-9.3.0
+  category: virtual

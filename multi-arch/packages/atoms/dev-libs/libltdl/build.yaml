@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: xz-utils
+- name: wayland-protocols
   version: '>=0'
-  category: app-arch
+  category: dev-libs

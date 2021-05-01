@@ -20,27 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: fribidi
-  version: '>=0'
-  category: dev-libs
-- name: gobject-introspection
-  version: '>=0'
-  category: dev-libs
-- name: desktop-file-utils
+- name: vulkan-headers
   version: '>=0'
   category: dev-util
-- name: glib-utils
-  version: '>=0'
-  category: dev-util
-- name: gtk-doc-am
-  version: '>=0'
-  category: dev-util
-- name: cairo
-  version: '>=0'
-  category: x11-libs
-- name: libXft
-  version: '>=0'
-  category: x11-libs
-- name: shared-mime-info
-  version: '>=0'
-  category: x11-misc

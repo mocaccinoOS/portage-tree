@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: desktop-file-utils
+- name: pycairo
   version: '>=0'
-  category: dev-util
+  category: dev-python

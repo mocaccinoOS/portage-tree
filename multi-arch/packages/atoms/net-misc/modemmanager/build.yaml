@@ -23,9 +23,3 @@ requires:
 - name: gdbus-codegen
   version: '>=0'
   category: dev-util
-- name: libqmi
-  version: '>=0'
-  category: net-libs
-- name: polkit
-  version: '>=0'
-  category: sys-auth

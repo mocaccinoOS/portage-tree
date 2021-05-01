@@ -20,27 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: cmake
+- name: dieharder
   version: '>=0'
-  category: dev-util
-- name: elfix
-  version: '>=0'
-  category: sys-apps
-- name: autoconf
-  version: '>=0'
-  category: sys-devel-2.69
-- name: automake
-  version: '>=0'
-  category: sys-devel-1.16
-- name: bc
-  version: '>=0'
-  category: sys-devel
-- name: gettext
-  version: '>=0'
-  category: sys-devel
-- name: libtool
-  version: '>=0'
-  category: sys-devel-2
-- name: libunwind
-  version: '>=0'
-  category: sys-libs
+  category: app-crypt

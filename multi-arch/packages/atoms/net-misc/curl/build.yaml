@@ -20,21 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libidn2
+- name: libxslt
   version: '>=0'
-  category: net-dns
-- name: nghttp2
-  version: '>=0'
-  category: net-libs
-- name: autoconf
-  version: '>=0'
-  category: sys-devel-2.69
-- name: libtool
-  version: '>=0'
-  category: sys-devel-2
-- name: zlib
-  version: '>=0'
-  category: sys-libs
-- name: krb5
-  version: '>=0'
-  category: virtual
+  category: dev-libs

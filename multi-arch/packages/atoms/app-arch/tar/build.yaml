@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: attr
+- name: python
   version: '>=0'
-  category: sys-apps
-- name: gettext
-  version: '>=0'
-  category: sys-devel
+  category: dev-lang-3.7

@@ -1,5 +1,6 @@
 steps:
-- cd /var/db/repos/gentoo/net-dialup/ppp && rm Manifest && ebuild ppp-2.4.8.ebuild digest
+- cd /var/db/repos/gentoo/net-dialup/ppp && rm Manifest && ebuild ppp-2.4.8.ebuild
+  digest
 - |
   {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
@@ -21,9 +22,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: linux-atm
+- name: rust
   version: '>=0'
-  category: net-dialup
-- name: pam
-  version: '>=0'
-  category: sys-libs
+  category: virtual

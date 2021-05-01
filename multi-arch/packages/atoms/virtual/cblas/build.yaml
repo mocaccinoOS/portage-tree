@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: lapack
+- name: libjpeg-turbo
   version: '>=0'
-  category: sci-libs
+  category: media-libs

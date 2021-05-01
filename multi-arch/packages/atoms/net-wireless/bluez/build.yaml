@@ -21,27 +21,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: ell
+- name: libunistring
   version: '>=0'
   category: dev-libs
-- name: json-c
-  version: '>=0'
-  category: dev-libs
-- name: libical
-  version: '>=0'
-  category: dev-libs
-- name: alsa-lib
-  version: '>=0'
-  category: media-libs
-- name: cups
-  version: '>=0'
-  category: net-print
-- name: hwids
-  version: '>=0'
-  category: sys-apps
-- name: readline
-  version: '>=0'
-  category: sys-libs
-- name: udev
-  version: '>=0'
-  category: virtual

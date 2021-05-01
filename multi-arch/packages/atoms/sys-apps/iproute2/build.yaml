@@ -20,27 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: xz-utils
+- name: socat
   version: '>=0'
-  category: app-arch
-- name: libbsd
-  version: '>=0'
-  category: dev-libs
-- name: linux-atm
-  version: '>=0'
-  category: net-dialup
-- name: iptables
-  version: '>=0'
-  category: net-firewall
-- name: bison
-  version: '>=0'
-  category: sys-devel
-- name: db
-  version: '>=0'
-  category: sys-libs-5.3
-- name: libcap
-  version: '>=0'
-  category: sys-libs
-- name: libelf
-  version: '>=0'
-  category: virtual
+  category: net-misc

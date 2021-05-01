@@ -20,12 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libpcre
-  version: '>=0'
-  category: dev-libs-3
-- name: oniguruma
+- name: gobject-introspection-common
   version: '>=0'
   category: dev-libs
-- name: libpng
-  version: '>=0'
-  category: media-libs

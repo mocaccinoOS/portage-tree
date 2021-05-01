@@ -20,18 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: Text-Unidecode
-  version: '>=0'
-  category: dev-perl
-- name: Unicode-EastAsianWidth
-  version: '>=0'
-  category: dev-perl
-- name: libintl-perl
-  version: '>=0'
-  category: dev-perl
-- name: gettext
+- name: autogen
   version: '>=0'
   category: sys-devel
-- name: ncurses
-  version: '>=0'
-  category: sys-libs

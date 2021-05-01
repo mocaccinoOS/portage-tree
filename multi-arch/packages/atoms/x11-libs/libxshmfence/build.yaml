@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: ocl-icd
+- name: xcb-util-image
   version: '>=0'
-  category: dev-libs
+  category: x11-libs

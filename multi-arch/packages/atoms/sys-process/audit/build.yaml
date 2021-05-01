@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libcap-ng
+- name: iputils
   version: '>=0'
-  category: sys-libs
+  category: net-misc

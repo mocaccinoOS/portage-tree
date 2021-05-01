@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: XML-Parser
+- name: glib-utils
   version: '>=0'
-  category: dev-perl
+  category: dev-util

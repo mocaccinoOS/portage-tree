@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: desktop-file-utils
+- name: dhcpcd
   version: '>=0'
-  category: dev-util
-- name: shared-mime-info
-  version: '>=0'
-  category: x11-misc
+  category: net-misc

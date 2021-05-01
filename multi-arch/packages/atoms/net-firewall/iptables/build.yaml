@@ -23,15 +23,3 @@ requires:
 - name: eselect-iptables
   version: '>=0'
   category: app-eselect
-- name: libnetfilter_conntrack
-  version: '>=0'
-  category: net-libs
-- name: libnftnl
-  version: '>=0'
-  category: net-libs
-- name: libpcap
-  version: '>=0'
-  category: net-libs
-- name: os-headers
-  version: '>=0'
-  category: virtual

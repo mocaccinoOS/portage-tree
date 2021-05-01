@@ -20,33 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: xmltoman
+- name: dbus
   version: '>=0'
-  category: app-doc
-- name: expat
-  version: '>=0'
-  category: dev-libs
-- name: libdaemon
-  version: '>=0'
-  category: dev-libs
-- name: libevent
-  version: '>=0'
-  category: dev-libs
-- name: dbus-python
-  version: '>=0'
-  category: dev-python
-- name: pygobject
-  version: '>=0'
-  category: dev-python-3
-- name: glib-utils
-  version: '>=0'
-  category: dev-util
-- name: intltool
-  version: '>=0'
-  category: dev-util
-- name: gdbm
-  version: '>=0'
-  category: sys-libs
-- name: libcap
-  version: '>=0'
-  category: sys-libs
+  category: sys-apps

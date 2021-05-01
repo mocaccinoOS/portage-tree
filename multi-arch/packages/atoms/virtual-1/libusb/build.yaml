@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libusb
+- name: libICE
   version: '>=0'
-  category: dev-libs-1
+  category: x11-libs

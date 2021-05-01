@@ -20,9 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: tcp-wrappers
-  version: '>=0'
-  category: sys-apps
-- name: readline
+- name: gpm
   version: '>=0'
   category: sys-libs

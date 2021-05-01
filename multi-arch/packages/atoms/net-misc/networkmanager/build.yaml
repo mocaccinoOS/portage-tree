@@ -12,62 +12,14 @@ steps:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /pkgdir/ || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-package_dir: /{{ .Values.name }}
+package_dir: /pkgdir/{{ .Values.name }}
 requires:
 - name: jansson
   version: '>=0'
   category: dev-libs
-- name: newt
-  version: '>=0'
-  category: dev-libs
-- name: nss
-  version: '>=0'
-  category: dev-libs
-- name: ppp
-  version: '>=0'
-  category: net-dialup
-- name: dnsmasq
-  version: '>=0'
-  category: net-dns
-- name: iptables
-  version: '>=0'
-  category: net-firewall
-- name: libndp
-  version: '>=0'
-  category: net-libs
-- name: curl
-  version: '>=0'
-  category: net-misc
-- name: dhcp
-  version: '>=0'
-  category: net-misc
-- name: dhcpcd
-  version: '>=0'
-  category: net-misc
-- name: iputils
-  version: '>=0'
-  category: net-misc
-- name: mobile-broadband-provider-info
-  version: '>=0'
-  category: net-misc
-- name: modemmanager
-  version: '>=0'
-  category: net-misc
-- name: bluez
-  version: '>=0'
-  category: net-wireless
-- name: util-linux
-  version: '>=0'
-  category: sys-apps
-- name: audit
-  version: '>=0'
-  category: sys-process
-- name: libudev
-  version: '>=0'
-  category: virtual

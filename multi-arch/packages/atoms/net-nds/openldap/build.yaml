@@ -20,12 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: cyrus-sasl
+- name: lua
   version: '>=0'
-  category: dev-libs-2
-- name: libgcrypt
-  version: '>=0'
-  category: dev-libs
-- name: gnutls
-  version: '>=0'
-  category: net-libs
+  category: dev-lang

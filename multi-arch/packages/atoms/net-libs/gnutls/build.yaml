@@ -20,39 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: dieharder
+- name: mono
   version: '>=0'
-  category: app-crypt
-- name: p11-kit
-  version: '>=0'
-  category: app-crypt
-- name: datefudge
-  version: '>=0'
-  category: app-misc
-- name: nettle
-  version: '>=0'
-  category: dev-libs
-- name: softhsm
-  version: '>=0'
-  category: dev-libs-2
-- name: guile
-  version: '>=0'
-  category: dev-scheme-12
-- name: ppp
-  version: '>=0'
-  category: net-dialup
-- name: libidn2
-  version: '>=0'
-  category: net-dns
-- name: unbound
-  version: '>=0'
-  category: net-dns
-- name: socat
-  version: '>=0'
-  category: net-misc
-- name: autogen
-  version: '>=0'
-  category: sys-devel
-- name: libintl
-  version: '>=0'
-  category: virtual
+  category: dev-lang
