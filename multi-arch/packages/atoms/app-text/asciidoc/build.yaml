@@ -1,5 +1,7 @@
 steps:
-- cd /var/db/repos/gentoo/app-text/asciidoc && rm Manifest && ebuild asciidoc-9.0.2.ebuild digest
+- |
+  cd /var/db/repos/gentoo/app-text/asciidoc && rm Manifest && ebuild asciidoc-9.0.2.ebuild digest && \
+  sed -i -e 's|^S=".*|S="${WORKDIR}/${PN}-py-${PV/_/}"|' asciidoc-9.0.2.ebuild
 - |
   {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
