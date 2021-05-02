@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: bzip2
+- name: shared-mime-info
   version: '>=0'
-  category: app-arch
+  category: x11-misc
