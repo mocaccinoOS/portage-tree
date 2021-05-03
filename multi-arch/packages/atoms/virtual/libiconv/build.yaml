@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: libpcre
+- name: libnfnetlink
   version: '>=0'
-  category: dev-libs-3
+  category: net-libs

@@ -20,6 +20,6 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 package_dir: /{{ .Values.name }}
 requires:
-- name: linux-headers
+- name: libnetfilter_conntrack
   version: '>=0'
-  category: sys-kernel
+  category: net-libs

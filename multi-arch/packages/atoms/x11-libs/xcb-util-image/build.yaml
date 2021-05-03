@@ -1,8 +1,4 @@
-env:
-- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
-- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
-- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-prelude:
+steps:
 - |
   {{- if .Values.use_flags }}
   USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
@@ -16,10 +12,14 @@ prelude:
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
 - |
-  eval 'rm -rf /pkgdir/ || true' && mkdir /{{ .Values.name }} && \
+  eval 'rm -rf /{{ .Values.name }} || true' && mkdir /{{ .Values.name }} && \
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
-package_dir: /pkgdir/{{ .Values.name }}
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+package_dir: /{{ .Values.name }}
 requires:
-- name: xorg-proto
+- name: hwids
   version: '>=0'
-  category: x11-base
+  category: sys-apps
