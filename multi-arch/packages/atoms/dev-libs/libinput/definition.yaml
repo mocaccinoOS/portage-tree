@@ -4,12 +4,9 @@ category: dev-libs
 use_flags:
 - -doc
 - -test
-- input_devices_wacom
+- -input_devices_wacom
 requires:
 - name: libevdev
-  version: '>=0'
-  category: dev-libs
-- name: libwacom
   version: '>=0'
   category: dev-libs
 - name: mtdev
