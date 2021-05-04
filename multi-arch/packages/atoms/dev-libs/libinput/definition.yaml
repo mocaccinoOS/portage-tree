@@ -3,8 +3,8 @@ version: 1.16.1
 category: dev-libs
 use_flags:
 - -doc
-- -test
 - -input_devices_wacom
+- -test
 requires:
 - name: libevdev
   version: '>=0'
