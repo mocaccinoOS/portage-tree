@@ -1,4 +1,0 @@
-requires:
-  - name: build-seed
-    category: layers
-    version: ">=0"

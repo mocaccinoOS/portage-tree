@@ -1,4 +1,0 @@
-requires:
-- category: "development"
-  name: "mocaccino-overlay"
-  version: ">=0"

@@ -1,6 +1,0 @@
-requires:
-- category: "layer"
-  name: "gentoo-portage"
-  version: ">=0"
-steps:
-- cp -rf package.use /etc/portage/

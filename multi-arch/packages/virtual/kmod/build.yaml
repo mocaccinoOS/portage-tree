@@ -1,4 +1,0 @@
-requires:
-  - name: system-core
-    category: layers
-    version: ">=0"

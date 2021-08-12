@@ -1,8 +1,0 @@
-category: "layers"
-name: "kernel-5.4"
-version: "5.10.20"
-hidden: true
-labels:
-  emerge.jobs: "3"
-  # We need install gentoo ebuild to fix portage deps but we will use mocaccino kernel
-  emerge.packages: "sys-kernel/gentoo-kernel:5.4.72 sys-kernel/gentoo-sources:5.4.72"

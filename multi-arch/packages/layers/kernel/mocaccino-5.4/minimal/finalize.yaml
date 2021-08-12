@@ -1,2 +1,0 @@
-install:
-- ln -s /boot/kernel-* /boot/bzImage || true
