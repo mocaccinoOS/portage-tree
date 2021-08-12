@@ -12,6 +12,6 @@ steps:
 - chmod g+w /usr/portage/distfiles/
 - touch /usr/portage/.keep
 requires:
-- category: "layer"
-  version:  ">=0.1"
+- category: "seed"
+  version:  ">=0"
   name:     "gentoo-stage3"
