@@ -1,7 +1,7 @@
 env:
 - PORTAGE_HASH={{ ( index .Values.labels "git.hash" ) }}
 prelude:
-- mkdir -p /var/db/repos /var/cache/binpkgs /var/cache/distfiles
+- mkdir -p /var/db/repos /var/cache/binpkgs /var/cache/distfiles /usr/portage/
 steps:
 - >-
   mkdir -p /usr/portage/distfiles/ && wget http://www.gentoo.org/dtd/metadata.dtd -O /usr/portage/distfiles/metadata.dtd &&
