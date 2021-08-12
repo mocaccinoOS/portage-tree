@@ -1,7 +1,7 @@
 image: "alpine"
 env: 
 - LUET_YES=true
-- STAGE_VERSION={{ ( index .Values.labels "package.version" ) }}
+- LUET_NOLOCK=true
 prelude:
 - apk --no-cache add ca-certificates tar wget xz rsync curl
 - curl https://get.mocaccino.org/luet/get_luet_root.sh | sh
