@@ -1,0 +1,81 @@
+# vzctl and other packages now require xattr support in tar
+app-arch/tar xattr
+app-arch/zstd lz4
+app-crypt/gnupg bzip2 nls readline smartcard ssl usb
+app-crypt/gpgme -qt5
+app-crypt/pinentry ncurses -gtk -qt5
+# qt5 is overkill for cmake as well
+dev-util/cmake -qt5 server
+dev-db/sqlite icu readline
+dev-lang/python sqlite berkdb
+dev-libs/boehm-gc threads
+dev-libs/boost bzip2 context icu nls python threads zlib zstd
+dev-libs/gmp asm cxx static-libs
+dev-libs/libassuan static-libs
+dev-libs/libgcrypt static-libs
+dev-libs/libgpg-error static-libs
+dev-libs/libksba static-libs
+dev-libs/libpcre bzip2 cxx jit pcre16 readline recursion-limit split-usr static-libs unicode zlib
+dev-libs/libpcre2 bzip2 jit pcre16 pcre32 readline recursion-limit split-usr unicode zlib
+dev-libs/libxml2 icu ipv6 python readline
+dev-libs/nettle gmp
+dev-libs/openssl:0 asm sslv3 static-libs zlib
+dev-libs/popt static-libs
+dev-scheme/guile regex discouraged networking
+media-libs/libpng apng static-libs
+# net-dns/libidn2[static-libs] is for net-misc/curl
+net-dns/libidn2 static-libs
+net-dns/unbound ecdsa python
+net-libs/gnutls cxx dane idn nls openssl seccomp sslv2 sslv3 tls-heartbeat tools
+# Disable cxx, otherwise we have curl pulling in boost
+net-libs/nghttp2 -cxx
+# nss breaks git https:// checkouts
+net-misc/curl http2 idn ssl sslv3 -nss -gnutls static-libs
+net-misc/ntp -zeroconf
+net-misc/openssh -X -ldap
+net-misc/openssh libedit
+# Add xattr support to rsync
+net-misc/rsync examples xattr
+sys-apps/groff -X
+# Do we really want berkdb?
+sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
+sys-apps/dbus user-session
+sys-apps/iproute2 berkdb caps iptables ipv6
+sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre resolvconf seccomp split-usr sysv-utils
+sys-apps/util-linux bzip2 nls static-libs utils
+sys-auth/pambase cracklib nullok sha512 -consolekit -kerberos
+sys-devel/gcc -objc -objc++ -objc-gc graphite go -gtk
+# No fuck git by default!
+sys-devel/gettext acl cxx ncurses nls openmp -git
+# clang wants USE=clang for llvm
+sys-devel/llvm clang
+sys-fs/cryptsetup luks1_default
+sys-fs/udev extras
+sys-apps/kmod lzma static-libs
+sys-libs/gdbm berkdb nls readline
+sys-libs/e2fsprogs-libs split-usr static-libs
+sys-libs/libseccomp static-libs
+sys-fs/udev static-libs
+# Use flag dbus is required for evolution
+dev-libs/glib mime static-libs xattr
+dev-libs/elfutils bzip2 nls static-libs utils
+sys-libs/db -java
+sys-libs/zlib minizip split-usr static-libs
+dev-lang/tcl threads
+# For safety (no particular reason, but grub requires ncurses)
+# we also provide libncurses.a
+sys-libs/ncurses static-libs tinfo
+# New splashutils wants static-libs see Gentoo bug #356231
+app-arch/bzip2 split-usr static-libs
+# We want packages with static-libs (add here)
+dev-libs/expat static-libs
+sys-auth/polkit introspection nls pam -kde -gtk
+# Enable hardened USE flags
+sys-devel/gcc hardened
+# keep suid for a while, needs devpts mounted with gid=5 otherwise
+sys-libs/glibc hardened suid nscd
+dev-libs/lzo split-usr static-libs
+# required by net-analyzer/tcpreplay-4.0.2
+sys-devel/autogen libopts
+# required by reiser4progs
+sys-libs/readline split-usr static-libs unicode
