@@ -1,19 +1,16 @@
 env:
 - PORTAGE_HASH={{ ( index .Values.labels "git.hash" ) }}
+package_dir: /pkgdir/{{ .Values.name }}
 prelude:
-- mkdir -p /var/db/repos /var/cache/binpkgs /var/cache/distfiles /usr/portage/
-steps:
+- >_
+  mkdir -p
+  /pkgdir/{{ .Values.name }}/var/db/repos
+  /pkgdir/{{ .Values.name }}/var/cache/binpkgs
+  /pkgdir/{{ .Values.name }}/var/cache/distfiles
 - >-
-  mkdir -p /usr/portage/distfiles/ && wget http://www.gentoo.org/dtd/metadata.dtd -O /usr/portage/distfiles/metadata.dtd &&
-  chown -R root:portage /usr/portage/distfiles/ &&
-  chmod g+w /usr/portage/distfiles/ &&
-  touch /usr/portage/.keep &&
-  wget https://github.com/gentoo/gentoo/archive/${PORTAGE_HASH}.tar.gz -O /tmp/tree.tar.gz &&
-  tar xf /tmp/tree.tar.gz -C  /var/db/repos &&
-  mv /var/db/repos/* /var/db/repos/gentoo &&
-  cp -rf /var/db/repos/gentoo/profiles/ /usr/portage/ &&
-  rm /tmp/tree.tar.gz
+  cp -rf /usr/portage /pkgdir/{{ .Values.name }} &&
+  cp -rf /var/db/repos/gentoo /pkgdir/var/db/repos/
 requires:
 - category: "seed"
   version:  ">=0"
-  name:     "gentoo-stage3"
+  name:     "gentoo-portage"
