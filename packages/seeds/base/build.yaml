@@ -15,7 +15,6 @@ prelude:
   cp -rf package.accept_keywords /etc/portage/ &&
   cp -rf package.license /etc/portage/ &&
   cp -rf package.mask /etc/portage/ &&
-  cp -rf patches/ /etc/portage/ &&
   cp -rf env /etc/portage/ &&
   cp -rf package.env /etc/portage/
 - eval 'emerge --unmerge dev-lang/python:3.9 || true'
