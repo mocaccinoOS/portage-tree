@@ -1,5 +1,3 @@
-env:
-- PORTAGE_HASH={{ ( index .Values.labels "git.hash" ) }}
 package_dir: /pkgdir/{{ .Values.name }}
 prelude:
 - >_
