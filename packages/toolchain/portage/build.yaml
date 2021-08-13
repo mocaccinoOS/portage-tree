@@ -1,6 +1,6 @@
 package_dir: /pkgdir/{{ .Values.name }}
 prelude:
-- >_
+- >-
   mkdir -p
   /pkgdir/{{ .Values.name }}/var/db/repos
   /pkgdir/{{ .Values.name }}/var/cache/binpkgs
