@@ -9,25 +9,39 @@ env:
 
 prelude:
 - >-
-  cp -rf package.use /etc/portage/ &&
-  cp -rf profile /etc/portage/ &&
-  cp -rf make.conf /etc/portage/ &&
-  cp -rf package.accept_keywords /etc/portage/ &&
-  cp -rf package.license /etc/portage/ &&
-  cp -rf package.mask /etc/portage/ &&
-  cp -rf env /etc/portage/ &&
-  cp -rf package.env /etc/portage/
-- eval 'emerge --unmerge dev-lang/python:3.9 || true'
-- emerge -1 dev-libs/libgcrypt:0 -j $JOBS -t
-- emerge -1 dev-libs/openssl net-misc/openssh -j $JOBS -t
-- USE="-sqlite" emerge -1 dev-lang/python:3.8 -j $JOBS -t
-- USE="-icu" emerge -1 dev-db/sqlite -j $JOBS -t
-- emerge -1 dev-lang/rust-bin -j $JOBS -t
-- emerge -1 app-arch/libarchive app-arch/xz-utils dev-python/setuptools:0 dev-python/setuptools_scm:0 dev-python/certifi:0 dev-python/jinja dev-util/meson dev-python/cffi dev-python/toml dev-python/urllib3 dev-python/requests --backtrack=100 -j $JOBS -t
-- emerge -1 sys-apps/portage -j $JOBS -t
-- emerge -1 sys-apps/systemd -j $JOBS -t
-- emerge -1uDN @system -t -j $JOBS
-- emerge -uDN -t --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS -t
-- etc-update -q --automode -5
-- chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d
-- chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
+  source /etc/profile &&
+  cp -rvf package.use /etc/portage/ &&
+  cp -rvf profile /etc/portage/ &&
+  cp -rvf make.conf /etc/portage/ &&
+  cp -rvf package.accept_keywords /etc/portage/ &&
+  cp -rvf package.license /etc/portage/ &&
+  cp -rvf package.mask /etc/portage/ &&
+  cp -rvf env /etc/portage/ &&
+  cp -rvf package.env /etc/portage/
+- >-
+  emerge -1 dev-libs/libgcrypt:0 -j $JOBS -t &&
+  emerge -1 dev-libs/openssl net-misc/openssh -j $JOBS -t &&
+  emerge -1 dev-lang/rust-bin -j $JOBS -t &&
+  emerge -1
+  app-arch/libarchive
+  app-arch/xz-utils
+  dev-python/setuptools:0
+  dev-python/setuptools_scm:0
+  dev-python/certifi:0
+  dev-python/jinja
+  dev-util/meson
+  dev-python/cffi
+  dev-python/toml
+  dev-python/urllib3
+  dev-python/requests
+  --backtrack=100 -j $JOBS -t &&
+  emerge -1 sys-apps/portage -j $JOBS -t
+
+- >-
+  emerge -1 sys-apps/systemd -j $JOBS -t &&
+  emerge -1uDN @system -t -j $JOBS
+- >-
+  emerge -uDN -t --with-bdeps=y --backtrack=100 --autounmask-keep-masks=y @world -j $JOBS -t &&
+  etc-update -q --automode -5 &&
+  chmod -R 0700 /{etc,usr/share}/polkit-1/rules.d &&
+  chown -R 102:0 /{etc,usr/share}/polkit-1/rules.d
