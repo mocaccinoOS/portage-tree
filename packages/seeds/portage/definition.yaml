@@ -1,0 +1,8 @@
+name: gentoo-portage
+version: "0.20210808"
+category: seed
+labels:
+  autobump.strategy: git_hash
+  git.hash: "8bc9e9a394444ab179757f85c5dd3ad974af9f95"
+  github.owner: gentoo
+  github.repo: gentoo
