@@ -1,5 +1,5 @@
 requires:
-- category: "toolchain"
+- category: "seed"
   name: "gentoo-portage"
   version: ">=0"
 unpack: true
