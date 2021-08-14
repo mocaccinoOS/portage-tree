@@ -1,0 +1,5 @@
+name: acct-core
+version: "0.20210808"
+category: entities
+desciption: |
+  Base system entities

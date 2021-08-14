@@ -1,0 +1,18 @@
+package_dir: /{{ .Values.name }}
+env:
+- LUET_NOLOCK=true
+- LUET_YES=true
+prelude:
+- >-
+  mkdir -p /{{ .Values.name }}/usr/share/mocaccino/entities/{{ .Values.name }}/ &&
+  curl https://get.mocaccino.org/luet/get_luet_root.sh | sh &&
+  luet install repository/mocaccino-extra-stable &&
+  wget -O /etc/luet/repos.conf.d/geaaru.yaml https://raw.githubusercontent.com/geaaru/luet-specs/master/contrib/geaaru.yml &&
+  luet install system/entities && luet upgrade &&
+  luet cleanup
+stepts:
+- entities dump -t /{{ .Values.name }}/usr/share/mocaccino/entities/{{ .Values.name }}/
+requires:
+- category: "seed"
+  version:  ">=0"
+  name:     "base"
