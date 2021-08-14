@@ -7,7 +7,7 @@ prelude:
   /pkgdir/{{ .Values.name }}/var/cache/distfiles
 - >-
   cp -rf /usr/portage /pkgdir/{{ .Values.name }}/ &&
-  cp -rf /var/db/repos/gentoo /pkgdir/{{ .Values.name }}var/db/repos/
+  cp -rf /var/db/repos/gentoo /pkgdir/{{ .Values.name }}/var/db/repos/
 requires:
 - category: "seed"
   version:  ">=0"
