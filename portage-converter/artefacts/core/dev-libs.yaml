@@ -1,64 +1,12 @@
 artefacts:
-# Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - java
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: postgresql
-          category: dev-db-12
-        - name: openldap
-          category: net-nds
-  packages:
-    - dev-libs/cyrus-sasl:2
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: cmake
-          category: dev-util
-  packages:
-    - dev-libs/double-conversion
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - subunit
-  packages:
-    - dev-libs/check
-
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - libevent
-      - tevent
-  packages:
-    - dev-libs/libverto
-
-- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   uses:
     disabled:
       - libedit
   packages:
     - dev-libs/libpcre:3
     - dev-libs/libpcre2
-
-- tree: multi-arch/packages/atoms
-  packages:
-    - dev-libs/libgusb
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - mpi
-  packages:
-    - dev-libs/boost
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
@@ -74,49 +22,12 @@ artefacts:
   packages:
     - dev-libs/boehm-gc
     - dev-libs/expat
-    - dev-libs/fribidi
     - dev-libs/glib
     - dev-libs/gmp
     - dev-libs/gobject-introspection
     - dev-libs/gobject-introspection-common
     - dev-libs/icu
-    - dev-libs/jsoncpp
     - dev-libs/json-c
-    - dev-libs/libevdev
+    - dev-libs/jsoncpp
     - dev-libs/libxml2:2
-    - dev-libs/libyaml
 
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - gstreamer
-      - connman
-      - glib
-      - gnutls
-      - hyphen
-      - harfbuzz
-      - json
-      - ibus
-      - ico
-      - jpeg2k
-      - lua
-      - mono
-      - opengl
-      - physics
-      - pmaps
-      - postscript
-      - psd
-      - raw
-      - scim
-      - sdl
-      - tga
-      - tgv
-      - tslib
-      - unwind
-      - vnc
-      - webp
-      - xcf
-      - xim
-      - xpresent
-  packages:
-    - dev-libs/efl

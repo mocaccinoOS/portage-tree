@@ -1,15 +1,6 @@
-artefacts:
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - source
-      - tk
-      - xindy
-  packages:
-    - app-text/texlive-core
-
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   uses:
     disabled:
       - latex

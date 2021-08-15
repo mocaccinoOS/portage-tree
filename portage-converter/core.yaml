@@ -43,43 +43,24 @@ skipped_resolutions:
 include_files:
 - artefacts/core/app-arch.yaml
 - artefacts/core/app-text.yaml
-- artefacts/core/virtual.yaml
 - artefacts/core/dev-lang.yaml
-- artefacts/core/dev-qt.yaml
 - artefacts/core/dev-libs.yaml
 - artefacts/core/gnome-base.yaml
-- artefacts/core/media-fonts.yaml
-- artefacts/core/media-sound.yaml
-- artefacts/core/media-libs.yaml
-- artefacts/core/net-dialup.yaml
-- artefacts/core/net-dns.yaml
 - artefacts/core/net-libs.yaml
 - artefacts/core/net-misc.yaml
-- artefacts/core/sci-libs.yaml
 - artefacts/core/sys-apps.yaml
 - artefacts/core/sys-devel.yaml
-- artefacts/core/sys-libs.yaml
 - artefacts/core/sys-fs.yaml
+- artefacts/core/sys-fs.yaml
+- artefacts/core/sys-libs.yaml
+- artefacts/core/virtual.yaml
+- artefacts/core/x11-libs.yaml
 
 build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
-artefacts:
 - tree: multi-arch/packages/atoms
-  uses:
-    enabled:
-      - X
-      - berkdb
-      - dbus
-      - zlib
-      - readline
-      - pcre
-      - gdbm
-      - gtk
-  packages:
-    - dev-lisp/clisp:2
-
-- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   uses:
     disabled:
       - passwdqc
@@ -92,200 +73,27 @@ artefacts:
   packages:
     - sys-auth/pambase
 
+# Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - custom-cflags
-      - fbcon
-      - libcaca
-      - nas
-      - oss
-      - static-libs
-      - tslib
-  packages:
-    - media-libs/libsdl
-    - media-libs/libsdl2
-
-
-- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   replacements:
     buildtime_deps:
       ignore:
         - name: python
-          category: dev-lang-3.7
-  uses:
-    disabled:
-      - openldap
-      - xinetd
-      - lmdb
-  packages:
-    - app-crypt/mit-krb5
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - lprng-compat
-      - static-libs
-      - xinetd
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: gnutls
-          category: net-libs
-  packages:
-    - net-print/cups
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: cups
-          category: net-print
-  packages:
-    - x11-libs/gtk+:3
-
-# Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: python
-          category: dev-lang-3.7
+          category: dev-lang-3.9
   packages:
     - app-portage/gemato
-    - dev-libs/libclc
-    - dev-libs/libnl:3
-    - dev-python/dbus-python
     - dev-python/setuptools
-    - dev-python/pyyaml
     - dev-python/pycairo
     - dev-python/pycparser
-    - dev-python/pygobject:3
     - dev-util/glib-utils
     - dev-util/itstool
-    - media-libs/alsa-lib
-    - net-wireless/bluez
     - sys-apps/kmod
-    - sys-libs/libcap-ng
-
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - audio
-      - ftdi
-      - inputlirc
-  packages:
-    - app-misc/lirc
-
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - dbi
-      - lua
-      - rados
-      - rrdcgi
-      - ruby
-      - static-libs
-      - tcl
-      - test
-  packages:
-    - net-analyzer/rrdtool
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - X
-      - elf
-      - kmem
-      - lm-sensors
-      - mfd-rewrites
-      - minimal
-      - mysql
-      - netlink
-      - pcap
-      - pci
-      - python
-      - rpm
-      - smux
-  packages:
-    - net-analyzer/net-snmp
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - chromaprint
-      - cuda
-      - dav1d
-      - flite
-      - fontconfig
-      - frei0r
-      - fribidi
-      - gcrypt
-      - gme
-      - hardcoded-tables
-      - iec61883
-      - kvazaar
-      - ladspa
-      - libaom
-      - libaribb24
-      - libass
-      - libcaca
-      - libilbc
-      - librtmp
-      - libsoxr
-      - libtesseract
-      - libxml2
-      - lv2
-      - mipsdspr1
-      - mipsdspr2
-      - mipsfpu
-      - mmal
-      - modplug
-      - opencl
-      - oss
-      - pic
-      - rubberband
-      - samba
-      - snappy
-      - ssh
-      - static-libs
-      - video_cards_nvidia
-      - wavpack
-      - zeromq
-      - zimg
-      - zvbi
-  packages:
-    - media-video/ffmpeg
-
-
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - addc
-      - addns
-      - ceph
-      - cluster
-      - dmapi
-      - fam
-      - gpg
-      - iprint
-      - json
-      - profiling-data
-      - snapper
-      - syslog
-      - system-heimdal
-  packages:
-    - net-fs/samba
-
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
   # To avoid cycle error on solver for packages
-  # available already from layers/build-seed i
+  # available already from seed/base i
   # ignore buildtime deps.
   uses:
     enabled:
@@ -303,21 +111,7 @@ artefacts:
     disabled:
       - xml
   packages:
-    - sys-devel/clang:10
-
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: false
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: python
-          category: dev-lang-3.7
-  uses:
-    disabled:
-      - ldap
-      - gssapi
-  packages:
-    - sys-process/audit
+    - sys-devel/clang:12
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
@@ -330,7 +124,7 @@ artefacts:
       - xml
       - z3
   packages:
-    - sys-devel/llvm:10
+    - sys-devel/llvm:12
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
@@ -339,67 +133,37 @@ artefacts:
   # ignore buildtime deps.
   packages:
     - app-misc/ca-certificates
-    - app-i18n/fcitx
-    - sys-devel/gcc:9.3.0
-    - dev-db/mysql-connector-c
+    - sys-devel/gcc:10
     - dev-db/sqlite
-    - dev-perl/XML-SAX-Base
     - dev-python/cython
-    - dev-python/constantly
     - dev-python/ply
-    - dev-python/six
     - dev-util/meson
     - dev-util/ninja
     - dev-util/pkgconf
     - dev-util/gdbus-codegen
-    - dev-util/ragel
     - dev-util/gtk-doc-am
-    - dev-util/gtk-update-icon-cache
-    - dev-util/vulkan-headers
-    - net-mail/courier-imap
     - sys-apps/attr
     - sys-apps/findutils
     - sys-apps/dbus
-    - sys-devel/autoconf
+    - sys-devel/autoconf:2.69
+    - sys-devel/autoconf:2.1
+    - sys-devel/autoconf-archive
     - sys-devel/autogen
-    - sys-devel/automake
-    - sys-devel/libtool
+    - sys-devel/automake:1.16
+    - sys-devel/automake-wrapper
+    - sys-devel/libtool:2
     - sys-devel/m4
     - sys-devel/make
     - sys-devel/patch
     - sys-devel/flex
-    # TODO: fix dependency to media-lib/gd
-    # Calculating dependencies   . ... done!
-    # [ebuild   R    ] sys-libs/glibc-2.32-r2:2.2::gentoo  USE="audit* caps compile-locales* (crypt) gd* multiarch (multilib) nscd ssp (static-libs) suid (-cet) -custom-cflags -doc -headers-only -profile (-selinux) -static-pie -systemtap -test (-vanilla)" 18705 KiB
-    # [ebuild  N     ]  media-libs/gd-2.3.0:2/3::gentoo  USE="fontconfig jpeg png zlib -static-libs -test -tiff -truetype -webp -xpm" ABI_X86="(64) -32 (-x32)" CPU_FLAGS_X86="sse" 2480 KiB
     - sys-kernel/linux-headers
     - sys-process/procps
+    - sys-process/psmisc
     - x11-libs/libxcb
     - x11-libs/libX11
-    - x11-libs/libXcomposite
-    - x11-libs/libXi
     - x11-libs/libXt
     - x11-libs/libXext
     - x11-libs/libXrender
-    - x11-libs/libXfixes
-    - x11-libs/gdk-pixbuf
-
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  uses:
-    disabled:
-      - opengl
-  packages:
-    - x11-libs/libva
-
-- tree: multi-arch/packages/atoms
-  packages:
-    - app-emulation/lxd
-    - app-emulation/lxc
-    - dev-util/cmake
-    - sys-apps/file
-    - sys-kernel/dracut
-    - x11-libs/libdrm
 
 # Define the list of the files generated by Funtoo reposcan tool.
 reposcan_sources:
@@ -412,9 +176,11 @@ reposcan_requires_slot: true
 
 reposcan_contraints:
   packages:
-    - dev-lang/python:3.7
+    - dev-lang/python:3.9
     - dev-lang/ruby:2.6
-    - sys-devel/gcc:9.3.0
+    - sys-devel/gcc:10
+    - sys-devel/llvm:12
+    - sys-devel/clang:12
 
 reposcan_disabled_use_flags:
   # !!internal use only!! used for creating build images and the first half of bootstrapping [make stage1]
@@ -437,14 +203,14 @@ reposcan_disabled_use_flags:
   - gtk-doc
   - gles2-only
   - python_single_target_python3_6
+  - python_single_target_python3_7
   - python_single_target_python3_8
-  - python_single_target_python3_9
   # I disable pypy support atm
   - python_single_target_pypy3
   - python_targets_python2_7
   - python_targets_python3_6
+  - python_targets_python3_7
   - python_targets_python3_8
-  - python_targets_python3_9
   - python_targets_pypy3
   - ruby_targets_ruby25
   - ruby_targets_ruby24

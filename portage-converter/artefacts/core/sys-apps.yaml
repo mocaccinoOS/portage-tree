@@ -26,18 +26,6 @@ artefacts:
     - sys-apps/systemd
 
 - tree: multi-arch/packages/atoms
-  mutations:
-    uses:
-      - X
-  uses:
-    # Avoid cycle with nvidia-drivers
-    disabled:
-      - cuda
-      - gl
-  packages:
-    - sys-apps/hwloc
-
-- tree: multi-arch/packages/atoms
   ignore_build_deps: true
   uses:
     disabled:

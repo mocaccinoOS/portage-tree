@@ -1,6 +1,8 @@
 artefacts:
+
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
   packages:
-    - gnome-base/dconf
-
+    - x11-libs/libxcb
+    - x11-libs/libX11
+    - x11-libs/libXt

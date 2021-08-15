@@ -1,5 +1,6 @@
 artefacts:
 - tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   uses:
     disabled:
       - static
@@ -8,6 +9,7 @@ artefacts:
 
 # Break gentoo buildtime dep cycle
 - tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   replacements:
     buildtime_deps:
       ignore:

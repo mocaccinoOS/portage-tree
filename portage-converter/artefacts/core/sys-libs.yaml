@@ -1,5 +1,6 @@
 artefacts:
 - tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   uses:
     disabled:
       - nis
@@ -8,6 +9,7 @@ artefacts:
     - sys-libs/pam
 
 - tree: multi-arch/packages/atoms
+  ignore_build_deps: true
   uses:
     disabled:
       - test
@@ -18,7 +20,6 @@ artefacts:
 
 - tree: multi-arch/packages/atoms
   ignore_build_deps: true
-  override_version: "1.2.11+1"
   packages:
     - sys-libs/zlib
 
@@ -39,28 +40,7 @@ artefacts:
     - sys-libs/ncurses
 
 - tree: multi-arch/packages/atoms
-  ignore_build_deps: false
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: python
-          category: dev-lang-3.7
-  packages:
-    - sys-libs/cracklib
-
-
-- tree: multi-arch/packages/atoms
   ignore_build_deps: true
   packages:
     - sys-libs/glibc
-    - sys-libs/libunwind
-    - sys-libs/llvm-libunwind
     - sys-libs/libcap
-
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
-  mutations:
-    uses:
-      - -static-libs
-  packages:
-    - sys-libs/libunwind

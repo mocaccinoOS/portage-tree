@@ -3,20 +3,6 @@ artefacts:
   mutations:
     buildtime_deps:
       packages:
-        - category: app-crypt
-          name: mit-krb5
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/krb5
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
         - category: sys-libs-2.2
           name: glibc
 
@@ -27,8 +13,8 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/libiconv
 
@@ -55,8 +41,8 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: build-seed
-#          category: layers
+#        - name: base
+#          category: seed
 #  packages:
 #    - virtual/libxcrypt
 
@@ -75,8 +61,8 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/udev
 
@@ -90,23 +76,10 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/libudev
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: media-fonts
-          name: liberation-fonts
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/ttf-fonts
 
 - tree: multi-arch/packages/atoms
   mutations:
@@ -125,8 +98,8 @@ artefacts:
           category: sys-apps
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/tmpfiles
 
@@ -134,71 +107,16 @@ artefacts:
   mutations:
     buildtime_deps:
       packages:
-        - category: sys-apps
-          name: texinfo
-        - category: virtual
-          name: latex-base
-        - category: dev-texlive
-          name: texlive-plaingeneric
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/texi2dvi
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: dev-texlive
-          name: texlive-fontsrecommended
-        - category: dev-texlive
-          name: texlive-fontutils
-        - category: dev-texlive
-          name: texlive-latexrecommended
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/latex-base
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
         - category: dev-lang-stable
-          name: rust
+          name: rust-bin
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/rust
 
-- tree: multi-arch/packages/atoms
-  mutations:
-    runtime_deps:
-      packages:
-        - category: sys-apps
-          name: systemd
-    buildtime_deps:
-      packages:
-        - category: sys-apps
-          name: systemd
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/resolvconf
-
-- tree: multi-arch/packages/atoms
   mutations:
     buildtime_deps:
       packages:
@@ -208,24 +126,10 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/awk
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: media-libs
-          name: mesa
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/opengl
 
 - tree: multi-arch/packages/atoms
   mutations:
@@ -236,75 +140,11 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/acl
 
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: media-libs
-          name: glu
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/glu
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: media-libs
-          name: libjpeg-turbo
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/jpeg
-
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: sys-apps
-          name: systemd
-    runtime_deps:
-      packages:
-        - category: sys-apps
-          name: systemd
-  replacements:
-    runtime_deps:
-      ignore:
-        - name: metalog
-          category: app-admin
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/logger
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: media-sound-2
-          name: jack2
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/jack
 
 #- tree: multi-arch/packages/atoms
 #  mutations:
@@ -315,38 +155,10 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: build-seed
-#          category: layers
+#        - name: base
+#          category: seed
 #  packages:
 #    - virtual/mpi
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: dev-libs
-          name: elfutils
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/libelf
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: dev-libs
-          name: ocl-icd
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/opencl
 
 # TODO: move to mocaccino sources soon
 - tree: multi-arch/packages/atoms
@@ -358,8 +170,8 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/linux-sources
 
@@ -373,8 +185,8 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/yacc
 
@@ -395,8 +207,8 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/os-headers
 
@@ -409,39 +221,11 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/libcrypt
 
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: virtual-1.8
-          name: jdk
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/jre:1.8
-
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: dev-java-8
-          name: openjdk-bin
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: build-seed
-          category: layers
-  packages:
-    - virtual/jdk:1.8
 
 - tree: multi-arch/packages/atoms
   mutations:
@@ -452,7 +236,46 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: build-seed
-          category: layers
+        - name: base
+          category: seed
   packages:
     - virtual/libusb:1
+
+- tree: multi-arch/packages/atoms
+  ignore_build_deps: true
+  packages:
+    - virtual/perl-Carp
+    - virtual/perl-Compress-Raw-Bzip
+    - virtual/perl-Compress-Raw-Zlib
+    - virtual/perl-CPAN-Meta
+    - virtual/perl-CPAN-Meta-Requirements
+    - virtual/perl-CPAN-Meta-YAML
+    - virtual/perl-Data-Dumper
+    - virtual/perl-Digest-MD5
+    - virtual/perl-Encode
+    - virtual/perl-Exporter
+    - virtual/perl-ExtUtils-CBuilder
+    - virtual/perl-ExtUtils-Install
+    - virtual/perl-ExtUtils-MakeMaker
+    - virtual/perl-ExtUtils-Manifest
+    - virtual/perl-ExtUtils-ParseXS
+    - virtual/perl-File-Spec
+    - virtual/perl-File-Temp
+    - virtual/perl-Getopt-Long
+    - virtual/perl-IO
+    - virtual/perl-IO-Compress
+    - virtual/perl-IO-Socket-IP
+    - virtual/perl-JSON-PP
+    - virtual/perl-libnet
+    - virtual/perl-MIME-Base64
+    - virtual/perl-Module-Metadata
+    - virtual/perl-parent
+    - virtual/perl-Parse-CPAN-Meta
+    - virtual/perl-Perl-OSType
+    - virtual/perl-podlators
+    - virtual/perl-Scalar-List-Utils
+    - virtual/perl-Test-Harness
+    - virtual/perl-Text-ParseWords
+    - virtual/perl-Time-Local
+    - virtual/perl-version
+    - virtual/perl-XSLoader
