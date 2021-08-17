@@ -1,7 +1,7 @@
 requires:
-- name: build-seed
-  version: '>=0'
-  category: layers
+#- name: base
+#  version: '>=0'
+#  category: seed
 
 package_dir: /pkgdir/{{ .Values.name }}
 env:
@@ -21,6 +21,6 @@ prelude:
   {{- else }}
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
-- |
-  eval 'rm -rf /pkgdir/ || true' && mkdir /{{ .Values.name }} && \
+- >-
+  eval 'rm -rf /pkgdir/ || true' && mkdir /{{ .Values.name }} &&
   luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
