@@ -1,10 +1,16 @@
 artefacts:
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: krb5
+          category: virtual
   packages:
     - net-libs/libtirpc
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:

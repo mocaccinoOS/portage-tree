@@ -1,6 +1,6 @@
 artefacts:
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   packages:
     - x11-libs/libxcb

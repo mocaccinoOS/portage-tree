@@ -1,5 +1,33 @@
 artefacts:
-- tree: multi-arch/packages/atoms
+# Break gentoo buildtime dep cycle
+#- tree: multi-arch/packages/atoms
+#  replacements:
+#    buildtime_deps:
+#      ignore:
+#        - name: cmake
+#          category: dev-util
+#  packages:
+#    - dev-libs/double-conversion
+
+# Break gentoo buildtime dep cycle
+#- tree: multi-arch/packages/atoms
+#  uses:
+#    disabled:
+#      - java
+#      - mysql
+#      - postgres
+#  replacements:
+#    buildtime_deps:
+#      ignore:
+#        - name: postgresql
+#          category: dev-db-12
+#        - name: openldap
+#          category: net-nds
+#  packages:
+#    - dev-libs/cyrus-sasl:2
+
+
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -8,7 +36,7 @@ artefacts:
     - dev-libs/libpcre:3
     - dev-libs/libpcre2
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -17,7 +45,7 @@ artefacts:
   packages:
     - dev-libs/elfutils
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   packages:
     - dev-libs/boehm-gc
@@ -29,5 +57,17 @@ artefacts:
     - dev-libs/icu
     - dev-libs/json-c
     - dev-libs/jsoncpp
-    - dev-libs/libxml2:2
 
+- tree: packages/atoms/core
+  ignore_build_deps: true
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.9
+        - name: python-exec
+          category: dev-lang-2
+  packages:
+    - dev-libs/libxml2:2
+    - dev-libs/libpwquality

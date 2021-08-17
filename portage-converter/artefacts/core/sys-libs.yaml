@@ -1,5 +1,5 @@
 artefacts:
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -8,7 +8,7 @@ artefacts:
   packages:
     - sys-libs/pam
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -18,13 +18,13 @@ artefacts:
   packages:
     - sys-libs/db:5.3
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   packages:
     - sys-libs/zlib
 
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
@@ -39,8 +39,24 @@ artefacts:
   packages:
     - sys-libs/ncurses
 
-- tree: multi-arch/packages/atoms
-  ignore_build_deps: true
+- tree: packages/atoms/core
+  uses:
+    disabled:
+      - gd
   packages:
-    - sys-libs/glibc
+    - sys-libs/glibc:2.2
     - sys-libs/libcap
+
+- tree: packages/atoms/core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.9
+        - name: python-exec
+          category: dev-lang-2
+  packages:
+    - sys-libs/libseccomp
+    - sys-libs/libcap-ng
+    - sys-libs/cracklib

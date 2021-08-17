@@ -1,6 +1,6 @@
 artefacts:
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
@@ -25,7 +25,7 @@ artefacts:
   packages:
     - sys-apps/systemd
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -37,8 +37,18 @@ artefacts:
   packages:
     - sys-apps/coreutils
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: setuptools
+          category: dev-python
+        - name: python
+          category: dev-lang-3.9
+        - name: python-exec
+          category: dev-lang-2
   uses:
     disabled:
       - audit
@@ -51,14 +61,14 @@ artefacts:
   packages:
     - sys-apps/util-linux
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   uses:
     disabled:
       - static
   packages:
     - sys-apps/sed
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -68,3 +78,38 @@ artefacts:
       - cracklib
   packages:
     - sys-apps/shadow
+
+- tree: packages/atoms/core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: setuptools
+          category: dev-python
+        - name: python
+          category: dev-lang-3.9
+        - name: python-exec
+          category: dev-lang-2
+  packages:
+    - sys-apps/file:0
+
+- tree: packages/atoms/core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: systemd
+          category: sys-apps
+  packages:
+    - sys-apps/dbus
+
+- tree: packages/atoms/core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: libiconv
+          category: virtual
+  packages:
+    - sys-apps/grep
+

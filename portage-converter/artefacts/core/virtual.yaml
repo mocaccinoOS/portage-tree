@@ -1,5 +1,5 @@
 artefacts:
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   mutations:
     buildtime_deps:
       packages:
@@ -18,14 +18,14 @@ artefacts:
   packages:
     - virtual/libiconv
 
-- tree: multi-arch/packages/atoms
+#- tree: packages/atoms/core
   # TODO: - add sys-kernel/linux-headers on build
   #       - fix parsing of the runtime dep
-  uses:
-    disabled:
-      - prefix-guest
-  packages:
-    - virtual/os-headers
+#  uses:
+#    disabled:
+#      - prefix-guest
+#  packages:
+#    - virtual/os-headers
 
 #- tree: multi-arch/packages/atoms
 #  mutations:
@@ -47,7 +47,7 @@ artefacts:
 #    - virtual/libxcrypt
 
 # TODO: add sys-apps/systemd on virtual/libudev
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   mutations:
     buildtime_deps:
       packages:
@@ -81,7 +81,7 @@ artefacts:
   packages:
     - virtual/libudev
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   mutations:
     buildtime_deps:
       packages:
@@ -96,6 +96,8 @@ artefacts:
       ignore:
         - name: opentmpfiles
           category: sys-apps
+        - name: systemd-tmpfiles
+          category: sys-apps
     buildtime_deps:
       ignore:
         - name: base
@@ -103,20 +105,21 @@ artefacts:
   packages:
     - virtual/tmpfiles
 
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: dev-lang-stable
-          name: rust-bin
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: base
-          category: seed
-  packages:
-    - virtual/rust
+#- tree: packages/atoms/core
+#  mutations:
+#    buildtime_deps:
+#      packages:
+#        - category: dev-lang-stable
+#          name: rust-bin
+#  replacements:
+#    buildtime_deps:
+#      ignore:
+#        - name: base
+#          category: seed
+#  packages:
+#    - virtual/rust
 
+- tree: packages/atoms/core
   mutations:
     buildtime_deps:
       packages:
@@ -131,7 +134,7 @@ artefacts:
   packages:
     - virtual/awk
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   mutations:
     buildtime_deps:
       packages:
@@ -161,63 +164,63 @@ artefacts:
 #    - virtual/mpi
 
 # TODO: move to mocaccino sources soon
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: sys-kernel
-          name: gentoo-sources
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: base
-          category: seed
-  packages:
-    - virtual/linux-sources
+#- tree: packages/atoms/core
+#  mutations:
+#    buildtime_deps:
+#      packages:
+#        - category: sys-kernel
+#          name: gentoo-sources
+#  replacements:
+#    buildtime_deps:
+#      ignore:
+#        - name: base
+#          category: seed
+#  packages:
+#    - virtual/linux-sources
 
 # TODO: move to mocaccino sources soon
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: sys-devel
-          name: bison
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: base
-          category: seed
-  packages:
-    - virtual/yacc
+#- tree: packages/atoms/core
+#  mutations:
+#    buildtime_deps:
+#      packages:
+#        - category: sys-devel
+#          name: bison
+#  replacements:
+#    buildtime_deps:
+#      ignore:
+#        - name: base
+#          category: seed
+#  packages:
+#    - virtual/yacc
 
 # TODO: move to mocaccino sources soon
-- tree: multi-arch/packages/atoms
-  uses:
-    disabled:
-      - prefix-guest
-  mutations:
-    runtime_deps:
-      packages:
-        - category: sys-kernel
-          name: linux-headers
-    buildtime_deps:
-      packages:
-        - category: sys-kernel
-          name: linux-headers
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: base
-          category: seed
-  packages:
-    - virtual/os-headers
+#- tree: packages/atoms/core
+#  uses:
+#    disabled:
+#      - prefix-guest
+#  mutations:
+#    runtime_deps:
+#      packages:
+#        - category: sys-kernel
+#          name: linux-headers
+#    buildtime_deps:
+#      packages:
+#        - category: sys-kernel
+#          name: linux-headers
+#  replacements:
+#    buildtime_deps:
+#      ignore:
+#        - name: base
+#          category: seed
+#  packages:
+#    - virtual/os-headers
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   mutations:
     buildtime_deps:
       packages:
-        - category: sys-libs
-          name: libxcrypt
+        - category: sys-libs-2.2
+          name: glibc
   replacements:
     buildtime_deps:
       ignore:
@@ -227,25 +230,25 @@ artefacts:
     - virtual/libcrypt
 
 
-- tree: multi-arch/packages/atoms
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: dev-libs-1
-          name: libusb
-  replacements:
-    buildtime_deps:
-      ignore:
-        - name: base
-          category: seed
-  packages:
-    - virtual/libusb:1
+#- tree: packages/atoms/core
+#  mutations:
+#    buildtime_deps:
+#      packages:
+#        - category: dev-libs-1
+#          name: libusb
+#  replacements:
+#    buildtime_deps:
+#      ignore:
+#        - name: base
+#          category: seed
+#  packages:
+#    - virtual/libusb:1
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   packages:
     - virtual/perl-Carp
-    - virtual/perl-Compress-Raw-Bzip
+    - virtual/perl-Compress-Raw-Bzip2
     - virtual/perl-Compress-Raw-Zlib
     - virtual/perl-CPAN-Meta
     - virtual/perl-CPAN-Meta-Requirements

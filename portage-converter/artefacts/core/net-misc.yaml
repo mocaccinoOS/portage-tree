@@ -1,6 +1,6 @@
 artefacts:
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   uses:
     enabled:
       - http2
@@ -9,16 +9,16 @@ artefacts:
       - openssl
       - ssl
   packages:
-    - net-misc/curl
+    - net-misc/curl:0
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   uses:
     disabled:
       - static
   packages:
     - net-misc/openssh
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   uses:
     disabled:
       - static

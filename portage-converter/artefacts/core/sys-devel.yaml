@@ -1,5 +1,5 @@
 artefacts:
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i

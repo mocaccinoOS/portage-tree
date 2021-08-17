@@ -1,5 +1,6 @@
+artefacts:
 # Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -7,3 +8,12 @@
   packages:
     - app-text/xmlto
 
+- tree: packages/atoms/core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: util-linux
+          category: sys-apps
+  packages:
+    - app-text/build-docbook-catalog

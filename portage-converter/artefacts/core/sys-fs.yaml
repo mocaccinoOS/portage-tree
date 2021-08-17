@@ -1,12 +1,18 @@
 artefacts:
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: tmpfiles
+          category: virtual
   ignore_build_deps: true
   packages:
     - sys-fs/udev-init-scripts
     - sys-fs/e2fsprogs
     - sys-fs/cryptsetup
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:

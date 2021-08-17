@@ -1,5 +1,5 @@
 artefacts:
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   uses:
     disabled:
@@ -8,7 +8,7 @@ artefacts:
     - app-arch/tar
 
 # Break gentoo buildtime dep cycle
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   replacements:
     buildtime_deps:
@@ -20,7 +20,7 @@ artefacts:
   packages:
     - app-arch/lz4
 
-- tree: multi-arch/packages/atoms
+- tree: packages/atoms/core
   ignore_build_deps: true
   packages:
     - app-arch/xz-utils
