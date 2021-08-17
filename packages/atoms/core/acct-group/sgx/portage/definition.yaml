@@ -1,0 +1,12 @@
+name: sgx-portage
+version: "0"
+category: acct-group
+requires:
+- name: sgx
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/sgx
+  kit: gentoo
+  original.package.name: acct-group/sgx
+  original.package.version: "0"

@@ -1,0 +1,27 @@
+name: HTTP-Date
+version: 6.50.0
+category: dev-perl
+requires:
+- name: TimeDate
+  version: '>=0'
+  category: dev-perl
+- name: perl-Exporter
+  version: '>=0'
+  category: virtual
+- name: perl-Time-Local
+  version: '>=0'
+  category: virtual
+description: Date conversion for HTTP date formats
+uri:
+- https://metacpan.org/release/HTTP-Date
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  BDEPEND: '!<dev-perl/libwww-perl-6 virtual/perl-Exporter >=virtual/perl-Time-Local-1.280.0
+    dev-perl/TimeDate virtual/perl-ExtUtils-MakeMaker dev-lang/perl'
+  DEPEND: dev-lang/perl
+  RDEPEND: '!<dev-perl/libwww-perl-6 virtual/perl-Exporter >=virtual/perl-Time-Local-1.280.0
+    dev-perl/TimeDate dev-lang/perl:='
+  emerge.packages: dev-perl/HTTP-Date
+  kit: gentoo
+  original.package.name: dev-perl/HTTP-Date
+  original.package.version: 6.50.0

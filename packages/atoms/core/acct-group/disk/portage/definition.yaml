@@ -1,0 +1,12 @@
+name: disk-portage
+version: "0"
+category: acct-group
+requires:
+- name: disk
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/disk
+  kit: gentoo
+  original.package.name: acct-group/disk
+  original.package.version: 0-r1

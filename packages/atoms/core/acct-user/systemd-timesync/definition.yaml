@@ -1,0 +1,16 @@
+name: systemd-timesync
+version: "0"
+category: acct-user
+requires:
+- name: systemd-timesync
+  version: '>=0'
+  category: acct-group
+description: 'System user: systemd-timesync'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/systemd-timesync
+  emerge.packages: acct-user/systemd-timesync
+  kit: gentoo
+  original.package.name: acct-user/systemd-timesync
+  original.package.version: 0-r1

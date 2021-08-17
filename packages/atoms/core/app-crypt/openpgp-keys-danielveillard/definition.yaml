@@ -1,0 +1,12 @@
+name: openpgp-keys-danielveillard
+version: "20210514"
+category: app-crypt
+description: OpenPGP keys used by Daniel Veillard
+uri:
+- http://veillard.com
+license: public-domain
+labels:
+  emerge.packages: app-crypt/openpgp-keys-danielveillard
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-danielveillard
+  original.package.version: "20210514"

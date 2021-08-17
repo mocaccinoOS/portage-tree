@@ -1,0 +1,17 @@
+name: perl-IO
+version: 1.460.0
+category: virtual
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Virtual for IO
+uri:
+- ""
+labels:
+  RDEPEND: '|| ( =dev-lang/perl-5.34* ~perl-core/IO-1.460.0 ) dev-lang/perl:= !<perl-core/IO-1.460.0
+    !>perl-core/IO-1.460.0-r999'
+  emerge.packages: virtual/perl-IO
+  kit: gentoo
+  original.package.name: virtual/perl-IO
+  original.package.version: 1.460.0

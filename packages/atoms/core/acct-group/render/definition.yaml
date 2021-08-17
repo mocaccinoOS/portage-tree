@@ -1,0 +1,11 @@
+name: render
+version: "0"
+category: acct-group
+description: 'System group: render'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/render
+  kit: gentoo
+  original.package.name: acct-group/render
+  original.package.version: 0-r1

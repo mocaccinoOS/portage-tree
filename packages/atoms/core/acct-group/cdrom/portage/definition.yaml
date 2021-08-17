@@ -1,0 +1,12 @@
+name: cdrom-portage
+version: "0"
+category: acct-group
+requires:
+- name: cdrom
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/cdrom
+  kit: gentoo
+  original.package.name: acct-group/cdrom
+  original.package.version: 0-r1

@@ -1,0 +1,12 @@
+name: pam-portage
+version: 1.5.1
+category: sys-libs
+requires:
+- name: pam
+  version: 1.5.1
+  category: sys-libs
+labels:
+  emerge.packages: sys-libs/pam
+  kit: gentoo
+  original.package.name: sys-libs/pam
+  original.package.version: 1.5.1

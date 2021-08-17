@@ -1,0 +1,19 @@
+name: Scalar-List-Utils
+version: 1.560.0
+category: perl-core
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Common Scalar and List utility subroutines
+uri:
+- https://metacpan.org/release/Scalar-List-Utils
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  BDEPEND: dev-lang/perl
+  DEPEND: dev-lang/perl
+  RDEPEND: dev-lang/perl:=
+  emerge.packages: perl-core/Scalar-List-Utils
+  kit: gentoo
+  original.package.name: perl-core/Scalar-List-Utils
+  original.package.version: 1.560.0

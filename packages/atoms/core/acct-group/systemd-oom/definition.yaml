@@ -1,0 +1,11 @@
+name: systemd-oom
+version: "0"
+category: acct-group
+description: 'System group: systemd-oom'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/systemd-oom
+  kit: gentoo
+  original.package.name: acct-group/systemd-oom
+  original.package.version: "0"

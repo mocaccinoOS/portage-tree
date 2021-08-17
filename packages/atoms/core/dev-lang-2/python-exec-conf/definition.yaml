@@ -1,0 +1,14 @@
+name: python-exec-conf
+version: 2.4.6
+category: dev-lang-2
+description: Configuration file for dev-lang/python-exec
+uri:
+- https://github.com/mgorny/python-exec/
+license: BSD-2
+labels:
+  IUSE: python_targets_pypy3 python_targets_python3_8 python_targets_python3_9 python_targets_python3_10
+  RDEPEND: '!<dev-lang/python-exec-2.4.6-r4'
+  emerge.packages: dev-lang/python-exec-conf:2
+  kit: gentoo
+  original.package.name: dev-lang/python-exec-conf
+  original.package.version: 2.4.6

@@ -1,0 +1,12 @@
+name: Scalar-List-Utils-portage
+version: 1.560.0
+category: perl-core
+requires:
+- name: Scalar-List-Utils
+  version: 1.560.0
+  category: perl-core
+labels:
+  emerge.packages: perl-core/Scalar-List-Utils
+  kit: gentoo
+  original.package.name: perl-core/Scalar-List-Utils
+  original.package.version: 1.560.0

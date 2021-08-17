@@ -1,0 +1,12 @@
+name: utmp-portage
+version: "0"
+category: acct-group
+requires:
+- name: utmp
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/utmp
+  kit: gentoo
+  original.package.name: acct-group/utmp
+  original.package.version: 0-r1

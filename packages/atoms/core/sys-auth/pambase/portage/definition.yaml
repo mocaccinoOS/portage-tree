@@ -1,0 +1,12 @@
+name: pambase-portage
+version: "20210201.1"
+category: sys-auth
+requires:
+- name: pambase
+  version: "20210201.1"
+  category: sys-auth
+labels:
+  emerge.packages: sys-auth/pambase
+  kit: gentoo
+  original.package.name: sys-auth/pambase
+  original.package.version: "20210201.1"

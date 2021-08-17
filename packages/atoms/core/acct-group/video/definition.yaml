@@ -1,0 +1,11 @@
+name: video
+version: "0"
+category: acct-group
+description: 'System group: video'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/video
+  kit: gentoo
+  original.package.name: acct-group/video
+  original.package.version: 0-r1

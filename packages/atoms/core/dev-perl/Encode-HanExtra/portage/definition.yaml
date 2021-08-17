@@ -1,0 +1,12 @@
+name: Encode-HanExtra-portage
+version: 0.230.0
+category: dev-perl
+requires:
+- name: Encode-HanExtra
+  version: 0.230.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Encode-HanExtra
+  kit: gentoo
+  original.package.name: dev-perl/Encode-HanExtra
+  original.package.version: 0.230.0-r3

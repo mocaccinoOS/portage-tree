@@ -1,0 +1,11 @@
+name: audio
+version: "0"
+category: acct-group
+description: 'System group: audio'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/audio
+  kit: gentoo
+  original.package.name: acct-group/audio
+  original.package.version: 0-r1

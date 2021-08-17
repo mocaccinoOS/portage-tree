@@ -1,0 +1,12 @@
+name: mpc-portage
+version: 1.2.1
+category: dev-libs
+requires:
+- name: mpc
+  version: 1.2.1
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/mpc
+  kit: gentoo
+  original.package.name: dev-libs/mpc
+  original.package.version: 1.2.1

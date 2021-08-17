@@ -1,0 +1,11 @@
+name: utmp
+version: "0"
+category: acct-group
+description: 'System group: utmp'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/utmp
+  kit: gentoo
+  original.package.name: acct-group/utmp
+  original.package.version: 0-r1

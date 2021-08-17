@@ -1,0 +1,16 @@
+name: systemd-coredump
+version: "0"
+category: acct-user
+requires:
+- name: systemd-coredump
+  version: '>=0'
+  category: acct-group
+description: 'System user: systemd-coredump'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/systemd-coredump
+  emerge.packages: acct-user/systemd-coredump
+  kit: gentoo
+  original.package.name: acct-user/systemd-coredump
+  original.package.version: 0-r1

@@ -1,0 +1,43 @@
+name: dbus
+version: 1.12.20
+category: sys-apps
+use_flags:
+- -doc
+- -elogind
+- -selinux
+- -test
+- X
+- systemd
+requires:
+- name: messagebus
+  version: '>=0'
+  category: acct-user
+- name: expat
+  version: '>=0'
+  category: dev-libs
+- name: libXt
+  version: '>=0'
+  category: x11-libs
+description: A message bus system, a simple way for applications to talk to each other
+uri:
+- https://dbus.freedesktop.org/
+license: '|| ( AFL-2.1 GPL-2 )'
+labels:
+  BDEPEND: acct-user/messagebus app-text/xmlto app-text/docbook-xml-dtd:4.4 sys-devel/autoconf-archive
+    virtual/pkgconfig doc? ( app-doc/doxygen ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+    virtual/pkgconfig test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
+  DEPEND: '>=dev-libs/expat-2.1.0 elogind? ( sys-auth/elogind ) selinux? ( sys-libs/libselinux
+    ) systemd? ( sys-apps/systemd:0= ) X? ( x11-libs/libX11 x11-libs/libXt ) dev-libs/expat
+    test? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 ) >=dev-libs/glib-2.40:2
+    )'
+  IUSE: debug doc elogind kernel_linux selinux static-libs systemd test user-session
+    X kernel_linux test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64
+    abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '>=dev-libs/expat-2.1.0 elogind? ( sys-auth/elogind ) selinux? ( sys-libs/libselinux
+    ) systemd? ( sys-apps/systemd:0= ) X? ( x11-libs/libX11 x11-libs/libXt ) acct-user/messagebus
+    selinux? ( sec-policy/selinux-dbus )'
+  emerge.packages: sys-apps/dbus
+  kit: gentoo
+  original.package.name: sys-apps/dbus
+  original.package.version: 1.12.20-r1

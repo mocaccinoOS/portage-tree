@@ -1,0 +1,19 @@
+name: xorg-proto
+version: "2021.4"
+category: x11-base
+use_flags:
+- -test
+description: X.Org combined protocol headers
+uri:
+- https://gitlab.freedesktop.org/xorg/proto/xorgproto
+license: MIT
+labels:
+  BDEPEND: '>=dev-util/meson-0.56.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array'
+  DEPEND: test? ( || ( ( dev-lang/python:3.9 dev-python/python-libevdev[python_targets_python3_9(-)]
+    ) ( dev-lang/python:3.8 dev-python/python-libevdev[python_targets_python3_8(-)]
+    ) ) )
+  IUSE: test
+  emerge.packages: x11-base/xorg-proto
+  kit: gentoo
+  original.package.name: x11-base/xorg-proto
+  original.package.version: "2021.4"

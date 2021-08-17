@@ -1,0 +1,12 @@
+name: adm-portage
+version: "0"
+category: acct-group
+requires:
+- name: adm
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/adm
+  kit: gentoo
+  original.package.name: acct-group/adm
+  original.package.version: 0-r1

@@ -1,0 +1,12 @@
+name: gdbus-codegen-portage
+version: 2.68.3
+category: dev-util
+requires:
+- name: gdbus-codegen
+  version: 2.68.3
+  category: dev-util
+labels:
+  emerge.packages: dev-util/gdbus-codegen
+  kit: gentoo
+  original.package.name: dev-util/gdbus-codegen
+  original.package.version: 2.68.3

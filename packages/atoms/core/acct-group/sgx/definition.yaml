@@ -1,0 +1,11 @@
+name: sgx
+version: "0"
+category: acct-group
+description: 'System group: sgx'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/sgx
+  kit: gentoo
+  original.package.name: acct-group/sgx
+  original.package.version: "0"

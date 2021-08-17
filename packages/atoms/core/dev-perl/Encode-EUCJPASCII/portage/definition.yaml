@@ -1,0 +1,12 @@
+name: Encode-EUCJPASCII-portage
+version: 0.30.0
+category: dev-perl
+requires:
+- name: Encode-EUCJPASCII
+  version: 0.30.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/Encode-EUCJPASCII
+  kit: gentoo
+  original.package.name: dev-perl/Encode-EUCJPASCII
+  original.package.version: 0.30.0-r1

@@ -1,0 +1,33 @@
+name: ply
+version: "3.11"
+category: dev-python
+use_flags:
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- python_targets_python3_9
+requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.9
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+description: Python Lex-Yacc library
+uri:
+- http://www.dabeaz.com/ply/ https://pypi.org/project/ply/
+license: BSD
+labels:
+  BDEPEND: python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10?
+    ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  IUSE: examples python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+    python_targets_python3_10
+  RDEPEND: python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10?
+    ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  emerge.packages: dev-python/ply
+  kit: gentoo
+  original.package.name: dev-python/ply
+  original.package.version: 3.11-r1

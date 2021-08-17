@@ -1,0 +1,43 @@
+name: sqlite
+version: 3.35.5
+category: dev-db-3
+use_flags:
+- -test
+- icu
+- readline
+- tcl
+- tools
+requires:
+- name: tcl
+  version: '>=0'
+  category: dev-lang
+- name: icu
+  version: '>=0'
+  category: dev-libs
+- name: readline
+  version: '>=0'
+  category: sys-libs
+description: SQL database engine
+uri:
+- https://sqlite.org/
+license: public-domain
+labels:
+  BDEPEND: app-arch/unzip >=dev-lang/tcl-8.6:0 sys-devel/gnuconfig >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: sys-libs/zlib:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    icu? ( dev-libs/icu:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) readline? ( sys-libs/readline:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) tcl? ( dev-lang/tcl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) tools? ( dev-lang/tcl:0= ) test? ( >=dev-lang/tcl-8.6:0[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    )
+  IUSE: debug doc icu +readline secure-delete static-libs tcl test tools abi_x86_32
+    abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: sys-libs/zlib:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    icu? ( dev-libs/icu:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) readline? ( sys-libs/readline:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) tcl? ( dev-lang/tcl:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) tools? ( dev-lang/tcl:0= )
+  emerge.packages: dev-db/sqlite:3
+  kit: gentoo
+  original.package.name: dev-db/sqlite
+  original.package.version: 3.35.5

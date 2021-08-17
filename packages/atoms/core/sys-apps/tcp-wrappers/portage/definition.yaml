@@ -1,0 +1,12 @@
+name: tcp-wrappers-portage
+version: 7.6.28
+category: sys-apps
+requires:
+- name: tcp-wrappers
+  version: 7.6.28
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/tcp-wrappers
+  kit: gentoo
+  original.package.name: sys-apps/tcp-wrappers
+  original.package.version: 7.6.28-r1

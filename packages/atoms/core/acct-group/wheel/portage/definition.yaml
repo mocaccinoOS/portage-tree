@@ -1,0 +1,12 @@
+name: wheel-portage
+version: "0"
+category: acct-group
+requires:
+- name: wheel
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/wheel
+  kit: gentoo
+  original.package.name: acct-group/wheel
+  original.package.version: 0-r1

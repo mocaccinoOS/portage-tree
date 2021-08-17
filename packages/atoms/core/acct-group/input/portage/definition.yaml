@@ -1,0 +1,12 @@
+name: input-portage
+version: "0"
+category: acct-group
+requires:
+- name: input
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/input
+  kit: gentoo
+  original.package.name: acct-group/input
+  original.package.version: 0-r1

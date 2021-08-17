@@ -1,0 +1,11 @@
+name: kvm
+version: "0"
+category: acct-group
+description: 'System group: kvm'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/kvm
+  kit: gentoo
+  original.package.name: acct-group/kvm
+  original.package.version: 0-r1

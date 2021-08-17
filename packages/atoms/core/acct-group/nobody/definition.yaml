@@ -1,0 +1,11 @@
+name: nobody
+version: "0"
+category: acct-group
+description: 'System group: nobody'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/nobody
+  kit: gentoo
+  original.package.name: acct-group/nobody
+  original.package.version: "0"

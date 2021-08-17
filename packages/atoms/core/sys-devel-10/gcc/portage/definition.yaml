@@ -1,0 +1,12 @@
+name: gcc-portage
+version: 10.3.0
+category: sys-devel-10
+requires:
+- name: gcc
+  version: 10.3.0
+  category: sys-devel-10
+labels:
+  emerge.packages: sys-devel/gcc:10
+  kit: gentoo
+  original.package.name: sys-devel/gcc
+  original.package.version: 10.3.0-r2

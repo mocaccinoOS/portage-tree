@@ -1,0 +1,19 @@
+name: Encode-HanExtra
+version: 0.230.0
+category: dev-perl
+requires:
+- name: perl-Encode
+  version: '>=0'
+  category: virtual
+description: Extra sets of Chinese encodings
+uri:
+- https://metacpan.org/release/Encode-HanExtra
+license: MIT
+labels:
+  BDEPEND: '>=virtual/perl-Encode-1.410.0 dev-lang/perl'
+  DEPEND: dev-lang/perl
+  RDEPEND: '>=virtual/perl-Encode-1.410.0 dev-lang/perl:='
+  emerge.packages: dev-perl/Encode-HanExtra
+  kit: gentoo
+  original.package.name: dev-perl/Encode-HanExtra
+  original.package.version: 0.230.0-r3

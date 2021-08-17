@@ -1,0 +1,47 @@
+name: HTTP-Message
+version: 6.320.0
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: Encode-Locale
+  version: '>=0'
+  category: dev-perl
+- name: HTTP-Date
+  version: '>=0'
+  category: dev-perl
+- name: IO-HTML
+  version: '>=0'
+  category: dev-perl
+- name: LWP-MediaTypes
+  version: '>=0'
+  category: dev-perl
+- name: URI
+  version: '>=0'
+  category: dev-perl
+- name: perl-IO-Compress
+  version: '>=0'
+  category: virtual
+description: Base class for Request/Response
+uri:
+- https://metacpan.org/release/HTTP-Message
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  BDEPEND: '!<dev-perl/libwww-perl-6 virtual/perl-Carp virtual/perl-Compress-Raw-Zlib
+    >=virtual/perl-Encode-3.10.0 >=dev-perl/Encode-Locale-1.0.0 >=virtual/perl-Exporter-5.570.0
+    virtual/perl-File-Spec >=dev-perl/HTTP-Date-6.0.0 >=virtual/perl-IO-Compress-2.21.0
+    dev-perl/IO-HTML >=dev-perl/LWP-MediaTypes-6.0.0 >=virtual/perl-MIME-Base64-2.100.0
+    >=dev-perl/URI-1.100.0 virtual/perl-ExtUtils-MakeMaker test? ( virtual/perl-File-Spec
+    >=virtual/perl-Test-Simple-0.880.0 virtual/perl-Time-Local dev-perl/Try-Tiny dev-perl/URI
+    ) dev-lang/perl test? ( virtual/perl-Test-Simple )'
+  DEPEND: dev-lang/perl
+  IUSE: test test
+  RDEPEND: '!<dev-perl/libwww-perl-6 virtual/perl-Carp virtual/perl-Compress-Raw-Zlib
+    >=virtual/perl-Encode-3.10.0 >=dev-perl/Encode-Locale-1.0.0 >=virtual/perl-Exporter-5.570.0
+    virtual/perl-File-Spec >=dev-perl/HTTP-Date-6.0.0 >=virtual/perl-IO-Compress-2.21.0
+    dev-perl/IO-HTML >=dev-perl/LWP-MediaTypes-6.0.0 >=virtual/perl-MIME-Base64-2.100.0
+    >=dev-perl/URI-1.100.0 dev-lang/perl:='
+  emerge.packages: dev-perl/HTTP-Message
+  kit: gentoo
+  original.package.name: dev-perl/HTTP-Message
+  original.package.version: 6.320.0

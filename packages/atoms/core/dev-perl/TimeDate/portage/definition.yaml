@@ -1,0 +1,12 @@
+name: TimeDate-portage
+version: 2.330.0
+category: dev-perl
+requires:
+- name: TimeDate
+  version: 2.330.0
+  category: dev-perl
+labels:
+  emerge.packages: dev-perl/TimeDate
+  kit: gentoo
+  original.package.name: dev-perl/TimeDate
+  original.package.version: 2.330.0

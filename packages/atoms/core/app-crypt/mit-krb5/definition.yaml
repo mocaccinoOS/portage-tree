@@ -1,0 +1,73 @@
+name: mit-krb5
+version: 1.19.2
+category: app-crypt
+use_flags:
+- -doc
+- -openldap
+- -selinux
+- -test
+- amd64
+- cpu_flags_x86_aes
+- keyutils
+- lmdb
+- nls
+- pkinit
+- x86
+- xinetd
+requires:
+- name: lmdb
+  version: '>=0'
+  category: dev-db
+- name: libverto
+  version: '>=0'
+  category: dev-libs
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: keyutils
+  version: '>=0'
+  category: sys-apps
+- name: xinetd
+  version: '>=0'
+  category: sys-apps
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+- name: e2fsprogs-libs
+  version: '>=0'
+  category: sys-libs
+description: MIT Kerberos V
+uri:
+- https://web.mit.edu/kerberos/www/
+license: openafs-krb5-a BSD MIT OPENLDAP BSD-2 HPND BSD-4 ISC RSA CC-BY-SA-3.0 ||
+  ( BSD-2 GPL-2+ )
+labels:
+  BDEPEND: '|| ( dev-lang/python:3.9 dev-lang/python:3.8 ) virtual/yacc cpu_flags_x86_aes?
+    ( amd64? ( dev-lang/yasm ) x86? ( dev-lang/yasm ) ) doc? ( virtual/latex-base
+    ) test? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 ) dev-lang/tcl:0 dev-util/dejagnu
+    dev-util/cmocka ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || (
+    >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+    virtual/pkgconfig'
+  DEPEND: '!!app-crypt/heimdal >=sys-libs/e2fsprogs-libs-1.42.9[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    || ( >=dev-libs/libverto-0.2.5[libev,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    >=dev-libs/libverto-0.2.5[libevent,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) keyutils? ( >=sys-apps/keyutils-1.5.8:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) lmdb? ( dev-db/lmdb ) nls? ( sys-devel/gettext[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) openldap? ( >=net-nds/openldap-2.4.38-r1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) pkinit? ( >=dev-libs/openssl-1.0.1h-r2:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) xinetd? ( sys-apps/xinetd )'
+  IUSE: cpu_flags_x86_aes doc +keyutils lmdb nls openldap +pkinit selinux +threads
+    test xinetd abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32
+    abi_s390_32 abi_s390_64
+  RDEPEND: '!!app-crypt/heimdal >=sys-libs/e2fsprogs-libs-1.42.9[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    || ( >=dev-libs/libverto-0.2.5[libev,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    >=dev-libs/libverto-0.2.5[libevent,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) keyutils? ( >=sys-apps/keyutils-1.5.8:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) lmdb? ( dev-db/lmdb ) nls? ( sys-devel/gettext[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) openldap? ( >=net-nds/openldap-2.4.38-r1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) pkinit? ( >=dev-libs/openssl-1.0.1h-r2:0=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) xinetd? ( sys-apps/xinetd ) selinux? ( sec-policy/selinux-kerberos )'
+  emerge.packages: app-crypt/mit-krb5
+  kit: gentoo
+  original.package.name: app-crypt/mit-krb5
+  original.package.version: 1.19.2

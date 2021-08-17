@@ -1,0 +1,12 @@
+name: kmod-portage
+version: "29"
+category: sys-apps
+requires:
+- name: kmod
+  version: "29"
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/kmod
+  kit: gentoo
+  original.package.name: sys-apps/kmod
+  original.package.version: "29"

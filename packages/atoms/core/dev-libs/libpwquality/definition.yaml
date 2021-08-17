@@ -1,0 +1,34 @@
+name: libpwquality
+version: 1.4.4
+category: dev-libs
+use_flags:
+- -python_targets_python3_8
+- pam
+- python
+- python_targets_python3_9
+requires:
+- name: cracklib
+  version: '>=0'
+  category: sys-libs
+- name: pam
+  version: '>=0'
+  category: sys-libs
+description: Library for password quality checking and generating random passwords
+uri:
+- https://github.com/libpwquality/libpwquality
+license: '|| ( BSD GPL-2 )'
+labels:
+  BDEPEND: '>=sys-devel/gettext-0.18.2 virtual/pkgconfig'
+  DEPEND: '>=sys-libs/cracklib-2.8:=[static-libs(+)?] pam? ( sys-libs/pam ) python?
+    ( python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9?
+    ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+    )'
+  IUSE: pam python static-libs python_targets_python3_8 python_targets_python3_9 split-usr
+  RDEPEND: '>=sys-libs/cracklib-2.8:=[static-libs(+)?] pam? ( sys-libs/pam ) python?
+    ( python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9?
+    ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+    )'
+  emerge.packages: dev-libs/libpwquality
+  kit: gentoo
+  original.package.name: dev-libs/libpwquality
+  original.package.version: 1.4.4

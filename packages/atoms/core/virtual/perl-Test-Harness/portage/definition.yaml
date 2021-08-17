@@ -1,0 +1,12 @@
+name: perl-Test-Harness-portage
+version: 3.430.0
+category: virtual
+requires:
+- name: perl-Test-Harness
+  version: 3.430.0
+  category: virtual
+labels:
+  emerge.packages: virtual/perl-Test-Harness
+  kit: gentoo
+  original.package.name: virtual/perl-Test-Harness
+  original.package.version: 3.430.0

@@ -1,0 +1,13 @@
+steps:
+- |
+  eval 'rm -rf /pkgdir/ || true' && mkdir /pkgdir/{{ .Values.name }} && \
+  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+env:
+- LUET_PORTAGE_PKGFILES=0
+- LUET_PORTAGE_PKGMETA=1
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
+package_dir: /pkgdir/{{ .Values.name }}
+requires:
+- name: LWP-Protocol-https
+  version: 6.100.0
+  category: dev-perl

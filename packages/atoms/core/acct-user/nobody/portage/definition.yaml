@@ -1,0 +1,12 @@
+name: nobody-portage
+version: "0"
+category: acct-user
+requires:
+- name: nobody
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/nobody
+  kit: gentoo
+  original.package.name: acct-user/nobody
+  original.package.version: "0"

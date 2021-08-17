@@ -1,0 +1,12 @@
+name: sysprof-capture-portage
+version: 3.40.1
+category: dev-util-4
+requires:
+- name: sysprof-capture
+  version: 3.40.1
+  category: dev-util-4
+labels:
+  emerge.packages: dev-util/sysprof-capture:4
+  kit: gentoo
+  original.package.name: dev-util/sysprof-capture
+  original.package.version: 3.40.1

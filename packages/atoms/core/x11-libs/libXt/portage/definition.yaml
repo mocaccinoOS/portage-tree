@@ -1,0 +1,12 @@
+name: libXt-portage
+version: 1.2.1
+category: x11-libs
+requires:
+- name: libXt
+  version: 1.2.1
+  category: x11-libs
+labels:
+  emerge.packages: x11-libs/libXt
+  kit: gentoo
+  original.package.name: x11-libs/libXt
+  original.package.version: 1.2.1

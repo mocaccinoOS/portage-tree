@@ -1,0 +1,12 @@
+name: openpgp-keys-libidn-portage
+version: "20210517"
+category: app-crypt
+requires:
+- name: openpgp-keys-libidn
+  version: "20210517"
+  category: app-crypt
+labels:
+  emerge.packages: app-crypt/openpgp-keys-libidn
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-libidn
+  original.package.version: "20210517"

@@ -1,0 +1,11 @@
+name: systemd-timesync
+version: "0"
+category: acct-group
+description: 'System group: systemd-timesync'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/systemd-timesync
+  kit: gentoo
+  original.package.name: acct-group/systemd-timesync
+  original.package.version: 0-r1

@@ -1,0 +1,12 @@
+name: libgcrypt-portage
+version: 1.8.7
+category: dev-libs
+requires:
+- name: libgcrypt
+  version: 1.8.7
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/libgcrypt
+  kit: gentoo
+  original.package.name: dev-libs/libgcrypt
+  original.package.version: 1.8.7

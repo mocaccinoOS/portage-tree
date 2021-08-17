@@ -1,0 +1,12 @@
+name: root-portage
+version: "0"
+category: acct-user
+requires:
+- name: root
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/root
+  kit: gentoo
+  original.package.name: acct-user/root
+  original.package.version: 0-r1

@@ -1,0 +1,12 @@
+name: users-portage
+version: "0"
+category: acct-group
+requires:
+- name: users
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/users
+  kit: gentoo
+  original.package.name: acct-group/users
+  original.package.version: "0"

@@ -1,0 +1,11 @@
+name: dialout
+version: "0"
+category: acct-group
+description: 'System group: dialout'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/dialout
+  kit: gentoo
+  original.package.name: acct-group/dialout
+  original.package.version: 0-r1

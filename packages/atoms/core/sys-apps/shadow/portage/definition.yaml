@@ -1,0 +1,12 @@
+name: shadow-portage
+version: 4.8.1
+category: sys-apps
+requires:
+- name: shadow
+  version: 4.8.1
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/shadow
+  kit: gentoo
+  original.package.name: sys-apps/shadow
+  original.package.version: 4.8.1-r4

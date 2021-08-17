@@ -1,0 +1,25 @@
+name: libcap-ng
+version: 0.8.2
+category: sys-libs
+use_flags:
+- -python_targets_python3_8
+- python
+- python_targets_python3_9
+description: POSIX 1003.1e capabilities
+uri:
+- https://people.redhat.com/sgrubb/libcap-ng/
+license: LGPL-2.1
+labels:
+  BDEPEND: python? ( >=dev-lang/swig-2 ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: python? ( python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9?
+    ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+    ) sys-kernel/linux-headers
+  IUSE: python static-libs python_targets_python3_8 python_targets_python3_9
+  RDEPEND: python? ( python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9?
+    ( dev-lang/python:3.9 ) >=dev-lang/python-exec-2:=[python_targets_python3_8(-)?,python_targets_python3_9(-)?]
+    )
+  emerge.packages: sys-libs/libcap-ng
+  kit: gentoo
+  original.package.name: sys-libs/libcap-ng
+  original.package.version: 0.8.2-r1

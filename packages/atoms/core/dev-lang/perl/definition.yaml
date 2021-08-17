@@ -1,0 +1,38 @@
+name: perl
+version: 5.34.0
+category: dev-lang
+use_flags:
+- berkdb
+- gdbm
+requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: db
+  version: '>=0'
+  category: sys-libs-5.3
+- name: gdbm
+  version: '>=0'
+  category: sys-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
+- name: libcrypt
+  version: '>=0'
+  category: virtual
+description: Larry Wall's Practical Extraction and Report Language
+uri:
+- https://www.perl.org/
+license: '|| ( Artistic GPL-1+ )'
+labels:
+  BDEPEND: berkdb? ( sys-libs/db:= ) gdbm? ( >=sys-libs/gdbm-1.8.3:= ) app-arch/bzip2
+    sys-libs/zlib virtual/libcrypt:=
+  DEPEND: berkdb? ( sys-libs/db:= ) gdbm? ( >=sys-libs/gdbm-1.8.3:= ) app-arch/bzip2
+    sys-libs/zlib virtual/libcrypt:=
+  IUSE: berkdb debug doc gdbm ithreads minimal
+  RDEPEND: berkdb? ( sys-libs/db:= ) gdbm? ( >=sys-libs/gdbm-1.8.3:= ) app-arch/bzip2
+    sys-libs/zlib virtual/libcrypt:=
+  emerge.packages: dev-lang/perl
+  kit: gentoo
+  original.package.name: dev-lang/perl
+  original.package.version: 5.34.0

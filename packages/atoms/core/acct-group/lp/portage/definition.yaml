@@ -1,0 +1,12 @@
+name: lp-portage
+version: "0"
+category: acct-group
+requires:
+- name: lp
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/lp
+  kit: gentoo
+  original.package.name: acct-group/lp
+  original.package.version: 0-r1

@@ -1,0 +1,12 @@
+name: clang-portage
+version: 12.0.1
+category: sys-devel-12
+requires:
+- name: clang
+  version: 12.0.1
+  category: sys-devel-12
+labels:
+  emerge.packages: sys-devel/clang:12
+  kit: gentoo
+  original.package.name: sys-devel/clang
+  original.package.version: 12.0.1

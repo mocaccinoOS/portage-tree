@@ -1,0 +1,16 @@
+name: messagebus
+version: "0"
+category: acct-user
+requires:
+- name: messagebus
+  version: '>=0'
+  category: acct-group
+description: 'System user: messagebus'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/messagebus
+  emerge.packages: acct-user/messagebus
+  kit: gentoo
+  original.package.name: acct-user/messagebus
+  original.package.version: 0-r1

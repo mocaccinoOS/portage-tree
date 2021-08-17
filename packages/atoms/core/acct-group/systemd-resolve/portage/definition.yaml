@@ -1,0 +1,12 @@
+name: systemd-resolve-portage
+version: "0"
+category: acct-group
+requires:
+- name: systemd-resolve
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/systemd-resolve
+  kit: gentoo
+  original.package.name: acct-group/systemd-resolve
+  original.package.version: 0-r1

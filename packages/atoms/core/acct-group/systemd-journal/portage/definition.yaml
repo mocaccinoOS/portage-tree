@@ -1,0 +1,12 @@
+name: systemd-journal-portage
+version: "0"
+category: acct-group
+requires:
+- name: systemd-journal
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/systemd-journal
+  kit: gentoo
+  original.package.name: acct-group/systemd-journal
+  original.package.version: 0-r1

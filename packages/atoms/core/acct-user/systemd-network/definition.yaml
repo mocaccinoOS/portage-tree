@@ -1,0 +1,16 @@
+name: systemd-network
+version: "0"
+category: acct-user
+requires:
+- name: systemd-network
+  version: '>=0'
+  category: acct-group
+description: 'System user: systemd-network'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/systemd-network
+  emerge.packages: acct-user/systemd-network
+  kit: gentoo
+  original.package.name: acct-user/systemd-network
+  original.package.version: 0-r1

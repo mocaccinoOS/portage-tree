@@ -1,0 +1,17 @@
+name: build-docbook-catalog
+version: "1.21"
+category: app-text
+requires:
+- name: libxml2
+  version: '>=0'
+  category: dev-libs-2
+description: DocBook XML catalog auto-updater
+uri:
+- https://gitweb.gentoo.org/proj/build-docbook-catalog.git/
+license: GPL-2
+labels:
+  RDEPEND: dev-libs/libxml2 || ( sys-apps/util-linux app-misc/getopt ) !<app-text/docbook-xsl-stylesheets-1.73.1
+  emerge.packages: app-text/build-docbook-catalog
+  kit: gentoo
+  original.package.name: app-text/build-docbook-catalog
+  original.package.version: "1.21"

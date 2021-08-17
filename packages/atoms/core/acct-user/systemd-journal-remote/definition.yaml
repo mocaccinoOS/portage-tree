@@ -1,0 +1,16 @@
+name: systemd-journal-remote
+version: "0"
+category: acct-user
+requires:
+- name: systemd-journal-remote
+  version: '>=0'
+  category: acct-group
+description: 'System user: systemd-journal-remote'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/systemd-journal-remote
+  emerge.packages: acct-user/systemd-journal-remote
+  kit: gentoo
+  original.package.name: acct-user/systemd-journal-remote
+  original.package.version: 0-r1

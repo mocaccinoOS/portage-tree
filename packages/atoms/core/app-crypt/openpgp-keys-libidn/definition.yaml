@@ -1,0 +1,12 @@
+name: openpgp-keys-libidn
+version: "20210517"
+category: app-crypt
+description: OpenPGP keys used to sign libidn releases
+uri:
+- https://www.gnu.org/software/libidn/
+license: public-domain
+labels:
+  emerge.packages: app-crypt/openpgp-keys-libidn
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-libidn
+  original.package.version: "20210517"

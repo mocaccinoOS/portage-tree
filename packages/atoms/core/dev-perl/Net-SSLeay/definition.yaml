@@ -1,0 +1,27 @@
+name: Net-SSLeay
+version: 1.880.0
+category: dev-perl
+use_flags:
+- -minimal
+- -test
+requires:
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: perl-MIME-Base64
+  version: '>=0'
+  category: virtual
+description: Perl extension for using OpenSSL
+uri:
+- https://metacpan.org/release/Net-SSLeay
+license: Artistic-2
+labels:
+  DEPEND: dev-libs/openssl:0= virtual/perl-MIME-Base64 virtual/perl-ExtUtils-MakeMaker
+    test? ( !minimal? ( dev-perl/Test-Exception dev-perl/Test-Warn dev-perl/Test-NoWarnings
+    ) virtual/perl-Test-Simple ) dev-lang/perl
+  IUSE: test minimal examples examples
+  RDEPEND: dev-libs/openssl:0= virtual/perl-MIME-Base64 dev-lang/perl:=
+  emerge.packages: dev-perl/Net-SSLeay
+  kit: gentoo
+  original.package.name: dev-perl/Net-SSLeay
+  original.package.version: 1.880.0-r1

@@ -1,0 +1,12 @@
+name: sshd-portage
+version: "0"
+category: acct-group
+requires:
+- name: sshd
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/sshd
+  kit: gentoo
+  original.package.name: acct-group/sshd
+  original.package.version: 0-r1

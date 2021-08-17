@@ -1,0 +1,22 @@
+name: SGMLSpm
+version: "1.1"
+category: dev-perl
+use_flags:
+- -test
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Perl library for parsing the output of nsgmls
+uri:
+- https://metacpan.org/release/SGMLSpm
+license: GPL-2+
+labels:
+  BDEPEND: dev-perl/Module-Build dev-lang/perl test? ( virtual/perl-Test-Simple )
+  DEPEND: dev-lang/perl
+  IUSE: test
+  RDEPEND: dev-lang/perl:=
+  emerge.packages: dev-perl/SGMLSpm
+  kit: gentoo
+  original.package.name: dev-perl/SGMLSpm
+  original.package.version: 1.1-r2

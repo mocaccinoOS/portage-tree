@@ -1,0 +1,12 @@
+name: perl-portage
+version: 5.34.0
+category: dev-lang
+requires:
+- name: perl
+  version: 5.34.0
+  category: dev-lang
+labels:
+  emerge.packages: dev-lang/perl
+  kit: gentoo
+  original.package.name: dev-lang/perl
+  original.package.version: 5.34.0

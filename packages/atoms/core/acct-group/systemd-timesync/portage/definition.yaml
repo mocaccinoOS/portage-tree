@@ -1,0 +1,12 @@
+name: systemd-timesync-portage
+version: "0"
+category: acct-group
+requires:
+- name: systemd-timesync
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/systemd-timesync
+  kit: gentoo
+  original.package.name: acct-group/systemd-timesync
+  original.package.version: 0-r1

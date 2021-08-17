@@ -1,0 +1,12 @@
+name: python-exec-conf-portage
+version: 2.4.6
+category: dev-lang-2
+requires:
+- name: python-exec-conf
+  version: 2.4.6
+  category: dev-lang-2
+labels:
+  emerge.packages: dev-lang/python-exec-conf:2
+  kit: gentoo
+  original.package.name: dev-lang/python-exec-conf
+  original.package.version: 2.4.6

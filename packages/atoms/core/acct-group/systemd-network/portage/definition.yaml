@@ -1,0 +1,12 @@
+name: systemd-network-portage
+version: "0"
+category: acct-group
+requires:
+- name: systemd-network
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/systemd-network
+  kit: gentoo
+  original.package.name: acct-group/systemd-network
+  original.package.version: 0-r1

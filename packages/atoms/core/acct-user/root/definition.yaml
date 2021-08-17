@@ -1,0 +1,16 @@
+name: root
+version: "0"
+category: acct-user
+requires:
+- name: root
+  version: '>=0'
+  category: acct-group
+description: 'System user: root'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/root
+  emerge.packages: acct-user/root
+  kit: gentoo
+  original.package.name: acct-user/root
+  original.package.version: 0-r1

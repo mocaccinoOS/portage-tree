@@ -1,0 +1,34 @@
+name: iputils
+version: "20210202"
+category: net-misc
+use_flags:
+- -idn
+- -static
+- caps
+- filecaps
+- nls
+- traceroute6
+requires:
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+description: Network monitoring tools including ping and ping6
+uri:
+- https://wiki.linuxfoundation.org/networking/iputils
+license: BSD GPL-2+ rdisc
+labels:
+  BDEPEND: virtual/pkgconfig nls? ( sys-devel/gettext ) filecaps? ( sys-libs/libcap
+    ) >=dev-util/meson-0.56.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array virtual/pkgconfig
+  DEPEND: traceroute6? ( !net-analyzer/traceroute ) !static? ( caps? ( sys-libs/libcap
+    ) idn? ( net-dns/libidn2:= ) nls? ( virtual/libintl ) ) virtual/os-headers static?
+    ( caps? ( sys-libs/libcap[static-libs(+)] ) idn? ( net-dns/libidn2:=[static-libs(+)]
+    ) nls? ( virtual/libintl[static-libs(+)] ) )
+  IUSE: +arping caps clockdiff doc gcrypt idn ipv6 nettle nls rarpd rdisc ssl static
+    tftpd tracepath traceroute6 +filecaps
+  RDEPEND: traceroute6? ( !net-analyzer/traceroute ) !static? ( caps? ( sys-libs/libcap
+    ) idn? ( net-dns/libidn2:= ) nls? ( virtual/libintl ) ) filecaps? ( sys-libs/libcap
+    )
+  emerge.packages: net-misc/iputils
+  kit: gentoo
+  original.package.name: net-misc/iputils
+  original.package.version: "20210202"

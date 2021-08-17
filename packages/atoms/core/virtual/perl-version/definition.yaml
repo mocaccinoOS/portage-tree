@@ -1,0 +1,17 @@
+name: perl-version
+version: 0.992.800
+category: virtual
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+description: Virtual for version
+uri:
+- ""
+labels:
+  RDEPEND: '|| ( =dev-lang/perl-5.34* ~perl-core/version-0.992.800 ) dev-lang/perl:=
+    !<perl-core/version-0.992.800 !>perl-core/version-0.992.800-r999'
+  emerge.packages: virtual/perl-version
+  kit: gentoo
+  original.package.name: virtual/perl-version
+  original.package.version: 0.992.800

@@ -1,0 +1,16 @@
+name: systemd-resolve
+version: "0"
+category: acct-user
+requires:
+- name: systemd-resolve
+  version: '>=0'
+  category: acct-group
+description: 'System user: systemd-resolve'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/systemd-resolve
+  emerge.packages: acct-user/systemd-resolve
+  kit: gentoo
+  original.package.name: acct-user/systemd-resolve
+  original.package.version: 0-r1

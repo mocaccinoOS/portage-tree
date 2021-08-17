@@ -1,0 +1,12 @@
+name: systemd-journal-remote-portage
+version: "0"
+category: acct-user
+requires:
+- name: systemd-journal-remote
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/systemd-journal-remote
+  kit: gentoo
+  original.package.name: acct-user/systemd-journal-remote
+  original.package.version: 0-r1

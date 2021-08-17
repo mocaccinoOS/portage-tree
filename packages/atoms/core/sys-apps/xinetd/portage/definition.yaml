@@ -1,0 +1,12 @@
+name: xinetd-portage
+version: 2.3.15.4
+category: sys-apps
+requires:
+- name: xinetd
+  version: 2.3.15.4
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/xinetd
+  kit: gentoo
+  original.package.name: sys-apps/xinetd
+  original.package.version: 2.3.15.4

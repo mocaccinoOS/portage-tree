@@ -1,0 +1,11 @@
+name: cdrom
+version: "0"
+category: acct-group
+description: 'System group: cdrom'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/cdrom
+  kit: gentoo
+  original.package.name: acct-group/cdrom
+  original.package.version: 0-r1

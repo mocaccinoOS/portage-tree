@@ -1,0 +1,11 @@
+name: input
+version: "0"
+category: acct-group
+description: 'System group: input'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/input
+  kit: gentoo
+  original.package.name: acct-group/input
+  original.package.version: 0-r1

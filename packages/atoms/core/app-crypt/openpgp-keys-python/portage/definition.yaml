@@ -1,0 +1,12 @@
+name: openpgp-keys-python-portage
+version: "20210121"
+category: app-crypt
+requires:
+- name: openpgp-keys-python
+  version: "20210121"
+  category: app-crypt
+labels:
+  emerge.packages: app-crypt/openpgp-keys-python
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-python
+  original.package.version: "20210121"

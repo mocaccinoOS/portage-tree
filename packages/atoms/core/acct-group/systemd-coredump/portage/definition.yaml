@@ -1,0 +1,12 @@
+name: systemd-coredump-portage
+version: "0"
+category: acct-group
+requires:
+- name: systemd-coredump
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/systemd-coredump
+  kit: gentoo
+  original.package.name: acct-group/systemd-coredump
+  original.package.version: 0-r1

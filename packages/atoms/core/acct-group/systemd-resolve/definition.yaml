@@ -1,0 +1,11 @@
+name: systemd-resolve
+version: "0"
+category: acct-group
+description: 'System group: systemd-resolve'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/systemd-resolve
+  kit: gentoo
+  original.package.name: acct-group/systemd-resolve
+  original.package.version: 0-r1

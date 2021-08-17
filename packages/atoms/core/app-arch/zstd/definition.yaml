@@ -1,0 +1,25 @@
+name: zstd
+version: 1.5.0
+category: app-arch
+use_flags:
+- lz4
+requires:
+- name: lz4
+  version: '>=0'
+  category: app-arch
+- name: xz-utils
+  version: '>=0'
+  category: app-arch
+description: zstd fast compression library
+uri:
+- https://facebook.github.io/zstd/
+license: '|| ( BSD GPL-2 )'
+labels:
+  DEPEND: app-arch/xz-utils lz4? ( app-arch/lz4 )
+  IUSE: lz4 static-libs +threads abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64
+    abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: app-arch/xz-utils lz4? ( app-arch/lz4 )
+  emerge.packages: app-arch/zstd
+  kit: gentoo
+  original.package.name: app-arch/zstd
+  original.package.version: 1.5.0

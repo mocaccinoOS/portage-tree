@@ -1,0 +1,25 @@
+name: python-exec
+version: 2.4.8
+category: dev-lang-2
+use_flags:
+- -test
+requires:
+- name: python-exec-conf
+  version: '>=0'
+  category: dev-lang-2
+description: Python script wrapper
+uri:
+- https://github.com/mgorny/python-exec/
+license: BSD-2
+labels:
+  BDEPEND: test? ( || ( ( dev-lang/python:3.10 dev-python/pytest[python_targets_python3_10(-)]
+    ) ( dev-lang/python:3.9 dev-python/pytest[python_targets_python3_9(-)] ) ( dev-lang/python:3.8
+    dev-python/pytest[python_targets_python3_8(-)] ) ( >=dev-python/pypy3-7.3.0:0
+    dev-python/pytest[python_targets_pypy3(-)] ) ) )
+  IUSE: python_targets_pypy3 python_targets_python3_8 python_targets_python3_9 python_targets_python3_10
+    +native-symlinks test
+  RDEPEND: dev-lang/python-exec-conf !<=dev-lang/python-2.7.18-r3:2.7
+  emerge.packages: dev-lang/python-exec:2
+  kit: gentoo
+  original.package.name: dev-lang/python-exec
+  original.package.version: 2.4.8

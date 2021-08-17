@@ -1,0 +1,16 @@
+name: sshd
+version: "0"
+category: acct-user
+requires:
+- name: sshd
+  version: '>=0'
+  category: acct-group
+description: User for ssh
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/sshd
+  emerge.packages: acct-user/sshd
+  kit: gentoo
+  original.package.name: acct-user/sshd
+  original.package.version: 0-r1

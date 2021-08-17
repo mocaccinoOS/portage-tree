@@ -1,0 +1,12 @@
+name: tape-portage
+version: "0"
+category: acct-group
+requires:
+- name: tape
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/tape
+  kit: gentoo
+  original.package.name: acct-group/tape
+  original.package.version: 0-r1

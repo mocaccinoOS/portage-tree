@@ -1,0 +1,12 @@
+name: gzip-portage
+version: "1.10"
+category: app-arch
+requires:
+- name: gzip
+  version: "1.10"
+  category: app-arch
+labels:
+  emerge.packages: app-arch/gzip
+  kit: gentoo
+  original.package.name: app-arch/gzip
+  original.package.version: "1.10"

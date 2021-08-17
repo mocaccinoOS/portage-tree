@@ -1,0 +1,11 @@
+name: sshd
+version: "0"
+category: acct-group
+description: 'System group: sshd'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/sshd
+  kit: gentoo
+  original.package.name: acct-group/sshd
+  original.package.version: 0-r1

@@ -1,0 +1,12 @@
+name: python-portage
+version: 3.9.6
+category: dev-lang-3.9
+requires:
+- name: python
+  version: 3.9.6
+  category: dev-lang-3.9
+labels:
+  emerge.packages: dev-lang/python:3.9
+  kit: gentoo
+  original.package.name: dev-lang/python
+  original.package.version: 3.9.6_p1

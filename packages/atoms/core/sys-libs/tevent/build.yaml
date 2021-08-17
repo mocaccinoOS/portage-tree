@@ -1,0 +1,24 @@
+env:
+- JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
+- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
+- FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
+prelude:
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- else }}
+  emerge -j ${JOBS} {{ ( index .Values.labels "emerge.packages" ) }} -pv -t
+  {{- end }}
+- |
+  {{- if .Values.use_flags }}
+  USE="{{ join " " .Values.use_flags }}" emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- else }}
+  emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
+  {{- end }}
+- eval 'rm -rf /pkgdir/ || true' && mkdir /{{ .Values.name }} && luet portage -- --dir
+  /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+package_dir: /pkgdir/{{ .Values.name }}
+requires:
+- name: talloc
+  version: '>=0'
+  category: sys-libs

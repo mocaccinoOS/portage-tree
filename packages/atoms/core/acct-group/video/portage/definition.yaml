@@ -1,0 +1,12 @@
+name: video-portage
+version: "0"
+category: acct-group
+requires:
+- name: video
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/video
+  kit: gentoo
+  original.package.name: acct-group/video
+  original.package.version: 0-r1

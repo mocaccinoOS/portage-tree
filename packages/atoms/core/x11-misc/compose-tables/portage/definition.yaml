@@ -1,0 +1,12 @@
+name: compose-tables-portage
+version: 1.7.2
+category: x11-misc
+requires:
+- name: compose-tables
+  version: 1.7.2
+  category: x11-misc
+labels:
+  emerge.packages: x11-misc/compose-tables
+  kit: gentoo
+  original.package.name: x11-misc/compose-tables
+  original.package.version: 1.7.2

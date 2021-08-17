@@ -1,0 +1,12 @@
+name: tty-portage
+version: "0"
+category: acct-group
+requires:
+- name: tty
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/tty
+  kit: gentoo
+  original.package.name: acct-group/tty
+  original.package.version: 0-r1

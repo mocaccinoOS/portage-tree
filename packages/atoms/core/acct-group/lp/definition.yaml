@@ -1,0 +1,11 @@
+name: lp
+version: "0"
+category: acct-group
+description: 'System group: lp'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/lp
+  kit: gentoo
+  original.package.name: acct-group/lp
+  original.package.version: 0-r1

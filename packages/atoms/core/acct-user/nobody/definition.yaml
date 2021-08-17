@@ -1,0 +1,19 @@
+name: nobody
+version: "0"
+category: acct-user
+requires:
+- name: nobody
+  version: '>=0'
+  category: acct-group
+- name: root
+  version: '>=0'
+  category: acct-user
+description: 'System user: nobody'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/nobody acct-user/root
+  emerge.packages: acct-user/nobody
+  kit: gentoo
+  original.package.name: acct-user/nobody
+  original.package.version: "0"

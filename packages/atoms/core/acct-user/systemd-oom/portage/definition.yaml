@@ -1,0 +1,12 @@
+name: systemd-oom-portage
+version: "0"
+category: acct-user
+requires:
+- name: systemd-oom
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/systemd-oom
+  kit: gentoo
+  original.package.name: acct-user/systemd-oom
+  original.package.version: "0"

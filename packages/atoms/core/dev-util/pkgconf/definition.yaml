@@ -1,0 +1,20 @@
+name: pkgconf
+version: 1.7.4
+category: dev-util
+use_flags:
+- -test
+- pkg-config
+description: pkg-config compatible replacement with no dependencies other than ANSI
+  C89
+uri:
+- https://git.sr.ht/~kaniini/pkgconf
+license: ISC
+labels:
+  BDEPEND: test? ( dev-libs/atf dev-util/kyua )
+  IUSE: +pkg-config test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64
+    abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: pkg-config? ( !dev-util/pkgconfig )
+  emerge.packages: dev-util/pkgconf
+  kit: gentoo
+  original.package.name: dev-util/pkgconf
+  original.package.version: 1.7.4

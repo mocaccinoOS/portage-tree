@@ -1,0 +1,12 @@
+name: kmem-portage
+version: "0"
+category: acct-group
+requires:
+- name: kmem
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/kmem
+  kit: gentoo
+  original.package.name: acct-group/kmem
+  original.package.version: 0-r1

@@ -1,0 +1,12 @@
+name: openpgp-keys-python
+version: "20210121"
+category: app-crypt
+description: OpenPGP keys used to sign CPython releases
+uri:
+- https://www.python.org/downloads/
+license: public-domain
+labels:
+  emerge.packages: app-crypt/openpgp-keys-python
+  kit: gentoo
+  original.package.name: app-crypt/openpgp-keys-python
+  original.package.version: "20210121"

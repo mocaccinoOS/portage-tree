@@ -1,0 +1,12 @@
+name: messagebus-portage
+version: "0"
+category: acct-group
+requires:
+- name: messagebus
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/messagebus
+  kit: gentoo
+  original.package.name: acct-group/messagebus
+  original.package.version: 0-r1
