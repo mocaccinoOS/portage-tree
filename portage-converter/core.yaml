@@ -174,7 +174,7 @@ artefacts:
 
 build_layers:
   - layer:
-      name: base
+      name: base-core
       category: seed
     # pkgs-checker  pkglist  show -r /tmp/base.pkglist -j  -p  -v | jq '.packages[] | "- "+ .category + "/" + .name + ":" + .slot' -r | sort
     packages:

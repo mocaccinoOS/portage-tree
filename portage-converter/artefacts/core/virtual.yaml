@@ -13,7 +13,7 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: base
+        - name: base-core
           category: seed
   packages:
     - virtual/libiconv
@@ -41,7 +41,7 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: base
+#        - name: base-core
 #          category: seed
 #  packages:
 #    - virtual/libxcrypt
@@ -61,7 +61,7 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: base
+        - name: base-core
           category: seed
   packages:
     - virtual/udev
@@ -76,7 +76,7 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: base
+        - name: base-core
           category: seed
   packages:
     - virtual/libudev
@@ -100,7 +100,7 @@ artefacts:
           category: sys-apps
     buildtime_deps:
       ignore:
-        - name: base
+        - name: base-core
           category: seed
   packages:
     - virtual/tmpfiles
@@ -114,7 +114,7 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: base
+#        - name: base-core
 #          category: seed
 #  packages:
 #    - virtual/rust
@@ -129,7 +129,7 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: base
+        - name: base-core
           category: seed
   packages:
     - virtual/awk
@@ -143,7 +143,7 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: base
+        - name: base-core
           category: seed
   packages:
     - virtual/acl
@@ -158,7 +158,7 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: base
+#        - name: base-core
 #          category: seed
 #  packages:
 #    - virtual/mpi
@@ -173,7 +173,7 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: base
+#        - name: base-core
 #          category: seed
 #  packages:
 #    - virtual/linux-sources
@@ -188,7 +188,7 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: base
+#        - name: base-core
 #          category: seed
 #  packages:
 #    - virtual/yacc
@@ -210,7 +210,7 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: base
+#        - name: base-core
 #          category: seed
 #  packages:
 #    - virtual/os-headers
@@ -224,7 +224,7 @@ artefacts:
   replacements:
     buildtime_deps:
       ignore:
-        - name: base
+        - name: base-core
           category: seed
   packages:
     - virtual/libcrypt
@@ -239,7 +239,7 @@ artefacts:
 #  replacements:
 #    buildtime_deps:
 #      ignore:
-#        - name: base
+#        - name: base-core
 #          category: seed
 #  packages:
 #    - virtual/libusb:1
