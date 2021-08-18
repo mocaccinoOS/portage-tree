@@ -48,6 +48,13 @@ artefacts:
     - sys-libs/libcap
 
 - tree: packages/atoms/core
+  uses:
+    disabled:
+      - libunwind
+  packages:
+    - sys-libs/libcxxabi
+
+- tree: packages/atoms/core
   replacements:
     # Break cycyle dep
     runtime_deps:

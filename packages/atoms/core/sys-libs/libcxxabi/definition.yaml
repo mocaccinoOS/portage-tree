@@ -2,8 +2,8 @@ name: libcxxabi
 version: 12.0.1
 category: sys-libs
 use_flags:
+- -libunwind
 - -test
-- libunwind
 description: Low level support for a standard C++ library
 uri:
 - https://libcxxabi.llvm.org/
