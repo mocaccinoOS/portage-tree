@@ -74,7 +74,7 @@ sys-auth/polkit introspection nls pam -kde -gtk
 # Enable hardened USE flags
 sys-devel/gcc hardened
 # keep suid for a while, needs devpts mounted with gid=5 otherwise
-sys-libs/glibc hardened suid nscd
+sys-libs/glibc hardened suid nscd audit caps compile-locales
 dev-libs/lzo split-usr static-libs
 # required by net-analyzer/tcpreplay-4.0.2
 sys-devel/autogen libopts
