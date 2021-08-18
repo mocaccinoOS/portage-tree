@@ -6,6 +6,7 @@ env:
 - LUET_PORTAGE_PKGFILES=0
 - LUET_PORTAGE_PKGMETA=1
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
+- LUET_PORTAGE_IGNORE_TAR_WARNING=1
 package_dir: /pkgdir/{{ .Values.name }}
 requires:
 - name: openpgp-keys-danielveillard
