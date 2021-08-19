@@ -55,6 +55,13 @@ artefacts:
     - sys-libs/libcxxabi
 
 - tree: packages/atoms/core
+  mutations:
+    uses:
+      - -libunwind
+  packages:
+    - sys-libs/libcxx
+
+- tree: packages/atoms/core
   replacements:
     # Break cycyle dep
     runtime_deps:

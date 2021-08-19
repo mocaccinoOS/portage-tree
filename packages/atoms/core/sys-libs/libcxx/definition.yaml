@@ -4,6 +4,7 @@ category: sys-libs
 use_flags:
 - -test
 - libcxxabi
+- -libunwind
 requires:
 - name: gcc
   version: '>=0'
