@@ -2,7 +2,6 @@ requires:
 - category: "seed"
   name: "base"
   version: ">=0"
-unpack: true
 env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 - LUET_NOLOCK="true"
