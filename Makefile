@@ -8,7 +8,7 @@ PACKAGES?=
 export LUET?=/usr/bin/luet
 export ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DESTINATION?=$(ROOT_DIR)/build
-COMPRESSION?=gzip
+COMPRESSION?=zstd
 CLEAN?=false
 export TREE?=$(ROOT_DIR)/packages
 REPO_CACHE?=quay.io/geaaru/portage-amd64-cache
@@ -60,9 +60,9 @@ create-repo:
     --name "mocaccino-portage" \
     --descr "Mocaccino Portage $(ARCH)" \
     --urls "http://localhost:8000" \
-    --tree-compression gzip \
+    --tree-compression $(COMPRESSION) \
     --tree-filename tree.tar \
-    --meta-compression gzip \
+    --meta-compression $(COMPRESSION) \
     --type http
 
 .PHONY: serve-repo
