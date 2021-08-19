@@ -2,13 +2,13 @@ name: thin-provisioning-tools
 version: 0.9.0
 category: sys-block
 use_flags:
+- -static
 - -test
-- static
 requires:
-- name: expat
+- name: libaio
   version: '>=0'
   category: dev-libs
-- name: libaio
+- name: expat
   version: '>=0'
   category: dev-libs
 description: A suite of tools for thin provisioning on Linux

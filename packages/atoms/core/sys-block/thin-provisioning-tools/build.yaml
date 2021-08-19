@@ -20,6 +20,6 @@ prelude:
   /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
 package_dir: /pkgdir/{{ .Values.name }}
 requires:
-- name: base-core
+- name: expat
   version: '>=0'
-  category: seed
+  category: dev-libs

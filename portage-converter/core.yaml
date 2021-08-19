@@ -54,6 +54,7 @@ include_files:
 - artefacts/core/net-libs.yaml
 - artefacts/core/net-misc.yaml
 - artefacts/core/sys-apps.yaml
+- artefacts/core/sys-block.yaml
 - artefacts/core/sys-devel.yaml
 - artefacts/core/sys-fs.yaml
 - artefacts/core/sys-libs.yaml
@@ -157,6 +158,7 @@ artefacts:
     - sys-apps/findutils
     - dev-libs/openssl
     - app-misc/c_rehash
+    - app-shells/bash
     # Needed by mailbase ans cyrus-sasl
     #- acct-group/mail
     # - acct-user/mail
