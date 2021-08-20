@@ -1,0 +1,21 @@
+artefacts:
+- tree: packages/atoms/core
+  ignore_build_deps: true
+  uses:
+    disabled:
+      - static
+  mutations:
+    runtime_deps:
+      # !static use flag is not handled
+      # correctly atm. Manually 
+      packages:
+        - category: dev-libs
+          name: libaio
+        - category: dev-libs
+          name: expat
+    buildtime_deps:
+      packages:
+        - category: dev-libs
+          name: expat
+  packages:
+    - sys-block/thin-provisioning-tools
