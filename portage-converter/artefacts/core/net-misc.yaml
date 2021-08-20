@@ -15,6 +15,9 @@ artefacts:
   uses:
     disabled:
       - static
+      - bindist
+      - secure-key
+      - X
   packages:
     - net-misc/openssh
 

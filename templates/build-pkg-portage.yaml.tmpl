@@ -1,10 +1,8 @@
 package_dir: /pkgdir/{{ .Values.name }}
-env:
-- LUET_PORTAGE_PKGFILES=0
-- LUET_PORTAGE_PKGMETA=1
-- LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
-- LUET_PORTAGE_IGNORE_TAR_WARNING=1
-steps:
-- |
-  eval 'rm -rf /pkgdir/ || true' && mkdir /pkgdir/{{ .Values.name }} && \
-  luet portage -- --dir /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+includes:
+  # NOTE: avoid to add final slash because else the directory /var/db/pkg is not matched
+  #       and then all files will be removed. You need to define also the parent directory.
+  - ^/var/db/pkg
+  - ^/var/db$
+  - ^/var$
+

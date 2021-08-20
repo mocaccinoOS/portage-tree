@@ -2,6 +2,8 @@ env:
 - JOBS={{ ( index .Values.labels "jobs" ) | default "3" }}
 - LUET_PORTAGE_CACHE_PACKAGES=/var/cache/binpkgs
 - LUET_PORTAGE_IGNORE_TAR_WARNING=1
+- LUET_PORTAGE_PKGMETA=1
+- LUET_PORTAGE_PKGFILES=1
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 prelude:
 - |
@@ -16,9 +18,14 @@ prelude:
   {{- else }}
   emerge -j ${JOBS} --nodeps {{ ( index .Values.labels "emerge.packages" ) }}
   {{- end }}
-- eval 'rm -rf /pkgdir/ || true' && mkdir /{{ .Values.name }} && luet portage -- --dir
-  /{{ .Values.name }} {{ ( index .Values.labels "emerge.packages" ) }}
+- eval 'rm -rf /pkgdir/ || true' && mkdir -p /pkgdir/{{ .Values.name }} && luet portage
+  -- --dir /pkgdir/{{ .Values.name }} {{ ( index .Values.labels "emerge.packages"
+  ) }}
 package_dir: /pkgdir/{{ .Values.name }}
+excludes:
+- ^/var/db/pkg/
+- ^/var/cache/portage/
+- ^/var/git/
 requires:
 - name: expat
   version: '>=0'

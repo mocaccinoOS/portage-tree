@@ -2,11 +2,11 @@ name: openssh
 version: "8.6"
 category: net-misc
 use_flags:
+- -X
+- -bindist
 - -selinux
 - -static
-- X
 - audit
-- bindist
 - kerberos
 - kernel_linux
 - ldns
@@ -28,9 +28,6 @@ requires:
 - name: krb5
   version: '>=0'
   category: virtual
-- name: xauth
-  version: '>=0'
-  category: x11-apps
 description: Port of OpenBSD's free SSH release
 uri:
 - https://www.openssh.com/
