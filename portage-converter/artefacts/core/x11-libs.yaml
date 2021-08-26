@@ -1,7 +1,5 @@
 artefacts:
-
 - tree: packages/atoms/core
-  ignore_build_deps: true
   packages:
     - x11-libs/libxcb
     - x11-libs/libX11

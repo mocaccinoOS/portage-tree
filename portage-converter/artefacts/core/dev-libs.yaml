@@ -28,7 +28,6 @@ artefacts:
 
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   uses:
     disabled:
       - libedit
@@ -37,7 +36,6 @@ artefacts:
     - dev-libs/libpcre2
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   uses:
     disabled:
       # Follow sabayon way.
@@ -46,7 +44,6 @@ artefacts:
     - dev-libs/elfutils
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   packages:
     - dev-libs/boehm-gc
     - dev-libs/expat
@@ -60,6 +57,11 @@ artefacts:
 
 - tree: packages/atoms/core
   ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   replacements:
     # Break cycyle dep
     runtime_deps:

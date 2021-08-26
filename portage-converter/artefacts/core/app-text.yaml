@@ -1,6 +1,11 @@
 artefacts:
 # Break gentoo buildtime dep cycle
 - tree: packages/atoms/core
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   ignore_build_deps: true
   uses:
     disabled:

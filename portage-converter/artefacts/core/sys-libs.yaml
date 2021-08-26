@@ -1,6 +1,5 @@
 artefacts:
 - tree: packages/atoms/core
-  ignore_build_deps: true
   uses:
     disabled:
       - nis
@@ -9,7 +8,6 @@ artefacts:
     - sys-libs/pam
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   uses:
     disabled:
       - test
@@ -19,13 +17,11 @@ artefacts:
     - sys-libs/db:5.3
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   packages:
     - sys-libs/zlib
 
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.

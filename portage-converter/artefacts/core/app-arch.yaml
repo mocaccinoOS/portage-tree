@@ -1,6 +1,11 @@
 artefacts:
 - tree: packages/atoms/core
   ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   uses:
     disabled:
       - static
@@ -10,6 +15,11 @@ artefacts:
 # Break gentoo buildtime dep cycle
 - tree: packages/atoms/core
   ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   replacements:
     buildtime_deps:
       ignore:
@@ -22,6 +32,11 @@ artefacts:
 
 - tree: packages/atoms/core
   ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   packages:
     - app-arch/xz-utils
     - app-arch/libarchive

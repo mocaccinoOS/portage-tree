@@ -1,7 +1,6 @@
 artefacts:
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.
@@ -26,7 +25,6 @@ artefacts:
     - sys-apps/systemd
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   uses:
     disabled:
       - caps
@@ -38,7 +36,6 @@ artefacts:
     - sys-apps/coreutils
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   replacements:
     # Break cycyle dep
     runtime_deps:
@@ -69,7 +66,6 @@ artefacts:
     - sys-apps/sed
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   uses:
     disabled:
       - audit

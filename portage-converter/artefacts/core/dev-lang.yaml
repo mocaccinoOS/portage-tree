@@ -9,6 +9,11 @@ artefacts:
     - dev-lang/perl
 
 - tree: packages/atoms/core
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   ignore_build_deps: true
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i

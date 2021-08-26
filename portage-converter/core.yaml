@@ -67,6 +67,11 @@ build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 artefacts:
 - tree: packages/atoms/core
   ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   uses:
     disabled:
       - passwdqc
@@ -112,6 +117,11 @@ artefacts:
 #    - app-crypt/gnupg
 
 - tree: packages/atoms/core
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   ignore_build_deps: true
   uses:
     disabled:
@@ -120,6 +130,11 @@ artefacts:
     - sys-devel/clang:12
 
 - tree: packages/atoms/core
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   ignore_build_deps: true
   uses:
     disabled:
