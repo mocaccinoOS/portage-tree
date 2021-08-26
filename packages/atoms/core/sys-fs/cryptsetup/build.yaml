@@ -27,3 +27,7 @@ excludes:
 - ^/var/db/pkg/
 - ^/var/cache/portage/
 - ^/var/git/
+requires:
+- name: libpwquality
+  version: '>=0'
+  category: dev-libs
