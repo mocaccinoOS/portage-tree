@@ -8,7 +8,6 @@ artefacts:
           category: virtual
   packages:
     - sys-fs/udev-init-scripts
-    - sys-fs/e2fsprogs
     - sys-fs/cryptsetup
 
 - tree: packages/atoms/core
@@ -19,3 +18,17 @@ artefacts:
       - sanlock
   packages:
     - sys-fs/lvm2
+
+- tree: packages/atoms/core
+  uses:
+    disabled:
+      - cron
+      - fuse
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: tmpfiles
+          category: virtual
+  packages:
+    - sys-fs/e2fsprogs

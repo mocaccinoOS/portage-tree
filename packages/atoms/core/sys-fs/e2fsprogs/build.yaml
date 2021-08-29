@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: fuse
+- name: base-core
   version: '>=0'
-  category: sys-fs-3
+  category: seed

@@ -2,19 +2,19 @@ name: e2fsprogs
 version: 1.46.2
 category: sys-fs
 use_flags:
-- cron
-- fuse
+- -cron
+- -fuse
 - nls
 requires:
-- name: fuse
+- name: util-linux
   version: '>=0'
-  category: sys-fs-3
-- name: lvm2
-  version: '>=0'
-  category: sys-fs
+  category: sys-apps
 - name: e2fsprogs-libs
   version: '>=0'
   category: sys-libs
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: Standard EXT2/EXT3/EXT4 filesystem utilities
 uri:
 - http://e2fsprogs.sourceforge.net/
