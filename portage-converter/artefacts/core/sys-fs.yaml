@@ -16,6 +16,8 @@ artefacts:
       - lvm2create_initrd
       - device-mapper-only
       - sanlock
+      # static? ( !systemd )
+      - static
   packages:
     - sys-fs/lvm2
 

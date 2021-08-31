@@ -5,12 +5,15 @@ use_flags:
 - -lvm2create_initrd
 - -sanlock
 - -selinux
+- -static
 - readline
-- static
 - systemd
 - thin
 - udev
 requires:
+- name: util-linux
+  version: '>=0'
+  category: sys-apps
 - name: thin-provisioning-tools
   version: '>=0'
   category: sys-block
