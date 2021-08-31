@@ -2,17 +2,14 @@ name: libxml2
 version: 2.9.12
 category: dev-libs-2
 use_flags:
+- -lzma
 - -python_targets_python3_8
+- -verify-sig
 - icu
-- lzma
 - python
 - python_targets_python3_9
 - readline
-- verify-sig
 requires:
-- name: xz-utils
-  version: '>=0'
-  category: app-arch
 - name: icu
   version: '>=0'
   category: dev-libs

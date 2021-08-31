@@ -71,5 +71,26 @@ artefacts:
         - name: python-exec
           category: dev-lang-2
   packages:
-    - dev-libs/libxml2:2
     - dev-libs/libpwquality
+
+- tree: packages/atoms/core
+  ignore_build_deps: true
+  uses:
+    disabled:
+      - lzma
+      - verify-sig
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: python
+          category: dev-lang-3.9
+        - name: python-exec
+          category: dev-lang-2
+  packages:
+    - dev-libs/libxml2:2
