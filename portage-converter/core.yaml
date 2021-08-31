@@ -651,6 +651,8 @@ reposcan_disabled_use_flags:
   - ldap
   - openldap
 
+  - verify-sig
+
   # Disable gnome-keyring for upper cycles
   - gnome-keyring
 

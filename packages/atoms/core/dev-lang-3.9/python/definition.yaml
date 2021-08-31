@@ -6,12 +6,12 @@ use_flags:
 - -build
 - -test
 - -tk
+- -verify-sig
 - gdbm
 - ncurses
 - readline
 - sqlite
 - ssl
-- verify-sig
 - xml
 requires:
 - name: bzip2
@@ -38,6 +38,12 @@ requires:
 - name: gdbm
   version: '>=0'
   category: sys-libs
+- name: libcrypt
+  version: '>=0'
+  category: virtual
+- name: libintl
+  version: '>=0'
+  category: virtual
 description: An interpreted, interactive, object-oriented programming language
 uri:
 - https://www.python.org/
