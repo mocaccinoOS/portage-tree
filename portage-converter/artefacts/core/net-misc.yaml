@@ -18,6 +18,10 @@ artefacts:
       - bindist
       - secure-key
       - X
+      - audit
+      - sctp
+      - ldns
+      - security-key
   packages:
     - net-misc/openssh
 

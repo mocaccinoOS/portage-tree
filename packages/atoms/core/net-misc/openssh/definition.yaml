@@ -3,19 +3,19 @@ version: "8.6"
 category: net-misc
 use_flags:
 - -X
+- -audit
 - -bindist
+- -ldns
+- -sctp
+- -security-key
 - -selinux
 - -static
-- audit
 - kerberos
 - kernel_linux
-- ldns
 - libedit
 - pam
 - prefix
 - prefix-guest
-- sctp
-- security-key
 - ssl
 - userland_GNU
 requires:
@@ -25,6 +25,9 @@ requires:
 - name: shadow
   version: '>=0'
   category: sys-apps
+- name: pam
+  version: '>=0'
+  category: sys-libs
 - name: krb5
   version: '>=0'
   category: virtual
