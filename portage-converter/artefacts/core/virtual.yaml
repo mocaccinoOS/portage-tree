@@ -230,6 +230,20 @@ artefacts:
     - virtual/libcrypt
 
 
+- tree: packages/atoms/core
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: app-crypt
+          name: mit-krb5
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: base-core
+          category: seed
+  packages:
+    - virtual/krb5
+
 #- tree: packages/atoms/core
 #  mutations:
 #    buildtime_deps:
