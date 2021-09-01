@@ -8,6 +8,19 @@ artefacts:
           category: virtual
   packages:
     - sys-fs/udev-init-scripts
+
+- tree: packages/atoms/core
+  uses:
+    disabled:
+      - gcrypt
+      - static
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: tmpfiles
+          category: virtual
+  packages:
     - sys-fs/cryptsetup
 
 - tree: packages/atoms/core

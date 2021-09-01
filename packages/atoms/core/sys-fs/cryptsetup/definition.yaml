@@ -2,12 +2,12 @@ name: cryptsetup
 version: 2.3.6
 category: sys-fs
 use_flags:
+- -gcrypt
+- -static
 - argon2
-- gcrypt
 - nettle
 - openssl
 - pwquality
-- static
 - static-libs
 - udev
 requires:
@@ -17,7 +17,7 @@ requires:
 - name: json-c
   version: '>=0'
   category: dev-libs
-- name: libgcrypt
+- name: libgpg-error
   version: '>=0'
   category: dev-libs
 - name: libpwquality
