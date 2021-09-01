@@ -259,7 +259,6 @@ artefacts:
 #    - virtual/libusb:1
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   packages:
     - virtual/perl-Carp
     - virtual/perl-Compress-Raw-Bzip2
