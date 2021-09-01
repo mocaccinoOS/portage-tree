@@ -36,6 +36,11 @@ artefacts:
     - dev-libs/libpcre2
 
 - tree: packages/atoms/core
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: app-arch
+          name: zstd
   uses:
     disabled:
       # Follow sabayon way.
