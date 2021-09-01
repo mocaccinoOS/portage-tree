@@ -56,7 +56,6 @@ artefacts:
     - dev-libs/jsoncpp
 
 - tree: packages/atoms/core
-  ignore_build_deps: true
   mutations:
     buildtime_deps:
       packages:
