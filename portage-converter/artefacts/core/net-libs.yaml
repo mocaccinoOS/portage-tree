@@ -1,11 +1,5 @@
 artefacts:
 - tree: packages/atoms/core
-  ignore_build_deps: true
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: seed
-          name: base-core
   replacements:
     # Break cycyle dep
     runtime_deps:
