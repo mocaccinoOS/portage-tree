@@ -11,14 +11,21 @@ artefacts:
 
 - tree: packages/atoms/core
   uses:
+    # exactly-one-of ( gcrypt kernel nettle openssl )
     disabled:
       - gcrypt
       - static
+      - kernel
+      - nettle
   replacements:
     # Break cycyle dep
     runtime_deps:
       ignore:
         - name: tmpfiles
+          category: virtual
+        - name: util-linux
+          category: sys-apps
+        - name: libudev
           category: virtual
   packages:
     - sys-fs/cryptsetup
