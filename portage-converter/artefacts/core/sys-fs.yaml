@@ -24,6 +24,16 @@ artefacts:
     - sys-fs/cryptsetup
 
 - tree: packages/atoms/core
+  replacements:
+    # Break cycyle dep
+    runtime_deps:
+      ignore:
+        - name: util-linux
+          category: sys-apps
+        - name: libudev
+          category: virtual
+        - name: systemd
+          category: sys-apps
   uses:
     disabled:
       - lvm2create_initrd

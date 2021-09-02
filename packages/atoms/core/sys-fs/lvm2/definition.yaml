@@ -11,12 +11,15 @@ use_flags:
 - thin
 - udev
 requires:
-- name: util-linux
+- name: baselayout
   version: '>=0'
   category: sys-apps
 - name: thin-provisioning-tools
   version: '>=0'
   category: sys-block
+- name: readline
+  version: '>=0'
+  category: sys-libs
 description: User-land utilities for LVM2 (device-mapper) software
 uri:
 - https://sourceware.org/lvm2/
