@@ -1,8 +1,9 @@
 name: zstd
-version: 1.5.0
+version: "1.5.0+1"
 category: app-arch
 use_flags:
 - lz4
+- static-libs
 requires:
 - name: lz4
   version: '>=0'

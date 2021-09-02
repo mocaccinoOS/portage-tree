@@ -41,3 +41,10 @@ artefacts:
     - app-arch/xz-utils
     - app-arch/libarchive
 
+- tree: packages/atoms/core
+  mutations:
+    uses:
+      # Required by dev-libs/elfutils
+      - static-libs
+  packages:
+    - app-arch/zstd
