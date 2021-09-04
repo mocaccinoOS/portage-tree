@@ -17,6 +17,9 @@ artefacts:
       - static
       - kernel
       - nettle
+      # pwquality requires homed on systemd and
+      # it generates build cycles. Drop it atm.
+      - pwquality
   replacements:
     # Break cycyle dep
     runtime_deps:

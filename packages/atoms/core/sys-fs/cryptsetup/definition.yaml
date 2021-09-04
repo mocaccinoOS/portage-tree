@@ -4,10 +4,10 @@ category: sys-fs
 use_flags:
 - -gcrypt
 - -nettle
+- -pwquality
 - -static
 - argon2
 - openssl
-- pwquality
 - static-libs
 - udev
 requires:
@@ -18,9 +18,6 @@ requires:
   version: '>=0'
   category: dev-libs
 - name: libgpg-error
-  version: '>=0'
-  category: dev-libs
-- name: libpwquality
   version: '>=0'
   category: dev-libs
 - name: openssl
