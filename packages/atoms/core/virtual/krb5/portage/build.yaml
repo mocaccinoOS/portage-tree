@@ -5,5 +5,5 @@ includes:
 - ^/var$
 requires:
 - name: krb5
-  version: "0"
+  version: "0+1"
   category: virtual
