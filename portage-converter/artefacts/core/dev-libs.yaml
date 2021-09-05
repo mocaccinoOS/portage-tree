@@ -98,3 +98,15 @@ artefacts:
           category: dev-lang-2
   packages:
     - dev-libs/libxml2:2
+
+- tree: packages/atoms/core
+  ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
+  packages:
+    - dev-libs/lzo:2
+
+
