@@ -5,5 +5,5 @@ includes:
 - ^/var$
 requires:
 - name: elfutils
-  version: "0.185"
+  version: ">=0.185+2"
   category: dev-libs
