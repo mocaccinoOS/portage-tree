@@ -47,6 +47,7 @@ skipped_resolutions:
 include_files:
 - artefacts/core/app-arch.yaml
 - artefacts/core/app-text.yaml
+- artefacts/core/dev-db.yaml
 - artefacts/core/dev-lang.yaml
 - artefacts/core/dev-libs.yaml
 - artefacts/core/dev-perl.yaml
