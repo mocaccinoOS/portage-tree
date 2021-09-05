@@ -4,9 +4,15 @@ artefacts:
   # To avoid cycle error on solver for packages
   # available already from layers/build-seed i
   # ignore buildtime deps.
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
   packages:
-    - dev-lang/python-exec
     - dev-lang/perl
+    - dev-lang/python-exec:2
+    - dev-lang/python-exec-conf:2
 
 - tree: packages/atoms/core
   mutations:
