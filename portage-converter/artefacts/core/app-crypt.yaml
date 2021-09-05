@@ -1,0 +1,12 @@
+artefacts:
+- tree: packages/atoms/core
+  ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
+  packages:
+    - app-crypt/openpgp-keys-libidn
+    - app-crypt/openpgp-keys-danielveillard
+    - app-crypt/openpgp-keys-python
