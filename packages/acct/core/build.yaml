@@ -10,7 +10,7 @@ prelude:
   wget -O /etc/luet/repos.conf.d/geaaru.yaml https://raw.githubusercontent.com/geaaru/luet-specs/master/contrib/geaaru.yml &&
   luet install system/entities && luet upgrade &&
   luet cleanup
-stepts:
+steps:
 - ls -l /etc/ && entities dump -t /{{ .Values.name }}/usr/share/mocaccino/entities/{{ .Values.name }}/
 requires:
 - category: "seed"
