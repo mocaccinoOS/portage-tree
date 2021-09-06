@@ -11,7 +11,7 @@ prelude:
   luet install system/entities && luet upgrade &&
   luet cleanup
 stepts:
-- entities dump -t /{{ .Values.name }}/usr/share/mocaccino/entities/{{ .Values.name }}/
+- ls -l /etc/ && entities dump -t /{{ .Values.name }}/usr/share/mocaccino/entities/{{ .Values.name }}/
 requires:
 - category: "seed"
   version:  ">=0"
