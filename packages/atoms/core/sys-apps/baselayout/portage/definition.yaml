@@ -1,9 +1,9 @@
 name: baselayout-portage
-version: "2.7"
+version: "2.7+1"
 category: sys-apps
 requires:
 - name: baselayout
-  version: "2.7"
+  version: "2.7+1"
   category: sys-apps
 labels:
   emerge.packages: sys-apps/baselayout

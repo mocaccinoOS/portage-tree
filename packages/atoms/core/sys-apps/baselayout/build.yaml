@@ -21,12 +21,14 @@ prelude:
 - eval 'rm -rf /pkgdir/ || true' && mkdir -p /pkgdir/{{ .Values.name }} && luet portage
   -- --dir /pkgdir/{{ .Values.name }} {{ ( index .Values.labels "emerge.packages"
   ) }}
+- mv /pkgdir/{{ .Values.name }}/etc/hosts /pkgdir/{{ .Values.name }}/etc/hosts.example
 - rm -v /var/cache/distfiles/* /var/cache/binpkgs/* || true
 package_dir: /pkgdir/{{ .Values.name }}
 excludes:
 - ^/var/db/pkg/
 - ^/var/cache/portage/
 - ^/var/git/
+
 requires:
 - name: base-core
   version: '>=0'
