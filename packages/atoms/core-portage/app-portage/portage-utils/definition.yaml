@@ -2,20 +2,10 @@ name: portage-utils
 version: "0.92"
 category: app-portage
 use_flags:
+- -static
 - openmp
 - qmanifest
 - qtegrity
-- static
-requires:
-- name: gpgme
-  version: '>=0'
-  category: app-crypt-1
-- name: libb2
-  version: '>=0'
-  category: app-crypt
-- name: openssl
-  version: '>=0'
-  category: dev-libs
 description: Small and fast Portage helper tools written in C
 uri:
 - https://wiki.gentoo.org/wiki/Portage-utils
