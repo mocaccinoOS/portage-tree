@@ -1,0 +1,12 @@
+name: eselect-portage
+version: 1.4.17
+category: app-admin
+requires:
+- name: eselect
+  version: 1.4.17
+  category: app-admin
+labels:
+  emerge.packages: app-admin/eselect
+  kit: gentoo
+  original.package.name: app-admin/eselect
+  original.package.version: 1.4.17

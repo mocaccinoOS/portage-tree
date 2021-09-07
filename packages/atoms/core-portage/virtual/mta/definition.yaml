@@ -1,0 +1,18 @@
+name: mta
+version: "1"
+category: virtual
+requires:
+- name: nullmailer
+  version: '>=0'
+  category: mail-mta
+description: Virtual for Message Transfer Agents
+uri:
+- ""
+labels:
+  RDEPEND: '|| ( mail-mta/nullmailer mail-mta/msmtp[mta] mail-mta/ssmtp[mta] mail-mta/courier
+    mail-mta/esmtp mail-mta/exim mail-mta/netqmail mail-mta/notqmail mail-mta/postfix
+    mail-mta/sendmail mail-mta/opensmtpd[mta] )'
+  emerge.packages: virtual/mta
+  kit: gentoo
+  original.package.name: virtual/mta
+  original.package.version: 1-r2

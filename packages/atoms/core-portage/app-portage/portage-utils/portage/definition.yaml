@@ -1,0 +1,12 @@
+name: portage-utils-portage
+version: "0.92"
+category: app-portage
+requires:
+- name: portage-utils
+  version: "0.92"
+  category: app-portage
+labels:
+  emerge.packages: app-portage/portage-utils
+  kit: gentoo
+  original.package.name: app-portage/portage-utils
+  original.package.version: "0.92"

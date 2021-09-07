@@ -1,0 +1,16 @@
+name: portage
+version: "0"
+category: acct-user
+requires:
+- name: portage
+  version: '>=0'
+  category: acct-group
+description: 'System user: portage'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/portage
+  emerge.packages: acct-user/portage
+  kit: gentoo
+  original.package.name: acct-user/portage
+  original.package.version: "0"

@@ -1,0 +1,12 @@
+name: elt-patches-portage
+version: "20201205"
+category: app-portage
+requires:
+- name: elt-patches
+  version: "20201205"
+  category: app-portage
+labels:
+  emerge.packages: app-portage/elt-patches
+  kit: gentoo
+  original.package.name: app-portage/elt-patches
+  original.package.version: "20201205"

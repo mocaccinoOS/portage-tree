@@ -1,0 +1,11 @@
+name: nullmail
+version: "0"
+category: acct-group
+description: A group for the nullmailer
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/nullmail
+  kit: gentoo
+  original.package.name: acct-group/nullmail
+  original.package.version: "0"

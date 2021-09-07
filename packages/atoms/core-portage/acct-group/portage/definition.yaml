@@ -1,0 +1,11 @@
+name: portage
+version: "0"
+category: acct-group
+description: 'System group: portage'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/portage
+  kit: gentoo
+  original.package.name: acct-group/portage
+  original.package.version: "0"

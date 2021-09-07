@@ -1,0 +1,62 @@
+name: urllib3
+version: 1.26.6
+category: dev-python
+use_flags:
+- -brotli
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- -test
+- python_targets_python3_9
+requires:
+- name: PySocks
+  version: '>=0'
+  category: dev-python
+description: HTTP library with thread-safe connection pooling, file post, and more
+uri:
+- https://github.com/urllib3/urllib3
+license: MIT
+labels:
+  BDEPEND: test? ( python_targets_python3_8? ( >=dev-python/PySocks-1.5.8[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/PySocks-2.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    brotli? ( dev-python/brotlicffi[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) dev-python/brotlicffi[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/mock[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest-freezegun[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/trustme-0.5.3[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=www-servers/tornado-4.2.1[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_python3_9? ( >=dev-python/PySocks-1.5.8[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/PySocks-2.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    brotli? ( dev-python/brotlicffi[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) dev-python/brotlicffi[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/mock[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest-freezegun[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/trustme-0.5.3[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=www-servers/tornado-4.2.1[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_python3_10? ( >=dev-python/PySocks-1.5.8[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/PySocks-2.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    brotli? ( dev-python/brotlicffi[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) dev-python/brotlicffi[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/mock[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest-freezegun[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/trustme-0.5.3[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=www-servers/tornado-4.2.1[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[ssl(+)] ) python_targets_python3_8?
+    ( dev-lang/python:3.8[ssl(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[ssl(+)]
+    ) python_targets_python3_10? ( dev-lang/python:3.10[ssl(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  IUSE: brotli test python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+    python_targets_python3_10
+  RDEPEND: '>=dev-python/PySocks-1.5.8[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/PySocks-2.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    brotli? ( dev-python/brotlicffi[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[ssl(+)] ) python_targets_python3_8?
+    ( dev-lang/python:3.8[ssl(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[ssl(+)]
+    ) python_targets_python3_10? ( dev-lang/python:3.10[ssl(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]'
+  emerge.packages: dev-python/urllib3
+  kit: gentoo
+  original.package.name: dev-python/urllib3
+  original.package.version: 1.26.6

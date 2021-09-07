@@ -1,0 +1,12 @@
+name: certifi-portage
+version: "10001"
+category: dev-python
+requires:
+- name: certifi
+  version: "10001"
+  category: dev-python
+labels:
+  emerge.packages: dev-python/certifi
+  kit: gentoo
+  original.package.name: dev-python/certifi
+  original.package.version: 10001-r1

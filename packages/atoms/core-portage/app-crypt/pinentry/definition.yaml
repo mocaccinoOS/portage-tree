@@ -1,0 +1,45 @@
+name: pinentry
+version: 1.1.0
+category: app-crypt
+use_flags:
+- -gnome-keyring
+- -gtk
+- -qt5
+- caps
+- ncurses
+requires:
+- name: eselect-pinentry
+  version: '>=0'
+  category: app-eselect
+- name: libassuan
+  version: '>=0'
+  category: dev-libs
+- name: libgcrypt
+  version: '>=0'
+  category: dev-libs
+- name: libcap
+  version: '>=0'
+  category: sys-libs
+- name: ncurses
+  version: '>=0'
+  category: sys-libs
+description: Simple passphrase entry dialogs which utilize the Assuan protocol
+uri:
+- https://gnupg.org/aegypten2/index.html
+license: GPL-2
+labels:
+  BDEPEND: sys-devel/gettext virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  DEPEND: app-eselect/eselect-pinentry >=dev-libs/libassuan-2.1 >=dev-libs/libgcrypt-1.6.3
+    >=dev-libs/libgpg-error-1.17 caps? ( sys-libs/libcap ) gnome-keyring? ( app-crypt/libsecret
+    ) ncurses? ( sys-libs/ncurses:0= ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5
+    )
+  IUSE: caps emacs gnome-keyring gtk ncurses qt5
+  RDEPEND: app-eselect/eselect-pinentry >=dev-libs/libassuan-2.1 >=dev-libs/libgcrypt-1.6.3
+    >=dev-libs/libgpg-error-1.17 caps? ( sys-libs/libcap ) gnome-keyring? ( app-crypt/libsecret
+    ) ncurses? ( sys-libs/ncurses:0= ) qt5? ( dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5
+    ) gtk? ( app-crypt/gcr )
+  emerge.packages: app-crypt/pinentry
+  kit: gentoo
+  original.package.name: app-crypt/pinentry
+  original.package.version: 1.1.0-r4

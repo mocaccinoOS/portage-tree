@@ -1,0 +1,59 @@
+name: requests
+version: 2.25.1
+category: dev-python
+use_flags:
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- -test
+- python_targets_python3_9
+- socks5
+requires:
+- name: certifi
+  version: '>=0'
+  category: dev-python
+- name: chardet
+  version: '>=0'
+  category: dev-python
+- name: idna
+  version: '>=0'
+  category: dev-python
+- name: urllib3
+  version: '>=0'
+  category: dev-python
+description: HTTP library for human beings
+uri:
+- https://requests.readthedocs.io/
+license: Apache-2.0
+labels:
+  BDEPEND: test? ( dev-python/pytest-httpbin[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest-mock[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/PySocks-1.5.6[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) test? ( >=dev-python/certifi-2017.4.17[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/chardet-3.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/chardet-5[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/idna-2.5[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/idna-4[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/urllib3-1.27[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    socks5? ( >=dev-python/PySocks-1.5.6[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) >=dev-python/pytest-4.5.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)] ) python_targets_python3_8?
+    ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)]
+    ) python_targets_python3_10? ( dev-lang/python:3.10[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  IUSE: socks5 test python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+    python_targets_python3_10
+  RDEPEND: '>=dev-python/certifi-2017.4.17[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/chardet-3.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/chardet-5[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/idna-2.5[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/idna-4[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    <dev-python/urllib3-1.27[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    socks5? ( >=dev-python/PySocks-1.5.6[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)] ) python_targets_python3_8?
+    ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)]
+    ) python_targets_python3_10? ( dev-lang/python:3.10[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]'
+  emerge.packages: dev-python/requests
+  kit: gentoo
+  original.package.name: dev-python/requests
+  original.package.version: 2.25.1-r2

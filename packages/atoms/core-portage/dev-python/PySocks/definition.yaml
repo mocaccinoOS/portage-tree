@@ -1,0 +1,32 @@
+name: PySocks
+version: 1.7.1
+category: dev-python
+use_flags:
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- python_targets_python3_9
+requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.9
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+description: SOCKS client module
+uri:
+- https://github.com/Anorov/PySocks https://pypi.org/project/PySocks/
+license: BSD
+labels:
+  BDEPEND: python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10?
+    ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  IUSE: python_targets_pypy3 python_targets_python3_8 python_targets_python3_9 python_targets_python3_10
+  RDEPEND: python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10?
+    ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  emerge.packages: dev-python/PySocks
+  kit: gentoo
+  original.package.name: dev-python/PySocks
+  original.package.version: 1.7.1-r1

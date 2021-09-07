@@ -1,0 +1,11 @@
+name: unbound
+version: "0"
+category: acct-group
+description: unbound program group
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/unbound
+  kit: gentoo
+  original.package.name: acct-group/unbound
+  original.package.version: 0-r1

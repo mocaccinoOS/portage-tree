@@ -1,0 +1,12 @@
+name: fstrm-portage
+version: 0.6.1
+category: dev-libs
+requires:
+- name: fstrm
+  version: 0.6.1
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/fstrm
+  kit: gentoo
+  original.package.name: dev-libs/fstrm
+  original.package.version: 0.6.1

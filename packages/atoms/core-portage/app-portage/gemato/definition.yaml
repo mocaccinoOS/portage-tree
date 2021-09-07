@@ -1,0 +1,41 @@
+name: gemato
+version: "16.2"
+category: app-portage
+use_flags:
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- -test
+- gpg
+- python_targets_python3_9
+requires:
+- name: gnupg
+  version: '>=0'
+  category: app-crypt
+- name: requests
+  version: '>=0'
+  category: dev-python
+description: Stand-alone Manifest generation & verification tool
+uri:
+- https://github.com/mgorny/gemato
+license: BSD-2
+labels:
+  BDEPEND: test? ( >=app-crypt/gnupg-2.2.20-r1 >=dev-python/pytest-5[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/requests[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/responses[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) test? ( gpg? ( >=app-crypt/gnupg-2.2.20-r1 dev-python/requests[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) >=dev-python/pytest-4.5.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)] ) python_targets_python3_8?
+    ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)]
+    ) python_targets_python3_10? ( dev-lang/python:3.10[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  IUSE: +gpg tools test python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+    python_targets_python3_10
+  RDEPEND: gpg? ( >=app-crypt/gnupg-2.2.20-r1 dev-python/requests[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)] ) python_targets_python3_8?
+    ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9? ( dev-lang/python:3.9[threads(+)]
+    ) python_targets_python3_10? ( dev-lang/python:3.10[threads(+)] ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  emerge.packages: app-portage/gemato
+  kit: gentoo
+  original.package.name: app-portage/gemato
+  original.package.version: "16.2"

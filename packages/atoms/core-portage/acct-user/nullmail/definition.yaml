@@ -1,0 +1,16 @@
+name: nullmail
+version: "0"
+category: acct-user
+requires:
+- name: nullmail
+  version: '>=0'
+  category: acct-group
+description: A user for the nullmailer
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/nullmail
+  emerge.packages: acct-user/nullmail
+  kit: gentoo
+  original.package.name: acct-user/nullmail
+  original.package.version: "0"

@@ -1,0 +1,36 @@
+name: chardet
+version: 4.0.0
+category: dev-python
+use_flags:
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- -test
+- python_targets_python3_9
+requires:
+- name: python
+  version: '>=0'
+  category: dev-lang-3.9
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+description: Universal encoding detector
+uri:
+- https://github.com/chardet/chardet https://pypi.org/project/chardet/
+license: LGPL-2.1
+labels:
+  BDEPEND: test? ( dev-python/hypothesis[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) test? ( >=dev-python/pytest-4.5.0[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10?
+    ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  IUSE: test python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+    python_targets_python3_10
+  RDEPEND: python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10?
+    ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  emerge.packages: dev-python/chardet
+  kit: gentoo
+  original.package.name: dev-python/chardet
+  original.package.version: 4.0.0

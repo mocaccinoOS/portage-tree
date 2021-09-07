@@ -1,0 +1,37 @@
+name: certifi
+version: "10001"
+category: dev-python
+use_flags:
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- -test
+- python_targets_python3_9
+requires:
+- name: ca-certificates
+  version: '>=0'
+  category: app-misc
+- name: python
+  version: '>=0'
+  category: dev-lang-3.9
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+description: Thin replacement for certifi using system certificate store
+uri:
+- https://github.com/mgorny/certifi-shim/ https://pypi.org/project/certifi/
+license: CC0-1.0
+labels:
+  BDEPEND: test? ( app-misc/ca-certificates dev-python/unittest-or-fail[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0= ) python_targets_python3_8?
+    ( dev-lang/python:3.8 ) python_targets_python3_9? ( dev-lang/python:3.9 ) python_targets_python3_10?
+    ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  IUSE: test python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+    python_targets_python3_10
+  RDEPEND: app-misc/ca-certificates python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=
+    ) python_targets_python3_8? ( dev-lang/python:3.8 ) python_targets_python3_9?
+    ( dev-lang/python:3.9 ) python_targets_python3_10? ( dev-lang/python:3.10 ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  emerge.packages: dev-python/certifi
+  kit: gentoo
+  original.package.name: dev-python/certifi
+  original.package.version: 10001-r1

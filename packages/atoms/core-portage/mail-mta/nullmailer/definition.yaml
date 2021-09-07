@@ -1,0 +1,38 @@
+name: nullmailer
+version: "2.2"
+category: mail-mta
+use_flags:
+- -test
+- ssl
+requires:
+- name: nullmail
+  version: '>=0'
+  category: acct-user
+- name: gnutls
+  version: '>=0'
+  category: net-libs
+- name: shadow
+  version: '>=0'
+  category: sys-apps
+- name: logger
+  version: '>=0'
+  category: virtual
+description: Simple relay-only local mail transport agent
+uri:
+- http://untroubled.org/nullmailer/ https://github.com/bruceg/nullmailer
+license: GPL-2
+labels:
+  BDEPEND: acct-group/nullmail acct-user/nullmail sys-devel/gnuconfig >=app-portage/elt-patches-20170815
+    || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+    virtual/pkgconfig
+  DEPEND: ssl? ( net-libs/gnutls:0= ) test? ( sys-apps/ucspi-tcp[ipv6] sys-process/daemontools
+    )
+  IUSE: ssl test
+  RDEPEND: acct-group/nullmail acct-user/nullmail virtual/logger sys-apps/shadow ssl?
+    ( net-libs/gnutls:0= ) !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail
+    !mail-mta/msmtp[mta(+)] !mail-mta/netqmail !mail-mta/opensmtpd[mta(+)] !mail-mta/postfix
+    !mail-mta/qmail-ldap !mail-mta/sendmail !mail-mta/ssmtp[mta(+)]
+  emerge.packages: mail-mta/nullmailer
+  kit: gentoo
+  original.package.name: mail-mta/nullmailer
+  original.package.version: 2.2-r2

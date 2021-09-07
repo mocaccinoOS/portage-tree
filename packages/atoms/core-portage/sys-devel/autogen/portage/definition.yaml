@@ -1,0 +1,12 @@
+name: autogen-portage
+version: 5.18.16
+category: sys-devel
+requires:
+- name: autogen
+  version: 5.18.16
+  category: sys-devel
+labels:
+  emerge.packages: sys-devel/autogen
+  kit: gentoo
+  original.package.name: sys-devel/autogen
+  original.package.version: 5.18.16-r1

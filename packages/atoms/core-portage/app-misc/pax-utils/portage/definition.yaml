@@ -1,0 +1,12 @@
+name: pax-utils-portage
+version: 1.3.2
+category: app-misc
+requires:
+- name: pax-utils
+  version: 1.3.2
+  category: app-misc
+labels:
+  emerge.packages: app-misc/pax-utils
+  kit: gentoo
+  original.package.name: app-misc/pax-utils
+  original.package.version: 1.3.2

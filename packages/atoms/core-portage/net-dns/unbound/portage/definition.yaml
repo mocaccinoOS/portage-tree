@@ -1,0 +1,12 @@
+name: unbound-portage
+version: 1.13.1
+category: net-dns
+requires:
+- name: unbound
+  version: 1.13.1
+  category: net-dns
+labels:
+  emerge.packages: net-dns/unbound
+  kit: gentoo
+  original.package.name: net-dns/unbound
+  original.package.version: 1.13.1-r1

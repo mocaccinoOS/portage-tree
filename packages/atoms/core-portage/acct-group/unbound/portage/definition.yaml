@@ -1,0 +1,12 @@
+name: unbound-portage
+version: "0"
+category: acct-group
+requires:
+- name: unbound
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/unbound
+  kit: gentoo
+  original.package.name: acct-group/unbound
+  original.package.version: 0-r1

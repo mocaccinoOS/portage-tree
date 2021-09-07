@@ -1,0 +1,13 @@
+name: dnssec-root
+version: "20181220"
+category: net-dns
+description: The DNSSEC root key(s)
+uri:
+- https://www.iana.org/dnssec/
+license: public-domain
+labels:
+  BDEPEND: '>=dev-perl/XML-XPath-1.420.0'
+  emerge.packages: net-dns/dnssec-root
+  kit: gentoo
+  original.package.name: net-dns/dnssec-root
+  original.package.version: 20181220-r1

@@ -1,0 +1,12 @@
+name: nullmail-portage
+version: "0"
+category: acct-user
+requires:
+- name: nullmail
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/nullmail
+  kit: gentoo
+  original.package.name: acct-user/nullmail
+  original.package.version: "0"
