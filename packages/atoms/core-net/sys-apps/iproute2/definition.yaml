@@ -2,20 +2,17 @@ name: iproute2
 version: 5.13.0
 category: sys-apps
 use_flags:
+- -elf
+- -libbsd
 - -minimal
 - -selinux
 - atm
 - berkdb
 - bpf
 - caps
-- elf
 - iptables
-- libbsd
 requires:
 - name: libbpf
-  version: '>=0'
-  category: dev-libs
-- name: libbsd
   version: '>=0'
   category: dev-libs
 - name: linux-atm
