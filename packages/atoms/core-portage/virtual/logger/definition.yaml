@@ -1,10 +1,6 @@
 name: logger
 version: "0"
 category: virtual
-requires:
-- name: metalog
-  version: '>=0'
-  category: app-admin
 description: Virtual for system loggers
 uri:
 - ""

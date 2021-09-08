@@ -47,6 +47,78 @@ build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
 artefacts:
+
+- tree: packages/atoms/core-portage
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: dev-libs-1
+          name: libusb
+  replacements:
+    buildtime_deps:
+      ignore:
+        - name: base-core
+          category: seed
+  packages:
+    - virtual/libusb:1
+
+- tree: packages/atoms/core-portage
+  ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - name: base-core
+          category: seed
+  replacements:
+    runtime_deps:
+      ignore:
+        - name: metalog
+          category: app-admin
+        - name: rsyslog
+          category: app-admin
+        - name: socklog
+          category: app-admin
+        - name: sysklogd
+          category: app-admin
+        - name: syslog-ng
+          category: app-admin
+        - name: busybox
+          category: sys-apps
+  packages:
+    - virtual/logger
+
+- tree: packages/atoms/core-portage
+  mutations:
+    buildtime_deps:
+      packages:
+        - name: base-core
+          category: seed
+  replacements:
+    runtime_deps:
+      ignore:
+        - name: msmtp
+          category: mail-mta
+        - name: ssmtp
+          category: mail-mta
+        - name: courier
+          category: mail-mta
+        - name: emsmtp
+          category: mail-mta
+        - name: exim
+          category: mail-mta
+        - name: netqmail
+          category: mail-mta
+        - name: notqmail
+          category: mail-mta
+        - name: postfix
+          category: mail-mta
+        - name: sendmail
+          category: mail-mta
+        - name: opensmtpd
+          category: mail-mta
+  packages:
+    - virtual/mta
+
 - tree: packages/atoms/core-portage
   ignore_build_deps: true
   mutations:
@@ -68,6 +140,8 @@ artefacts:
     - app-portage/portage-utils:0
     - sys-apps/portage:0
     - sys-apps/sandbox:0
+    - acct-user/nullmail
+    - acct-group/nullmail
 
 build_layers:
   - layer:
