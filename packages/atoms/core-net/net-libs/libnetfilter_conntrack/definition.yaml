@@ -1,0 +1,23 @@
+name: libnetfilter_conntrack
+version: 1.0.8
+category: net-libs
+requires:
+- name: libmnl
+  version: '>=0'
+  category: net-libs
+- name: libnfnetlink
+  version: '>=0'
+  category: net-libs
+description: Programming interface (API) to the in-kernel connection tracking state
+  table
+uri:
+- https://www.netfilter.org/projects/libnetfilter_conntrack/
+license: GPL-2
+labels:
+  DEPEND: '>=net-libs/libmnl-1.0.3 >=net-libs/libnfnetlink-1.0.0 virtual/pkgconfig'
+  IUSE: static-libs kernel_linux
+  RDEPEND: '>=net-libs/libmnl-1.0.3 >=net-libs/libnfnetlink-1.0.0'
+  emerge.packages: net-libs/libnetfilter_conntrack
+  kit: gentoo
+  original.package.name: net-libs/libnetfilter_conntrack
+  original.package.version: 1.0.8

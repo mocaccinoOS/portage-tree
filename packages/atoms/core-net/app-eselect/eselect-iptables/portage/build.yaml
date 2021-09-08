@@ -1,0 +1,9 @@
+package_dir: /pkgdir/{{ .Values.name | replace "-portage" "" }}
+includes:
+- ^/var/db/pkg
+- ^/var/db$
+- ^/var$
+requires:
+- name: eselect-iptables
+  version: "20200508"
+  category: app-eselect

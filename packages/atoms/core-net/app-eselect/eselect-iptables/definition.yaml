@@ -1,0 +1,17 @@
+name: eselect-iptables
+version: "20200508"
+category: app-eselect
+requires:
+- name: eselect
+  version: '>=0'
+  category: app-admin
+description: Manages the {,/usr}/sbin/iptables symlink
+uri:
+- https://wiki.gentoo.org/wiki/No_homepage
+license: GPL-2
+labels:
+  RDEPEND: app-admin/eselect
+  emerge.packages: app-eselect/eselect-iptables
+  kit: gentoo
+  original.package.name: app-eselect/eselect-iptables
+  original.package.version: "20200508"

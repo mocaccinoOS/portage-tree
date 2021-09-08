@@ -1,0 +1,45 @@
+name: iptables
+version: 1.8.7
+category: net-firewall
+use_flags:
+- conntrack
+- netlink
+- nftables
+- pcap
+requires:
+- name: eselect-iptables
+  version: '>=0'
+  category: app-eselect
+- name: libnetfilter_conntrack
+  version: '>=0'
+  category: net-libs
+- name: libnftnl
+  version: '>=0'
+  category: net-libs
+- name: libpcap
+  version: '>=0'
+  category: net-libs
+- name: ethertypes
+  version: '>=0'
+  category: net-misc
+description: Linux kernel (2.4+) firewall, NAT and packet mangling tools
+uri:
+- https://www.netfilter.org/projects/iptables/
+license: GPL-2
+labels:
+  BDEPEND: '>=app-eselect/eselect-iptables-20200508 app-eselect/eselect-iptables virtual/pkgconfig
+    nftables? ( sys-devel/flex virtual/yacc ) virtual/pkgconfig sys-devel/gnuconfig
+    >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 )
+    >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4'
+  DEPEND: conntrack? ( >=net-libs/libnetfilter_conntrack-1.0.6 ) netlink? ( net-libs/libnfnetlink
+    ) nftables? ( >=net-libs/libmnl-1.0:0= >=net-libs/libnftnl-1.1.6:0= ) pcap? (
+    net-libs/libpcap ) virtual/os-headers >=sys-kernel/linux-headers-4.4:0
+  IUSE: conntrack ipv6 netlink nftables pcap static-libs split-usr
+  RDEPEND: conntrack? ( >=net-libs/libnetfilter_conntrack-1.0.6 ) netlink? ( net-libs/libnfnetlink
+    ) nftables? ( >=net-libs/libmnl-1.0:0= >=net-libs/libnftnl-1.1.6:0= ) pcap? (
+    net-libs/libpcap ) >=app-eselect/eselect-iptables-20200508 nftables? ( net-misc/ethertypes
+    ) !<net-firewall/ebtables-2.0.11-r1 !<net-firewall/arptables-0.0.5-r1
+  emerge.packages: net-firewall/iptables
+  kit: gentoo
+  original.package.name: net-firewall/iptables
+  original.package.version: 1.8.7

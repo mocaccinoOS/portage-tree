@@ -1,0 +1,14 @@
+name: linux-atm
+version: 2.5.2
+category: net-dialup
+description: Tools for ATM
+uri:
+- http://linux-atm.sourceforge.net/
+license: GPL-2
+labels:
+  DEPEND: virtual/yacc >=app-portage/elt-patches-20170815
+  IUSE: static-libs kernel_linux
+  emerge.packages: net-dialup/linux-atm
+  kit: gentoo
+  original.package.name: net-dialup/linux-atm
+  original.package.version: 2.5.2

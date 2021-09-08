@@ -1,0 +1,12 @@
+name: libbpf-portage
+version: 0.4.0
+category: dev-libs
+requires:
+- name: libbpf
+  version: 0.4.0
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/libbpf
+  kit: gentoo
+  original.package.name: dev-libs/libbpf
+  original.package.version: 0.4.0

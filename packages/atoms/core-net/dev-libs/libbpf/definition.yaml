@@ -1,0 +1,19 @@
+name: libbpf
+version: 0.4.0
+category: dev-libs
+requires:
+- name: libelf
+  version: '>=0'
+  category: virtual
+description: Stand-alone build of libbpf from the Linux kernel
+uri:
+- https://github.com/libbpf/libbpf
+license: GPL-2 LGPL-2.1 BSD-2
+labels:
+  DEPEND: virtual/libelf sys-kernel/linux-headers
+  IUSE: +static-libs
+  RDEPEND: virtual/libelf
+  emerge.packages: dev-libs/libbpf
+  kit: gentoo
+  original.package.name: dev-libs/libbpf
+  original.package.version: 0.4.0

@@ -1,0 +1,51 @@
+name: libpcap
+version: 1.10.1
+category: net-libs
+use_flags:
+- -bluetooth
+- -rdma
+- -verify-sig
+- dbus
+- netlink
+- remote
+- usb
+requires:
+- name: libnl
+  version: '>=0'
+  category: dev-libs-3
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+- name: libcrypt
+  version: '>=0'
+  category: virtual
+- name: libusb
+  version: '>=0'
+  category: virtual-1
+description: A system-independent library for user-level network packet capture
+uri:
+- https://www.tcpdump.org/ https://github.com/the-tcpdump-group/libpcap
+license: BSD
+labels:
+  BDEPEND: sys-devel/flex virtual/yacc dbus? ( virtual/pkgconfig ) verify-sig? ( app-crypt/openpgp-keys-tcpdump
+    ) sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16
+    ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 verify-sig? ( app-crypt/gnupg
+    >=app-portage/gemato-16 )
+  DEPEND: bluetooth? ( net-wireless/bluez:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) dbus? ( sys-apps/dbus[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) netlink? ( dev-libs/libnl:3[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) remote? ( virtual/libcrypt:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) rdma? ( sys-cluster/rdma-core ) usb? ( virtual/libusb:1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    )
+  IUSE: bluetooth dbus netlink rdma remote static-libs usb yydebug abi_x86_32 abi_x86_64
+    abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64 verify-sig
+  RDEPEND: bluetooth? ( net-wireless/bluez:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) dbus? ( sys-apps/dbus[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) netlink? ( dev-libs/libnl:3[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) remote? ( virtual/libcrypt:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) rdma? ( sys-cluster/rdma-core ) usb? ( virtual/libusb:1[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    )
+  emerge.packages: net-libs/libpcap
+  kit: gentoo
+  original.package.name: net-libs/libpcap
+  original.package.version: 1.10.1-r1
