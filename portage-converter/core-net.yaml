@@ -100,8 +100,10 @@ artefacts:
       # for rsync
       - system-zlib
   packages:
-    - net-misc/rsync
     - dev-libs/xxhash
+    - net-libs/libnfnetlink
+    - net-misc/rsync
+    - net-misc/ethertypes
 
 build_layers:
   - layer:
