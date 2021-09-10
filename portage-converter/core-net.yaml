@@ -63,6 +63,30 @@ artefacts:
       - libbsd
   packages:
     - sys-apps/iproute2
+    - net-misc/wget
+    - sys-apps/net-tools
+
+- tree: packages/atoms/core-net
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
+  uses:
+    disabled:
+      - apidoc
+      - doc
+      - build
+      - test
+      - gentoo-dev
+      - static
+      - elf
+      - libbsd
+      # for rsync
+      - system-zlib
+  packages:
+    - net-misc/rsync
+    - dev-libs/xxhash
 
 build_layers:
   - layer:

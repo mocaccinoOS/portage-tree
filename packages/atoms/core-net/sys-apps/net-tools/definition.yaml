@@ -1,0 +1,20 @@
+name: net-tools
+version: "2.10"
+category: sys-apps
+use_flags:
+- -selinux
+- hostname
+description: Standard Linux networking tools
+uri:
+- http://net-tools.sourceforge.net/
+license: GPL-2
+labels:
+  BDEPEND: selinux? ( virtual/pkgconfig ) app-arch/xz-utils
+  DEPEND: selinux? ( sys-libs/libselinux )
+  IUSE: +arp +hostname ipv6 nis nls plipconfig selinux slattach static
+  RDEPEND: selinux? ( sys-libs/libselinux ) hostname? ( !sys-apps/coreutils[hostname]
+    )
+  emerge.packages: sys-apps/net-tools
+  kit: gentoo
+  original.package.name: sys-apps/net-tools
+  original.package.version: "2.10"

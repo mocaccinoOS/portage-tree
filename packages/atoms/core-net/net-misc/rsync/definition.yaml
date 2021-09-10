@@ -1,0 +1,54 @@
+name: rsync
+version: 3.2.3
+category: net-misc
+use_flags:
+- -system-zlib
+- acl
+- iconv
+- kernel_linux
+- lz4
+- ssl
+- xattr
+- xxhash
+- zstd
+requires:
+- name: zstd
+  version: '>=0'
+  category: app-arch
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: popt
+  version: '>=0'
+  category: dev-libs
+- name: xxhash
+  version: '>=0'
+  category: dev-libs
+- name: attr
+  version: '>=0'
+  category: sys-apps
+- name: acl
+  version: '>=0'
+  category: virtual
+- name: libiconv
+  version: '>=0'
+  category: virtual
+description: File transfer program to keep remote files into sync
+uri:
+- https://rsync.samba.org/
+license: GPL-3
+labels:
+  BDEPEND: virtual/pkgconfig
+  DEPEND: acl? ( virtual/acl ) lz4? ( app-arch/lz4 ) ssl? ( dev-libs/openssl:0= )
+    system-zlib? ( sys-libs/zlib ) xattr? ( kernel_linux? ( sys-apps/attr ) ) xxhash?
+    ( dev-libs/xxhash ) zstd? ( >=app-arch/zstd-1.4 ) >=dev-libs/popt-1.5 iconv? (
+    virtual/libiconv )
+  IUSE: acl examples iconv ipv6 lz4 ssl stunnel system-zlib xattr xxhash zstd
+  RDEPEND: acl? ( virtual/acl ) lz4? ( app-arch/lz4 ) ssl? ( dev-libs/openssl:0= )
+    system-zlib? ( sys-libs/zlib ) xattr? ( kernel_linux? ( sys-apps/attr ) ) xxhash?
+    ( dev-libs/xxhash ) zstd? ( >=app-arch/zstd-1.4 ) >=dev-libs/popt-1.5 iconv? (
+    virtual/libiconv )
+  emerge.packages: net-misc/rsync
+  kit: gentoo
+  original.package.name: net-misc/rsync
+  original.package.version: 3.2.3-r4
