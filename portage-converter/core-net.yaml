@@ -63,8 +63,23 @@ artefacts:
       - libbsd
   packages:
     - sys-apps/iproute2
-    - net-misc/wget
     - sys-apps/net-tools
+
+artefacts:
+- tree: packages/atoms/core-net
+  uses:
+    disabled:
+      - doc
+      - build
+      - test
+      - gentoo-dev
+      - static
+      - metalink
+      - cookie_check
+      - idn
+      - uuid
+  packages:
+    - net-misc/wget
 
 - tree: packages/atoms/core-net
   mutations:
