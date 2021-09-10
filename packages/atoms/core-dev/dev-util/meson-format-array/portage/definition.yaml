@@ -1,0 +1,12 @@
+name: meson-format-array-portage
+version: "0"
+category: dev-util
+requires:
+- name: meson-format-array
+  version: "0"
+  category: dev-util
+labels:
+  emerge.packages: dev-util/meson-format-array
+  kit: gentoo
+  original.package.name: dev-util/meson-format-array
+  original.package.version: "0"

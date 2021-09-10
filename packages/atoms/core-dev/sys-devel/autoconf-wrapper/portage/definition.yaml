@@ -1,0 +1,12 @@
+name: autoconf-wrapper-portage
+version: "15"
+category: sys-devel
+requires:
+- name: autoconf-wrapper
+  version: "15"
+  category: sys-devel
+labels:
+  emerge.packages: sys-devel/autoconf-wrapper
+  kit: gentoo
+  original.package.name: sys-devel/autoconf-wrapper
+  original.package.version: "15"

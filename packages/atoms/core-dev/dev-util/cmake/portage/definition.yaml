@@ -1,0 +1,12 @@
+name: cmake-portage
+version: 3.20.5
+category: dev-util
+requires:
+- name: cmake
+  version: 3.20.5
+  category: dev-util
+labels:
+  emerge.packages: dev-util/cmake
+  kit: gentoo
+  original.package.name: dev-util/cmake
+  original.package.version: 3.20.5

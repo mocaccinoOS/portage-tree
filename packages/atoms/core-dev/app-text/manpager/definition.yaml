@@ -1,0 +1,12 @@
+name: manpager
+version: "1"
+category: app-text
+description: Enable colorization of man pages
+uri:
+- https://wiki.gentoo.org/wiki/No_homepage
+license: GPL-2
+labels:
+  emerge.packages: app-text/manpager
+  kit: gentoo
+  original.package.name: app-text/manpager
+  original.package.version: "1"

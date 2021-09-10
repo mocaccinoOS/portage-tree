@@ -1,0 +1,12 @@
+name: autoconf-archive-portage
+version: 2021.02.19
+category: sys-devel
+requires:
+- name: autoconf-archive
+  version: 2021.02.19
+  category: sys-devel
+labels:
+  emerge.packages: sys-devel/autoconf-archive
+  kit: gentoo
+  original.package.name: sys-devel/autoconf-archive
+  original.package.version: 2021.02.19

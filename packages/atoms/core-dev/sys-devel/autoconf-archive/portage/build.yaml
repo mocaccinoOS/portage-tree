@@ -1,0 +1,9 @@
+package_dir: /pkgdir/{{ .Values.name | replace "-portage" "" }}
+includes:
+- ^/var/db/pkg
+- ^/var/db$
+- ^/var$
+requires:
+- name: autoconf-archive
+  version: 2021.02.19
+  category: sys-devel

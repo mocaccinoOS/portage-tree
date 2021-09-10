@@ -1,0 +1,22 @@
+name: m4
+version: 1.4.19
+category: sys-devel
+use_flags:
+- nls
+requires:
+- name: gettext
+  version: '>=0'
+  category: sys-devel
+description: GNU macro processor
+uri:
+- https://www.gnu.org/software/m4/m4.html
+license: GPL-3
+labels:
+  BDEPEND: app-arch/xz-utils nls? ( sys-devel/gettext )
+  DEPEND: virtual/libiconv nls? ( sys-devel/gettext virtual/libintl )
+  IUSE: examples nls
+  RDEPEND: virtual/libiconv nls? ( sys-devel/gettext virtual/libintl )
+  emerge.packages: sys-devel/m4
+  kit: gentoo
+  original.package.name: sys-devel/m4
+  original.package.version: 1.4.19

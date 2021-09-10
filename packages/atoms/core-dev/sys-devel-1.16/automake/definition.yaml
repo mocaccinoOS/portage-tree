@@ -1,0 +1,31 @@
+name: automake
+version: 1.16.3
+category: sys-devel-1.16
+use_flags:
+- -test
+requires:
+- name: autoconf
+  version: '>=0'
+  category: sys-devel-2.69
+- name: automake-wrapper
+  version: '>=0'
+  category: sys-devel
+- name: gnuconfig
+  version: '>=0'
+  category: sys-devel
+description: Used to generate Makefile.in from Makefile.am
+uri:
+- https://www.gnu.org/software/automake/
+license: GPL-2
+labels:
+  BDEPEND: app-arch/gzip sys-apps/help2man test? ( || ( dev-lang/python:3.10 dev-lang/python:3.9
+    dev-lang/python:3.8 ) )
+  DEPEND: dev-lang/perl >=sys-devel/automake-wrapper-11 >=sys-devel/autoconf-2.69:*
+    sys-devel/gnuconfig
+  IUSE: test
+  RDEPEND: dev-lang/perl >=sys-devel/automake-wrapper-11 >=sys-devel/autoconf-2.69:*
+    sys-devel/gnuconfig
+  emerge.packages: sys-devel/automake:1.16
+  kit: gentoo
+  original.package.name: sys-devel/automake
+  original.package.version: 1.16.3-r1

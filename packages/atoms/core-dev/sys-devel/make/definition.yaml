@@ -1,0 +1,26 @@
+name: make
+version: "4.3"
+category: sys-devel
+use_flags:
+- guile
+- nls
+requires:
+- name: guile
+  version: '>=0'
+  category: dev-scheme-12
+- name: libintl
+  version: '>=0'
+  category: virtual
+description: Standard tool to compile source trees
+uri:
+- https://www.gnu.org/software/make/make.html
+license: GPL-3+
+labels:
+  BDEPEND: nls? ( sys-devel/gettext )
+  DEPEND: guile? ( >=dev-scheme/guile-1.8:= )
+  IUSE: guile nls static
+  RDEPEND: guile? ( >=dev-scheme/guile-1.8:= ) nls? ( virtual/libintl )
+  emerge.packages: sys-devel/make
+  kit: gentoo
+  original.package.name: sys-devel/make
+  original.package.version: "4.3"

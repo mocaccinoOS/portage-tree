@@ -1,0 +1,12 @@
+name: gnuconfig-portage
+version: "20210107"
+category: sys-devel
+requires:
+- name: gnuconfig
+  version: "20210107"
+  category: sys-devel
+labels:
+  emerge.packages: sys-devel/gnuconfig
+  kit: gentoo
+  original.package.name: sys-devel/gnuconfig
+  original.package.version: "20210107"

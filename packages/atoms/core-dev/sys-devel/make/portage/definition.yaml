@@ -1,0 +1,12 @@
+name: make-portage
+version: "4.3"
+category: sys-devel
+requires:
+- name: make
+  version: "4.3"
+  category: sys-devel
+labels:
+  emerge.packages: sys-devel/make
+  kit: gentoo
+  original.package.name: sys-devel/make
+  original.package.version: "4.3"
