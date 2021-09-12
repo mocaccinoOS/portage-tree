@@ -1,0 +1,53 @@
+category: toolchain
+name: core-net
+version: "1"
+description: "Virtul package to install portage meta data of the core-net packages"
+requires:
+  - name: eselect-iptables-portage
+    category: app-eselect
+    version: '>=0'
+  - name: libnl-portage
+    category: dev-libs-3
+    version: '>=0'
+  - name: libbpf-portage
+    category: dev-libs
+    version: '>=0'
+  - name: xxhash-portage
+    category: dev-libs
+    version: '>=0'
+  - name: linux-atm-portage
+    category: net-dialup
+    version: '>=0'
+  - name: iptables-portage
+    category: net-firewall
+    version: '>=0'
+  - name: libmnl-portage
+    category: net-libs
+    version: '>=0'
+  - name: libnetfilter_conntrack-portage
+    category: net-libs
+    version: '>=0'
+  - name: libnfnetlink-portage
+    category: net-libs
+    version: '>=0'
+  - name: libnftnl-portage
+    category: net-libs
+    version: '>=0'
+  - name: libpcap-portage
+    category: net-libs
+    version: '>=0'
+  - name: ethertypes-portage
+    category: net-misc
+    version: '>=0'
+  - name: rsync-portage
+    category: net-misc
+    version: '>=0'
+  - name: wget-portage
+    category: net-misc
+    version: '>=0'
+  - name: iproute2-portage
+    category: sys-apps
+    version: '>=0'
+  - name: net-tools-portage
+    category: sys-apps
+    version: '>=0'
