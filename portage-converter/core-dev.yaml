@@ -82,6 +82,7 @@ artefacts:
     - sys-devel/m4:0
     - sys-devel/make:0
     - sys-devel/patch:0
+    - sys-devel/gcc-config:0
 
 build_layers:
   - layer:
