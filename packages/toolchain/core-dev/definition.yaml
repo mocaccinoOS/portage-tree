@@ -1,0 +1,95 @@
+category: toolchain
+name: core-dev
+version: "1"
+description: "Virtul package to install portage meta data of the core-dev packages"
+requires:
+  - name: rhash-portage
+    category: app-crypt
+    version: '>=0'
+  - name: mime-types-portage
+    category: app-misc
+    version: '>=0'
+  - name: manpager-portage
+    category: app-text
+    version: '>=0'
+  - name: opensp-portage
+    category: app-text
+    version: '>=0'
+  - name: po4a-portage
+    category: app-text
+    version: '>=0'
+  - name: libuv-portage
+    category: dev-libs
+    version: '>=0'
+  - name: Text-Unidecode-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Unicode-EastAsianWidth-portage
+    category: dev-perl
+    version: '>=0'
+  - name: libintl-perl-portage
+    category: dev-perl
+    version: '>=0'
+  - name: boost-build-portage
+    category: dev-util
+    version: '>=0'
+  - name: cmake-portage
+    category: dev-util
+    version: '>=0'
+  - name: meson-portage
+    category: dev-util
+    version: '>=0'
+  - name: meson-format-array-portage
+    category: dev-util
+    version: '>=0'
+  - name: ninja-portage
+    category: dev-util
+    version: '>=0'
+  - name: texinfo-portage
+    category: sys-apps
+    version: '>=0'
+  - name: automake-portage
+    category: sys-devel-1.16
+    version: '>=0'
+  - name: autoconf-portage
+    category: sys-devel-2.1
+    version: '>=0'
+  - name: binutils-portage
+    category: sys-devel-2.35
+    version: '>=0'
+  - name: autoconf-portage
+    category: sys-devel-2.69
+    version: '>=0'
+  - name: libtool-portage
+    category: sys-devel-2
+    version: '>=0'
+  - name: autoconf-archive-portage
+    category: sys-devel
+    version: '>=0'
+  - name: autoconf-wrapper-portage
+    category: sys-devel
+    version: '>=0'
+  - name: automake-wrapper-portage
+    category: sys-devel
+    version: '>=0'
+  - name: binutils-config-portage
+    category: sys-devel
+    version: '>=0'
+  - name: bison-portage
+    category: sys-devel
+    version: '>=0'
+  - name: flex-portage
+    category: sys-devel
+    version: '>=0'
+  - name: gnuconfig-portage
+    category: sys-devel
+    version: '>=0'
+  - name: m4-portage
+    category: sys-devel
+    version: '>=0'
+  - name: make-portage
+    category: sys-devel
+    version: '>=0'
+  - name: patch-portage
+    category: sys-devel
+    version: '>=0'
