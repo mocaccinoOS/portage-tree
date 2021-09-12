@@ -1,0 +1,143 @@
+category: toolchain
+name: core-portage
+version: "1"
+description: "Virtul package to install portage meta data of the core-portage packages"
+requires:
+  - name: nullmail-portage
+    category: acct-group
+    version: '>=0'
+  - name: portage-portage
+    category: acct-group
+    version: '>=0'
+  - name: unbound-portage
+    category: acct-group
+    version: '>=0'
+  - name: nullmail-portage
+    category: acct-user
+    version: '>=0'
+  - name: portage-portage
+    category: acct-user
+    version: '>=0'
+  - name: unbound-portage
+    category: acct-user
+    version: '>=0'
+  - name: eselect-portage
+    category: app-admin
+    version: '>=0'
+  - name: metalog-portage
+    category: app-admin
+    version: '>=0'
+  - name: gnupg-portage
+    category: app-crypt
+    version: '>=0'
+  - name: p11-kit-portage
+    category: app-crypt
+    version: '>=0'
+  - name: pinentry-portage
+    category: app-crypt
+    version: '>=0'
+  - name: eselect-lib-bin-symlink-portage
+    category: app-eselect
+    version: '>=0'
+  - name: eselect-pinentry-portage
+    category: app-eselect
+    version: '>=0'
+  - name: pax-utils-portage
+    category: app-misc
+    version: '>=0'
+  - name: elt-patches-portage
+    category: app-portage
+    version: '>=0'
+  - name: gemato-portage
+    category: app-portage
+    version: '>=0'
+  - name: portage-utils-portage
+    category: app-portage
+    version: '>=0'
+  - name: libusb-portage
+    category: dev-libs-1
+    version: '>=0'
+  - name: fstrm-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libassuan-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libksba-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libltdl-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libsodium-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libtasn1-portage
+    category: dev-libs
+    version: '>=0'
+  - name: npth-portage
+    category: dev-libs
+    version: '>=0'
+  - name: protobuf-portage
+    category: dev-libs
+    version: '>=0'
+  - name: protobuf-c-portage
+    category: dev-libs
+    version: '>=0'
+  - name: PySocks-portage
+    category: dev-python
+    version: '>=0'
+  - name: certifi-portage
+    category: dev-python
+    version: '>=0'
+  - name: chardet-portage
+    category: dev-python
+    version: '>=0'
+  - name: idna-portage
+    category: dev-python
+    version: '>=0'
+  - name: pyelftools-portage
+    category: dev-python
+    version: '>=0'
+  - name: requests-portage
+    category: dev-python
+    version: '>=0'
+  - name: urllib3-portage
+    category: dev-python
+    version: '>=0'
+  - name: guile-portage
+    category: dev-scheme-12
+    version: '>=0'
+  - name: nullmailer-portage
+    category: mail-mta
+    version: '>=0'
+  - name: dnssec-root-portage
+    category: net-dns
+    version: '>=0'
+  - name: unbound-portage
+    category: net-dns
+    version: '>=0'
+  - name: gnutls-portage
+    category: net-libs
+    version: '>=0'
+  - name: install-xattr-portage
+    category: sys-apps
+    version: '>=0'
+  - name: portage-portage
+    category: sys-apps
+    version: '>=0'
+  - name: sandbox-portage
+    category: sys-apps
+    version: '>=0'
+  - name: autogen-portage
+    category: sys-devel
+    version: '>=0'
+  - name: libusb-portage
+    category: virtual-1
+    version: '>=0'
+  - name: logger-portage
+    category: virtual
+    version: '>=0'
+  - name: mta-portage
+    category: virtual
+    version: '>=0'
