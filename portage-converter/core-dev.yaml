@@ -67,6 +67,7 @@ artefacts:
     - dev-util/meson:0
     - dev-util/meson-format-array:0
     - dev-util/ninja:0
+    - sys-apps/diffutils:0
     - sys-devel/autoconf:2.1
     - sys-devel/autoconf:2.69
     - sys-devel/autoconf-archive:0
@@ -82,6 +83,15 @@ artefacts:
     - sys-devel/m4:0
     - sys-devel/make:0
     - sys-devel/patch:0
+
+- tree: packages/atoms/core-dev
+  mutations:
+    runtime_deps:
+      packages:
+        # gcc-config calls /usr/bin/cmp
+        - name: diffutils
+          category: sys-apps
+  packages:
     - sys-devel/gcc-config:0
 
 build_layers:
