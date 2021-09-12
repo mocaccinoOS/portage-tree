@@ -27,6 +27,9 @@ requires:
   - name: metalog-portage
     category: app-admin
     version: '>=0'
+  - name: gpgme-portage
+    category: app-crypt-1
+    version: '>=0'
   - name: gnupg-portage
     category: app-crypt
     version: '>=0'
