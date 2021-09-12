@@ -75,7 +75,6 @@ artefacts:
     - sys-devel/automake:1.16
     - sys-devel/automake-wrapper:0
     - sys-devel/binutils:2.35
-    - sys-devel/binutils-config:0
     - sys-devel/bison:0
     - sys-devel/flex:0
     - sys-devel/gnuconfig:0
@@ -93,6 +92,7 @@ artefacts:
           category: sys-apps
   packages:
     - sys-devel/gcc-config:0
+    - sys-devel/binutils-config:0
 
 build_layers:
   - layer:
