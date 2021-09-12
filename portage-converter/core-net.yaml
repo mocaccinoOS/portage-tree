@@ -65,7 +65,6 @@ artefacts:
     - sys-apps/iproute2
     - sys-apps/net-tools
 
-artefacts:
 - tree: packages/atoms/core-net
   uses:
     disabled:
@@ -550,6 +549,8 @@ reposcan_disabled_use_flags:
   # I will rebuild cmake later.
   - qt5
   - kde
+
+  - debug
 
   # Disable gtk for pinentry
   - gtk
