@@ -1,0 +1,779 @@
+category: toolchain
+name: core
+version: "1"
+description: "Virtul package to install portage meta data of the core packages"
+requires:
+  - name: adm-portage
+    category: acct-group
+    version: '>=0'
+  - name: audio-portage
+    category: acct-group
+    version: '>=0'
+  - name: cdrom-portage
+    category: acct-group
+    version: '>=0'
+  - name: dialout-portage
+    category: acct-group
+    version: '>=0'
+  - name: disk-portage
+    category: acct-group
+    version: '>=0'
+  - name: input-portage
+    category: acct-group
+    version: '>=0'
+  - name: kmem-portage
+    category: acct-group
+    version: '>=0'
+  - name: kvm-portage
+    category: acct-group
+    version: '>=0'
+  - name: lp-portage
+    category: acct-group
+    version: '>=0'
+  - name: messagebus-portage
+    category: acct-group
+    version: '>=0'
+  - name: nobody-portage
+    category: acct-group
+    version: '>=0'
+  - name: render-portage
+    category: acct-group
+    version: '>=0'
+  - name: root-portage
+    category: acct-group
+    version: '>=0'
+  - name: sgx-portage
+    category: acct-group
+    version: '>=0'
+  - name: sshd-portage
+    category: acct-group
+    version: '>=0'
+  - name: systemd-coredump-portage
+    category: acct-group
+    version: '>=0'
+  - name: systemd-journal-portage
+    category: acct-group
+    version: '>=0'
+  - name: systemd-journal-remote-portage
+    category: acct-group
+    version: '>=0'
+  - name: systemd-network-portage
+    category: acct-group
+    version: '>=0'
+  - name: systemd-oom-portage
+    category: acct-group
+    version: '>=0'
+  - name: systemd-resolve-portage
+    category: acct-group
+    version: '>=0'
+  - name: systemd-timesync-portage
+    category: acct-group
+    version: '>=0'
+  - name: tape-portage
+    category: acct-group
+    version: '>=0'
+  - name: tty-portage
+    category: acct-group
+    version: '>=0'
+  - name: users-portage
+    category: acct-group
+    version: '>=0'
+  - name: utmp-portage
+    category: acct-group
+    version: '>=0'
+  - name: video-portage
+    category: acct-group
+    version: '>=0'
+  - name: wheel-portage
+    category: acct-group
+    version: '>=0'
+  - name: messagebus-portage
+    category: acct-user
+    version: '>=0'
+  - name: nobody-portage
+    category: acct-user
+    version: '>=0'
+  - name: root-portage
+    category: acct-user
+    version: '>=0'
+  - name: sshd-portage
+    category: acct-user
+    version: '>=0'
+  - name: systemd-coredump-portage
+    category: acct-user
+    version: '>=0'
+  - name: systemd-journal-remote-portage
+    category: acct-user
+    version: '>=0'
+  - name: systemd-network-portage
+    category: acct-user
+    version: '>=0'
+  - name: systemd-oom-portage
+    category: acct-user
+    version: '>=0'
+  - name: systemd-resolve-portage
+    category: acct-user
+    version: '>=0'
+  - name: systemd-timesync-portage
+    category: acct-user
+    version: '>=0'
+  - name: bzip2-portage
+    category: app-arch
+    version: '>=0'
+  - name: gzip-portage
+    category: app-arch
+    version: '>=0'
+  - name: libarchive-portage
+    category: app-arch
+    version: '>=0'
+  - name: lz4-portage
+    category: app-arch
+    version: '>=0'
+  - name: tar-portage
+    category: app-arch
+    version: '>=0'
+  - name: xz-utils-portage
+    category: app-arch
+    version: '>=0'
+  - name: zstd-portage
+    category: app-arch
+    version: '>=0'
+  - name: argon2-portage
+    category: app-crypt
+    version: '>=0'
+  - name: libb2-portage
+    category: app-crypt
+    version: '>=0'
+  - name: mit-krb5-portage
+    category: app-crypt
+    version: '>=0'
+  - name: openpgp-keys-danielveillard-portage
+    category: app-crypt
+    version: '>=0'
+  - name: openpgp-keys-libidn-portage
+    category: app-crypt
+    version: '>=0'
+  - name: openpgp-keys-python-portage
+    category: app-crypt
+    version: '>=0'
+  - name: c_rehash-portage
+    category: app-misc
+    version: '>=0'
+  - name: ca-certificates-portage
+    category: app-misc
+    version: '>=0'
+  - name: bash-portage
+    category: app-shells
+    version: '>=0'
+  - name: docbook-xml-dtd-portage
+    category: app-text-4.5
+    version: '>=0'
+  - name: build-docbook-catalog-portage
+    category: app-text
+    version: '>=0'
+  - name: docbook-xsl-stylesheets-portage
+    category: app-text
+    version: '>=0'
+  - name: sgml-common-portage
+    category: app-text
+    version: '>=0'
+  - name: xmlto-portage
+    category: app-text
+    version: '>=0'
+  - name: sqlite-portage
+    category: dev-db-3
+    version: '>=0'
+  - name: lmdb-portage
+    category: dev-db
+    version: '>=0'
+  - name: python-exec-portage
+    category: dev-lang-2
+    version: '>=0'
+  - name: python-exec-conf-portage
+    category: dev-lang-2
+    version: '>=0'
+  - name: python-portage
+    category: dev-lang-3.9
+    version: '>=0'
+  - name: perl-portage
+    category: dev-lang
+    version: '>=0'
+  - name: tcl-portage
+    category: dev-lang
+    version: '>=0'
+  - name: yasm-portage
+    category: dev-lang
+    version: '>=0'
+  - name: glib-portage
+    category: dev-libs-2
+    version: '>=0'
+  - name: libxml2-portage
+    category: dev-libs-2
+    version: '>=0'
+  - name: lzo-portage
+    category: dev-libs-2
+    version: '>=0'
+  - name: libpcre-portage
+    category: dev-libs-3
+    version: '>=0'
+  - name: boehm-gc-portage
+    category: dev-libs
+    version: '>=0'
+  - name: elfutils-portage
+    category: dev-libs
+    version: '>=0'
+  - name: expat-portage
+    category: dev-libs
+    version: '>=0'
+  - name: gmp-portage
+    category: dev-libs
+    version: '>=0'
+  - name: gobject-introspection-portage
+    category: dev-libs
+    version: '>=0'
+  - name: gobject-introspection-common-portage
+    category: dev-libs
+    version: '>=0'
+  - name: icu-portage
+    category: dev-libs
+    version: '>=0'
+  - name: isl-portage
+    category: dev-libs
+    version: '>=0'
+  - name: json-c-portage
+    category: dev-libs
+    version: '>=0'
+  - name: jsoncpp-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libaio-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libatomic_ops-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libbsd-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libev-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libevent-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libffi-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libgcrypt-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libgpg-error-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libpcre2-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libpwquality-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libsigsegv-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libunistring-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libverto-portage
+    category: dev-libs
+    version: '>=0'
+  - name: libxslt-portage
+    category: dev-libs
+    version: '>=0'
+  - name: mpc-portage
+    category: dev-libs
+    version: '>=0'
+  - name: mpfr-portage
+    category: dev-libs
+    version: '>=0'
+  - name: nettle-portage
+    category: dev-libs
+    version: '>=0'
+  - name: openssl-portage
+    category: dev-libs
+    version: '>=0'
+  - name: popt-portage
+    category: dev-libs
+    version: '>=0'
+  - name: Encode-EUCJPASCII-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-HanExtra-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Encode-Locale-portage
+    category: dev-perl
+    version: '>=0'
+  - name: File-Listing-portage
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Parser-portage
+    category: dev-perl
+    version: '>=0'
+  - name: HTML-Tagset-portage
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Cookies-portage
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Date-portage
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Message-portage
+    category: dev-perl
+    version: '>=0'
+  - name: HTTP-Negotiate-portage
+    category: dev-perl
+    version: '>=0'
+  - name: IO-HTML-portage
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-INET6-portage
+    category: dev-perl
+    version: '>=0'
+  - name: IO-Socket-SSL-portage
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-MediaTypes-portage
+    category: dev-perl
+    version: '>=0'
+  - name: LWP-Protocol-https-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Locale-gettext-portage
+    category: dev-perl
+    version: '>=0'
+  - name: MIME-Charset-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Module-Build-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Mozilla-CA-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Net-HTTP-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Net-SSLeay-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Pod-Parser-portage
+    category: dev-perl
+    version: '>=0'
+  - name: SGMLSpm-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Socket6-portage
+    category: dev-perl
+    version: '>=0'
+  - name: TermReadKey-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Text-CharWidth-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Text-WrapI18N-portage
+    category: dev-perl
+    version: '>=0'
+  - name: TimeDate-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Try-Tiny-portage
+    category: dev-perl
+    version: '>=0'
+  - name: URI-portage
+    category: dev-perl
+    version: '>=0'
+  - name: Unicode-LineBreak-portage
+    category: dev-perl
+    version: '>=0'
+  - name: WWW-RobotRules-portage
+    category: dev-perl
+    version: '>=0'
+  - name: XML-Parser-portage
+    category: dev-perl
+    version: '>=0'
+  - name: XML-XPath-portage
+    category: dev-perl
+    version: '>=0'
+  - name: YAML-Tiny-portage
+    category: dev-perl
+    version: '>=0'
+  - name: libwww-perl-portage
+    category: dev-perl
+    version: '>=0'
+  - name: cython-portage
+    category: dev-python
+    version: '>=0'
+  - name: ply-portage
+    category: dev-python
+    version: '>=0'
+  - name: setuptools-portage
+    category: dev-python
+    version: '>=0'
+  - name: sysprof-capture-portage
+    category: dev-util-4
+    version: '>=0'
+  - name: gdbus-codegen-portage
+    category: dev-util
+    version: '>=0'
+  - name: pkgconf-portage
+    category: dev-util
+    version: '>=0'
+  - name: libidn2-portage
+    category: net-dns
+    version: '>=0'
+  - name: libnsl-portage
+    category: net-libs
+    version: '>=0'
+  - name: libtirpc-portage
+    category: net-libs
+    version: '>=0'
+  - name: nghttp2-portage
+    category: net-libs
+    version: '>=0'
+  - name: curl-portage
+    category: net-misc
+    version: '>=0'
+  - name: iputils-portage
+    category: net-misc
+    version: '>=0'
+  - name: openssh-portage
+    category: net-misc
+    version: '>=0'
+  - name: File-Temp-portage
+    category: perl-core
+    version: '>=0'
+  - name: Scalar-List-Utils-portage
+    category: perl-core
+    version: '>=0'
+  - name: acl-portage
+    category: sys-apps
+    version: '>=0'
+  - name: attr-portage
+    category: sys-apps
+    version: '>=0'
+  - name: baselayout-portage
+    category: sys-apps
+    version: '>=0'
+  - name: coreutils-portage
+    category: sys-apps
+    version: '>=0'
+  - name: dbus-portage
+    category: sys-apps
+    version: '>=0'
+  - name: debianutils-portage
+    category: sys-apps
+    version: '>=0'
+  - name: file-portage
+    category: sys-apps
+    version: '>=0'
+  - name: findutils-portage
+    category: sys-apps
+    version: '>=0'
+  - name: gawk-portage
+    category: sys-apps
+    version: '>=0'
+  - name: gentoo-functions-portage
+    category: sys-apps
+    version: '>=0'
+  - name: grep-portage
+    category: sys-apps
+    version: '>=0'
+  - name: keyutils-portage
+    category: sys-apps
+    version: '>=0'
+  - name: kmod-portage
+    category: sys-apps
+    version: '>=0'
+  - name: sed-portage
+    category: sys-apps
+    version: '>=0'
+  - name: shadow-portage
+    category: sys-apps
+    version: '>=0'
+  - name: systemd-portage
+    category: sys-apps
+    version: '>=0'
+  - name: tcp-wrappers-portage
+    category: sys-apps
+    version: '>=0'
+  - name: util-linux-portage
+    category: sys-apps
+    version: '>=0'
+  - name: xinetd-portage
+    category: sys-apps
+    version: '>=0'
+  - name: pam_mktemp-portage
+    category: sys-auth
+    version: '>=0'
+  - name: pambase-portage
+    category: sys-auth
+    version: '>=0'
+  - name: thin-provisioning-tools-portage
+    category: sys-block
+    version: '>=0'
+  - name: gcc-portage
+    category: sys-devel-10
+    version: '>=0'
+  - name: clang-portage
+    category: sys-devel-12
+    version: '>=0'
+  - name: llvm-portage
+    category: sys-devel-12
+    version: '>=0'
+  - name: gettext-portage
+    category: sys-devel
+    version: '>=0'
+  - name: fuse-portage
+    category: sys-fs-3
+    version: '>=0'
+  - name: cryptsetup-portage
+    category: sys-fs
+    version: '>=0'
+  - name: e2fsprogs-portage
+    category: sys-fs
+    version: '>=0'
+  - name: fuse-common-portage
+    category: sys-fs
+    version: '>=0'
+  - name: lvm2-portage
+    category: sys-fs
+    version: '>=0'
+  - name: udev-init-scripts-portage
+    category: sys-fs
+    version: '>=0'
+  - name: glibc-portage
+    category: sys-libs-2.2
+    version: '>=0'
+  - name: db-portage
+    category: sys-libs-5.3
+    version: '>=0'
+  - name: cracklib-portage
+    category: sys-libs
+    version: '>=0'
+  - name: e2fsprogs-libs-portage
+    category: sys-libs
+    version: '>=0'
+  - name: gdbm-portage
+    category: sys-libs
+    version: '>=0'
+  - name: libcap-portage
+    category: sys-libs
+    version: '>=0'
+  - name: libcap-ng-portage
+    category: sys-libs
+    version: '>=0'
+  - name: libcxx-portage
+    category: sys-libs
+    version: '>=0'
+  - name: libcxxabi-portage
+    category: sys-libs
+    version: '>=0'
+  - name: libseccomp-portage
+    category: sys-libs
+    version: '>=0'
+  - name: ncurses-portage
+    category: sys-libs
+    version: '>=0'
+  - name: pam-portage
+    category: sys-libs
+    version: '>=0'
+  - name: readline-portage
+    category: sys-libs
+    version: '>=0'
+  - name: talloc-portage
+    category: sys-libs
+    version: '>=0'
+  - name: tevent-portage
+    category: sys-libs
+    version: '>=0'
+  - name: timezone-data-portage
+    category: sys-libs
+    version: '>=0'
+  - name: zlib-portage
+    category: sys-libs
+    version: '>=0'
+  - name: procps-portage
+    category: sys-process
+    version: '>=0'
+  - name: psmisc-portage
+    category: sys-process
+    version: '>=0'
+  - name: acl-portage
+    category: virtual
+    version: '>=0'
+  - name: awk-portage
+    category: virtual
+    version: '>=0'
+  - name: krb5-portage
+    category: virtual
+    version: '>=0'
+  - name: libcrypt-portage
+    category: virtual
+    version: '>=0'
+  - name: libelf-portage
+    category: virtual
+    version: '>=0'
+  - name: libiconv-portage
+    category: virtual
+    version: '>=0'
+  - name: libintl-portage
+    category: virtual
+    version: '>=0'
+  - name: libudev-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-Requirements-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-CPAN-Meta-YAML-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Carp-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Bzip2-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Compress-Raw-Zlib-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Data-Dumper-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Digest-MD5-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Encode-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Exporter-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-CBuilder-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-Install-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-MakeMaker-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-Manifest-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-ExtUtils-ParseXS-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-File-Spec-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-File-Temp-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Getopt-Long-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Compress-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-IO-Socket-IP-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-JSON-PP-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-MIME-Base64-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Module-Metadata-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Parse-CPAN-Meta-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Perl-OSType-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Scalar-List-Utils-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Test-Harness-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Text-ParseWords-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-Time-Local-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-XSLoader-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-libnet-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-parent-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-podlators-portage
+    category: virtual
+    version: '>=0'
+  - name: perl-version-portage
+    category: virtual
+    version: '>=0'
+  - name: pkgconfig-portage
+    category: virtual
+    version: '>=0'
+  - name: tmpfiles-portage
+    category: virtual
+    version: '>=0'
+  - name: udev-portage
+    category: virtual
+    version: '>=0'
+  - name: xorg-proto-portage
+    category: x11-base
+    version: '>=0'
+  - name: libICE-portage
+    category: x11-libs
+    version: '>=0'
+  - name: libSM-portage
+    category: x11-libs
+    version: '>=0'
+  - name: libX11-portage
+    category: x11-libs
+    version: '>=0'
+  - name: libXau-portage
+    category: x11-libs
+    version: '>=0'
+  - name: libXdmcp-portage
+    category: x11-libs
+    version: '>=0'
+  - name: libXt-portage
+    category: x11-libs
+    version: '>=0'
+  - name: libxcb-portage
+    category: x11-libs
+    version: '>=0'
+  - name: xtrans-portage
+    category: x11-libs
+    version: '>=0'
+  - name: compose-tables-portage
+    category: x11-misc
+    version: '>=0'
