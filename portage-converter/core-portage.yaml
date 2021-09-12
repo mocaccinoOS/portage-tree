@@ -137,10 +137,32 @@ artefacts:
   packages:
     - app-portage/elt-patches:0
     - app-portage/gemato:0
-    - app-portage/portage-utils:0
     - sys-apps/portage:0
     - sys-apps/sandbox:0
     - acct-group/nullmail
+    - app-crypt/gpgme:1
+
+- tree: packages/atoms/core-portage
+  ignore_build_deps: true
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: base-core
+    runtime_deps:
+      packages:
+        - category: app-crypt-1
+          name: gpgme
+  uses:
+    disabled:
+      - apidoc
+      - doc
+      - build
+      - test
+      - gentoo-dev
+      - static
+  packages:
+    - app-portage/portage-utils:0
 
 - tree: packages/atoms/core-portage
   mutations:
