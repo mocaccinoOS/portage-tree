@@ -1,0 +1,21 @@
+env:
+- LUET_YES=true
+- LUET_NOLOCK=true
+copy:
+  - package:
+      category: seed
+      name: mos-portage-stage
+      version: ">=0"
+    source: "/mos-portage"
+    destination: "/"
+prelude:
+- >-
+  cp make.conf /etc/portage/
+  luet install repository/geaaru-stable &&
+  luet install repository/luet &&
+  luet install system/entitites utils/jq utils/yw &&
+  luet upgrade &&
+  luet cleanup &&
+  yq w /etc/luet/luet.yaml 'system.rootfs' '/' -i
+steps:
+- echo "test"
