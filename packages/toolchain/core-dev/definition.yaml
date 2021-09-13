@@ -45,6 +45,9 @@ requires:
   - name: ninja-portage
     category: dev-util
     version: '>=0'
+  - name: diffutils-portage
+    category: sys-apps
+    version: '>=0'
   - name: texinfo-portage
     category: sys-apps
     version: '>=0'
@@ -79,6 +82,9 @@ requires:
     category: sys-devel
     version: '>=0'
   - name: flex-portage
+    category: sys-devel
+    version: '>=0'
+  - name: gcc-config-portage
     category: sys-devel
     version: '>=0'
   - name: gnuconfig-portage
