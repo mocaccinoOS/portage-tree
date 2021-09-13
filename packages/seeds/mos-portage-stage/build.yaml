@@ -1,0 +1,14 @@
+image: "quay.io/mocaccino/extra"
+env:
+- LUET_YES=true
+- LUET_NOLOCK=true
+prelude:
+- >-
+  mkdir /mos-portage &&
+  luet install --force --config ./luet.yaml repository/mocaccino-portage &&
+  luet install --force --config ./luet.yaml
+  toolchain/core
+  toolchain/core-portage
+  toolchain/core-net
+  toolchain/core-dev &&
+  luet cleanup --config ./luet.yaml
