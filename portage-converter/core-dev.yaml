@@ -82,6 +82,7 @@ artefacts:
     - sys-devel/m4:0
     - sys-devel/make:0
     - sys-devel/patch:0
+    - sys-kernel/linux-headers
 
 - tree: packages/atoms/core-dev
   mutations:
