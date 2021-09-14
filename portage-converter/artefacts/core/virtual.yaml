@@ -244,20 +244,6 @@ artefacts:
   packages:
     - virtual/krb5
 
-#- tree: packages/atoms/core
-#  mutations:
-#    buildtime_deps:
-#      packages:
-#        - category: dev-libs-1
-#          name: libusb
-#  replacements:
-#    buildtime_deps:
-#      ignore:
-#        - name: base-core
-#          category: seed
-#  packages:
-#    - virtual/libusb:1
-
 - tree: packages/atoms/core
   packages:
     - virtual/perl-Carp
