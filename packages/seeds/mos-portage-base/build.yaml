@@ -9,6 +9,8 @@ copy:
       version: ">=0"
     source: "/mos-portage"
     destination: "/"
+# Using steps to trace what files are generated
+# by gcc-config/binutils-config.
 steps:
 # sed -e 's|\[\[ \! -w ${EROOT}.*|# Check dropped for error with docker|g' -i /usr/bin/gcc-config &&
 - >-
@@ -32,3 +34,14 @@ steps:
   env-update &&
   ldconfig &&
   eval 'locale-gen || true'
+
+excludes:
+- ^/etc/gshadow
+- ^/etc/group
+- ^/etc/passwd
+- ^/etc/shadow
+- ^/etc/ld.so.cache
+- ^/etc/ld.so.conf
+- ^/etc/locatime
+- ^/var/cache/ldconfig/aux-cache
+
