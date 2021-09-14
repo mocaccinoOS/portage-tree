@@ -5,10 +5,25 @@ env:
 prelude:
 - >-
   mkdir /mos-portage &&
-  luet install --force --config ./luet.yaml repository/mocaccino-portage &&
+  luet install --force --config ./luet.yaml
+  repository/mocaccino-portage
+  repository/luet
+  repository/geaaru-stable
+  repository/mocaccino-extra-stable &&
   luet install --force --config ./luet.yaml
   toolchain/core
   toolchain/core-portage
   toolchain/core-net
-  toolchain/core-dev &&
-  luet cleanup --config ./luet.yaml
+  toolchain/core-dev
+  system/entities
+  utils/jq utils/yq
+  entities/acct-core
+  sys-devel/gcc-config-portage
+  toolchain/gentoo-portage
+  system/luet &&
+  luet upgrade --config ./luet.yaml &&
+  luet cleanup --config ./luet.yaml &&
+  mkdir -p /mos-portage/etc/luet &&
+  cp ./luet.yaml /mos-portage/etc/luet/ &&
+  cd /mos-portage/bin &&
+  ln -s bash sh
