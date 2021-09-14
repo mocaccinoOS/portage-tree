@@ -99,3 +99,6 @@ requires:
   - name: patch-portage
     category: sys-devel
     version: '>=0'
+  - name: linux-headers-portage
+    category: sys-kernel
+    version: '>=0'
