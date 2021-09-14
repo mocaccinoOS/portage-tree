@@ -1,3 +1,4 @@
+image: scratch
 env:
 - LUET_YES=true
 - LUET_NOLOCK=true
@@ -8,14 +9,26 @@ copy:
       version: ">=0"
     source: "/mos-portage"
     destination: "/"
-prelude:
-- >-
-  cp make.conf /etc/portage/
-  luet install repository/geaaru-stable &&
-  luet install repository/luet &&
-  luet install system/entitites utils/jq utils/yw &&
-  luet upgrade &&
-  luet cleanup &&
-  yq w /etc/luet/luet.yaml 'system.rootfs' '/' -i
 steps:
-- echo "test"
+# sed -e 's|\[\[ \! -w ${EROOT}.*|# Check dropped for error with docker|g' -i /usr/bin/gcc-config &&
+- >-
+  cp make.conf /etc/portage/ &&
+  touch /etc/shadow &&
+  touch /etc/group &&
+  touch /etc/gshadow &&
+  touch /etc/passwd &&
+  entities merge -s /usr/share/mocaccino/entities/acct-core/ -a &&
+  yq w /etc/luet/luet.yaml 'system.rootfs' '/' -i &&
+  cd /usr/bin &&
+  ln -s gawk awk &&
+  rm -rf /luetbuild &&
+  /usr/bin/gcc-config 1 &&
+  source /etc/profile &&
+  eselect gcc set 1 &&
+  eselect binutils set 1 &&
+  eselect profile set default/linux/amd64/17.1/desktop/systemd &&
+  mkdir -p /var/lib/portage &&
+  echo "Europe/Rome" > /etc/localtime &&
+  env-update &&
+  ldconfig &&
+  eval 'locale-gen || true'
