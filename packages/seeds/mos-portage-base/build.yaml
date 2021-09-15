@@ -16,11 +16,14 @@ prelude:
   touch /etc/gshadow &&
   touch /etc/passwd &&
   entities merge -s /usr/share/mocaccino/entities/acct-core/ -a &&
-  yq w /etc/luet/luet.yaml 'system.rootfs' '/' -i &&
+  yq w /etc/luet/luet.yaml system.rootfs "/" -i &&
   luet install
   system/luet-extensions-live
   system/luet-devkit
-  dev-util/pkgs-checker-minimal &&
+  dev-util/pkgs-checker-minimal
+  repository/mocaccino-kernel &&
+  luet install kernel/mocaccino-lts-sources &&
+  eselect kernel set 1 &&
   luet cleanup
 
 # Using steps to trace what files are generated
@@ -28,6 +31,7 @@ prelude:
 steps:
 # sed -e 's|\[\[ \! -w ${EROOT}.*|# Check dropped for error with docker|g' -i /usr/bin/gcc-config &&
 - >-
+  cat /etc/luet/luet.yaml &&
   cp make.conf /etc/portage/ &&
   cd /usr/bin &&
   ln -s gawk awk &&
