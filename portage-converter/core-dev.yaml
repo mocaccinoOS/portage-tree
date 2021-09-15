@@ -68,6 +68,7 @@ artefacts:
     - dev-util/meson-format-array:0
     - dev-util/ninja:0
     - sys-apps/diffutils:0
+    - sys-apps/which:0
     - sys-devel/autoconf:2.1
     - sys-devel/autoconf:2.69
     - sys-devel/autoconf-archive:0
