@@ -51,6 +51,9 @@ requires:
   - name: texinfo-portage
     category: sys-apps
     version: '>=0'
+  - name: which-portage
+    category: sys-apps
+    version: '>=0'
   - name: automake-portage
     category: sys-devel-1.16
     version: '>=0'
