@@ -9,18 +9,26 @@ copy:
       version: ">=0"
     source: "/mos-portage"
     destination: "/"
-# Using steps to trace what files are generated
-# by gcc-config/binutils-config.
-steps:
-# sed -e 's|\[\[ \! -w ${EROOT}.*|# Check dropped for error with docker|g' -i /usr/bin/gcc-config &&
+prelude:
 - >-
-  cp make.conf /etc/portage/ &&
   touch /etc/shadow &&
   touch /etc/group &&
   touch /etc/gshadow &&
   touch /etc/passwd &&
   entities merge -s /usr/share/mocaccino/entities/acct-core/ -a &&
   yq w /etc/luet/luet.yaml 'system.rootfs' '/' -i &&
+  luet install
+  system/luet-extensions-live
+  system/luet-devkit
+  dev-util/pkgs-checker-minimal &&
+  luet cleanup
+
+# Using steps to trace what files are generated
+# by gcc-config/binutils-config.
+steps:
+# sed -e 's|\[\[ \! -w ${EROOT}.*|# Check dropped for error with docker|g' -i /usr/bin/gcc-config &&
+- >-
+  cp make.conf /etc/portage/ &&
   cd /usr/bin &&
   ln -s gawk awk &&
   rm -rf /luetbuild &&
@@ -33,7 +41,7 @@ steps:
   echo "Europe/Rome" > /etc/localtime &&
   env-update &&
   ldconfig &&
-  eval 'locale-gen || true'
+  eval 'locale-gen || true' &&
 
 excludes:
 - ^/etc/gshadow
