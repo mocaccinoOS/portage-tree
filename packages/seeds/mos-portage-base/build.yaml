@@ -2,6 +2,7 @@ image: scratch
 env:
 - LUET_YES=true
 - LUET_NOLOCK=true
+- HTTP_TIMEOUT=0
 copy:
   - package:
       category: seed
