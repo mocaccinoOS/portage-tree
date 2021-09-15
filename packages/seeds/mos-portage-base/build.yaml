@@ -41,7 +41,7 @@ steps:
   echo "Europe/Rome" > /etc/localtime &&
   env-update &&
   ldconfig &&
-  eval 'locale-gen || true' &&
+  eval 'locale-gen || true'
 
 excludes:
 - ^/etc/gshadow
