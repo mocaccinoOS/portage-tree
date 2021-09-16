@@ -10,7 +10,8 @@ copy:
       version: ">=0"
     source: "/mos-portage"
     destination: "/"
-prelude:
+# Set this to prelude when this is fixed: https://github.com/mudler/luet/issues/254
+steps:
 - >-
   touch /etc/shadow &&
   touch /etc/group &&
@@ -29,7 +30,7 @@ prelude:
 
 # Using steps to trace what files are generated
 # by gcc-config/binutils-config.
-steps:
+# steps:
 # sed -e 's|\[\[ \! -w ${EROOT}.*|# Check dropped for error with docker|g' -i /usr/bin/gcc-config &&
 - >-
   cat /etc/luet/luet.yaml &&
