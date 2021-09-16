@@ -27,7 +27,3 @@ excludes:
 - ^/var/db/pkg/
 - ^/var/cache/portage/
 - ^/var/git/
-requires:
-- name: vulkan-loader
-  version: '>=0'
-  category: media-libs

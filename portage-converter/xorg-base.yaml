@@ -95,6 +95,16 @@ artefacts:
     - media-libs/libglvnd
     # TODO: move to core-dev
     - sys-libs/binutils-libs
+
+    - x11-libs/libdmx
+    - x11-libs/xcb-util
+    - x11-libs/xcb-util-image
+    - x11-libs/xcb-util-keysyms
+    - x11-libs/xcb-util-renderutil
+    - x11-libs/xcb-util-wm
+    - x11-misc/xbitmaps
+    - x11-misc/xkeyboard-config
+
     #- x11-apps/mkfontscale
       #   - x11-libs/pango
       #- media-libs/fontconfig
@@ -141,14 +151,14 @@ artefacts:
 
 
 
-- tree: packages/atoms/fonts
+- tree: packages/atoms/xorg-base
   uses:
     disabled:
       - Xaw3d
       - sixel
       - toolbar
   packages:
-    - x11-base/xorg-server
+    #- x11-base/xorg-server
     #- x11-terms/xterm
     #- x11-wm/twm
 
