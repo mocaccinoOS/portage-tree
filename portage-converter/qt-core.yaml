@@ -46,6 +46,41 @@ build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
 artefacts:
+- tree: packages/atoms/qt-core
+  mutations:
+    buildtime_deps:
+      packages:
+        - name: mos-portage-base
+          category: seed
+  packages:
+    - dev-qt/qtchooser
+
+- tree: packages/atoms/qt-core
+  mutations:
+    buildtime_deps:
+      packages:
+        # gcc-config calls /usr/bin/cmp
+        - name: diffutils
+          category: sys-apps
+  uses:
+    disabled:
+      - vulkan
+      - gles2-only
+      - localstorage
+      - eglfs
+      - evdev
+      - tslib
+      - tuio
+      - vnc
+      - designer
+      - system-ffmpeg
+      - freetds
+      - oci8
+      - odbc
+      - postgres
+      - mysql
+  packages:
+    - dev-qt/qtcore:5
 
 - tree: packages/atoms/qt-core
   uses:
@@ -66,8 +101,6 @@ artefacts:
       - postgres
       - mysql
   packages:
-    - dev-qt/qtcore:5
-    - dev-qt/qtchooser
     - dev-qt/qtconcurrent:5
     - dev-qt/qtdbus:5
     - dev-qt/qtxml:5
