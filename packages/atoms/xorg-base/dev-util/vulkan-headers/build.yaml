@@ -28,9 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: util-macros
-  version: '>=0'
-  category: x11-misc
-- name: libva
+- name: libvdpau
   version: '>=0'
   category: x11-libs

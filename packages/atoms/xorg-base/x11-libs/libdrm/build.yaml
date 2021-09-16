@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libpciaccess
+- name: font-util
   version: '>=0'
-  category: x11-libs
+  category: media-fonts

@@ -28,9 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: util-macros
+- name: wayland-scanner
   version: '>=0'
-  category: x11-misc
-- name: libva
+  category: dev-util
+- name: opengl
   version: '>=0'
-  category: x11-libs
+  category: virtual

@@ -47,7 +47,7 @@ build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
 artefacts:
 
-- tree: packages/atoms/xorg
+- tree: packages/atoms/xorg-base
   uses:
     disabled:
       - static-libs
@@ -99,6 +99,28 @@ artefacts:
       #   - x11-libs/pango
       #- media-libs/fontconfig
 
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+      - lm-sensors
+      - unwind
+      - valgrind
+      - video_cards_freedreno
+      - video_cards_iris
+      - video_cards_lima
+      - video_cards_panfrost
+      - video_cards_v3d
+      - video_cards_vc4
+      - video_cards_virgl
+      - video_cards_vivante
+      - video_cards_radeonsi
+      - vulkan-overlay
+      # I will enable vulkan later
+      - vulkan
+      #- zink
+  packages:
+     - media-libs/mesa:0
+
 - tree: packages/atoms/xorg
   uses:
     disabled:
@@ -118,37 +140,15 @@ artefacts:
     #   - media-libs/freetype:2
 
 
-- 
-- tree: packages/atoms/xorg
-  uses:
-    disabled:
-      - lm-sensors
-      - unwind
-      - valgrind
-      - video_cards_freedreno
-      - video_cards_iris
-      - video_cards_lima
-      - video_cards_panfrost
-      - video_cards_v3d
-      - video_cards_vc4
-      - video_cards_virgl
-      - video_cards_vivante
-      - video_cards_radeonsi
-      - vulkan-overlay
-      # I will enable vulkan later
-      - vulkan
-      - zink
-  packages:
-    # - media-libs/mesa:0
 
-- tree: packages/atoms/xorg
+- tree: packages/atoms/fonts
   uses:
     disabled:
       - Xaw3d
       - sixel
       - toolbar
   packages:
-    #- x11-base/xorg-server
+    - x11-base/xorg-server
     #- x11-terms/xterm
     #- x11-wm/twm
 

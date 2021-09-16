@@ -28,9 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: util-macros
+- name: vulkan-loader
   version: '>=0'
-  category: x11-misc
-- name: libva
+  category: media-libs
+- name: opencl
   version: '>=0'
-  category: x11-libs
+  category: virtual

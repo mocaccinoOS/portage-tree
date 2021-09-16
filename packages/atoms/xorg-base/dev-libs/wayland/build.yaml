@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: wayland-scanner
+- name: libXv
   version: '>=0'
-  category: dev-util
+  category: x11-libs

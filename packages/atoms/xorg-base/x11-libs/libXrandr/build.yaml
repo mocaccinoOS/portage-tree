@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libXrender
+- name: libdrm
   version: '>=0'
   category: x11-libs

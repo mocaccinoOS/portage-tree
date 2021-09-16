@@ -28,9 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: util-macros
+- name: mos-portage-base
   version: '>=0'
-  category: x11-misc
-- name: libva
+  category: seed
+- name: opencl-headers
   version: '>=0'
-  category: x11-libs
+  category: dev-util

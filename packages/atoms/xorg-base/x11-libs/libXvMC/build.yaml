@@ -28,9 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: util-macros
+- name: vulkan-headers
   version: '>=0'
-  category: x11-misc
-- name: libva
-  version: '>=0'
-  category: x11-libs
+  category: dev-util
