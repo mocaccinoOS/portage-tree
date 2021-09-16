@@ -1,0 +1,12 @@
+name: libxkbcommon-portage
+version: 1.3.0
+category: x11-libs
+requires:
+- name: libxkbcommon
+  version: 1.3.0
+  category: x11-libs
+labels:
+  emerge.packages: x11-libs/libxkbcommon
+  kit: gentoo
+  original.package.name: x11-libs/libxkbcommon
+  original.package.version: 1.3.0

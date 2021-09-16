@@ -1,0 +1,731 @@
+skipped_resolutions:
+  packages:
+    - name: elt-patches
+      category: app-portage
+
+    - name: eselect-opengl
+      category: app-eselect
+
+    - name: binutils-apple
+      category: sys-devel
+
+    - name: gcc-apple
+      category: sys-devel
+
+    - name: openrc
+      category: sys-apps
+
+    - name: udev
+      category: sys-fs
+
+    - name: eudev
+      category: sys-fs
+
+    - name: sysvinit
+      category: sys-apps
+
+    # Until conflicts detection is fixed.
+    - name: radiusclient-ng
+      category: net-dialup
+
+    - name: openresolv
+      category: net-dns
+
+    - name: opentmpfiles
+      category: sys-apps
+
+    - name: systemd-tmpfiles
+      category: sys-apps
+
+    - name: argp-standalone
+      category: sys-libs
+  categories:
+    - sys-fabric
+
+build_template_file: ../templates/build-pkg-uses.yaml.tmpl
+build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
+
+artefacts:
+
+- tree: packages/atoms/xorg
+  uses:
+    disabled:
+      - static-libs
+  packages:
+    - x11-libs/libXfixes
+    - x11-libs/libXrandr
+    - x11-libs/libXrender
+    - x11-libs/libXext
+    - x11-libs/libXv
+    #- x11-libs/libXft
+    - x11-libs/libdrm
+    - x11-libs/libXdamage
+    #- x11-libs/libxshmfence
+    - sys-libs/libunwind
+    - dev-libs/wayland
+    - media-libs/libpng
+
+    - x11-libs/libXcomposite
+    - x11-libs/libXcursor
+    - x11-libs/libXdamage
+    - x11-libs/libXext
+    - x11-libs/libXi
+    - x11-libs/libXinerama
+    - x11-libs/libXrandr
+    - x11-libs/libxkbcommon
+    - x11-libs/libXpm
+    - x11-libs/libXaw
+    - x11-libs/libXmu
+    - x11-libs/libXtst
+
+    - dev-libs/fribidi
+    - media-gfx/graphite2
+    - media-libs/giflib
+
+    - dev-cpp/libxmlpp:3.0
+    - dev-libs/libsigc++:2
+    - dev-libs/tinyxml2
+    - dev-libs/json-glib
+    - dev-libs/atk
+    - dev-libs/libclc
+    - dev-db/libdbi
+
+    - media-libs/woff2
+
+    - media-libs/libglvnd
+    # TODO: move to core-dev
+    - sys-libs/binutils-libs
+    #- x11-apps/mkfontscale
+      #   - x11-libs/pango
+      #- media-libs/fontconfig
+
+- tree: packages/atoms/xorg
+  uses:
+    disabled:
+      - utils
+  packages:
+    # - x11-libs/cairo:0
+
+- tree: packages/atoms/xorg
+  uses:
+    disabled:
+      - brotli
+      - bindist
+      - utils
+      - X
+      - fontforge
+  packages:
+    #   - media-libs/freetype:2
+
+
+- 
+- tree: packages/atoms/xorg
+  uses:
+    disabled:
+      - lm-sensors
+      - unwind
+      - valgrind
+      - video_cards_freedreno
+      - video_cards_iris
+      - video_cards_lima
+      - video_cards_panfrost
+      - video_cards_v3d
+      - video_cards_vc4
+      - video_cards_virgl
+      - video_cards_vivante
+      - video_cards_radeonsi
+      - vulkan-overlay
+      # I will enable vulkan later
+      - vulkan
+      - zink
+  packages:
+    # - media-libs/mesa:0
+
+- tree: packages/atoms/xorg
+  uses:
+    disabled:
+      - Xaw3d
+      - sixel
+      - toolbar
+  packages:
+    #- x11-base/xorg-server
+    #- x11-terms/xterm
+    #- x11-wm/twm
+
+#- tree: packages/atoms/xorg
+#  uses:
+#    disabled:
+#      - gtk
+#      - kde
+#      - examples
+#      - elogind
+#  packages:
+#    - sys-auth/polkit:0
+
+build_layers:
+  - layer:
+      name: mos-portage-base
+      category: seed
+    packages:
+      - acct-group/adm:0
+      - acct-group/audio:0
+      - acct-group/cdrom:0
+      - acct-group/dialout:0
+      - acct-group/disk:0
+      - acct-group/input:0
+      - acct-group/kmem:0
+      - acct-group/kvm:0
+      - acct-group/lp:0
+      - acct-group/man:0
+      - acct-group/messagebus:0
+      - acct-group/nobody:0
+      - acct-group/nullmail
+      - acct-group/polkitd:0
+      - acct-group/portage:0
+      - acct-group/render:0
+      - acct-group/root:0
+      - acct-group/sgx:0
+      - acct-group/sshd:0
+      - acct-group/systemd-coredump:0
+      - acct-group/systemd-journal:0
+      - acct-group/systemd-journal-remote:0
+      - acct-group/systemd-network:0
+      - acct-group/systemd-oom:0
+      - acct-group/systemd-resolve:0
+      - acct-group/systemd-timesync:0
+      - acct-group/tape:0
+      - acct-group/tty:0
+      - acct-group/unbound:0
+      - acct-group/users:0
+      - acct-group/utmp:0
+      - acct-group/video:0
+      - acct-group/wheel:0
+      - acct-user/man:0
+      - acct-user/messagebus:0
+      - acct-user/nobody:0
+      - acct-user/nullmail
+      - acct-user/polkitd:0
+      - acct-user/portage:0
+      - acct-user/root:0
+      - acct-user/sshd:0
+      - acct-user/systemd-coredump:0
+      - acct-user/systemd-journal-remote:0
+      - acct-user/systemd-network:0
+      - acct-user/systemd-oom:0
+      - acct-user/systemd-resolve:0
+      - acct-user/systemd-timesync:0
+      - acct-user/unbound:0
+      - app-admin/eselect:0
+      - app-admin/metalog:0
+      - app-admin/perl-cleaner:0
+      - app-arch/bzip2:0
+      - app-arch/gzip:0
+      - app-arch/libarchive:0
+      - app-arch/lz4:0
+      - app-arch/tar:0
+      - app-arch/unzip:0
+      - app-arch/xz-utils:0
+      - app-arch/zstd:0
+      - app-crypt/argon2:0
+      - app-crypt/gnupg:0
+      - app-crypt/gpgme:1
+      - app-crypt/libb2:0
+      - app-crypt/openpgp-keys-gentoo-release:0
+      - app-crypt/pinentry:0
+      - app-crypt/rhash:0
+      - app-crypt/mit-krb5
+      - app-editors/nano:0
+      - app-crypt/openpgp-keys-danielveillard:0
+      - app-crypt/openpgp-keys-libidn:0
+      - app-crypt/openpgp-keys-python:0
+      - app-crypt/p11-kit:0
+      - app-eselect/eselect-iptables:0
+      - app-eselect/eselect-lib-bin-symlink:0
+      - app-eselect/eselect-pinentry:0
+      - app-eselect/eselect-rust:0
+      - app-i18n/man-pages-ja:0
+      - app-i18n/man-pages-l10n:0
+      - app-i18n/man-pages-ru:0
+      - app-i18n/man-pages-zh_CN:0
+      - app-misc/ca-certificates:0
+      - app-misc/c_rehash:0
+      - app-misc/editor-wrapper:0
+      - app-misc/mime-types:0
+      - app-misc/pax-utils:0
+      - app-portage/elt-patches:0
+      - app-portage/gemato:0
+      - app-portage/portage-utils:0
+      - app-shells/bash:0
+      - app-text/build-docbook-catalog:0
+      - app-text/docbook-xml-dtd:4.1.2
+      - app-text/docbook-xml-dtd:4.2
+      - app-text/docbook-xml-dtd:4.4
+      - app-text/docbook-xml-dtd:4.5
+      - app-text/docbook-xsl-stylesheets:0
+      - app-text/manpager:0
+      - app-text/opensp:0
+      - app-text/po4a:0
+      - app-text/sgml-common:0
+      - app-text/xmlto:0
+      - dev-db/sqlite:3
+      - dev-db/lmdb:0
+      - dev-lang/perl:0
+      - dev-lang/python:3.9
+      - dev-lang/python-exec:2
+      - dev-lang/python-exec-conf:2
+      - dev-lang/rust-bin:stable
+      - dev-lang/spidermonkey:78
+      - dev-lang/swig:0
+      - dev-lang/tcl:0
+      - dev-lang/yasm:0
+      - dev-libs/boehm-gc:0
+      - dev-libs/boost:0
+      - dev-libs/elfutils:0
+      - dev-libs/expat:0
+      - dev-libs/fstrm:0
+      - dev-libs/glib:2
+      - dev-libs/gmp:0
+      - dev-libs/gobject-introspection:0
+      - dev-libs/gobject-introspection-common:0
+      - dev-libs/icu:0
+      - dev-libs/isl:0
+      - dev-libs/json-c:0
+      - dev-libs/jsoncpp:0
+      - dev-libs/libaio:0
+      - dev-libs/libassuan:0
+      - dev-libs/libatomic_ops:0
+      - dev-libs/libbpf:0
+      - dev-libs/libbsd:0
+      - dev-libs/libedit:0
+      - dev-libs/libev:0
+      - dev-libs/libevent:0
+      - dev-libs/libffi:0
+      - dev-libs/libgcrypt:0
+      - dev-libs/libgpg-error:0
+      - dev-libs/libksba:0
+      - dev-libs/libltdl:0
+      - dev-libs/libpcre2:0
+      - dev-libs/libpcre:3
+      - dev-libs/libpwquality:0
+      - dev-libs/libpipeline:0
+      - dev-libs/libsigsegv:0
+      - dev-libs/libsodium:0
+      - dev-libs/libtasn1:0
+      - dev-libs/libunistring:0
+      - dev-libs/libnl:3
+      - dev-libs/libusb:1
+      - dev-libs/libuv:0
+      - dev-libs/libverto:0
+      - dev-libs/libxml2:2
+      - dev-libs/libxslt:0
+      - dev-libs/lzo:2
+      - dev-libs/mpc:0
+      - dev-libs/mpfr:0
+      - dev-libs/nettle:0
+      - dev-libs/npth:0
+      - dev-libs/nspr:0
+      - dev-libs/openssl:0
+      - dev-libs/popt:0
+      - dev-libs/protobuf
+      - dev-libs/protobuf-c
+      - dev-libs/xxhash
+      - dev-perl/Encode-EUCJPASCII:0
+      - dev-perl/Encode-HanExtra:0
+      - dev-perl/Encode-Locale:0
+      - dev-perl/File-Listing:0
+      - dev-perl/HTML-Parser:0
+      - dev-perl/HTML-Tagset:0
+      - dev-perl/HTTP-Cookies:0
+      - dev-perl/HTTP-Date:0
+      - dev-perl/HTTP-Message:0
+      - dev-perl/HTTP-Negotiate:0
+      - dev-perl/IO-HTML:0
+      - dev-perl/IO-Socket-INET6:0
+      - dev-perl/IO-Socket-SSL:0
+      - dev-perl/libwww-perl:0
+      - dev-perl/Locale-gettext:0
+      - dev-perl/LWP-MediaTypes:0
+      - dev-perl/LWP-Protocol-https:0
+      - dev-perl/MIME-Charset:0
+      - dev-perl/Module-Build:0
+      - dev-perl/Mozilla-CA:0
+      - dev-perl/Net-HTTP:0
+      - dev-perl/Net-SSLeay:0
+      - dev-perl/Pod-Parser:0
+      - dev-perl/SGMLSpm:0
+      - dev-perl/Socket6:0
+      - dev-perl/TermReadKey:0
+      - dev-perl/Text-CharWidth:0
+      - dev-perl/Text-Unidecode:0
+      - dev-perl/Text-WrapI18N:0
+      - dev-perl/TimeDate:0
+      - dev-perl/Try-Tiny:0
+      - dev-perl/Unicode-EastAsianWidth:0
+      - dev-perl/Unicode-LineBreak:0
+      - dev-perl/URI:0
+      - dev-perl/WWW-RobotRules:0
+      - dev-perl/XML-Parser:0
+      - dev-perl/XML-XPath:0
+      - dev-perl/YAML-Tiny:0
+      - dev-perl/libintl-perl:0
+      - dev-perl/libwww-perl
+      - dev-python/certifi:0
+      - dev-python/cffi:0
+      - dev-python/chardet:0
+      - dev-python/cython:0
+      - dev-python/idna:0
+      - dev-python/jinja:0
+      - dev-python/lxml:0
+      - dev-python/markupsafe:0
+      - dev-python/ply:0
+      - dev-python/pycparser:0
+      - dev-python/pyelftools:0
+      - dev-python/PySocks:0
+      - dev-python/requests:0
+      - dev-python/setuptools:0
+      - dev-python/setuptools_scm:0
+      - dev-python/toml:0
+      - dev-python/urllib3:0
+      - dev-scheme/guile:12
+      - dev-util/boost-build:0
+      - dev-util/cmake:0
+      - dev-util/desktop-file-utils:0
+      - dev-util/gdbus-codegen:0
+      - dev-util/glib-utils:0
+      - dev-util/gperf:0
+      - dev-util/gtk-doc-am:0
+      - dev-util/intltool:0
+      - dev-util/itstool:0
+      - dev-util/sysprof-capture:4
+      - dev-util/meson:0
+      - dev-util/meson-format-array:0
+      - dev-util/ninja:0
+      - dev-util/pkgconf:0
+      - dev-util/re2c:0
+      - mail-mta/nullmailer:)
+      - gnome-base/dconf:0
+      - net-dialup/linux-atm:0
+      - net-dns/dnssec-root:0
+      - net-dns/libidn2:0
+      - net-dns/unbound:0
+      - net-firewall/iptables:0
+      - net-libs/gnutls:0
+      - net-libs/libmnl:0
+      - net-libs/libnetfilter_conntrack:0
+      - net-libs/libnfnetlink:0
+      - net-libs/libnftnl:0
+      - net-libs/libnsl:0
+      - net-libs/libpcap:0
+      - net-libs/libtirpc:0
+      - net-libs/nghttp2:0
+      - net-misc/curl:0
+      - net-misc/ethertypes:0
+      - net-misc/iputils:0
+      - net-misc/openssh:0
+      - net-misc/rsync:0
+      - net-misc/wget:0
+      - perl-core/File-Temp:0
+      - perl-core/Scalar-List-Utils:0
+      - sys-apps/acl:0
+      - sys-apps/attr:0
+      - sys-apps/baselayout:0
+      - sys-apps/busybox:0
+      - sys-apps/coreutils:0
+      - sys-apps/dbus:0
+      - sys-apps/debianutils:0
+      - sys-apps/diffutils:0
+      - sys-apps/file:0
+      - sys-apps/findutils:0
+      - sys-apps/gawk:0
+      - sys-apps/gentoo-functions:0
+      - sys-apps/gentoo-systemd-integration:0
+      - sys-apps/grep:0
+      - sys-apps/groff:0
+      - sys-apps/help2man:0
+      - sys-apps/hwids:0
+      - sys-apps/install-xattr:0
+      - sys-apps/iproute2:0
+      - sys-apps/kbd:0
+      - sys-apps/keyutils:0
+      - sys-apps/kmod:0
+      - sys-apps/less:0
+      - sys-apps/net-tools
+      - sys-apps/man-db:0
+      - sys-apps/man-pages:0
+      - sys-apps/man-pages-posix:0
+      - sys-apps/net-tools:0
+      - sys-apps/portage:0
+      - sys-apps/sandbox:0
+      - sys-apps/sed:0
+      - sys-apps/shadow:0
+      - sys-apps/systemd:0
+      - sys-apps/tcp-wrappers
+      - sys-apps/texinfo:0
+      - sys-apps/util-linux:0
+      - sys-apps/xinetd:0
+      - sys-apps/which:0
+      - sys-auth/pam_mktemp:0
+      - sys-auth/pambase:0
+      - sys-auth/passwdqc:0
+      - sys-auth/polkit:0
+      - sys-block/thin-provisioning-tools:0
+      - sys-devel/autoconf:2.1
+      - sys-devel/autoconf:2.69
+      - sys-devel/autoconf-archive:0
+      - sys-devel/autoconf-wrapper:0
+      - sys-devel/autogen:0
+      - sys-devel/automake:1.16
+      - sys-devel/automake-wrapper:0
+      - sys-devel/binutils:2.35
+      - sys-devel/binutils-config:0
+      - sys-devel/bison:0
+      - sys-devel/clang:12
+      - sys-devel/flex:0
+      - sys-devel/gcc:10
+      - sys-devel/gcc-config:0
+      - sys-devel/gettext:0
+      - sys-devel/gnuconfig:0
+      - sys-devel/libtool:2
+      - sys-devel/llvm:12
+      - sys-devel/llvm-common:0
+      - sys-devel/m4:0
+      - sys-devel/make:0
+      - sys-devel/patch:0
+      - sys-fs/cryptsetup:0
+      - sys-fs/e2fsprogs:0
+      - sys-fs/fuse:3
+      - sys-fs/fuse-common:0
+      - sys-fs/lvm2:0
+      - sys-fs/udev-init-scripts:0
+      - sys-kernel/installkernel-gentoo:0
+      - sys-kernel/linux-headers:0
+      - sys-libs/cracklib:0
+      - sys-libs/db:5.3
+      - sys-libs/e2fsprogs-libs:0
+      - sys-libs/gdbm:0
+      - sys-libs/glibc:2.2
+      - sys-libs/libcap:0
+      - sys-libs/libcap-ng:0
+      - sys-libs/libcxx:0
+      - sys-libs/libcxxabi:0
+      - sys-libs/libseccomp:0
+      - sys-libs/ncurses:0
+      - sys-libs/pam:0
+      - sys-libs/readline:0
+      - sys-libs/talloc:0
+      - sys-libs/tevent:0
+      - sys-libs/timezone-data:0
+      - sys-libs/zlib:0
+      - sys-process/procps:0
+      - sys-process/psmisc:0
+      - virtual/acl:0
+      - virtual/awk:0
+      - virtual/dev-manager:0
+      - virtual/editor:0
+      - virtual/libc:0
+      - virtual/libcrypt:0
+      - virtual/libelf:0
+      - virtual/libiconv:0
+      - virtual/libintl:0
+      - virtual/libudev:0
+      - virtual/libusb:1
+      - virtual/logger:0
+      - virtual/krb5:0
+      - virtual/man:0
+      - virtual/mta:0
+      - virtual/os-headers:0
+      - virtual/package-manager:0
+      - virtual/pager:0
+      - virtual/perl-Carp:0
+      - virtual/perl-Compress-Raw-Bzip2:0
+      - virtual/perl-Compress-Raw-Zlib:0
+      - virtual/perl-CPAN-Meta:0
+      - virtual/perl-CPAN-Meta-Requirements:0
+      - virtual/perl-CPAN-Meta-YAML:0
+      - virtual/perl-Data-Dumper:0
+      - virtual/perl-Digest-MD5:0
+      - virtual/perl-Encode:0
+      - virtual/perl-Exporter:0
+      - virtual/perl-ExtUtils-CBuilder:0
+      - virtual/perl-ExtUtils-Install:0
+      - virtual/perl-ExtUtils-MakeMaker:0
+      - virtual/perl-ExtUtils-Manifest:0
+      - virtual/perl-ExtUtils-ParseXS:0
+      - virtual/perl-File-Spec:0
+      - virtual/perl-File-Temp:0
+      - virtual/perl-Getopt-Long:0
+      - virtual/perl-IO:0
+      - virtual/perl-IO-Compress:0
+      - virtual/perl-IO-Socket-IP:0
+      - virtual/perl-JSON-PP:0
+      - virtual/perl-libnet:0
+      - virtual/perl-MIME-Base64:0
+      - virtual/perl-Module-Metadata:0
+      - virtual/perl-parent:0
+      - virtual/perl-Parse-CPAN-Meta:0
+      - virtual/perl-Perl-OSType:0
+      - virtual/perl-podlators:0
+      - virtual/perl-Scalar-List-Utils:0
+      - virtual/perl-Test-Harness:0
+      - virtual/perl-Text-ParseWords:0
+      - virtual/perl-Time-Local:0
+      - virtual/perl-version:0
+      - virtual/perl-XSLoader:0
+      - virtual/perl-libnet:0
+      - virtual/perl-parent:0
+      - virtual/perl-podlators:0
+      - virtual/perl-version:0
+      - virtual/pkgconfig:0
+      - virtual/rust:0
+      - virtual/service-manager:0
+      - virtual/ssh:0
+      - virtual/tmpfiles:0
+      - virtual/udev:0
+      - virtual/yacc:0
+      - x11-base/xcb-proto:0
+      - x11-base/xorg-proto:0
+      - x11-libs/libICE:0
+      - x11-libs/libSM:0
+      - x11-libs/libX11:0
+      - x11-libs/libXau:0
+      - x11-libs/libxcb:0
+      - x11-libs/libXdmcp:0
+      - x11-libs/libXt:0
+      - x11-libs/xtrans:0
+      - x11-misc/compose-tables:0
+      - x11-misc/shared-mime-info:0
+
+# Define the list of the files generated by Funtoo reposcan tool.
+reposcan_sources:
+#  - source1.json
+#- /home/geaaru/Projects/mottainai/lxd-compose-galaxy/kit_cache/gentoo-master
+  - /home/geaaru/Projects/mottainai/lxd-compose-galaxy/kit_cache_portage/gentoo-master
+    #  - /tmp/kit_cache/gentoo-master
+#  - /tmp/kit_cache/geaaru_overlay-master
+
+# Disable use of category with slot as requires. Default is without slot.
+reposcan_requires_slot: true
+
+reposcan_contraints:
+  packages:
+    - dev-lang/python:3.9
+    - dev-lang/ruby:2.6
+    - sys-devel/gcc:10
+    - sys-devel/llvm:12
+    - sys-devel/clang:12
+
+reposcan_disabled_use_flags:
+  # !!internal use only!! used for creating build images and the first half of bootstrapping [make stage1]
+  - build
+
+  - emacs
+  - doc
+  - doctool
+  - elibc_Cygwin
+  - elibc_Darwin
+  - elibc_FreeBSD
+  - elibc_OpenBSD
+  - elibc_NetBSD
+  - elibc_SunOS
+  - elibc_musl
+  - elibc_mingw
+  - elibc_uclibc
+  - elogind
+  - libressl
+  - gtk-doc
+  - gles2-only
+  - python_single_target_python3_6
+  - python_single_target_python3_7
+  - python_single_target_python3_8
+  - python_single_target_python3_10
+  # I disable pypy support atm
+  - python_single_target_pypy3
+  - python_targets_python2_7
+  - python_targets_python3_6
+  - python_targets_python3_7
+  - python_targets_python3_8
+  - python_targets_python3_10
+  - python_targets_pypy3
+  - ruby_targets_ruby25
+  - ruby_targets_ruby24
+  - ppc-aix
+  - x86-winnt
+  - kernel-builtin
+  - kernel_Winnt
+  - kernel_FreeBSD
+  - man
+  - minimal
+  # Cryptographic library for embedded systems
+  - mbedtls
+  - modules
+  - openrc
+
+  # Disable LDAP integration at core level
+  - ldap
+  - openldap
+
+  - ora
+
+  - verify-sig
+
+  - vim-syntax
+  - test
+  - test-full
+  - savedconfig
+  # ATM i disable selinux
+  - selinux
+
+  # Disable in GCC
+  - objc-gc
+  - systemtap
+  # Disable in glib
+  - fam
+
+  - valadoc
+  - cvs
+  # Disable brotli support from freetype
+  - brotli
+
+  # Disable media stuff
+  - allegro
+  - devil
+  - dumb
+
+  # Disable rados and ceph on core
+  - rados
+  - ceph
+  - cluster
+
+  # Disable bluetooth from python
+  - bluetooth
+
+  - heif
+
+  # Disable pptpclient
+  - pptp
+
+  # Disabled for mesa lib
+  - vulkan-overlay
+  - valgrind
+
+  # Disable fabric stuff
+  - ofed
+  - rdma
+  - ftdi
+
+  - mono
+  - libproxy
+  - java
+  - ruby
+
+  - ora8
+
+  - x86-fbsd
+  - x64-macos
+  - x64-cygwin
+  - amd64-fbsd
+  - ppc
+  - ppc64
+
+reposcan_disabled_keywords:
+  - ~amd64

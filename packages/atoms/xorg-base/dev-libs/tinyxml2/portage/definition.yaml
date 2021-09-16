@@ -1,0 +1,12 @@
+name: tinyxml2-portage
+version: 8.0.0
+category: dev-libs
+requires:
+- name: tinyxml2
+  version: 8.0.0
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/tinyxml2
+  kit: gentoo
+  original.package.name: dev-libs/tinyxml2
+  original.package.version: 8.0.0

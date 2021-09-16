@@ -1,0 +1,29 @@
+name: atk
+version: 2.36.0
+category: dev-libs
+use_flags:
+- -gtk-doc
+- introspection
+requires:
+- name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
+description: GTK+ & GNOME Accessibility Toolkit
+uri:
+- https://wiki.gnome.org/Accessibility
+license: LGPL-2+
+labels:
+  BDEPEND: dev-util/glib-utils gtk-doc? ( >=dev-util/gtk-doc-1.25 app-text/docbook-xml-dtd:4.3
+    ) virtual/pkgconfig >=sys-devel/gettext-0.19.8 app-arch/xz-utils >=dev-util/meson-0.56.0
+    >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+  DEPEND: '>=dev-libs/glib-2.38.0:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    introspection? ( >=dev-libs/gobject-introspection-1.54.0:= ) dev-util/desktop-file-utils
+    x11-misc/shared-mime-info'
+  IUSE: gtk-doc +introspection abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64
+    abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '>=dev-libs/glib-2.38.0:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    introspection? ( >=dev-libs/gobject-introspection-1.54.0:= )'
+  emerge.packages: dev-libs/atk
+  kit: gentoo
+  original.package.name: dev-libs/atk
+  original.package.version: 2.36.0

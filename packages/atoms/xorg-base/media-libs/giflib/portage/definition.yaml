@@ -1,0 +1,12 @@
+name: giflib-portage
+version: 5.2.1
+category: media-libs
+requires:
+- name: giflib
+  version: 5.2.1
+  category: media-libs
+labels:
+  emerge.packages: media-libs/giflib
+  kit: gentoo
+  original.package.name: media-libs/giflib
+  original.package.version: 5.2.1-r1

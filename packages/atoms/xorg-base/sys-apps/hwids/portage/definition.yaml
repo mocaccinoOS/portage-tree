@@ -1,0 +1,12 @@
+name: hwids-portage
+version: "20201207"
+category: sys-apps
+requires:
+- name: hwids
+  version: "20201207"
+  category: sys-apps
+labels:
+  emerge.packages: sys-apps/hwids
+  kit: gentoo
+  original.package.name: sys-apps/hwids
+  original.package.version: "20201207"
