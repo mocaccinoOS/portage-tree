@@ -50,12 +50,6 @@ build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
 artefacts:
-- tree: packages/atoms/core-net
-  packages:
-    - sys-apps/iproute2
-    - sys-apps/net-tools
-
-artefacts:
 - tree: packages/atoms/core-dev
   packages:
     - app-misc/mime-types:0
