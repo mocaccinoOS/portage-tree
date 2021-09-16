@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: xcb-util
+- name: binutils-libs
   version: '>=0'
-  category: x11-libs
+  category: sys-libs

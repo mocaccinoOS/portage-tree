@@ -1,0 +1,24 @@
+name: xinit
+version: 1.4.1
+category: x11-apps
+use_flags:
+- -x86-winnt
+requires:
+- name: xauth
+  version: '>=0'
+  category: x11-apps
+description: X Window System initializer
+uri:
+- https://www.x.org/wiki/ https://gitlab.freedesktop.org/xorg/app/xinit
+license: MIT GPL-2
+labels:
+  BDEPEND: sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16
+    ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 x86-winnt? ( >=sys-devel/libtool-2.2.6a
+    sys-devel/m4 >=x11-misc/util-macros-1.18 >=media-fonts/font-util-1.2.0 ) virtual/pkgconfig
+  DEPEND: x11-apps/xauth x11-libs/libX11
+  IUSE: twm
+  RDEPEND: x11-apps/xauth x11-libs/libX11
+  emerge.packages: x11-apps/xinit
+  kit: gentoo
+  original.package.name: x11-apps/xinit
+  original.package.version: 1.4.1-r1

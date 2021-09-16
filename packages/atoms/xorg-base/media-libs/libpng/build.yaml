@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: mos-portage-base
+- name: libunwind
   version: '>=0'
-  category: seed
+  category: sys-libs

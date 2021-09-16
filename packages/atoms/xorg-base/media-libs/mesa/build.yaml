@@ -28,9 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: vulkan-loader
-  version: '>=0'
-  category: media-libs
 - name: opencl
   version: '>=0'
   category: virtual
+- name: libXpm
+  version: '>=0'
+  category: x11-libs

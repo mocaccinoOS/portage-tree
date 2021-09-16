@@ -131,14 +131,8 @@ artefacts:
   packages:
      - media-libs/mesa:0
 
-- tree: packages/atoms/xorg
-  uses:
-    disabled:
-      - utils
-  packages:
-    # - x11-libs/cairo:0
 
-- tree: packages/atoms/xorg
+- tree: packages/atoms/xorg-base
   uses:
     disabled:
       - brotli
@@ -146,10 +140,40 @@ artefacts:
       - utils
       - X
       - fontforge
+      # Avoid dep cycle with cairo
+      - harfbuzz
   packages:
-    #   - media-libs/freetype:2
+    - media-libs/freetype:2
 
+- tree: packages/atoms/xorg-base
+  replacements:
+    # Break cycyle dep
+    buildtime_deps:
+      ignore:
+        - name: fontconfig
+          category: media-libs-1.0
+    runtime_deps:
+      ignore:
+        - name: fontconfig
+          category: media-libs-1.0
+  uses:
+    disabled:
+      - utils
+  packages:
+      - x11-libs/cairo:0
 
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+      - brotli
+      - bindist
+      - utils
+      - X
+      - fontforge
+      # Avoid dep cycle with cairo
+      - harfbuzz
+  packages:
+    - media-libs/freetype:2
 
 - tree: packages/atoms/xorg-base
   uses:
@@ -158,7 +182,7 @@ artefacts:
       - sixel
       - toolbar
   packages:
-    #- x11-base/xorg-server
+    - x11-base/xorg-server
     #- x11-terms/xterm
     #- x11-wm/twm
 

@@ -1,0 +1,12 @@
+name: display-manager-init-portage
+version: "1.0"
+category: gui-libs
+requires:
+- name: display-manager-init
+  version: "1.0"
+  category: gui-libs
+labels:
+  emerge.packages: gui-libs/display-manager-init
+  kit: gentoo
+  original.package.name: gui-libs/display-manager-init
+  original.package.version: 1.0-r3
