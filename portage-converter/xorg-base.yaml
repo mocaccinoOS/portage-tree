@@ -53,6 +53,7 @@ artefacts:
       - static-libs
   packages:
     - app-arch/unzip
+    - app-text/docbook-xml-dtd:4.1.2
 
     - x11-libs/libXfixes
     - x11-libs/libXrandr
@@ -110,6 +111,18 @@ artefacts:
     #- x11-apps/mkfontscale
       #   - x11-libs/pango
       #- media-libs/fontconfig
+
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+      - static-libs
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: app-text-4.1.2
+          name: docbook-xml-dtd
+  packages:
+    - x11-misc/shared-mime-info
 
 - tree: packages/atoms/xorg-base
   mutations:
