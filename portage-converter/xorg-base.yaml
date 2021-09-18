@@ -186,6 +186,15 @@ artefacts:
     #- x11-terms/xterm
     #- x11-wm/twm
 
+- tree: packages/atoms/xorg-base
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: mos-portage-base
+  packages:
+    - virtual/perl-Locale-Maketext
+
 #- tree: packages/atoms/xorg
 #  uses:
 #    disabled:
