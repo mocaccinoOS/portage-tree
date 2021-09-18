@@ -28,9 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: mos-portage-base
-  version: '>=0'
-  category: seed
 - name: perl-Locale-Maketext
   version: '>=0'
   category: virtual

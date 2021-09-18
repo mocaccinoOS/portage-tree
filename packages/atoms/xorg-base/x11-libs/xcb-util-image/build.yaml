@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: binutils-libs
+- name: xinit
   version: '>=0'
-  category: sys-libs
+  category: x11-apps

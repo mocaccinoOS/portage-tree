@@ -28,6 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
+- name: gperf
+  version: '>=0'
+  category: dev-util
 - name: freetype
   version: '>=0'
   category: media-libs-2

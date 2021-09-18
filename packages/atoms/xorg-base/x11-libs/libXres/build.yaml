@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: xkeyboard-config
+- name: xcb-util-wm
   version: '>=0'
-  category: x11-misc
+  category: x11-libs

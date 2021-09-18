@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libxkbfile
+- name: xcb-util-image
   version: '>=0'
   category: x11-libs

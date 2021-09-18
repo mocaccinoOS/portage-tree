@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libglvnd
+- name: vulkan-loader
   version: '>=0'
   category: media-libs

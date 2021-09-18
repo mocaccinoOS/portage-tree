@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libdrm
+- name: wayland-protocols
   version: '>=0'
-  category: x11-libs
+  category: dev-libs

@@ -22,9 +22,6 @@ requires:
 - name: binutils-libs
   version: '>=0'
   category: sys-libs
-- name: libXext
-  version: '>=0'
-  category: x11-libs
 - name: libXrender
   version: '>=0'
   category: x11-libs

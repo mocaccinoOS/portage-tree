@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: font-util
+- name: libXxf86vm
   version: '>=0'
-  category: media-fonts
+  category: x11-libs

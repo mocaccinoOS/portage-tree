@@ -28,9 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libXtst
-  version: '>=0'
-  category: x11-libs
 - name: xbitmaps
+  version: '>=0'
+  category: x11-misc
+- name: xkeyboard-config
   version: '>=0'
   category: x11-misc
