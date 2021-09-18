@@ -193,6 +193,7 @@ artefacts:
         - category: seed
           name: mos-portage-base
   packages:
+    - x11-misc/util-macros
     - virtual/perl-Locale-Maketext
 
 #- tree: packages/atoms/xorg
