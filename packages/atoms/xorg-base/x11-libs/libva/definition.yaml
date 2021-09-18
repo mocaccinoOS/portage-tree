@@ -12,9 +12,6 @@ requires:
 - name: wayland-scanner
   version: '>=0'
   category: dev-util
-- name: opengl
-  version: '>=0'
-  category: virtual
 - name: libXext
   version: '>=0'
   category: x11-libs

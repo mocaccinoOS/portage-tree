@@ -198,6 +198,16 @@ artefacts:
     - x11-misc/util-macros
     - virtual/perl-Locale-Maketext
 
+- tree: packages/atoms/xorg-base
+  replacements:
+    runtime_deps:
+      # Break dep cycle
+      ignore:
+        - category: virtual
+          name: opengl
+  packages:
+    - x11-libs/libva
+
 #- tree: packages/atoms/xorg
 #  uses:
 #    disabled:
