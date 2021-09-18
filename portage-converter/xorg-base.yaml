@@ -112,6 +112,11 @@ artefacts:
       #- media-libs/fontconfig
 
 - tree: packages/atoms/xorg-base
+  mutations:
+    uses:
+      # Seems present on IUSE but not in the
+      # RDEPEND, BDEPEND, DEPEND. Required for zink
+      - vulkan
   uses:
     disabled:
       - lm-sensors
@@ -127,9 +132,6 @@ artefacts:
       - video_cards_vivante
       - video_cards_radeonsi
       - vulkan-overlay
-      # I will enable vulkan later
-      - vulkan
-      #- zink
   packages:
      - media-libs/mesa:0
 

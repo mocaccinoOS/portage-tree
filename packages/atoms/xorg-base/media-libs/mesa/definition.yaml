@@ -22,6 +22,7 @@ use_flags:
 - video_cards_r300
 - video_cards_r600
 - video_cards_radeon
+- vulkan
 - wayland
 - xvmc
 - zink
