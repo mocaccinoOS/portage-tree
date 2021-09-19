@@ -105,7 +105,6 @@ artefacts:
     - x11-libs/xcb-util-keysyms
     - x11-libs/xcb-util-renderutil
     - x11-libs/xcb-util-wm
-    - x11-misc/xbitmaps
     - x11-misc/xkeyboard-config
 
     # Required by media-libs/mesa
@@ -219,12 +218,18 @@ artefacts:
     #- x11-wm/twm
 
 - tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+      - static-libs
   mutations:
     buildtime_deps:
       packages:
         - category: seed
           name: mos-portage-base
   packages:
+    - dev-util/gperf
+    - dev-util/opencl-headers
+    - x11-misc/xbitmaps
     - x11-misc/util-macros
     - virtual/perl-Locale-Maketext
 
