@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: itstool
+- name: markupsafe
   version: '>=0'
-  category: dev-util
+  category: dev-python

@@ -108,6 +108,10 @@ artefacts:
     - x11-misc/xbitmaps
     - x11-misc/xkeyboard-config
 
+    # Required by media-libs/mesa
+    - dev-python/mako:0
+    - dev-python/markupsafe:0
+
     #- x11-apps/mkfontscale
       #   - x11-libs/pango
       #- media-libs/fontconfig
@@ -130,6 +134,17 @@ artefacts:
       # Seems present on IUSE but not in the
       # RDEPEND, BDEPEND, DEPEND. Required for zink
       - vulkan
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: app-text-4.1.2
+          name: docbook-xml-dtd
+        # These two buildtime deps are not handled
+        # correctly by luet-portage-converter
+        - category: dev-python
+          name: mako
+        - category: dev-python
+          name: markupsafe
   uses:
     disabled:
       - lm-sensors

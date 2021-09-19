@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: unzip
+- name: libunwind
   version: '>=0'
-  category: app-arch
+  category: sys-libs

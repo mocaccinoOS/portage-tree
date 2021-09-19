@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libunwind
+- name: mako
   version: '>=0'
-  category: sys-libs
+  category: dev-python
