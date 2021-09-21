@@ -80,6 +80,7 @@ artefacts:
     - x11-libs/libXaw
     - x11-libs/libXmu
     - x11-libs/libXtst
+    - x11-libs/libvdpau
 
     - dev-libs/fribidi
     - media-gfx/graphite2
