@@ -85,6 +85,7 @@ artefacts:
     - dev-libs/fribidi
     - media-gfx/graphite2
     - media-libs/giflib
+    - media-libs/vulkan-loader
 
     - dev-cpp/libxmlpp:3.0
     - dev-libs/libsigc++:2
