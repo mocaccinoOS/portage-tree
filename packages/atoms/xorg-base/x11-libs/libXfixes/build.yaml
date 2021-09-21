@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: vulkan-headers
+- name: opencl-icd-loader
   version: '>=0'
-  category: dev-util
+  category: dev-libs

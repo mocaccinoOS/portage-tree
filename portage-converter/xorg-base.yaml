@@ -280,6 +280,11 @@ artefacts:
 
 - tree: packages/atoms/xorg-base
   replacements:
+    buildtime_deps:
+      # Break dep cycle
+      ignore:
+        - category: virtual
+          name: opengl
     runtime_deps:
       # Break dep cycle
       ignore:
