@@ -92,6 +92,7 @@ artefacts:
     - dev-libs/json-glib
     - dev-libs/atk
     - dev-libs/libclc
+    - dev-libs/wayland-protocols
     - dev-db/libdbi
 
     - media-libs/woff2
