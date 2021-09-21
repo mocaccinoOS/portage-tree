@@ -1,0 +1,12 @@
+name: xf86-video-vboxvideo-portage
+version: 1.0.0
+category: x11-drivers
+requires:
+- name: xf86-video-vboxvideo
+  version: 1.0.0
+  category: x11-drivers
+labels:
+  emerge.packages: x11-drivers/xf86-video-vboxvideo
+  kit: gentoo
+  original.package.name: x11-drivers/xf86-video-vboxvideo
+  original.package.version: 1.0.0

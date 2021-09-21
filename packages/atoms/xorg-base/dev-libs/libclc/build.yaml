@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: libva
+- name: mos-portage-base
   version: '>=0'
-  category: x11-libs
+  category: seed

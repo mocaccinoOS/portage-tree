@@ -160,8 +160,30 @@ artefacts:
       - video_cards_radeonsi
       - vulkan-overlay
   packages:
+     # TODO: check if opencl is handled correctly because on build
+     # phase is not injected before mesa.
      - media-libs/mesa:0
-
+     - x11-base/xorg-drivers
+     - x11-drivers/xf86-video-intel
+     - x11-drivers/xf86-video-vesa
+     - x11-drivers/xf86-video-dummy
+     - x11-drivers/xf86-video-ati
+     - x11-drivers/xf86-video-fbdev
+     - x11-drivers/xf86-video-nouveau
+     - x11-drivers/xf86-video-amdgpu
+     # Postpone qxl that require Qemu, etc.
+     #- x11-drivers/xf86-video-qxl
+     - x11-drivers/xf86-video-glint
+     - x11-drivers/xf86-video-vboxvideo
+     - x11-drivers/xf86-video-vmware
+     - x11-drivers/xf86-input-libinput
+     - x11-drivers/xf86-input-synaptics
+     - x11-drivers/xf86-input-evdev
+     - x11-drivers/xf86-input-wacom
+     - x11-drivers/xf86-input-void
+     - x11-drivers/xf86-input-vmmouse
+     - x11-drivers/xf86-input-mtrack
+     - x11-drivers/xf86-input-joystick
 
 - tree: packages/atoms/xorg-base
   uses:
@@ -229,9 +251,29 @@ artefacts:
   packages:
     - dev-util/gperf
     - dev-util/opencl-headers
+    - gui-libs/display-manager-init
+    - media-libs/giflib
     - x11-misc/xbitmaps
     - x11-misc/util-macros
     - virtual/perl-Locale-Maketext
+
+- tree: packages/atoms/xorg-base
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: dev-libs
+          name: opencl-icd-loader
+  packages:
+    - virtual/opencl
+
+- tree: packages/atoms/xorg-base
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: media-libs
+          name: mesa
+  packages:
+    - virtual/opengl
 
 - tree: packages/atoms/xorg-base
   replacements:

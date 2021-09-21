@@ -31,6 +31,3 @@ requires:
 - name: opencl
   version: '>=0'
   category: virtual
-- name: libXvMC
-  version: '>=0'
-  category: x11-libs

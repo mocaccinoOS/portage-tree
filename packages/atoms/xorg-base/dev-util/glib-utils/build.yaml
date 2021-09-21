@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: desktop-file-utils
+- name: xbitmaps
   version: '>=0'
-  category: dev-util
+  category: x11-misc

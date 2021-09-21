@@ -1,0 +1,12 @@
+name: libgudev-portage
+version: "234"
+category: dev-libs
+requires:
+- name: libgudev
+  version: "234"
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/libgudev
+  kit: gentoo
+  original.package.name: dev-libs/libgudev
+  original.package.version: "234"

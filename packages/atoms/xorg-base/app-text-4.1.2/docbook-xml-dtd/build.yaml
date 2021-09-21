@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: markupsafe
+- name: opencl-icd-loader
   version: '>=0'
-  category: dev-python
+  category: dev-libs

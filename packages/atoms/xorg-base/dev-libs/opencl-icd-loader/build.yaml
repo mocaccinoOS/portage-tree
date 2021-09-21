@@ -28,9 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: mos-portage-base
-  version: '>=0'
-  category: seed
 - name: opencl-headers
   version: '>=0'
   category: dev-util

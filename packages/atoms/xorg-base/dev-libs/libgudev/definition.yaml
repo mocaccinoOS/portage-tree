@@ -1,0 +1,33 @@
+name: libgudev
+version: "234"
+category: dev-libs
+use_flags:
+- introspection
+requires:
+- name: gobject-introspection
+  version: '>=0'
+  category: dev-libs
+- name: libudev
+  version: '>=0'
+  category: virtual
+description: GObject bindings for libudev
+uri:
+- https://wiki.gnome.org/Projects/libgudev
+license: LGPL-2.1+
+labels:
+  BDEPEND: dev-util/glib-utils >=dev-util/gtk-doc-am-1.18 virtual/pkgconfig >=app-portage/elt-patches-20170815
+    app-arch/xz-utils
+  DEPEND: '>=dev-libs/glib-2.38.0:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?]
+    >=virtual/libudev-199:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs(-)?]
+    introspection? ( >=dev-libs/gobject-introspection-1.31.1 ) dev-util/desktop-file-utils
+    x11-misc/shared-mime-info'
+  IUSE: introspection static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64
+    abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '>=dev-libs/glib-2.38.0:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs?]
+    >=virtual/libudev-199:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?,static-libs(-)?]
+    introspection? ( >=dev-libs/gobject-introspection-1.31.1 ) !sys-fs/eudev[gudev(-)]
+    !sys-fs/udev[gudev(-)] !sys-apps/systemd[gudev(-)]'
+  emerge.packages: dev-libs/libgudev
+  kit: gentoo
+  original.package.name: dev-libs/libgudev
+  original.package.version: "234"

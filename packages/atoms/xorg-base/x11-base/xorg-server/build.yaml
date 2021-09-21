@@ -28,9 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: xbitmaps
+- name: libXinerama
   version: '>=0'
-  category: x11-misc
-- name: xkeyboard-config
-  version: '>=0'
-  category: x11-misc
+  category: x11-libs

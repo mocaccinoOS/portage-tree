@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: xinit
+- name: desktop-file-utils
   version: '>=0'
-  category: x11-apps
+  category: dev-util
