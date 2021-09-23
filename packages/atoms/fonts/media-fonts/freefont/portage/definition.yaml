@@ -1,0 +1,12 @@
+name: freefont-portage
+version: "20120503"
+category: media-fonts
+requires:
+- name: freefont
+  version: "20120503"
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/freefont
+  kit: gentoo
+  original.package.name: media-fonts/freefont
+  original.package.version: "20120503"

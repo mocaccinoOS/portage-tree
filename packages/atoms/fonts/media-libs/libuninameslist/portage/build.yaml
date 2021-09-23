@@ -1,0 +1,9 @@
+package_dir: /pkgdir/{{ .Values.name | replace "-portage" "" }}
+includes:
+- ^/var/db/pkg
+- ^/var/db$
+- ^/var$
+requires:
+- name: libuninameslist
+  version: "20200413"
+  category: media-libs

@@ -1,0 +1,16 @@
+name: proggy-fonts
+version: "1"
+category: media-fonts
+use_flags:
+- X
+description: A set of monospaced bitmap programming fonts
+uri:
+- http://upperbounds.net/ https://proggyfonts.net/
+license: MIT
+labels:
+  BDEPEND: X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+  IUSE: X
+  emerge.packages: media-fonts/proggy-fonts
+  kit: gentoo
+  original.package.name: media-fonts/proggy-fonts
+  original.package.version: "1"

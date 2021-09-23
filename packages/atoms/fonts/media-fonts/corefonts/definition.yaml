@@ -1,0 +1,17 @@
+name: corefonts
+version: "1"
+category: media-fonts
+use_flags:
+- X
+description: Microsoft's TrueType core fonts
+uri:
+- http://corefonts.sourceforge.net/
+license: MSttfEULA
+labels:
+  BDEPEND: app-arch/cabextract X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings
+    )
+  IUSE: X tahoma X
+  emerge.packages: media-fonts/corefonts
+  kit: gentoo
+  original.package.name: media-fonts/corefonts
+  original.package.version: 1-r7

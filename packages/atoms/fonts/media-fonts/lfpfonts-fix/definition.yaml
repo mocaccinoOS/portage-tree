@@ -1,0 +1,17 @@
+name: lfpfonts-fix
+version: "0.83"
+category: media-fonts
+use_flags:
+- X
+description: Linux Font Project fixed-width fonts
+uri:
+- https://sourceforge.net/projects/xfonts/
+license: public-domain
+labels:
+  BDEPEND: X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings ) X? ( media-gfx/ebdftopcf
+    )
+  IUSE: X X
+  emerge.packages: media-fonts/lfpfonts-fix
+  kit: gentoo
+  original.package.name: media-fonts/lfpfonts-fix
+  original.package.version: 0.83-r2

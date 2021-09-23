@@ -1,0 +1,12 @@
+name: stix-fonts-portage
+version: 1.1.1
+category: media-fonts
+requires:
+- name: stix-fonts
+  version: 1.1.1
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/stix-fonts
+  kit: gentoo
+  original.package.name: media-fonts/stix-fonts
+  original.package.version: 1.1.1
