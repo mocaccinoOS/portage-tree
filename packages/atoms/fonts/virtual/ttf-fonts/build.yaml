@@ -27,3 +27,7 @@ excludes:
 - ^/var/db/pkg/
 - ^/var/cache/portage/
 - ^/var/git/
+requires:
+- name: liberation-fonts
+  version: '>=0'
+  category: media-fonts

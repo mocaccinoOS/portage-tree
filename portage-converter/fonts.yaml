@@ -111,6 +111,37 @@ artefacts:
   packages:
     - media-libs/tiff
 
+- tree: packages/atoms/fonts
+  uses:
+    disabled:
+      - static-libs
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: seed
+          name: mos-portage-base
+  packages:
+    - media-libs/jbigkit
+
+- tree: packages/atoms/fonts
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: media-libs
+          name: libjpeg-turbo
+  packages:
+    - virtual/jpeg
+
+- tree: packages/atoms/fonts
+  mutations:
+    buildtime_deps:
+      packages:
+        - category: media-fonts
+          name: liberation-fonts
+  packages:
+    - virtual/ttf-fonts
+
+
 build_layers:
   - layer:
       name: base-core

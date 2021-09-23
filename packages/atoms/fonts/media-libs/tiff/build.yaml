@@ -28,12 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: jbigkit
-  version: '>=0'
-  category: media-libs
 - name: jpeg
   version: '>=0'
   category: virtual
-- name: mkfontscale
+- name: libfontenc
   version: '>=0'
-  category: x11-apps
+  category: x11-libs
