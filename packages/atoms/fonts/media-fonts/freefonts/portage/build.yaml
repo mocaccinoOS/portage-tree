@@ -1,9 +1,0 @@
-package_dir: /pkgdir/{{ .Values.name | replace "-portage" "" }}
-includes:
-- ^/var/db/pkg
-- ^/var/db$
-- ^/var$
-requires:
-- name: freefonts
-  version: "0.10"
-  category: media-fonts

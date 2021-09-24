@@ -1,9 +1,0 @@
-package_dir: /pkgdir/{{ .Values.name | replace "-portage" "" }}
-includes:
-- ^/var/db/pkg
-- ^/var/db$
-- ^/var$
-requires:
-- name: bdf2psf
-  version: "1.155"
-  category: app-text

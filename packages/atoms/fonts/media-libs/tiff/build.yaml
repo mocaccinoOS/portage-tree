@@ -28,9 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: jpeg
-  version: '>=0'
-  category: virtual
-- name: libfontenc
+- name: xcb-util
   version: '>=0'
   category: x11-libs

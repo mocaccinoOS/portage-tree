@@ -28,6 +28,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: base-core
+- name: libxshmfence
   version: '>=0'
-  category: seed
+  category: x11-libs

@@ -28,6 +28,9 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: giflib
+- name: base-core
   version: '>=0'
-  category: media-libs
+  category: seed
+- name: libfontenc
+  version: '>=0'
+  category: x11-libs
