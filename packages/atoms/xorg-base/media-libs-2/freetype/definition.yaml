@@ -4,17 +4,18 @@ category: media-libs-2
 use_flags:
 - -X
 - -brotli
-- -harfbuzz
+- -bzip2
+- -png
 - -utils
-- bzip2
-- png
+- harfbuzz
+- fontforge
 requires:
-- name: bzip2
-  version: '>=0'
-  category: app-arch
-- name: libpng
+- name: harfbuzz
   version: '>=0'
   category: media-libs
+- name: zlib
+  version: '>=0'
+  category: sys-libs
 description: A high-quality and portable font engine
 uri:
 - https://www.freetype.org/

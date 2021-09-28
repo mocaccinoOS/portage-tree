@@ -194,9 +194,12 @@ artefacts:
       - bindist
       - utils
       - X
+    enabled:
       - fontforge
-      # Avoid dep cycle with cairo
       - harfbuzz
+  mutations:
+    uses:
+      - fontforge
   packages:
     - media-libs/freetype:2
 
@@ -216,19 +219,6 @@ artefacts:
       - utils
   packages:
       - x11-libs/cairo:0
-
-- tree: packages/atoms/xorg-base
-  uses:
-    disabled:
-      - brotli
-      - bindist
-      - utils
-      - X
-      - fontforge
-      # Avoid dep cycle with cairo
-      - harfbuzz
-  packages:
-    - media-libs/freetype:2
 
 - tree: packages/atoms/xorg-base
   uses:
