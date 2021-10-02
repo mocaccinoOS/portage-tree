@@ -1,0 +1,4 @@
+media-libs/mesa X classic dri3 egl gallium gbm gles2 llvm zstd d3d9 -debug -gles1 opencl -osmesa -test vaapi -valgrind vdpau vulkan -vulkan-overlay wayland xa xvmc zink -lm-sensors -unwind -valgrind -video_cards_freedreno -video_cards_iris -video_cards_lima -video_cards_panfrost -video_cards_v3d -video_cards_vc4 -video_cards_virgl -video_cards_vivante -video_cards_radeonsi -vulkan-overlay
+
+x11-base/xorg-server -Xaw3d -sixel -toolbar
+media-libs/freetype:2 -brotli -bindist -utils -X -fontforge -harfbuzz
