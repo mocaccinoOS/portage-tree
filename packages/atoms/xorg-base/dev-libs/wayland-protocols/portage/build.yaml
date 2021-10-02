@@ -1,9 +1,0 @@
-package_dir: /pkgdir/{{ .Values.name | replace "-portage" "" }}
-includes:
-- ^/var/db/pkg
-- ^/var/db$
-- ^/var$
-requires:
-- name: wayland-protocols
-  version: "1.21"
-  category: dev-libs

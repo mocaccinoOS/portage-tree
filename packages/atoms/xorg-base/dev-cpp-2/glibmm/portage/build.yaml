@@ -1,9 +1,0 @@
-package_dir: /pkgdir/{{ .Values.name | replace "-portage" "" }}
-includes:
-- ^/var/db/pkg
-- ^/var/db$
-- ^/var$
-requires:
-- name: glibmm
-  version: 2.66.1
-  category: dev-cpp-2
