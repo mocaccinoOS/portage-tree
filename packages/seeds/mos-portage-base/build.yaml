@@ -37,7 +37,7 @@ steps:
   cp make.conf /etc/portage/ &&
   cd /usr/bin &&
   ln -s gawk awk &&
-  lns -s bash sh &&
+  ln -s bash sh &&
   rm -rf /luetbuild &&
   /usr/bin/gcc-config 1 &&
   source /etc/profile &&
