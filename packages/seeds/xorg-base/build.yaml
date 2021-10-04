@@ -1,4 +1,3 @@
-image: scratch
 env:
 - LUET_YES=true
 - LUET_NOLOCK=true
