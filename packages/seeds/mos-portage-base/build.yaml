@@ -48,7 +48,10 @@ steps:
   echo "Europe/Rome" > /etc/localtime &&
   env-update &&
   ldconfig &&
-  eval 'locale-gen || true'
+  eval 'locale-gen || true' &&
+  build-docbook-catalog
+
+# build-docbook-catalog is needed to use xsltproc and build gdbus-codegen, glib-utils, etc.
 
 excludes:
 - ^/etc/gshadow
