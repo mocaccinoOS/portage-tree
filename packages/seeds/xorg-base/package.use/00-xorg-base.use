@@ -1,8 +1,10 @@
 media-libs/mesa X classic dri3 egl gallium gbm gles2 llvm zstd d3d9 -debug -gles1 opencl -osmesa -test -vaapi -valgrind vdpau vulkan -vulkan-overlay wayland xa xvmc zink -lm-sensors -unwind -valgrind -video_cards_freedreno -video_cards_iris -video_cards_lima -video_cards_panfrost -video_cards_v3d -video_cards_vc4 -video_cards_virgl -video_cards_vivante -video_cards_radeonsi -vulkan-overlay video_cards_r200 video_cards_r300 video_cards_r600 video_cards_vmware video_cards_i965 video_cards_i915
 
+
+
 x11-base/xorg-server -Xaw3d -sixel -toolbar xnest xephyr wayland kdrive
 
-x11-libs/libva vdpau wayland -opengl video_cards_i965
+x11-libs/libva vdpau wayland opengl video_cards_i965
 x11-libs/libva-intel-driver wayland
 
 # required by x11-libs/pango (argument)
@@ -15,3 +17,8 @@ media-libs/freetype:2 -brotli -bindist -utils -X -fontforge harfbuzz
 #8 49.40 - media-libs/mesa-21.1.4 (Change USE: -vaapi)
 #8 49.40 - x11-libs/libva-2.10.0 (Change USE: -opengl)
 
+x11-libs/gtk+:3 wayland colord
+
+dev-qt/qtgui wayland vulkan ibus evdev
+media-libs/vulkan-loader wayland
+net-print/cups X acl dbus pam ssl systemd threads usb zeroconf

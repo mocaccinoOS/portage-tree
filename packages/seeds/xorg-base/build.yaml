@@ -12,7 +12,14 @@ requires:
 prelude:
 - >-
   eval 'mkdir -p /etc/portage/package.use/ || true' &&
+  eval 'mkdir -p /etc/portage/package.license/ || true' &&
   cp -rvf package.use/* /etc/portage/package.use/ &&
+  cp -rvf package.license/* /etc/portage/package.license/ &&
+  USE="-cairo -harfbuzz" emerge -1 media-libs/harfbuzz media-libs/freetype &&
+  USE="-vaapi" emerge -1 media-libs/mesa &&
+  emerge -1 dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse &&
+  emerge -1 dev-lang/rust-bin &&
+  USE="-cups" emerge -1 x11-libs/gtk+:3 &&
   emerge -t -j $JOBS {{ ( index .Values.labels "emerge.packages" ) }} &&
   rm -v /var/cache/distfiles/* /var/cache/binpkgs/* || true
 
