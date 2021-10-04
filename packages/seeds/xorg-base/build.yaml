@@ -6,7 +6,7 @@ env:
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
 requires:
   - category: seed
-    name: mos-portage-stage
+    name: mos-portage-base
     version: ">=0"
 
 prelude:
