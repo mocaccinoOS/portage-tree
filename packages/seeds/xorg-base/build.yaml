@@ -4,7 +4,7 @@ env:
 - HTTP_TIMEOUT=0
 - JOBS=5
 - FEATURES="-sandbox -usersandbox -ipc-sandbox -pid-sandbox -network-sandbox"
-reuires:
+requires:
   - category: seed
     name: mos-portage-stage
     version: ">=0"
