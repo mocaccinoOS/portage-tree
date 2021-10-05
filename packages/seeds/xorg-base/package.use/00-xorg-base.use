@@ -24,3 +24,5 @@ media-libs/vulkan-loader wayland
 net-print/cups X acl dbus pam ssl systemd threads usb zeroconf
 
 x11-libs/libdrm video_cards_vmware
+
+media-plugins/alsa-plugins pulseaudio
