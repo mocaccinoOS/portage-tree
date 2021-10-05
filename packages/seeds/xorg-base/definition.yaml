@@ -1,5 +1,5 @@
 name: xorg-base
-version: "0.20210913+8"
+version: "0.20210913+9"
 category: seed
 hidden: true
 labels:
@@ -138,3 +138,4 @@ labels:
     media-fonts/terminus-font
     media-fonts/unifont
     media-fonts/urw-fonts
+    net-print/cups
