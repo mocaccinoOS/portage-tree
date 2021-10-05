@@ -1,5 +1,5 @@
 name: xorg-base
-version: "0.20210913+6"
+version: "0.20210913+7"
 category: seed
 hidden: true
 labels:

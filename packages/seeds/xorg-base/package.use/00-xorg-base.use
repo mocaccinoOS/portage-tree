@@ -22,3 +22,5 @@ x11-libs/gtk+:3 wayland colord
 dev-qt/qtgui wayland vulkan ibus evdev
 media-libs/vulkan-loader wayland
 net-print/cups X acl dbus pam ssl systemd threads usb zeroconf
+
+x11-libs/libdrm video_cards_vmware
