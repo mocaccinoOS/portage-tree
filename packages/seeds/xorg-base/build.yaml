@@ -10,16 +10,19 @@ requires:
     version: ">=0"
 
 prelude:
+# links is a buildtime req of xdg-utils not present on ebuild.
 - >-
   eval 'mkdir -p /etc/portage/package.use/ || true' &&
   eval 'mkdir -p /etc/portage/package.license/ || true' &&
   cp -rvf package.use/* /etc/portage/package.use/ &&
   cp -rvf package.license/* /etc/portage/package.license/ &&
-  USE="-cairo -harfbuzz" emerge -1 media-libs/harfbuzz media-libs/freetype &&
-  USE="-vaapi" emerge -1 media-libs/mesa &&
-  emerge -1 dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse &&
-  emerge -1 dev-lang/rust-bin &&
-  USE="-cups" emerge -1 x11-libs/gtk+:3 &&
+  USE="-cairo -harfbuzz" emerge -1 -j $JOBS media-libs/harfbuzz media-libs/freetype -t &&
+  emerge -1 -j $JOBS dev-lang/rust-bin www-client/links -t &&
+  sed -e 's|fontforge -script|#fontforge -script|g' -i
+  /var/db/repos/gentoo/media-fonts/arphicfonts/arphicfonts-0.2.20080216.1-r2.ebuild &&
+  USE="harfbuzz" emerge fontforge -j $JOBS -t &&
+  USE="-vaapi" emerge -1 -j $JOBS media-libs/mesa -t &&
+  emerge -1 -j $JOBS dev-tex/bibtexu gst-plugins-base media-plugins/gst-plugins-pulse -t &&
   emerge -t -j $JOBS {{ ( index .Values.labels "emerge.packages" ) }} &&
   rm -v /var/cache/distfiles/* /var/cache/binpkgs/* || true
 
