@@ -26,3 +26,6 @@ net-print/cups X acl dbus pam ssl systemd threads usb zeroconf
 x11-libs/libdrm video_cards_vmware
 
 media-plugins/alsa-plugins pulseaudio
+
+sys-apps/dbus X -abi_mips_n32 -abi_mips_n64 -abi_mips_o32 -abi_s390_32 -abi_s390_64 abi_x86_32 abi_x86_64 -abi_x86_x32 -debug -doc -elogind -selinux -static-libs systemd -test user-session
+
