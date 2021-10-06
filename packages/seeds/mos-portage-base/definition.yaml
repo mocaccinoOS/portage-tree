@@ -1,4 +1,4 @@
 name: mos-portage-base
-version: "0.20210913+11"
+version: "0.20210913+12"
 category: seed
 hidden: true
