@@ -40,7 +40,14 @@ net-misc/rsync examples xattr
 sys-apps/groff -X
 # Do we really want berkdb?
 sys-apps/man-db gdbm manpager nls seccomp zlib -berkdb
-sys-apps/dbus user-session
+# The following USE changes are necessary to proceed:
+# (see "package.use" in the portage(5) man page for more details)
+# required by net-wireless/bluez-5.58-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[bluetooth]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+# >=sys-apps/dbus-1.12.20-r1 -user-session
+sys-apps/dbus -user-session
+
 sys-apps/iproute2 berkdb caps iptables ipv6
 sys-apps/systemd acl cryptsetup dracut gcrypt gnutls kmod lz4 lzma pam pcre resolvconf seccomp split-usr sysv-utils
 sys-apps/util-linux bzip2 nls static-libs utils
