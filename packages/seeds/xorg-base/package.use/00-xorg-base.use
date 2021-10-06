@@ -19,7 +19,7 @@ media-libs/freetype:2 -brotli -bindist -utils -X -fontforge harfbuzz
 
 x11-libs/gtk+:3 wayland colord
 
-dev-qt/qtgui wayland vulkan ibus evdev
+dev-qt/qtgui wayland -vulkan ibus evdev
 media-libs/vulkan-loader wayland
 net-print/cups X acl dbus pam ssl systemd threads usb zeroconf
 
