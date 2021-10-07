@@ -1,9 +1,9 @@
 name: dbus-portage
-version: 1.12.20
+version: "1.12.20+1"
 category: sys-apps
 requires:
 - name: dbus
-  version: 1.12.20
+  version: "1.12.20+1"
   category: sys-apps
 labels:
   emerge.packages: sys-apps/dbus
