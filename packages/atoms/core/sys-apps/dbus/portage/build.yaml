@@ -5,5 +5,5 @@ includes:
 - ^/var$
 requires:
 - name: dbus
-  version: 1.12.20
+  version: "{{ .Values.version }}"
   category: sys-apps
