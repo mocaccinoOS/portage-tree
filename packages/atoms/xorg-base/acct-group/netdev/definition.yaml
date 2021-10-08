@@ -1,0 +1,11 @@
+name: netdev
+version: "0"
+category: acct-group
+description: group for netdev (avahi)
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/netdev
+  kit: gentoo
+  original.package.name: acct-group/netdev
+  original.package.version: 0-r1

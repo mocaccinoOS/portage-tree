@@ -1,0 +1,12 @@
+name: fontawesome-portage
+version: 5.15.3
+category: media-fonts
+requires:
+- name: fontawesome
+  version: 5.15.3
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/fontawesome
+  kit: gentoo
+  original.package.name: media-fonts/fontawesome
+  original.package.version: 5.15.3

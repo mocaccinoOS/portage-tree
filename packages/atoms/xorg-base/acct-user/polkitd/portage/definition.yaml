@@ -1,0 +1,12 @@
+name: polkitd-portage
+version: "0"
+category: acct-user
+requires:
+- name: polkitd
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/polkitd
+  kit: gentoo
+  original.package.name: acct-user/polkitd
+  original.package.version: 0-r1

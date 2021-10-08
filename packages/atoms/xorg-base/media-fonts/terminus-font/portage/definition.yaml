@@ -1,0 +1,12 @@
+name: terminus-font-portage
+version: 4.49.1
+category: media-fonts
+requires:
+- name: terminus-font
+  version: 4.49.1
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/terminus-font
+  kit: gentoo
+  original.package.name: media-fonts/terminus-font
+  original.package.version: 4.49.1

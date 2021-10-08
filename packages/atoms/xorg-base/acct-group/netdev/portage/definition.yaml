@@ -1,0 +1,12 @@
+name: netdev-portage
+version: "0"
+category: acct-group
+requires:
+- name: netdev
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/netdev
+  kit: gentoo
+  original.package.name: acct-group/netdev
+  original.package.version: 0-r1

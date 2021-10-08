@@ -1,0 +1,12 @@
+name: freeglut-portage
+version: 3.2.1
+category: media-libs
+requires:
+- name: freeglut
+  version: 3.2.1
+  category: media-libs
+labels:
+  emerge.packages: media-libs/freeglut
+  kit: gentoo
+  original.package.name: media-libs/freeglut
+  original.package.version: 3.2.1-r1

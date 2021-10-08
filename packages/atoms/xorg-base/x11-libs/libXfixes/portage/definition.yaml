@@ -1,0 +1,12 @@
+name: libXfixes-portage
+version: 6.0.0
+category: x11-libs
+requires:
+- name: libXfixes
+  version: 6.0.0
+  category: x11-libs
+labels:
+  emerge.packages: x11-libs/libXfixes
+  kit: gentoo
+  original.package.name: x11-libs/libXfixes
+  original.package.version: 6.0.0

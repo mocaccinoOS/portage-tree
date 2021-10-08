@@ -1,0 +1,14 @@
+name: gtk-doc-am
+version: 1.33.2
+category: dev-util
+description: Automake files from gtk-doc
+uri:
+- https://wiki.gnome.org/DocumentationProject/GtkDoc
+license: GPL-2 FDL-1.1
+labels:
+  BDEPEND: app-arch/xz-utils
+  RDEPEND: '!<dev-util/gtk-doc-1.33'
+  emerge.packages: dev-util/gtk-doc-am
+  kit: gentoo
+  original.package.name: dev-util/gtk-doc-am
+  original.package.version: 1.33.2

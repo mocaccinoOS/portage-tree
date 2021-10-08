@@ -1,0 +1,16 @@
+name: polkitd
+version: "0"
+category: acct-user
+requires:
+- name: polkitd
+  version: '>=0'
+  category: acct-group
+description: 'System user: polkitd'
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/polkitd
+  emerge.packages: acct-user/polkitd
+  kit: gentoo
+  original.package.name: acct-user/polkitd
+  original.package.version: 0-r1

@@ -1,0 +1,29 @@
+name: autoconf
+version: "2.71"
+category: sys-devel-2.71
+requires:
+- name: perl
+  version: '>=0'
+  category: dev-lang
+- name: autoconf-wrapper
+  version: '>=0'
+  category: sys-devel
+- name: gnuconfig
+  version: '>=0'
+  category: sys-devel
+- name: m4
+  version: '>=0'
+  category: sys-devel
+description: Used to create autoconfiguration files
+uri:
+- https://www.gnu.org/software/autoconf/autoconf.html
+license: GPL-3
+labels:
+  BDEPEND: '>=sys-devel/m4-1.4.16 >=dev-lang/perl-5.6'
+  IUSE: emacs
+  RDEPEND: '>=sys-devel/m4-1.4.16 >=dev-lang/perl-5.6 >=sys-devel/autoconf-wrapper-15
+    sys-devel/gnuconfig !~sys-devel/autoconf-2.71:2.5'
+  emerge.packages: sys-devel/autoconf:2.71
+  kit: gentoo
+  original.package.name: sys-devel/autoconf
+  original.package.version: 2.71-r1

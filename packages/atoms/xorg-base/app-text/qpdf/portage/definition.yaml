@@ -1,0 +1,12 @@
+name: qpdf-portage
+version: 10.3.2
+category: app-text
+requires:
+- name: qpdf
+  version: 10.3.2
+  category: app-text
+labels:
+  emerge.packages: app-text/qpdf
+  kit: gentoo
+  original.package.name: app-text/qpdf
+  original.package.version: 10.3.2

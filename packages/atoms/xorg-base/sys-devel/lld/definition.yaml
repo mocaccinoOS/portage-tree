@@ -1,0 +1,25 @@
+name: lld
+version: 12.0.1
+category: sys-devel
+use_flags:
+- -test
+requires:
+- name: llvm
+  version: '>=0'
+  category: sys-devel-12
+description: The LLVM linker (link editor)
+uri:
+- https://llvm.org/
+license: Apache-2.0-with-LLVM-exceptions UoI-NCSA
+labels:
+  BDEPEND: test? ( >=dev-util/cmake-3.16 || ( ( dev-lang/python:3.10 ~dev-python/lit-12.0.1[python_targets_python3_10(-)]
+    ) ( dev-lang/python:3.9 ~dev-python/lit-12.0.1[python_targets_python3_9(-)] )
+    ( dev-lang/python:3.8 ~dev-python/lit-12.0.1[python_targets_python3_8(-)] ) )
+    ) dev-util/ninja dev-util/cmake
+  DEPEND: ~sys-devel/llvm-12.0.1 !!sys-devel/llvm:0
+  IUSE: test test
+  RDEPEND: ~sys-devel/llvm-12.0.1
+  emerge.packages: sys-devel/lld
+  kit: gentoo
+  original.package.name: sys-devel/lld
+  original.package.version: 12.0.1

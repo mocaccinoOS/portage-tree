@@ -1,0 +1,12 @@
+name: xf86-input-joystick-portage
+version: 1.6.3
+category: x11-drivers
+requires:
+- name: xf86-input-joystick
+  version: 1.6.3
+  category: x11-drivers
+labels:
+  emerge.packages: x11-drivers/xf86-input-joystick
+  kit: gentoo
+  original.package.name: x11-drivers/xf86-input-joystick
+  original.package.version: 1.6.3

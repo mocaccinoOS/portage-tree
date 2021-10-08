@@ -1,0 +1,35 @@
+name: libsndfile
+version: 1.0.31
+category: media-libs
+use_flags:
+- -minimal
+- -sqlite
+- -test
+- alsa
+requires:
+- name: alsa-lib
+  version: '>=0'
+  category: media-libs
+description: C library for reading and writing files containing sampled sound
+uri:
+- https://libsndfile.github.io/libsndfile/
+license: LGPL-2.1
+labels:
+  BDEPEND: virtual/pkgconfig test? ( || ( dev-lang/python:3.9 dev-lang/python:3.8
+    >=dev-python/pypy3-7.3.0:0 ) )
+  DEPEND: '!minimal? ( media-libs/flac:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    media-libs/libogg:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    media-libs/libvorbis:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    media-libs/opus:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) alsa? ( media-libs/alsa-lib:= ) sqlite? ( dev-db/sqlite )'
+  IUSE: alsa minimal sqlite test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64
+    abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '!minimal? ( media-libs/flac:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    media-libs/libogg:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    media-libs/libvorbis:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    media-libs/opus:=[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    ) alsa? ( media-libs/alsa-lib:= ) sqlite? ( dev-db/sqlite )'
+  emerge.packages: media-libs/libsndfile
+  kit: gentoo
+  original.package.name: media-libs/libsndfile
+  original.package.version: 1.0.31

@@ -1,0 +1,12 @@
+name: alee-fonts-portage
+version: "13"
+category: media-fonts
+requires:
+- name: alee-fonts
+  version: "13"
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/alee-fonts
+  kit: gentoo
+  original.package.name: media-fonts/alee-fonts
+  original.package.version: 13-r1

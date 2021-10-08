@@ -45,270 +45,60 @@ skipped_resolutions:
 build_template_file: ../templates/build-pkg-uses.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
+include_files:
+  - ./artefacts/xorg-base.yml
+
 artefacts:
-
 - tree: packages/atoms/xorg-base
+  replacements:
+    #buildtime_deps:
+      # Break dep cycle
+    #  ignore:
+    #    - category: virtual
+    #      name: opengl
+    runtime_deps:
+      # Break dep cycle
+      ignore:
+        - category: virtual
+          name: opengl
   uses:
     disabled:
-      - static-libs
-  packages:
-    - app-arch/unzip
-    - app-text/docbook-xml-dtd:4.1.2
-
-    - x11-libs/libXfixes
-    - x11-libs/libXrandr
-    - x11-libs/libXrender
-    - x11-libs/libXext
-    - x11-libs/libXv
-    #- x11-libs/libXft
-    - x11-libs/libdrm
-    - x11-libs/libXdamage
-    #- x11-libs/libxshmfence
-    - sys-libs/libunwind
-    - dev-libs/wayland
-    - media-libs/libpng
-
-    - x11-libs/libXcomposite
-    - x11-libs/libXcursor
-    - x11-libs/libXdamage
-    - x11-libs/libXext
-    - x11-libs/libXi
-    - x11-libs/libXinerama
-    - x11-libs/libXrandr
-    - x11-libs/libxkbcommon
-    - x11-libs/libXpm
-    - x11-libs/libXaw
-    - x11-libs/libXmu
-    - x11-libs/libXtst
-    - x11-libs/libvdpau
-
-    - dev-libs/fribidi
-    - media-gfx/graphite2
-    - media-libs/giflib
-    - media-libs/vulkan-loader
-
-    - dev-cpp/libxmlpp:3.0
-    - dev-libs/libsigc++:2
-    - dev-libs/tinyxml2
-    - dev-libs/json-glib
-    - dev-libs/atk
-    - dev-libs/libclc
-    - dev-libs/wayland-protocols
-    - dev-db/libdbi
-
-    - media-libs/woff2
-
-    - media-libs/libglvnd
-    # TODO: move to core-dev
-    - sys-libs/binutils-libs
-
-    - x11-libs/libdmx
-    - x11-libs/xcb-util
-    - x11-libs/xcb-util-image
-    - x11-libs/xcb-util-keysyms
-    - x11-libs/xcb-util-renderutil
-    - x11-libs/xcb-util-wm
-    - x11-misc/xkeyboard-config
-
-    # Required by media-libs/mesa
-    - dev-python/mako:0
-    - dev-python/markupsafe:0
-
-    #- x11-apps/mkfontscale
-      #   - x11-libs/pango
-      #- media-libs/fontconfig
-
-- tree: packages/atoms/xorg-base
-  uses:
-    disabled:
-      - static-libs
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: app-text-4.1.2
-          name: docbook-xml-dtd
-  packages:
-    - x11-misc/shared-mime-info
-
-- tree: packages/atoms/xorg-base
-  mutations:
-    uses:
-      # Seems present on IUSE but not in the
-      # RDEPEND, BDEPEND, DEPEND. Required for zink
-      - vulkan
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: app-text-4.1.2
-          name: docbook-xml-dtd
-        # These two buildtime deps are not handled
-        # correctly by luet-portage-converter
-        - category: dev-python
-          name: mako
-        - category: dev-python
-          name: markupsafe
-  uses:
-    disabled:
-      - lm-sensors
-      - unwind
-      - valgrind
-      - video_cards_freedreno
-      - video_cards_iris
-      - video_cards_lima
-      - video_cards_panfrost
-      - video_cards_v3d
-      - video_cards_vc4
-      - video_cards_virgl
-      - video_cards_vivante
-      - video_cards_radeonsi
-      - vulkan-overlay
-  packages:
-     # TODO: check if opencl is handled correctly because on build
-     # phase is not injected before mesa.
-     - media-libs/mesa:0
-     - x11-base/xorg-drivers
-     - x11-drivers/xf86-video-intel
-     - x11-drivers/xf86-video-vesa
-     - x11-drivers/xf86-video-dummy
-     - x11-drivers/xf86-video-ati
-     - x11-drivers/xf86-video-fbdev
-     - x11-drivers/xf86-video-nouveau
-     - x11-drivers/xf86-video-amdgpu
-     # Postpone qxl that require Qemu, etc.
-     #- x11-drivers/xf86-video-qxl
-     - x11-drivers/xf86-video-glint
-     - x11-drivers/xf86-video-vboxvideo
-     - x11-drivers/xf86-input-libinput
-     - x11-drivers/xf86-input-synaptics
-     - x11-drivers/xf86-input-evdev
-     - x11-drivers/xf86-input-wacom
-     - x11-drivers/xf86-input-void
-     - x11-drivers/xf86-input-vmmouse
-     - x11-drivers/xf86-input-mtrack
-     - x11-drivers/xf86-input-joystick
-
-- tree: packages/atoms/xorg-base
-  uses:
-    disabled:
-      - brotli
-      - bindist
-      - utils
-      - X
+    - utils
+    - video_cards_nvidia
     enabled:
-      - fontforge
-      - harfbuzz
-  mutations:
-    uses:
-      - fontforge
-  packages:
-    - media-libs/freetype:2
-
-- tree: packages/atoms/xorg-base
-  replacements:
-    # Break cycyle dep
-    buildtime_deps:
-      ignore:
-        - name: fontconfig
-          category: media-libs-1.0
-    runtime_deps:
-      ignore:
-        - name: fontconfig
-          category: media-libs-1.0
-  uses:
-    disabled:
-      - utils
-  packages:
-      - x11-libs/cairo:0
-
-- tree: packages/atoms/xorg-base
-  uses:
-    disabled:
-      - Xaw3d
-      - sixel
-      - toolbar
-  packages:
-    - x11-base/xorg-server
-    #- x11-terms/xterm
-    #- x11-wm/twm
-
-- tree: packages/atoms/xorg-base
-  uses:
-    disabled:
-      - static-libs
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: seed
-          name: mos-portage-base
-  packages:
-    - dev-util/gperf
-    - dev-util/opencl-headers
-    - gui-libs/display-manager-init
-    - media-libs/giflib
-    - x11-misc/xbitmaps
-    - x11-misc/util-macros
-    - virtual/perl-Locale-Maketext
-
-- tree: packages/atoms/xorg-base
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: dev-libs
-          name: opencl-icd-loader
-  packages:
-    - virtual/opencl
-
-- tree: packages/atoms/xorg-base
-  mutations:
-    buildtime_deps:
-      packages:
-        - category: media-libs
-          name: mesa
-  packages:
-    - virtual/opengl
-
-- tree: packages/atoms/xorg-base
-  replacements:
-    buildtime_deps:
-      # Break dep cycle
-      ignore:
-        - category: virtual
-          name: opengl
-    runtime_deps:
-      # Break dep cycle
-      ignore:
-        - category: virtual
-          name: opengl
+    - X
+    - drm
+    - opengl
+    - vdpau
+    - video_cards_i965
+    - video_cards_intel
+    - video_cards_nouveau
+    - wayland
   packages:
     - x11-libs/libva
 
-#- tree: packages/atoms/xorg
-#  uses:
-#    disabled:
-#      - gtk
-#      - kde
-#      - examples
-#      - elogind
-#  packages:
-#    - sys-auth/polkit:0
-
 build_layers:
   - layer:
-      name: mos-portage-base
+      name: xorg-base
       category: seed
     packages:
       - acct-group/adm:0
       - acct-group/audio:0
+      - acct-group/avahi:0
       - acct-group/cdrom:0
+      - acct-group/colord:0
       - acct-group/dialout:0
       - acct-group/disk:0
       - acct-group/input:0
       - acct-group/kmem:0
       - acct-group/kvm:0
       - acct-group/lp:0
+      - acct-group/lpadmin:0
       - acct-group/messagebus:0
+      - acct-group/netdev:0
       - acct-group/nobody:0
       - acct-group/nullmail:0
+      - acct-group/polkitd:0
       - acct-group/portage:0
       - acct-group/render:0
       - acct-group/root:0
@@ -328,9 +118,12 @@ build_layers:
       - acct-group/utmp:0
       - acct-group/video:0
       - acct-group/wheel:0
+      - acct-user/avahi:0
+      - acct-user/colord:0
       - acct-user/messagebus:0
       - acct-user/nobody:0
       - acct-user/nullmail:0
+      - acct-user/polkitd:0
       - acct-user/portage:0
       - acct-user/root:0
       - acct-user/sshd:0
@@ -341,13 +134,20 @@ build_layers:
       - acct-user/systemd-resolve:0
       - acct-user/systemd-timesync:0
       - acct-user/unbound:0
+      - app-accessibility/at-spi2-atk:2
+      - app-accessibility/at-spi2-core:2
       - app-admin/eselect:0
       - app-admin/metalog:0
+      - app-arch/brotli:0
       - app-arch/bzip2:0
+      - app-arch/cabextract:0
+      - app-arch/cpio:0
       - app-arch/gzip:0
       - app-arch/libarchive:0
       - app-arch/lz4:0
+      - app-arch/rpm2targz:0
       - app-arch/tar:0
+      - app-arch/unzip:0
       - app-arch/xz-utils:0
       - app-arch/zstd:0
       - app-crypt/argon2:0
@@ -361,11 +161,18 @@ build_layers:
       - app-crypt/p11-kit:0
       - app-crypt/pinentry:0
       - app-crypt/rhash:0
+      - app-doc/xmltoman:0
+      - app-eselect/eselect-fontconfig:0
       - app-eselect/eselect-iptables:0
       - app-eselect/eselect-lib-bin-symlink:0
       - app-eselect/eselect-pinentry:0
-      - app-misc/c_rehash:0
+      - app-eselect/eselect-rust:0
+      - app-i18n/ibus:0
+      - app-i18n/unicode-cldr:0
+      - app-i18n/unicode-data:0
+      - app-i18n/unicode-emoji:0
       - app-misc/ca-certificates:0
+      - app-misc/c_rehash:0
       - app-misc/mime-types:0
       - app-misc/pax-utils:0
       - app-portage/elt-patches:0
@@ -373,49 +180,88 @@ build_layers:
       - app-portage/portage-utils:0
       - app-shells/bash:0
       - app-text/build-docbook-catalog:0
+      - app-text/docbook-xml-dtd:4.1.2
+      - app-text/docbook-xml-dtd:4.2
+      - app-text/docbook-xml-dtd:4.3
       - app-text/docbook-xml-dtd:4.5
+      - app-text/docbook-xsl-ns-stylesheets:0
       - app-text/docbook-xsl-stylesheets:0
+      - app-text/ghostscript-gpl:0
+      - app-text/iso-codes:0
+      - app-text/libpaper:0
       - app-text/manpager:0
+      - app-text/mupdf:0
       - app-text/opensp:0
       - app-text/po4a:0
+      - app-text/poppler:0
+      - app-text/poppler-data:0
+      - app-text/qpdf:0
       - app-text/sgml-common:0
       - app-text/xmlto:0
+      - dev-cpp/glibmm:2
+      - dev-cpp/libxmlpp:3.0
+      - dev-db/libdbi:0
+      - dev-db/libdbi-drivers:0
       - dev-db/lmdb:0
       - dev-db/sqlite:3
+      - dev-lang/mujs:0
+      - dev-lang/nasm:0
+      - dev-lang/orc:0
       - dev-lang/perl:0
       - dev-lang/python:3.9
       - dev-lang/python-exec:2
       - dev-lang/python-exec-conf:2
+      - dev-lang/rust-bin:stable
+      - dev-lang/spidermonkey:78
       - dev-lang/tcl:0
+      - dev-lang/vala:0.48
+      - dev-lang/vala:0.52
       - dev-lang/yasm:0
+      - dev-libs/atk:0
       - dev-libs/boehm-gc:0
+      - dev-libs/double-conversion:0
       - dev-libs/elfutils:0
+      - dev-libs/ell:0
       - dev-libs/expat:0
+      - dev-libs/fribidi:0
       - dev-libs/fstrm:0
       - dev-libs/glib:2
       - dev-libs/gmp:0
       - dev-libs/gobject-introspection:0
       - dev-libs/gobject-introspection-common:0
+      - dev-libs/gumbo:0
       - dev-libs/icu:0
       - dev-libs/isl:0
       - dev-libs/json-c:0
       - dev-libs/jsoncpp:0
+      - dev-libs/json-glib:0
+      - dev-libs/kpathsea:0
       - dev-libs/libaio:0
       - dev-libs/libassuan:0
       - dev-libs/libatomic_ops:0
       - dev-libs/libbpf:0
       - dev-libs/libbsd:0
+      - dev-libs/libclc:0
+      - dev-libs/libdaemon:0
       - dev-libs/libev:0
+      - dev-libs/libevdev:0
       - dev-libs/libevent:0
       - dev-libs/libffi:0
       - dev-libs/libgcrypt:0
       - dev-libs/libgpg-error:0
+      - dev-libs/libgudev:0
+      - dev-libs/libgusb:0
+      - dev-libs/libical:0
+      - dev-libs/libinput:0
       - dev-libs/libksba:0
       - dev-libs/libltdl:0
+      - dev-libs/libmspack:0
+      - dev-libs/libnatspec:0
       - dev-libs/libnl:3
-      - dev-libs/libpcre:3
       - dev-libs/libpcre2:0
+      - dev-libs/libpcre:3
       - dev-libs/libpwquality:0
+      - dev-libs/libsigc++:2
       - dev-libs/libsigsegv:0
       - dev-libs/libsodium:0
       - dev-libs/libtasn1:0
@@ -423,6 +269,7 @@ build_layers:
       - dev-libs/libusb:1
       - dev-libs/libuv:0
       - dev-libs/libverto:0
+      - dev-libs/libwacom:0
       - dev-libs/libxml2:2
       - dev-libs/libxslt:0
       - dev-libs/lzo:2
@@ -430,15 +277,24 @@ build_layers:
       - dev-libs/mpfr:0
       - dev-libs/nettle:0
       - dev-libs/npth:0
+      - dev-libs/nspr:0
+      - dev-libs/opencl-icd-loader:0
       - dev-libs/openssl:0
       - dev-libs/popt:0
       - dev-libs/protobuf:0
       - dev-libs/protobuf-c:0
+      - dev-libs/tinyxml2:0
+      - dev-libs/vala-common:0
+      - dev-libs/wayland:0
+      - dev-libs/wayland-protocols:0
       - dev-libs/xxhash:0
       - dev-perl/Encode-EUCJPASCII:0
       - dev-perl/Encode-HanExtra:0
       - dev-perl/Encode-Locale:0
+      - dev-perl/File-BaseDir:0
+      - dev-perl/File-DesktopEntry:0
       - dev-perl/File-Listing:0
+      - dev-perl/File-MimeInfo:0
       - dev-perl/HTML-Parser:0
       - dev-perl/HTML-Tagset:0
       - dev-perl/HTTP-Cookies:0
@@ -448,6 +304,7 @@ build_layers:
       - dev-perl/IO-HTML:0
       - dev-perl/IO-Socket-INET6:0
       - dev-perl/IO-Socket-SSL:0
+      - dev-perl/IPC-System-Simple:0
       - dev-perl/libintl-perl:0
       - dev-perl/libwww-perl:0
       - dev-perl/Locale-gettext:0
@@ -478,28 +335,153 @@ build_layers:
       - dev-python/chardet:0
       - dev-python/cython:0
       - dev-python/idna:0
+      - dev-python/mako:0
+      - dev-python/markupsafe:0
       - dev-python/ply:0
+      - dev-python/pycairo:0
       - dev-python/pyelftools:0
+      - dev-python/pygobject:3
       - dev-python/PySocks:0
       - dev-python/requests:0
       - dev-python/setuptools:0
       - dev-python/urllib3:0
+      - dev-qt/qtchooser:0
+      - dev-qt/qtcore:5
+      - dev-qt/qtdbus:5
+      - dev-qt/qtdeclarative:5
+      - dev-qt/qtgui:5
+      - dev-qt/qtnetwork:5
+      - dev-qt/qttest:5
+      - dev-qt/qtwayland:5
+      - dev-qt/qtwidgets:5
+      - dev-qt/qtxml:5
       - dev-scheme/guile:12
+      - dev-tex/bibtexu:0
       - dev-util/boost-build:0
       - dev-util/cmake:0
+      - dev-util/desktop-file-utils:0
       - dev-util/gdbus-codegen:0
+      - dev-util/glib-utils:0
+      - dev-util/gperf:0
+      - dev-util/gtk-doc-am:0
+      - dev-util/gtk-update-icon-cache:0
+      - dev-util/intltool:0
+      - dev-util/itstool:0
       - dev-util/meson:0
       - dev-util/meson-format-array:0
       - dev-util/ninja:0
+      - dev-util/opencl-headers:0
       - dev-util/pkgconf:0
       - dev-util/sysprof-capture:4
+      - dev-util/vulkan-headers:0
+      - dev-util/wayland-scanner:0
+      - gnome-base/dconf:0
+      - gnome-base/gsettings-desktop-schemas:0
+      - gnome-base/librsvg:2
+      - gnome-extra/polkit-gnome:0
+      - gui-libs/display-manager-init:0
       - mail-mta/nullmailer:0
+      - media-fonts/alee-fonts:0
+      - media-fonts/arphicfonts:0
+      - media-fonts/baekmuk-fonts:0
+      - media-fonts/corefonts:0
+      - media-fonts/croscorefonts:0
+      - media-fonts/crosextrafonts-caladea:0
+      - media-fonts/crosextrafonts-carlito:0
+      - media-fonts/encodings:0
+      - media-fonts/font-adobe-100dpi:0
+      - media-fonts/font-adobe-75dpi:0
+      - media-fonts/font-adobe-utopia-100dpi:0
+      - media-fonts/font-adobe-utopia-75dpi:0
+      - media-fonts/font-adobe-utopia-type1:0
+      - media-fonts/font-alias:0
+      - media-fonts/fontawesome:0
+      - media-fonts/font-bh-100dpi:0
+      - media-fonts/font-bh-75dpi:0
+      - media-fonts/font-bh-lucidatypewriter-100dpi:0
+      - media-fonts/font-bh-lucidatypewriter-75dpi:0
+      - media-fonts/font-bh-ttf:0
+      - media-fonts/font-bh-type1:0
+      - media-fonts/font-bitstream-100dpi:0
+      - media-fonts/font-bitstream-75dpi:0
+      - media-fonts/font-bitstream-speedo:0
+      - media-fonts/font-bitstream-type1:0
+      - media-fonts/font-cursor-misc:0
+      - media-fonts/font-daewoo-misc:0
+      - media-fonts/font-dec-misc:0
+      - media-fonts/font-ibm-type1:0
+      - media-fonts/font-micro-misc:0
+      - media-fonts/font-misc-misc:0
+      - media-fonts/font-mutt-misc:0
+      - media-fonts/font-schumacher-misc:0
+      - media-fonts/font-screen-cyrillic:0
+      - media-fonts/font-sony-misc:0
+      - media-fonts/font-sun-misc:0
+      - media-fonts/font-util:0
+      - media-fonts/font-xfree86-type1:0
+      - media-fonts/freefont:0
+      - media-fonts/freefonts:0
+      - media-fonts/intlfonts:0
+      - media-fonts/lfpfonts-fix:0
+      - media-fonts/lfpfonts-var:0
+      - media-fonts/liberation-fonts:0
+      - media-fonts/noto:0
+      - media-fonts/noto-emoji:0
+      - media-fonts/proggy-fonts:0
+      - media-fonts/stix-fonts:0
+      - media-fonts/tengwar-fonts:0
+      - media-fonts/terminus-font:0
+      - media-fonts/unifont:0
+      - media-fonts/urw-fonts:0
+      - media-gfx/ebdftopcf:0
+      - media-gfx/fontforge:0
+      - media-gfx/graphite2:0
+      - media-libs/alsa-lib:0
+      - media-libs/alsa-topology-conf:0
+      - media-libs/alsa-ucm-conf:0
+      - media-libs/flac:0
+      - media-libs/fontconfig:1.0
+      - media-libs/freeglut:0
+      - media-libs/freetype:2
+      - media-libs/giflib:0
+      - media-libs/glu:0
+      - media-libs/graphene:0
+      - media-libs/gst-plugins-base:1.0
+      - media-libs/gst-plugins-good:1.0
+      - media-libs/gstreamer:1.0
+      - media-libs/harfbuzz:0
+      - media-libs/jbig2dec:0
+      - media-libs/jbigkit:0
+      - media-libs/lcms:2
+      - media-libs/libepoxy:0
+      - media-libs/libglvnd:0
+      - media-libs/libjpeg-turbo:0
+      - media-libs/libogg:0
+      - media-libs/libpng:0
+      - media-libs/libsndfile:0
+      - media-libs/libuninameslist:0
+      - media-libs/libvorbis:0
+      - media-libs/mesa:0
+      - media-libs/openjpeg:2
+      - media-libs/opus:0
+      - media-libs/sbc:0
+      - media-libs/speexdsp:0
+      - media-libs/tiff:0
+      - media-libs/vulkan-loader:0
+      - media-libs/webrtc-audio-processing:0
+      - media-libs/woff2:0
+      - media-plugins/alsa-plugins:0
+      - media-plugins/gst-plugins-pulse:1.0
+      - media-sound/pulseaudio:0
       - net-dialup/linux-atm:0
+      - net-dns/avahi:0
       - net-dns/dnssec-root:0
+      - net-dns/libidn:0
       - net-dns/libidn2:0
       - net-dns/unbound:0
       - net-firewall/iptables:0
       - net-libs/gnutls:0
+      - net-libs/libasyncns:0
       - net-libs/libmnl:0
       - net-libs/libnetfilter_conntrack:0
       - net-libs/libnfnetlink:0
@@ -514,6 +496,9 @@ build_layers:
       - net-misc/openssh:0
       - net-misc/rsync:0
       - net-misc/wget:0
+      - net-print/cups:0
+      - net-print/cups-filters:0
+      - net-wireless/bluez:0
       - perl-core/File-Temp:0
       - perl-core/Scalar-List-Utils:0
       - sys-apps/acl:0
@@ -528,6 +513,7 @@ build_layers:
       - sys-apps/gawk:0
       - sys-apps/gentoo-functions:0
       - sys-apps/grep:0
+      - sys-apps/help2man:0
       - sys-apps/hwids:0
       - sys-apps/install-xattr:0
       - sys-apps/iproute2:0
@@ -544,16 +530,18 @@ build_layers:
       - sys-apps/util-linux:0
       - sys-apps/which:0
       - sys-apps/xinetd:0
-      - sys-auth/pam_mktemp:0
       - sys-auth/pambase:0
+      - sys-auth/pam_mktemp:0
+      - sys-auth/polkit:0
       - sys-block/thin-provisioning-tools:0
-      - sys-devel/autoconf:2.69
       - sys-devel/autoconf:2.1
+      - sys-devel/autoconf:2.69
       - sys-devel/autoconf-archive:0
       - sys-devel/autoconf-wrapper:0
       - sys-devel/autogen:0
       - sys-devel/automake:1.16
       - sys-devel/automake-wrapper:0
+      - sys-devel/bc:0
       - sys-devel/binutils:2.35
       - sys-devel/binutils-config:0
       - sys-devel/bison:0
@@ -575,16 +563,20 @@ build_layers:
       - sys-fs/lvm2:0
       - sys-fs/udev-init-scripts:0
       - sys-kernel/linux-headers:0
+      - sys-libs/binutils-libs:0
       - sys-libs/cracklib:0
       - sys-libs/db:5.3
       - sys-libs/e2fsprogs-libs:0
       - sys-libs/gdbm:0
       - sys-libs/glibc:2.2
+      - sys-libs/gpm:0
       - sys-libs/libcap:0
       - sys-libs/libcap-ng:0
       - sys-libs/libcxx:0
       - sys-libs/libcxxabi:0
       - sys-libs/libseccomp:0
+      - sys-libs/libunwind:0
+      - sys-libs/mtdev:0
       - sys-libs/ncurses:0
       - sys-libs/pam:0
       - sys-libs/readline:0
@@ -596,7 +588,10 @@ build_layers:
       - sys-process/psmisc:0
       - virtual/acl:0
       - virtual/awk:0
+      - virtual/glu:0
+      - virtual/jpeg:0
       - virtual/krb5:0
+      - virtual/libc:0
       - virtual/libcrypt:0
       - virtual/libelf:0
       - virtual/libiconv:0
@@ -605,6 +600,8 @@ build_layers:
       - virtual/libusb:1
       - virtual/logger:0
       - virtual/mta:0
+      - virtual/opencl:0
+      - virtual/opengl:0
       - virtual/perl-Carp:0
       - virtual/perl-Compress-Raw-Bzip2:0
       - virtual/perl-Compress-Raw-Zlib:0
@@ -620,6 +617,7 @@ build_layers:
       - virtual/perl-ExtUtils-MakeMaker:0
       - virtual/perl-ExtUtils-Manifest:0
       - virtual/perl-ExtUtils-ParseXS:0
+      - virtual/perl-File-Path:0
       - virtual/perl-File-Spec:0
       - virtual/perl-File-Temp:0
       - virtual/perl-Getopt-Long:0
@@ -628,6 +626,7 @@ build_layers:
       - virtual/perl-IO-Socket-IP:0
       - virtual/perl-JSON-PP:0
       - virtual/perl-libnet:0
+      - virtual/perl-Locale-Maketext:0
       - virtual/perl-MIME-Base64:0
       - virtual/perl-Module-Metadata:0
       - virtual/perl-parent:0
@@ -641,27 +640,109 @@ build_layers:
       - virtual/perl-version:0
       - virtual/perl-XSLoader:0
       - virtual/pkgconfig:0
+      - virtual/rust:0
       - virtual/tmpfiles:0
+      - virtual/ttf-fonts:0
       - virtual/udev:0
+      - virtual/yacc:0
+      - www-client/links:2
+      - x11-apps/bdftopcf:0
+      - x11-apps/iceauth:0
+      - x11-apps/mkfontscale:0
+      - x11-apps/rgb:0
+      - x11-apps/xauth:0
+      - x11-apps/xinit:0
+      - x11-apps/xkbcomp:0
+      - x11-apps/xprop:0
+      - x11-apps/xrdb:0
+      - x11-apps/xset:0
+      - x11-base/xcb-proto:0
+      - x11-base/xorg-drivers:0
       - x11-base/xorg-proto:0
+      - x11-base/xorg-server:0
+      - x11-drivers/xf86-input-evdev:0
+      - x11-drivers/xf86-input-joystick:0
+      - x11-drivers/xf86-input-libinput:0
+      - x11-drivers/xf86-input-mtrack:0
+      - x11-drivers/xf86-input-synaptics:0
+      - x11-drivers/xf86-input-vmmouse:0
+      - x11-drivers/xf86-input-void:0
+      - x11-drivers/xf86-input-wacom:0
+      - x11-drivers/xf86-video-amdgpu:0
+      - x11-drivers/xf86-video-ati:0
+      - x11-drivers/xf86-video-dummy:0
+      - x11-drivers/xf86-video-fbdev:0
+      - x11-drivers/xf86-video-glint:0
+      - x11-drivers/xf86-video-intel:0
+      - x11-drivers/xf86-video-nouveau:0
+      - x11-drivers/xf86-video-vboxvideo:0
+      - x11-drivers/xf86-video-vesa:0
+      - x11-libs/cairo:0
+      - x11-libs/gdk-pixbuf:2
+      - x11-libs/gtk+:2
+      - x11-libs/gtk+:3
+      - x11-libs/libdmx:0
+      - x11-libs/libdrm:0
+      - x11-libs/libfontenc:0
       - x11-libs/libICE:0
+      - x11-libs/libpciaccess:0
       - x11-libs/libSM:0
+      - x11-libs/libva:0
+      - x11-libs/libva-intel-driver:0
+      - x11-libs/libva-vdpau-driver:0
+      - x11-libs/libvdpau:0
       - x11-libs/libX11:0
       - x11-libs/libXau:0
+      - x11-libs/libXaw:0
       - x11-libs/libxcb:0
+      - x11-libs/libXcomposite:0
+      - x11-libs/libXcursor:0
+      - x11-libs/libXdamage:0
       - x11-libs/libXdmcp:0
+      - x11-libs/libXext:0
+      - x11-libs/libXfixes:0
+      - x11-libs/libXfont2:0
+      - x11-libs/libXft:0
+      - x11-libs/libXi:0
+      - x11-libs/libXinerama:0
+      - x11-libs/libxkbcommon:0
+      - x11-libs/libxkbfile:0
+      - x11-libs/libXmu:0
+      - x11-libs/libXpm:0
+      - x11-libs/libXrandr:0
+      - x11-libs/libXrender:0
+      - x11-libs/libXScrnSaver:0
+      - x11-libs/libxshmfence:0
       - x11-libs/libXt:0
+      - x11-libs/libXtst:0
+      - x11-libs/libXv:0
+      - x11-libs/libXvMC:0
+      - x11-libs/libXxf86vm:0
+      - x11-libs/pango:0
+      - x11-libs/pixman:0
+      - x11-libs/xcb-util:0
+      - x11-libs/xcb-util-cursor:0
+      - x11-libs/xcb-util-image:0
+      - x11-libs/xcb-util-keysyms:0
+      - x11-libs/xcb-util-renderutil:0
+      - x11-libs/xcb-util-wm:0
       - x11-libs/xtrans:0
+      - x11-misc/colord:0
       - x11-misc/compose-tables:0
+      - x11-misc/shared-mime-info:0
+      - x11-misc/util-macros:0
+      - x11-misc/xbitmaps:0
+      - x11-misc/xdg-utils:0
+      - x11-misc/xkeyboard-config:0
+      - x11-themes/adwaita-icon-theme:0
+      - x11-themes/gnome-themes-standard:0
+      - x11-themes/gtk-engines-adwaita:0
+      - x11-themes/hicolor-icon-theme:0
 
 
 # Define the list of the files generated by Funtoo reposcan tool.
 reposcan_sources:
-#  - source1.json
-#- /home/geaaru/Projects/mottainai/lxd-compose-galaxy/kit_cache/gentoo-master
   - /home/geaaru/Projects/mottainai/lxd-compose-galaxy/kit_cache_portage/gentoo-master
-    #  - /tmp/kit_cache/gentoo-master
-#  - /tmp/kit_cache/geaaru_overlay-master
 
 # Disable use of category with slot as requires. Default is without slot.
 reposcan_requires_slot: true

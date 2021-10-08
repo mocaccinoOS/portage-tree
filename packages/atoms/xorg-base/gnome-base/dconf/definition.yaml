@@ -1,0 +1,30 @@
+name: dconf
+version: 0.40.0
+category: gnome-base
+use_flags:
+- -gtk-doc
+- -test
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: dbus
+  version: '>=0'
+  category: sys-apps
+description: Simple low-level configuration system
+uri:
+- https://wiki.gnome.org/Projects/dconf
+license: LGPL-2.1+
+labels:
+  BDEPEND: app-text/docbook-xml-dtd:4.2 app-text/docbook-xsl-stylesheets dev-libs/libxslt
+    dev-util/gdbus-codegen gtk-doc? ( >=dev-util/gtk-doc-1.15 ) >=sys-devel/gettext-0.19.8
+    virtual/pkgconfig app-arch/xz-utils >=dev-util/meson-0.56.0 >=dev-util/ninja-1.8.2
+    dev-util/meson-format-array virtual/pkgconfig test? ( x11-base/xorg-server[xvfb]
+    x11-apps/xhost )
+  DEPEND: '>=dev-libs/glib-2.44.0:2 sys-apps/dbus dev-util/desktop-file-utils x11-misc/shared-mime-info'
+  IUSE: gtk-doc test
+  RDEPEND: '>=dev-libs/glib-2.44.0:2 sys-apps/dbus'
+  emerge.packages: gnome-base/dconf
+  kit: gentoo
+  original.package.name: gnome-base/dconf
+  original.package.version: 0.40.0

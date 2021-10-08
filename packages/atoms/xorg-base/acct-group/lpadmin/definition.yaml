@@ -1,0 +1,11 @@
+name: lpadmin
+version: "0"
+category: acct-group
+description: 'System group: lpadmin'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/lpadmin
+  kit: gentoo
+  original.package.name: acct-group/lpadmin
+  original.package.version: 0-r1

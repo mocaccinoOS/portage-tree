@@ -1,0 +1,12 @@
+name: perl-Locale-Maketext-portage
+version: 1.290.0
+category: virtual
+requires:
+- name: perl-Locale-Maketext
+  version: 1.290.0
+  category: virtual
+labels:
+  emerge.packages: virtual/perl-Locale-Maketext
+  kit: gentoo
+  original.package.name: virtual/perl-Locale-Maketext
+  original.package.version: 1.290.0-r4

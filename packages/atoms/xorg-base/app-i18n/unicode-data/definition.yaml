@@ -1,0 +1,13 @@
+name: unicode-data
+version: 13.0.0
+category: app-i18n
+description: Unicode data from unicode.org
+uri:
+- https://unicode.org/ucd/
+license: unicode
+labels:
+  DEPEND: app-arch/unzip
+  emerge.packages: app-i18n/unicode-data
+  kit: gentoo
+  original.package.name: app-i18n/unicode-data
+  original.package.version: 13.0.0

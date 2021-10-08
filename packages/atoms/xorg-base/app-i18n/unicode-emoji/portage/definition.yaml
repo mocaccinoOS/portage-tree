@@ -1,0 +1,12 @@
+name: unicode-emoji-portage
+version: "13.0"
+category: app-i18n
+requires:
+- name: unicode-emoji
+  version: "13.0"
+  category: app-i18n
+labels:
+  emerge.packages: app-i18n/unicode-emoji
+  kit: gentoo
+  original.package.name: app-i18n/unicode-emoji
+  original.package.version: "13.0"

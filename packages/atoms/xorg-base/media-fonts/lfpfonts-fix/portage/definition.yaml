@@ -1,0 +1,12 @@
+name: lfpfonts-fix-portage
+version: "0.83"
+category: media-fonts
+requires:
+- name: lfpfonts-fix
+  version: "0.83"
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/lfpfonts-fix
+  kit: gentoo
+  original.package.name: media-fonts/lfpfonts-fix
+  original.package.version: 0.83-r2

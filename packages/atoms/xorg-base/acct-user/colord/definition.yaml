@@ -1,0 +1,16 @@
+name: colord
+version: "0"
+category: acct-user
+requires:
+- name: colord
+  version: '>=0'
+  category: acct-group
+description: User for running the colord service
+uri:
+- ""
+labels:
+  RDEPEND: acct-group/colord
+  emerge.packages: acct-user/colord
+  kit: gentoo
+  original.package.name: acct-user/colord
+  original.package.version: "0"

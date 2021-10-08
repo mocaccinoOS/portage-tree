@@ -1,0 +1,11 @@
+name: polkitd
+version: "0"
+category: acct-group
+description: 'System group: polkitd'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/polkitd
+  kit: gentoo
+  original.package.name: acct-group/polkitd
+  original.package.version: 0-r1

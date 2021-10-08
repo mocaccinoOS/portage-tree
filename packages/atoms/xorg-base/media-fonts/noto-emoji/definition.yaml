@@ -1,0 +1,22 @@
+name: noto-emoji
+version: "20210715"
+category: media-fonts
+use_flags:
+- -buildfont
+- X
+description: Google Noto Emoji fonts
+uri:
+- https://www.google.com/get/noto/ https://github.com/googlefonts/noto-emoji
+license: Apache-2.0 OFL-1.1
+labels:
+  BDEPEND: buildfont? ( || ( dev-lang/python:3.9 dev-lang/python:3.8 ) app-arch/zopfli
+    || ( ( dev-lang/python:3.9 >=dev-python/fonttools-4.7.0[python_targets_python3_9(-)]
+    >=dev-python/nototools-0.2.13[python_targets_python3_9(-)] ) ( dev-lang/python:3.8
+    >=dev-python/fonttools-4.7.0[python_targets_python3_8(-)] >=dev-python/nototools-0.2.13[python_targets_python3_8(-)]
+    ) ) media-gfx/pngquant x11-libs/cairo || ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[png]
+    ) ) X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+  IUSE: buildfont X
+  emerge.packages: media-fonts/noto-emoji
+  kit: gentoo
+  original.package.name: media-fonts/noto-emoji
+  original.package.version: "20210715"

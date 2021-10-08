@@ -1,0 +1,12 @@
+name: avahi-portage
+version: "0"
+category: acct-user
+requires:
+- name: avahi
+  version: "0"
+  category: acct-user
+labels:
+  emerge.packages: acct-user/avahi
+  kit: gentoo
+  original.package.name: acct-user/avahi
+  original.package.version: 0-r1

@@ -1,0 +1,16 @@
+name: crosextrafonts-caladea
+version: "20130214"
+category: media-fonts
+use_flags:
+- X
+description: Open licensed serif font metrically compatible with Cambria
+uri:
+- https://bugs.chromium.org/p/chromium/issues/detail?id=168879
+license: Apache-2.0
+labels:
+  BDEPEND: X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+  IUSE: X
+  emerge.packages: media-fonts/crosextrafonts-caladea
+  kit: gentoo
+  original.package.name: media-fonts/crosextrafonts-caladea
+  original.package.version: "20130214"

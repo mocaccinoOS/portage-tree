@@ -1,0 +1,12 @@
+name: intlfonts-portage
+version: 1.4.1
+category: media-fonts
+requires:
+- name: intlfonts
+  version: 1.4.1
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/intlfonts
+  kit: gentoo
+  original.package.name: media-fonts/intlfonts
+  original.package.version: 1.4.1

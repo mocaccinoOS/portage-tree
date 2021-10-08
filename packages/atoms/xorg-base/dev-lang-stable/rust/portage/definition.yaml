@@ -1,0 +1,12 @@
+name: rust-portage
+version: 1.54.0
+category: dev-lang-stable
+requires:
+- name: rust
+  version: 1.54.0
+  category: dev-lang-stable
+labels:
+  emerge.packages: dev-lang/rust:stable
+  kit: gentoo
+  original.package.name: dev-lang/rust
+  original.package.version: 1.54.0

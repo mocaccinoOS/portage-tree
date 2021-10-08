@@ -1,0 +1,31 @@
+name: libwacom
+version: "1.11"
+category: dev-libs
+use_flags:
+- -doc
+- -test
+requires:
+- name: libgudev
+  version: '>=0'
+  category: dev-libs
+description: Library for identifying Wacom tablets and their model-specific features
+uri:
+- https://github.com/linuxwacom/libwacom
+license: MIT
+labels:
+  BDEPEND: virtual/pkgconfig doc? ( app-doc/doxygen ) test? ( || ( dev-lang/python:3.10
+    dev-lang/python:3.9 dev-lang/python:3.8 ) || ( ( dev-lang/python:3.10 dev-python/python-libevdev[python_targets_python3_10(-)]
+    dev-python/pyudev[python_targets_python3_10(-)] dev-python/pytest[python_targets_python3_10(-)]
+    ) ( dev-lang/python:3.9 dev-python/python-libevdev[python_targets_python3_9(-)]
+    dev-python/pyudev[python_targets_python3_9(-)] dev-python/pytest[python_targets_python3_9(-)]
+    ) ( dev-lang/python:3.8 dev-python/python-libevdev[python_targets_python3_8(-)]
+    dev-python/pyudev[python_targets_python3_8(-)] dev-python/pytest[python_targets_python3_8(-)]
+    ) ) ) >=dev-util/meson-0.56.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+    virtual/pkgconfig
+  DEPEND: dev-libs/glib:2 dev-libs/libgudev:=
+  IUSE: doc test
+  RDEPEND: dev-libs/glib:2 dev-libs/libgudev:=
+  emerge.packages: dev-libs/libwacom
+  kit: gentoo
+  original.package.name: dev-libs/libwacom
+  original.package.version: "1.11"

@@ -1,0 +1,32 @@
+name: qpdf
+version: 10.3.2
+category: app-text
+use_flags:
+- -test
+- ssl
+requires:
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: gnutls
+  version: '>=0'
+  category: net-libs
+- name: jpeg
+  version: '>=0'
+  category: virtual
+description: Command-line tool for structural, content-preserving transformation of
+  PDF files
+uri:
+- http://qpdf.sourceforge.net/
+license: '|| ( Apache-2.0 Artistic-2 )'
+labels:
+  DEPEND: net-libs/gnutls:0= sys-libs/zlib virtual/jpeg:0= ssl? ( dev-libs/openssl:0=
+    ) test? ( app-text/ghostscript-gpl[tiff(+)] media-libs/tiff sys-apps/diffutils
+    )
+  IUSE: doc examples ssl test
+  RDEPEND: net-libs/gnutls:0= sys-libs/zlib virtual/jpeg:0= ssl? ( dev-libs/openssl:0=
+    )
+  emerge.packages: app-text/qpdf
+  kit: gentoo
+  original.package.name: app-text/qpdf
+  original.package.version: 10.3.2

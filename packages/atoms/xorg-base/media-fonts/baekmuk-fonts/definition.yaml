@@ -1,0 +1,17 @@
+name: baekmuk-fonts
+version: "2.2"
+category: media-fonts
+use_flags:
+- X
+description: Korean Baekmuk Font
+uri:
+- https://kldp.net/baekmuk/
+license: BSD
+labels:
+  BDEPEND: X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings ) X? ( media-gfx/ebdftopcf
+    )
+  IUSE: unicode X X
+  emerge.packages: media-fonts/baekmuk-fonts
+  kit: gentoo
+  original.package.name: media-fonts/baekmuk-fonts
+  original.package.version: 2.2-r2

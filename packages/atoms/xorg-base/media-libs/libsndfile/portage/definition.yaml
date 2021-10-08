@@ -1,0 +1,12 @@
+name: libsndfile-portage
+version: 1.0.31
+category: media-libs
+requires:
+- name: libsndfile
+  version: 1.0.31
+  category: media-libs
+labels:
+  emerge.packages: media-libs/libsndfile
+  kit: gentoo
+  original.package.name: media-libs/libsndfile
+  original.package.version: 1.0.31

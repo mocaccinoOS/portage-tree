@@ -1,0 +1,11 @@
+name: colord
+version: "0"
+category: acct-group
+description: 'System group: colord'
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/colord
+  kit: gentoo
+  original.package.name: acct-group/colord
+  original.package.version: "0"

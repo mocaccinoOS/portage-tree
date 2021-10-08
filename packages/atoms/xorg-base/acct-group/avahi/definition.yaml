@@ -1,0 +1,11 @@
+name: avahi
+version: "0"
+category: acct-group
+description: group for avahi
+uri:
+- ""
+labels:
+  emerge.packages: acct-group/avahi
+  kit: gentoo
+  original.package.name: acct-group/avahi
+  original.package.version: 0-r1

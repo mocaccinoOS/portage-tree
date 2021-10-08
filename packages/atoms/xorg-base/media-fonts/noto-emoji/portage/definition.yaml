@@ -1,0 +1,12 @@
+name: noto-emoji-portage
+version: "20210715"
+category: media-fonts
+requires:
+- name: noto-emoji
+  version: "20210715"
+  category: media-fonts
+labels:
+  emerge.packages: media-fonts/noto-emoji
+  kit: gentoo
+  original.package.name: media-fonts/noto-emoji
+  original.package.version: "20210715"

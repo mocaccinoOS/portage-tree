@@ -1,0 +1,12 @@
+name: eselect-rust-portage
+version: "20210703"
+category: app-eselect
+requires:
+- name: eselect-rust
+  version: "20210703"
+  category: app-eselect
+labels:
+  emerge.packages: app-eselect/eselect-rust
+  kit: gentoo
+  original.package.name: app-eselect/eselect-rust
+  original.package.version: "20210703"

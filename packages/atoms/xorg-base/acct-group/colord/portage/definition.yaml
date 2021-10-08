@@ -1,0 +1,12 @@
+name: colord-portage
+version: "0"
+category: acct-group
+requires:
+- name: colord
+  version: "0"
+  category: acct-group
+labels:
+  emerge.packages: acct-group/colord
+  kit: gentoo
+  original.package.name: acct-group/colord
+  original.package.version: "0"

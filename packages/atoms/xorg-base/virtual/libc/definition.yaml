@@ -1,0 +1,24 @@
+name: libc
+version: "1"
+category: virtual
+use_flags:
+- -elibc_Cygwin
+- -elibc_musl
+- -elibc_uclibc
+- elibc_glibc
+- prefix-guest
+requires:
+- name: glibc
+  version: '>=0'
+  category: sys-libs-2.2
+description: Virtual for the C library
+uri:
+- ""
+labels:
+  RDEPEND: '!prefix-guest? ( elibc_glibc? ( sys-libs/glibc:2.2 ) elibc_musl? ( sys-libs/musl
+    ) elibc_uclibc? ( sys-libs/uclibc-ng ) ) prefix-guest? ( elibc_Cygwin? ( sys-libs/cygwin-crypt
+    ) !sys-libs/glibc !sys-libs/musl !sys-libs/uclibc-ng )'
+  emerge.packages: virtual/libc
+  kit: gentoo
+  original.package.name: virtual/libc
+  original.package.version: 1-r1

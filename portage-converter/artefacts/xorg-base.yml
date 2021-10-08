@@ -1,0 +1,1637 @@
+artefacts:
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - debug-frame
+    - doc
+    - libatomic
+    - lzma
+    - static-libs
+    enabled:
+    - zlib
+  packages:
+  - sys-libs/libunwind
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - python_targets_python3_8
+    enabled:
+    - python_targets_python3_9
+  packages:
+  - x11-base/xcb-proto
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - aqua
+    - debug
+    - gles2-only
+    - static-libs
+    - utils
+    - valgrind
+    enabled:
+    - X
+    - glib
+    - opengl
+    - svg
+  packages:
+  - x11-libs/cairo
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    enabled:
+    - opengl
+  packages:
+  - x11-libs/libva-vdpau-driver
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - clippy
+    - doc
+    - rls
+    - rustfmt
+    - verify-sig
+    enabled:
+    - cpu_flags_x86_sse2
+  packages:
+  - dev-lang/rust-bin:stable
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - kerberos
+    - selinux
+    - static-libs
+    - xinetd
+    enabled:
+    - X
+    - acl
+    - dbus
+    - pam
+    - ssl
+    - systemd
+    - threads
+    - usb
+    - zeroconf
+  packages:
+  - net-print/cups
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gtk-doc
+    - test
+  packages:
+  - gnome-base/dconf
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - perl
+    - test
+  packages:
+  - media-gfx/graphite2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - clang
+    - cpu_flags_arm_neon
+    - debug
+    - lto
+    - test
+    enabled:
+    - jit
+  packages:
+  - dev-lang/spidermonkey:78
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - examples
+    - python_targets_python3_10
+    - python_targets_python3_8
+    - test
+    enabled:
+    - cairo
+    - python_targets_python3_9
+  packages:
+  - dev-python/pygobject:3
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - bdf
+    enabled:
+    - X
+  packages:
+  - media-fonts/intlfonts
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_arm_neon
+    - doc
+    - test
+    enabled:
+    - cpu_flags_x86_sse2
+    - introspection
+  packages:
+  - media-libs/graphene
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - static-libs
+    - test
+    enabled:
+    - jpeg
+    - threads
+    - tiff
+    - zlib
+  packages:
+  - media-libs/lcms:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gtk-doc
+    - static-libs
+    - test
+  packages:
+  - dev-lang/orc
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - input_devices_wacom
+    - test
+  packages:
+  - dev-libs/libinput
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - static-libs
+    - test
+  packages:
+  - media-libs/libvorbis
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - udev
+  packages:
+  - x11-drivers/xf86-video-amdgpu
+  - x11-drivers/xf86-video-ati
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - dga
+  packages:
+  - x11-drivers/xf86-video-dummy
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gtk-doc
+    enabled:
+    - introspection
+    - jpeg
+    - tiff
+  packages:
+  - x11-libs/gdk-pixbuf:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - test
+    - valadoc
+  packages:
+  - dev-lang/vala:0.48
+  - dev-lang/vala:0.52
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - static-libs
+  packages:
+  - media-libs/freeglut
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - test
+    enabled:
+    - X
+  packages:
+  - media-libs/libglvnd
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_arm_neon
+    - java
+    - static-libs
+  packages:
+  - media-libs/libjpeg-turbo
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - static-libs
+    - test
+  packages:
+  - media-libs/openjpeg:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_arm_neon
+    enabled:
+    - cpu_flags_x86_sse
+    - cpu_flags_x86_sse2
+  packages:
+  - media-libs/speexdsp
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - libedit
+    - static
+    enabled:
+    - readline
+  packages:
+  - sys-devel/bc
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - selinux
+    enabled:
+    - split-usr
+  packages:
+  - sys-libs/gpm
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - old-kernel
+    - test
+    enabled:
+    - icu
+    - systemd
+  packages:
+  - dev-qt/qtcore:5
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - gles2-only
+    - test
+    enabled:
+    - X
+    - gtk
+    - png
+  packages:
+  - dev-qt/qtwidgets:5
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - test
+    - unwind
+    enabled:
+    - caps
+    - introspection
+    - nls
+    - orc
+  packages:
+  - media-libs/gstreamer:1.0
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - brotli
+    - fbcon
+    - freetype
+    - libevent
+    - livecd
+    - lzip
+    - lzma
+    - suid
+    - svga
+    - zstd
+    enabled:
+    - X
+    - bzip2
+    - gpm
+    - ipv6
+    - jpeg
+    - ssl
+    - tiff
+    - unicode
+    - zlib
+  packages:
+  - www-client/links:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - gnome
+    enabled:
+    - dbus
+  packages:
+  - x11-misc/xdg-utils
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - l10n_ja
+    - static-libs
+    enabled:
+    - X
+    - cups
+    - dbus
+    - gtk
+    - jpeg2k
+    - l10n_de
+    - l10n_ko
+    - l10n_zh-CN
+    - l10n_zh-TW
+    - unicode
+  packages:
+  - app-text/ghostscript-gpl
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - accessibility
+    - debug
+    - eglfs
+    - gles2-only
+    - test
+    - tslib
+    - tuio
+    - vnc
+    - vulkan
+    enabled:
+    - X
+    - dbus
+    - egl
+    - evdev
+    - gif
+    - ibus
+    - jpeg
+    - libinput
+    - png
+    - udev
+    - wayland
+  packages:
+  - dev-qt/qtgui:5
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - layers
+    enabled:
+    - X
+    - wayland
+  packages:
+  - media-libs/vulkan-loader
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - ruby
+  packages:
+  - app-text/docbook-xsl-ns-stylesheets
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cairo
+    - debug
+    - doc
+    - static-libs
+    - test
+    enabled:
+    - glib
+    - graphite
+    - icu
+    - introspection
+    - truetype
+  packages:
+  - media-libs/harfbuzz
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - X
+    - javascript
+    - opengl
+    - ssl
+  packages:
+  - app-text/mupdf
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - glib
+    - pie
+    - test
+  packages:
+  - dev-libs/ell
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - python_targets_pypy3
+    - python_targets_python3_10
+    - python_targets_python3_8
+    - test
+    enabled:
+    - python_targets_python3_9
+  packages:
+  - dev-python/mako
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - dmx
+    - doc
+    - elogind
+    - minimal
+    - selinux
+    - suid
+    - test
+    - unwind
+    - xcsecurity
+    - xvfb
+    enabled:
+    - ipv6
+    - kdrive
+    - systemd
+    - udev
+    - wayland
+    - xephyr
+    - xnest
+    - xorg
+  packages:
+  - x11-base/xorg-server
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - test
+  packages:
+  - app-accessibility/at-spi2-atk:2
+  - dev-libs/opencl-icd-loader
+  - dev-libs/tinyxml2
+  - dev-libs/wayland-protocols
+  - dev-perl/File-BaseDir
+  - dev-perl/File-DesktopEntry
+  - dev-perl/File-MimeInfo
+  - dev-perl/IPC-System-Simple
+  - dev-qt/qtchooser
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - extras
+  packages:
+  - app-arch/cabextract
+- tree: packages/atoms/xorg-base
+  packages:
+  - acct-group/avahi
+  - acct-group/colord
+  - acct-group/lpadmin
+  - acct-group/netdev
+  - acct-group/polkitd
+  - acct-user/avahi
+  - acct-user/colord
+  - acct-user/polkitd
+  - app-arch/rpm2targz
+  - app-doc/xmltoman
+  - app-eselect/eselect-fontconfig
+  - app-eselect/eselect-rust
+  - app-i18n/unicode-cldr
+  - app-i18n/unicode-data
+  - app-i18n/unicode-emoji
+  - app-text/docbook-xml-dtd:4.1.2
+  - app-text/docbook-xml-dtd:4.2
+  - app-text/docbook-xml-dtd:4.3
+  - app-text/iso-codes
+  - app-text/libpaper
+  - app-text/poppler-data
+  - dev-lang/mujs
+  - dev-libs/double-conversion
+  - dev-libs/fribidi
+  - dev-libs/vala-common
+  - dev-util/gperf
+  - dev-util/gtk-doc-am
+  - dev-util/gtk-update-icon-cache
+  - dev-util/intltool
+  - dev-util/opencl-headers
+  - dev-util/vulkan-headers
+  - dev-util/wayland-scanner
+  - gnome-extra/polkit-gnome
+  - gui-libs/display-manager-init
+  - media-fonts/encodings
+  - media-fonts/font-alias
+  - media-fonts/font-util
+  - media-gfx/ebdftopcf
+  - media-libs/alsa-topology-conf
+  - media-libs/alsa-ucm-conf
+  - media-libs/libuninameslist
+  - media-libs/woff2
+  - media-plugins/gst-plugins-pulse:1.0
+  - sys-libs/mtdev
+  - virtual/glu
+  - virtual/libc
+  - virtual/opencl
+  - virtual/opengl
+  - virtual/perl-File-Path
+  - virtual/perl-Locale-Maketext
+  - virtual/ttf-fonts
+  - virtual/yacc
+  - x11-apps/bdftopcf
+  - x11-apps/iceauth
+  - x11-apps/mkfontscale
+  - x11-apps/rgb
+  - x11-apps/xkbcomp
+  - x11-apps/xprop
+  - x11-apps/xrdb
+  - x11-apps/xset
+  - x11-drivers/xf86-input-evdev
+  - x11-drivers/xf86-input-joystick
+  - x11-drivers/xf86-input-libinput
+  - x11-drivers/xf86-input-synaptics
+  - x11-drivers/xf86-input-vmmouse
+  - x11-drivers/xf86-input-void
+  - x11-drivers/xf86-video-fbdev
+  - x11-drivers/xf86-video-glint
+  - x11-drivers/xf86-video-nouveau
+  - x11-drivers/xf86-video-vboxvideo
+  - x11-drivers/xf86-video-vesa
+  - x11-libs/libXdamage
+  - x11-libs/libXpm
+  - x11-libs/libXrender
+  - x11-libs/libXvMC
+  - x11-libs/libdmx
+  - x11-libs/libfontenc
+  - x11-libs/libxkbfile
+  - x11-libs/libxshmfence
+  - x11-libs/xcb-util
+  - x11-libs/xcb-util-cursor
+  - x11-libs/xcb-util-image
+  - x11-libs/xcb-util-keysyms
+  - x11-libs/xcb-util-renderutil
+  - x11-libs/xcb-util-wm
+  - x11-misc/shared-mime-info
+  - x11-misc/util-macros
+  - x11-misc/xbitmaps
+  - x11-misc/xkeyboard-config
+  - x11-themes/gnome-themes-standard
+  - x11-themes/gtk-engines-adwaita
+  - x11-themes/hicolor-icon-theme
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - btpclient
+    - debug
+    - deprecated
+    - doc
+    - experimental
+    - extra-tools
+    - midi
+    - python_single_target_python3_8
+    - selinux
+    - test
+    - test-programs
+    - user-session
+    enabled:
+    - cups
+    - mesh
+    - obex
+    - python_single_target_python3_9
+    - readline
+    - systemd
+    - udev
+  packages:
+  - net-wireless/bluez
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - static-libs
+    enabled:
+    - introspection
+  packages:
+  - dev-libs/libgudev
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_arm_neon
+    - custom-modes
+    - doc
+    - static-libs
+    enabled:
+    - cpu_flags_x86_sse
+  packages:
+  - media-libs/opus
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    enabled:
+    - bzip2
+    - ipv6
+    - truetype
+  packages:
+  - x11-libs/libXfont2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_arm_iwmmxt
+    - cpu_flags_arm_iwmmxt2
+    - cpu_flags_arm_neon
+    - cpu_flags_ppc_altivec
+    - cpu_flags_x86_ssse3
+    - loongson2f
+    - static-libs
+    enabled:
+    - cpu_flags_x86_mmxext
+    - cpu_flags_x86_sse2
+  packages:
+  - x11-libs/pixman
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gtk-doc
+    - test
+    enabled:
+    - X
+    - introspection
+  packages:
+  - app-accessibility/at-spi2-core:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+  packages:
+  - dev-cpp/libxmlpp:3.0
+  - dev-lang/nasm
+  - dev-libs/libnatspec
+  - dev-libs/wayland
+  - x11-libs/libXScrnSaver
+  - x11-libs/libXcomposite
+  - x11-libs/libXcursor
+  - x11-libs/libXext
+  - x11-libs/libXfixes
+  - x11-libs/libXft
+  - x11-libs/libXi
+  - x11-libs/libXinerama
+  - x11-libs/libXrandr
+  - x11-libs/libXtst
+  - x11-libs/libXv
+  - x11-libs/libXxf86vm
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_arm_neon
+    - static-libs
+    enabled:
+    - apng
+    - cpu_flags_x86_sse
+  packages:
+  - media-libs/libpng
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - branding
+  packages:
+  - x11-themes/adwaita-icon-theme
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - X
+  packages:
+  - media-fonts/alee-fonts
+  - media-fonts/arphicfonts
+  - media-fonts/croscorefonts
+  - media-fonts/crosextrafonts-caladea
+  - media-fonts/crosextrafonts-carlito
+  - media-fonts/font-adobe-utopia-type1
+  - media-fonts/font-bh-ttf
+  - media-fonts/font-bh-type1
+  - media-fonts/font-bitstream-100dpi
+  - media-fonts/font-bitstream-75dpi
+  - media-fonts/font-bitstream-speedo
+  - media-fonts/font-bitstream-type1
+  - media-fonts/font-cursor-misc
+  - media-fonts/font-daewoo-misc
+  - media-fonts/font-dec-misc
+  - media-fonts/font-ibm-type1
+  - media-fonts/font-micro-misc
+  - media-fonts/font-mutt-misc
+  - media-fonts/font-screen-cyrillic
+  - media-fonts/font-sony-misc
+  - media-fonts/font-sun-misc
+  - media-fonts/font-xfree86-type1
+  - media-fonts/freefont
+  - media-fonts/freefonts
+  - media-fonts/lfpfonts-fix
+  - media-fonts/lfpfonts-var
+  - media-fonts/proggy-fonts
+  - media-fonts/stix-fonts
+  - media-fonts/tengwar-fonts
+  - media-fonts/urw-fonts
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - X
+    - bindist
+    - brotli
+    - debug
+    - doc
+    - fontforge
+    - infinality
+    - static-libs
+    - utils
+    enabled:
+    - adobe-cff
+    - bzip2
+    - cleartype_hinting
+    - harfbuzz
+    - png
+  packages:
+  - media-libs/freetype:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - ldap
+    - pclm
+    - perl
+    - test
+    - zeroconf
+    enabled:
+    - dbus
+    - foomatic
+    - jpeg
+    - pdf
+    - png
+    - postscript
+    - tiff
+  packages:
+  - net-print/cups-filters
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - ipv6
+  packages:
+  - x11-apps/xauth
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - tools
+    - uxa
+    - xvmc
+    enabled:
+    - dri
+    - sna
+    - udev
+  packages:
+  - x11-drivers/xf86-video-intel
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - fontforge
+    enabled:
+    - X
+  packages:
+  - media-fonts/liberation-fonts
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - elogind
+    - examples
+    - kde
+    - selinux
+    - test
+    enabled:
+    - gtk
+    - introspection
+    - nls
+    - pam
+    - systemd
+  packages:
+  - sys-auth/polkit
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - rustfmt
+  packages:
+  - virtual/rust
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - zlib
+  packages:
+  - x11-libs/libpciaccess
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gtk-doc
+    - sysprof
+    - test
+    enabled:
+    - X
+    - introspection
+  packages:
+  - x11-libs/pango
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - test
+    - vulkan
+    enabled:
+    - X
+  packages:
+  - dev-qt/qtwayland:5
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - test
+    enabled:
+    - X
+    - egl
+  packages:
+  - media-libs/libepoxy
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - X
+    - nls
+  packages:
+  - media-fonts/font-adobe-100dpi
+  - media-fonts/font-adobe-75dpi
+  - media-fonts/font-adobe-utopia-100dpi
+  - media-fonts/font-adobe-utopia-75dpi
+  - media-fonts/font-bh-100dpi
+  - media-fonts/font-bh-75dpi
+  - media-fonts/font-bh-lucidatypewriter-100dpi
+  - media-fonts/font-bh-lucidatypewriter-75dpi
+  - media-fonts/font-misc-misc
+  - media-fonts/font-schumacher-misc
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+  packages:
+  - dev-libs/nspr
+  - x11-drivers/xf86-input-mtrack
+  - x11-drivers/xf86-input-wacom
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - gles2-only
+    - localstorage
+    - test
+    - vulkan
+    enabled:
+    - jit
+    - widgets
+  packages:
+  - dev-qt/qtdeclarative:5
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - examples
+    - python_targets_pypy3
+    - python_targets_python3_10
+    - python_targets_python3_8
+    - test
+    enabled:
+    - python_targets_python3_9
+  packages:
+  - dev-python/pycairo
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - ttf
+    enabled:
+    - X
+    - otf
+  packages:
+  - media-fonts/fontawesome
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - a-like-o
+    - distinct-l
+    - pcf-8bit
+    - quote
+    - ru-dv
+    - ru-i
+    - ru-k
+    enabled:
+    - X
+    - center-tilde
+    - otf
+    - pcf-unicode
+    - psf
+    - ru-g
+  packages:
+  - media-fonts/terminus-font
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - static-libs
+  packages:
+  - media-libs/glu
+  - media-libs/jbigkit
+  - media-libs/libogg
+  - media-libs/sbc
+  - media-libs/webrtc-audio-processing
+  - virtual/jpeg
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - test
+  packages:
+  - dev-libs/gumbo
+  - dev-libs/libevdev
+  - dev-libs/libwacom
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - source
+    - static-libs
+  packages:
+  - dev-libs/kpathsea
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - bindist
+    - connman
+    - debug
+    - gssapi
+    - libproxy
+    - networkmanager
+    - sctp
+    - test
+    enabled:
+    - ssl
+  packages:
+  - dev-qt/qtnetwork:5
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - kde
+    - python_targets_python3_8
+    - test
+    - vala
+    - wayland
+    enabled:
+    - X
+    - emoji
+    - gtk
+    - gtk2
+    - introspection
+    - nls
+    - python
+    - python_targets_python3_9
+    - unicode
+  packages:
+  - app-i18n/ibus
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - firebird
+    - mysql
+    - oci8
+    - postgres
+    - static-libs
+    enabled:
+    - sqlite
+  packages:
+  - dev-db/libdbi-drivers
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - alisp
+    - debug
+    - doc
+    - python
+    - python_single_target_python3_8
+    enabled:
+    - python_single_target_python3_9
+    - thread-safety
+  packages:
+  - media-libs/alsa-lib
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - input_devices_elographics
+    - input_devices_evdev
+    - input_devices_joystick
+    - input_devices_synaptics
+    - input_devices_vmmouse
+    - input_devices_void
+    - input_devices_wacom
+    - video_cards_ast
+    - video_cards_freedreno
+    - video_cards_geode
+    - video_cards_glint
+    - video_cards_i915
+    - video_cards_i965
+    - video_cards_mga
+    - video_cards_nv
+    - video_cards_nvidia
+    - video_cards_omap
+    - video_cards_qxl
+    - video_cards_r128
+    - video_cards_siliconmotion
+    - video_cards_tegra
+    - video_cards_vc4
+    - video_cards_via
+    - video_cards_virtualbox
+    - video_cards_vmware
+    enabled:
+    - input_devices_libinput
+    - video_cards_amdgpu
+    - video_cards_dummy
+    - video_cards_fbdev
+    - video_cards_intel
+    - video_cards_nouveau
+    - video_cards_radeon
+    - video_cards_radeonsi
+    - video_cards_vesa
+  packages:
+  - x11-base/xorg-drivers
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gtk-doc
+    - static-libs
+    - test
+    enabled:
+    - introspection
+    - vala
+  packages:
+  - dev-libs/libgusb
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - X
+    - unicode
+  packages:
+  - media-fonts/baekmuk-fonts
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - python_targets_pypy3
+    - python_targets_python3_10
+    - python_targets_python3_8
+    - test
+    enabled:
+    - python_targets_python3_9
+  packages:
+  - dev-python/markupsafe
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - emacs
+  packages:
+  - dev-util/desktop-file-utils
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - introspection
+    - vala
+  packages:
+  - gnome-base/librsvg:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_ppc_altivec
+    - cpu_flags_ppc_vsx
+    - debug
+    - static-libs
+    enabled:
+    - cpu_flags_x86_sse
+    - cxx
+    - ogg
+  packages:
+  - media-libs/flac
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cpu_flags_arm_neon
+    - doc
+    - elogind
+    - equalizer
+    - gconf
+    - jack
+    - libsamplerate
+    - lirc
+    - native-headset
+    - ofono-headset
+    - oss
+    - realtime
+    - selinux
+    - sox
+    - system-wide
+    - test
+    - zeroconf
+    enabled:
+    - X
+    - alsa
+    - alsa-plugin
+    - asyncns
+    - bluetooth
+    - caps
+    - dbus
+    - gdbm
+    - glib
+    - gtk
+    - ipv6
+    - orc
+    - qt5
+    - ssl
+    - systemd
+    - tcpd
+    - udev
+    - webrtc-aec
+  packages:
+  - media-sound/pulseaudio
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - video_cards_nvidia
+    - video_cards_r600
+    enabled:
+    - video_cards_radeonsi
+  packages:
+  - dev-libs/libclc
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - examples
+    - static-libs
+  packages:
+  - dev-libs/libdaemon
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - libkms
+    - valgrind
+    - video_cards_exynos
+    - video_cards_freedreno
+    - video_cards_omap
+    - video_cards_tegra
+    - video_cards_vc4
+    - video_cards_vivante
+    enabled:
+    - video_cards_amdgpu
+    - video_cards_intel
+    - video_cards_nouveau
+    - video_cards_radeon
+    - video_cards_vmware
+  packages:
+  - x11-libs/libdrm
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - static-libs
+  packages:
+  - dev-db/libdbi
+  - media-libs/fontconfig:1.0
+  - media-libs/giflib
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - test
+  packages:
+  - dev-qt/qtdbus:5
+  - dev-qt/qttest:5
+  - dev-qt/qtxml:5
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - minimal
+    - sqlite
+    - test
+    enabled:
+    - alsa
+  packages:
+  - media-libs/libsndfile
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - emacs
+    - java
+    - mono
+    - verify-sig
+    enabled:
+    - nls
+  packages:
+  - net-dns/libidn
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - X
+    - wayland
+  packages:
+  - x11-libs/libva-intel-driver
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - bzip2
+    - natspec
+    - unicode
+  packages:
+  - app-arch/unzip
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - nls
+    - orc
+  packages:
+  - media-libs/gst-plugins-good:1.0
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - net
+    - pci
+    - udev
+    - usb
+  packages:
+  - sys-apps/hwids
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - fontforge
+    - utils
+    enabled:
+    - X
+  packages:
+  - media-fonts/unifont
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - jbig
+    - lzma
+    - static-libs
+    - test
+    - webp
+    - zstd
+    enabled:
+    - cxx
+    - jpeg
+    - zlib
+  packages:
+  - media-libs/tiff
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - python
+    - python_targets_pypy3
+    - python_targets_python3_10
+    - python_targets_python3_8
+    - test
+    enabled:
+    - python_targets_python3_9
+  packages:
+  - app-arch/brotli
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - introspection
+  packages:
+  - gnome-base/gsettings-desktop-schemas
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - autoipd
+    - bookmarks
+    - doc
+    - howl-compat
+    - mdnsresponder-compat
+    - mono
+    - python
+    - python_single_target_python3_8
+    - selinux
+    - test
+    enabled:
+    - dbus
+    - gdbm
+    - gtk
+    - introspection
+    - ipv6
+    - nls
+    - python_single_target_python3_9
+    - qt5
+    - systemd
+  packages:
+  - net-dns/avahi
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - doc
+  packages:
+  - net-libs/libasyncns
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - buildfont
+    enabled:
+    - X
+  packages:
+  - media-fonts/noto-emoji
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gbm
+    - gles2
+    - ivorbis
+    - theora
+    - wayland
+    enabled:
+    - X
+    - alsa
+    - egl
+    - introspection
+    - nls
+    - ogg
+    - opengl
+    - orc
+    - pango
+    - vorbis
+  packages:
+  - media-libs/gst-plugins-base:1.0
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    enabled:
+    - ipv6
+  packages:
+  - x11-libs/libXmu
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - static-libs
+    - test
+    - wayland
+    enabled:
+    - X
+  packages:
+  - x11-libs/libxkbcommon
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - doc
+    - test
+  packages:
+  - dev-cpp/glibmm:2
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - berkdb
+    - doc
+    - examples
+    - static-libs
+    - test
+    - vala
+    enabled:
+    - glib
+    - introspection
+  packages:
+  - dev-libs/libical
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - python_single_target_python3_8
+    enabled:
+    - python_single_target_python3_9
+  packages:
+  - dev-util/glib-utils
+  - dev-util/itstool
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - static-libs
+    - test
+    enabled:
+    - png
+  packages:
+  - media-libs/jbig2dec
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - doc
+    - static-libs
+  packages:
+  - dev-libs/libmspack
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - source
+  packages:
+  - dev-tex/bibtexu
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - arcam_av
+    - debug
+    - ffmpeg
+    - jack
+    - libsamplerate
+    - oss
+    - speex
+    enabled:
+    - mix
+    - pulseaudio
+    - usb_stream
+  packages:
+  - media-plugins/alsa-plugins
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - twm
+  packages:
+  - x11-apps/xinit
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - deprecated
+    - doc
+  packages:
+  - x11-libs/libXaw
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - cjk
+    enabled:
+    - X
+    - extra
+  packages:
+  - media-fonts/noto
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - python_single_target_python3_8
+    - test
+    - truetype-debugger
+    - woff2
+    enabled:
+    - X
+    - gif
+    - gtk
+    - jpeg
+    - png
+    - python
+    - python_single_target_python3_9
+    - readline
+    - svg
+    - tiff
+    - unicode
+  packages:
+  - media-gfx/fontforge
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - debug
+    - gles1
+    - lm-sensors
+    - osmesa
+    - selinux
+    - test
+    - unwind
+    - vaapi
+    - valgrind
+    - video_cards_freedreno
+    - video_cards_iris
+    - video_cards_lima
+    - video_cards_panfrost
+    - video_cards_r100
+    - video_cards_radeonsi
+    - video_cards_v3d
+    - video_cards_vc4
+    - video_cards_virgl
+    - video_cards_vivante
+    - vulkan-overlay
+    enabled:
+    - X
+    - classic
+    - d3d9
+    - dri3
+    - egl
+    - gallium
+    - gbm
+    - gles2
+    - llvm
+    - opencl
+    - vdpau
+    - video_cards_i915
+    - video_cards_i965
+    - video_cards_intel
+    - video_cards_nouveau
+    - video_cards_r200
+    - video_cards_r300
+    - video_cards_r600
+    - video_cards_radeon
+    - video_cards_vmware
+    - vulkan
+    - wayland
+    - xa
+    - xvmc
+    - zink
+    - zstd
+  packages:
+  - media-libs/mesa
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - 64-bit-bfd
+    - cet
+    - multitarget
+    - static-libs
+    enabled:
+    - nls
+  packages:
+  - sys-libs/binutils-libs
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - test
+    enabled:
+    - dri
+  packages:
+  - x11-libs/libvdpau
+- tree: packages/atoms/xorg-base
+  uses:
+    enabled:
+    - nls
+  packages:
+  - app-arch/cpio
+  - sys-apps/help2man
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - tahoma
+    enabled:
+    - X
+  packages:
+  - media-fonts/corefonts
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - gtk-doc
+    enabled:
+    - introspection
+  packages:
+  - dev-libs/atk
+  - dev-libs/json-glib
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - argyllcms
+    - examples
+    - extra-print-profiles
+    - gtk-doc
+    - scanner
+    - test
+    - vala
+    enabled:
+    - introspection
+    - systemd
+    - udev
+  packages:
+  - x11-misc/colord
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - boost
+    - cjk
+    - curl
+    - debug
+    - doc
+    - nss
+    enabled:
+    - cairo
+    - cxx
+    - introspection
+    - jpeg
+    - jpeg2k
+    - lcms
+    - png
+    - qt5
+    - tiff
+    - utils
+  packages:
+  - app-text/poppler
+- tree: packages/atoms/xorg-base
+  uses:
+    disabled:
+    - doc
+    - examples
+    - test
+    enabled:
+    - ssl
+  packages:
+  - app-text/qpdf
+

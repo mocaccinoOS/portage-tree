@@ -1,0 +1,12 @@
+name: kpathsea-portage
+version: 6.3.3
+category: dev-libs
+requires:
+- name: kpathsea
+  version: 6.3.3
+  category: dev-libs
+labels:
+  emerge.packages: dev-libs/kpathsea
+  kit: gentoo
+  original.package.name: dev-libs/kpathsea
+  original.package.version: 6.3.3_p20210325

@@ -1,0 +1,20 @@
+name: ebdftopcf
+version: "2"
+category: media-gfx
+requires:
+- name: gzip
+  version: '>=0'
+  category: app-arch
+- name: bdftopcf
+  version: '>=0'
+  category: x11-apps
+description: Optimally generate PCF files from BDF files
+uri:
+- https://wiki.gentoo.org/wiki/No_homepage
+license: GPL-2
+labels:
+  RDEPEND: x11-apps/bdftopcf app-arch/gzip
+  emerge.packages: media-gfx/ebdftopcf
+  kit: gentoo
+  original.package.name: media-gfx/ebdftopcf
+  original.package.version: "2"

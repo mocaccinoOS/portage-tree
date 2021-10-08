@@ -1,0 +1,21 @@
+name: terminus-font
+version: 4.49.1
+category: media-fonts
+use_flags:
+- -pcf-8bit
+- X
+- pcf-unicode
+description: A clean fixed font for the console and X11
+uri:
+- http://terminus-font.sourceforge.net/
+license: OFL-1.1 GPL-2
+labels:
+  BDEPEND: app-arch/gzip || ( dev-lang/python:3.10 dev-lang/python:3.9 dev-lang/python:3.8
+    ) virtual/awk pcf-8bit? ( x11-apps/bdftopcf ) pcf-unicode? ( x11-apps/bdftopcf
+    ) X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+  IUSE: a-like-o +center-tilde distinct-l +otf pcf-8bit +pcf-unicode +psf quote ru-dv
+    +ru-g ru-i ru-k X
+  emerge.packages: media-fonts/terminus-font
+  kit: gentoo
+  original.package.name: media-fonts/terminus-font
+  original.package.version: 4.49.1

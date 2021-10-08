@@ -1,0 +1,12 @@
+name: cabextract-portage
+version: 1.9.1
+category: app-arch
+requires:
+- name: cabextract
+  version: 1.9.1
+  category: app-arch
+labels:
+  emerge.packages: app-arch/cabextract
+  kit: gentoo
+  original.package.name: app-arch/cabextract
+  original.package.version: 1.9.1

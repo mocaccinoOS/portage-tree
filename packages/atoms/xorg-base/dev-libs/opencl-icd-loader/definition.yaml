@@ -1,0 +1,21 @@
+name: opencl-icd-loader
+version: 2021.04.29
+category: dev-libs
+requires:
+- name: opencl-headers
+  version: '>=0'
+  category: dev-util
+description: Official Khronos OpenCL ICD Loader
+uri:
+- https://github.com/KhronosGroup/OpenCL-ICD-Loader
+license: Apache-2.0
+labels:
+  BDEPEND: dev-util/ninja dev-util/cmake
+  DEPEND: '>=dev-util/opencl-headers-2021.04.29 !dev-libs/ocl-icd'
+  IUSE: test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32
+    abi_s390_32 abi_s390_64
+  RDEPEND: '>=dev-util/opencl-headers-2021.04.29 !dev-libs/ocl-icd'
+  emerge.packages: dev-libs/opencl-icd-loader
+  kit: gentoo
+  original.package.name: dev-libs/opencl-icd-loader
+  original.package.version: 2021.04.29

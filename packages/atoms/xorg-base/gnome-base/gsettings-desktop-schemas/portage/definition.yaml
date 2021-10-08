@@ -1,0 +1,12 @@
+name: gsettings-desktop-schemas-portage
+version: "40.0"
+category: gnome-base
+requires:
+- name: gsettings-desktop-schemas
+  version: "40.0"
+  category: gnome-base
+labels:
+  emerge.packages: gnome-base/gsettings-desktop-schemas
+  kit: gentoo
+  original.package.name: gnome-base/gsettings-desktop-schemas
+  original.package.version: "40.0"

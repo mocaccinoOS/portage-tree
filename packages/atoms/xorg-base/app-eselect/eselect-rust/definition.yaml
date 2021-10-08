@@ -1,0 +1,19 @@
+name: eselect-rust
+version: "20210703"
+category: app-eselect
+requires:
+- name: eselect
+  version: '>=0'
+  category: app-admin
+description: Eselect module for management of multiple Rust versions
+uri:
+- https://gitweb.gentoo.org/proj/eselect-rust.git
+license: GPL-2
+labels:
+  BDEPEND: sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16
+    ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+  RDEPEND: '>=app-admin/eselect-1.2.3'
+  emerge.packages: app-eselect/eselect-rust
+  kit: gentoo
+  original.package.name: app-eselect/eselect-rust
+  original.package.version: "20210703"

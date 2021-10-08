@@ -1,0 +1,12 @@
+name: vala-portage
+version: 0.52.4
+category: dev-lang-0.52
+requires:
+- name: vala
+  version: 0.52.4
+  category: dev-lang-0.52
+labels:
+  emerge.packages: dev-lang/vala:0.52
+  kit: gentoo
+  original.package.name: dev-lang/vala
+  original.package.version: 0.52.4

@@ -1,0 +1,12 @@
+name: adwaita-icon-theme-portage
+version: 40.1.1
+category: x11-themes
+requires:
+- name: adwaita-icon-theme
+  version: 40.1.1
+  category: x11-themes
+labels:
+  emerge.packages: x11-themes/adwaita-icon-theme
+  kit: gentoo
+  original.package.name: x11-themes/adwaita-icon-theme
+  original.package.version: 40.1.1

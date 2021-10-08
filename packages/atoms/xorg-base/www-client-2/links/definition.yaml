@@ -1,0 +1,67 @@
+name: links
+version: "2.23"
+category: www-client-2
+use_flags:
+- -brotli
+- -fbcon
+- -freetype
+- -libevent
+- -livecd
+- -lzip
+- -lzma
+- -svga
+- -zstd
+- X
+- bzip2
+- gpm
+- jpeg
+- ssl
+- tiff
+- zlib
+requires:
+- name: bzip2
+  version: '>=0'
+  category: app-arch
+- name: openssl
+  version: '>=0'
+  category: dev-libs
+- name: libpng
+  version: '>=0'
+  category: media-libs
+- name: tiff
+  version: '>=0'
+  category: media-libs
+- name: gpm
+  version: '>=0'
+  category: sys-libs
+- name: libXext
+  version: '>=0'
+  category: x11-libs
+description: A fast and lightweight web browser running in both graphics and text
+  mode
+uri:
+- http://links.twibright.com/
+license: GPL-2
+labels:
+  BDEPEND: virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815
+  DEPEND: brotli? ( app-arch/brotli ) bzip2? ( app-arch/bzip2 ) fbcon? ( media-libs/libpng:0=
+    ) freetype? ( media-libs/fontconfig media-libs/freetype ) gpm? ( sys-libs/gpm
+    ) jpeg? ( virtual/jpeg:0 ) libevent? ( dev-libs/libevent:0= ) livecd? ( media-libs/libpng:0=
+    sys-libs/gpm virtual/jpeg:0 ) lzip? ( app-arch/lzip ) lzma? ( app-arch/xz-utils
+    ) ssl? ( dev-libs/openssl:0= ) svga? ( media-libs/libpng:0= media-libs/svgalib
+    ) tiff? ( media-libs/tiff:0 ) X? ( media-libs/libpng:0= x11-libs/libXext ) zlib?
+    ( sys-libs/zlib ) zstd? ( app-arch/zstd ) fbcon? ( virtual/os-headers ) livecd?
+    ( virtual/os-headers )
+  IUSE: brotli bzip2 fbcon freetype gpm ipv6 jpeg libevent livecd lzip lzma ssl suid
+    svga tiff unicode X zlib zstd
+  RDEPEND: brotli? ( app-arch/brotli ) bzip2? ( app-arch/bzip2 ) fbcon? ( media-libs/libpng:0=
+    ) freetype? ( media-libs/fontconfig media-libs/freetype ) gpm? ( sys-libs/gpm
+    ) jpeg? ( virtual/jpeg:0 ) libevent? ( dev-libs/libevent:0= ) livecd? ( media-libs/libpng:0=
+    sys-libs/gpm virtual/jpeg:0 ) lzip? ( app-arch/lzip ) lzma? ( app-arch/xz-utils
+    ) ssl? ( dev-libs/openssl:0= ) svga? ( media-libs/libpng:0= media-libs/svgalib
+    ) tiff? ( media-libs/tiff:0 ) X? ( media-libs/libpng:0= x11-libs/libXext ) zlib?
+    ( sys-libs/zlib ) zstd? ( app-arch/zstd )
+  emerge.packages: www-client/links:2
+  kit: gentoo
+  original.package.name: www-client/links
+  original.package.version: 2.23-r1

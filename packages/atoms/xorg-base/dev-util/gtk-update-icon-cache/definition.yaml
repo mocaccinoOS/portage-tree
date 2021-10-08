@@ -1,0 +1,23 @@
+name: gtk-update-icon-cache
+version: 3.24.26
+category: dev-util
+requires:
+- name: gdk-pixbuf
+  version: '>=0'
+  category: x11-libs-2
+description: GTK update icon cache
+uri:
+- https://www.gtk.org/ https://gitlab.gnome.org/Community/gentoo/gtk-update-icon-cache
+license: LGPL-2.1+
+labels:
+  BDEPEND: app-text/docbook-xml-dtd:4.3 app-text/docbook-xsl-stylesheets dev-libs/libxslt
+    >=sys-devel/gettext-0.19.8 virtual/pkgconfig >=dev-util/meson-0.56.0 >=dev-util/ninja-1.8.2
+    dev-util/meson-format-array
+  DEPEND: '>=dev-libs/glib-2.53.4:2 >=x11-libs/gdk-pixbuf-2.30:2 !<x11-libs/gtk+-2.24.28-r1:2
+    !<x11-libs/gtk+-3.22.2:3'
+  RDEPEND: '>=dev-libs/glib-2.53.4:2 >=x11-libs/gdk-pixbuf-2.30:2 !<x11-libs/gtk+-2.24.28-r1:2
+    !<x11-libs/gtk+-3.22.2:3'
+  emerge.packages: dev-util/gtk-update-icon-cache
+  kit: gentoo
+  original.package.name: dev-util/gtk-update-icon-cache
+  original.package.version: 3.24.26

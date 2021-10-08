@@ -1,0 +1,30 @@
+name: glibmm
+version: 2.68.1
+category: dev-cpp-2.68
+use_flags:
+- -doc
+requires:
+- name: glib
+  version: '>=0'
+  category: dev-libs-2
+- name: libsigc++
+  version: '>=0'
+  category: dev-libs-3
+description: C++ interface for glib2
+uri:
+- https://www.gtkmm.org
+license: LGPL-2.1+
+labels:
+  BDEPEND: '|| ( dev-lang/python:3.9 dev-lang/python:3.8 ) virtual/pkgconfig doc?
+    ( app-doc/doxygen[dot] dev-lang/perl dev-libs/libxslt ) app-arch/xz-utils >=dev-util/meson-0.56.0
+    >=dev-util/ninja-1.8.2 dev-util/meson-format-array'
+  DEPEND: '>=dev-libs/glib-2.63.0:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    dev-libs/libsigc++:3[doc?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]'
+  IUSE: doc debug test abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64
+    abi_mips_o32 abi_s390_32 abi_s390_64
+  RDEPEND: '>=dev-libs/glib-2.63.0:2[abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]
+    dev-libs/libsigc++:3[doc?,abi_x86_32(-)?,abi_x86_64(-)?,abi_x86_x32(-)?,abi_mips_n32(-)?,abi_mips_n64(-)?,abi_mips_o32(-)?,abi_s390_32(-)?,abi_s390_64(-)?]'
+  emerge.packages: dev-cpp/glibmm:2.68
+  kit: gentoo
+  original.package.name: dev-cpp/glibmm
+  original.package.version: 2.68.1

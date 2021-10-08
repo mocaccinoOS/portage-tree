@@ -1,0 +1,46 @@
+name: pycairo
+version: 1.20.1
+category: dev-python
+use_flags:
+- -doc
+- -python_targets_pypy3
+- -python_targets_python3_10
+- -python_targets_python3_8
+- -test
+- python_targets_python3_9
+requires:
+- name: python-exec
+  version: '>=0'
+  category: dev-lang-2
+- name: cairo
+  version: '>=0'
+  category: x11-libs
+description: Python bindings for the cairo library
+uri:
+- https://www.cairographics.org/pycairo/ https://github.com/pygobject/pycairo
+license: '|| ( LGPL-2.1 MPL-1.1 )'
+labels:
+  BDEPEND: test? ( dev-python/hypothesis[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    dev-python/pytest[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    ) doc? ( || ( ( dev-lang/python:3.10[threads(+)] dev-python/sphinx[python_targets_python3_10(-)]
+    dev-python/sphinx_rtd_theme[python_targets_python3_10(-)] ) ( dev-lang/python:3.9[threads(+)]
+    dev-python/sphinx[python_targets_python3_9(-)] dev-python/sphinx_rtd_theme[python_targets_python3_9(-)]
+    ) ( dev-lang/python:3.8[threads(+)] dev-python/sphinx[python_targets_python3_8(-)]
+    dev-python/sphinx_rtd_theme[python_targets_python3_8(-)] ) ( >=dev-python/pypy3-7.3.0:0[threads(+)]
+    dev-python/sphinx[python_targets_pypy3(-)] dev-python/sphinx_rtd_theme[python_targets_pypy3(-)]
+    ) ) ) test? ( >=x11-libs/cairo-1.15.10[svg] ) python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)]
+    ) python_targets_python3_8? ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9?
+    ( dev-lang/python:3.9[threads(+)] ) python_targets_python3_10? ( dev-lang/python:3.10[threads(+)]
+    ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+    >=dev-python/setuptools-42.0.2[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+  DEPEND: '>=x11-libs/cairo-1.15.10[svg]'
+  IUSE: examples doc test python_targets_pypy3 python_targets_python3_8 python_targets_python3_9
+    python_targets_python3_10
+  RDEPEND: '>=x11-libs/cairo-1.15.10[svg] python_targets_pypy3? ( >=dev-python/pypy3-7.3.0:0=[threads(+)]
+    ) python_targets_python3_8? ( dev-lang/python:3.8[threads(+)] ) python_targets_python3_9?
+    ( dev-lang/python:3.9[threads(+)] ) python_targets_python3_10? ( dev-lang/python:3.10[threads(+)]
+    ) >=dev-lang/python-exec-2:=[python_targets_pypy3(-)?,python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]'
+  emerge.packages: dev-python/pycairo
+  kit: gentoo
+  original.package.name: dev-python/pycairo
+  original.package.version: 1.20.1

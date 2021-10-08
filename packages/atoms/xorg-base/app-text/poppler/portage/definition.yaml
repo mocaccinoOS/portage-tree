@@ -1,0 +1,12 @@
+name: poppler-portage
+version: 21.07.0
+category: app-text
+requires:
+- name: poppler
+  version: 21.07.0
+  category: app-text
+labels:
+  emerge.packages: app-text/poppler
+  kit: gentoo
+  original.package.name: app-text/poppler
+  original.package.version: 21.07.0
