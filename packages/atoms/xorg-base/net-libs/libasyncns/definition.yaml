@@ -15,4 +15,5 @@ labels:
   emerge.packages: net-libs/libasyncns
   kit: gentoo
   original.package.name: net-libs/libasyncns
+  original.package.slot: "0"
   original.package.version: 0.8-r4

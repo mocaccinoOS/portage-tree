@@ -17,4 +17,5 @@ labels:
   emerge.packages: x11-base/xorg-drivers
   kit: gentoo
   original.package.name: x11-base/xorg-drivers
+  original.package.slot: "0"
   original.package.version: 1.20-r2

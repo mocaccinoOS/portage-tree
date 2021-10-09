@@ -44,4 +44,5 @@ labels:
   emerge.packages: x11-drivers/xf86-video-intel
   kit: gentoo
   original.package.name: x11-drivers/xf86-video-intel
+  original.package.slot: "0"
   original.package.version: 2.99.917_p20201215

@@ -9,4 +9,5 @@ labels:
   emerge.packages: dev-util/opencl-headers
   kit: gentoo
   original.package.name: dev-util/opencl-headers
+  original.package.slot: "0"
   original.package.version: 2021.04.29

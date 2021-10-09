@@ -21,4 +21,5 @@ labels:
   emerge.packages: dev-lang/rust-bin:stable
   kit: gentoo
   original.package.name: dev-lang/rust-bin
+  original.package.slot: stable
   original.package.version: 1.54.0

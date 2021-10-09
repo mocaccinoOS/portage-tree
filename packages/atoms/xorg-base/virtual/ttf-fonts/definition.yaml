@@ -15,4 +15,5 @@ labels:
   emerge.packages: virtual/ttf-fonts
   kit: gentoo
   original.package.name: virtual/ttf-fonts
+  original.package.slot: "0"
   original.package.version: 1-r1

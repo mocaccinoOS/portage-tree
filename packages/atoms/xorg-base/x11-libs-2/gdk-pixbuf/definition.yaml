@@ -44,4 +44,5 @@ labels:
   emerge.packages: x11-libs/gdk-pixbuf:2
   kit: gentoo
   original.package.name: x11-libs/gdk-pixbuf
+  original.package.slot: "2"
   original.package.version: 2.42.6

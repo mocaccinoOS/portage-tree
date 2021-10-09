@@ -11,4 +11,5 @@ labels:
   emerge.packages: dev-util/gtk-doc-am
   kit: gentoo
   original.package.name: dev-util/gtk-doc-am
+  original.package.slot: "0"
   original.package.version: 1.33.2

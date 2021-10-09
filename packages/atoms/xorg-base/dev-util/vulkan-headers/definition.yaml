@@ -10,4 +10,5 @@ labels:
   emerge.packages: dev-util/vulkan-headers
   kit: gentoo
   original.package.name: dev-util/vulkan-headers
+  original.package.slot: "0"
   original.package.version: 1.2.182

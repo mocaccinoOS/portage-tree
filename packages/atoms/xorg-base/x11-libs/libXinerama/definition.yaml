@@ -31,4 +31,5 @@ labels:
   emerge.packages: x11-libs/libXinerama
   kit: gentoo
   original.package.name: x11-libs/libXinerama
+  original.package.slot: "0"
   original.package.version: 1.1.4-r1

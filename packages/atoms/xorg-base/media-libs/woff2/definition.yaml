@@ -16,4 +16,5 @@ labels:
   emerge.packages: media-libs/woff2
   kit: gentoo
   original.package.name: media-libs/woff2
+  original.package.slot: "0"
   original.package.version: 1.0.2-r2

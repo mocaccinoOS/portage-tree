@@ -27,4 +27,5 @@ labels:
   emerge.packages: gnome-base/dconf
   kit: gentoo
   original.package.name: gnome-base/dconf
+  original.package.slot: "0"
   original.package.version: 0.40.0

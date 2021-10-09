@@ -21,4 +21,5 @@ labels:
   emerge.packages: x11-apps/xinit
   kit: gentoo
   original.package.name: x11-apps/xinit
+  original.package.slot: "0"
   original.package.version: 1.4.1-r1

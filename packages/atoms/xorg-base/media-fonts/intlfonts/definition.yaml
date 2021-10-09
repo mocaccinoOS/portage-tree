@@ -14,4 +14,5 @@ labels:
   emerge.packages: media-fonts/intlfonts
   kit: gentoo
   original.package.name: media-fonts/intlfonts
+  original.package.slot: "0"
   original.package.version: 1.4.1

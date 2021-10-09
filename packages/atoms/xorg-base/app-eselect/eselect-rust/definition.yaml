@@ -16,4 +16,5 @@ labels:
   emerge.packages: app-eselect/eselect-rust
   kit: gentoo
   original.package.name: app-eselect/eselect-rust
+  original.package.slot: "0"
   original.package.version: "20210703"

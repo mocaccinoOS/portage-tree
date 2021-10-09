@@ -13,4 +13,5 @@ labels:
   emerge.packages: app-text/libpaper
   kit: gentoo
   original.package.name: app-text/libpaper
+  original.package.slot: "0"
   original.package.version: 1.1.28

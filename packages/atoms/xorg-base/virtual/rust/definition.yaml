@@ -17,4 +17,5 @@ labels:
   emerge.packages: virtual/rust
   kit: gentoo
   original.package.name: virtual/rust
+  original.package.slot: "0"
   original.package.version: 1.54.0

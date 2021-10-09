@@ -28,4 +28,5 @@ labels:
   emerge.packages: dev-qt/qtwidgets:5
   kit: gentoo
   original.package.name: dev-qt/qtwidgets
+  original.package.slot: "5"
   original.package.version: 5.15.2

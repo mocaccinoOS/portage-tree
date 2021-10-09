@@ -16,4 +16,5 @@ labels:
   emerge.packages: gnome-base/gsettings-desktop-schemas
   kit: gentoo
   original.package.name: gnome-base/gsettings-desktop-schemas
+  original.package.slot: "0"
   original.package.version: "40.0"

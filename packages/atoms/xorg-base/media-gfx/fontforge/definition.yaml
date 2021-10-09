@@ -83,4 +83,5 @@ labels:
   emerge.packages: media-gfx/fontforge
   kit: gentoo
   original.package.name: media-gfx/fontforge
+  original.package.slot: "0"
   original.package.version: "20201107"

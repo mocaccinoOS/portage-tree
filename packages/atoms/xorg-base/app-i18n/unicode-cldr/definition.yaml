@@ -10,4 +10,5 @@ labels:
   emerge.packages: app-i18n/unicode-cldr
   kit: gentoo
   original.package.name: app-i18n/unicode-cldr
+  original.package.slot: "0"
   original.package.version: "37.0"

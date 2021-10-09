@@ -124,4 +124,5 @@ labels:
   emerge.packages: media-libs/gst-plugins-base:1.0
   kit: gentoo
   original.package.name: media-libs/gst-plugins-base
+  original.package.slot: "1.0"
   original.package.version: 1.18.4

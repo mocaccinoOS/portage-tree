@@ -33,4 +33,5 @@ labels:
   emerge.packages: dev-python/pygments
   kit: gentoo
   original.package.name: dev-python/pygments
+  original.package.slot: "0"
   original.package.version: 2.9.0

@@ -22,4 +22,5 @@ labels:
   emerge.packages: app-arch/unzip
   kit: gentoo
   original.package.name: app-arch/unzip
+  original.package.slot: "0"
   original.package.version: 6.0_p26

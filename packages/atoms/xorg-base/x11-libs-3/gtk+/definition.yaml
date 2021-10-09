@@ -102,4 +102,5 @@ labels:
   emerge.packages: x11-libs/gtk+:3
   kit: gentoo
   original.package.name: x11-libs/gtk+
+  original.package.slot: "3"
   original.package.version: 3.24.29

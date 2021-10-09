@@ -40,4 +40,5 @@ labels:
   emerge.packages: x11-libs/libXft
   kit: gentoo
   original.package.name: x11-libs/libXft
+  original.package.slot: "0"
   original.package.version: 2.3.4

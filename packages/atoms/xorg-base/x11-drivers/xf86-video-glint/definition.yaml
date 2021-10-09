@@ -22,4 +22,5 @@ labels:
   emerge.packages: x11-drivers/xf86-video-glint
   kit: gentoo
   original.package.name: x11-drivers/xf86-video-glint
+  original.package.slot: "0"
   original.package.version: 1.2.9

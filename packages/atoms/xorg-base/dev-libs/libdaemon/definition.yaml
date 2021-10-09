@@ -15,4 +15,5 @@ labels:
   emerge.packages: dev-libs/libdaemon
   kit: gentoo
   original.package.name: dev-libs/libdaemon
+  original.package.slot: "0"
   original.package.version: 0.14-r3

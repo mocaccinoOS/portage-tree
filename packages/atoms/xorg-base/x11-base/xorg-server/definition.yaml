@@ -121,4 +121,5 @@ labels:
   emerge.packages: x11-base/xorg-server
   kit: gentoo
   original.package.name: x11-base/xorg-server
+  original.package.slot: "0"
   original.package.version: 1.20.13-r1

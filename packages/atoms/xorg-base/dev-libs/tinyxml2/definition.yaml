@@ -12,4 +12,5 @@ labels:
   emerge.packages: dev-libs/tinyxml2
   kit: gentoo
   original.package.name: dev-libs/tinyxml2
+  original.package.slot: "0"
   original.package.version: 9.0.0

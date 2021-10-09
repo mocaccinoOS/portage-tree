@@ -15,4 +15,5 @@ labels:
   emerge.packages: gui-libs/display-manager-init
   kit: gentoo
   original.package.name: gui-libs/display-manager-init
+  original.package.slot: "0"
   original.package.version: 1.0-r3

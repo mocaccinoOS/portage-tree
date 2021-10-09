@@ -56,4 +56,5 @@ labels:
   emerge.packages: net-print/cups-filters
   kit: gentoo
   original.package.name: net-print/cups-filters
+  original.package.slot: "0"
   original.package.version: 1.28.9

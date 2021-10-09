@@ -78,4 +78,5 @@ labels:
   emerge.packages: net-wireless/bluez
   kit: gentoo
   original.package.name: net-wireless/bluez
+  original.package.slot: "0"
   original.package.version: "5.60"

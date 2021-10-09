@@ -22,4 +22,5 @@ labels:
   emerge.packages: sys-devel/lld
   kit: gentoo
   original.package.name: sys-devel/lld
+  original.package.slot: "0"
   original.package.version: 12.0.1

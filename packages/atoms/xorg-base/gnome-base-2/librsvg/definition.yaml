@@ -44,4 +44,5 @@ labels:
   emerge.packages: gnome-base/librsvg:2
   kit: gentoo
   original.package.name: gnome-base/librsvg
+  original.package.slot: "2"
   original.package.version: 2.50.7

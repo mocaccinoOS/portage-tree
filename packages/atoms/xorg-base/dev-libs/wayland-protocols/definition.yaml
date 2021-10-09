@@ -15,4 +15,5 @@ labels:
   emerge.packages: dev-libs/wayland-protocols
   kit: gentoo
   original.package.name: dev-libs/wayland-protocols
+  original.package.slot: "0"
   original.package.version: "1.21"

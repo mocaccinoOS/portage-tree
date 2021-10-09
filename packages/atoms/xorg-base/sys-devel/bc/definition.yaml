@@ -21,4 +21,5 @@ labels:
   emerge.packages: sys-devel/bc
   kit: gentoo
   original.package.name: sys-devel/bc
+  original.package.slot: "0"
   original.package.version: 1.07.1-r3

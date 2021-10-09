@@ -10,4 +10,5 @@ labels:
   emerge.packages: dev-libs/double-conversion
   kit: gentoo
   original.package.name: dev-libs/double-conversion
+  original.package.slot: "0"
   original.package.version: 3.1.5

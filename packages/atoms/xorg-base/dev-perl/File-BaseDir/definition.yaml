@@ -25,4 +25,5 @@ labels:
   emerge.packages: dev-perl/File-BaseDir
   kit: gentoo
   original.package.name: dev-perl/File-BaseDir
+  original.package.slot: "0"
   original.package.version: 0.80.0

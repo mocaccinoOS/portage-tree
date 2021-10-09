@@ -20,4 +20,5 @@ labels:
   emerge.packages: x11-drivers/xf86-input-joystick
   kit: gentoo
   original.package.name: x11-drivers/xf86-input-joystick
+  original.package.slot: "0"
   original.package.version: 1.6.3

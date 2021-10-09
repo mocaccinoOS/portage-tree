@@ -22,4 +22,5 @@ labels:
   emerge.packages: media-libs/jbig2dec
   kit: gentoo
   original.package.name: media-libs/jbig2dec
+  original.package.slot: "0"
   original.package.version: "0.19"

@@ -15,4 +15,5 @@ labels:
   emerge.packages: dev-libs/ell
   kit: gentoo
   original.package.name: dev-libs/ell
+  original.package.slot: "0"
   original.package.version: "0.42"

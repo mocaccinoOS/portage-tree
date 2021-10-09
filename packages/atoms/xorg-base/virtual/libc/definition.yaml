@@ -21,4 +21,5 @@ labels:
   emerge.packages: virtual/libc
   kit: gentoo
   original.package.name: virtual/libc
+  original.package.slot: "0"
   original.package.version: 1-r1

@@ -16,4 +16,5 @@ labels:
   emerge.packages: virtual/glu
   kit: gentoo
   original.package.name: virtual/glu
+  original.package.slot: "0"
   original.package.version: 9.0-r2

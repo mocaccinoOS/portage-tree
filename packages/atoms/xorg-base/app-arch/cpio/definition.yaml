@@ -10,4 +10,5 @@ labels:
   emerge.packages: app-arch/cpio
   kit: gentoo
   original.package.name: app-arch/cpio
+  original.package.slot: "0"
   original.package.version: "2.13"

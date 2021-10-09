@@ -38,4 +38,5 @@ labels:
   emerge.packages: x11-drivers/xf86-input-wacom
   kit: gentoo
   original.package.name: x11-drivers/xf86-input-wacom
+  original.package.slot: "0"
   original.package.version: 0.40.0

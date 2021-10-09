@@ -8,4 +8,5 @@ labels:
   emerge.packages: acct-group/colord
   kit: gentoo
   original.package.name: acct-group/colord
+  original.package.slot: "0"
   original.package.version: "0"

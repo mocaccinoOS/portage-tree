@@ -14,4 +14,5 @@ labels:
   emerge.packages: virtual/perl-Locale-Maketext
   kit: gentoo
   original.package.name: virtual/perl-Locale-Maketext
+  original.package.slot: "0"
   original.package.version: 1.290.0-r4

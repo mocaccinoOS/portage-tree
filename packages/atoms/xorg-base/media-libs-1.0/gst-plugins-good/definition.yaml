@@ -38,4 +38,5 @@ labels:
   emerge.packages: media-libs/gst-plugins-good:1.0
   kit: gentoo
   original.package.name: media-libs/gst-plugins-good
+  original.package.slot: "1.0"
   original.package.version: 1.18.4

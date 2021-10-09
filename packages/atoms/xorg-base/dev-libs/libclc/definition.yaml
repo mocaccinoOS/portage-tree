@@ -13,4 +13,5 @@ labels:
   emerge.packages: dev-libs/libclc
   kit: gentoo
   original.package.name: dev-libs/libclc
+  original.package.slot: "0"
   original.package.version: 0.2.0_pre20201001

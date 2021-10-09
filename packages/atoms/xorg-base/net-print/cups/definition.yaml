@@ -70,4 +70,5 @@ labels:
   emerge.packages: net-print/cups
   kit: gentoo
   original.package.name: net-print/cups
+  original.package.slot: "0"
   original.package.version: 2.3.3_p2-r2

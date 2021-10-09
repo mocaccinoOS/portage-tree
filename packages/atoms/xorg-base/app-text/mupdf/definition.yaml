@@ -46,4 +46,5 @@ labels:
   emerge.packages: app-text/mupdf
   kit: gentoo
   original.package.name: app-text/mupdf
+  original.package.slot: "0"
   original.package.version: 1.18.0-r4

@@ -42,7 +42,7 @@ skipped_resolutions:
   categories:
     - sys-fabric
 
-build_template_file: ../templates/build-pkg-uses.yaml.tmpl
+build_template_file: ../templates/build-pkg-from-layer.yaml.tmpl
 build_portage_template_file: ../templates/build-pkg-portage.yaml.tmpl
 
 include_files:

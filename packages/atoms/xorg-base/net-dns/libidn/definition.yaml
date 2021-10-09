@@ -23,4 +23,5 @@ labels:
   emerge.packages: net-dns/libidn
   kit: gentoo
   original.package.name: net-dns/libidn
+  original.package.slot: "0"
   original.package.version: 1.38-r1

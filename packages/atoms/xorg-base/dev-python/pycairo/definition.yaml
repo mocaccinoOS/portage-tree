@@ -43,4 +43,5 @@ labels:
   emerge.packages: dev-python/pycairo
   kit: gentoo
   original.package.name: dev-python/pycairo
+  original.package.slot: "0"
   original.package.version: 1.20.1

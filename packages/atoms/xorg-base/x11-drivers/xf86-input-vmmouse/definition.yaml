@@ -21,4 +21,5 @@ labels:
   emerge.packages: x11-drivers/xf86-input-vmmouse
   kit: gentoo
   original.package.name: x11-drivers/xf86-input-vmmouse
+  original.package.slot: "0"
   original.package.version: 13.1.0-r1

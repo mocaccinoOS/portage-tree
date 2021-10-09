@@ -10,4 +10,5 @@ labels:
   emerge.packages: app-i18n/unicode-data
   kit: gentoo
   original.package.name: app-i18n/unicode-data
+  original.package.slot: "0"
   original.package.version: 13.0.0

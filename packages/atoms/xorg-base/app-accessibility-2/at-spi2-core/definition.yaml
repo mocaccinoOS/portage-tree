@@ -42,4 +42,5 @@ labels:
   emerge.packages: app-accessibility/at-spi2-core:2
   kit: gentoo
   original.package.name: app-accessibility/at-spi2-core
+  original.package.slot: "2"
   original.package.version: 2.40.3

@@ -25,4 +25,5 @@ labels:
   emerge.packages: sys-libs/binutils-libs
   kit: gentoo
   original.package.name: sys-libs/binutils-libs
+  original.package.slot: "0"
   original.package.version: 2.36.1-r2

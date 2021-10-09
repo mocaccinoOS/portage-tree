@@ -15,4 +15,5 @@ labels:
   emerge.packages: dev-lang/mujs
   kit: gentoo
   original.package.name: dev-lang/mujs
+  original.package.slot: "0"
   original.package.version: 1.1.3

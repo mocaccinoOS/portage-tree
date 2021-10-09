@@ -17,4 +17,5 @@ labels:
   emerge.packages: virtual/opencl
   kit: gentoo
   original.package.name: virtual/opencl
+  original.package.slot: "0"
   original.package.version: 3-r1

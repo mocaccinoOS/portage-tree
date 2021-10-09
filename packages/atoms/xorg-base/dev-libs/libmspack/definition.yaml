@@ -13,4 +13,5 @@ labels:
   emerge.packages: dev-libs/libmspack
   kit: gentoo
   original.package.name: dev-libs/libmspack
+  original.package.slot: "0"
   original.package.version: 0.10.1_alpha

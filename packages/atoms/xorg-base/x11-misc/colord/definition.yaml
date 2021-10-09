@@ -66,4 +66,5 @@ labels:
   emerge.packages: x11-misc/colord
   kit: gentoo
   original.package.name: x11-misc/colord
+  original.package.slot: "0"
   original.package.version: 1.4.5-r1

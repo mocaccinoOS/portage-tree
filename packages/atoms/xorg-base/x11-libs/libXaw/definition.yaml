@@ -40,4 +40,5 @@ labels:
   emerge.packages: x11-libs/libXaw
   kit: gentoo
   original.package.name: x11-libs/libXaw
+  original.package.slot: "0"
   original.package.version: 1.0.14

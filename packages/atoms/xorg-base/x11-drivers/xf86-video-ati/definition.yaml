@@ -28,4 +28,5 @@ labels:
   emerge.packages: x11-drivers/xf86-video-ati
   kit: gentoo
   original.package.name: x11-drivers/xf86-video-ati
+  original.package.slot: "0"
   original.package.version: 19.1.0

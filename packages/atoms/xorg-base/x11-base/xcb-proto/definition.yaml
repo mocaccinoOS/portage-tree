@@ -26,4 +26,5 @@ labels:
   emerge.packages: x11-base/xcb-proto
   kit: gentoo
   original.package.name: x11-base/xcb-proto
+  original.package.slot: "0"
   original.package.version: 1.14.1

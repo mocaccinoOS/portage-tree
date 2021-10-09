@@ -27,4 +27,5 @@ labels:
   emerge.packages: x11-drivers/xf86-video-vboxvideo
   kit: gentoo
   original.package.name: x11-drivers/xf86-video-vboxvideo
+  original.package.slot: "0"
   original.package.version: 1.0.0

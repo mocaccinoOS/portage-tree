@@ -28,4 +28,5 @@ labels:
   emerge.packages: dev-perl/File-MimeInfo
   kit: gentoo
   original.package.name: dev-perl/File-MimeInfo
+  original.package.slot: "0"
   original.package.version: 0.300.0

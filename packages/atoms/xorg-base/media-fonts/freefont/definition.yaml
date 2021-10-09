@@ -14,4 +14,5 @@ labels:
   emerge.packages: media-fonts/freefont
   kit: gentoo
   original.package.name: media-fonts/freefont
+  original.package.slot: "0"
   original.package.version: "20120503"

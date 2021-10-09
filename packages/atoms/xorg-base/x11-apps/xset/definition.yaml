@@ -20,4 +20,5 @@ labels:
   emerge.packages: x11-apps/xset
   kit: gentoo
   original.package.name: x11-apps/xset
+  original.package.slot: "0"
   original.package.version: 1.2.4-r1

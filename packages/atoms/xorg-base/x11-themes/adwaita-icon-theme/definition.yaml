@@ -21,4 +21,5 @@ labels:
   emerge.packages: x11-themes/adwaita-icon-theme
   kit: gentoo
   original.package.name: x11-themes/adwaita-icon-theme
+  original.package.slot: "0"
   original.package.version: 40.1.1

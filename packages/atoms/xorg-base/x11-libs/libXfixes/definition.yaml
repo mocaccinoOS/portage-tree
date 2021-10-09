@@ -27,4 +27,5 @@ labels:
   emerge.packages: x11-libs/libXfixes
   kit: gentoo
   original.package.name: x11-libs/libXfixes
+  original.package.slot: "0"
   original.package.version: 6.0.0

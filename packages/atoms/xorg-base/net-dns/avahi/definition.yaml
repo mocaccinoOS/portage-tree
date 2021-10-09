@@ -88,4 +88,5 @@ labels:
   emerge.packages: net-dns/avahi
   kit: gentoo
   original.package.name: net-dns/avahi
+  original.package.slot: "0"
   original.package.version: 0.8-r4

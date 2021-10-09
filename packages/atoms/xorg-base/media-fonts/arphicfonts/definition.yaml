@@ -14,4 +14,5 @@ labels:
   emerge.packages: media-fonts/arphicfonts
   kit: gentoo
   original.package.name: media-fonts/arphicfonts
+  original.package.slot: "0"
   original.package.version: 0.2.20080216.1-r2

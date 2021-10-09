@@ -9,4 +9,5 @@ labels:
   emerge.packages: app-text/poppler-data
   kit: gentoo
   original.package.name: app-text/poppler-data
+  original.package.slot: "0"
   original.package.version: 0.4.10

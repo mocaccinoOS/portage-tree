@@ -11,4 +11,5 @@ labels:
   emerge.packages: media-libs/libuninameslist
   kit: gentoo
   original.package.name: media-libs/libuninameslist
+  original.package.slot: "0"
   original.package.version: 20200413-r2

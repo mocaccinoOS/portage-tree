@@ -13,4 +13,5 @@ labels:
   emerge.packages: dev-qt/qtchooser
   kit: gentoo
   original.package.name: dev-qt/qtchooser
+  original.package.slot: "0"
   original.package.version: "66"

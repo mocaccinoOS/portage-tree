@@ -20,4 +20,5 @@ labels:
   emerge.packages: dev-tex/bibtexu
   kit: gentoo
   original.package.name: dev-tex/bibtexu
+  original.package.slot: "0"
   original.package.version: 3.71_p20210325

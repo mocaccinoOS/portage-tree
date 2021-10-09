@@ -39,4 +39,5 @@ labels:
   emerge.packages: dev-libs/libinput
   kit: gentoo
   original.package.name: dev-libs/libinput
+  original.package.slot: "0"
   original.package.version: 1.18.1

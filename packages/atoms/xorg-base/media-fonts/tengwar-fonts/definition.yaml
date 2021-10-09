@@ -14,4 +14,5 @@ labels:
   emerge.packages: media-fonts/tengwar-fonts
   kit: gentoo
   original.package.name: media-fonts/tengwar-fonts
+  original.package.slot: "0"
   original.package.version: 1.9d

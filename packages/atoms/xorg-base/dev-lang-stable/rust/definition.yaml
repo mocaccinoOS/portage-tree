@@ -89,4 +89,5 @@ labels:
   emerge.packages: dev-lang/rust:stable
   kit: gentoo
   original.package.name: dev-lang/rust
+  original.package.slot: stable
   original.package.version: 1.54.0

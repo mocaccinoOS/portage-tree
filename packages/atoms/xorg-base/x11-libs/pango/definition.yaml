@@ -48,4 +48,5 @@ labels:
   emerge.packages: x11-libs/pango
   kit: gentoo
   original.package.name: x11-libs/pango
+  original.package.slot: "0"
   original.package.version: 1.48.7-r1

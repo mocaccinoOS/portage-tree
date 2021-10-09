@@ -37,4 +37,5 @@ labels:
   emerge.packages: dev-lang/spidermonkey:78
   kit: gentoo
   original.package.name: dev-lang/spidermonkey
+  original.package.slot: "78"
   original.package.version: 78.12.0

@@ -32,4 +32,5 @@ labels:
   emerge.packages: media-libs/alsa-lib
   kit: gentoo
   original.package.name: media-libs/alsa-lib
+  original.package.slot: "0"
   original.package.version: 1.2.5.1

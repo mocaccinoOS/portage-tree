@@ -24,4 +24,5 @@ labels:
   emerge.packages: x11-apps/xauth
   kit: gentoo
   original.package.name: x11-apps/xauth
+  original.package.slot: "0"
   original.package.version: "1.1"

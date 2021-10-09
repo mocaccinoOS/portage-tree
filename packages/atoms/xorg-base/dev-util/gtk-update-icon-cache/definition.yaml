@@ -20,4 +20,5 @@ labels:
   emerge.packages: dev-util/gtk-update-icon-cache
   kit: gentoo
   original.package.name: dev-util/gtk-update-icon-cache
+  original.package.slot: "0"
   original.package.version: 3.24.26

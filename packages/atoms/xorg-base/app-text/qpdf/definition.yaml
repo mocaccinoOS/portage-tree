@@ -29,4 +29,5 @@ labels:
   emerge.packages: app-text/qpdf
   kit: gentoo
   original.package.name: app-text/qpdf
+  original.package.slot: "0"
   original.package.version: 10.3.2

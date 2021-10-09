@@ -17,4 +17,5 @@ labels:
   emerge.packages: app-text/docbook-xsl-ns-stylesheets
   kit: gentoo
   original.package.name: app-text/docbook-xsl-ns-stylesheets
+  original.package.slot: "0"
   original.package.version: 1.79.1

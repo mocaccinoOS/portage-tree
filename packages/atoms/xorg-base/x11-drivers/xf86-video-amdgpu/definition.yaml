@@ -26,4 +26,5 @@ labels:
   emerge.packages: x11-drivers/xf86-video-amdgpu
   kit: gentoo
   original.package.name: x11-drivers/xf86-video-amdgpu
+  original.package.slot: "0"
   original.package.version: 21.0.0

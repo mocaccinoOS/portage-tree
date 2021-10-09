@@ -53,4 +53,5 @@ labels:
   emerge.packages: app-text/poppler
   kit: gentoo
   original.package.name: app-text/poppler
+  original.package.slot: "0"
   original.package.version: 21.07.0

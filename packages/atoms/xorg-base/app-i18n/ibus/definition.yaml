@@ -66,4 +66,5 @@ labels:
   emerge.packages: app-i18n/ibus
   kit: gentoo
   original.package.name: app-i18n/ibus
+  original.package.slot: "0"
   original.package.version: 1.5.24

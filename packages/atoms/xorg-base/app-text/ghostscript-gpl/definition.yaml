@@ -68,4 +68,5 @@ labels:
   emerge.packages: app-text/ghostscript-gpl
   kit: gentoo
   original.package.name: app-text/ghostscript-gpl
+  original.package.slot: "0"
   original.package.version: 9.54.0

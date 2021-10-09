@@ -28,4 +28,5 @@ labels:
   emerge.packages: dev-perl/IPC-System-Simple
   kit: gentoo
   original.package.name: dev-perl/IPC-System-Simple
+  original.package.slot: "0"
   original.package.version: 1.300.0

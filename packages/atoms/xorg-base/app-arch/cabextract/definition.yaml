@@ -20,4 +20,5 @@ labels:
   emerge.packages: app-arch/cabextract
   kit: gentoo
   original.package.name: app-arch/cabextract
+  original.package.slot: "0"
   original.package.version: 1.9.1
