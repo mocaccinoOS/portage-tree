@@ -17,6 +17,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: autoconf
+- name: xorg-base
   version: '>=0'
-  category: sys-devel-2.71
+  category: seed

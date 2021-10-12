@@ -570,6 +570,13 @@ artefacts:
   - x11-themes/gtk-engines-adwaita
   - x11-themes/hicolor-icon-theme
 - tree: packages/atoms/xorg-base
+  replacements:
+    buildtime_deps:
+      ignore:
+        # It seems available on BDEPEND but then
+        # is not compiled.
+        - name: docutils
+          category: dev-python
   uses:
     disabled:
     - btpclient

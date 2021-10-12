@@ -29,6 +29,9 @@ requires:
 - name: cups
   version: '>=0'
   category: net-print
+- name: dbus
+  version: '>=0'
+  category: sys-apps
 - name: hwids
   version: '>=0'
   category: sys-apps

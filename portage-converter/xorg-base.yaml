@@ -39,6 +39,9 @@ skipped_resolutions:
 
     - name: argp-standalone
       category: sys-libs
+
+    - name: docutils
+      category: dev-python
   categories:
     - sys-fabric
 
