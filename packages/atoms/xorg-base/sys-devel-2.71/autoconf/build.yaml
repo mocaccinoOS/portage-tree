@@ -17,6 +17,6 @@ excludes:
 - ^/var/cache/portage/
 - ^/var/git/
 requires:
-- name: docutils
+- name: xorg-base
   version: '>=0'
-  category: dev-python
+  category: seed
